@@ -249,10 +249,10 @@ export default function OfferWebPage() {
             {
               title: 'Indywidualny projekt graficzny sklepu',
               description: (
-                <>
+                <p>
                   Wygląd, który od pierwszych sekund pokazuje profesjonalizm i
                   wyróżnia Twój sklep
-                </>
+                </p>
               ),
               icon: (
                 <RiPencilRuler2Line
@@ -264,7 +264,9 @@ export default function OfferWebPage() {
               title:
                 'Redakcję treści sprzedażowych dla lepszej pozycji w Google',
               description: (
-                <>Opisy, które jasno mówią o korzyściach i prowadzą do zakupu</>
+                <p>
+                  Opisy, które jasno mówią o korzyściach i prowadzą do zakupu
+                </p>
               ),
               icon: (
                 <RiArticleLine
@@ -275,10 +277,10 @@ export default function OfferWebPage() {
             {
               title: 'Dobór i obróbka zdjęć produktów',
               description: (
-                <>
+                <p>
                   Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do sklepu:
                   kadry, tło, rozmiary, waga.
-                </>
+                </p>
               ),
               icon: (
                 <RiBrushLine
@@ -288,14 +290,16 @@ export default function OfferWebPage() {
             },
             {
               title: 'Wsparcie prawne przy politykach i regulaminach',
-              description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
+              description: (
+                <p>Przeprowadzamy Cię przez wszelkie wymogi prawne</p>
+              ),
               icon: (
                 <GoLaw className={cn('text-primary', normalIconSizeClasses)} />
               ),
             },
             {
               title: 'Sklep online dostosowany do różnych urządzeń',
-              description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
+              description: <p>Czytelność oraz szybkość na każdym urządzeniu</p>,
               icon: (
                 <RiDeviceLine
                   className={cn('text-primary', normalIconSizeClasses)}
@@ -304,7 +308,7 @@ export default function OfferWebPage() {
             },
             {
               title: 'Szybkość i stabilność',
-              description: <>Sklep online który działa szybko, bez awarii</>,
+              description: <p>Sklep online który działa szybko, bez awarii</p>,
               icon: (
                 <RiSpeedLine
                   className={cn('text-primary', normalIconSizeClasses)}
@@ -314,10 +318,10 @@ export default function OfferWebPage() {
             {
               title: 'Pełną własność i dostępy',
               description: (
-                <>
+                <p>
                   Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po
                   zakończeniu prac
-                </>
+                </p>
               ),
               icon: (
                 <RiKey2Line
@@ -328,10 +332,10 @@ export default function OfferWebPage() {
             {
               title: 'Zero ukrytych kosztów',
               description: (
-                <>
+                <p>
                   Dostajesz wycenę z jasnym zakresem, informujemy Cię na
                   bieżąco, ile coś kosztuje
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine
@@ -342,10 +346,10 @@ export default function OfferWebPage() {
             {
               title: 'Termin i plan z kamieniami milowymi',
               description: (
-                <>
+                <p>
                   Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie
                   gotowe i kiedy
-                </>
+                </p>
               ),
               icon: (
                 <RiCalendarCheckLine
@@ -356,10 +360,10 @@ export default function OfferWebPage() {
             {
               title: 'Transparentna współpraca na bieżąco',
               description: (
-                <>
+                <p>
                   Informujemy Cię regularnie o postępach naszych prac nad Twoim
                   sklepem
-                </>
+                </p>
               ),
               icon: (
                 <RiMessage2Line
@@ -370,10 +374,10 @@ export default function OfferWebPage() {
             {
               title: 'Dedykowane szkolenie PDF z obsługi sklepu',
               description: (
-                <>
+                <p>
                   Proste instrukcje, stworzone tak, abyś samodzielnie mógł dodać
                   produkty, ceny i promocje
-                </>
+                </p>
               ),
               icon: (
                 <RiBookOpenLine
@@ -384,10 +388,10 @@ export default function OfferWebPage() {
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: (
-                <>
+                <p>
                   Po publikacji pomagamy w dalszym rozwoju i skalowaniu sklepu
                   internetowego. Ewentualne błędy poprawiamy w ramach gwarancji
-                </>
+                </p>
               ),
               icon: (
                 <RiLifebuoyLine

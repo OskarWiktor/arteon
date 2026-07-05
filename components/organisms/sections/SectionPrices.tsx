@@ -32,6 +32,7 @@ type SectionPricesProps = {
   id?: string;
   title?: string;
   subtitle?: string;
+  description?: ReactNode;
   plans?: SectionPricesPlan[];
   note?: Note | null;
   legalNote?: string;
@@ -55,13 +56,16 @@ export default function SectionPrices({
   id = 'pricing',
   title = 'Przykładowe ceny',
   subtitle,
+  description,
   plans = [],
   note,
   legalNote = 'Dokładne ceny ustalamy po zapoznaniu się z indywidualnymi potrzebami',
 }: SectionPricesProps) {
   const headingId = `${id}-heading`;
   const subtitleId = subtitle ? `${id}-subtitle` : undefined;
-  const describedBy = subtitleId || undefined;
+  const descriptionId = description ? `${id}-description` : undefined;
+  const describedBy =
+    [subtitleId, descriptionId].filter(Boolean).join(' ') || undefined;
 
   return (
     <section
@@ -86,6 +90,11 @@ export default function SectionPrices({
           >
             {title}
           </h3>
+        )}
+        {description && (
+          <p id={descriptionId} className='mt-3 max-w-3xl text-mid'>
+            {description}
+          </p>
         )}
       </div>
 

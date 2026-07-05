@@ -259,7 +259,7 @@ p,
 li,
 .p {
   @apply leading-relaxed font-normal text-pretty text-mid;
-  font-size: clamp(14px, calc(14px + 2 * ((100vw - 360px) / 1080)), 16px);
+  font-size: clamp(14px, calc(14px + 3 * ((100vw - 360px) / 1080)), 16px);
 }
 
 label {
@@ -302,7 +302,7 @@ h3,
 h4,
 .h4 {
   font-weight: 500;
-  font-size: clamp(22px, calc(22px + 10 * ((100vw - 360px) / 1080)), 30px);
+  font-size: clamp(22px, calc(22px + 8 * ((100vw - 360px) / 1080)), 30px);
   line-height: 1.12;
   text-wrap: balance;
   letter-spacing: -1px;
@@ -311,19 +311,19 @@ h4,
 h5,
 .h5 {
   font-weight: 500;
-  font-size: clamp(20px, calc(20px + 6 * ((100vw - 360px) / 1080)), 26px);
+  font-size: clamp(18px, calc(18px + 4 * ((100vw - 360px) / 1080)), 26px);
   line-height: 1.2;
   text-wrap: balance;
-  letter-spacing: -0.75px;
+  letter-spacing: -0.5px;
 }
 
 h6,
 .h6 {
-  font-weight: 500;
-  font-size: clamp(18px, calc(18px + 4 * ((100vw - 360px) / 1080)), 20px);
+  font-weight: 400;
+  font-size: clamp(16px, calc(16px + 4 * ((100vw - 360px) / 1080)), 20px);
   line-height: 1.25;
   text-wrap: balance;
-  letter-spacing: -0.75px;
+  letter-spacing: -0.25px;
 }
 
 strong {

@@ -173,10 +173,10 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Znak, który prowadzi markę',
               description: (
-                <>
+                <p>
                   Tworzymy logo, które jest czytelne, charakterystyczne i łatwe
                   do zapamiętania - również w małych rozmiarach.
-                </>
+                </p>
               ),
               icon: (
                 <RiQuillPenLine
@@ -187,11 +187,11 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Warianty i zastosowania',
               description: (
-                <>
+                <p>
                   Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i
                   pionowe - gotowe do użycia na stronie, w mediach
                   społecznościowych i w druku.
-                </>
+                </p>
               ),
               icon: (
                 <RiPantoneLine
@@ -202,10 +202,10 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Prosta instrukcja użycia',
               description: (
-                <>
+                <p>
                   Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki
                   czemu każdy w firmie wie, jak poprawnie korzystać z logo.
-                </>
+                </p>
               ),
               icon: (
                 <RiBookOpenLine
@@ -216,11 +216,11 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Pełna własność i pliki źródłowe',
               description: (
-                <>
+                <p>
                   Po zakończeniu projektu masz komplet plików wektorowych i
                   pełnię praw - możesz swobodnie rozwijać identyfikację w
                   przyszłości.
-                </>
+                </p>
               ),
               icon: (
                 <RiKey2Line
@@ -231,10 +231,10 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

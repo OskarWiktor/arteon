@@ -65,7 +65,7 @@ export default function FeatureCard({
         {description && (
           <div
             id={descId}
-            className='text-left text-[15px] leading-6 text-light'
+            className='text-left leading-6'
             itemProp='description'
           >
             {description}

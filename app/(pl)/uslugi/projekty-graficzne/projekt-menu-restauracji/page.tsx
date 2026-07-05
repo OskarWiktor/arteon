@@ -151,11 +151,11 @@ export default function OfferDesignMenuPage() {
             {
               title: 'Układ dopasowany do oferty',
               description: (
-                <>
+                <p>
                   Projektujemy logiczne sekcje - przystawki, dania główne,
                   napoje, desery - z czytelną hierarchią, która ułatwia podjęcie
                   decyzji i kieruje wzrok na kluczowe pozycje.
-                </>
+                </p>
               ),
               icon: (
                 <RiLayoutLine
@@ -166,11 +166,11 @@ export default function OfferDesignMenuPage() {
             {
               title: 'Spójność z klimatem lokalu',
               description: (
-                <>
+                <p>
                   Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i
                   charakteru restauracji - nowoczesnego, klasycznego,
                   rustykalnego czy street foodowego.
-                </>
+                </p>
               ),
               icon: (
                 <IoColorPalette
@@ -181,11 +181,11 @@ export default function OfferDesignMenuPage() {
             {
               title: 'Gotowe pliki do druku i online',
               description: (
-                <>
+                <p>
                   Dostarczamy pliki przygotowane do druku oraz wersje online,
                   które bez problemu dodasz na stronę, do mediów
                   społecznościowych lub do kodu QR.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -196,11 +196,11 @@ export default function OfferDesignMenuPage() {
             {
               title: 'Możliwość samodzielnej aktualizacji',
               description: (
-                <>
+                <p>
                   Na życzenie przygotowujemy łatwe w edycji pliki źródłowe,
                   dzięki czemu samodzielnie zaktualizujesz sezonowe dania, ceny
                   czy nowe pozycje.
-                </>
+                </p>
               ),
               icon: (
                 <RiBookOpenLine

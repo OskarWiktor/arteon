@@ -152,10 +152,10 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Spójny wygląd zespołu',
               description: (
-                <>
+                <p>
                   Projekt buduje rozpoznawalność marki w terenie, na hali, w
                   salonie i podczas wydarzeń.
-                </>
+                </p>
               ),
               icon: (
                 <RiTShirt2Line
@@ -166,10 +166,10 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Wizualizacje i warianty',
               description: (
-                <>
+                <p>
                   Przygotowujemy podglądy na koszulkach, bluzach i innych
                   elementach, aby łatwiej było podjąć decyzję.
-                </>
+                </p>
               ),
               icon: (
                 <RiImageLine
@@ -180,10 +180,10 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Dopasowanie do wybranej technologii',
               description: (
-                <>
+                <p>
                   Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od
                   sposobu naniesienia znaków - sitodruk, haft, DTF.
-                </>
+                </p>
               ),
               icon: (
                 <RiQuillPenLine
@@ -194,10 +194,10 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Pliki gotowe do produkcji',
               description: (
-                <>
+                <p>
                   Otrzymujesz materiały, które możesz od razu przekazać
                   wykonawcy odzieży.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -208,10 +208,10 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

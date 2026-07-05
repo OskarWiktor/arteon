@@ -154,11 +154,11 @@ export default function OfferMarketingPage() {
             {
               title: 'Czy Google może znaleźć i zrozumieć Twoją stronę',
               description: (
-                <>
+                <p>
                   Weryfikujemy, czy strona pojawia się w Google, które podstrony
                   są pomijane i dlaczego. Sprawdzimy mapę strony i ustawienia,
                   które potrafią ukryć treści przed wyszukiwarką.
-                </>
+                </p>
               ),
               icon: (
                 <RiSearchLine
@@ -169,11 +169,11 @@ export default function OfferMarketingPage() {
             {
               title: 'Szybkość ładowania i wygodę korzystania',
               description: (
-                <>
+                <p>
                   Mierzymy, jak szybko wczytuje się strona i jak wygląda ona od
                   strony technicznej. Wskazujemy proste zmiany, które
                   przyspieszą działanie i poprawią wrażenia użytkowników.
-                </>
+                </p>
               ),
               icon: (
                 <RiCheckLine
@@ -184,11 +184,11 @@ export default function OfferMarketingPage() {
             {
               title: 'Czy treści są dopasowane do tego, czego szukają klienci',
               description: (
-                <>
+                <p>
                   Sprawdzimy, czy Twoje treści odpowiadają na pytania
                   użytkowników i czy nie konkurują ze sobą. Zaproponujemy tematy
                   i układ, który ułatwi zdobywanie wyższych pozycji.
-                </>
+                </p>
               ),
               icon: (
                 <RiLightbulbFlashLine
@@ -199,11 +199,11 @@ export default function OfferMarketingPage() {
             {
               title: 'Strukturę strony oraz linki wewnętrzne',
               description: (
-                <>
+                <p>
                   Uporządkujemy nawigację i połączenia między podstronami, aby
                   ważne treści były łatwo dostępne dla użytkowników i
                   wyszukiwarki.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileList2Line

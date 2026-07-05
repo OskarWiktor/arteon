@@ -155,10 +155,10 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Spójny wygląd korespondencji',
               description: (
-                <>
+                <p>
                   Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i
                   wiadomości.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -169,10 +169,10 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Szablony do codziennej pracy',
               description: (
-                <>
+                <p>
                   Otrzymujesz gotowe do użycia pliki w wersji do druku oraz
                   praktyczne szablony elektroniczne.
-                </>
+                </p>
               ),
               icon: (
                 <RiBookOpenLine
@@ -183,10 +183,10 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Dopasowanie danych i układu',
               description: (
-                <>
+                <p>
                   Dbamy o czytelność, hierarchię informacji i zgodność z
                   pozostałymi materiałami marki.
-                </>
+                </p>
               ),
               icon: (
                 <RiPencilRuler2Line
@@ -197,10 +197,10 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Szybka realizacja i poprawki',
               description: (
-                <>
+                <p>
                   Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy
                   szczegóły.
-                </>
+                </p>
               ),
               icon: (
                 <RiMessage2Line
@@ -211,10 +211,10 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

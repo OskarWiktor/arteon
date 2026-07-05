@@ -110,10 +110,10 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Jasną strategię działania',
               description: (
-                <>
+                <p>
                   Plan działań oparty na psychologii w biznesie z podziałem na
                   szybkie wygrane i strategiczne działania długoterminowe.
-                </>
+                </p>
               ),
               icon: (
                 <RiLightbulbFlashLine
@@ -124,11 +124,11 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Raporty i decyzje oparte na danych',
               description: (
-                <>
+                <p>
                   Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją
                   konkurencję, tak, abyś miał pewność, że marketing z nami
                   będzie skuteczny.
-                </>
+                </p>
               ),
               icon: (
                 <IoAnalytics
@@ -139,11 +139,11 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Pełna własność danych i kont',
               description: (
-                <>
+                <p>
                   Masz dostęp do wszystkich narzędzi, z których korzystamy,
                   dzięki czemu w dowolnej chwili możesz sprawdzić wyniki naszych
                   działań.
-                </>
+                </p>
               ),
               icon: (
                 <RiShieldCheckLine
@@ -154,11 +154,11 @@ export default function OfferMarketingHubPage() {
             {
               title: 'SEO techniczne + treściowe',
               description: (
-                <>
+                <p>
                   Prowadzimy pełne działania pozycjonowania stron, dzięki czemu
                   Twoja witryna ma treść, która odpowiada klientom oraz
                   techniczną strukturę, którą lubią wyszukiwarki
-                </>
+                </p>
               ),
               icon: (
                 <RiSearchLine
@@ -169,11 +169,11 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Lokalne lub krajowe SEO',
               description: (
-                <>
+                <p>
                   Prowadzimy działania SEO krajowe oraz lokalne, dzięki czemu
                   Twój biznes może rozwijać się w Twoim mieście i jednocześnie
                   za granicą lub w całym kraju
-                </>
+                </p>
               ),
               icon: (
                 <RiSearchEyeLine
@@ -184,11 +184,11 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Reklamy Google i Meta',
               description: (
-                <>
+                <p>
                   Tworzymy kampanie oparte na realnych problemach klientów.
                   Testujemy kreacje i słowa kluczowe, a budżet kierujemy w to,
                   co działa.
-                </>
+                </p>
               ),
               icon: (
                 <RiBarChart2Fill
@@ -199,10 +199,10 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Zero ukrytych kosztów',
               description: (
-                <>
+                <p>
                   Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i
                   terminy są rozpisane przed startem działań.
-                </>
+                </p>
               ),
               icon: (
                 <RiCustomerService2Line
@@ -213,10 +213,10 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Wsparcie po wdrożeniu',
               description: (
-                <>
+                <p>
                   Stale informujemy Cię o wynikach naszych działań, dajemy Ci
                   jasne podsumowanie w mailu oraz prowadzimy konsultacje
-                </>
+                </p>
               ),
               icon: (
                 <RiShieldCheckLine

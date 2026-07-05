@@ -158,11 +158,11 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Spójność z identyfikacją marki',
               description: (
-                <>
+                <p>
                   Dopasujemy projekt do Twojej kolorystyki, logo i tonu
                   komunikacji, dzięki czemu voucher będzie spójnym elementem
                   Twojej marki.
-                </>
+                </p>
               ),
               icon: (
                 <IoColorPalette
@@ -173,10 +173,10 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Wersje do druku i online',
               description: (
-                <>
+                <p>
                   Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do
                   mediów społecznościowych, mailingu lub sklepu internetowego.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -187,10 +187,10 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Czytelne pola i zasady wykorzystania',
               description: (
-                <>
+                <p>
                   Zaprojektujemy odpowiednie pola na datę ważności, kod, podpis
                   czy regulamin tak, aby voucher był piękny i praktyczny.
-                </>
+                </p>
               ),
               icon: (
                 <RiTicket2Line
@@ -201,10 +201,10 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Warianty na różne okazje',
               description: (
-                <>
+                <p>
                   Możemy przygotować serię voucherów: urodzinowe, świąteczne,
                   okazjonalne - z zachowaniem jednego spójnego stylu.
-                </>
+                </p>
               ),
               icon: (
                 <RiGiftLine
@@ -215,10 +215,10 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

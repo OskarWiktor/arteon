@@ -270,11 +270,11 @@ export default function OfferDesignPage() {
             {
               title: 'Pełną własność plików i praw',
               description: (
-                <>
+                <p>
                   Po zakończeniu projektu przekazujemy komplet plików źródłowych
                   i użytkowych wraz z licencjami. Masz pełną kontrolę nad
                   materiałami firmowymi - dziś i w przyszłości.
-                </>
+                </p>
               ),
               icon: (
                 <RiKey2Line
@@ -285,10 +285,10 @@ export default function OfferDesignPage() {
             {
               title: 'Pliki gotowe do druku i wdrożenia online',
               description: (
-                <>
+                <p>
                   Dostarczamy pakiet do druku a także warianty do sieci -
                   wszystko zoptymalizowane i gotowe do użycia.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -299,11 +299,11 @@ export default function OfferDesignPage() {
             {
               title: 'Konsekwentną identyfikację wizualną',
               description: (
-                <>
+                <p>
                   Ustalamy system kolorów i typografii oraz reguły stosowania.
                   Dzięki temu wszystkie materiały firmowe mówią jednym językiem
                   i wzmacniają markę przy każdym kontakcie.
-                </>
+                </p>
               ),
               icon: (
                 <IoColorPalette
@@ -314,11 +314,11 @@ export default function OfferDesignPage() {
             {
               title: 'Skład DTP z dbałością o detale',
               description: (
-                <>
+                <p>
                   Kontrolujemy hierarchię, kerning i siatki. Przy katalogach i
                   ulotkach pilnujemy czytelności, marginesów bezpieczeństwa oraz
                   logiki łamania treści.
-                </>
+                </p>
               ),
               icon: (
                 <RiBrushLine
@@ -329,11 +329,11 @@ export default function OfferDesignPage() {
             {
               title: 'Dobór i obróbkę zdjęć',
               description: (
-                <>
+                <p>
                   Pomagamy w wyborze zdjęć oraz dostosowujemy kadry, tła i
                   kolory. Pliki przygotowujemy w zgodnych profilach barwnych do
                   druku i na stronę internetową.
-                </>
+                </p>
               ),
               icon: (
                 <RiImageLine
@@ -344,11 +344,11 @@ export default function OfferDesignPage() {
             {
               title: 'Dostępność i czytelność',
               description: (
-                <>
+                <p>
                   Projektujemy tak, aby materiały były zrozumiałe i czytelne.
                   Kontrast, wielkości fontów i hierarchia informacji wspierają
                   odbiorcę w szybkim podjęciu decyzji.
-                </>
+                </p>
               ),
               icon: (
                 <IoAccessibilityOutline
@@ -359,11 +359,11 @@ export default function OfferDesignPage() {
             {
               title: 'Gwarancję i wsparcie po wdrożeniu',
               description: (
-                <>
+                <p>
                   Po finalizacji masz nasze wsparcie przez 2 miesiące.
                   Ewentualne poprawki techniczne wykonujemy w ramach gwarancji,
                   a na życzenie wprowadzamy płatne zmiany.
-                </>
+                </p>
               ),
               icon: (
                 <RiLifebuoyLine
@@ -374,11 +374,11 @@ export default function OfferDesignPage() {
             {
               title: 'Zero ukrytych kosztów',
               description: (
-                <>
+                <p>
                   Otrzymujesz ofertę z zakresem i terminami. Informujemy na
                   bieżąco o ewentualnych kosztach dodatkowych, zanim podejmiemy
                   kolejne kroki.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine
