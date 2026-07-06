@@ -8,6 +8,18 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { siteUrl } from '@/utils/absoluteUrl';
 const SERVICES = [
   { name: 'Strony WordPress', path: '/uslugi/tworzenie-stron-wordpress' },
+  {
+    name: 'Strona dla psychologa',
+    path: '/uslugi/strona-internetowa-dla-psychologa',
+  },
+  {
+    name: 'Strona dla firmy wykończeniowej',
+    path: '/uslugi/strona-internetowa-dla-firmy-wykonczeniowej',
+  },
+  {
+    name: 'Strona dla firmy budowlanej',
+    path: '/uslugi/strona-internetowa-dla-firmy-budowlanej',
+  },
   { name: 'Sklepy internetowe', path: '/uslugi/sklepy-internetowe' },
   { name: 'Blogi internetowe', path: '/uslugi/blogi-internetowe' },
   {
@@ -112,6 +124,7 @@ export default function OfferPage() {
 
         <SectionSteps
           title='Witryny internetowe'
+          subtitle='Oferty ogólne'
           items={[
             {
               topImageSrc:
@@ -183,6 +196,89 @@ export default function OfferPage() {
         <Divider line />
 
         <SectionSteps
+          title='Strona internetowa dla Twojej branży'
+          subtitle='Oferty specjalne'
+          description='Przygotowaliśmy dedykowane oferty stron internetowych dla wybranych branż. Każda uwzględnia realne potrzeby danej grupy i to, czego szukają jej klienci.'
+          grid='three'
+          items={[
+            {
+              topImageSrc:
+                '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
+              topImageAlt:
+                'Strona internetowa dla psychoterapeutki MSC Psychotherapy - realizacja Arteon',
+              title: 'Strona dla psychologa',
+              description: (
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Strona dla psychologa lub psychoterapeuty z profilem
+                    specjalisty, opisem terapii oraz formularzem ze świadomą
+                    zgodą zgodnym z RODO.
+                  </p>
+                  <div className='mt-auto'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/strona-internetowa-dla-psychologa'
+                    >
+                      Przejdź do oferty
+                    </ButtonLink>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              topImageSrc:
+                '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
+              topImageAlt:
+                'Strona internetowa dla firmy wykończeniowej Finish Masters - realizacja Arteon',
+              title: 'Strona dla firmy wykończeniowej',
+              description: (
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Strona dla firmy wykończeniowej i remontowej z galerią
+                    realizacji przed i po oraz formularzem wyceny, który
+                    przysyła gotowych klientów.
+                  </p>
+                  <div className='mt-auto'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/strona-internetowa-dla-firmy-wykonczeniowej'
+                    >
+                      Przejdź do oferty
+                    </ButtonLink>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              topImageSrc:
+                '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
+              topImageAlt:
+                'Strona internetowa dla firmy budowlanej Izoluk - realizacja Arteon',
+              title: 'Strona dla firmy budowlanej',
+              description: (
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Strona dla firmy budowlanej z dokumentacją etapów budowy,
+                    prezentacją sprzętu i uprawnień oraz formularzem zapytania
+                    dla inwestorów.
+                  </p>
+                  <div className='mt-auto'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/strona-internetowa-dla-firmy-budowlanej'
+                    >
+                      Przejdź do oferty
+                    </ButtonLink>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Divider line />
+
+        <SectionSteps
           title='Projekty graficzne'
           subtitle='Pełna oferta projektowa'
           description='Poznaj pełną ofertę projektów graficznych - od wizytówek i ulotek po identyfikację wizualną oraz układy stron internetowych. Każda usługa ma własną stronę, na której zobaczysz szczegóły, przykłady realizacji i cennik.'
@@ -190,7 +286,7 @@ export default function OfferPage() {
           items={[
             {
               topImageSrc:
-                '/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp',
+                '/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp',
               topImageAlt:
                 'Projekt wizytówki dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Projekt wizytówki',

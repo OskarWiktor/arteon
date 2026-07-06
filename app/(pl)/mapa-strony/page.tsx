@@ -9,6 +9,7 @@ import {
   getAllArticlePreviews,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
+import { cn } from '@/lib/clsx';
 import {
   TOOL_REGISTRY,
   getToolHref,
@@ -102,6 +103,18 @@ const services: NavItem[] = [
   },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
+  {
+    href: '/uslugi/strona-internetowa-dla-psychologa',
+    title: 'Strona internetowa dla psychologa',
+  },
+  {
+    href: '/uslugi/strona-internetowa-dla-firmy-wykonczeniowej',
+    title: 'Strona internetowa dla firmy wykończeniowej',
+  },
+  {
+    href: '/uslugi/strona-internetowa-dla-firmy-budowlanej',
+    title: 'Strona internetowa dla firmy budowlanej',
+  },
   {
     href: '/uslugi/projekty-graficzne',
     title: 'Projekty graficzne',
@@ -199,7 +212,7 @@ export default function SitemapPage() {
 
         <nav aria-label='Mapa strony'>
           <SectionInfo title='Usługi'>
-            <NestedList items={services} />
+            <NestedList items={services} columns={4} />
           </SectionInfo>
 
           <Divider line size='sm' />
@@ -211,9 +224,9 @@ export default function SitemapPage() {
               </InlineLink>
             </p>
             {showAllPortfolio ? (
-              <ul className='mt-2 space-y-2'>
+              <ul className='mt-2 columns-1 gap-6 sm:columns-2'>
                 {portfolioItems.map(item => (
-                  <li key={item.href}>
+                  <li key={item.href} className='mb-2 break-inside-avoid'>
                     <InlineLink href={item.href}>{item.title}</InlineLink>
                   </li>
                 ))}
@@ -229,7 +242,7 @@ export default function SitemapPage() {
                 Wszystkie artykuły
               </InlineLink>
             </p>
-            <NestedList items={blogCategories} />
+            <NestedList items={blogCategories} columns={2} />
           </SectionInfo>
 
           <Divider line size='sm' />
@@ -272,11 +285,20 @@ export default function SitemapPage() {
   );
 }
 
-function NestedList({ items }: { items: NavItem[] }) {
+function NestedList({ items, columns }: { items: NavItem[]; columns?: 2 | 4 }) {
+  let columnsClass = '';
+  if (columns === 4) {
+    columnsClass = 'columns-1 gap-6 sm:columns-2 lg:columns-4';
+  } else if (columns === 2) {
+    columnsClass = 'columns-1 gap-6 sm:columns-2';
+  }
   return (
-    <ul className='space-y-2'>
+    <ul className={cn(columns ? columnsClass : 'space-y-2')}>
       {items.map(item => (
-        <li key={item.href}>
+        <li
+          key={item.href}
+          className={cn(columns ? 'mb-3 break-inside-avoid' : undefined)}
+        >
           <InlineLink href={item.href} className='font-medium'>
             {item.title}
           </InlineLink>

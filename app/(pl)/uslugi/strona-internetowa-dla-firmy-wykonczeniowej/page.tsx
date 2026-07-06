@@ -521,9 +521,10 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
           plans={[
             {
               name: 'Strona podstawowa',
+              technology: 'WordPress',
               price: '2 200 - 2 800 zł',
               description:
-                'Dla firmy, która potrzebują solidnej strony z ofertą i formularzem wyceny.',
+                'Dla firmy, która potrzebuje solidnej strony z ofertą i formularzem wyceny.',
               features: [
                 'Strona główna, strony ofertowe, strona o firmie i kontakt',
                 'Formularz wyceny',
@@ -535,32 +536,37 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
               btnOneHref: '#kontakt',
             },
             {
-              name: 'Strona z pozycjonowaniem',
-              price: '2 800 - 3 600 zł',
+              name: 'Rozbudowana strona firmowa',
+              technology: 'WordPress',
+              price: '3 500 - 4 800 zł',
               description:
-                'Dla firmy, która chce pozyskiwać zlecenia z Google w swojej okolicy.',
+                'Dla firmy z szeroką ofertą, która chce pozyskiwać zlecenia z Google w swojej okolicy.',
               features: [
                 'Wszystko z pakietu strony podstawowej',
                 'Więcej podstrony dla poszczególnych usług',
+                'Rozbudowana galeria realizacji według typu prac',
                 'Konfiguracja bloga eksperckiego',
-                'Pozycjonowanie stron ofertowych',
-                'Optymalizacja pod SEO lokalne',
+                'Analiza konkurencji i strategia SEO',
+                'Pozycjonowanie stron ofertowych i SEO lokalne',
+                'Kalkulator wycen',
               ],
               btnOne: 'Umów bezpłatną konsultację',
               btnOneHref: '#kontakt',
               lastPlan: true,
             },
             {
-              name: 'Rozbudowana strona firmowa',
-              price: '3 600 - 4 200 zł',
+              name: 'Strona w technologii Next.js',
+              technology: 'Next.js',
+              price: 'od 8 000 zł',
               description:
-                'Dla większej firmy z szeroką ofertą i wieloma realizacjami.',
+                'Dla firmy, która chce najszybszej strony i pewności wysokiej pozycji w Google.',
               features: [
-                'Wszystko z pakietu z pozycjonowaniem',
-                'Rozbudowana galeria według typu prac',
-                'Podstrony realizacji i inwestycji',
-                'Regulamin świadczenia usług',
-                'Zaawansowane kalkulatory kosztów',
+                'Wszystko z pakietu rozbudowanej strony firmowej',
+                'Błyskawiczna prędkość (Core Web Vitals) jako przewaga w Google',
+                'Pewność wysokiej pozycji na trudne, konkurencyjne frazy',
+                'Zaawansowany kalkulator wyceny liczony na żywo, bez wtyczek',
+                'Galeria przed i po z dużą liczbą zdjęć bez utraty prędkości',
+                'Możliwość zbudowania dedykowanych narzędzi i rozwiązań dla klientów oraz zespołu',
               ],
               btnOne: 'Umów bezpłatną konsultację',
               btnOneHref: '#kontakt',
@@ -709,7 +715,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
 
       <CTABanner
         title='Zbudujmy stronę, która przynosi Twojej firmie zlecenia'
-        description='Umów bezpłatną konsultację. Doradzimy najlepsze rozwiązanie, pokażemy możliwości i przygotujemy bezpłatną, niezobowiązującą wycenę.'
+        description='Umów bezpłatną konsultację. Doradzimy najlepsze rozwiązanie, pokażemy możliwości i przygotujemy bezpłatną wycenę.'
         btnOne='Umów bezpłatną konsultację'
         btnOneHref='#kontakt'
         backgroundImage='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'

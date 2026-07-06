@@ -18,6 +18,7 @@ type SectionPricesPlan = {
   name: string;
   platform?: string;
   price: string;
+  technology?: string;
   description: string;
   features: string[];
   lastPlan?: boolean;
@@ -106,9 +107,10 @@ export default function SectionPrices({
             ? `${itemId}-platform`
             : undefined;
           const itemPriceId = `${itemId}-price`;
+          const itemTechId = plan.technology ? `${itemId}-tech` : undefined;
           const itemDescId = `${itemId}-desc`;
           const itemDescribedBy =
-            [itemPlatformId, itemPriceId, itemDescId]
+            [itemPlatformId, itemPriceId, itemTechId, itemDescId]
               .filter(Boolean)
               .join(' ') || undefined;
 
@@ -154,6 +156,15 @@ export default function SectionPrices({
                     {plan.price}
                   </span>
                 </p>
+
+                {plan.technology && (
+                  <p id={itemTechId} className='mt-2 text-sm text-light'>
+                    Technologia:{' '}
+                    <span className='font-medium text-dark'>
+                      {plan.technology}
+                    </span>
+                  </p>
+                )}
 
                 <p id={itemDescId} className='mt-2 text-[15px] leading-relaxed'>
                   {plan.description}

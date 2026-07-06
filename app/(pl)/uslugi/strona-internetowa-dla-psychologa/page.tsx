@@ -430,7 +430,7 @@ export default function StronaDlaPsychologaPage() {
               {
                 icon: RiPriceTag3Line,
                 title: 'Brak opłat abonamentowych',
-                text: 'Nie pobieramy comiesięcznych opłat za samą stronę. Płacisz jednorazowo, a licencję Elementor Pro dostajesz w cenie.',
+                text: 'Nie pobieramy comiesięcznych opłat za samą stronę. Płacisz jednorazowo, a licencję Elementor Pro dostajesz w cenie, jeśli stronę realizujemy w Wordpressie.',
               },
               {
                 icon: RiKey2Line,
@@ -459,6 +459,7 @@ export default function StronaDlaPsychologaPage() {
           plans={[
             {
               name: 'Gabinet indywidualny',
+              technology: 'WordPress',
               price: '2 200 - 2 800 zł',
               description:
                 'Dla psychologa lub psychoterapeuty pracującego samodzielnie.',
@@ -473,32 +474,36 @@ export default function StronaDlaPsychologaPage() {
               btnOneHref: '#kontakt',
             },
             {
-              name: 'Gabinet z blogiem i testem',
-              price: '2 800 - 3 600 zł',
+              name: 'Ośrodek z zespołem i blogiem',
+              technology: 'WordPress',
+              price: '3 500 - 4 800 zł',
               description:
-                'Dla terapeuty, który buduje pozycję eksperta i pozyskuje pacjentów z Google.',
+                'Dla ośrodka z zespołem specjalistów, blogiem czy sprzedażą materiałów cyfrowych.',
               features: [
                 'Wszystko z pakietu gabinetu indywidualnego',
+                'Osobna podstrona dla każdego specjalisty',
+                'Sklep z materiałami cyfrowymi i płatności (audio, wideo, PDF)',
                 'Konfiguracja bloga eksperckiego',
-                'Dowolny test przesiewowy dla pacjentów',
-                'Pozycjonowanie stron ofertowych',
-                'Optymalizacja pod SEO lokalne',
+                'Analiza konkurencji i strategia SEO',
+                'Pozycjonowanie stron ofertowych i SEO lokalne',
+                'Interaktywny test przesiewowy',
               ],
               btnOne: 'Umów bezpłatną konsultację',
               btnOneHref: '#kontakt',
               lastPlan: true,
             },
             {
-              name: 'Ośrodek z zespołem',
-              price: '3 600 - 4 200 zł',
+              name: 'Ośrodek w technologii Next.js',
+              technology: 'Next.js',
+              price: 'od 8 000 zł',
               description:
-                'Dla ośrodka z kilkoma specjalistami i sprzedażą materiałów cyfrowych.',
+                'Dla ośrodka, który chce najwyższej pozycji w Google i dedykowanych narzędzi dla pacjentów.',
               features: [
-                'Wszystko z pakietu gabinetu z blogiem',
-                'Osobna podstrona dla każdego specjalisty',
-                'Wybór specjalisty pod problem pacjenta',
-                'Sklep z materiałami cyfrowymi (audio, wideo, PDF)',
-                'Konfiguracja płatności',
+                'Wszystko z pakietu ośrodka z zespołem',
+                'Błyskawiczna prędkość jako przewaga w Google',
+                'Pewność wysokiej pozycji na trudne, konkurencyjne frazy',
+                'Interaktywny test przesiewowy z pełną prywatnością danych (RODO)',
+                'Możliwość zbudowania dedykowanych narzędzi i rozwiązań dla pacjentów oraz zespołu',
               ],
               btnOne: 'Umów bezpłatną konsultację',
               btnOneHref: '#kontakt',
@@ -647,7 +652,7 @@ export default function StronaDlaPsychologaPage() {
 
       <CTABanner
         title='Zbudujmy stronę dla Twojego gabinetu psychoterapii'
-        description='Umów bezpłatną konsultację. Doradzimy najlepsze rozwiązanie, pokażemy możliwości i przygotujemy bezpłatną, niezobowiązującą wycenę.'
+        description='Umów bezpłatną konsultację. Doradzimy najlepsze rozwiązanie, pokażemy możliwości i przygotujemy bezpłatną wycenę.'
         btnOne='Umów bezpłatną konsultację'
         btnOneHref='#kontakt'
         backgroundImage='/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp'
