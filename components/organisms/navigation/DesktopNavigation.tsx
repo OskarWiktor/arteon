@@ -12,6 +12,7 @@ import {
 import type {
   ToolsSectionKey,
   OfferSectionKey,
+  OfferSectionItem,
 } from '@/data/pl/navigation-data-pl';
 import { useAnimatedUnmount } from '@/hooks/useAnimatedUnmount';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
@@ -168,6 +169,34 @@ function OfferNavItem({
         </span>
       </button>
     </li>
+  );
+}
+
+/** A single offer link inside the mega-menu content area (shared by flat and grouped layouts) */
+function OfferItemLink({ item }: { item: OfferSectionItem }) {
+  const ItemIcon = item.icon;
+  return (
+    <InlineLink
+      href={item.href}
+      role='menuitem'
+      tabIndex={-1}
+      className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
+    >
+      {ItemIcon ? (
+        <ItemIcon
+          className={cn(
+            'shrink-0 text-primary-mid transition-colors group-hover/link:text-primary',
+            normalIconSizeClasses,
+          )}
+          aria-hidden='true'
+        />
+      ) : (
+        <span className='h-2 w-2 shrink-0 rounded-lg bg-primary-light' />
+      )}
+      <span className='text-sm font-medium text-mid transition-colors group-hover/link:text-primary'>
+        {item.title}
+      </span>
+    </InlineLink>
   );
 }
 
@@ -537,35 +566,28 @@ export default function DesktopNavigation() {
                     key={activeOfferCategory}
                     className='animate-[fade-slide-in_0.15s_ease-out_both]'
                   >
-                    <div className='grid grid-cols-4 gap-2'>
-                      {activeSection.items.map(item => {
-                        const ItemIcon = item.icon;
-                        return (
-                          <InlineLink
-                            key={item.href}
-                            href={item.href}
-                            role='menuitem'
-                            tabIndex={-1}
-                            className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
-                          >
-                            {ItemIcon ? (
-                              <ItemIcon
-                                className={cn(
-                                  'shrink-0 text-primary-mid transition-colors group-hover/link:text-primary',
-                                  normalIconSizeClasses,
-                                )}
-                                aria-hidden='true'
-                              />
-                            ) : (
-                              <span className='h-2 w-2 shrink-0 rounded-lg bg-primary-light' />
-                            )}
-                            <span className='text-sm font-medium text-mid transition-colors group-hover/link:text-primary'>
-                              {item.title}
-                            </span>
-                          </InlineLink>
-                        );
-                      })}
-                    </div>
+                    {activeSection.groups ? (
+                      <div className='grid grid-cols-2 gap-x-8 gap-y-4'>
+                        {activeSection.groups.map(group => (
+                          <div key={group.key}>
+                            <p className='mb-1 px-3 text-xs! font-semibold tracking-wider text-light uppercase'>
+                              {group.title}
+                            </p>
+                            <div className='grid grid-cols-2 gap-2'>
+                              {group.items.map(item => (
+                                <OfferItemLink key={item.href} item={item} />
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className='grid grid-cols-4 gap-2'>
+                        {activeSection.items.map(item => (
+                          <OfferItemLink key={item.href} item={item} />
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

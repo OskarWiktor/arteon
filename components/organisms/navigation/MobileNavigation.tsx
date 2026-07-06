@@ -10,6 +10,7 @@ import {
   MOBILE_NAV_ITEMS_PL,
   OFFER_SECTIONS_PL,
 } from '@/data/pl/navigation-data-pl';
+import type { OfferSectionItem } from '@/data/pl/navigation-data-pl';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useEventListener } from '@/hooks/useEventListener';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
@@ -29,11 +30,13 @@ import {
 import IconText from '../../atoms/IconText';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
+type SectionGroup = { key: string; title: string; items: SectionLink[] };
 type Section = {
   key: 'witryny' | 'marketing' | 'grafika' | 'tresc';
   title: string;
   hubHref?: string;
   items: SectionLink[];
+  groups?: SectionGroup[];
 };
 
 type ToolSectionLink = { href: string; title: string; icon?: JSX.Element };
@@ -67,6 +70,37 @@ function onListKeyDown(container: HTMLElement, e: React.KeyboardEvent) {
     e.preventDefault();
     arr[arr.length - 1]?.focus();
   }
+}
+
+function MobileOfferLink({
+  item,
+  onNavigate,
+}: {
+  item: SectionLink;
+  onNavigate: () => void;
+}) {
+  return (
+    <li>
+      <Link
+        href={item.href}
+        prefetch={false}
+        onClick={onNavigate}
+        className='group flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] text-dark transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+      >
+        <IconText
+          icon={
+            item.icon ? (
+              <span className='text-primary'>{item.icon}</span>
+            ) : undefined
+          }
+          gap='3'
+          className='min-w-0'
+        >
+          <span className='text-[15px] text-dark'>{item.title}</span>
+        </IconText>
+      </Link>
+    </li>
+  );
 }
 
 function MobileOfferSections({
@@ -144,43 +178,53 @@ function MobileOfferSections({
                 className='animate-[dropdown-in_0.2s_ease-out_both]'
               >
                 <div className='ml-3 border-l border-neutral-200 pl-3'>
-                  {/* Lista linków nawigacji z progresywną obsługą strzałek
+                  {/* Listy linków nawigacji z progresywną obsługą strzałek
                       (roving focus). Elementy są Tab-nawigowalne; strzałki
                       to dodatek. Reguła daje tu false-positive dla <ul>. */}
-                  {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
-                  <ul
-                    className='flex flex-col gap-1 py-1'
-                    onKeyDown={e => {
-                      const container =
-                        e.currentTarget as unknown as HTMLElement;
-                      onListKeyDown(container, e);
-                    }}
-                  >
-                    {sec.items.map(it => (
-                      <li key={it.href}>
-                        <Link
-                          href={it.href}
-                          prefetch={false}
-                          onClick={onNavigate}
-                          className='group flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] text-dark transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+                  {sec.groups ? (
+                    sec.groups.map(group => (
+                      <div key={group.key} className='py-1'>
+                        <p className='px-2 pt-1 pb-0.5 text-xs! font-semibold tracking-wider text-light uppercase'>
+                          {group.title}
+                        </p>
+                        {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
+                        <ul
+                          className='flex flex-col gap-1 pb-1'
+                          onKeyDown={e => {
+                            const container =
+                              e.currentTarget as unknown as HTMLElement;
+                            onListKeyDown(container, e);
+                          }}
                         >
-                          <IconText
-                            icon={
-                              it.icon ? (
-                                <span className='text-primary'>{it.icon}</span>
-                              ) : undefined
-                            }
-                            gap='3'
-                            className='min-w-0'
-                          >
-                            <span className='text-[15px] text-dark'>
-                              {it.title}
-                            </span>
-                          </IconText>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                          {group.items.map(it => (
+                            <MobileOfferLink
+                              key={it.href}
+                              item={it}
+                              onNavigate={onNavigate}
+                            />
+                          ))}
+                        </ul>
+                      </div>
+                    ))
+                  ) : (
+                    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
+                    <ul
+                      className='flex flex-col gap-1 py-1'
+                      onKeyDown={e => {
+                        const container =
+                          e.currentTarget as unknown as HTMLElement;
+                        onListKeyDown(container, e);
+                      }}
+                    >
+                      {sec.items.map(it => (
+                        <MobileOfferLink
+                          key={it.href}
+                          item={it}
+                          onNavigate={onNavigate}
+                        />
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             )}
@@ -583,21 +627,27 @@ export default function MobileNavigation({
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
   const NAV = isPl ? MOBILE_NAV_ITEMS_PL : [];
+  const toSectionLink = (it: OfferSectionItem): SectionLink => {
+    const Icon = it.icon;
+    return {
+      href: it.href,
+      title: it.title,
+      icon: Icon ? (
+        <Icon aria-hidden className={normalIconSizeClasses} />
+      ) : undefined,
+    };
+  };
   const SECTIONS: Section[] = isPl
     ? OFFER_SECTIONS_PL.map(section => ({
         key: section.key,
         title: section.title,
         hubHref: section.hubHref,
-        items: section.items.map(it => {
-          const Icon = it.icon;
-          return {
-            href: it.href,
-            title: it.title,
-            icon: Icon ? (
-              <Icon aria-hidden className={normalIconSizeClasses} />
-            ) : undefined,
-          };
-        }),
+        items: section.items.map(toSectionLink),
+        groups: section.groups?.map(group => ({
+          key: group.key,
+          title: group.title,
+          items: group.items.map(toSectionLink),
+        })),
       }))
     : [];
 

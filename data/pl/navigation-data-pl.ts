@@ -4,6 +4,7 @@ import {
   RiArticleLine,
   RiBookletLine,
   RiBrushLine,
+  RiBuilding2Line,
   RiCodeSSlashFill,
   RiContrast2Line,
   RiCoupon2Line,
@@ -20,6 +21,8 @@ import {
   RiLoopLeftLine,
   RiMailLine,
   RiMegaphoneLine,
+  RiMentalHealthLine,
+  RiPaintBrushLine,
   RiPaletteLine,
   RiPantoneLine,
   RiPriceTag3Line,
@@ -59,6 +62,9 @@ export type OfferItemKey =
   | 'websites'
   | 'shops'
   | 'blogs'
+  | 'websitePsychologist'
+  | 'websiteFinishing'
+  | 'websiteConstruction'
   | 'auditSeo'
   | 'optimizationSeo'
   | 'positioning'
@@ -87,12 +93,24 @@ export type OfferSectionItem = {
   icon?: IconType;
 };
 
+export type OfferSubGroup = {
+  key: string;
+  title: string;
+  items: OfferSectionItem[];
+};
+
 export type OfferSection = {
   key: OfferSectionKey;
   title: string;
   hubHref?: string;
   icon?: IconType;
   items: OfferSectionItem[];
+  /**
+   * Optional labelled sub-groups (e.g. "Oferty ogólne" / "Oferty specjalne").
+   * When present, desktop and mobile navigation render these groups with headings;
+   * `items` stays the flat concatenation used by search index, sitemap and the offer hub.
+   */
+  groups?: OfferSubGroup[];
 };
 
 export const DESKTOP_NAV_ITEMS_PL: HeaderNavItem[] = [
@@ -108,35 +126,70 @@ export const MOBILE_NAV_ITEMS_PL: HeaderNavItem[] = DESKTOP_NAV_ITEMS_PL.filter(
   it => it.key !== 'uslugi',
 );
 
+export const OFFER_WITRYNY_GENERAL_PL: OfferSectionItem[] = [
+  {
+    key: 'websites',
+    href: '/uslugi/tworzenie-stron-wordpress',
+    title: 'Tworzenie stron WordPress',
+    icon: RiCodeSSlashFill,
+  },
+  {
+    key: 'wordpressOptimization',
+    href: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+    title: 'Optymalizacja strony WordPress',
+    icon: RiCodeSSlashFill,
+  },
+  {
+    key: 'shops',
+    href: '/uslugi/sklepy-internetowe',
+    title: 'Tworzenie sklepów internetowych',
+    icon: RiShoppingCartLine,
+  },
+  {
+    key: 'blogs',
+    href: '/uslugi/blogi-internetowe',
+    title: 'Tworzenie blogów internetowych',
+    icon: RiArticleLine,
+  },
+];
+
+export const OFFER_WITRYNY_SPECIAL_PL: OfferSectionItem[] = [
+  {
+    key: 'websitePsychologist',
+    href: '/uslugi/strona-internetowa-dla-psychologa',
+    title: 'Strona dla psychologa',
+    icon: RiMentalHealthLine,
+  },
+  {
+    key: 'websiteFinishing',
+    href: '/uslugi/strona-internetowa-dla-firmy-wykonczeniowej',
+    title: 'Strona dla firmy wykończeniowej',
+    icon: RiPaintBrushLine,
+  },
+  {
+    key: 'websiteConstruction',
+    href: '/uslugi/strona-internetowa-dla-firmy-budowlanej',
+    title: 'Strona dla firmy budowlanej',
+    icon: RiBuilding2Line,
+  },
+];
+
 export const OFFER_SECTIONS_PL: OfferSection[] = [
   {
     key: 'witryny',
     title: 'Witryny',
     icon: RiGlobalLine,
-    items: [
+    items: [...OFFER_WITRYNY_GENERAL_PL, ...OFFER_WITRYNY_SPECIAL_PL],
+    groups: [
       {
-        key: 'websites',
-        href: '/uslugi/tworzenie-stron-wordpress',
-        title: 'Tworzenie stron WordPress',
-        icon: RiCodeSSlashFill,
+        key: 'general',
+        title: 'Oferty ogólne',
+        items: OFFER_WITRYNY_GENERAL_PL,
       },
       {
-        key: 'wordpressOptimization',
-        href: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
-        title: 'Optymalizacja strony WordPress',
-        icon: RiCodeSSlashFill,
-      },
-      {
-        key: 'shops',
-        href: '/uslugi/sklepy-internetowe',
-        title: 'Tworzenie sklepów internetowych',
-        icon: RiShoppingCartLine,
-      },
-      {
-        key: 'blogs',
-        href: '/uslugi/blogi-internetowe',
-        title: 'Tworzenie blogów internetowych',
-        icon: RiArticleLine,
+        key: 'special',
+        title: 'Oferty specjalne',
+        items: OFFER_WITRYNY_SPECIAL_PL,
       },
     ],
   },
