@@ -216,6 +216,22 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
           />
         )}
 
+        {/* Google tag (gtag.js) — Google Ads (AW-18301493133) + GA4 (G-E036QL494E),
+            ładowane globalnie. gtag.js wczytujemy raz i konfigurujemy oba ID. */}
+        <Script
+          id='gtag-ads-ga4-src'
+          src='https://www.googletagmanager.com/gtag/js?id=AW-18301493133'
+          strategy='afterInteractive'
+        />
+        <Script
+          id='gtag-ads-ga4-init'
+          strategy='afterInteractive'
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','AW-18301493133');gtag('config','G-E036QL494E');",
+          }}
+        />
+
         <Analytics />
         <SpeedInsights sampleRate={0.02} />
       </body>
