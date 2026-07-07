@@ -6,7 +6,7 @@
  * thousand five hundred point five. Everything else (just 'en' here)
  * uses a dot decimal separator and a comma thousands separator.
  */
-const COMMA_DECIMAL_LOCALES: ReadonlySet<Locale> = new Set([
+export const COMMA_DECIMAL_LOCALES: ReadonlySet<Locale> = new Set([
   'pl',
   'de',
   'es',

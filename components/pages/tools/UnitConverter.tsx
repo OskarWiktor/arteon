@@ -10,6 +10,7 @@ import { getToolHref } from '@/lib/i18n/toolRegistry';
 import { useDictionary, useLocale } from '@/lib/LocaleContext';
 import { getUnitLabel } from '@/lib/tools/unitLabels';
 import { getUnitConversion } from '@/lib/tools/units/conversions';
+import { formatLocaleNumber } from '@/lib/tools/units/formatLocaleNumber';
 import { parseLocaleNumber } from '@/lib/tools/units/parseLocaleNumber';
 import {
   hexToRgb,
@@ -102,9 +103,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
         : config.convert(num, extraValue ?? undefined);
 
       if (isNaN(result) || !isFinite(result)) return '';
-      return config.precision === 0
-        ? Math.round(result).toString()
-        : result.toFixed(config.precision);
+      return formatLocaleNumber(result, config.precision, locale);
     },
     [config, extraValue, locale],
   );
@@ -127,11 +126,20 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
     setTargetValue(doConvert(sourceValue, isReversed));
   }, [sourceValue, doConvert, isReversed]);
 
-  const handleSourceChange = (val: string) => {
-    setSourceValue(val);
+  // Numeric fields are rendered as type="text" (not type="number") so the
+  // raw localized string reaches parseLocaleNumber intact — a type="number"
+  // input silently strips the comma from "33,3", turning it into 333 and
+  // producing a 10x wrong result. Here we drop any character that can't be
+  // part of a number so pasting letters can't corrupt the field.
+  const sanitizeNumericInput = (val: string) =>
+    isSpecial ? val : val.replace(/[^\d.,\s-]/g, '');
+
+  const handleSourceChange = (raw: string) => {
+    setSourceValue(sanitizeNumericInput(raw));
   };
 
-  const handleTargetChange = (val: string) => {
+  const handleTargetChange = (raw: string) => {
+    const val = sanitizeNumericInput(raw);
     setTargetValue(val);
     if (!val.trim()) {
       setSourceValue('');
@@ -189,7 +197,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
           <div className='relative'>
             <InputWithLabel
               label={srcLabel}
-              type={isSpecial ? 'text' : 'number'}
+              type='text'
               inputMode={isSpecial ? 'text' : 'decimal'}
               value={sourceValue}
               onChange={handleSourceChange}
@@ -253,7 +261,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
           <div className='relative'>
             <InputWithLabel
               label={tgtLabel}
-              type={isSpecial ? 'text' : 'number'}
+              type='text'
               inputMode={isSpecial ? 'text' : 'decimal'}
               value={targetValue}
               onChange={handleTargetChange}
