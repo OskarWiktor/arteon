@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Rem σε px – μετατροπέας",
     "description": "Μετατρέψτε CSS rem σε pixel και αντίστροφα.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-rem-se-px"
   },
   "hero": {
     "title": "Rem σε px",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Rem σε px?",
       "html": "<p class=\"text-mid mb-4\">Η μονάδα CSS rem είναι σχετική με το μέγεθος γραμματοσειράς του ριζικού στοιχείου (html). Προεπιλεγμένα, οι browsers το ορίζουν σε 16px, άρα 1rem = 16px. Σε αντίθεση με το em, το rem δεν σωρεύεται — αναφέρεται πάντα στη ρίζα.</p><p class=\"text-mid mb-4\">Το rem είναι η συνιστώμενη μονάδα για σύγχρονο responsive web design. Προσφέρει συνεπή, κλιμακούμενη διαστασιολόγηση που σέβεται τις προτιμήσεις προσβασιμότητας του χρήστη.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας — τίποτα δεν αποστέλλεται σε κανέναν server.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Rem σε px – Arteon"
     },
     {
@@ -233,7 +233,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "rem σε px – Arteon",
       "defaultSubject": "Feedback: rem-to-px"
     },

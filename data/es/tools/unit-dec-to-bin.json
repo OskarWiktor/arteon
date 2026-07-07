@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir decimal a binario?",
       "html": "<p class=\"text-mid mb-4\">Binario (base-2) es el sistema numérico fundamental de los ordenadores. Cada dato — texto, imágenes, programas — se almacena como secuencia de 0s y 1s.</p><p class=\"text-mid mb-4\">Cada dígito binario (bit) representa una potencia de 2: ...128, 64, 32, 16, 8, 4, 2, 1. Ejemplo: decimal 42 = binario 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Aplicaciones comunes: direcciones IP, máscaras de subred, operaciones a nivel de bits, permisos (chmod).</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor de decimal a binario – Arteon"
     },
     {

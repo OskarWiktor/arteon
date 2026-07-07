@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Inches to MM Calculator – Convert Inches to Millimeters",
     "description": "Convert inches to millimeters. The full inch fraction table in 1/32 steps shows mm equivalents for drill bits, bolts, and socket wrenches. The converter works both ways and calculates instantly.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/inches-to-mm-converter"
   },
   "hero": {
     "title": "Convert inches to millimeters",
     "description": "Enter a value in inches and instantly see the result in millimeters. The converter comes in handy wherever tools, bolts, or materials are sized in inches or inch fractions: picking a drill bit, a socket wrench, an inch-thread bolt, or checking the metric equivalent of a material thickness for a European supplier.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "When do you need to convert inches to millimeters?",
       "html": "<p class=\"text-mid mb-4\">The inch is the standard unit for tools, bolts, and building materials in the United States and is still common in the United Kingdom, Canada, and Australia. The rest of the world works in millimeters, so the conversion comes up whenever an inch dimension has to meet a metric one — often in fractional form like 3/8 or 9/16.</p><p class=\"text-mid mb-4\">The most common situations: you want to know how many millimeters a 3/8 inch drill bit is, you are matching a socket wrench to a metric bolt on a European car, or you are sending a 1/8 inch sheet thickness to a supplier who works in millimeters.</p><p class=\"text-mid mb-4\">The formula is simple: one inch is exactly 25.4 mm. To convert inches to millimeters, multiply the number of inches by 25.4. The converter does this the moment you type a value.</p><p class=\"text-mid\">On this page you will find an inches-to-mm conversion table and the full inch fraction table in 1/32 steps, covering every size from 1/32 to 1 inch.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free inches to millimeters converter – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -301,6 +301,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "title": "Have a question or suggestion?",
       "description": "If you spot an error in the tables or have an idea for improving the converter, get in touch. We reply to every message.",
       "imageAlt": "Contact Arteon Agency",

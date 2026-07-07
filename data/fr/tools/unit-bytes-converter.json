@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quand faut-il convertir des octets ?",
       "html": "<p class=\"text-mid mb-4\">Le stockage numérique se mesure en octets et leurs multiples : kilo-octet (Ko), mégaoctet (Mo), gigaoctet (Go) et téraoctet (To). Deux systèmes existent : décimal (1 Ko = 1 000 octets) et binaire (1 Kio = 1 024 octets).</p><p class=\"text-mid mb-4\">Les fabricants utilisent le décimal (un disque de « 500 Go » = 500 000 000 000 octets), tandis que les systèmes d’exploitation utilisent le binaire (affichant ~465 Gio pour le même disque).</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur d'octets – Ko, Mo, Go, To – Arteon"
     },
     {

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας κιλών σε λίβρες – υπολογιστής kg lb",
     "description": "Μετατρέψτε κιλά σε λίβρες άμεσα. Χρήσιμο για σωματικό βάρος, φορτία γυμναστηρίου, όρια αποσκευών και βάρος νεογνού. Πίνακας 0,5–200 kg με στήλη stone.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-kg-se-livres"
   },
   "hero": {
     "title": "Μετατρέψτε κιλά σε λίβρες",
     "description": "Εισαγάγετε οποιαδήποτε τιμή σε κιλά και το αποτέλεσμα σε λίβρες εμφανίζεται αμέσως. Ο μετατροπέας είναι χρήσιμος για τον έλεγχο του σωματικού βάρους στο αυτοκρατορικό σύστημα, την ανάγνωση ορίων αποσκευών σε λίβρες, τη σύγκριση αθλητικών επιδόσεων με αμερικανικούς πίνακες ή τη μετατροπή του βάρους γέννησης νεογνού.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -85,7 +85,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεται να μετατρέψετε κιλά σε λίβρες;",
       "html": "<p class=\"text-mid mb-4\">Το κιλό είναι η τυπική μονάδα μάζας στην Ελλάδα. Η λίβρα (lb) κυριαρχεί στις ΗΠΑ και παραμένει συνηθισμένη στο Ηνωμένο Βασίλειο, ιδιαίτερα για το σωματικό βάρος — όπου οι Βρετανοί χρησιμοποιούν επίσης το stone (1 stone = 14 λίβρες = περίπου 6,35 kg).</p><p class=\"text-mid mb-4\">Η μετατροπή kg σε λίβρες είναι απαραίτητη όταν ελέγχετε το βάρος σας σε αμερικανική εφαρμογή υγείας, αγοράζετε αθλητικό εξοπλισμό που περιγράφεται σε λίβρες, ερμηνεύετε ένα όριο αποσκευών σε lb ή θέλετε να γνωρίζετε το βάρος γέννησης νεογνού σε ξενόγλωσσα έγγραφα νοσοκομείου.</p><p class=\"text-mid mb-4\">Μια λίβρα ισοδυναμεί ακριβώς με 0,45359237 kg — τιμή που ισχύει ως σταθερά από το 1959. Αντίστροφα: 1 kg = 2,2046 λίβρες. Ο μετατροπέας υπολογίζει το αποτέλεσμα αμέσως μόλις πληκτρολογήσετε.</p><p class=\"text-mid\">Σε αυτή τη σελίδα θα βρείτε πίνακα kg σε λίβρες για τιμές 0,5–200 kg, πίνακα σωματικού βάρους με στήλη stone και πίνακα βαρών γυμναστηρίου.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Δωρεάν μετατροπέας κιλών σε λίβρες – Arteon"
     },
     {
@@ -381,6 +381,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "title": "Έχετε κάποια ερώτηση ή πρόταση;",
       "description": "Αν εντοπίσετε κάποιο σφάλμα στους πίνακες ή έχετε ιδέα για βελτίωση του μετατροπέα, γράψτε μας. Απαντάμε σε κάθε μήνυμα.",
       "imageAlt": "Επικοινωνία με την Arteon Agency",

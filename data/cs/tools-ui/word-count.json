@@ -10,6 +10,7 @@
   "syllables": "Slabiky",
   "readability": "Čitelnost (Flesch)",
   "readabilityHint": "Pro webový obsah v češtině miřte na 50–70.",
+  "readabilityUnsupported": "Hodnocení čitelnosti funguje pro text psaný latinkou nebo řeckou abecedou.",
   "copyText": "Kopírovat text",
   "copied": "Zkopírováno",
   "clearText": "Smazat",

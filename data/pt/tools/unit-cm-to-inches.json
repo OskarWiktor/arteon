@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculadora cm para polegadas – converter centímetros em polegadas",
     "description": "Converta centímetros em polegadas instantaneamente. Verifique a altura, tamanhos de roupa, diagonal de TV e medidas de bagagem. Tabela de conversão cm para polegadas e polegadas para cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-cm-para-polegadas"
   },
   "hero": {
     "title": "Converter centímetros em polegadas",
     "description": "Introduza qualquer valor em centímetros e obtenha imediatamente o resultado em polegadas. Este conversor é útil em todos os contextos onde as medidas são expressas no sistema imperial: ao verificar a altura, ao comprar eletrónica, ao encomendar roupa em lojas americanas ou britânicas, ou ao confirmar as dimensões permitidas da bagagem.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Porquê converter centímetros em polegadas?",
       "html": "<p class=\"text-mid mb-4\">O centímetro é a unidade de comprimento do quotidiano em Portugal e em todo o mundo lusófono. A polegada, por sua vez, domina nos Estados Unidos e ainda é amplamente utilizada no Reino Unido. A necessidade de converter surge quando compra uma televisão cuja diagonal é expressa em polegadas, verifica as medidas permitidas da bagagem no sítio de uma companhia aérea americana ou compara a sua altura com uma tabela de tamanhos de uma loja britânica.</p><p class=\"text-mid mb-4\">Uma polegada equivale exatamente a 2,54 cm. Esta relação é fixa e universal, pelo que qualquer conversão se resume a uma única divisão. O conversor faz isso por si assim que introduz um valor.</p><p class=\"text-mid mb-4\">Mais abaixo encontrará uma tabela de conversão cm para polegadas para valores de 0,5 a 200 cm, uma tabela de altura com o equivalente em pés e polegadas e uma tabela de diagonais de ecrã populares.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor gratuito de centímetros para polegadas – Arteon"
     },
     {
@@ -577,6 +577,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "title": "Tem alguma pergunta ou sugestão?",
       "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, contacte-nos. Respondemos a todas as mensagens.",
       "imageAlt": "Contacto com Arteon Agency",

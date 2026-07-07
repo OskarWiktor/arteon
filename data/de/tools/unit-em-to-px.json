@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Wann muss man em in Pixel umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit em ist relativ zur Schriftgröße des übergeordneten Elements. Bei der Standardgröße von 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Im Gegensatz zu rem (relativ zum Wurzelelement) kaskadiert em: 1,5em × 1,5em = 2,25× der Basisgröße.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "EM in Pixel umrechnen – CSS-Einheiten-Rechner – Arteon"
     },
     {

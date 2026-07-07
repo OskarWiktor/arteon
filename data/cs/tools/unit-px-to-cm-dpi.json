@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Kalkulačka px na cm (DPI) – převeďte pixely na centimetry",
     "description": "Převeďte pixely na centimetry s nastavitelným DPI. Ideální nástroj pro grafiky, fotografy a tvůrce, kteří kontrolují tiskovou velikost obrazovkových souborů.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-px-na-cm"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Proč převádět pixely na centimetry?",
       "html": "<p class=\"text-mid mb-4\">Pixel je digitální jednotka, která popisuje jeden bod na obrazovce telefonu, tabletu nebo monitoru. Centimetr naopak vládne fyzickému světu papíru a tisku. Abyste převedli jeden na druhý, musíte znát rozlišení DPI, tedy počet pixelů, který se vejde na jeden palec materiálu nebo obrazovky.</p><p class=\"text-mid mb-4\">Takové převody nejčastěji provádějí grafici, kteří chtějí zjistit, jak velký bude jejich projekt po vytištění, fotografové posuzující, zda soubor z fotoaparátu vystačí na konkrétní formát fotografie, a lidé připravující snímky obrazovky nebo grafiku z internetu k tisku. Převodník vás zbavuje ručního počítání a pamatování vzorce.</p><p class=\"text-mid\">Dále na stránce najdete rozsáhlou tabulku odpovědí pro oblíbené hodnoty pixelů, samostatnou tabulku rozlišení obrazovek jako Full HD a 4K, hotové rozměry formátů papíru a fotografií a stručné návody, jak přepnout pixely na centimetry v Photoshopu, Figmě, Canvě a dalších grafických nástrojích.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník pixelů na centimetry – Arteon"
     },
     {
@@ -748,7 +748,7 @@
       "type": "contactForm",
       "title": "Pomozte nám tento převodník vylepšit",
       "description": "Chybí vám nějaká hodnota v tabulkách, našli jste chybu v převodu nebo chcete navrhnout novou funkci? Napište nám – všechny zprávy čteme osobně a odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník px na cm – Arteon",
       "defaultSubject": "Zpětná vazba: převodník px na cm"
     },

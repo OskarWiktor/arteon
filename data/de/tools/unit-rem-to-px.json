@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Wann muss man rem in Pixel umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit rem ist relativ zum Wurzelelement (html). Standard: 16px, also 1rem = 16px. Im Gegensatz zu em kaskadiert rem nicht.</p><p class=\"text-mid mb-4\">Rem ist die empfohlene Einheit für modernes responsives Webdesign.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "REM in Pixel umrechnen – CSS-Einheiten-Rechner – Arteon"
     },
     {

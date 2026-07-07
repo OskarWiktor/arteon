@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Kalkulačka palce na CM – převod palců na centimetry",
     "description": "Převeď palce na centimetry okamžitě. Zkontroluj velikost televizoru v cm, výšku v metrické soustavě, velikosti oblečení z evropských obchodů a rozměry zavazadel. Převodní tabulka palce na cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-palcu-na-cm"
   },
   "hero": {
     "title": "Převeď palce na centimetry",
     "description": "Zadej libovolnou hodnotu v palcích a okamžitě uvidíš výsledek v centimetrech. Převodník se hodí všude tam, kde potřebuješ rozumět imperiálním mírám v metrické soustavě: při kontrole velikosti televizoru, čtení rozměrů evropského produktu, porovnávání velikostí oblečení nebo převodu výšky.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Kdy je potřeba převádět palce na centimetry?",
       "html": "<p class=\"text-mid mb-4\">Palec je délková jednotka imperiálního systému, používaná hlavně v USA a stále rozšířená ve Velké Británii. V Česku a v celé Evropě používáme metrický systém, takže palce se objevují zejména při kontaktu s produkty nebo informacemi z anglosaských zemí.</p><p class=\"text-mid mb-4\">Nejčastější situace: chceš vědět, kolik centimetrů má televizor 55 palců, porovnáváš svou výšku s americkou tabulkou velikostí oblečení, kupuješ boty v britském obchodě, kde je číslo uvedeno v palcích, nebo zjišťuješ rozměry nábytku v americkém katalogu.</p><p class=\"text-mid mb-4\">Vzorec je jednoduchý: jeden palec je přesně 2,54 cm. Pro převod palců na centimetry stačí hodnotu vynásobit 2,54. Převodník to udělá ihned po zadání hodnoty.</p><p class=\"text-mid\">Na této stránce najdeš převodní tabulku palce na cm, tabulku populárních úhlopříček obrazovek a tabulku výšky s převodem stop a palců na centimetry.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník palců na centimetry – Arteon"
     },
     {
@@ -343,6 +343,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "title": "Máš otázku nebo návrh?",
       "description": "Pokud najdeš chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontakt s Arteon Agency",

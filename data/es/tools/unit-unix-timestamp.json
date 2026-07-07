@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir marcas de tiempo Unix?",
       "html": "<p class=\"text-mid mb-4\">La marca de tiempo Unix (Unix timestamp o Epoch) cuenta los segundos transcurridos desde el 1 de enero de 1970, 00:00:00 UTC. Es el estándar universal para almacenar fecha y hora en sistemas informáticos.</p><p class=\"text-mid mb-4\">Ejemplo: 1709251200 = 1 de marzo de 2024, 00:00:00 UTC. Las marcas de tiempo son independientes de zona horaria y no se ven afectadas por horario de verano.</p><p class=\"text-mid mb-4\">Este convertidor traduce entre marcas de tiempo Unix y fechas legibles, útil para desarrollo, depuración, análisis de logs y administración de bases de datos.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor de marca de tiempo Unix – Arteon"
     },
     {

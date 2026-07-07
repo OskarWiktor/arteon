@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur mm en px (DPI) – millimètres en pixels",
     "description": "Convertissez les millimètres en pixels avec un DPI réglable. Indispensable en imprimerie, pour la conception d'emballages et la préparation de fichiers dans Illustrator, InDesign et CorelDRAW.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-mm-en-px"
   },
   "hero": {
     "title": "Convertissez les millimètres en pixels avec le DPI de votre choix",
     "description": "Saisissez une valeur en millimètres, réglez la résolution DPI et lisez le résultat en pixels. Vérifiez combien de pixels correspondent à une valeur donnée en millimètres, par exemple les dimensions d'une carte de visite, d'un flyer, d'une affiche ou d'une feuille A4. Le convertisseur vous aide à choisir la bonne résolution de fichier avant de l'envoyer à l'imprimerie.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -87,7 +87,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi convertir des millimètres en pixels ?",
       "html": "<p class=\"text-mid mb-4\">Le millimètre est l'unité physique la plus précise utilisée en imprimerie, dans la conception d'emballages et en ingénierie : les imprimeurs indiquent les dimensions des cartes de visite, des flyers et des fonds perdus en millimètres. Le pixel, lui, décrit un point unique sur un écran ou dans un fichier image. Pour convertir l'un en l'autre, il faut connaître la résolution DPI, c'est-à-dire le nombre de pixels contenus dans un pouce de matériau.</p><p class=\"text-mid mb-4\">Cette conversion est surtout utilisée par les graphistes qui préparent des fichiers pour l'imprimerie, les concepteurs d'emballages qui vérifient les dimensions d'étiquettes, ainsi que par toute personne travaillant dans Illustrator, InDesign ou CorelDRAW, qui raisonne en millimètres mais doit livrer un fichier avec un nombre de pixels précis. Le convertisseur vous évite de calculer à la main et de retenir la formule.</p><p class=\"text-mid\">Plus bas sur cette page, vous trouverez un tableau détaillé pour les valeurs courantes en millimètres, un tableau inverse de pixels en millimètres, les dimensions prêtes à l'emploi des cartes de visite, flyers et formats A0–A7, ainsi que de courts guides pour passer des millimètres aux pixels dans Illustrator, InDesign, CorelDRAW, Photoshop, Figma et Canva.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur gratuit de millimètres en pixels – Arteon"
     },
     {
@@ -657,7 +657,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer ce convertisseur",
       "description": "Une valeur manque dans les tableaux, vous avez trouvé une erreur de calcul ou vous voulez proposer une nouvelle fonctionnalité ? Écrivez-nous : nous lisons chaque message personnellement et répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur mm en px – Arteon",
       "defaultSubject": "Avis : convertisseur mm en px"
     },

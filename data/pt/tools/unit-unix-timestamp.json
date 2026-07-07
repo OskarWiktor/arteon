@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando precisa converter timestamps Unix?",
       "html": "<p class=\"text-mid mb-4\">O timestamp Unix (ou Epoch) conta os segundos decorridos desde 1º de janeiro de 1970, 00:00:00 UTC. É o padrão universal para armazenar data e hora em sistemas de computação.</p><p class=\"text-mid mb-4\">Exemplo: 1709251200 = 1º de março de 2024, 00:00:00 UTC. Os timestamps são independentes de fuso horário.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor de timestamp Unix – Arteon"
     },
     {

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculadora mm a pulgadas – convertir milímetros a pulgadas",
     "description": "Convierte milímetros a pulgadas. Las tablas incluidas muestran también las fracciones de pulgada (1/8, 1/4, 3/8) usadas en brocas, tornillos y grosores de materiales. El convertidor funciona en ambos sentidos y calcula al instante.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-mm-a-pulgadas"
   },
   "hero": {
     "title": "Convierte milímetros a pulgadas",
     "description": "Introduce cualquier valor en milímetros y lee al instante el resultado en pulgadas decimales. La tabla de fracciones más abajo muestra además la fracción de pulgada más cercana, la que se usa en brocas o tornillos. El convertidor resulta útil en mediciones precisas: grosores de materiales, dimensiones de componentes electrónicos o elección de herramientas especificadas en pulgadas.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "¿Para qué convertir milímetros a pulgadas?",
       "html": "<p class=\"text-mid mb-4\">El milímetro es la unidad básica de las mediciones precisas en España, América Latina y la mayor parte del mundo. La pulgada, en cambio, domina en los países anglosajones, sobre todo en Estados Unidos, donde brocas, tornillos, llaves de vaso y grosores de materiales de construcción se especifican en pulgadas. El problema aparece cuando compras una herramienta americana con especificaciones en pulgadas o intentas elegir una broca métrica para una medida dada como fracción de pulgada.</p><p class=\"text-mid mb-4\">Una pulgada equivale exactamente a 25,4 mm. Esta relación es constante y se aplica en todas partes, así que cada conversión se reduce a una sola división. El convertidor la hace por ti en cuanto introduces un valor.</p><p class=\"text-mid mb-4\">Más abajo encontrarás una tabla de conversión mm a pulgadas para valores de 1 a 800 mm y una tabla de las fracciones de pulgada más comunes con su equivalente en milímetros.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor gratuito de milímetros a pulgadas – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -279,6 +279,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "title": "¿Tienes una pregunta o sugerencia?",
       "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contacto con Arteon Agency",

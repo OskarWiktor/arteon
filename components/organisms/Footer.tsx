@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { LOCALE_SITEMAP_META } from '@/lib/i18n/pages/localeSitemapMeta';
-import { getFooterTools } from '@/lib/i18n/toolRegistry';
+import { getToolsList } from '@/lib/i18n/toolRegistry';
 import type { Locale, FooterUi, LegalLink } from '@/types/locale';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import ButtonCookieSettings from '../atoms/buttons/ButtonCookieSettings';
@@ -45,7 +45,7 @@ function FooterSchemas() {
 }
 
 const offerLinksOne = [
-  { href: '/uslugi/tworzenie-stron-wordpress', title: 'Strony WordPress' },
+  { href: '/uslugi/strony-internetowe-dla-firm', title: 'Strony internetowe' },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
 ];
@@ -189,9 +189,11 @@ export default function Footer({
   const gfxLeft = offerLinksThree.slice(0, midGfx);
   const gfxRight = offerLinksThree.slice(midGfx);
 
+  // Non-PL footers list the FULL tool catalogue (every localized tool) for
+  // maximum internal linking / SEO. PL keeps its own curated `toolsLinks`.
   const localeToolsLinks = isPl
     ? toolsLinks
-    : getFooterTools(locale).map(tool => ({
+    : getToolsList(locale).map(tool => ({
         href: tool.href,
         label: tool.title,
       }));
@@ -211,11 +213,26 @@ export default function Footer({
   const toolsLeft = localeToolsLinks.slice(0, midTools);
   const toolsRight = localeToolsLinks.slice(midTools);
 
-  const colSize = Math.ceil(localeToolsLinks.length / 4);
-  const toolsCol1 = localeToolsLinks.slice(0, colSize);
-  const toolsCol2 = localeToolsLinks.slice(colSize, colSize * 2);
-  const toolsCol3 = localeToolsLinks.slice(colSize * 2, colSize * 3);
-  const toolsCol4 = localeToolsLinks.slice(colSize * 3);
+  // Non-PL footer spreads the full tool catalogue across 6 columns. The first
+  // column sits beneath the logo, so it holds 3 fewer links than the others to
+  // stay visually balanced (the logo already fills that space).
+  const FOOTER_TOOL_COLUMNS = 6;
+  const LOGO_COLUMN_LINK_OFFSET = 3;
+  const firstColumnCount = Math.max(
+    1,
+    Math.ceil(localeToolsLinks.length / FOOTER_TOOL_COLUMNS) -
+      LOGO_COLUMN_LINK_OFFSET,
+  );
+  const firstToolColumn = localeToolsLinks.slice(0, firstColumnCount);
+  const remainingToolLinks = localeToolsLinks.slice(firstColumnCount);
+  const otherColumnSize = Math.ceil(
+    remainingToolLinks.length / (FOOTER_TOOL_COLUMNS - 1),
+  );
+  const otherToolColumns = Array.from(
+    { length: FOOTER_TOOL_COLUMNS - 1 },
+    (_, i) =>
+      remainingToolLinks.slice(i * otherColumnSize, (i + 1) * otherColumnSize),
+  ).filter(column => column.length > 0);
 
   if (!isPl) {
     return (
@@ -224,88 +241,55 @@ export default function Footer({
         aria-label='Site footer'
       >
         <Wrapper>
-          <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-6'>
-            <section
-              aria-label={ft.companyDataLabel}
-              className='lg:col-start-1 lg:row-start-1'
-            >
-              <div className='mb-4'>
-                <InlineLink href={toolsIndexHref}>
-                  <Image
-                    src='/assets/arteon-logo.webp'
-                    width={140}
-                    height={50}
-                    alt='Arteon logo'
-                    className='dark:invert'
-                  />
-                </InlineLink>
-              </div>
-              <p className='text-base text-dark'>{ft.description}</p>
-            </section>
+          <div className='grid grid-cols-1 items-start gap-8 md:grid-cols-2 lg:grid-cols-6'>
+            {/* Column 1: logo + description, then a gap, then the first tools
+                column so the space under the logo is no longer empty. */}
+            <div>
+              <section aria-label={ft.companyDataLabel} className='mb-8'>
+                <div className='mb-4'>
+                  <InlineLink href={toolsIndexHref}>
+                    <Image
+                      src='/assets/arteon-logo.webp'
+                      width={140}
+                      height={50}
+                      alt='Arteon logo'
+                      className='dark:invert'
+                    />
+                  </InlineLink>
+                </div>
+                <p className='text-base text-dark'>{ft.description}</p>
+              </section>
 
-            <nav
-              aria-label={`${ft.toolsLabel} (1)`}
-              className='lg:col-start-2 lg:row-start-1'
-            >
-              <h3 className='h6 mb-3'>{ft.toolsLabel}</h3>
-              <ul className='flex flex-col gap-2 text-sm'>
-                {toolsCol1.map(({ href, label }) => (
-                  <li key={href}>
-                    <InlineLink href={href} className='text-left'>
-                      {label}
-                    </InlineLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+              <nav aria-label={`${ft.toolsLabel} (1)`}>
+                <ul className='flex flex-col gap-2 text-sm'>
+                  {firstToolColumn.map(({ href, label }) => (
+                    <li key={href}>
+                      <InlineLink href={href} className='text-left'>
+                        {label}
+                      </InlineLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
 
-            <nav
-              aria-label={`${ft.toolsLabel} (2)`}
-              className='lg:col-start-3 lg:row-start-1'
-            >
-              <h3 className='sr-only'>{ft.toolsLabel}</h3>
-              <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
-                {toolsCol2.map(({ href, label }) => (
-                  <li key={href}>
-                    <InlineLink href={href} className='text-left'>
-                      {label}
-                    </InlineLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <nav
-              aria-label={`${ft.toolsLabel} (3)`}
-              className='lg:col-start-4 lg:row-start-1'
-            >
-              <h3 className='sr-only'>{ft.toolsLabel}</h3>
-              <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
-                {toolsCol3.map(({ href, label }) => (
-                  <li key={href}>
-                    <InlineLink href={href} className='text-left'>
-                      {label}
-                    </InlineLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <nav
-              aria-label={`${ft.toolsLabel} (4)`}
-              className='lg:col-start-5 lg:row-start-1'
-            >
-              <h3 className='sr-only'>{ft.toolsLabel}</h3>
-              <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
-                {toolsCol4.map(({ href, label }) => (
-                  <li key={href}>
-                    <InlineLink href={href} className='text-left'>
-                      {label}
-                    </InlineLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            {/* Remaining columns auto-flow into grid columns 2…6. */}
+            {otherToolColumns.map((column, columnIndex) => (
+              <nav
+                key={column[0]?.href ?? columnIndex}
+                aria-label={`${ft.toolsLabel} (${columnIndex + 2})`}
+              >
+                <ul className='flex flex-col gap-2 text-sm'>
+                  {column.map(({ href, label }) => (
+                    <li key={href}>
+                      <InlineLink href={href} className='text-left'>
+                        {label}
+                      </InlineLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            ))}
           </div>
 
           <div className='mt-8 border-t border-neutral-200 pt-4 text-light'>

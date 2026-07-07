@@ -4,13 +4,13 @@
   "metadata": {
     "title": "DEC σε HEX – μετατροπέας",
     "description": "Μετατρέψτε δεκαδικούς σε δεκαεξαδικούς αριθμούς.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-dekadiko-se-hex"
   },
   "hero": {
     "title": "DEC σε HEX",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: DEC σε HEX?",
       "html": "<p class=\"text-mid mb-4\">Το δεκαεξαδικό (βάση-16) χρησιμοποιεί ψηφία 0–9 και γράμματα A–F. Είναι ένας συμπαγής τρόπος αναπαράστασης δυαδικών δεδομένων: κάθε ψηφίο hex = 4 bit. Αυτό καθιστά το hex απαραίτητο για προγραμματισμό, χρώματα web και διευθύνσεις μνήμης.</p><p class=\"text-mid mb-4\">Τα χρώματα web χρησιμοποιούν hex: #FF5733 = κόκκινο 255, πράσινο 87, μπλε 51. Διευθύνσεις μνήμης: 0x7FFF = 32.767. Unicode: U+00E9 = é.</p><p class=\"text-mid mb-4\">Το hex είναι πιο συμπαγές από το δυαδικό: το byte 11111111 (8 ψηφία) = FF (2 ψηφία). Γι' αυτό προτιμάται το hex για εμφάνιση δυαδικών δεδομένων.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "DEC σε HEX – Arteon"
     },
     {
@@ -237,7 +237,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "DEC σε HEX – Arteon",
       "defaultSubject": "Feedback: dec-to-hex"
     },

@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir puntos a píxeles?",
       "html": "<p class=\"text-mid mb-4\">Los puntos (pt) son una unidad tipográfica de impresión: 1 pt = 1/72 de pulgada. Los píxeles (px) son unidades de pantalla. Con 96 PPI estándar: 1 pt = 1,333 px (96/72).</p><p class=\"text-mid mb-4\">Esta conversión es importante al trasladar diseños de impresión a web, configurar tamaños de fuente CSS desde especificaciones de impresión y entender la relación entre tipografía de impresión y pantalla.</p><p class=\"text-mid mb-4\">Tamaños comunes: 12 pt = 16 px (estándar del navegador), 10 pt = 13,3 px, 18 pt = 24 px.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor de puntos a píxeles – tipografía – Arteon"
     },
     {

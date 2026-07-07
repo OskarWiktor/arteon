@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando serve convertire byte?",
       "html": "<p class=\"text-mid mb-4\">L’archiviazione digitale si misura in byte e multipli: kilobyte (KB), megabyte (MB), gigabyte (GB) e terabyte (TB). Esistono due sistemi: decimale (1 KB = 1.000 byte) e binario (1 KiB = 1.024 byte).</p><p class=\"text-mid mb-4\">I produttori usano il decimale (un disco da “500 GB” = 500.000.000.000 byte), mentre i sistemi operativi usano il binario (~465 GiB per lo stesso disco).</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore di byte – KB, MB, GB, TB – Arteon"
     },
     {

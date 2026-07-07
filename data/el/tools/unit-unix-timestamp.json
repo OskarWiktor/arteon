@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Unix σε ημ/νία – μετατροπέας",
     "description": "Μετατρέψτε Unix timestamp σε ημερομηνία και ώρα.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-unix-timestamp"
   },
   "hero": {
     "title": "Unix σε ημ/νία",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Unix σε ημ/νία?",
       "html": "<p class=\"text-mid mb-4\">Η χρονοσφραγίδα Unix (Unix Timestamp ή Epoch) μετράει τα δευτερόλεπτα από την 1η Ιανουαρίου 1970, 00:00:00 UTC. Είναι το παγκόσμιο πρότυπο αποθήκευσης ημερομηνίας και ώρας σε υπολογιστικά συστήματα.</p><p class=\"text-mid mb-4\">Παράδειγμα: 1709251200 = 1 Μαρτίου 2024, 00:00:00 UTC. Οι χρονοσφραγίδες είναι ανεξάρτητες ζώνης ώρας.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Unix σε ημ/νία – Arteon"
     },
     {
@@ -237,7 +237,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Unix σε ημ/νία – Arteon",
       "defaultSubject": "Feedback: unix-timestamp"
     },

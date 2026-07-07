@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir pulgadas a píxeles?",
       "html": "<p class=\"text-mid mb-4\">Los formatos de papel de EE. UU. y las especificaciones de impresión usan pulgadas. Para datos de impresión digitales: Píxeles = pulgadas × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) a 300 DPI = 2.550 × 3.300 píxeles. Una foto de 4 × 6″ a 300 DPI = 1.200 × 1.800 píxeles.</p><p class=\"text-mid mb-4\">Este convertidor es importante para formatos de impresión de EE. UU., plantillas de documentos y cálculos de resolución de imagen.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor de pulgadas a píxeles (DPI) – Arteon"
     },
     {

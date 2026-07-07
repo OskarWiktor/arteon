@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor de libras a kilogramos – calculadora lb a kg",
     "description": "Convierte libras a kilogramos al instante. Útil para leer el peso corporal en apps de EE. UU., convertir cargas de gimnasio y comprobar límites de equipaje. Tabla de 1 a 300 lb.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-libras-a-kg"
   },
   "hero": {
     "title": "Convierte libras a kilogramos",
     "description": "Escribe cualquier valor en libras y obtén el resultado en kilogramos de inmediato. El convertidor es útil cuando lees el peso en apps de salud o fitness de EE. UU., compras equipamiento deportivo etiquetado en libras, interpretas límites de equipaje de aerolíneas americanas o conviertes pesos de nacimiento en documentación de hospitales anglófonos.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -85,7 +85,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir libras a kilogramos?",
       "html": "<p class=\"text-mid mb-4\">En el mundo hispanohablante, el kilogramo es la unidad de masa estándar para el peso corporal, los alimentos, la mercancía y el equipamiento deportivo. Sin embargo, las apps y webs de salud y fitness de EE. UU. — como MyFitnessPal, Apple Health o Fitbit — muestran el peso en libras (lb) de forma predeterminada. Los planes de entrenamiento populares de EE. UU. también usan libras: la barra olímpica pesa 20 kg (en EE. UU. la llaman barra de 45 libras, aunque en realidad son 44,09 lb) y los discos estándar son de 45, 35, 25, 10 y 5 lb.</p><p class=\"text-mid mb-4\">Convertir libras a kg es también necesario al leer los límites de equipaje de aerolíneas estadounidenses, comprobar el peso en una báscula marcada en libras o interpretar documentación médica de un hospital anglosajón donde el peso de un bebé se registra en libras y onzas.</p><p class=\"text-mid\">Una libra equivale exactamente a 0,45359237 kg. Al revés: 1 kg = 2,2046 lb. El convertidor calcula el resultado en cuanto escribes un valor, y puedes copiarlo al portapapeles con un solo clic.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor gratuito de libras a kilogramos – Arteon"
     },
     {
@@ -306,6 +306,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "title": "¿Tienes alguna pregunta o sugerencia?",
       "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contactar con Arteon Agency",

@@ -279,6 +279,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "title": "Masz pytanie lub sugestię?",
       "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
       "imageAlt": "Kontakt z Arteon Agency",

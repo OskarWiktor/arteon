@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Kilograms to Pounds Converter – kg to lb Calculator",
     "description": "Convert kilograms to pounds instantly. Useful for body weight, gym weights, luggage limits and baby weight. Conversion table from 0.5 to 200 kg with stone column.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/kg-to-lb-converter"
   },
   "hero": {
     "title": "Convert kilograms to pounds",
     "description": "Enter any value in kilograms and read the result in pounds immediately. The converter is useful when checking body weight in the imperial system, reading baggage weight limits in pounds, comparing athletic performance with US or UK charts, or converting a baby's birth weight.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "When do you need to convert kilograms to pounds?",
       "html": "<p class=\"text-mid mb-4\">The kilogram is the standard unit of mass in Europe and most of the world. The pound (lb) dominates in the United States and remains widely used in the United Kingdom — particularly for body weight, where British people also use the stone (1 stone = 14 pounds = 6.35 kg).</p><p class=\"text-mid mb-4\">You need to convert kg to pounds when checking your weight on a US or UK medical website, buying sports equipment described in pounds, interpreting an airline baggage limit in lbs, or reading a baby's birth weight recorded in imperial units at a foreign hospital.</p><p class=\"text-mid mb-4\">One pound is exactly 0.45359237 kg — this value has been fixed as a constant since 1959. The other way round: 1 kg = 2.2046 lb. The converter does the calculation the moment you type a value.</p><p class=\"text-mid\">On this page you will find a kg to lb table for values from 0.5 to 200 kg, a body weight table with conversion to pounds and stone, and a gym weights table.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free kilograms to pounds converter – Arteon"
     },
     {
@@ -626,6 +626,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "title": "Got a question or suggestion?",
       "description": "If you notice an error in the tables or have an idea for improving the converter, write to us. We reply to every message.",
       "imageAlt": "Contact Arteon Agency",

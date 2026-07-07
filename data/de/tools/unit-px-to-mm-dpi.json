@@ -4,13 +4,13 @@
   "metadata": {
     "title": "px in mm (DPI) Umrechner – Pixel in Millimeter umrechnen",
     "description": "Pixel mit einstellbarer DPI in Millimeter umrechnen. Unverzichtbar im Druck, bei der Verpackungsgestaltung und zur Prüfung, ob eine Kameradatei oder Webgrafik für ein bestimmtes Druckformat ausreicht.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/px-in-mm-umrechner"
   },
   "hero": {
     "title": "Pixel in Millimeter umrechnen – mit beliebigem DPI",
     "description": "Geben Sie einen Wert in Pixeln ein, stellen Sie die DPI-Auflösung ein und lesen Sie das Ergebnis in Millimetern ab. Prüfen Sie, wie groß eine Kameradatei, eine Webgrafik oder ein Figma-Export physisch nach dem Drucken wäre. Der Umrechner hilft Ihnen, das richtige Maß vor dem Versand an die Druckerei zu wählen.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -87,7 +87,7 @@
       "type": "sectionBasic",
       "title": "Wozu Pixel in Millimeter umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Ein Pixel ist eine digitale Einheit, die einen einzelnen Punkt auf einem Bildschirm oder in einer Bilddatei beschreibt. Der Millimeter wiederum bestimmt die physische Welt – Druckereien geben Visitenkarten-, Flyer- und Beschnittmaße in Millimetern an. Um eines ins andere umzurechnen, müssen Sie die DPI-Auflösung kennen, also die Anzahl der Pixel pro Zoll Material oder Bildschirm.</p><p class=\"text-mid mb-4\">Diese Umrechnung benötigen vor allem Grafiker, die prüfen, wie groß ihr Projekt nach dem Drucken physisch sein wird, Fotografen, die beurteilen, ob eine Kameradatei für ein bestimmtes Format ausreicht, sowie alle, die in Figma oder Photoshop arbeiten, die in Pixeln denken, aber eine Datei mit einer exakten physischen Abmessung liefern müssen. Der Umrechner erspart Ihnen das manuelle Rechnen und das Merken der Formel.</p><p class=\"text-mid\">Weiter unten auf dieser Seite finden Sie eine umfangreiche Tabelle für gängige Pixelwerte, eine umgekehrte Tabelle von Millimeter zu Pixel, fertige Maße für Visitenkarten, Flyer und A0–A7-Formate sowie kurze Anleitungen zum Umstellen von Pixel auf Millimeter in Illustrator, InDesign, CorelDRAW, Photoshop, Figma und Canva.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Pixel-zu-Millimeter-Umrechner – Arteon"
     },
     {
@@ -772,7 +772,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, diesen Umrechner zu verbessern",
       "description": "Fehlt ein Wert in den Tabellen, haben Sie einen Berechnungsfehler gefunden oder einen Funktionswunsch? Schreiben Sie uns – wir lesen jede Nachricht persönlich und antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "px-in-mm-Umrechner – Arteon",
       "defaultSubject": "Feedback: px-in-mm-Umrechner"
     },

@@ -10,7 +10,11 @@ import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSele
 import { cn } from '@/lib/clsx';
 import { useDictionary } from '@/lib/LocaleContext';
 import type { UniversalFormat } from '@/lib/tools/formats';
-import { convertText } from '@/lib/tools/text/convert';
+import {
+  convertText,
+  ConversionError,
+  type ConversionErrorCode,
+} from '@/lib/tools/text/convert';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import type { TextFormatConverterProps } from '@/types/tools/text-format-converter';
 import { copyTextToClipboard } from '@/utils/clipboard';
@@ -63,7 +67,21 @@ export default function TextFormatConverter({
       const result = await convertText(input, conversionType);
       setOutput(result);
     } catch (err) {
-      setError(err instanceof Error ? err.message : t.conversionFailed);
+      // Map known failure reasons to friendly, localized copy; never leak a
+      // raw engine message (SyntaxError text, DOMParser dump) to the user.
+      const messages: Record<ConversionErrorCode, string> = {
+        invalidJson: t.errorInvalidJson,
+        invalidXml: t.errorInvalidXml,
+        invalidYaml: t.errorInvalidYaml,
+        jsonNotArray: t.errorJsonNotArray,
+        csvNoHeaders: t.errorCsvNoHeaders,
+        emptyInput: t.pasteOrTypeData.replace('{{format}}', sourceLabel),
+      };
+      setError(
+        err instanceof ConversionError
+          ? messages[err.code]
+          : t.conversionFailed,
+      );
       setOutput('');
     }
     setIsConverting(false);

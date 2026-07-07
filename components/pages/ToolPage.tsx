@@ -384,6 +384,9 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
             });
           })()}
         </div>
+        {/* Bottom spacer so the last block (often the tools carousel, whose
+            arrows sit below the cards) never collides with the footer. */}
+        <Divider size='xs' />
       </ToolEditorLayout>
     </>
   );

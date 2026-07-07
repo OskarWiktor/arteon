@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir em a píxeles?",
       "html": "<p class=\"text-mid mb-4\">La unidad CSS em es relativa al tamaño de fuente del elemento padre. Con el tamaño de fuente estándar de 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Las unidades em se usan frecuentemente en diseño web responsivo para tipografía, espaciado y layout. Convertirlas a píxeles ayuda a entender el tamaño real renderizado.</p><p class=\"text-mid mb-4\">A diferencia de rem (relativo a la raíz), em se acumula: 1,5em × 1,5em = 2,25× el tamaño base.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor de em a píxeles – CSS – Arteon"
     },
     {

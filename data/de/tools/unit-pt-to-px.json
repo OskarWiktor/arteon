@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Wann muss man Punkt in Pixel umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Punkte (pt) sind eine typografische Druckeinheit: 1 pt = 1/72 Zoll. Pixel (px) sind Bildschirmeinheiten. Bei 96 PPI Standard: 1 pt = 1,333 px.</p><p class=\"text-mid mb-4\">Gängige Größen: 12 pt = 16 px (Browser-Standard), 10 pt = 13,3 px, 18 pt = 24 px.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Punkt in Pixel umrechnen – Typografie-Rechner – Arteon"
     },
     {

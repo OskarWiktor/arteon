@@ -4,13 +4,13 @@
   "metadata": {
     "title": "CM in Zoll Rechner – Zentimeter in Zoll umrechnen",
     "description": "Rechnen Sie Zentimeter in Zoll um. Körpergröße, Kleidergrößen, TV-Diagonale und Gepäckmaße schnell prüfen. Umrechnungstabelle cm in Zoll und Zoll in cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/cm-in-zoll-umrechner"
   },
   "hero": {
     "title": "Zentimeter in Zoll umrechnen",
     "description": "Geben Sie einen beliebigen Wert in Zentimetern ein und sehen Sie das Ergebnis sofort in Zoll. Der Umrechner ist überall dort hilfreich, wo Maße im imperialen System angegeben werden: bei der Körpergröße, beim Kauf von Elektronik, beim Bestellen von Kleidung in US- oder UK-Shops oder beim Überprüfen von Gepäckmaßen.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Warum Zentimeter in Zoll umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Der Zentimeter ist die alltägliche Längeneinheit in Deutschland, Österreich und der Schweiz sowie im Rest Europas. Der Zoll hingegen dominiert in den USA und wird nach wie vor in Großbritannien verwendet. Die Notwendigkeit zur Umrechnung entsteht immer dann, wenn Sie Maße aus einer anglophonen Quelle erhalten: ein Fernseher mit Diagonale in Zoll, Gepäckmaße einer amerikanischen Fluggesellschaft oder Kleidergrößen eines US-Onlineshops.</p><p class=\"text-mid mb-4\">Ein Zoll entspricht genau 2,54 cm. Dieses Verhältnis ist fest und gilt überall, sodass jede Umrechnung auf eine einzige Division hinausläuft. Der Umrechner erledigt das sofort nach der Eingabe.</p><p class=\"text-mid mb-4\">Weiter unten auf der Seite finden Sie eine Umrechnungstabelle für Werte von 0,5 bis 200 cm, eine gesonderte Körpergrößentabelle mit Fuß-und-Zoll-Angaben sowie eine Tabelle mit gängigen Bildschirmdiagonalen.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Zentimeter-in-Zoll-Umrechner – Arteon"
     },
     {
@@ -577,6 +577,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "title": "Haben Sie eine Frage oder einen Verbesserungsvorschlag?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt mit Arteon Agency",

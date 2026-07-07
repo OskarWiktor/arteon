@@ -10,6 +10,7 @@
   "syllables": "Silben",
   "readability": "Lesbarkeit (Flesch)",
   "readabilityHint": "Für Webinhalte auf Deutsch 50–70 anstreben.",
+  "readabilityUnsupported": "Die Lesbarkeitsbewertung funktioniert für Texte in lateinischer oder griechischer Schrift.",
   "copyText": "Text kopieren",
   "copied": "Kopiert",
   "clearText": "Löschen",

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Pt σε px – μετατροπέας",
     "description": "Μετατρέψτε σημεία σε pixel και αντίστροφα.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-pt-se-px"
   },
   "hero": {
     "title": "Pt σε px",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Pt σε px?",
       "html": "<p class=\"text-mid mb-4\">Τα σημεία (pt) είναι μια τυπογραφική μονάδα που χρησιμοποιείται στην εκτύπωση: 1 pt = 1/72 ίντσας. Τα pixel (px) είναι μονάδες οθόνης. Στην τυπική ανάλυση 96 PPI: 1 pt = 1,333 px (96/72).</p><p class=\"text-mid mb-4\">Αυτή η μετατροπή είναι απαραίτητη όταν μεταφέρετε σχέδια εκτύπωσης στο web, ρυθμίζετε μεγέθη γραμματοσειρών CSS από προδιαγραφές εκτύπωσης και θέλετε να κατανοήσετε τη σχέση μεταξύ τυπογραφίας εκτύπωσης και οθόνης.</p><p class=\"text-mid mb-4\">Συνηθισμένα μεγέθη: 12 pt = 16 px (προεπιλογή browser), 10 pt = 13,3 px, 14 pt = 18,7 px, 18 pt = 24 px, 24 pt = 32 px.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας — τίποτα δεν αποστέλλεται σε κανέναν server.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Pt σε px – Arteon"
     },
     {
@@ -233,7 +233,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "pt σε px – Arteon",
       "defaultSubject": "Feedback: pt-to-px"
     },

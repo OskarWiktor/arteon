@@ -7,6 +7,7 @@
 import { describe, it, expect } from 'vitest';
 // Importujemy też to, CO testujemy:
 import {
+  calculateReadability,
   calculateSpeakingTime,
   getReadabilityLabel,
 } from '@/lib/tools/text/readability';
@@ -57,5 +58,44 @@ describe('getReadabilityLabel', () => {
   // bo pilnuje, że logika per-locale nie zostanie przypadkiem zepsuta.
   it('używa polskich progów i etykiet (PL)', () => {
     expect(getReadabilityLabel(85, 'pl')).toBe('Bardzo łatwy');
+  });
+});
+
+describe('calculateReadability — nieobsługiwane alfabety', () => {
+  // Regresja: chiński/arabski dostawał pewny wynik "100 - Bardzo łatwy"
+  // zamiast uczciwego braku oceny. Teraz score jest null + flaga.
+  it('nie ocenia tekstu w alfabecie CJK (chiński)', () => {
+    const r = calculateReadability(
+      '这是一个测试。这是另一个句子。我们需要更多文字。',
+      'pl',
+    );
+    expect(r.fleschScore).toBeNull();
+    expect(r.unsupportedScript).toBe(true);
+  });
+
+  it('nie ocenia tekstu arabskiego', () => {
+    const r = calculateReadability(
+      'هذا اختبار. هذه جملة أخرى. نحتاج المزيد.',
+      'en',
+    );
+    expect(r.fleschScore).toBeNull();
+    expect(r.unsupportedScript).toBe(true);
+  });
+
+  it('normalnie ocenia tekst łaciński i nie ustawia flagi', () => {
+    const r = calculateReadability(
+      'This is a simple sentence. Here is another one. Reading should be easy.',
+      'en',
+    );
+    expect(r.fleschScore).not.toBeNull();
+    expect(r.unsupportedScript).toBe(false);
+  });
+
+  it('ocenia grecki (obsługiwany alfabet) — bez flagi', () => {
+    const r = calculateReadability(
+      'Αυτό είναι ένα κείμενο. Εδώ είναι άλλη πρόταση. Πρέπει να δουλεύει.',
+      'el',
+    );
+    expect(r.unsupportedScript).toBe(false);
   });
 });

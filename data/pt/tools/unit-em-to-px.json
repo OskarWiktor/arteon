@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando precisa converter em para pixels?",
       "html": "<p class=\"text-mid mb-4\">A unidade CSS em é relativa ao tamanho da fonte do elemento pai. Com o tamanho padrão de 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Diferente de rem (relativo à raiz), em se acumula: 1,5em × 1,5em = 2,25× o tamanho base.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor de em para pixels – CSS – Arteon"
     },
     {

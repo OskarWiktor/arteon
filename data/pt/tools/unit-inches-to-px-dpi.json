@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando precisa converter polegadas em pixels?",
       "html": "<p class=\"text-mid mb-4\">Os formatos de papel dos EUA usam polegadas. Para dados de impressão digitais: Pixels = polegadas × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) a 300 DPI = 2.550 × 3.300 pixels. Foto 4 × 6″ a 300 DPI = 1.200 × 1.800 pixels.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor de polegadas para pixels (DPI) – Arteon"
     },
     {

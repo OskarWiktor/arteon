@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculateur pouces en CM – convertir les pouces en centimètres",
     "description": "Convertissez les pouces en centimètres instantanément. Vérifiez la taille d'un téléviseur en cm, une taille corporelle ou les dimensions des bagages. Le tableau de conversion couvre les valeurs de 0,5 à 90 pouces.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-pouces-en-cm"
   },
   "hero": {
     "title": "Convertir les pouces en centimètres",
     "description": "Saisissez une valeur en pouces et obtenez instantanément le résultat en centimètres. Ce convertisseur est utile partout où vous devez comprendre des mesures impériales en système métrique : vérifier la taille d'un téléviseur, lire les dimensions d'un produit européen, comparer des tailles vestimentaires ou convertir une taille corporelle.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Quand convertit-on les pouces en centimètres ?",
       "html": "<p class=\"text-mid mb-4\">Le pouce est l'unité de longueur du système impérial, principalement utilisée aux États-Unis et encore courante au Royaume-Uni. En France et dans toute l'Europe, on utilise le système métrique, de sorte que les pouces apparaissent surtout lors de contacts avec des produits ou des informations provenant de pays anglophones.</p><p class=\"text-mid mb-4\">Les situations les plus fréquentes : vous souhaitez savoir combien de centimètres fait un téléviseur de 55 pouces, vous comparez votre taille avec un tableau de tailles vestimentaires américain, vous achetez des chaussures dans une boutique britannique dont les pointures sont en pouces, ou vous consultez un catalogue de meubles américain.</p><p class=\"text-mid mb-4\">La formule est simple : un pouce vaut exactement 2,54 cm. Pour convertir des pouces en centimètres, il suffit de multiplier par 2,54. Le convertisseur effectue ce calcul dès la saisie d'une valeur.</p><p class=\"text-mid\">Sur cette page vous trouverez un tableau de conversion pouces en cm, un tableau des diagonales d'écrans populaires ainsi qu'un tableau de taille avec conversion pieds et pouces en centimètres.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur gratuit pouces en centimètres – Arteon"
     },
     {
@@ -335,6 +335,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "title": "Vous avez une question ou une suggestion ?",
       "description": "Si vous constatez une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, contactez-nous. Nous répondons à chaque message.",
       "imageAlt": "Contacter Arteon Agency",

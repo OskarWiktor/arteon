@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quand faut-il convertir du décimal en binaire ?",
       "html": "<p class=\"text-mid mb-4\">Le binaire (base 2) est le système numérique fondamental des ordinateurs. Chaque donnée est stockée comme une séquence de 0 et de 1.</p><p class=\"text-mid mb-4\">Chaque chiffre binaire (bit) représente une puissance de 2. Exemple : décimal 42 = binaire 101010 (32+8+2).</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur décimal en binaire – Arteon"
     },
     {

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Zoll in MM Rechner – Zoll in Millimeter umrechnen",
     "description": "Zoll in Millimeter umrechnen. Die vollständige Zollbruchtabelle in 1/32-Schritten zeigt mm-Entsprechungen für Bohrer, Schrauben und Steckschlüssel. Der Umrechner funktioniert in beide Richtungen und rechnet sofort.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/zoll-in-mm-umrechner"
   },
   "hero": {
     "title": "Zoll in Millimeter umrechnen",
     "description": "Geben Sie einen Wert in Zoll ein und sehen Sie sofort das Ergebnis in Millimetern. Der Umrechner hilft überall dort, wo Werkzeuge, Schrauben oder Materialien in Zoll oder Zollbrüchen angegeben sind: bei der Auswahl eines Bohrers, eines Steckschlüssels, einer Zollschraube oder beim Prüfen einer Materialstärke aus einem amerikanischen Katalog.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Wann rechnet man Zoll in Millimeter um?",
       "html": "<p class=\"text-mid mb-4\">Der Zoll ist die Längeneinheit des imperialen Systems, die vor allem in den USA, Großbritannien, Kanada und Australien verwendet wird – besonders bei Werkzeugen, Schrauben und Baumaterialien. In Deutschland, Österreich und der Schweiz rechnen wir in Millimetern, sodass Zollangaben – oft in Bruchform – hauptsächlich dann auftauchen, wenn wir mit Werkzeugen oder Teilen aus englischsprachigen Ländern zu tun haben.</p><p class=\"text-mid mb-4\">Die häufigsten Situationen: Sie möchten wissen, wie viele Millimeter ein als 3/8 Zoll bezeichneter Bohrer misst, Sie suchen einen Steckschlüssel für eine Zollschraube oder prüfen die als 1/8 Zoll angegebene Blechstärke aus einem amerikanischen Katalog.</p><p class=\"text-mid mb-4\">Die Formel ist einfach: Ein Zoll entspricht genau 25,4 mm. Um Zoll in Millimeter umzurechnen, multiplizieren Sie die Zollzahl mit 25,4. Der Umrechner erledigt das, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine Umrechnungstabelle Zoll in mm sowie die vollständige Zollbruchtabelle in 1/32-Schritten, die alle Größen von 1/32 bis 1 Zoll abdeckt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Zoll-in-Millimeter-Umrechner – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -301,6 +301,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "title": "Haben Sie eine Frage oder einen Verbesserungsvorschlag?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt mit Arteon Agency",

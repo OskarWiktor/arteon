@@ -136,6 +136,11 @@ export interface ClientDictionary {
     copyResult: string;
     pageLabel: string;
     conversionFailed: string;
+    errorInvalidJson: string;
+    errorInvalidXml: string;
+    errorInvalidYaml: string;
+    errorJsonNotArray: string;
+    errorCsvNoHeaders: string;
     failedToLoadPdf: string;
     failedToLoadLibrary: string;
     canvasNotSupported: string;

@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quand faut-il convertir des Mbps en Mo/s ?",
       "html": "<p class=\"text-mid mb-4\">Les vitesses internet sont annoncées en mégabits par seconde (Mbps), mais les téléchargements s’affichent en mégaoctets par seconde (Mo/s). 1 octet = 8 bits, donc 1 Mo/s = 8 Mbps.</p><p class=\"text-mid mb-4\">Une connexion « 100 Mbps » télécharge à 12,5 Mo/s maximum. « 1 Gbps » = 125 Mo/s.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur Mbps en Mo/s – internet – Arteon"
     },
     {

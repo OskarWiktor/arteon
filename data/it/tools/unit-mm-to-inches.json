@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calcolatore mm in pollici – convertire millimetri in pollici",
     "description": "Converti millimetri in pollici. Le tabelle incluse mostrano anche le frazioni di pollice (1/8, 1/4, 3/8) usate per punte da trapano, viti e spessori dei materiali. Il convertitore funziona in entrambe le direzioni e calcola all'istante.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-mm-in-pollici"
   },
   "hero": {
     "title": "Converti millimetri in pollici",
     "description": "Inserisci qualsiasi valore in millimetri e leggi subito il risultato in pollici decimali. La tabella delle frazioni più in basso nella pagina mostra anche la frazione di pollice più vicina, quella usata per punte da trapano o viti. Il convertitore è utile nelle misurazioni di precisione: spessori dei materiali, dimensioni di componenti elettronici o scelta di utensili specificati in pollici.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Perché convertire millimetri in pollici?",
       "html": "<p class=\"text-mid mb-4\">Il millimetro è l'unità di base delle misurazioni di precisione in Italia e in tutta Europa. Il pollice domina invece nei paesi anglofoni, soprattutto negli Stati Uniti, dove punte da trapano, viti, chiavi a bussola e spessori dei materiali da costruzione sono specificati in pollici. Il problema nasce quando acquisti un utensile americano con specifiche in pollici o provi a scegliere una punta metrica per una misura indicata come frazione di pollice.</p><p class=\"text-mid mb-4\">Un pollice equivale esattamente a 25,4 mm. Questa relazione è costante e vale ovunque, quindi ogni conversione si riduce a una sola divisione. Il convertitore la fa per te non appena inserisci un valore.</p><p class=\"text-mid mb-4\">Più in basso in questa pagina troverai una tabella di conversione mm in pollici per valori da 1 a 800 mm e una tabella delle frazioni di pollice più comuni con il loro equivalente in millimetri.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore gratuito da millimetri a pollici – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -279,6 +279,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "title": "Hai una domanda o un suggerimento?",
       "description": "Se noti un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
       "imageAlt": "Contatta Arteon Agency",

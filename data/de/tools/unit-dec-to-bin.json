@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Wann muss man Dezimal in Binär umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Das Binärsystem (Basis-2) ist das grundlegende Zahlensystem der Computer. Jede Information wird als Folge von Nullen und Einsen gespeichert.</p><p class=\"text-mid mb-4\">Jede Binärziffer (Bit) stellt eine Zweierpotenz dar. Beispiel: Dezimal 42 = Binär 101010 (32+8+2).</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Dezimal in Binär umrechnen – Zahlensystem-Rechner – Arteon"
     },
     {

@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quand faut-il convertir du décimal en hexadécimal ?",
       "html": "<p class=\"text-mid mb-4\">L’hexadécimal (base 16) utilise les chiffres 0–9 et les lettres A–F. C’est une représentation compacte des données binaires : un chiffre hex = 4 bits.</p><p class=\"text-mid mb-4\">Les couleurs web utilisent l’hex : #FF5733 = Rouge 255, Vert 87, Bleu 51. Adresses mémoire : 0x7FFF = 32 767.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur décimal en hexadécimal – Arteon"
     },
     {

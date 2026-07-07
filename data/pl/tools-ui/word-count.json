@@ -10,6 +10,7 @@
   "syllables": "Sylaby",
   "readability": "Czytelność (Flesch)",
   "readabilityHint": "Dla treści webowych po polsku celuj w 50–70.",
+  "readabilityUnsupported": "Ocena czytelności działa dla tekstów zapisanych alfabetem łacińskim lub greckim.",
   "copyText": "Kopiuj tekst",
   "copied": "Skopiowano",
   "clearText": "Wyczyść",

@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir RGB a CMYK?",
       "html": "<p class=\"text-mid mb-4\">RGB (Rojo, Verde, Azul) es el modelo de color aditivo para pantallas. CMYK (Cian, Magenta, Amarillo, Negro) es el modelo sustractivo para impresión. Los colores se ven diferentes en cada modelo.</p><p class=\"text-mid mb-4\">La conversión es importante al preparar diseños digitales para impresión. Sin conversión, los colores brillantes de pantalla pueden aparecer apagados o desplazados al imprimir.</p><p class=\"text-mid mb-4\">No todos los colores RGB se pueden reproducir en CMYK — el gamut CMYK es más pequeño.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor de RGB a CMYK – colores – Arteon"
     },
     {

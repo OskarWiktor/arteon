@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Bytes σε KB/MB/GB – μετατροπέας",
     "description": "Μετατρέψτε bytes σε KB, MB, GB και αντίστροφα.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-bytes"
   },
   "hero": {
     "title": "Bytes σε KB/MB/GB",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Bytes σε KB/MB/GB?",
       "html": "<p class=\"text-mid mb-4\">Η ψηφιακή αποθήκευση μετριέται σε bytes και τα πολλαπλάσιά τους: kilobytes (KB), megabytes (MB), gigabytes (GB) και terabytes (TB). Υπάρχουν δύο συστήματα: δεκαδικό (1 KB = 1.000 bytes) και δυαδικό (1 KiB = 1.024 bytes).</p><p class=\"text-mid mb-4\">Οι κατασκευαστές χρησιμοποιούν δεκαδικές μονάδες (δίσκος \"500 GB\" = 500.000.000.000 bytes), ενώ τα λειτουργικά συστήματα χρησιμοποιούν δυαδικές μονάδες (~465 GiB για τον ίδιο δίσκο). Αυτή η ασυμφωνία είναι συχνή πηγή σύγχυσης.</p><p class=\"text-mid mb-4\">Μεγέθη αρχείων, RAM, ταχύτητες δικτύου και χωρητικότητα αποθήκευσης χρησιμοποιούν διαφορετικές συμβάσεις. Αυτός ο μετατροπέας χειρίζεται και τα δύο συστήματα.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Bytes σε KB/MB/GB – Arteon"
     },
     {
@@ -241,7 +241,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "bytes σε KB/MB/GB – Arteon",
       "defaultSubject": "Feedback: bytes-converter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "CM to Inches Calculator – Convert Centimeters to Inches",
     "description": "Convert centimeters to inches instantly. Check height, clothing sizes, TV screen diagonal, and luggage dimensions. Conversion table from cm to inches and inches to cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/cm-to-inches-converter"
   },
   "hero": {
     "title": "Convert centimeters to inches",
     "description": "Enter any value in centimeters and instantly see the result in inches. This converter comes in handy wherever dimensions are given in the imperial system: checking height, buying electronics, ordering clothes from US or UK stores, or verifying luggage size limits.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Why convert centimeters to inches?",
       "html": "<p class=\"text-mid mb-4\">Centimeters are the standard unit of length in most of the world. Inches, on the other hand, dominate in the United States and are still widely used in the United Kingdom. The need to convert arises whenever you encounter dimensions from a metric source: a product listing from a European store, a height given in centimeters by a foreign contact, or clothing size charts that use metric measurements.</p><p class=\"text-mid mb-4\">One inch is exactly 2.54 cm. This relationship is fixed and universal, so every conversion comes down to a single division. The converter does that for you the moment you type a value.</p><p class=\"text-mid mb-4\">Further down the page you will find a conversion table for values from 0.5 cm to 200 cm, a separate height table with feet-and-inches equivalents, and a popular screen size table.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free centimeters to inches converter – Arteon"
     },
     {
@@ -577,6 +577,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "title": "Have a question or suggestion?",
       "description": "If you spot an error in the tables or have an idea for improving the converter, get in touch. We reply to every message.",
       "imageAlt": "Contact Arteon Agency",

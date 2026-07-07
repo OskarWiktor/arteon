@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando serve convertire decimale in binario?",
       "html": "<p class=\"text-mid mb-4\">Il binario (base-2) è il sistema numerico fondamentale dei computer. Ogni dato — testo, immagini, programmi — è memorizzato come sequenza di 0 e 1.</p><p class=\"text-mid mb-4\">Ogni cifra binaria (bit) rappresenta una potenza di 2. Esempio: decimale 42 = binario 101010 (32+8+2).</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore decimale in binario – Arteon"
     },
     {

@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir bytes?",
       "html": "<p class=\"text-mid mb-4\">El almacenamiento digital se mide en bytes y sus múltiplos: kilobyte (KB), megabyte (MB), gigabyte (GB) y terabyte (TB). Hay dos sistemas: decimal (1 KB = 1.000 bytes) y binario (1 KiB = 1.024 bytes).</p><p class=\"text-mid mb-4\">Los fabricantes de almacenamiento usan unidades decimales (un disco de “500 GB” = 500.000.000.000 bytes), mientras que los sistemas operativos usan unidades binarias (muestran ~465 GiB para el mismo disco).</p><p class=\"text-mid mb-4\">Tamaños de archivo, RAM, velocidades de red y capacidad de almacenamiento usan diferentes convenciones. Este convertidor maneja ambos sistemas.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor de bytes – KB, MB, GB, TB – Arteon"
     },
     {

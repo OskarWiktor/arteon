@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Kalkulačka mm na palce – převod milimetrů na palce",
     "description": "Převeď milimetry na palce. Přiložené tabulky ukazují i palcové zlomky (1/8, 1/4, 3/8) používané u vrtáků, šroubů a tlouštěk materiálů. Převodník funguje oběma směry a počítá okamžitě.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-mm-na-palce"
   },
   "hero": {
     "title": "Převeď milimetry na palce",
     "description": "Zadej libovolnou hodnotu v milimetrech a hned si přečti výsledek v desetinných palcích. Tabulka zlomků níže na stránce ukazuje i nejbližší palcový zlomek, jaký se používá u vrtáků nebo šroubů. Převodník se hodí při přesných měřeních: tloušťky materiálů, rozměry elektronických součástek nebo výběr nářadí popsaného v palcích.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "K čemu převádět milimetry na palce?",
       "html": "<p class=\"text-mid mb-4\">Milimetr je základní jednotkou přesných měření v Česku a celé Evropě. Palec naopak vládne v anglosaských zemích, především v USA, kde se v palcích udávají vrtáky, šrouby, nástrčné klíče i tloušťky stavebních materiálů. Problém nastává, když si koupíš americké nářadí se specifikací v palcích nebo se snažíš vybrat metrický vrták pro rozměr udaný palcovým zlomkem.</p><p class=\"text-mid mb-4\">Jeden palec je přesně 25,4 mm. Tento vztah je konstantní a platí všude, takže každý převod se redukuje na jediné dělení. Převodník ho za tebe udělá hned po zadání hodnoty.</p><p class=\"text-mid mb-4\">Níže na stránce najdeš převodní tabulku mm na palce pro hodnoty od 1 do 800 mm a tabulku nejběžnějších palcových zlomků s jejich ekvivalentem v milimetrech.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník milimetrů na palce – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -279,6 +279,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "title": "Máš otázku nebo návrh?",
       "description": "Pokud najdeš chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontakt s Arteon Agency",

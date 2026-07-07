@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Calcolatore px in cm (DPI) – converti pixel in centimetri",
     "description": "Converti pixel in centimetri con DPI regolabile. Lo strumento ideale per grafici, fotografi e creativi che verificano le dimensioni di stampa dei file da schermo.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-px-in-cm"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Perché convertire i pixel in centimetri?",
       "html": "<p class=\"text-mid mb-4\">Il pixel è un'unità digitale che descrive un punto sullo schermo di un telefono, un tablet o un monitor. Il centimetro, invece, domina il mondo fisico della carta e della stampa. Per tradurre uno nell'altro devi conoscere la risoluzione DPI, cioè il numero di pixel che entrano in un pollice di materiale o di schermo.</p><p class=\"text-mid mb-4\">Questo tipo di conversione lo eseguono soprattutto i grafici che vogliono verificare quanto sarà grande il loro progetto dopo la stampa, i fotografi che valutano se un file della fotocamera basta per un determinato formato di stampa e le persone che preparano screenshot o grafiche trovate online per la stampa. Il convertitore ti libera dai calcoli a mano e dal dover ricordare la formula.</p><p class=\"text-mid\">Più avanti nella pagina trovi una tabella di risposte estesa per i valori di pixel più diffusi, una tabella a parte con le risoluzioni dello schermo come Full HD e 4K, le dimensioni pronte dei formati di carta e fotografia e brevi guide su come passare dai pixel ai centimetri in Photoshop, Figma, Canva e altri strumenti grafici.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore gratuito di pixel in centimetri – Arteon"
     },
     {
@@ -749,7 +749,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare questo convertitore",
       "description": "Ti manca un valore nelle tabelle, hai trovato un errore nella conversione o vuoi proporre una nuova funzione? Scrivici: leggiamo ogni messaggio di persona e rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore px in cm – Arteon",
       "defaultSubject": "Feedback: convertitore px in cm"
     },

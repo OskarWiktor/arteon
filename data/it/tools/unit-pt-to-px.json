@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando serve convertire punti in pixel?",
       "html": "<p class=\"text-mid mb-4\">I punti (pt) sono un’unità tipografica di stampa: 1 pt = 1/72 di pollice. I pixel (px) sono unità di schermo. Con 96 PPI standard: 1 pt = 1,333 px.</p><p class=\"text-mid mb-4\">Dimensioni comuni: 12 pt = 16 px (standard browser), 10 pt = 13,3 px, 18 pt = 24 px.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore punti in pixel – tipografia – Arteon"
     },
     {

@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando serve convertire pollici in pixel?",
       "html": "<p class=\"text-mid mb-4\">I formati carta US usano pollici. Per dati di stampa digitali: Pixel = pollici × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) a 300 DPI = 2.550 × 3.300 pixel. Foto 4 × 6″ a 300 DPI = 1.200 × 1.800 pixel.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore pollici in pixel (DPI) – Arteon"
     },
     {

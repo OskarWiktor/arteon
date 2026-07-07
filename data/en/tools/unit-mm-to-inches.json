@@ -4,13 +4,13 @@
   "metadata": {
     "title": "MM to Inches Calculator – Convert Millimeters to Inches",
     "description": "Convert millimeters to inches. Ready-made tables also show the inch fractions (1/8, 1/4, 3/8) used for drill bits, bolts, and material thickness. The converter works both ways and calculates instantly.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/mm-to-inches-converter"
   },
   "hero": {
     "title": "Convert millimeters to inches",
     "description": "Enter any value in millimeters and instantly read the result in decimal inches. The fraction table further down the page also shows the nearest inch fraction used for drill bits and bolts. The converter comes in handy for precise measurements: material thickness, electronic component dimensions, or matching a metric spec to your fractional-inch tools.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Why convert millimeters to inches?",
       "html": "<p class=\"text-mid mb-4\">The inch rules everyday measurement in the United States, where drill bits, bolts, socket wrenches, and building materials are all sized in inches or inch fractions. The millimeter is the standard unit of precise measurement in Europe and most of the rest of the world. The problem appears when you buy a European product with a metric spec, work on a car that uses metric fasteners, or try to match a millimeter dimension from a manual to your fractional-inch tool set.</p><p class=\"text-mid mb-4\">One inch is exactly 25.4 mm. This relationship is fixed and applies everywhere, so every conversion comes down to a single division. The converter does it for you the moment you type a value.</p><p class=\"text-mid mb-4\">Further down the page you will find a mm-to-inches conversion table for values from 1 to 800 mm and a table of the most common inch fractions with their millimeter equivalents.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free millimeters to inches converter – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -279,6 +279,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "title": "Have a question or suggestion?",
       "description": "If you spot an error in the tables or have an idea for improving the converter, get in touch. We reply to every message.",
       "imageAlt": "Contact Arteon Agency",

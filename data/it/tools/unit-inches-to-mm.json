@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calcolatore pollici in MM – convertire pollici in millimetri",
     "description": "Converti pollici in millimetri. La tabella completa delle frazioni di pollice a passi di 1/32 mostra gli equivalenti in mm di punte da trapano, viti e chiavi a bussola. Il convertitore funziona in entrambe le direzioni e calcola all'istante.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-pollici-in-mm"
   },
   "hero": {
     "title": "Converti pollici in millimetri",
     "description": "Inserisci un valore in pollici e vedi subito il risultato in millimetri. Il convertitore è utile ovunque utensili, viti o materiali siano specificati in pollici o nelle loro frazioni: nella scelta di una punta da trapano, di una chiave a bussola, di una vite con filettatura in pollici o nel controllo dello spessore di un materiale da un catalogo americano.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Quando si convertono pollici in millimetri?",
       "html": "<p class=\"text-mid mb-4\">Il pollice è l'unità di lunghezza del sistema imperiale, molto usata negli USA, nel Regno Unito, in Canada e in Australia, soprattutto per utensili, viti e materiali da costruzione. In Italia e in tutta Europa lavoriamo in millimetri, quindi i pollici – spesso in forma di frazione – compaiono soprattutto al contatto con utensili o componenti provenienti da paesi anglofoni.</p><p class=\"text-mid mb-4\">Le situazioni più frequenti: vuoi sapere quanti millimetri misura una punta indicata come 3/8 di pollice, cerchi una chiave a bussola per una vite con filettatura in pollici o controlli lo spessore di una lamiera indicato come 1/8 di pollice in un catalogo americano.</p><p class=\"text-mid mb-4\">La formula è semplice: un pollice equivale esattamente a 25,4 mm. Per convertire i pollici in millimetri, basta moltiplicare il numero di pollici per 25,4. Il convertitore lo fa non appena inserisci un valore.</p><p class=\"text-mid\">In questa pagina troverai una tabella di conversione pollici in mm e la tabella completa delle frazioni di pollice a passi di 1/32, che copre tutte le misure da 1/32 a 1 pollice.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore gratuito da pollici a millimetri – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -301,6 +301,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "title": "Hai una domanda o un suggerimento?",
       "description": "Se noti un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
       "imageAlt": "Contatta Arteon Agency",

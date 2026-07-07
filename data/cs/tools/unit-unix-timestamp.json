@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník Unix timestamp na date",
     "description": "Převést Unix timestamp na date a naopak. Užitečné pro vývojáře a analýzu logů. Bez registrace.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-unix-timestamp"
   },
   "hero": {
     "title": "Převést Unix timestamp na date",
     "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Kdy je potřeba převádět Unix časová razítka?",
       "html": "<p class=\"text-mid mb-4\">Unix timestamp (Epoch) počítá sekundy od 1. ledna 1970, 00:00:00 UTC. Univerzální standard pro ukládání data a času v počítačových systémech.</p><p class=\"text-mid mb-4\">Příklad: 1709251200 = 1. března 2024 00:00:00 UTC. Timestampy jsou nezávislé na časovém pásmu.</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník Unix timestamp na date – Arteon"
     },
     {
@@ -237,7 +237,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Unix Timestamp na datę – Arteon",
       "defaultSubject": "Feedback: unix-timestamp"
     },

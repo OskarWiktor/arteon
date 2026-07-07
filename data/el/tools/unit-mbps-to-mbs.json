@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Mbps σε MB/s – μετατροπέας",
     "description": "Μετατρέψτε Mbps σε MB/s και αντίστροφα.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-mbps-se-mbs"
   },
   "hero": {
     "title": "Mbps σε MB/s",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Mbps σε MB/s?",
       "html": "<p class=\"text-mid mb-4\">Οι ταχύτητες internet διαφημίζονται σε megabits ανά δευτερόλεπτο (Mbps), αλλά τα μεγέθη αρχείων και οι ταχύτητες λήψης εμφανίζονται συνήθως σε megabytes ανά δευτερόλεπτο (MB/s). 1 byte = 8 bits, άρα 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">Αυτό σημαίνει ότι μια σύνδεση 100 Mbps κατεβάζει με μέγιστο 12,5 MB/s. Μια σύνδεση 1 Gbps = 125 MB/s.</p><p class=\"text-mid mb-4\">Αυτή η μετατροπή είναι απαραίτητη για την εκτίμηση χρόνων λήψης, την επιλογή πακέτου internet και την κατανόηση της διαφοράς μεταξύ διαφημιζόμενων και πραγματικών ταχυτήτων.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Mbps σε MB/s – Arteon"
     },
     {
@@ -241,7 +241,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Mbps σε MB/s – Arteon",
       "defaultSubject": "Feedback: mbps-to-mbs"
     },

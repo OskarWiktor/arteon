@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník pt na pixels",
     "description": "Převést pt na pixels a naopak. Užitečné pro webovou a tiskovou typografii. Bez registrace.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-pt-na-px"
   },
   "hero": {
     "title": "Převést pt na pixels",
     "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Kdy je potřeba převádět body na pixely?",
       "html": "<p class=\"text-mid mb-4\">Body (pt) jsou typografická tisková jednotka: 1 pt = 1/72 palce. Pixely (px) jsou jednotky obrazovky. Při 96 PPI: 1 pt = 1,333 px.</p><p class=\"text-mid mb-4\">12 pt = 16 px (standard prohlížeče), 10 pt = 13,3 px.</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník pt na pixels – Arteon"
     },
     {
@@ -233,7 +233,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "pt na px – Arteon",
       "defaultSubject": "Feedback: pt-to-px"
     },

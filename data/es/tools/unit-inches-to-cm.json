@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculadora pulgadas a CM – convertir pulgadas a centímetros",
     "description": "Convierte pulgadas a centímetros al instante. Comprueba el tamaño de TV en cm, estatura en sistema métrico, tallas de ropa de tiendas europeas y medidas del equipaje. Tabla de conversión pulgadas a cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-pulgadas-a-cm"
   },
   "hero": {
     "title": "Convierte pulgadas a centímetros",
     "description": "Introduce cualquier valor en pulgadas y obtén el resultado en centímetros al instante. Este conversor es útil en todos los contextos donde necesitas entender medidas imperiales en sistema métrico: al comprobar el tamaño de un televisor, leer las dimensiones de un producto europeo, comparar tallas de ropa o convertir una estatura.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo se necesita convertir pulgadas a centímetros?",
       "html": "<p class=\"text-mid mb-4\">La pulgada es la unidad de longitud del sistema imperial, utilizada principalmente en Estados Unidos y aún habitual en el Reino Unido. En España y en toda América Latina se usa el sistema métrico, por lo que las pulgadas aparecen sobre todo cuando se trata de productos o información provenientes de países anglófonos.</p><p class=\"text-mid mb-4\">Las situaciones más frecuentes: quieres saber cuántos centímetros tiene un televisor de 55 pulgadas, comparas tu estatura con una tabla de tallas estadounidense, compras zapatos en una tienda británica donde el número se expresa en pulgadas o consultas las medidas de un mueble en un catálogo americano.</p><p class=\"text-mid mb-4\">La fórmula es sencilla: una pulgada equivale exactamente a 2,54 cm. Para convertir pulgadas a centímetros, basta con multiplicar por 2,54. El convertidor lo hace en cuanto introduces un valor.</p><p class=\"text-mid\">En esta página encontrarás una tabla de conversión de pulgadas a cm, una tabla de diagonales de pantalla populares y una tabla de estatura con la conversión de pies y pulgadas a centímetros.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor gratuito de pulgadas a centímetros – Arteon"
     },
     {
@@ -335,6 +335,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "title": "¿Tienes una pregunta o sugerencia?",
       "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contacto con Arteon Agency",

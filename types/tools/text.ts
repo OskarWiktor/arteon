@@ -10,6 +10,7 @@ export interface TextMetrics {
   fleschScore: number | null;
   fleschGrade: number | null;
   speakingTimeMinutes: number;
+  unsupportedScript: boolean;
 }
 
 export type FieldMetrics = {

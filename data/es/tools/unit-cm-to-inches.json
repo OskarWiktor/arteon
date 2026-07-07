@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculadora cm a pulgadas – convertir centímetros a pulgadas",
     "description": "Convierte centímetros a pulgadas al instante. Comprueba la estatura, tallas de ropa, diagonal de TV y medidas del equipaje. Tabla de conversión cm a pulgadas y pulgadas a cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-cm-a-pulgadas"
   },
   "hero": {
     "title": "Convierte centímetros a pulgadas",
     "description": "Introduce cualquier valor en centímetros y obtén el resultado en pulgadas al instante. Este conversor es útil en todos los contextos donde las medidas se expresan en el sistema imperial: al comprobar la estatura, comprar electrónica, pedir ropa en tiendas de Estados Unidos o Reino Unido, o verificar las dimensiones permitidas del equipaje.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir centímetros a pulgadas?",
       "html": "<p class=\"text-mid mb-4\">El centímetro es la unidad de longitud cotidiana en España y en toda América Latina. La pulgada, en cambio, domina en Estados Unidos y sigue siendo habitual en el Reino Unido. La necesidad de convertir surge cuando compras un televisor cuya diagonal se expresa en pulgadas, verificas las medidas permitidas del equipaje en la web de una aerolínea estadounidense o comparas tu estatura con una tabla de tallas de una tienda británica.</p><p class=\"text-mid mb-4\">Una pulgada equivale exactamente a 2,54 cm. Esta relación es fija y universal, por lo que cualquier conversión se reduce a una sola división. El convertidor lo hace por ti en cuanto introduces un valor.</p><p class=\"text-mid mb-4\">Más abajo encontrarás una tabla de conversión cm a pulgadas para valores de 0,5 a 200 cm, una tabla de estatura con el equivalente en pies y pulgadas y una tabla de diagonales de pantalla populares.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor gratuito de centímetros a pulgadas – Arteon"
     },
     {
@@ -577,6 +577,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "title": "¿Tienes una pregunta o sugerencia?",
       "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contacto con Arteon Agency",

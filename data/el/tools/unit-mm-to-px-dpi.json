@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας mm σε px (DPI) – χιλιοστά σε pixel",
     "description": "Μετατρέψτε χιλιοστά σε pixel με ρυθμιζόμενο DPI. Απαραίτητο στις εκτυπώσεις, στον σχεδιασμό συσκευασίας και στην προετοιμασία αρχείων στο Illustrator, το InDesign και το CorelDRAW.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-mm-se-px"
   },
   "hero": {
     "title": "Μετατρέψτε χιλιοστά σε pixel με όποιο DPI χρειάζεστε",
     "description": "Εισάγετε μια τιμή σε χιλιοστά, ρυθμίστε την ανάλυση DPI και διαβάστε το αποτέλεσμα σε pixel. Ελέγξτε πόσα pixel αντιστοιχούν σε μια συγκεκριμένη τιμή σε χιλιοστά, για παράδειγμα τις διαστάσεις μιας επαγγελματικής κάρτας, ενός φυλλαδίου, μιας αφίσας ή ενός φύλλου A4. Ο μετατροπέας σας βοηθά να επιλέξετε τη σωστή ανάλυση αρχείου πριν το στείλετε στο τυπογραφείο.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -87,7 +87,7 @@
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε χιλιοστά σε pixel;",
       "html": "<p class=\"text-mid mb-4\">Το χιλιοστό είναι η πιο ακριβής φυσική μονάδα που χρησιμοποιείται στις εκτυπώσεις, στον σχεδιασμό συσκευασίας και στη μηχανική – τα τυπογραφεία δίνουν τις διαστάσεις επαγγελματικών καρτών, φυλλαδίων και περιθωρίου κοπής σε χιλιοστά. Το pixel, από την άλλη, περιγράφει ένα μεμονωμένο σημείο σε μια οθόνη ή σε ένα αρχείο εικόνας. Για να μετατρέψετε το ένα στο άλλο, πρέπει να γνωρίζετε την ανάλυση DPI, δηλαδή τον αριθμό pixel που χωράει σε μία ίντσα υλικού.</p><p class=\"text-mid mb-4\">Αυτή τη μετατροπή τη χρησιμοποιούν κυρίως γραφίστες που προετοιμάζουν αρχεία για το τυπογραφείο, σχεδιαστές συσκευασίας που ελέγχουν διαστάσεις ετικετών, και όσοι εργάζονται στο Illustrator, το InDesign ή το CorelDRAW, σκέφτονται σε χιλιοστά αλλά πρέπει να παραδώσουν ένα αρχείο με συγκεκριμένο αριθμό pixel. Ο μετατροπέας σάς γλιτώνει από τον χειροκίνητο υπολογισμό και την απομνημόνευση του τύπου.</p><p class=\"text-mid\">Πιο κάτω σε αυτή τη σελίδα θα βρείτε έναν εκτενή πίνακα για συνήθεις τιμές σε χιλιοστά, έναν αντίστροφο πίνακα από pixel σε χιλιοστά, έτοιμες διαστάσεις για επαγγελματικές κάρτες, φυλλάδια και μεγέθη A0–A7, καθώς και σύντομους οδηγούς για τη μετατροπή χιλιοστών σε pixel στο Illustrator, το InDesign, το CorelDRAW, το Photoshop, το Figma και το Canva.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Δωρεάν μετατροπέας χιλιοστών σε pixel – Arteon"
     },
     {
@@ -657,7 +657,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε αυτόν τον μετατροπέα",
       "description": "Λείπει κάποια τιμή από τους πίνακες, βρήκατε σφάλμα υπολογισμού ή θέλετε να προτείνετε μια νέα λειτουργία; Γράψτε μας – διαβάζουμε κάθε μήνυμα προσωπικά και απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπέας mm σε px – Arteon",
       "defaultSubject": "Σχόλια: μετατροπέας mm σε px"
     },

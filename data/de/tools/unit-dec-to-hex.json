@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Wann muss man Dezimal in Hexadezimal umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Das Hexadezimalsystem (Basis-16) verwendet die Ziffern 0–9 und die Buchstaben A–F. Es ist eine kompakte Darstellung von Binärdaten: eine Hex-Ziffer = 4 Bit.</p><p class=\"text-mid mb-4\">Web-Farben verwenden Hex: #FF5733 = Rot 255, Grün 87, Blau 51. Speicheradressen: 0x7FFF = 32.767.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Dezimal in Hexadezimal umrechnen – Zahlensystem-Rechner – Arteon"
     },
     {
