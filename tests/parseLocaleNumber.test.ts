@@ -13,12 +13,30 @@ describe('parseLocaleNumber', () => {
     expect(parseLocaleNumber('3,14', 'pl')).toBeCloseTo(3.14);
   });
 
+  it('accepts a DOT as decimal separator for PL too (both separators work)', () => {
+    // Regression: after switching the inputs to type="text", a PL user typing
+    // "33.3" with a dot used to get 333 (dot stripped as a thousands sep).
+    expect(parseLocaleNumber('33.3', 'pl')).toBeCloseTo(33.3);
+    expect(parseLocaleNumber('33,3', 'pl')).toBeCloseTo(33.3);
+    expect(parseLocaleNumber('2.54', 'pl')).toBeCloseTo(2.54);
+    expect(parseLocaleNumber('17.5', 'pl')).toBeCloseTo(17.5);
+  });
+
+  it('treats a single dot with 4+ trailing digits as decimal for PL', () => {
+    expect(parseLocaleNumber('1.2345', 'pl')).toBeCloseTo(1.2345);
+  });
+
+  it('parses space-separated thousands for PL', () => {
+    expect(parseLocaleNumber('1 234,56', 'pl')).toBeCloseTo(1234.56);
+  });
+
   it('parses combined thousands+decimal values for PL', () => {
     expect(parseLocaleNumber('1.234,56', 'pl')).toBeCloseTo(1234.56);
   });
 
   it('parses dot-decimal values correctly for EN', () => {
     expect(parseLocaleNumber('2.5', 'en')).toBeCloseTo(2.5);
+    expect(parseLocaleNumber('33.3', 'en')).toBeCloseTo(33.3);
   });
 
   it('parses comma-as-thousands-separator values correctly for EN', () => {
