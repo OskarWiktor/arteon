@@ -27,6 +27,12 @@ const playfairDisplay = Playfair_Display({
 
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 
+// Wydawca AdSense (ca-pub-…). Tag AdSense ładujemy globalnie jako JEDYNE źródło
+// komunikatu zgody Google (Funding Choices) na każdej stronie. Reklamy renderują
+// się wyłącznie tam, gdzie <AdSense> wstawia sloty (narzędzia). Jedno źródło
+// oznacza, że komunikat zgody fizycznie nie może pokazać się dwa razy.
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '';
+
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 
 const ORG_DESCRIPTIONS: Record<string, string> = {
@@ -231,6 +237,21 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
               "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','AW-18301493133');gtag('config','G-E036QL494E');",
           }}
         />
+
+        {/* Tag AdSense (adsbygoogle.js) ładowany globalnie — jedyne źródło
+            komunikatu zgody Google (Funding Choices) na każdej stronie, także na
+            landingach kampanii. Reklamy pojawiają się tylko tam, gdzie <AdSense>
+            wstawia sloty (narzędzia). Komponent <AdSense> wykrywa już wczytany
+            skrypt i go nie dubluje. WAŻNE: w panelu AdSense „Auto ads" musi być
+            wyłączone, inaczej reklamy pojawiłyby się też na stronach ofertowych. */}
+        {ADSENSE_CLIENT && (
+          <Script
+            id='adsbygoogle-src'
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+            strategy='afterInteractive'
+            crossOrigin='anonymous'
+          />
+        )}
 
         <Analytics />
         <SpeedInsights sampleRate={0.02} />
