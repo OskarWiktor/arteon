@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Calculadora px a cm (DPI) – convierte píxeles a centímetros",
     "description": "Convierte píxeles a centímetros con DPI ajustable. La herramienta ideal para diseñadores, fotógrafos y creadores que comprueban el tamaño de impresión de archivos de pantalla.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-px-a-cm"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "¿Para qué convertir píxeles a centímetros?",
       "html": "<p class=\"text-mid mb-4\">El píxel es una unidad digital que describe un punto en la pantalla de un teléfono, una tableta o un monitor. El centímetro, en cambio, gobierna el mundo físico del papel y la impresión. Para traducir uno al otro debes conocer la resolución DPI, es decir, cuántos píxeles caben en una pulgada de soporte o pantalla.</p><p class=\"text-mid mb-4\">Este tipo de conversión la realizan sobre todo diseñadores que quieren comprobar el tamaño de su proyecto tras la impresión, fotógrafos que evalúan si un archivo de cámara es suficiente para un tamaño concreto de copia y personas que preparan capturas de pantalla o gráficos de internet para imprimir. El convertidor te libera de hacer cálculos a mano y de memorizar la fórmula.</p><p class=\"text-mid\">Más abajo en la página encontrarás una tabla ampliada de respuestas para valores populares de píxeles, una tabla aparte con resoluciones de pantalla como Full HD y 4K, dimensiones listas para formatos de papel y fotografía, y guías cortas para cambiar de píxeles a centímetros en Photoshop, Figma, Canva y otras herramientas de diseño.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversor gratuito de píxeles a centímetros – Arteon"
     },
     {
@@ -764,7 +764,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar este convertidor",
       "description": "¿Te falta algún valor en las tablas, has detectado un error en la conversión o quieres proponer una nueva función? Escríbenos – leemos todos los mensajes en persona y respondemos en menos de 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor px a cm – Arteon",
       "defaultSubject": "Feedback: convertidor px a cm"
     },

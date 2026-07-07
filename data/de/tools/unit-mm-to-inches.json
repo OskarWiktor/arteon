@@ -4,13 +4,13 @@
   "metadata": {
     "title": "MM in Zoll Rechner – Millimeter in Zoll umrechnen",
     "description": "Millimeter in Zoll umrechnen. Fertige Tabellen zeigen auch die Zollbrüche (1/8, 1/4, 3/8), die bei Bohrern, Schrauben und Materialstärken verwendet werden. Der Umrechner funktioniert in beide Richtungen und rechnet sofort.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/mm-in-zoll-umrechner"
   },
   "hero": {
     "title": "Millimeter in Zoll umrechnen",
     "description": "Geben Sie einen beliebigen Wert in Millimetern ein und lesen Sie das Ergebnis sofort in Dezimalzoll ab. Die Bruchtabelle weiter unten auf der Seite zeigt zusätzlich den nächstgelegenen Zollbruch, wie er bei Bohrern oder Schrauben verwendet wird. Der Umrechner hilft bei präzisen Messungen: Materialstärken, Abmessungen elektronischer Bauteile oder der Auswahl von Werkzeugen mit Zollangaben.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Wozu Millimeter in Zoll umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Der Millimeter ist die Grundeinheit für präzise Messungen in Deutschland, Österreich, der Schweiz und ganz Europa. Der Zoll dominiert dagegen in den englischsprachigen Ländern, allen voran in den USA, wo Bohrer, Schrauben, Steckschlüssel und Baumaterialstärken in Zoll angegeben werden. Das Problem entsteht, wenn Sie ein amerikanisches Werkzeug mit Zollangaben kaufen oder einen metrischen Bohrer zu einer Größe passend wählen müssen, die als Zollbruch angegeben ist.</p><p class=\"text-mid mb-4\">Ein Zoll entspricht genau 25,4 mm. Diese Beziehung ist konstant und gilt überall, sodass jede Umrechnung auf eine einzige Division hinausläuft. Der Umrechner erledigt das für Sie, sobald Sie einen Wert eingeben.</p><p class=\"text-mid mb-4\">Weiter unten auf der Seite finden Sie eine Umrechnungstabelle mm in Zoll für Werte von 1 bis 800 mm sowie eine Tabelle der gängigsten Zollbrüche mit ihrer Millimeter-Entsprechung.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Millimeter-in-Zoll-Umrechner – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -279,6 +279,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "title": "Haben Sie eine Frage oder einen Verbesserungsvorschlag?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt mit Arteon Agency",

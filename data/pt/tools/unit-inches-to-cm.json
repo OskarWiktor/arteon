@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculadora polegadas para CM – converter polegadas em centímetros",
     "description": "Converta polegadas em centímetros instantaneamente. Verifique o tamanho de TV em cm, altura em sistema métrico, tamanhos de roupa de lojas europeias e medidas de bagagem. Tabela de conversão polegadas para cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-polegadas-para-cm"
   },
   "hero": {
     "title": "Converter polegadas em centímetros",
     "description": "Introduza qualquer valor em polegadas e obtenha imediatamente o resultado em centímetros. Este conversor é útil em todos os contextos onde precisa de compreender medidas imperiais em sistema métrico: ao verificar o tamanho de uma televisão, ao ler as dimensões de um produto europeu, ao comparar tamanhos de roupa ou ao converter uma altura.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Quando é necessário converter polegadas em centímetros?",
       "html": "<p class=\"text-mid mb-4\">A polegada é a unidade de comprimento do sistema imperial, utilizada principalmente nos Estados Unidos e ainda corrente no Reino Unido. Em Portugal e em todo o mundo lusófono utiliza-se o sistema métrico, pelo que as polegadas surgem sobretudo quando se trata de produtos ou informações provenientes de países anglófonos.</p><p class=\"text-mid mb-4\">As situações mais frequentes: quer saber quantos centímetros tem uma televisão de 55 polegadas, compara a sua altura com uma tabela de tamanhos americana, compra sapatos numa loja britânica onde o número é expresso em polegadas ou consulta as medidas de um móvel num catálogo americano.</p><p class=\"text-mid mb-4\">A fórmula é simples: uma polegada equivale exatamente a 2,54 cm. Para converter polegadas em centímetros, basta multiplicar por 2,54. O conversor faz isso assim que introduz um valor.</p><p class=\"text-mid\">Nesta página encontrará uma tabela de conversão de polegadas para cm, uma tabela de diagonais de ecrã populares e uma tabela de altura com a conversão de pés e polegadas para centímetros.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor gratuito de polegadas para centímetros – Arteon"
     },
     {
@@ -335,6 +335,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "title": "Tem alguma pergunta ou sugestão?",
       "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, contacte-nos. Respondemos a todas as mensagens.",
       "imageAlt": "Contacto com Arteon Agency",

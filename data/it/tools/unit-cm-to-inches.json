@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calcolatore cm in pollici – convertire centimetri in pollici",
     "description": "Converti centimetri in pollici all'istante. Verifica altezza, taglie di abbigliamento, diagonale TV e misure del bagaglio. Tabella di conversione cm in pollici e pollici in cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-cm-in-pollici"
   },
   "hero": {
     "title": "Converti centimetri in pollici",
     "description": "Inserisci qualsiasi valore in centimetri e ottieni subito il risultato in pollici. Questo convertitore è utile ovunque le misure vengano espresse nel sistema imperiale: per verificare l'altezza, acquistare elettronica, ordinare abbigliamento da negozi americani o britannici, oppure controllare le dimensioni consentite del bagaglio.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Perché convertire centimetri in pollici?",
       "html": "<p class=\"text-mid mb-4\">Il centimetro è l'unità di misura della lunghezza di uso quotidiano in Italia e in tutta Europa. Il pollice, invece, domina negli Stati Uniti ed è ancora ampiamente usato nel Regno Unito. La necessità di convertire si presenta quando acquisti un televisore la cui diagonale è espressa in pollici, verifichi le misure consentite del bagaglio sul sito di una compagnia aerea americana o confronti la tua altezza con una tabella taglie di un negozio britannico.</p><p class=\"text-mid mb-4\">Un pollice equivale esattamente a 2,54 cm. Questa relazione è fissa e universale, quindi ogni conversione si riduce a una sola divisione. Il convertitore lo fa per te non appena inserisci un valore.</p><p class=\"text-mid mb-4\">Più in basso troverai una tabella di conversione cm in pollici per valori da 0,5 a 200 cm, una tabella dell'altezza con l'equivalente in piedi e pollici e una tabella delle diagonali degli schermi più diffuse.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore gratuito da centimetri a pollici – Arteon"
     },
     {
@@ -577,6 +577,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "title": "Hai una domanda o un suggerimento?",
       "description": "Se noti un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
       "imageAlt": "Contatta Arteon Agency",

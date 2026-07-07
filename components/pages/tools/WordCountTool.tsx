@@ -86,6 +86,9 @@ export default function WordCountTool() {
             {t.readabilityHint && metrics.fleschScore !== null && (
               <p className='text-xs text-light'>{t.readabilityHint}</p>
             )}
+            {metrics.unsupportedScript && (
+              <p className='text-xs text-light'>{t.readabilityUnsupported}</p>
+            )}
           </div>
 
           <div className='flex gap-2'>

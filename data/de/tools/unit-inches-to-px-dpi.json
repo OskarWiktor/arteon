@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Wann muss man Zoll in Pixel umrechnen?",
       "html": "<p class=\"text-mid mb-4\">US-Papierformate verwenden Zoll. Für digitale Druckdaten: Pixel = Zoll × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) bei 300 DPI = 2.550 × 3.300 Pixel. Foto 4 × 6″ bei 300 DPI = 1.200 × 1.800 Pixel.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Zoll in Pixel (DPI) umrechnen – Druckauflösungsrechner – Arteon"
     },
     {

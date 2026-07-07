@@ -167,7 +167,7 @@ export function getToolsList(locale: Locale): ToolSectionItem[] {
 }
 
 // ---------------------------------------------------------------------------
-// Curated subsets for footer & mobile nav (9 most popular converters)
+// Curated subset for mobile nav (9 most popular converters)
 // ---------------------------------------------------------------------------
 const POPULAR_CONVERTER_KEYS: ToolItemKey[] = [
   'jpgToWebpSimple',
@@ -180,29 +180,6 @@ const POPULAR_CONVERTER_KEYS: ToolItemKey[] = [
   'bmpToJpg',
   'jpgToAvif',
 ];
-
-/** Footer tools: all non-converter tools + 9 most popular image converters */
-export function getFooterTools(locale: Locale): ToolSectionItem[] {
-  const nonConverters = TOOL_REGISTRY.filter(
-    t =>
-      t.section !== 'konwertery' &&
-      t.section !== 'dokumenty' &&
-      t.locales[locale],
-  );
-  const popularConverters = POPULAR_CONVERTER_KEYS.map(key =>
-    TOOL_REGISTRY.find(t => t.key === key),
-  ).filter((t): t is ToolDefinition => !!t && !!t.locales[locale]);
-
-  return [...nonConverters, ...popularConverters].map(tool => ({
-    key: tool.key,
-    href: getToolHref(tool.key, locale),
-    title: tool.locales[locale]!.title,
-    description: tool.locales[locale]!.description,
-    icon: tool.icon,
-    desktopOnly: tool.desktopOnly || undefined,
-    carouselOrder: tool.carouselOrder,
-  }));
-}
 
 /** Mobile nav tool sections: same as getToolsSections but limits konwertery to 9 popular */
 export function getMobileToolsSections(locale: Locale): ToolsSection[] {

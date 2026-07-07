@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník px na mm (DPI) – pixely na milimetry",
     "description": "Převeď pixely na milimetry s nastavitelným DPI. Nezbytné v polygrafii, při návrhu obalů a při ověřování, zda soubor z fotoaparátu nebo obrázek z webu stačí na konkrétní tiskový formát.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-px-na-mm"
   },
   "hero": {
     "title": "Převeď pixely na milimetry s libovolným DPI",
     "description": "Zadej hodnotu v pixelech, nastav rozlišení DPI a přečti si výsledek v milimetrech. Zjisti, jak velký by byl fyzicky soubor z fotoaparátu, obrázek z webu nebo export z Figmy po vytištění. Převodník ti pomůže vybrat správný rozměr před odesláním souboru do tiskárny.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -87,7 +87,7 @@
       "type": "sectionBasic",
       "title": "Proč převádět pixely na milimetry?",
       "html": "<p class=\"text-mid mb-4\">Pixel je digitální jednotka, která popisuje jeden bod na obrazovce nebo v obrazovém souboru. Milimetr naopak vládne fyzickému světu – tiskárny uvádějí rozměry vizitek, letáků a spadávky v milimetrech. Pro převod jednoho na druhý musíš znát rozlišení DPI, tedy počet pixelů na jeden palec materiálu nebo obrazovky.</p><p class=\"text-mid mb-4\">Tento převod nejčastěji potřebují grafici ověřující, jak velký bude jejich projekt fyzicky po vytištění, fotografové posuzující, zda soubor z fotoaparátu stačí na konkrétní formát, a každý, kdo pracuje ve Figmě nebo Photoshopu, přemýšlí v pixelech, ale musí dodat soubor s přesným fyzickým rozměrem. Převodník ti ušetří ruční počítání a pamatování vzorce.</p><p class=\"text-mid\">Dále na této stránce najdeš rozsáhlou tabulku pro běžné hodnoty v pixelech, obrácenou tabulku z milimetrů na pixely, hotové rozměry vizitek, letáků a formátů A0–A7 a krátké návody, jak přepnout pixely na milimetry v Illustratoru, InDesignu, CorelDRAW, Photoshopu, Figmě a Canvě.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník pixelů na milimetry – Arteon"
     },
     {
@@ -772,7 +772,7 @@
       "type": "contactForm",
       "title": "Pomoz nám tento převodník vylepšit",
       "description": "Chybí ti v tabulkách nějaká hodnota, našel jsi chybu ve výpočtu nebo chceš navrhnout novou funkci? Napiš nám – každou zprávu čteme osobně a odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník px na mm – Arteon",
       "defaultSubject": "Zpětná vazba: převodník px na mm"
     },

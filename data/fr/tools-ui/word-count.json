@@ -14,5 +14,6 @@
   "clearText": "Effacer",
   "statistics": "Statistiques du texte",
   "empty": "Saisissez un texte pour voir les statistiques.",
-  "readabilityHint": "Pour du contenu web en français, visez 60–70."
+  "readabilityHint": "Pour du contenu web en français, visez 60–70.",
+  "readabilityUnsupported": "Le score de lisibilité fonctionne pour un texte en alphabet latin ou grec."
 }

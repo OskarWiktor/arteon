@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore da libbre a chilogrammi – calcolatore lb in kg",
     "description": "Converti libbre in chilogrammi all'istante. Utile per leggere il peso corporeo da app USA, convertire carichi di palestra e verificare limiti bagaglio. Tabella da 1 a 300 lb.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-libbre-in-kg"
   },
   "hero": {
     "title": "Converti libbre in chilogrammi",
     "description": "Inserisci qualsiasi valore in libbre e ottieni il risultato in chilogrammi immediatamente. Il convertitore è utile quando leggi il peso su un'app di salute o fitness americana, acquisti attrezzatura sportiva etichettata in libbre, interpreti limiti bagaglio di compagnie aeree americane o converti il peso alla nascita di un neonato in documentazione di ospedali anglofoni.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -85,7 +85,7 @@
       "type": "sectionBasic",
       "title": "Quando devi convertire libbre in chilogrammi?",
       "html": "<p class=\"text-mid mb-4\">In Italia il chilogrammo è l'unità di massa standard per il peso corporeo, gli alimenti, la merce e l'attrezzatura sportiva. Le app e i siti di salute e fitness americani — come MyFitnessPal, Apple Health o Fitbit — mostrano però il peso in libbre (lb) come impostazione predefinita. Anche i programmi di allenamento più diffusi negli USA usano le libbre: il bilanciere olimpico pesa 20 kg (negli USA lo chiamano bilanciere da 45 libbre, anche se in realtà sono 44,09 lb) e i dischi standard sono da 45, 35, 25, 10 e 5 lb.</p><p class=\"text-mid mb-4\">Convertire libbre in kg è necessario anche quando si leggono i limiti bagaglio delle compagnie aeree americane, si usa una bilancia calibrata in libbre o si interpreta la cartella clinica di un ospedale anglofono dove il peso di un neonato è registrato in libbre e once.</p><p class=\"text-mid\">Una libbra equivale esattamente a 0,45359237 kg. Al contrario: 1 kg = 2,2046 lb. Il convertitore calcola il risultato non appena inserisci un valore, e puoi copiarlo negli appunti con un solo clic.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore gratuito da libbre a chilogrammi – Arteon"
     },
     {
@@ -264,6 +264,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "title": "Hai domande o suggerimenti?",
       "description": "Se individui un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
       "imageAlt": "Contattare Arteon Agency",

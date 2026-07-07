@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor de kilogramos a libras – calculadora kg a lb",
     "description": "Convierte kilogramos a libras al instante. Útil para el peso corporal, equipos de gimnasio, límites de equipaje y peso de bebés. Tabla de 0,5 a 200 kg con columna stone.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-kg-a-libras"
   },
   "hero": {
     "title": "Convierte kilogramos a libras",
     "description": "Escribe cualquier valor en kilogramos y obtén el resultado en libras de inmediato. El convertidor es útil para comprobar el peso corporal en el sistema imperial, leer límites de equipaje en libras, comparar resultados deportivos con tablas estadounidenses o convertir el peso de nacimiento de un bebé.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo se convierten kilogramos a libras?",
       "html": "<p class=\"text-mid mb-4\">El kilogramo es la unidad de masa estándar en España, México, Argentina y prácticamente todo el mundo hispanohablante. La libra (lb) domina en Estados Unidos y sigue siendo habitual en el Reino Unido, especialmente para el peso corporal, donde los británicos también usan el stone (1 stone = 14 libras = aprox. 6,35 kg).</p><p class=\"text-mid mb-4\">Convertir kg a libras es necesario cuando consultas tu peso en una página médica estadounidense, compras material deportivo descrito en libras, interpretas un límite de equipaje en lb o quieres conocer el peso de nacimiento de un bebé en documentación de un hospital extranjero.</p><p class=\"text-mid mb-4\">Una libra equivale exactamente a 0,45359237 kg, valor fijado como constante desde 1959. Al revés: 1 kg = 2,2046 libras. El convertidor realiza el cálculo en cuanto escribes un valor.</p><p class=\"text-mid\">En esta página encontrarás una tabla de kg a libras para valores de 0,5 a 200 kg, una tabla de peso corporal con conversión a libras y stone y una tabla de pesos de gimnasio.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor gratuito de kilogramos a libras – Arteon"
     },
     {
@@ -530,6 +530,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "title": "¿Tienes alguna pregunta o sugerencia?",
       "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contactar con Arteon Agency",

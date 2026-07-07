@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quand faut-il convertir des horodatages Unix ?",
       "html": "<p class=\"text-mid mb-4\">L’horodatage Unix (Unix timestamp ou Epoch) compte les secondes écoulées depuis le 1er janvier 1970 à 00:00:00 UTC. C’est le standard universel pour stocker date et heure dans les systèmes informatiques.</p><p class=\"text-mid mb-4\">Exemple : 1709251200 = 1er mars 2024, 00:00:00 UTC. Les horodatages sont indépendants du fuseau horaire.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur d'horodatage Unix – Arteon"
     },
     {

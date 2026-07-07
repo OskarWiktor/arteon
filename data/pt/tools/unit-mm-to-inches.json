@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculadora mm para polegadas – converter milímetros em polegadas",
     "description": "Converta milímetros em polegadas. As tabelas incluídas mostram também as frações de polegada (1/8, 1/4, 3/8) usadas em brocas, parafusos e espessuras de materiais. O conversor funciona nos dois sentidos e calcula instantaneamente.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-mm-para-polegadas"
   },
   "hero": {
     "title": "Converter milímetros em polegadas",
     "description": "Introduza qualquer valor em milímetros e leia de imediato o resultado em polegadas decimais. A tabela de frações mais abaixo na página mostra também a fração de polegada mais próxima, usada em brocas ou parafusos. O conversor é útil em medições precisas: espessuras de materiais, dimensões de componentes eletrónicos ou escolha de ferramentas especificadas em polegadas.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Para quê converter milímetros em polegadas?",
       "html": "<p class=\"text-mid mb-4\">O milímetro é a unidade básica das medições precisas em Portugal e em toda a Europa. A polegada domina, por sua vez, nos países anglófonos, sobretudo nos Estados Unidos, onde brocas, parafusos, chaves de caixa e espessuras de materiais de construção são especificados em polegadas. O problema surge quando compra uma ferramenta americana com especificações em polegadas ou tenta escolher uma broca métrica para uma medida indicada como fração de polegada.</p><p class=\"text-mid mb-4\">Uma polegada equivale exatamente a 25,4 mm. Esta relação é constante e aplica-se em todo o lado, pelo que cada conversão se resume a uma única divisão. O conversor faz isso por si assim que introduz um valor.</p><p class=\"text-mid mb-4\">Mais abaixo nesta página encontrará uma tabela de conversão mm para polegadas para valores de 1 a 800 mm e uma tabela das frações de polegada mais comuns com o seu equivalente em milímetros.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor gratuito de milímetros para polegadas – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -279,6 +279,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "title": "Tem alguma pergunta ou sugestão?",
       "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, contacte-nos. Respondemos a todas as mensagens.",
       "imageAlt": "Contacto com Arteon Agency",

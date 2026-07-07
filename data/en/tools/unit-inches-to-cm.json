@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Inches to CM Calculator – Convert Inches to Centimeters",
     "description": "Convert inches to centimeters instantly. Check TV size in cm, height in metric, clothing sizes from European stores, and luggage dimensions. Conversion table from inches to cm.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/inches-to-cm-converter"
   },
   "hero": {
     "title": "Convert inches to centimeters",
     "description": "Enter any value in inches and instantly see the result in centimeters. This converter is useful wherever you need to understand imperial measurements in metric: checking a TV screen size, reading European product dimensions, ordering from international stores, or comparing height with metric standards.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "When do you need to convert inches to centimeters?",
       "html": "<p class=\"text-mid mb-4\">The inch is the standard unit of length in the United States and is still widely used in the United Kingdom. Most of the rest of the world uses centimeters, so you need to convert whenever you are dealing with products or information from a metric context: a European store listing product dimensions in centimeters, a foreign contact stating their measurements in metric, or a technical specification that uses SI units.</p><p class=\"text-mid mb-4\">The most common situations: you want to know how big a 55-inch TV actually is in centimeters, you are comparing your height with a European sizing chart, you are buying shoes from a UK store and want to double-check the fit, or you are reading a furniture catalog that lists dimensions in centimeters.</p><p class=\"text-mid mb-4\">The formula is simple: one inch is exactly 2.54 cm. To convert inches to centimeters, multiply the number of inches by 2.54. The converter does this the moment you type a value.</p><p class=\"text-mid\">On this page you will find an inches-to-cm conversion table, a screen size table for popular TV and monitor diagonals, and a height table converting feet-and-inches to centimeters.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free inches to centimeters converter – Arteon"
     },
     {
@@ -335,6 +335,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "title": "Have a question or suggestion?",
       "description": "If you spot an error in the tables or have an idea for improving the converter, get in touch. We reply to every message.",
       "imageAlt": "Contact Arteon Agency",

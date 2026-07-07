@@ -31,6 +31,7 @@ import {
   RiRestaurant2Line,
   RiSearchLine,
   RiShoppingCartLine,
+  RiToolsLine,
   RiTShirt2Line,
 } from 'react-icons/ri';
 import type { ToolsSection } from '@/types/tools/common';
@@ -65,6 +66,7 @@ export type OfferItemKey =
   | 'websitePsychologist'
   | 'websiteFinishing'
   | 'websiteConstruction'
+  | 'websiteManufacturer'
   | 'auditSeo'
   | 'optimizationSeo'
   | 'positioning'
@@ -129,13 +131,13 @@ export const MOBILE_NAV_ITEMS_PL: HeaderNavItem[] = DESKTOP_NAV_ITEMS_PL.filter(
 export const OFFER_WITRYNY_GENERAL_PL: OfferSectionItem[] = [
   {
     key: 'websites',
-    href: '/uslugi/tworzenie-stron-wordpress',
-    title: 'Tworzenie stron WordPress',
+    href: '/uslugi/strony-internetowe-dla-firm',
+    title: 'Tworzenie stron internetowych',
     icon: RiCodeSSlashFill,
   },
   {
     key: 'wordpressOptimization',
-    href: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+    href: '/uslugi/optymalizacja-strony-wordpress',
     title: 'Optymalizacja strony WordPress',
     icon: RiCodeSSlashFill,
   },
@@ -171,6 +173,12 @@ export const OFFER_WITRYNY_SPECIAL_PL: OfferSectionItem[] = [
     href: '/uslugi/strona-internetowa-dla-firmy-budowlanej',
     title: 'Strona dla firmy budowlanej',
     icon: RiBuilding2Line,
+  },
+  {
+    key: 'websiteManufacturer',
+    href: '/uslugi/strona-internetowa-dla-producenta',
+    title: 'Strona dla producenta',
+    icon: RiToolsLine,
   },
 ];
 

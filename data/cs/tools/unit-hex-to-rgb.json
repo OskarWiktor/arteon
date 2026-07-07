@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník HEX na RGB",
     "description": "Převést HEX na RGB a naopak. Užitečné pro webdesign a CSS. Bez registrace.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-hex-na-rgb"
   },
   "hero": {
     "title": "Převést HEX na RGB",
     "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Kdy je potřeba převádět HEX na RGB?",
       "html": "<p class=\"text-mid mb-4\">HEX barvy (#FF5733) a RGB (rgb(255, 87, 51)) představují stejné barvy v různém zápisu. HEX je běžný v CSS, RGB v programování.</p><p class=\"text-mid mb-4\">Každá HEX barva má 6 číslic: 2 pro červenou (00–FF), 2 pro zelenou, 2 pro modrou. RGB používá hodnoty 0–255.</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník HEX na RGB – Arteon"
     },
     {
@@ -233,7 +233,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "HEX na RGB – Arteon",
       "defaultSubject": "Feedback: hex-to-rgb"
     },

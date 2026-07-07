@@ -44,10 +44,10 @@ describe('csvToJson', () => {
     expect(JSON.parse(result)).toEqual([]);
   });
 
-  it('throws a descriptive error for empty input', async () => {
-    await expect(convertText('   ', 'csvToJson')).rejects.toThrow(
-      'CSV input is empty',
-    );
+  it('throws a typed emptyInput error for empty input', async () => {
+    await expect(convertText('   ', 'csvToJson')).rejects.toMatchObject({
+      code: 'emptyInput',
+    });
   });
 
   it('handles CRLF line endings without losing rows', async () => {
@@ -79,10 +79,10 @@ describe('jsonToCsv', () => {
     expect(result).toBe('a\n1\n\n2');
   });
 
-  it('throws for a top-level non-array value', async () => {
-    await expect(convertText('{"a":1}', 'jsonToCsv')).rejects.toThrow(
-      'JSON must be an array of objects',
-    );
+  it('throws a typed jsonNotArray error for a top-level non-array value', async () => {
+    await expect(convertText('{"a":1}', 'jsonToCsv')).rejects.toMatchObject({
+      code: 'jsonNotArray',
+    });
   });
 
   it('serializes nested objects/arrays as JSON strings within a cell', async () => {

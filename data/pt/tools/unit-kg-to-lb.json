@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor de quilogramas para libras – calculadora kg para lb",
     "description": "Converta quilogramas para libras instantaneamente. Útil para peso corporal, cargas de academia, limites de bagagem e peso de recém-nascidos. Tabela de 0,5 a 200 kg com coluna stone.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-kg-para-libras"
   },
   "hero": {
     "title": "Converta quilogramas para libras",
     "description": "Digite qualquer valor em quilogramas e obtenha o resultado em libras imediatamente. O conversor é útil para conferir o peso corporal no sistema imperial, ler limites de bagagem em libras, comparar resultados desportivos com tabelas americanas ou converter o peso de nascimento de um bebé.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -85,7 +85,7 @@
       "type": "sectionBasic",
       "title": "Quando se convertem quilogramas para libras?",
       "html": "<p class=\"text-mid mb-4\">O quilograma é a unidade de massa padrão em Portugal e no Brasil. A libra (lb) domina nos EUA e permanece comum no Reino Unido, especialmente para o peso corporal — onde os britânicos também usam o stone (1 stone = 14 libras = aprox. 6,35 kg).</p><p class=\"text-mid mb-4\">Converter kg para libras é necessário quando consulta o peso numa aplicação de saúde americana, compra material desportivo descrito em libras, interpreta um limite de bagagem em lb ou quer saber o peso de nascimento de um bebé em documentação de um hospital anglófono.</p><p class=\"text-mid mb-4\">Uma libra equivale exatamente a 0,45359237 kg, valor fixado como constante desde 1959. Ao contrário: 1 kg = 2,2046 libras. O conversor realiza o cálculo assim que digita um valor.</p><p class=\"text-mid\">Nesta página encontrará uma tabela de kg para libras para valores de 0,5 a 200 kg, uma tabela de peso corporal com conversão para libras e stone e uma tabela de pesos de academia.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor gratuito de quilogramas para libras – Arteon"
     },
     {
@@ -446,6 +446,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "title": "Tem alguma questão ou sugestão?",
       "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, escreva-nos. Respondemos a cada mensagem.",
       "imageAlt": "Contactar Arteon Agency",

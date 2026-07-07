@@ -4,13 +4,13 @@
   "metadata": {
     "title": "HEX σε RGB – μετατροπέας",
     "description": "Μετατρέψτε κωδικούς χρωμάτων HEX σε RGB και αντίστροφα.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-hex-se-rgb"
   },
   "hero": {
     "title": "HEX σε RGB",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: HEX σε RGB?",
       "html": "<p class=\"text-mid mb-4\">Τα χρώματα HEX (#FF5733) και RGB (rgb(255, 87, 51)) αναπαριστούν τα ίδια χρώματα σε διαφορετική σημειογραφία. Το HEX χρησιμοποιείται συχνά σε CSS και εργαλεία σχεδίασης, το RGB στον προγραμματισμό.</p><p class=\"text-mid mb-4\">Κάθε χρώμα HEX έχει 6 ψηφία: τα πρώτα 2 για κόκκινο (00–FF), τα επόμενα 2 για πράσινο, τα τελευταία 2 για μπλε. Το RGB χρησιμοποιεί δεκαδικές τιμές 0–255.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "HEX σε RGB – Arteon"
     },
     {
@@ -233,7 +233,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "HEX σε RGB – Arteon",
       "defaultSubject": "Feedback: hex-to-rgb"
     },

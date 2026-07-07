@@ -4,13 +4,13 @@
   "metadata": {
     "title": "RGB σε CMYK – μετατροπέας",
     "description": "Μετατρέψτε RGB σε CMYK και αντίστροφα. Για προετοιμασία εκτύπωσης.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-rgb-se-cmyk"
   },
   "hero": {
     "title": "RGB σε CMYK",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: RGB σε CMYK?",
       "html": "<p class=\"text-mid mb-4\">Το RGB (Κόκκινο, Πράσινο, Μπλε) είναι το προσθετικό χρωματικό μοντέλο που χρησιμοποιούν οι οθόνες. Το CMYK (Κυανό, Ματζέντα, Κίτρινο, Μαύρο) είναι το αφαιρετικό μοντέλο που χρησιμοποιούν οι εκτυπωτές. Τα χρώματα φαίνονται διαφορετικά σε κάθε μοντέλο γιατί λειτουργούν διαφορετικά.</p><p class=\"text-mid mb-4\">Η μετατροπή RGB σε CMYK είναι απαραίτητη κατά την προετοιμασία ψηφιακών σχεδίων για εκτύπωση. Χωρίς μετατροπή, τα φωτεινά χρώματα οθόνης μπορεί να φαίνονται θαμπά ή αλλοιωμένα στην εκτύπωση.</p><p class=\"text-mid mb-4\">Δεν μπορούν να αναπαραχθούν όλα τα χρώματα RGB σε CMYK — η γκάμα CMYK είναι μικρότερη. Τα έντονα πράσινα νέον, τα φωτεινά μπλε και τα κορεσμένα πορτοκαλί επηρεάζονται ιδιαίτερα.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "RGB σε CMYK – Arteon"
     },
     {
@@ -233,7 +233,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "RGB σε CMYK – Arteon",
       "defaultSubject": "Feedback: rgb-to-cmyk"
     },

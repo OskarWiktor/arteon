@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Kilogramm in Pfund umrechnen – kg in lb Umrechner",
     "description": "Rechnen Sie Kilogramm in Pfund um. Nützlich für Körpergewicht, Fitness, Freigepäck und Babygewicht. Umrechnungstabelle von 0,5 bis 200 kg mit Stone-Spalte (UK).",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/kg-in-pfund-umrechner"
   },
   "hero": {
     "title": "Kilogramm in Pfund umrechnen",
     "description": "Geben Sie einen beliebigen Wert in Kilogramm ein und lesen Sie das Ergebnis sofort in Pfund ab. Der Umrechner ist hilfreich beim Prüfen des Körpergewichts im imperialen System, beim Ablesen von Gepäcklimits in Pfund, beim Vergleich sportlicher Leistungen mit US-amerikanischen oder britischen Tabellen oder beim Umrechnen des Geburtsgewichts eines Kindes.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Wann rechnet man Kilogramm in Pfund um?",
       "html": "<p class=\"text-mid mb-4\">Das Kilogramm ist die Standardgewichtseinheit in Deutschland, Österreich, der Schweiz und dem größten Teil der Welt. Das Pfund (lb) dominiert in den Vereinigten Staaten und wird im Vereinigten Königreich weiterhin verwendet – besonders für das Körpergewicht, wo Briten zusätzlich die Stone-Einheit nutzen (1 Stone = 14 Pfund = ca. 6,35 kg).</p><p class=\"text-mid mb-4\">Eine Umrechnung von kg in Pfund ist nötig, wenn Sie Ihr Gewicht auf einer US-amerikanischen oder britischen Gesundheitswebsite prüfen, Sportgeräte kaufen, die in Pfund angegeben sind, ein Freigepäcklimit in Pfund interpretieren oder das Geburtsgewicht eines Kindes aus ausländischen Unterlagen lesen möchten.</p><p class=\"text-mid mb-4\">Ein Pfund entspricht genau 0,45359237 kg – dieser Wert ist seit 1959 als Konstante festgelegt. Umgekehrt gilt: 1 kg = 2,2046 Pfund. Der Umrechner berechnet das Ergebnis, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine kg-in-Pfund-Tabelle für Werte von 0,5 bis 200 kg, eine Körpergewichtstabelle mit Umrechnung in Pfund und Stone sowie eine Tabelle für Fitnessgewichte.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Kilogramm-in-Pfund-Umrechner – Arteon"
     },
     {
@@ -538,6 +538,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "title": "Haben Sie eine Frage oder einen Vorschlag?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt mit Arteon Agency",

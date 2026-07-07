@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Ίντσες σε px – μετατροπέας",
     "description": "Μετατρέψτε ίντσες σε pixel με υποστήριξη DPI.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-intses-se-px"
   },
   "hero": {
     "title": "Ίντσες σε px",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Ίντσες σε px?",
       "html": "<p class=\"text-mid mb-4\">Τα αμερικανικά μεγέθη χαρτιού και οι προδιαγραφές εκτύπωσης χρησιμοποιούν ίντσες. Για την προετοιμασία ψηφιακών έργων, μετατρέψτε σε pixel: pixels = inches × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) στα 300 DPI = 2.550 × 3.300 pixel. Εκτύπωση φωτογραφίας 4 × 6″ στα 300 DPI = 1.200 × 1.800 pixel.</p><p class=\"text-mid mb-4\">Αυτή η μετατροπή είναι απαραίτητη για την προετοιμασία εικόνων για τυπογραφεία, τη ρύθμιση προτύπων εγγράφων και τον υπολογισμό της απαιτούμενης ανάλυσης.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Ίντσες σε px – Arteon"
     },
     {
@@ -233,7 +233,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "ίντσες σε px – Arteon",
       "defaultSubject": "Feedback: inches-to-px-dpi"
     },

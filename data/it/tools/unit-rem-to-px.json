@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando serve convertire rem in pixel?",
       "html": "<p class=\"text-mid mb-4\">L’unità CSS rem è relativa all’elemento radice (html). Standard: 16px, quindi 1rem = 16px. A differenza di em, rem non si accumula.</p><p class=\"text-mid mb-4\">Rem è l’unità consigliata per il design web responsive moderno.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore rem in pixel – CSS – Arteon"
     },
     {

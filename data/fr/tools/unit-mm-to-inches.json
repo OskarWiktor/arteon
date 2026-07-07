@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculateur mm en pouces – convertir les millimètres en pouces",
     "description": "Convertissez les millimètres en pouces. Les tableaux fournis montrent aussi les fractions de pouce (1/8, 1/4, 3/8) utilisées pour les forets, les vis et les épaisseurs de matériaux. Le convertisseur fonctionne dans les deux sens et calcule instantanément.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-mm-en-pouces"
   },
   "hero": {
     "title": "Convertir les millimètres en pouces",
     "description": "Saisissez n'importe quelle valeur en millimètres et lisez immédiatement le résultat en pouces décimaux. Le tableau des fractions plus bas sur la page indique aussi la fraction de pouce la plus proche, celle utilisée pour les forets ou les vis. Le convertisseur est utile pour les mesures précises : épaisseurs de matériaux, dimensions de composants électroniques ou choix d'outils spécifiés en pouces.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi convertir les millimètres en pouces ?",
       "html": "<p class=\"text-mid mb-4\">Le millimètre est l'unité de base des mesures précises en France et dans toute l'Europe. Le pouce domine en revanche dans les pays anglophones, avant tout aux États-Unis, où forets, vis, douilles et épaisseurs de matériaux de construction sont spécifiés en pouces. Le problème apparaît lorsque vous achetez un outil américain avec des caractéristiques en pouces ou que vous essayez de choisir un foret métrique pour une dimension donnée en fraction de pouce.</p><p class=\"text-mid mb-4\">Un pouce vaut exactement 25,4 mm. Cette relation est constante et s'applique partout, chaque conversion se résume donc à une seule division. Le convertisseur la fait pour vous dès la saisie d'une valeur.</p><p class=\"text-mid mb-4\">Plus bas sur cette page, vous trouverez un tableau de conversion mm en pouces pour les valeurs de 1 à 800 mm ainsi qu'un tableau des fractions de pouce les plus courantes avec leur équivalent en millimètres.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur gratuit de millimètres en pouces – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -279,6 +279,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "title": "Vous avez une question ou une suggestion ?",
       "description": "Si vous constatez une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, contactez-nous. Nous répondons à chaque message.",
       "imageAlt": "Contacter Arteon Agency",

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur livres en kilogrammes – calculatrice lb en kg",
     "description": "Convertissez des livres en kilogrammes instantanément. Utile pour lire le poids corporel d'applications américaines, équipements sportifs, limites de bagages et poids des bébés. Tableau de 1 à 300 lb.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-livres-en-kg"
   },
   "hero": {
     "title": "Convertissez des livres en kilogrammes",
     "description": "Saisissez une valeur en livres et obtenez immédiatement le résultat en kilogrammes. Le convertisseur est utile partout où le poids est exprimé en livres : dans les applications fitness américaines, lors de l'achat d'équipements sportifs, pour interpréter des limites de bagages ou lire le poids d'un nouveau-né dans des documents médicaux anglophones.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Quand convertit-on des livres en kilogrammes ?",
       "html": "<p class=\"text-mid mb-4\">La livre (lb) est l'unité de masse du système impérial, courante aux États-Unis et encore très utilisée au Royaume-Uni. En France et dans la majeure partie de l'Europe, on utilise le kilogramme au quotidien, donc les livres apparaissent principalement quand on utilise des produits, des applications ou des informations provenant de pays anglophones.</p><p class=\"text-mid mb-4\">Les situations les plus fréquentes : une application fitness américaine affiche l'objectif de poids en livres, la limite de bagage enregistré est de 50 lb, vous achetez des haltères sur Amazon US étiquetés en livres, ou un programme d'entraînement sur YouTube mentionne un développé couché à 135 lb.</p><p class=\"text-mid mb-4\">La formule est simple : une livre correspond exactement à 0,45359237 kg. Pour convertir des livres en kilogrammes, il suffit de multiplier par 0,4536. Le convertisseur effectue le calcul dès que vous saisissez une valeur.</p><p class=\"text-mid\">Sur cette page, vous trouverez un tableau lb en kg, un tableau de poids corporel avec des conversions de valeurs courantes et un tableau de poids de salle de sport.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur gratuit livres en kilogrammes – Arteon"
     },
     {
@@ -291,6 +291,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "title": "Vous avez une question ou une suggestion ?",
       "description": "Si vous constatez une erreur dans les tableaux ou avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
       "imageAlt": "Contacter Arteon Agency",

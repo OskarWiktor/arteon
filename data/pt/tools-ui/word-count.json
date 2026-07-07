@@ -10,6 +10,7 @@
   "syllables": "Sílabas",
   "readability": "Legibilidade (Flesch)",
   "readabilityHint": "Para conteúdo web em português, mire em 60–70.",
+  "readabilityUnsupported": "A pontuação de legibilidade funciona para texto em alfabeto latino ou grego.",
   "copyText": "Copiar texto",
   "copied": "Copiado",
   "clearText": "Limpar",

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculateur pouces en MM – convertir les pouces en millimètres",
     "description": "Convertissez les pouces en millimètres. Le tableau complet des fractions de pouce par pas de 1/32 montre les équivalents en mm des forets, vis et douilles. Le convertisseur fonctionne dans les deux sens et calcule instantanément.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-pouces-en-mm"
   },
   "hero": {
     "title": "Convertir les pouces en millimètres",
     "description": "Saisissez une valeur en pouces et voyez immédiatement le résultat en millimètres. Le convertisseur est utile partout où outils, vis ou matériaux sont spécifiés en pouces ou en fractions de pouce : pour choisir un foret, une douille, une vis à filetage en pouces ou vérifier l'épaisseur d'un matériau d'un catalogue américain.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Quand convertit-on les pouces en millimètres ?",
       "html": "<p class=\"text-mid mb-4\">Le pouce est l'unité de longueur du système impérial, très utilisée aux États-Unis, au Royaume-Uni, au Canada et en Australie, en particulier pour les outils, les vis et les matériaux de construction. En France et dans toute l'Europe, on travaille en millimètres, si bien que les pouces – souvent sous forme de fraction – apparaissent surtout au contact d'outils ou de pièces provenant de pays anglophones.</p><p class=\"text-mid mb-4\">Les situations les plus fréquentes : vous voulez savoir combien de millimètres mesure un foret désigné 3/8 de pouce, vous cherchez une douille pour une vis à filetage en pouces ou vous vérifiez l'épaisseur d'une tôle indiquée 1/8 de pouce dans un catalogue américain.</p><p class=\"text-mid mb-4\">La formule est simple : un pouce vaut exactement 25,4 mm. Pour convertir des pouces en millimètres, il suffit de multiplier le nombre de pouces par 25,4. Le convertisseur le fait dès la saisie d'une valeur.</p><p class=\"text-mid\">Sur cette page, vous trouverez un tableau de conversion pouces en mm ainsi que le tableau complet des fractions de pouce par pas de 1/32, couvrant toutes les tailles de 1/32 à 1 pouce.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur gratuit de pouces en millimètres – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -301,6 +301,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "title": "Vous avez une question ou une suggestion ?",
       "description": "Si vous constatez une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, contactez-nous. Nous répondons à chaque message.",
       "imageAlt": "Contacter Arteon Agency",

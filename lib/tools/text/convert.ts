@@ -1,5 +1,36 @@
 import type { TextConversionType } from '@/types/tools/text-format-converter';
 
+/**
+ * Stable, translatable failure reasons. The UI maps each `code` to a
+ * locale-aware message, so users never see a raw engine error like
+ * "Unexpected token o in JSON at position 1" or a DOMParser dump.
+ */
+export type ConversionErrorCode =
+  | 'invalidJson'
+  | 'invalidXml'
+  | 'invalidYaml'
+  | 'jsonNotArray'
+  | 'csvNoHeaders'
+  | 'emptyInput';
+
+export class ConversionError extends Error {
+  readonly code: ConversionErrorCode;
+  constructor(code: ConversionErrorCode) {
+    super(code);
+    this.name = 'ConversionError';
+    this.code = code;
+  }
+}
+
+/** Parse JSON, re-throwing the raw SyntaxError as a translatable code. */
+function parseJsonOrThrow(input: string): unknown {
+  try {
+    return JSON.parse(input);
+  } catch {
+    throw new ConversionError('invalidJson');
+  }
+}
+
 /** Strip BOM that editors / Excel may prepend to files */
 function stripBom(s: string): string {
   return s.charCodeAt(0) === 0xfeff ? s.slice(1) : s;
@@ -26,13 +57,18 @@ export async function convertText(
     }
     case 'yamlToJson': {
       const jsYaml = await import('js-yaml');
-      const parsed = jsYaml.load(input);
+      let parsed: unknown;
+      try {
+        parsed = jsYaml.load(input);
+      } catch {
+        throw new ConversionError('invalidYaml');
+      }
       if (parsed === undefined || parsed === null) return '{}';
       return JSON.stringify(parsed, null, 2);
     }
     case 'jsonToYaml': {
       const jsYaml = await import('js-yaml');
-      const obj = JSON.parse(input);
+      const obj = parseJsonOrThrow(input);
       return jsYaml.dump(obj, { indent: 2, lineWidth: 120 });
     }
     case 'markdownToHtml': {
@@ -122,15 +158,15 @@ function detectSeparator(firstLine: string): string {
 
 function csvToJson(csv: string): string {
   const trimmed = csv.trim();
-  if (!trimmed) throw new Error('CSV input is empty');
+  if (!trimmed) throw new ConversionError('emptyInput');
   const firstLine = trimmed.split(/\r?\n/, 1)[0];
   const sep = detectSeparator(firstLine);
   const rows = parseCsv(trimmed, sep);
-  if (rows.length === 0) throw new Error('CSV input is empty');
+  if (rows.length === 0) throw new ConversionError('emptyInput');
 
   const headers = rows[0];
   if (headers.length === 0 || headers.every(h => !h))
-    throw new Error('CSV has no valid headers');
+    throw new ConversionError('csvNoHeaders');
 
   const dataRows = rows.slice(1).filter(r => r.some(v => v !== ''));
   // Header-only CSV returns empty array
@@ -232,12 +268,12 @@ function parseCsv(csv: string, sep: string): string[][] {
 }
 
 function jsonToCsv(json: string): string {
-  const data = JSON.parse(json);
-  if (!Array.isArray(data)) throw new Error('JSON must be an array of objects');
+  const data = parseJsonOrThrow(json);
+  if (!Array.isArray(data)) throw new ConversionError('jsonNotArray');
   if (data.length === 0) return '';
   const first = data[0];
   if (typeof first !== 'object' || first === null || Array.isArray(first)) {
-    throw new Error('JSON must be an array of objects');
+    throw new ConversionError('jsonNotArray');
   }
   // Collect all unique keys from every row
   const headerSet = new Set<string>();
@@ -288,8 +324,7 @@ function xmlToJson(xml: string): string {
   const parser = new DOMParser();
   const doc = parser.parseFromString(xml, 'text/xml');
   const errorNode = doc.querySelector('parsererror');
-  if (errorNode)
-    throw new Error('Invalid XML: ' + errorNode.textContent?.slice(0, 200));
+  if (errorNode) throw new ConversionError('invalidXml');
   const result = xmlNodeToObj(doc.documentElement);
   return JSON.stringify(result, null, 2);
 }
@@ -356,7 +391,7 @@ function escapeXml(s: string): string {
 }
 
 function jsonToXml(json: string): string {
-  const obj = JSON.parse(json);
+  const obj = parseJsonOrThrow(json);
   const xml = objToXml(obj, 0);
   return `<?xml version="1.0" encoding="UTF-8"?>\n${xml}`;
 }

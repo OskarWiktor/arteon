@@ -4,13 +4,13 @@
   "metadata": {
     "title": "DEC σε BIN – μετατροπέας",
     "description": "Μετατρέψτε δεκαδικούς σε δυαδικούς αριθμούς.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-dekadiko-se-dyad"
   },
   "hero": {
     "title": "DEC σε BIN",
     "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: DEC σε BIN?",
       "html": "<p class=\"text-mid mb-4\">Το δυαδικό (βάση-2) είναι το θεμελιώδες αριθμητικό σύστημα των υπολογιστών. Κάθε δεδομένο — κείμενο, εικόνες, προγράμματα — αποθηκεύεται ως ακολουθίες 0 και 1. Η κατανόηση του δυαδικού είναι απαραίτητη για προγραμματισμό, δικτύωση και επιστήμη υπολογιστών.</p><p class=\"text-mid mb-4\">Κάθε δυαδικό ψηφίο (bit) αναπαριστά δύναμη του 2: ...128, 64, 32, 16, 8, 4, 2, 1. Παράδειγμα: δεκαδικό 42 = δυαδικό 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Συνηθισμένες χρήσεις: διευθύνσεις IP, μάσκες υποδικτύου, πράξεις bitwise, δικαιώματα (chmod) και κατανόηση αποθήκευσης αριθμών.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "DEC σε BIN – Arteon"
     },
     {
@@ -240,7 +240,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "DEC σε BIN – Arteon",
       "defaultSubject": "Feedback: dec-to-bin"
     },

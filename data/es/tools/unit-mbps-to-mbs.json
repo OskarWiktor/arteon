@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo necesitas convertir Mbps a MB/s?",
       "html": "<p class=\"text-mid mb-4\">Las velocidades de internet se anuncian en megabits por segundo (Mbps), pero los tamaños de archivo y las velocidades de descarga se muestran en megabytes por segundo (MB/s). 1 byte = 8 bits, por lo que 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">Esto significa: una conexión de “100 Mbps” descarga a un máximo de 12,5 MB/s. Una conexión de “1 Gbps” = 125 MB/s.</p><p class=\"text-mid mb-4\">Esta conversión es importante para estimar tiempos de descarga, elegir tarifas de internet y entender la diferencia entre velocidad anunciada y real.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor de Mbps a MB/s – velocidad de internet – Arteon"
     },
     {

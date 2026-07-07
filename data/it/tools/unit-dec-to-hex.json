@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando serve convertire decimale in esadecimale?",
       "html": "<p class=\"text-mid mb-4\">L’esadecimale (base-16) usa le cifre 0–9 e le lettere A–F. È una rappresentazione compatta dei dati binari: una cifra hex = 4 bit.</p><p class=\"text-mid mb-4\">I colori web usano hex: #FF5733 = Rosso 255, Verde 87, Blu 51. Indirizzi memoria: 0x7FFF = 32.767.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore decimale in esadecimale – Arteon"
     },
     {

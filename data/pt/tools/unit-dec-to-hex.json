@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando precisa converter decimal em hexadecimal?",
       "html": "<p class=\"text-mid mb-4\">O hexadecimal (base-16) usa os dígitos 0–9 e letras A–F. É uma representação compacta de dados binários: um dígito hex = 4 bits.</p><p class=\"text-mid mb-4\">Cores web usam hex: #FF5733 = Vermelho 255, Verde 87, Azul 51. Endereços de memória: 0x7FFF = 32.767.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor de decimal para hexadecimal – Arteon"
     },
     {

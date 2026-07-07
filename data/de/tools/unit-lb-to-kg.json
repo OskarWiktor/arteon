@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Pfund in Kilogramm umrechnen – lb in kg Umrechner",
     "description": "Rechnen Sie Pfund in Kilogramm um. Nützlich für Körpergewicht aus US-Apps, Fitnessgeräte, Freigepäcklimits und Babygewicht. Umrechnungstabelle von 1 bis 300 lb.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/pfund-in-kg-umrechner"
   },
   "hero": {
     "title": "Pfund in Kilogramm umrechnen",
     "description": "Geben Sie einen beliebigen Wert in Pfund ein und lesen Sie das Ergebnis sofort in Kilogramm ab. Der Umrechner ist überall dort hilfreich, wo Gewichte in Pfund angegeben sind: in Fitness-Apps aus den USA, beim Kauf von Sportgeräten, beim Ablesen von Gepäcklimits oder beim Lesen des Babygewichts aus englischsprachigen Krankenakten.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Wann rechnet man Pfund in Kilogramm um?",
       "html": "<p class=\"text-mid mb-4\">Das Pfund (lb) ist die Masseeinheit des angelsächsischen Maßsystems und in den USA weit verbreitet. Im deutschsprachigen Raum nutzen wir täglich Kilogramm, weshalb Pfundangaben hauptsächlich dann auftauchen, wenn wir Produkte, Apps oder Informationen aus englischsprachigen Ländern verwenden.</p><p class=\"text-mid mb-4\">Die häufigsten Situationen: Eine Fitness-App aus den USA zeigt das Zielgewicht in Pfund an, das Freigepäcklimit beträgt 50 lb, Sie kaufen Kurzhanteln auf Amazon US, die in Pfund beschriftet sind, oder ein YouTube-Trainingsprogramm nennt eine Bankdrücklast von 135 lb.</p><p class=\"text-mid mb-4\">Die Formel ist einfach: Ein Pfund entspricht genau 0,45359237 kg. Um Pfund in Kilogramm umzurechnen, reicht es, mit 0,4536 zu multiplizieren. Der Umrechner erledigt das, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine lb-in-kg-Tabelle, eine Körpergewichtstabelle mit Umrechnungen gängiger Werte sowie eine Tabelle für Fitnessgewichte.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Pfund-in-Kilogramm-Umrechner – Arteon"
     },
     {
@@ -302,6 +302,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "title": "Haben Sie eine Frage oder einen Vorschlag?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt mit Arteon Agency",

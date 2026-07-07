@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculateur cm en pouces – convertir les centimètres en pouces",
     "description": "Convertissez les centimètres en pouces instantanément. Vérifiez la taille, les vêtements, la diagonale de TV et les dimensions des bagages en un clin d'œil. Le tableau couvre les deux sens de conversion.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-cm-en-pouces"
   },
   "hero": {
     "title": "Convertir les centimètres en pouces",
     "description": "Saisissez une valeur en centimètres et obtenez instantanément le résultat en pouces. Ce convertisseur est utile partout où les dimensions sont exprimées en système impérial : pour vérifier une taille, acheter de l'électronique, commander des vêtements dans des boutiques américaines ou britanniques, ou contrôler les dimensions autorisées pour les bagages.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi convertir les centimètres en pouces ?",
       "html": "<p class=\"text-mid mb-4\">Le centimètre est l'unité de longueur courante en France et dans l'ensemble de l'Europe. Le pouce, quant à lui, est dominant aux États-Unis et encore largement utilisé au Royaume-Uni. La nécessité de convertir apparaît lorsque vous consultez un téléviseur dont la diagonale est exprimée en pouces, que vous vérifiez les dimensions de bagages autorisées sur le site d'une compagnie aérienne américaine, ou que vous comparez votre taille avec un tableau de tailles vestimentaires d'une boutique britannique.</p><p class=\"text-mid mb-4\">Un pouce vaut exactement 2,54 cm. Cette relation est fixe et universelle, de sorte que chaque conversion se résume à une simple division. Le convertisseur effectue ce calcul dès que vous saisissez une valeur.</p><p class=\"text-mid mb-4\">Plus bas sur cette page, vous trouverez un tableau de conversion cm en pouces pour les valeurs de 0,5 à 200 cm, un tableau de taille corporelle avec l'équivalent en pieds et pouces et un tableau des diagonales d'écrans populaires.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur gratuit centimètres en pouces – Arteon"
     },
     {
@@ -577,6 +577,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "title": "Vous avez une question ou une suggestion ?",
       "description": "Si vous constatez une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, contactez-nous. Nous répondons à chaque message.",
       "imageAlt": "Contacter Arteon Agency",

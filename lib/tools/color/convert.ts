@@ -34,7 +34,9 @@ export function hexToRgb(hex: string): RGB | null {
 
 export function rgbToHex({ r, g, b }: RGB): string {
   const toHex = (v: number) => {
-    const clamped = clamp(Math.round(v), 0, 255);
+    // Guard NaN/Infinity so a bad channel yields "00" instead of "#NaN0000".
+    const safe = Number.isFinite(v) ? v : 0;
+    const clamped = clamp(Math.round(safe), 0, 255);
     const hex = clamped.toString(16).padStart(2, '0');
     return hex;
   };

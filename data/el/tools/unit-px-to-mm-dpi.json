@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας px σε mm (DPI) – pixel σε χιλιοστά",
     "description": "Μετατρέψτε pixel σε χιλιοστά με ρυθμιζόμενο DPI. Απαραίτητο στις εκτυπώσεις, στον σχεδιασμό συσκευασίας και στον έλεγχο αν ένα αρχείο κάμερας ή μια εικόνα ιστού επαρκούν για μια συγκεκριμένη διάσταση εκτύπωσης.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-px-se-mm"
   },
   "hero": {
     "title": "Μετατρέψτε pixel σε χιλιοστά με όποιο DPI χρειάζεστε",
     "description": "Εισάγετε μια τιμή σε pixel, ρυθμίστε την ανάλυση DPI και διαβάστε το αποτέλεσμα σε χιλιοστά. Ελέγξτε πόσο μεγάλο θα ήταν φυσικά ένα αρχείο κάμερας, μια εικόνα ιστού ή μια εξαγωγή Figma μετά την εκτύπωση. Ο μετατροπέας σας βοηθά να επιλέξετε τη σωστή διάσταση πριν στείλετε ένα αρχείο στο τυπογραφείο.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -87,7 +87,7 @@
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε pixel σε χιλιοστά;",
       "html": "<p class=\"text-mid mb-4\">Το pixel είναι μια ψηφιακή μονάδα που περιγράφει ένα μεμονωμένο σημείο σε μια οθόνη ή σε ένα αρχείο εικόνας. Το χιλιοστό, από την άλλη, κυριαρχεί στον φυσικό κόσμο – τα τυπογραφεία δίνουν τις διαστάσεις επαγγελματικών καρτών, φυλλαδίων και περιθωρίου κοπής σε χιλιοστά. Για να μετατρέψετε το ένα στο άλλο, πρέπει να γνωρίζετε την ανάλυση DPI, δηλαδή τον αριθμό pixel που χωράει σε μία ίντσα υλικού ή οθόνης.</p><p class=\"text-mid mb-4\">Αυτή τη μετατροπή τη χρησιμοποιούν κυρίως γραφίστες που ελέγχουν πόσο μεγάλο θα είναι φυσικά το έργο τους μετά την εκτύπωση, φωτογράφοι που αξιολογούν αν ένα αρχείο κάμερας επαρκεί για ένα συγκεκριμένο μέγεθος, και όσοι εργάζονται στο Figma ή το Photoshop, σκέφτονται σε pixel αλλά πρέπει να παραδώσουν ένα αρχείο με ακριβή φυσική διάσταση. Ο μετατροπέας σάς γλιτώνει από τον χειροκίνητο υπολογισμό και την απομνημόνευση του τύπου.</p><p class=\"text-mid\">Πιο κάτω σε αυτή τη σελίδα θα βρείτε έναν εκτενή πίνακα για συνήθεις τιμές σε pixel, έναν αντίστροφο πίνακα από χιλιοστά σε pixel, έτοιμες διαστάσεις για επαγγελματικές κάρτες, φυλλάδια και μεγέθη A0–A7, καθώς και σύντομους οδηγούς για τη μετατροπή pixel σε χιλιοστά στο Illustrator, το InDesign, το CorelDRAW, το Photoshop, το Figma και το Canva.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Δωρεάν μετατροπέας pixel σε χιλιοστά – Arteon"
     },
     {
@@ -772,7 +772,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε αυτόν τον μετατροπέα",
       "description": "Λείπει κάποια τιμή από τους πίνακες, βρήκατε σφάλμα υπολογισμού ή θέλετε να προτείνετε μια νέα λειτουργία; Γράψτε μας – διαβάζουμε κάθε μήνυμα προσωπικά και απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπέας px σε mm – Arteon",
       "defaultSubject": "Σχόλια: μετατροπέας px σε mm"
     },

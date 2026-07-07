@@ -43,6 +43,7 @@ export function analyzeText(text: string, locale: Locale = 'en'): TextMetrics {
     fleschScore: readability.fleschScore,
     fleschGrade: readability.fleschGrade,
     speakingTimeMinutes: calculateSpeakingTime(words),
+    unsupportedScript: readability.unsupportedScript,
   };
 }
 

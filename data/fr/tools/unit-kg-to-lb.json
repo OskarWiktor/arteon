@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur kilogrammes en livres – calculatrice kg en lb",
     "description": "Convertissez des kilogrammes en livres instantanément. Utile pour le poids corporel, les équipements sportifs, les limites de bagage et le poids des bébés. Tableau de 0,5 à 200 kg avec colonne stone.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-kg-en-livres"
   },
   "hero": {
     "title": "Convertissez des kilogrammes en livres",
     "description": "Saisissez une valeur en kilogrammes et obtenez immédiatement le résultat en livres. Le convertisseur est utile pour vérifier son poids corporel dans le système impérial, lire les limites de bagages en livres, comparer ses performances sportives avec des tableaux américains ou britanniques, ou convertir le poids de naissance d'un bébé.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Quand convertit-on des kilogrammes en livres ?",
       "html": "<p class=\"text-mid mb-4\">Le kilogramme est l'unité de masse standard en France, en Belgique, en Suisse et dans la grande majorité du monde. La livre (lb) domine aux États-Unis et reste très utilisée au Royaume-Uni — notamment pour le poids corporel, où les Britanniques utilisent également le stone (1 stone = 14 livres = environ 6,35 kg).</p><p class=\"text-mid mb-4\">Convertir des kg en livres est utile quand vous consultez votre poids sur un site médical américain ou britannique, achetez des équipements sportifs décrits en livres, interprétez une limite de bagage en livres ou souhaitez connaître le poids de naissance d'un bébé en unités anglo-saxonnes.</p><p class=\"text-mid mb-4\">Une livre correspond exactement à 0,45359237 kg — cette valeur est fixée comme constante depuis 1959. Dans l'autre sens : 1 kg = 2,2046 livres. Le convertisseur effectue le calcul dès que vous saisissez une valeur.</p><p class=\"text-mid\">Sur cette page, vous trouverez un tableau kg en livres pour des valeurs de 0,5 à 200 kg, un tableau de poids corporel avec conversion en livres et en stone et un tableau de poids de salle de sport.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur gratuit kilogrammes en livres – Arteon"
     },
     {
@@ -530,6 +530,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "title": "Vous avez une question ou une suggestion ?",
       "description": "Si vous constatez une erreur dans les tableaux ou avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
       "imageAlt": "Contacter Arteon Agency",

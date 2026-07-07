@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculadora polegadas para MM – converter polegadas em milímetros",
     "description": "Converta polegadas em milímetros. A tabela completa de frações de polegada em passos de 1/32 mostra os equivalentes em mm de brocas, parafusos e chaves de caixa. O conversor funciona nos dois sentidos e calcula instantaneamente.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-polegadas-para-mm"
   },
   "hero": {
     "title": "Converter polegadas em milímetros",
     "description": "Introduza um valor em polegadas e veja de imediato o resultado em milímetros. O conversor é útil onde quer que ferramentas, parafusos ou materiais sejam especificados em polegadas ou nas suas frações: ao escolher uma broca, uma chave de caixa, um parafuso de rosca em polegadas ou ao verificar a espessura de um material de um catálogo americano.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "Quando se convertem polegadas em milímetros?",
       "html": "<p class=\"text-mid mb-4\">A polegada é a unidade de comprimento do sistema imperial, muito usada nos EUA, Reino Unido, Canadá e Austrália, especialmente em ferramentas, parafusos e materiais de construção. Em Portugal e em toda a Europa trabalhamos em milímetros, pelo que as polegadas – muitas vezes em forma de fração – surgem sobretudo no contacto com ferramentas ou peças provenientes de países anglófonos.</p><p class=\"text-mid mb-4\">As situações mais frequentes: quer saber quantos milímetros mede uma broca designada 3/8 de polegada, procura uma chave de caixa para um parafuso de rosca em polegadas ou verifica a espessura de uma chapa indicada como 1/8 de polegada num catálogo americano.</p><p class=\"text-mid mb-4\">A fórmula é simples: uma polegada equivale exatamente a 25,4 mm. Para converter polegadas em milímetros, basta multiplicar o número de polegadas por 25,4. O conversor faz isso assim que introduz um valor.</p><p class=\"text-mid\">Nesta página encontrará uma tabela de conversão de polegadas para mm e a tabela completa de frações de polegada em passos de 1/32, que abrange todos os tamanhos de 1/32 a 1 polegada.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor gratuito de polegadas para milímetros – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -301,6 +301,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "title": "Tem alguma pergunta ou sugestão?",
       "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, contacte-nos. Respondemos a todas as mensagens.",
       "imageAlt": "Contacto com Arteon Agency",

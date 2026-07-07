@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Wann muss man RGB in CMYK umrechnen?",
       "html": "<p class=\"text-mid mb-4\">RGB (Rot, Grün, Blau) ist das additive Farbmodell für Bildschirme. CMYK (Cyan, Magenta, Gelb, Schwarz) ist das subtraktive Modell für den Druck. Farben erscheinen in jedem Modell unterschiedlich.</p><p class=\"text-mid mb-4\">Die Umrechnung ist wichtig, um digitale Designs für den Druck vorzubereiten. Der CMYK-Farbraum ist kleiner als RGB.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "RGB in CMYK umrechnen – Farbmodus-Rechner – Arteon"
     },
     {

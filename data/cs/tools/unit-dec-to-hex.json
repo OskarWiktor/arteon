@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník decimal na hexadecimal",
     "description": "Převést decimal na hexadecimal a naopak. Užitečné pro webové barvy a programování. Bez registrace.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-desitkovy-na-hex"
   },
   "hero": {
     "title": "Převést decimal na hexadecimal",
     "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Kdy je potřeba převádět desítkově na šestnáctkově?",
       "html": "<p class=\"text-mid mb-4\">Šestnáctková soustava (základ 16) používá číslice 0–9 a písmena A–F. Kompaktní zápis binárních dat: 1 hex číslice = 4 bity.</p><p class=\"text-mid mb-4\">Webové barvy: #FF5733. Adresy paměti: 0x7FFF = 32 767.</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník decimal na hexadecimal – Arteon"
     },
     {
@@ -237,7 +237,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "dziesiętny na szesnastkowy – Arteon",
       "defaultSubject": "Feedback: dec-to-hex"
     },

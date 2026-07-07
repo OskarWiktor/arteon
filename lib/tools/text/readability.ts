@@ -10,6 +10,26 @@ export interface ReadabilityResult {
   fleschScore: number | null;
   fleschGrade: number | null;
   syllables: number;
+  /**
+   * True when the text is predominantly written in a script the Flesch model
+   * cannot handle (CJK, Arabic, Hebrew, Thai, …). The score is null in that
+   * case, and the UI explains why rather than showing a misleading value.
+   */
+  unsupportedScript: boolean;
+}
+
+/**
+ * The syllable-based Flesch model only makes sense for the alphabetic scripts
+ * we have syllable heuristics for (Latin + Greek). Returns false when most of
+ * the letters belong to another script, so the caller can decline to score it
+ * instead of returning a confident, meaningless number.
+ */
+function isReadabilityScriptSupported(text: string): boolean {
+  const letters = text.match(/\p{L}/gu);
+  // No letters at all (digits, symbols) is handled by the word/sentence guard.
+  if (!letters || letters.length === 0) return true;
+  const supported = text.match(/[\p{Script=Latin}\p{Script=Greek}]/gu);
+  return (supported?.length ?? 0) / letters.length >= 0.5;
 }
 
 /**
@@ -102,9 +122,15 @@ export function calculateReadability(
   const words = countWords(text);
   const sentences = countSentences(text);
   const syllables = countSyllables(text, locale);
+  const unsupportedScript = !isReadabilityScriptSupported(text);
 
-  if (words < 3 || sentences < 1) {
-    return { fleschScore: null, fleschGrade: null, syllables };
+  if (words < 3 || sentences < 1 || unsupportedScript) {
+    return {
+      fleschScore: null,
+      fleschGrade: null,
+      syllables,
+      unsupportedScript,
+    };
   }
 
   const ASL = words / sentences; // average sentence length
@@ -123,7 +149,7 @@ export function calculateReadability(
   const fleschScore = Math.round(Math.max(0, Math.min(100, score)) * 10) / 10;
   const fleschGrade = Math.round(Math.max(0, grade) * 10) / 10;
 
-  return { fleschScore, fleschGrade, syllables };
+  return { fleschScore, fleschGrade, syllables, unsupportedScript: false };
 }
 
 // ---------------------------------------------------------------------------

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor de libras para quilogramas – calculadora lb para kg",
     "description": "Converta libras para quilogramas instantaneamente. Útil para ler o peso corporal em apps dos EUA, converter cargas de academia e verificar limites de bagagem. Tabela de 1 a 300 lb.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-libras-para-kg"
   },
   "hero": {
     "title": "Converta libras para quilogramas",
     "description": "Digite qualquer valor em libras e obtenha o resultado em quilogramas imediatamente. O conversor é útil quando lê o peso em apps de saúde ou fitness dos EUA, compra equipamento desportivo etiquetado em libras, interpreta limites de bagagem de companhias aéreas americanas ou converte o peso de nascimento de um bebé em documentação de hospitais anglófonos.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -85,7 +85,7 @@
       "type": "sectionBasic",
       "title": "Quando precisa de converter libras para quilogramas?",
       "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, o quilograma é a unidade de massa padrão para peso corporal, alimentos, mercadoria e equipamento desportivo. Contudo, as apps e sites de saúde e fitness dos EUA — como MyFitnessPal, Apple Health ou Fitbit — mostram o peso em libras (lb) por predefinição. Os planos de treino populares dos EUA também usam libras: a barra olímpica pesa 20 kg (nos EUA chamada barra de 45 libras, embora sejam exatamente 44,09 lb) e os discos padrão são de 45, 35, 25, 10 e 5 lb.</p><p class=\"text-mid mb-4\">Converter libras para kg é também necessário ao ler os limites de bagagem de companhias aéreas americanas, ao verificar o peso numa balança em libras ou ao interpretar documentação médica de um hospital anglófono onde o peso de um bebé é registado em libras e onças.</p><p class=\"text-mid\">Uma libra equivale exatamente a 0,45359237 kg. Ao contrário: 1 kg = 2,2046 lb. O conversor calcula o resultado assim que digita um valor, e pode copiá-lo para a área de transferência com um único clique.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor gratuito de libras para quilogramas – Arteon"
     },
     {
@@ -270,6 +270,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "title": "Tem alguma questão ou sugestão?",
       "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, escreva-nos. Respondemos a cada mensagem.",
       "imageAlt": "Contactar Arteon Agency",

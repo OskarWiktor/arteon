@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας λιβρών σε κιλά – υπολογιστής lb kg",
     "description": "Μετατρέψτε λίβρες σε κιλά άμεσα. Χρήσιμο για ανάγνωση βάρους από αμερικανικές εφαρμογές, φορτία γυμναστηρίου και όρια αποσκευών. Πίνακας 1–300 lb.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-livres-se-kg"
   },
   "hero": {
     "title": "Μετατρέψτε λίβρες σε κιλά",
     "description": "Εισαγάγετε οποιαδήποτε τιμή σε λίβρες και το αποτέλεσμα σε κιλά εμφανίζεται αμέσως. Ο μετατροπέας είναι χρήσιμος όταν διαβάζετε το βάρος σε αμερικανική εφαρμογή υγείας ή fitness, αγοράζετε αθλητικό εξοπλισμό επισημασμένο σε λίβρες, ερμηνεύετε όρια αποσκευών αμερικανικών αεροπορικών εταιρειών ή μετατρέπετε το βάρος γέννησης νεογνού από ξενόγλωσση ιατρική τεκμηρίωση.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -85,7 +85,7 @@
       "type": "sectionBasic",
       "title": "Πότε χρειάζεται να μετατρέψετε λίβρες σε κιλά;",
       "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα το κιλό είναι η τυπική μονάδα μάζας για το σωματικό βάρος, τα τρόφιμα, τα εμπορεύματα και τον αθλητικό εξοπλισμό. Ωστόσο, οι αμερικανικές εφαρμογές υγείας και fitness — όπως MyFitnessPal, Apple Health ή Fitbit — εμφανίζουν το βάρος σε λίβρες (lb) ως προεπιλογή. Τα δημοφιλή αμερικανικά προγράμματα προπόνησης χρησιμοποιούν επίσης λίβρες: η ολυμπιακή μπάρα ζυγίζει 20 kg (στις ΗΠΑ την αποκαλούν μπάρα 45 λιβρών, αν και ακριβώς είναι 44,09 lb) και οι τυπικοί δίσκοι είναι 45, 35, 25, 10 και 5 lb.</p><p class=\"text-mid mb-4\">Η μετατροπή λιβρών σε kg είναι επίσης απαραίτητη κατά την ανάγνωση ορίων αποσκευών αμερικανικών αεροπορικών εταιρειών, τη χρήση ζυγαριάς σε λίβρες ή την ερμηνεία ιατρικής τεκμηρίωσης αγγλόφωνου νοσοκομείου όπου το βάρος νεογνού καταγράφεται σε λίβρες και ουγγιές.</p><p class=\"text-mid\">Μια λίβρα ισοδυναμεί ακριβώς με 0,45359237 kg. Αντίστροφα: 1 kg = 2,2046 lb. Ο μετατροπέας υπολογίζει το αποτέλεσμα αμέσως μόλις πληκτρολογήσετε, και μπορείτε να το αντιγράψετε με ένα κλικ.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Δωρεάν μετατροπέας λιβρών σε κιλά – Arteon"
     },
     {
@@ -264,6 +264,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "title": "Έχετε κάποια ερώτηση ή πρόταση;",
       "description": "Αν εντοπίσετε κάποιο σφάλμα στους πίνακες ή έχετε ιδέα για βελτίωση του μετατροπέα, γράψτε μας. Απαντάμε σε κάθε μήνυμα.",
       "imageAlt": "Επικοινωνία με την Arteon Agency",

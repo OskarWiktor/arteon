@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando serve convertire em in pixel?",
       "html": "<p class=\"text-mid mb-4\">L’unità CSS em è relativa alla dimensione del font dell’elemento genitore. Con la dimensione standard di 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">A differenza di rem (relativo alla radice), em si accumula: 1,5em × 1,5em = 2,25× la dimensione base.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore em in pixel – CSS – Arteon"
     },
     {

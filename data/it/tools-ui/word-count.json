@@ -10,6 +10,7 @@
   "syllables": "Sillabe",
   "readability": "Leggibilità (Flesch)",
   "readabilityHint": "Per contenuti web in italiano, punta a 60–70.",
+  "readabilityUnsupported": "Il punteggio di leggibilità funziona con testo in alfabeto latino o greco.",
   "copyText": "Copia testo",
   "copied": "Copiato",
   "clearText": "Cancella",

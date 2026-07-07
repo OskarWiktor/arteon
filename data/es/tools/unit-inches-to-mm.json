@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Calculadora pulgadas a MM – convertir pulgadas a milímetros",
     "description": "Convierte pulgadas a milímetros. La tabla completa de fracciones de pulgada en pasos de 1/32 muestra los equivalentes en mm de brocas, tornillos y llaves de vaso. El convertidor funciona en ambos sentidos y calcula al instante.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-pulgadas-a-mm"
   },
   "hero": {
     "title": "Convierte pulgadas a milímetros",
     "description": "Introduce un valor en pulgadas y ve al instante el resultado en milímetros. El convertidor resulta útil allí donde herramientas, tornillos o materiales se especifican en pulgadas o sus fracciones: al elegir una broca, una llave de vaso, un tornillo de rosca en pulgadas o al comprobar el grosor de un material de un catálogo americano.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -82,7 +82,7 @@
       "type": "sectionBasic",
       "title": "¿Cuándo se convierten pulgadas a milímetros?",
       "html": "<p class=\"text-mid mb-4\">La pulgada es la unidad de longitud del sistema imperial, muy usada en EE. UU., Reino Unido, Canadá y Australia, especialmente en herramientas, tornillos y materiales de construcción. En España y América Latina trabajamos en milímetros, así que las pulgadas —a menudo en forma de fracción— aparecen sobre todo cuando tratamos con herramientas o piezas procedentes de países anglosajones.</p><p class=\"text-mid mb-4\">Las situaciones más frecuentes: quieres saber cuántos milímetros mide una broca descrita como 3/8 de pulgada, buscas una llave de vaso para un tornillo de rosca en pulgadas o compruebas el grosor de una chapa de un catálogo americano indicado como 1/8 de pulgada.</p><p class=\"text-mid mb-4\">La fórmula es sencilla: una pulgada equivale exactamente a 25,4 mm. Para convertir pulgadas a milímetros, basta con multiplicar el número de pulgadas por 25,4. El convertidor lo hace en cuanto introduces un valor.</p><p class=\"text-mid\">En esta página encontrarás una tabla de conversión de pulgadas a mm y la tabla completa de fracciones de pulgada en pasos de 1/32, que cubre todos los tamaños de 1/32 a 1 pulgada.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor gratuito de pulgadas a milímetros – Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -301,6 +301,7 @@
     { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "title": "¿Tienes una pregunta o sugerencia?",
       "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contacto con Arteon Agency",

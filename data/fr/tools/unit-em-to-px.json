@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quand faut-il convertir des em en pixels ?",
       "html": "<p class=\"text-mid mb-4\">L’unité CSS em est relative à la taille de police de l’élément parent. Avec la taille standard de 16px : 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Les unités em sont fréquemment utilisées en design web responsive pour la typographie, les espacements et la mise en page. Contrairement à rem (relatif à la racine), em s’accumule : 1,5em × 1,5em = 2,25× la taille de base.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur em en pixels – CSS – Arteon"
     },
     {

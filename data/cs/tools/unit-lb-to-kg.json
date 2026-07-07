@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník liber na kilogramy – kalkulačka lb na kg",
     "description": "Převeď libry na kilogramy okamžitě. Hodí se pro čtení váhy z amerických aplikací, převod zátěží v posilovně a kontrolu limitů zavazadel. Tabulka od 1 do 300 lb.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-liber-na-kg"
   },
   "hero": {
     "title": "Převeď libry na kilogramy",
     "description": "Zadej hodnotu v librách a výsledek v kilogramech se zobrazí okamžitě. Převodník se hodí, když čteš hmotnost ve zdravotní nebo fitness aplikaci z USA, kupuješ sportovní vybavení označené v librách, interpretuješ limit zavazadla americké letecké společnosti nebo převádíš porodní váhu miminka z anglicky psané dokumentace.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -85,7 +85,7 @@
       "type": "sectionBasic",
       "title": "Kdy potřebuješ převádět libry na kilogramy?",
       "html": "<p class=\"text-mid mb-4\">V Česku a na Slovensku je kilogram standardní jednotkou hmotnosti pro tělesnou váhu, potraviny, zboží i sportovní vybavení. Americké zdravotní a fitness aplikace — jako MyFitnessPal, Apple Health nebo Fitbit — zobrazují ale hmotnost ve výchozím nastavení v librách (lb). Stejně tak populární americké tréninkové programy: olympijská osa váží 20 kg (v USA se jí říká 45librová osa, i když přesně jde o 44,09 lb) a standardní kotouče jsou 45, 35, 25, 10 a 5 lb.</p><p class=\"text-mid mb-4\">Převod liber na kg je potřeba také při čtení limitů zavazadel amerických aerolinek, při vážení na váze kalibrované v librách nebo při interpretaci lékařské dokumentace cizojazyčné nemocnice, kde je porodní váha miminka zapsána v librách a uncích.</p><p class=\"text-mid\">Jedna libra odpovídá přesně 0,45359237 kg. Opačně: 1 kg = 2,2046 liber. Převodník vypočítá výsledek, jakmile začneš psát, a výsledek zkopíruješ jedním kliknutím.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník liber na kilogramy – Arteon"
     },
     {
@@ -264,6 +264,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "title": "Máš otázku nebo nápad na zlepšení?",
       "description": "Pokud najdeš chybu v tabulkách nebo máš nápad, jak převodník vylepšit, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontaktovat Arteon Agency",

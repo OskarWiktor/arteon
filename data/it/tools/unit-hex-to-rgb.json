@@ -65,7 +65,7 @@
       "type": "sectionBasic",
       "title": "Quando serve convertire HEX in RGB?",
       "html": "<p class=\"text-mid mb-4\">I colori HEX (#FF5733) e RGB (rgb(255, 87, 51)) rappresentano gli stessi colori in notazione diversa. HEX è comune in CSS, RGB in programmazione e funzioni CSS.</p><p class=\"text-mid mb-4\">Ogni colore HEX ha 6 cifre: le prime 2 per il rosso (00–FF), le successive 2 per il verde, le ultime 2 per il blu. RGB usa valori decimali 0–255.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore HEX in RGB – colori – Arteon"
     },
     {

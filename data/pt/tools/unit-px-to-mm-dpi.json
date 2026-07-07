@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor px para mm (DPI) – converta pixels em milímetros",
     "description": "Converta pixels em milímetros com DPI ajustável. Essencial em artes gráficas, design de embalagens e para verificar se um ficheiro de câmara ou imagem web chega para um determinado formato de impressão.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-px-para-mm"
   },
   "hero": {
     "title": "Converta pixels em milímetros com o DPI que precisar",
     "description": "Introduza um valor em pixels, defina a resolução DPI e leia o resultado em milímetros. Verifique que tamanho físico teria um ficheiro de câmara, uma imagem web ou uma exportação do Figma depois de impressos. O conversor ajuda a escolher a dimensão certa antes de enviar um ficheiro para a gráfica.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -87,7 +87,7 @@
       "type": "sectionBasic",
       "title": "Porquê converter pixels em milímetros?",
       "html": "<p class=\"text-mid mb-4\">Um pixel é uma unidade digital que descreve um único ponto num ecrã ou num ficheiro de imagem. O milímetro, por sua vez, rege o mundo físico: as gráficas indicam as dimensões de cartões de visita, folhetos e margens de corte em milímetros. Para converter um no outro, é preciso conhecer a resolução DPI, ou seja, o número de pixels que cabem numa polegada de material ou ecrã.</p><p class=\"text-mid mb-4\">Esta conversão é usada sobretudo por designers que verificam que tamanho físico terá o seu projeto depois de impresso, fotógrafos que avaliam se um ficheiro de câmara chega para um determinado formato, e por quem trabalha no Figma ou Photoshop, que pensa em pixels mas tem de entregar um ficheiro com uma dimensão física exata. O conversor poupa-lhe o cálculo manual e a memorização da fórmula.</p><p class=\"text-mid\">Mais abaixo nesta página encontrará uma tabela detalhada com valores comuns em pixels, uma tabela inversa de milímetros para pixels, dimensões prontas a usar de cartões de visita, folhetos e formatos A0–A7, e guias breves para mudar de pixels para milímetros no Illustrator, InDesign, CorelDRAW, Photoshop, Figma e Canva.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor gratuito de pixels em milímetros – Arteon"
     },
     {
@@ -772,7 +772,7 @@
       "type": "contactForm",
       "title": "Ajude-nos a melhorar este conversor",
       "description": "Falta algum valor nas tabelas, encontrou um erro de cálculo ou quer sugerir uma nova funcionalidade? Escreva-nos: lemos cada mensagem pessoalmente e respondemos no prazo de 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor px para mm – Arteon",
       "defaultSubject": "Feedback: conversor px para mm"
     },

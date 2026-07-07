@@ -4,7 +4,7 @@
   "metadata": {
     "title": "px in cm Rechner (DPI) – Pixel in Zentimeter umrechnen",
     "description": "Pixel in Zentimeter mit einstellbarem DPI umrechnen. Das ideale Tool für Grafiker, Fotografen und Designer, die die Druckgröße von Bildschirmdateien prüfen.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/px-in-cm-umrechner"
   },
   "hero": {
@@ -86,7 +86,7 @@
       "type": "sectionBasic",
       "title": "Warum Pixel in Zentimeter umrechnen?",
       "html": "<p class=\"text-mid mb-4\">Das Pixel ist eine digitale Einheit, die einen Punkt auf dem Bildschirm eines Telefons, Tablets oder Monitors beschreibt. Der Zentimeter hingegen herrscht in der physischen Welt von Papier und Druck. Um eine Einheit in die andere zu übertragen, müssen Sie die DPI-Auflösung kennen – also die Anzahl der Pixel, die auf einen Zoll Material oder Bildschirm passen.</p><p class=\"text-mid mb-4\">Solche Umrechnungen führen am häufigsten Grafiker durch, die wissen möchten, wie groß ihr Projekt nach dem Druck wird, Fotografen, die prüfen, ob eine Kameradatei für ein bestimmtes Abzugformat ausreicht, sowie Personen, die Screenshots oder Grafiken aus dem Internet zum Drucken vorbereiten. Der Umrechner befreit Sie vom Kopfrechnen und vom Auswendiglernen der Formel.</p><p class=\"text-mid\">Im weiteren Verlauf der Seite finden Sie eine umfangreiche Antworttabelle für beliebte Pixelwerte, eine separate Tabelle der Bildschirmauflösungen wie Full HD und 4K, fertige Maße der Papier- und Fotoformate sowie kurze Anleitungen, wie Sie Pixel in Zentimeter in Photoshop, Figma, Canva und anderen Grafiktools umschalten.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Pixel-in-Zentimeter-Umrechner – Arteon"
     },
     {
@@ -741,7 +741,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, diesen Umrechner zu verbessern",
       "description": "Fehlt Ihnen ein Wert in den Tabellen, haben Sie einen Umrechnungsfehler entdeckt oder möchten Sie eine neue Funktion vorschlagen? Schreiben Sie uns – wir lesen jede Nachricht persönlich und antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "px in cm Umrechner – Arteon",
       "defaultSubject": "Feedback: px in cm Umrechner"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore da chilogrammi a libbre – calcolatore kg in lb",
     "description": "Converti chilogrammi in libbre all'istante. Utile per il peso corporeo, i carichi in palestra, i limiti bagaglio e il peso dei neonati. Tabella da 0,5 a 200 kg con colonna stone.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-kg-in-libbre"
   },
   "hero": {
     "title": "Converti chilogrammi in libbre",
     "description": "Inserisci qualsiasi valore in chilogrammi e ottieni il risultato in libbre immediatamente. Il convertitore è utile per verificare il peso corporeo nel sistema imperiale, leggere i limiti bagaglio in libbre, confrontare risultati sportivi con tabelle americane o convertire il peso alla nascita di un neonato.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -85,7 +85,7 @@
       "type": "sectionBasic",
       "title": "Quando si convertono chilogrammi in libbre?",
       "html": "<p class=\"text-mid mb-4\">Il chilogrammo è l'unità di massa standard in Italia. La libbra (lb) domina negli Stati Uniti e rimane comune nel Regno Unito, soprattutto per il peso corporeo — dove i britannici usano anche lo stone (1 stone = 14 libbre = circa 6,35 kg).</p><p class=\"text-mid mb-4\">Convertire kg in libbre è necessario quando si consulta il proprio peso su un'app di salute americana, si acquista materiale sportivo descritto in libbre, si interpreta un limite bagaglio in lb o si vuole conoscere il peso alla nascita di un neonato in documentazione di un ospedale anglofono.</p><p class=\"text-mid mb-4\">Una libbra equivale esattamente a 0,45359237 kg, valore fissato come costante dal 1959. Al contrario: 1 kg = 2,2046 libbre. Il convertitore esegue il calcolo non appena inserisci un valore.</p><p class=\"text-mid\">In questa pagina trovi una tabella da kg a libbre per valori da 0,5 a 200 kg, una tabella del peso corporeo con conversione in libbre e stone e una tabella dei pesi in palestra.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore gratuito da chilogrammi a libbre – Arteon"
     },
     {
@@ -409,6 +409,7 @@
     },
     {
       "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "title": "Hai domande o suggerimenti?",
       "description": "Se individui un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
       "imageAlt": "Contattare Arteon Agency",
