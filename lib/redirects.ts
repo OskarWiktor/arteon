@@ -243,10 +243,15 @@ export const ABOUT_REDIRECTS: Record<string, string> = {
  * Redirecty dla usług (zmienione URL-e)
  */
 export const SERVICES_REDIRECTS: Record<string, string> = {
-  // Zmiana URL strony internetowe → tworzenie stron WordPress (2026-01-24)
-  '/uslugi/strony-internetowe': '/uslugi/tworzenie-stron-wordpress',
+  // Zmiana URL strony internetowe → tworzenie stron WordPress (2026-01-24),
+  // następnie → strony-internetowe-dla-firm i wydzielenie optymalizacji (2026-07-06).
+  // Stare ścieżki kierujemy bezpośrednio na finalne URL-e (bez łańcuchów).
+  '/uslugi/strony-internetowe': '/uslugi/strony-internetowe-dla-firm',
+  '/uslugi/tworzenie-stron-wordpress': '/uslugi/strony-internetowe-dla-firm',
   '/uslugi/strony-internetowe/optymalizacja-strony-wordpress':
-    '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+    '/uslugi/optymalizacja-strony-wordpress',
+  '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress':
+    '/uslugi/optymalizacja-strony-wordpress',
 };
 
 /**

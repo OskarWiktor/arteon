@@ -1,0 +1,2043 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_proje_documents_github_arteon_package_json",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "arteon_package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "arteon_package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "arteon_package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "arteon_package_type",
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "arteon_package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "arteon_package_scripts_predev",
+      "label": "predev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "arteon_package_scripts_dev",
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "arteon_package_scripts_prebuild",
+      "label": "prebuild",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "arteon_package_scripts_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "arteon_package_scripts_postinstall",
+      "label": "postinstall",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "arteon_package_scripts_prepare",
+      "label": "prepare",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "arteon_package_scripts_clear_cache",
+      "label": "clear-cache",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "arteon_package_scripts_start",
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "arteon_package_scripts_lint",
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15"
+    },
+    {
+      "id": "arteon_package_scripts_eslint",
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "arteon_package_scripts_eslint_fix",
+      "label": "eslint:fix",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "arteon_package_scripts_format",
+      "label": "format",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "arteon_package_scripts_analyze",
+      "label": "analyze",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "arteon_package_scripts_test",
+      "label": "test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "arteon_package_scripts_test_watch",
+      "label": "test:watch",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21"
+    },
+    {
+      "id": "arteon_package_scripts_test_e2e",
+      "label": "test:e2e",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "arteon_package_scripts_test_a11y",
+      "label": "test:a11y",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "arteon_package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "arteon_package_dependencies_vercel_analytics",
+      "label": "@vercel/analytics",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "arteon_package_dependencies_vercel_speed_insights",
+      "label": "@vercel/speed-insights",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "arteon_package_dependencies_clsx",
+      "label": "clsx",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "arteon_package_dependencies_gifenc",
+      "label": "gifenc",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "arteon_package_dependencies_heic2any",
+      "label": "heic2any",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "arteon_package_dependencies_js_yaml",
+      "label": "js-yaml",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "arteon_package_dependencies_jspdf",
+      "label": "jspdf",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "arteon_package_dependencies_marked",
+      "label": "marked",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L33"
+    },
+    {
+      "id": "arteon_package_dependencies_next",
+      "label": "next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L34"
+    },
+    {
+      "id": "arteon_package_dependencies_pdfjs_dist",
+      "label": "pdfjs-dist",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L35"
+    },
+    {
+      "id": "arteon_package_dependencies_qrcode",
+      "label": "qrcode",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36"
+    },
+    {
+      "id": "arteon_package_dependencies_react",
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L37"
+    },
+    {
+      "id": "arteon_package_dependencies_react_dom",
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L38"
+    },
+    {
+      "id": "arteon_package_dependencies_react_icons",
+      "label": "react-icons",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L39"
+    },
+    {
+      "id": "arteon_package_dependencies_server_only",
+      "label": "server-only",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L40"
+    },
+    {
+      "id": "arteon_package_dependencies_sharp",
+      "label": "sharp",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L41"
+    },
+    {
+      "id": "arteon_package_dependencies_tailwind_merge",
+      "label": "tailwind-merge",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L42"
+    },
+    {
+      "id": "arteon_package_dependencies_temporal_polyfill",
+      "label": "temporal-polyfill",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L43"
+    },
+    {
+      "id": "arteon_package_dependencies_turndown",
+      "label": "turndown",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L44"
+    },
+    {
+      "id": "arteon_package_dependencies_turndown_plugin_gfm",
+      "label": "turndown-plugin-gfm",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L45"
+    },
+    {
+      "id": "arteon_package_dependencies_utif2",
+      "label": "utif2",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L46"
+    },
+    {
+      "id": "arteon_package_dependencies_zod",
+      "label": "zod",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L47"
+    },
+    {
+      "id": "arteon_package_devdependencies",
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L49"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_js",
+      "label": "@eslint/js",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L50"
+    },
+    {
+      "id": "arteon_package_devdependencies_next_bundle_analyzer",
+      "label": "@next/bundle-analyzer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L51"
+    },
+    {
+      "id": "arteon_package_devdependencies_next_eslint_plugin_next",
+      "label": "@next/eslint-plugin-next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L52"
+    },
+    {
+      "id": "arteon_package_devdependencies_playwright_test",
+      "label": "@playwright/test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L53"
+    },
+    {
+      "id": "arteon_package_devdependencies_tailwindcss_aspect_ratio",
+      "label": "@tailwindcss/aspect-ratio",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L54"
+    },
+    {
+      "id": "arteon_package_devdependencies_tailwindcss_forms",
+      "label": "@tailwindcss/forms",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L55"
+    },
+    {
+      "id": "arteon_package_devdependencies_tailwindcss_postcss",
+      "label": "@tailwindcss/postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L56"
+    },
+    {
+      "id": "arteon_package_devdependencies_tailwindcss_typography",
+      "label": "@tailwindcss/typography",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L57"
+    },
+    {
+      "id": "arteon_package_devdependencies_testing_library_dom",
+      "label": "@testing-library/dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L58"
+    },
+    {
+      "id": "arteon_package_devdependencies_types_js_yaml",
+      "label": "@types/js-yaml",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L59"
+    },
+    {
+      "id": "arteon_package_devdependencies_types_node",
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L60"
+    },
+    {
+      "id": "arteon_package_devdependencies_types_qrcode",
+      "label": "@types/qrcode",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L61"
+    },
+    {
+      "id": "arteon_package_devdependencies_types_react",
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L62"
+    },
+    {
+      "id": "arteon_package_devdependencies_types_react_dom",
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L63"
+    },
+    {
+      "id": "arteon_package_devdependencies_types_turndown",
+      "label": "@types/turndown",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L64"
+    },
+    {
+      "id": "arteon_package_devdependencies_typescript_eslint_eslint_plugin",
+      "label": "@typescript-eslint/eslint-plugin",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L65"
+    },
+    {
+      "id": "arteon_package_devdependencies_typescript_eslint_parser",
+      "label": "@typescript-eslint/parser",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L66"
+    },
+    {
+      "id": "arteon_package_devdependencies_babel_plugin_react_compiler",
+      "label": "babel-plugin-react-compiler",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L67"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint",
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L68"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_config_prettier",
+      "label": "eslint-config-prettier",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L69"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_import_resolver_typescript",
+      "label": "eslint-import-resolver-typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L70"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_plugin_import",
+      "label": "eslint-plugin-import",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L71"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_plugin_jsx_a11y",
+      "label": "eslint-plugin-jsx-a11y",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L72"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_plugin_promise",
+      "label": "eslint-plugin-promise",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L73"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_plugin_react_hooks",
+      "label": "eslint-plugin-react-hooks",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L74"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_plugin_sonarjs",
+      "label": "eslint-plugin-sonarjs",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L75"
+    },
+    {
+      "id": "arteon_package_devdependencies_eslint_plugin_unused_imports",
+      "label": "eslint-plugin-unused-imports",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L76"
+    },
+    {
+      "id": "arteon_package_devdependencies_fast_glob",
+      "label": "fast-glob",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L77"
+    },
+    {
+      "id": "arteon_package_devdependencies_husky",
+      "label": "husky",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L78"
+    },
+    {
+      "id": "arteon_package_devdependencies_lint_staged",
+      "label": "lint-staged",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L79"
+    },
+    {
+      "id": "arteon_package_devdependencies_next_sitemap",
+      "label": "next-sitemap",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L80"
+    },
+    {
+      "id": "arteon_package_devdependencies_postcss",
+      "label": "postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L81"
+    },
+    {
+      "id": "arteon_package_devdependencies_prettier",
+      "label": "prettier",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L82"
+    },
+    {
+      "id": "arteon_package_devdependencies_prettier_plugin_tailwindcss",
+      "label": "prettier-plugin-tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L83"
+    },
+    {
+      "id": "arteon_package_devdependencies_tailwindcss",
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L84"
+    },
+    {
+      "id": "arteon_package_devdependencies_typescript",
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L85"
+    },
+    {
+      "id": "arteon_package_devdependencies_vitest",
+      "label": "vitest",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L86"
+    },
+    {
+      "id": "arteon_package_overrides",
+      "label": "overrides",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L88"
+    },
+    {
+      "id": "arteon_package_overrides_types_react",
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L89"
+    },
+    {
+      "id": "arteon_package_overrides_types_react_dom",
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L90"
+    },
+    {
+      "id": "arteon_package_overrides_eslint_plugin_sonarjs",
+      "label": "eslint-plugin-sonarjs",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L91"
+    },
+    {
+      "id": "arteon_package_eslint_plugin_sonarjs_minimatch",
+      "label": "minimatch",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L92"
+    },
+    {
+      "id": "arteon_package_overrides_next",
+      "label": "next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L94"
+    },
+    {
+      "id": "arteon_package_next_postcss",
+      "label": "postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L95"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_proje_documents_github_arteon_package_json",
+      "target": "arteon_package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_package_json",
+      "target": "arteon_package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_package_json",
+      "target": "arteon_package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_package_json",
+      "target": "arteon_package_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_package_json",
+      "target": "arteon_package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_predev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_dev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_prebuild",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_postinstall",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_prepare",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_clear_cache",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_start",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_lint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_eslint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_eslint_fix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_format",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_analyze",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_test_watch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_test_e2e",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_scripts",
+      "target": "arteon_package_scripts_test_a11y",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_package_json",
+      "target": "arteon_package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_vercel_analytics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_vercel_analytics",
+      "target": "vercel_analytics",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_vercel_speed_insights",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_vercel_speed_insights",
+      "target": "vercel_speed_insights",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_clsx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_clsx",
+      "target": "clsx",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_gifenc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_gifenc",
+      "target": "gifenc",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_heic2any",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_heic2any",
+      "target": "heic2any",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_js_yaml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_js_yaml",
+      "target": "js_yaml",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_jspdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_jspdf",
+      "target": "jspdf",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_marked",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_marked",
+      "target": "marked",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_next",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_next",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_pdfjs_dist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_pdfjs_dist",
+      "target": "pdfjs_dist",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_qrcode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_qrcode",
+      "target": "qrcode",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_react",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_react_dom",
+      "target": "react_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_react_icons",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_react_icons",
+      "target": "react_icons",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_server_only",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_server_only",
+      "target": "server_only",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_sharp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_sharp",
+      "target": "sharp",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_tailwind_merge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_tailwind_merge",
+      "target": "tailwind_merge",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_temporal_polyfill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_temporal_polyfill",
+      "target": "temporal_polyfill",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_turndown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_turndown",
+      "target": "turndown",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_turndown_plugin_gfm",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_turndown_plugin_gfm",
+      "target": "turndown_plugin_gfm",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_utif2",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_utif2",
+      "target": "utif2",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_dependencies",
+      "target": "arteon_package_dependencies_zod",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_dependencies_zod",
+      "target": "zod",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_package_json",
+      "target": "arteon_package_devdependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_js",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_js",
+      "target": "eslint_js",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L50",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_next_bundle_analyzer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_next_bundle_analyzer",
+      "target": "next_bundle_analyzer",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L51",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_next_eslint_plugin_next",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_next_eslint_plugin_next",
+      "target": "next_eslint_plugin_next",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L52",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_playwright_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_playwright_test",
+      "target": "playwright_test",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_tailwindcss_aspect_ratio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_tailwindcss_aspect_ratio",
+      "target": "tailwindcss_aspect_ratio",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L54",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_tailwindcss_forms",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_tailwindcss_forms",
+      "target": "tailwindcss_forms",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_tailwindcss_postcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_tailwindcss_postcss",
+      "target": "tailwindcss_postcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_tailwindcss_typography",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_tailwindcss_typography",
+      "target": "tailwindcss_typography",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_testing_library_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_testing_library_dom",
+      "target": "testing_library_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L58",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_types_js_yaml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_types_js_yaml",
+      "target": "types_js_yaml",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L59",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_types_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_types_node",
+      "target": "types_node",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L60",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_types_qrcode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_types_qrcode",
+      "target": "types_qrcode",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L61",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_types_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_types_react",
+      "target": "types_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L62",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_types_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_types_react_dom",
+      "target": "types_react_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L63",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_types_turndown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_types_turndown",
+      "target": "types_turndown",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L64",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_typescript_eslint_eslint_plugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_typescript_eslint_eslint_plugin",
+      "target": "typescript_eslint_eslint_plugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_typescript_eslint_parser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_typescript_eslint_parser",
+      "target": "typescript_eslint_parser",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L66",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_babel_plugin_react_compiler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_babel_plugin_react_compiler",
+      "target": "babel_plugin_react_compiler",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint",
+      "target": "eslint",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L68",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_config_prettier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_config_prettier",
+      "target": "eslint_config_prettier",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L69",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_import_resolver_typescript",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_import_resolver_typescript",
+      "target": "eslint_import_resolver_typescript",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L70",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_plugin_import",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_plugin_import",
+      "target": "eslint_plugin_import",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L71",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_plugin_jsx_a11y",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_plugin_jsx_a11y",
+      "target": "eslint_plugin_jsx_a11y",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L72",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_plugin_promise",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_plugin_promise",
+      "target": "eslint_plugin_promise",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L73",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_plugin_react_hooks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_plugin_react_hooks",
+      "target": "eslint_plugin_react_hooks",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L74",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_plugin_sonarjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_plugin_sonarjs",
+      "target": "eslint_plugin_sonarjs",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L75",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_eslint_plugin_unused_imports",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_eslint_plugin_unused_imports",
+      "target": "eslint_plugin_unused_imports",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L76",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_fast_glob",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_fast_glob",
+      "target": "fast_glob",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L77",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_husky",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_husky",
+      "target": "husky",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L78",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_lint_staged",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_lint_staged",
+      "target": "lint_staged",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L79",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_next_sitemap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_next_sitemap",
+      "target": "next_sitemap",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L80",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_postcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_postcss",
+      "target": "postcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L81",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_prettier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_prettier",
+      "target": "prettier",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L82",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_prettier_plugin_tailwindcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_prettier_plugin_tailwindcss",
+      "target": "prettier_plugin_tailwindcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L83",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_tailwindcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_tailwindcss",
+      "target": "tailwindcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L84",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_typescript",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_typescript",
+      "target": "typescript",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L85",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "arteon_package_devdependencies",
+      "target": "arteon_package_devdependencies_vitest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_devdependencies_vitest",
+      "target": "vitest",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L86",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_package_json",
+      "target": "arteon_package_overrides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_overrides",
+      "target": "arteon_package_overrides_types_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_overrides",
+      "target": "arteon_package_overrides_types_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_overrides",
+      "target": "arteon_package_overrides_eslint_plugin_sonarjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_overrides_eslint_plugin_sonarjs",
+      "target": "arteon_package_eslint_plugin_sonarjs_minimatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_overrides",
+      "target": "arteon_package_overrides_next",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_package_overrides_next",
+      "target": "arteon_package_next_postcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L95",
+      "weight": 1.0
+    }
+  ]
+}
