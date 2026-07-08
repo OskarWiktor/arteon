@@ -33,6 +33,9 @@ const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 // oznacza, że komunikat zgody fizycznie nie może pokazać się dwa razy.
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '';
 
+// Google Tag Manager container, loaded globally on every locale.
+const GTM_CONTAINER_ID = 'GTM-W9HSVSCV';
+
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 
 const ORG_DESCRIPTIONS: Record<string, string> = {
@@ -182,6 +185,16 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
           }}
         />
 
+        {/* Google Tag Manager — placed after the Consent Mode defaults above so
+            GTM and every tag it fires respect the default (denied) consent
+            state in EEA/UK regions. Reuses the dataLayer initialized there. */}
+        <script
+          id='google-tag-manager'
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');`,
+          }}
+        />
+
         <link rel='dns-prefetch' href='https://pagead2.googlesyndication.com' />
         <link
           rel='dns-prefetch'
@@ -199,6 +212,18 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
       </head>
 
       <body className='font-sans antialiased'>
+        {/* Google Tag Manager (noscript) — must be the first element in <body>
+            so it fires for users with JavaScript disabled. */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}`}
+            height='0'
+            width='0'
+            style={{ display: 'none', visibility: 'hidden' }}
+            title='Google Tag Manager'
+          />
+        </noscript>
+
         <Suspense fallback={null}>
           <FocusManager />
           <RouteAnnouncer />
