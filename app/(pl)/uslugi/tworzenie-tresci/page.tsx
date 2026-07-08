@@ -85,7 +85,7 @@ export default function OfferContentPage() {
             SEO i spójny język marki.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
         overlay='black'
@@ -392,7 +392,7 @@ export default function OfferContentPage() {
               backgroundImage:
                 '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Blogi internetowe',

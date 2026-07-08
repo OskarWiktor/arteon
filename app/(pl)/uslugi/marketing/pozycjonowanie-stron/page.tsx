@@ -480,7 +480,7 @@ export default function OfferSeoSubscription() {
               backgroundImage:
                 '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Sklepy internetowe',

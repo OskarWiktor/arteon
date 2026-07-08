@@ -16,6 +16,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -84,7 +85,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
             każdym kanale.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp'
         overlay='black'
@@ -109,13 +110,17 @@ export default function OfferDesignBrandIdentityDesignPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz zamawiając identyfikację wizualną?'>
+        <SectionBasic
+          title='Co zyskujesz zamawiając identyfikację wizualną?'
+          imageSrc='/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp'
+          imageAlt='Realizacja identyfikacji wizualnej dla firmy Finish Masters - mockup Arteon'
+        >
           <p>
             <strong>
               Spójny system wizualny porządkuje każdy kontakt z Twoją marką.
@@ -193,7 +198,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
             marka pozostaje spójna niezależnie od tego, kto przygotowuje kolejne
             materiały.
           </p>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -341,7 +346,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
                 'Proste materiały firmowe (wizytówka, papier firmowy, stopka mailowa)',
                 'Mini-księga znaku z zasadami użycia logo i kolorów',
               ],
-              btnOne: 'Zamów wycenę podstawowej identyfikacji',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -452,7 +457,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
               backgroundImage:
                 '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Sklepy internetowe',

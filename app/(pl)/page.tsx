@@ -201,7 +201,10 @@ export default function HomePage() {
                     musisz się martwić, jeśli nie posiadasz wiedzy technicznej.
                   </p>
                   <div className='mt-auto flex gap-4'>
-                    <ButtonLink arrow href='/uslugi/tworzenie-stron-wordpress'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/strony-internetowe-dla-firm'
+                    >
                       Strony
                     </ButtonLink>
                     <ButtonLink arrow href='/uslugi/blogi-internetowe'>

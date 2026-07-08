@@ -330,7 +330,7 @@ export default function OfferMarketingHubPage() {
               backgroundImage:
                 '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Sklepy internetowe',

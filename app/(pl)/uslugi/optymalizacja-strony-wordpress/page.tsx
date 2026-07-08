@@ -3,6 +3,7 @@ import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
@@ -10,14 +11,13 @@ import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { siteUrl } from '@/utils/absoluteUrl';
-import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
-import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title:
@@ -26,14 +26,14 @@ export const metadata = {
     'Dedykowana oferta optymalizacji stron www stworzonych w WordPress z gwarancją wydajności 90+/100 według PageSpeed. Szybsze ładowanie = więcej klientów.',
   alternates: {
     canonical:
-      'https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+      'https://www.arteonagency.pl/uslugi/optymalizacja-strony-wordpress',
   },
   openGraph: {
     title:
       'Optymalizacja prędkości ładowania strony internetowych WordPress - gwarancja wydajności 90+/100 | Arteon',
     description:
       'Dedykowana oferta optymalizacji stron www stworzonych w WordPress z gwarancją wydajności 90+/100 według PageSpeed. Szybsze ładowanie = więcej klientów.',
-    url: `${siteUrl}/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress`,
+    url: `${siteUrl}/uslugi/optymalizacja-strony-wordpress`,
     type: 'website',
     siteName: 'Arteon',
     images: [
@@ -48,7 +48,7 @@ export const metadata = {
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    path: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+    path: '/uslugi/optymalizacja-strony-wordpress',
     serviceName:
       'Optymalizacja wydajności strony internetowych stworzonych w WordPress',
     description:
@@ -100,11 +100,7 @@ export default function OfferOptimizationWordPressPage() {
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{
-          href: '/uslugi/tworzenie-stron-wordpress',
-          label: 'Tworzenie stron WordPress',
-        }}
-        fourth={{
-          href: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+          href: '/uslugi/optymalizacja-strony-wordpress',
           label: 'Optymalizacja strony WordPress',
         }}
         includeJsonLd
@@ -326,7 +322,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionFaqPanels
           defaultOpenIndex={1}
-          pageUrl='https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress'
+          pageUrl='https://www.arteonagency.pl/uslugi/optymalizacja-strony-wordpress'
           title='Najczęstsze pytania dotyczące optymalizacji stron internetowych w WordPress'
           items={[
             {
@@ -368,7 +364,7 @@ export default function OfferOptimizationWordPressPage() {
               backgroundImage:
                 '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Audyt SEO',

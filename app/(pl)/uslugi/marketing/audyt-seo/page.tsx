@@ -80,7 +80,7 @@ export default function OfferMarketingPage() {
             aby wyświetlać się wyżej w wynikach wyszukiwarki Google.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp'
         overlay='black'
@@ -126,7 +126,7 @@ export default function OfferMarketingPage() {
           subtitle='Dla kogo'
           title='Kiedy audyt SEO ma największy sens i dla kogo jest?'
           description='Gdy strona nie wyświetla się tak wysoko, jakbyś chciał, planujesz przebudowę serwisu lub chcesz bezpiecznie zwiększać ruch i ilość zapytań. Pełny audyt SEO jest najlepszy dla:'
-          btnOne='Zamów audyt SEO'
+          btnOne='Darmowa wycena'
           btnOneHref='#kontakt'
         >
           <ul className='mt-4 list-disc space-y-2 pl-5 text-sm'>
@@ -329,7 +329,7 @@ export default function OfferMarketingPage() {
                 'Ocena treści pod kątem słów kluczowych i intencji użytkowników',
                 'Rekomendacje optymalizacyjne i plan działań ',
               ],
-              btnOne: 'Zamów bezpłatną wycenę',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -344,7 +344,7 @@ export default function OfferMarketingPage() {
                 'Audyt meta danych, ALT grafik i danych strukturalnych',
                 'Analiza widoczności konkurencji i luk tematycznych',
               ],
-              btnOne: 'Zamów bezpłatną wycenę',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -359,7 +359,7 @@ export default function OfferMarketingPage() {
                 'Analiza pliku robots.txt, sitemap i kanonikalizacji',
                 'Analiza konkurencji i widoczności branżowej',
               ],
-              btnOne: 'Zamów bezpłatną wycenę',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
           ]}
@@ -515,7 +515,7 @@ export default function OfferMarketingPage() {
               backgroundImage:
                 '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Sklepy internetowe',

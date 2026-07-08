@@ -54,9 +54,9 @@ const ROUTE_IMAGE: Record<string, string> = {
   '/': '/assets/arteon-logo-on-mockup.webp',
   '/narzedzia': '/assets/arteon-logo-on-mockup.webp',
   '/uslugi': '/assets/projects/arteon-baners-msc.webp',
-  '/uslugi/tworzenie-stron-wordpress':
+  '/uslugi/strony-internetowe-dla-firm':
     '/assets/projects/arteon-baners-msc.webp',
-  '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress':
+  '/uslugi/optymalizacja-strony-wordpress':
     '/assets/projects/arteon-baners-camper-albania-mockup.webp',
   '/uslugi/sklepy-internetowe': '/assets/projects/arteon-baners-trilllizo.webp',
   '/uslugi/blogi-internetowe': '/assets/projects/arteon-baners-msc.webp',

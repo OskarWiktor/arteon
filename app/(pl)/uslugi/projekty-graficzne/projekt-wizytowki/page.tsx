@@ -15,6 +15,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -78,7 +79,7 @@ export default function OfferDesignBusinessCardPage() {
             eleganckie, gotowe do druku. Pliki źródłowe i wersje do druku.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp'
         overlay='black'
@@ -103,12 +104,16 @@ export default function OfferDesignBusinessCardPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów wizytówek'
+          title='Nasze realizacje projektów wizytówek'
           category='wizytówki'
         />
 
         <Divider line />
-        <SectionInfo title='Co zyskujesz zamawiając projekt wizytówki?'>
+        <SectionBasic
+          title='Co zyskujesz zamawiając projekt wizytówki?'
+          imageSrc='/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp'
+          imageAlt='Realizacja wizytówek dla producenta schodów StepArd - mockup Arteon'
+        >
           <p>
             <strong>Profesjonalnie zaprojektowana wizytówka</strong> łączy
             schludny układ, czytelne dane i spójny styl, co ułatwia zapamiętanie
@@ -137,7 +142,7 @@ export default function OfferDesignBusinessCardPage() {
             <li>Ułatwia późniejszy kontakt,</li>
             <li>Podnosi zaufanie i buduje profesjonalny wizerunek.</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -254,7 +259,7 @@ export default function OfferDesignBusinessCardPage() {
                 'Pliki gotowe do druku (PDF ze spadami) + wersje PNG/JPG',
                 'Jedna runda poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Start',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -269,7 +274,7 @@ export default function OfferDesignBusinessCardPage() {
                 'Propozycja drobnych różnic (np. wyróżnienie osób kluczowych)',
                 'Dwie rundy poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -362,7 +367,7 @@ export default function OfferDesignBusinessCardPage() {
               backgroundImage:
                 '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Sklepy internetowe',

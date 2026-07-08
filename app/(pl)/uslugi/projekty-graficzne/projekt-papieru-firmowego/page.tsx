@@ -16,6 +16,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -82,7 +83,7 @@ export default function OfferDesignLetterheadPage() {
             - czytelny i spójny z identyfikacją wizualną.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp'
         overlay='black'
@@ -107,13 +108,17 @@ export default function OfferDesignLetterheadPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz zamawiając projekt papieru firmowego?'>
+        <SectionBasic
+          title='Co zyskujesz zamawiając projekt papieru firmowego?'
+          imageSrc='/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp'
+          imageAlt='Realizacja papieru firmowego dla kancelarii adwokackiej LUX NOVA - mockup Arteon'
+        >
           <p>
             <strong>
               Własny projekt papieru firmowego sprawia, że dokumenty wyglądają
@@ -144,7 +149,7 @@ export default function OfferDesignLetterheadPage() {
             <li>Uspójnia wygląd ofert i umów w całej firmie,</li>
             <li>Podnosi zaufanie i ułatwia kontakt z Twoją marką.</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -304,7 +309,7 @@ export default function OfferDesignLetterheadPage() {
                 'Pliki gotowe do druku (PDF ze spadami) oraz wersja PDF do wysyłki mailowej',
                 'Jedna runda poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Start',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -319,7 +324,7 @@ export default function OfferDesignLetterheadPage() {
                 'Dodatkowy wariant językowy lub drugi wzór (np. dla innego działu)',
                 'Dwie rundy poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -425,7 +430,7 @@ export default function OfferDesignLetterheadPage() {
               backgroundImage:
                 '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Projekt teczki ofertowej',

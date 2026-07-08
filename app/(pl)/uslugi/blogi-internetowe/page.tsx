@@ -21,10 +21,10 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
@@ -86,7 +86,7 @@ export default function OfferBlogPage() {
         description={
           <>Zwiększ swoją widoczność, tworząc własny blog internetowy</>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/jstax/moskup-strony-jstax.webp'
         overlay='black'
@@ -107,13 +107,17 @@ export default function OfferBlogPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje stron internetowych i blogów'
+          title='Nasze realizacje stron internetowych i blogów'
           category='strony'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz tworząc blog internetowy?'>
+        <SectionBasic
+          title='Co zyskujesz tworząc blog internetowy?'
+          imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
+          imageAlt='Realizacja strony z blogiem dla firmy budowlanej Izoluk - mockup Arteon'
+        >
           <p>
             <strong>
               Stworzenie bloga internetowego daje Twojej firmie dodatkowe stałe
@@ -189,7 +193,7 @@ export default function OfferBlogPage() {
             </li>
             <li>Konwertuje czytelników na zapytania oraz sprzedaż,</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -354,7 +358,7 @@ export default function OfferBlogPage() {
                 'Prosty panel do samodzielnej edycji treści',
                 'Szkolenie PDF z obsługi bloga',
               ],
-              btnOne: 'Zamów mały blog',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -372,7 +376,7 @@ export default function OfferBlogPage() {
                 'Panel do edycji treści - WordPress lub Webflow',
                 'Szkolenie PDF z obsługi bloga',
               ],
-              btnOne: 'Zamów blog średni',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -392,7 +396,7 @@ export default function OfferBlogPage() {
                 'Intuicyjny CMS do samodzielnego zarządzania treścią',
                 'Darmowe szkolenie PDF dla Ciebie i zespołu',
               ],
-              btnOne: 'Zamów blog premium',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
               lastPlan: true,
             },
@@ -476,7 +480,7 @@ export default function OfferBlogPage() {
               backgroundImage:
                 '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Pozycjonowanie stron',
@@ -519,7 +523,7 @@ export default function OfferBlogPage() {
       <CTABanner
         title='Czas na blog, który buduje Twoją pozycję'
         description='Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami'
-        btnOne='Wyceń projekt'
+        btnOne='Darmowa wycena'
         btnOneHref='#kontakt'
         backgroundImage='/assets/projects/jstax/moskup-strony-jstax.webp'
         overlay='black'

@@ -83,7 +83,7 @@ export default function OfferDesignCorporateApparelPage() {
             zgodnie z identyfikacją wizualną i realiami produkcji.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp'
         overlay='black'
@@ -108,7 +108,7 @@ export default function OfferDesignCorporateApparelPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
@@ -275,7 +275,7 @@ export default function OfferDesignCorporateApparelPage() {
                 'Pliki gotowe do produkcji w wybranej technice',
                 'Jedna runda poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Start',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -290,7 +290,7 @@ export default function OfferDesignCorporateApparelPage() {
                 'Wizualizacje na sylwetkach lub mockupach, ułatwiające wybór',
                 'Dwie rundy poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -394,7 +394,7 @@ export default function OfferDesignCorporateApparelPage() {
               backgroundImage:
                 '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Projekt papieru firmowego',

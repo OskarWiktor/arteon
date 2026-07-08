@@ -16,6 +16,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -83,7 +84,7 @@ export default function OfferDesignPresentationFolderPage() {
             na prezentacje, dokumenty i umowy.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
         overlay='black'
@@ -108,13 +109,17 @@ export default function OfferDesignPresentationFolderPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz zamawiając projekt teczki ofertowej?'>
+        <SectionBasic
+          title='Co zyskujesz zamawiając projekt teczki ofertowej?'
+          imageSrc='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
+          imageAlt='Realizacja teczki ofertowej dla kancelarii adwokackiej LUX NOVA - mockup Arteon'
+        >
           <p>
             <strong>
               Własna firmowa teczka porządkuje dokumenty i utrzymuje spójność
@@ -164,7 +169,7 @@ export default function OfferDesignPresentationFolderPage() {
               oferty.
             </li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -328,7 +333,7 @@ export default function OfferDesignPresentationFolderPage() {
                 'Pliki gotowe do druku (PDF ze spadami i makietą dla drukarni)',
                 'Jedna runda poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Start',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -343,7 +348,7 @@ export default function OfferDesignPresentationFolderPage() {
                 'Rozplanowanie logotypów, hasła i pól na dane kontaktowe',
                 'Dwie rundy poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -437,7 +442,7 @@ export default function OfferDesignPresentationFolderPage() {
               backgroundImage:
                 '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Projekt ulotki',

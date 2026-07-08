@@ -16,6 +16,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -79,7 +80,7 @@ export default function OfferDesignFlyerPage() {
             Pliki do druku (CMYK) oraz wersja cyfrowa.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp'
         overlay='black'
@@ -104,13 +105,17 @@ export default function OfferDesignFlyerPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz zamawiając projekt ulotki?'>
+        <SectionBasic
+          title='Co zyskujesz zamawiając projekt ulotki?'
+          imageSrc='/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp'
+          imageAlt='Realizacja folderu reklamowego dla firmy Simba Group - mockup Arteon'
+        >
           <p>
             <strong>
               Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po
@@ -158,7 +163,7 @@ export default function OfferDesignFlyerPage() {
             </li>
             <li>Buduje rozpoznawalność marki i zwiększa zaufanie.</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -320,7 +325,7 @@ export default function OfferDesignFlyerPage() {
                 'Plik gotowy do druku + wersja cyfrowa (PNG/JPG)',
                 'Jedna runda poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Start',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -335,7 +340,7 @@ export default function OfferDesignFlyerPage() {
                 'Lepsze rozplanowanie treści z podziałem na sekcje',
                 'Dwie rundy poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -433,7 +438,7 @@ export default function OfferDesignFlyerPage() {
               backgroundImage:
                 '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Projekt katalogu',

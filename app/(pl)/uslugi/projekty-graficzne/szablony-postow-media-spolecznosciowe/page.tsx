@@ -15,6 +15,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -83,7 +84,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             publikacji.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp'
         overlay='black'
@@ -108,13 +109,17 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz dzięki szablonom postów?'>
+        <SectionBasic
+          title='Co zyskujesz dzięki szablonom postów?'
+          imageSrc='/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp'
+          imageAlt='Realizacja szablonów postów do mediów społecznościowych dla MSC Psychotherapy - mockup Arteon'
+        >
           <p>
             <strong>Stały, rozpoznawalny styl w całej komunikacji.</strong>{' '}
             Szablony utrzymują wspólny charakter postów, dzięki czemu odbiorca
@@ -149,7 +154,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               Twoich publikacji.
             </li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -291,7 +296,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
                 'Przekazanie plików edytowalnych (Figma lub Canva)',
                 'Krótka instrukcja korzystania z szablonów',
               ],
-              btnOne: 'Zamów wycenę pakietu Start',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -305,7 +310,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
                 'Warianty pod kilka formatów: feed, stories, okładki Reels/Shorts',
                 'Propozycja systemu oznaczeń (ikonki, kolory dla cykli treści)',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -386,7 +391,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               backgroundImage:
                 '/assets/projects/arteon-baners-camper-albania-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Projekt logo',

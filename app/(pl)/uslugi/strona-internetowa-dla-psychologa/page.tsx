@@ -160,7 +160,7 @@ export default function StronaDlaPsychologaPage() {
         }
         backgroundImage='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
         overlay='black'
-        primaryCtaLabel='Umów bezpłatną konsultację'
+        primaryCtaLabel='Darmowa wycena'
         primaryCtaHref='#kontakt'
       />
 
@@ -345,7 +345,7 @@ export default function StronaDlaPsychologaPage() {
           title='Co jeszcze zyskujesz?'
           imageSrc='/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp'
           imageAlt='Wizualizacja realizacji strony internetowej dla ośrodka psychoterapii dzieci i młodzieży'
-          btnOne='Umów bezpłatną konsultację'
+          btnOne='Darmowa wycena'
           btnOneHref='#kontakt'
         >
           <p>
@@ -470,7 +470,7 @@ export default function StronaDlaPsychologaPage() {
                 'Formularz ze świadomą zgodą (RODO)',
                 'Panel do samodzielnej edycji',
               ],
-              btnOne: 'Umów bezpłatną konsultację',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -488,7 +488,7 @@ export default function StronaDlaPsychologaPage() {
                 'Pozycjonowanie stron ofertowych i SEO lokalne',
                 'Interaktywny test przesiewowy',
               ],
-              btnOne: 'Umów bezpłatną konsultację',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
               lastPlan: true,
             },
@@ -505,7 +505,7 @@ export default function StronaDlaPsychologaPage() {
                 'Interaktywny test przesiewowy z pełną prywatnością danych (RODO)',
                 'Możliwość zbudowania dedykowanych narzędzi i rozwiązań dla pacjentów oraz zespołu',
               ],
-              btnOne: 'Umów bezpłatną konsultację',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
           ]}
@@ -514,7 +514,7 @@ export default function StronaDlaPsychologaPage() {
         <Divider line />
 
         <SectionContactForm
-          title='Umów bezpłatną konsultację'
+          title='Darmowa wycena'
           imageSrc='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
           imageAlt='Realizacja strony dla psychoterapeutki MSC Psychotherapy - mockup'
           defaultSubject='Strona internetowa dla psychologa'
@@ -652,8 +652,8 @@ export default function StronaDlaPsychologaPage() {
 
       <CTABanner
         title='Zbudujmy stronę dla Twojego gabinetu psychoterapii'
-        description='Umów bezpłatną konsultację. Doradzimy najlepsze rozwiązanie, pokażemy możliwości i przygotujemy bezpłatną wycenę.'
-        btnOne='Umów bezpłatną konsultację'
+        description='Darmowa wycena. Doradzimy najlepsze rozwiązanie, pokażemy możliwości i przygotujemy bezpłatną wycenę.'
+        btnOne='Darmowa wycena'
         btnOneHref='#kontakt'
         backgroundImage='/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp'
         overlay='black'
