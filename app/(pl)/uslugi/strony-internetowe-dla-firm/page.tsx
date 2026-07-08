@@ -42,16 +42,16 @@ import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
 
 export const metadata = {
-  title: 'Strony internetowe dla firm - cena od 2200 zł | Arteon',
+  title: 'Strony internetowe dla firm | Arteon',
   description:
-    'Projektujemy i pozycjonujemy strony internetowe dla firm - od prostej wizytówki po zaawansowane funkcje dopasowane do branży. Indywidualny projekt w Figma, WordPress lub Next.js, dedykowane narzędzia i pełna własność. Sprawdź cennik.',
+    'Tworzymy, modernizujemy i pozycjonujemy strony internetowe dla firm - od prostej wizytówki po zaawansowane funkcje dopasowane do branży. Indywidualny projekt w Figma, WordPress lub Next.js, dedykowane narzędzia i pełna własność. Sprawdź cennik.',
   alternates: {
     canonical: 'https://www.arteonagency.pl/uslugi/strony-internetowe-dla-firm',
   },
   openGraph: {
-    title: 'Strony internetowe dla firm - cena od 2200 zł | Arteon',
+    title: 'Strony internetowe dla firm | Arteon',
     description:
-      'Projektujemy i pozycjonujemy strony internetowe dla firm - od prostej wizytówki po zaawansowane funkcje dopasowane do branży. Indywidualny projekt w Figma, WordPress lub Next.js, dedykowane narzędzia i pełna własność. Sprawdź cennik.',
+      'Tworzymy, modernizujemy i pozycjonujemy strony internetowe dla firm - od prostej wizytówki po zaawansowane funkcje dopasowane do branży. Indywidualny projekt w Figma, WordPress lub Next.js, dedykowane narzędzia i pełna własność. Sprawdź cennik.',
     url: 'https://www.arteonagency.pl/uslugi/strony-internetowe-dla-firm',
     type: 'website',
     images: [
@@ -176,7 +176,7 @@ export default function StronyInternetoweDlaFirmPage() {
             Projektujemy i pozycjonujemy strony dla firm - od prostej wizytówki
             po zaawansowane funkcje dopasowane do Twojej branży. Indywidualny
             projekt graficzny, nacisk na widoczność w Google i rozwiązania
-            dobrane do tego, jak wybiera Twój klient.
+            dobrane do tego czego potrzebuje Twój klient.
           </>
         }
         backgroundImage='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
