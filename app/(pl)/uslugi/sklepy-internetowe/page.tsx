@@ -23,10 +23,10 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
@@ -91,7 +91,7 @@ export default function OfferWebPage() {
             <strong>sklepie internetowym</strong>, bez zbędnych pośredników
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/trilllizo/moskup-strony-trilllizo.webp'
         overlay='black'
@@ -112,13 +112,17 @@ export default function OfferWebPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje sklepów internetowych'
+          title='Nasze realizacje sklepów internetowych'
           category='sklepy'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz tworząc sklep internetowy?'>
+        <SectionBasic
+          title='Co zyskujesz tworząc sklep internetowy?'
+          imageSrc='/assets/projects/napilota/mockup-strony-napilota.webp'
+          imageAlt='Realizacja strony z katalogiem produktów dla firmy NaPilota - mockup Arteon'
+        >
           <p>
             <strong>
               Własny sklep internetowy daje Twojej firmie realną niezależność.
@@ -238,7 +242,7 @@ export default function OfferWebPage() {
             <li>Wyjaśnia prosto warunki zakupu oraz dostaw,</li>
             <li>Sprzedaje bez Twojego udziału</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -427,7 +431,7 @@ export default function OfferWebPage() {
                 'Panel do samodzielnej edycji produktów i treści',
                 'Szkolenie PDF z obsługi sklepu',
               ],
-              btnOne: 'Zamów mały sklep',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -446,7 +450,7 @@ export default function OfferWebPage() {
                 'Panel do samodzielnej edycji produktów i treści',
                 'Szkolenie PDF z obsługi sklepu',
               ],
-              btnOne: 'Zamów średni sklep',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -466,7 +470,7 @@ export default function OfferWebPage() {
                 'Panel do samodzielnej edycji produktów i treści',
                 'Szkolenie PDF z obsługi sklepu',
               ],
-              btnOne: 'Zamów sklep premium',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
               lastPlan: true,
             },
@@ -582,7 +586,7 @@ export default function OfferWebPage() {
               backgroundImage:
                 '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Pozycjonowanie stron',
@@ -625,7 +629,7 @@ export default function OfferWebPage() {
       <CTABanner
         title='Zbudujmy sklep, który rozwija się z Tobą'
         description='Tworzymy dedykowane rozwiązanie, gotowe do rozwoju - szybkie, stabilne i zgodne z przepisami'
-        btnOne='Wyceń projekt'
+        btnOne='Darmowa wycena'
         btnOneHref='#kontakt'
         backgroundImage='/assets/projects/trilllizo/moskup-strony-trilllizo.webp'
         overlay='black'

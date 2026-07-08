@@ -83,7 +83,7 @@ export default function OfferDesignLoyaltyCardPage() {
             lojalnościowego.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp'
         overlay='black'
@@ -285,7 +285,7 @@ export default function OfferDesignLoyaltyCardPage() {
                 'Plik gotowy do druku',
                 '2 kierunki wyglądu i jedna runda korekt po pierwszej prezentacji',
               ],
-              btnOne: 'Zamów wycenę karty dla jednego lokalu',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -403,7 +403,7 @@ export default function OfferDesignLoyaltyCardPage() {
               backgroundImage:
                 '/assets/projects/jstax/moskup-strony-jstax.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
           ]}
         />

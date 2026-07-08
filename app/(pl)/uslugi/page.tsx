@@ -7,7 +7,10 @@ import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { siteUrl } from '@/utils/absoluteUrl';
 const SERVICES = [
-  { name: 'Strony WordPress', path: '/uslugi/tworzenie-stron-wordpress' },
+  {
+    name: 'Strony internetowe dla firm',
+    path: '/uslugi/strony-internetowe-dla-firm',
+  },
   {
     name: 'Strona dla psychologa',
     path: '/uslugi/strona-internetowa-dla-psychologa',
@@ -19,6 +22,10 @@ const SERVICES = [
   {
     name: 'Strona dla firmy budowlanej',
     path: '/uslugi/strona-internetowa-dla-firmy-budowlanej',
+  },
+  {
+    name: 'Strona dla producenta',
+    path: '/uslugi/strona-internetowa-dla-producenta',
   },
   { name: 'Sklepy internetowe', path: '/uslugi/sklepy-internetowe' },
   { name: 'Blogi internetowe', path: '/uslugi/blogi-internetowe' },
@@ -141,7 +148,10 @@ export default function OfferPage() {
                     Twoich klientów.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/tworzenie-stron-wordpress'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/strony-internetowe-dla-firm'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -199,7 +209,7 @@ export default function OfferPage() {
           title='Strona internetowa dla Twojej branży'
           subtitle='Oferty specjalne'
           description='Przygotowaliśmy dedykowane oferty stron internetowych dla wybranych branż. Każda uwzględnia realne potrzeby danej grupy i to, czego szukają jej klienci.'
-          grid='three'
+          grid='four'
           items={[
             {
               topImageSrc:
@@ -266,6 +276,30 @@ export default function OfferPage() {
                     <ButtonLink
                       arrow
                       href='/uslugi/strona-internetowa-dla-firmy-budowlanej'
+                    >
+                      Przejdź do oferty
+                    </ButtonLink>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              topImageSrc:
+                '/assets/projects/stepard/strona/moskup-strony-stepard.webp',
+              topImageAlt:
+                'Strona internetowa dla producenta schodów StepArd - realizacja Arteon',
+              title: 'Strona dla producenta',
+              description: (
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Strona dla producenta mebli, schodów, okien czy wyrobów
+                    gotowych z katalogiem produktów, konfiguratorem i wyceną z
+                    projektu.
+                  </p>
+                  <div className='mt-auto'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/strona-internetowa-dla-producenta'
                     >
                       Przejdź do oferty
                     </ButtonLink>

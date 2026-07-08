@@ -16,6 +16,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -83,7 +84,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             pierwszego wrażenia, przez ofertę, aż po kontakt lub zakup.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
         overlay='black'
@@ -108,13 +109,17 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych stron internetowych'
+          title='Nasze realizacje projektów graficznych stron internetowych'
           category='strony'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz zamawiając projekt graficzny strony?'>
+        <SectionBasic
+          title='Co zyskujesz zamawiając projekt graficzny strony?'
+          imageSrc='/assets/projects/stepard/strona/moskup-strony-stepard.webp'
+          imageAlt='Realizacja projektu graficznego strony dla producenta StepArd - mockup Arteon'
+        >
           <p>
             <strong>
               Przejrzysty projekt strony, bloga czy sklepu zwiększa wiarygodność
@@ -169,7 +174,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             którego wszyscy się odnoszą. Mniej poprawek oznacza krótszy czas
             wdrożenia i niższe koszty.
           </p>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -316,7 +321,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
                 'Podstawowe rekomendacje UX i kolejności sekcji',
                 'Jedna runda korekt po pierwszej prezentacji',
               ],
-              btnOne: 'Zamów projekt landing page',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -428,7 +433,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               backgroundImage:
                 '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Sklepy internetowe',

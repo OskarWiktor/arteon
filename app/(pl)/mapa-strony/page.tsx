@@ -92,11 +92,11 @@ const GRAPHIC_SERVICES: NavItem[] = GRAPHIC_SERVICES_SOURCE.map(s => ({
 
 const services: NavItem[] = [
   {
-    href: '/uslugi/tworzenie-stron-wordpress',
-    title: 'Strony WordPress',
+    href: '/uslugi/strony-internetowe-dla-firm',
+    title: 'Strony internetowe dla firm',
     children: [
       {
-        href: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+        href: '/uslugi/optymalizacja-strony-wordpress',
         title: 'Optymalizacja stron WordPress',
       },
     ],
@@ -114,6 +114,10 @@ const services: NavItem[] = [
   {
     href: '/uslugi/strona-internetowa-dla-firmy-budowlanej',
     title: 'Strona internetowa dla firmy budowlanej',
+  },
+  {
+    href: '/uslugi/strona-internetowa-dla-producenta',
+    title: 'Strona internetowa dla producenta',
   },
   {
     href: '/uslugi/projekty-graficzne',

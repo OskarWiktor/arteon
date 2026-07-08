@@ -80,7 +80,7 @@ export default function OfferDesignPriceListPage() {
             społecznościowych.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp'
         overlay='black'
@@ -254,7 +254,7 @@ export default function OfferDesignPriceListPage() {
                 '2 kierunki wyglądu i jedna runda korekt po pierwszej prezentacji',
                 'Realizacja w 2-3 dni',
               ],
-              btnOne: 'Zamów cennik jednostronicowy',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -267,7 +267,7 @@ export default function OfferDesignPriceListPage() {
                 '2 kierunki i dwie rundy korekt po pierwszej prezentacji',
                 'Realizacja w 3-4 dni',
               ],
-              btnOne: 'Zamów cennik dwustronicowy',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -281,7 +281,7 @@ export default function OfferDesignPriceListPage() {
                 '3 kierunki wyglądu i dwie rundy korekt po pierwszej prezentacji',
                 'Realizacja w 5-7 dni',
               ],
-              btnOne: 'Zamów projekt rozbudowanego cennika',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
           ]}
@@ -357,7 +357,7 @@ export default function OfferDesignPriceListPage() {
               backgroundImage:
                 '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Projekt wizytówki',

@@ -16,6 +16,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -81,7 +82,7 @@ export default function OfferDesignLogoPage() {
             przez lata.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp'
         overlay='black'
@@ -112,7 +113,11 @@ export default function OfferDesignLogoPage() {
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz zamawiając projekt logo?'>
+        <SectionBasic
+          title='Co zyskujesz zamawiając projekt logo?'
+          imageSrc='/assets/projects/stepard/logo/mockup-logo-stepard.webp'
+          imageAlt='Realizacja logo dla producenta schodów StepArd - mockup Arteon'
+        >
           <p>
             <strong>
               Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.
@@ -162,7 +167,7 @@ export default function OfferDesignLogoPage() {
             <li>Buduje rozpoznawalność i pamięć marki w głowie klienta,</li>
             <li>Podnosi zaufanie.</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -319,7 +324,7 @@ export default function OfferDesignLogoPage() {
                 'Wersje na jasne i ciemne tło',
                 'Pliki PNG i SVG do użycia online',
               ],
-              btnOne: 'Zamów wycenę pakietu Start',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -334,7 +339,7 @@ export default function OfferDesignLogoPage() {
                 'Podstawowa mini-księga znaku (pole ochronne, minimalne wymiary, tła)',
                 'Pliki wektorowe (AI, EPS, SVG) do druku i produkcji',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -448,7 +453,7 @@ export default function OfferDesignLogoPage() {
               backgroundImage:
                 '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Sklepy internetowe',

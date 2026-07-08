@@ -29,9 +29,9 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import { cn } from '@/lib/clsx';
@@ -148,7 +148,7 @@ export default function OfferDesignPage() {
             dopasowane do Twojej branży, kolorystyki i stylu komunikacji.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
         overlay='black'
@@ -169,13 +169,17 @@ export default function OfferDesignPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz dzięki projektom graficznym?'>
+        <SectionBasic
+          title='Co zyskujesz dzięki projektom graficznym?'
+          imageSrc='/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp'
+          imageAlt='Realizacja logo dla firmy wykończeniowej Finish Masters - mockup Arteon'
+        >
           <p>
             <strong>
               Spójna identyfikacja wizualna zwiększa rozpoznawalność marki nawet
@@ -259,7 +263,7 @@ export default function OfferDesignPage() {
             <li>Porządkują przekaz i ułatwiają zrozumienie oferty,</li>
             <li>Wzmacniają decyzję o kontakcie lub zakupie.</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 

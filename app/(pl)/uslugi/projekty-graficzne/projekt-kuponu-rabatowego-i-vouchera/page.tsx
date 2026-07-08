@@ -16,6 +16,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -83,7 +84,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
             druku i wersji online - spójne z Twoją marką.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp'
         overlay='black'
@@ -114,7 +115,11 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <Divider line />
 
-        <SectionInfo title='Dlaczego warto inwestować w kupony i vouchery?'>
+        <SectionBasic
+          title='Dlaczego warto inwestować w kupony i vouchery?'
+          imageSrc='/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp'
+          imageAlt='Realizacja vouchera dla gabinetu kosmetycznego - mockup Arteon'
+        >
           <p>
             <strong>
               Kupon oraz voucher to drobny materiał, który potrafi przynieść
@@ -147,7 +152,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
             <li>Wzmacniają więź i budują pozytywne skojarzenia z marką,</li>
             <li>Promują firmę poprzez estetykę, emocje i „efekt prezentu”.</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -298,7 +303,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
                 'Pliki do druku i wersja cyfrowa (PNG/JPG)',
                 'Realizacja w 3-4 dni',
               ],
-              btnOne: 'Zamów kupon dwustronicowy',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -312,7 +317,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
                 'Pliki do druku i wersja cyfrowa (PNG/JPG)',
                 'Realizacja w 4-5 dni',
               ],
-              btnOne: 'Zamów kupon 4-stronicowy',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -326,7 +331,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
                 'Pliki do druku i wersja cyfrowa (PNG/JPG)',
                 'Realizacja w 6-10 dni',
               ],
-              btnOne: 'Zamów pakiet kuponów',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
           ]}
@@ -410,7 +415,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
               backgroundImage:
                 '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
           ]}
         />

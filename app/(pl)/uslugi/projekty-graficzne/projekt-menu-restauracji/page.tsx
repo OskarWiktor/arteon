@@ -11,6 +11,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -78,7 +79,7 @@ export default function OfferDesignMenuPage() {
             która pomaga gościom wybrać, a Tobie sprzedawać.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/nocturna/nocturna-menu-mockup.webp'
         overlay='black'
@@ -103,13 +104,17 @@ export default function OfferDesignMenuPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
         <Divider line />
 
-        <SectionInfo title='Dlaczego warto zainwestować w profesjonalne menu?'>
+        <SectionBasic
+          title='Dlaczego warto zainwestować w profesjonalne menu?'
+          imageSrc='/assets/projects/nocturna/nocturna-menu-mockup.webp'
+          imageAlt='Realizacja karty koktajli dla baru Nocturna - mockup Arteon'
+        >
           <p>
             <strong>
               Menu to najważniejszy materiał sprzedażowy w gastronomii.
@@ -140,7 +145,7 @@ export default function OfferDesignMenuPage() {
             <li>Wzmacnia klimat i tożsamość lokalu,</li>
             <li>Zwiększa sprzedaż kluczowych dań i napojów.</li>
           </ul>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -286,7 +291,7 @@ export default function OfferDesignMenuPage() {
                 'Plik gotowy do druku oraz wersja PDF do online',
                 'Jedna runda poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Start',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -301,7 +306,7 @@ export default function OfferDesignMenuPage() {
                 'Wyróżnienia dla dań specjalnych, sezonowych lub polecanych przez szefa kuchni',
                 'Dwie rundy poprawek w cenie',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -392,7 +397,7 @@ export default function OfferDesignMenuPage() {
               backgroundImage:
                 '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Projekt wizytówki',

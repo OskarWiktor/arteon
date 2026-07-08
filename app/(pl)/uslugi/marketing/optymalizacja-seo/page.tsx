@@ -128,7 +128,7 @@ export default function OfferOptimizationSEO() {
           subtitle='Dla kogo'
           title='Kiedy warto zrobić optymalizację SEO i dla kogo ona jest?'
           description='Gdy masz już diagnozę (audyt) i chcesz przejść do wdrożeń, które najszybciej poprawią wyniki Twojej strony. Optymalizacja SEO jest najlepsza dla:'
-          btnOne='Zamów optymalizację'
+          btnOne='Darmowa wycena'
           btnOneHref='#kontakt'
         >
           <ul className='mt-4 list-disc space-y-2 pl-5 text-sm'>
@@ -323,7 +323,7 @@ export default function OfferOptimizationSEO() {
                 'Optymalizacja grafik (rozmiar, ALT, format WebP)',
                 'Uporządkowanie meta danych i struktury treści',
               ],
-              btnOne: 'Zamów bezpłatną wycenę',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -337,7 +337,7 @@ export default function OfferOptimizationSEO() {
                 'Dodanie danych strukturalnych (schema.org, FAQ, artykuły)',
                 'Optymalizacja linkowania wewnętrznego i breadcrumbów',
               ],
-              btnOne: 'Zamów bezpłatną wycenę',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -351,7 +351,7 @@ export default function OfferOptimizationSEO() {
                 'Weryfikacja kanonikalizacji, sitemap i pliku robots.txt',
                 'Audyt parametrów filtrów i paginacji (e-commerce)',
               ],
-              btnOne: 'Zamów bezpłatną wycenę',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
           ]}
@@ -492,7 +492,7 @@ export default function OfferOptimizationSEO() {
               backgroundImage:
                 '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Sklepy internetowe',

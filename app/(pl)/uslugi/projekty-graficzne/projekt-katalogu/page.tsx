@@ -16,6 +16,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -81,7 +82,7 @@ export default function OfferDesignCatalogPage() {
             wiedział, jak zamówić.
           </>
         }
-        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/restoquality/mockup-gazetka-restoquality.webp'
         overlay='black'
@@ -106,13 +107,17 @@ export default function OfferDesignCatalogPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
-          title='Realizacje projektów graficznych'
+          title='Nasze realizacje projektów graficznych'
           category='projekty graficzne'
         />
 
         <Divider line />
 
-        <SectionInfo title='Co zyskujesz zamawiając projekt katalogu?'>
+        <SectionBasic
+          title='Co zyskujesz zamawiając projekt katalogu?'
+          imageSrc='/assets/projects/restoquality/mockup-gazetka-restoquality.webp'
+          imageAlt='Realizacja katalogu produktów dla firmy RestoQuality - mockup Arteon'
+        >
           <p>
             <strong>Katalog porządkuje ofertę i prowadzi do kontaktu.</strong>{' '}
             Klient widzi produkty lub usługi w jasnym układzie: sekcje, zdjęcia,
@@ -159,7 +164,7 @@ export default function OfferDesignCatalogPage() {
             razem pracuje dla Ciebie tak samo, niezależnie od nastroju
             handlowca.
           </p>
-        </SectionInfo>
+        </SectionBasic>
 
         <Divider line />
 
@@ -309,7 +314,7 @@ export default function OfferDesignCatalogPage() {
                 'Skład DTP do ustalonej liczby stron',
                 'Pliki PDF do druku i wersji online',
               ],
-              btnOne: 'Zamów wycenę katalogu kompaktowego',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -423,7 +428,7 @@ export default function OfferDesignCatalogPage() {
               backgroundImage:
                 '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
+              btnLink: '/uslugi/strony-internetowe-dla-firm',
             },
             {
               title: 'Projekt wizytówki',

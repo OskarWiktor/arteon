@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Script from 'next/script';
 import {
   RiDraftLine,
@@ -157,7 +158,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
         }
         backgroundImage='/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp'
         overlay='black'
-        primaryCtaLabel='Umów bezpłatną konsultację'
+        primaryCtaLabel='Darmowa wycena'
         primaryCtaHref='#kontakt'
       />
 
@@ -379,16 +380,31 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
           title='Co jeszcze zyskujesz?'
           imageSrc='/assets/projects/finish-masters/wizytowki/mockup-wizytowki-finish-masters.webp'
           imageAlt='Wizytówki dla firmy wykończeniowej Finish Masters - realizacja Arteon'
-          btnOne='Umów bezpłatną konsultację'
+          btnOne='Darmowa wycena'
           btnOneHref='#kontakt'
         >
           <p>
             Specjalizujemy się nie tylko w budowie stron www ale również w
-            projektach graficznych oraz pozycjonowaniu. Możemy zaprojektować Ci
-            logo, wizytówki i materiały reklamowe, zająć się pozycjonowaniem
-            strony i prowadzeniem bloga, który przyciąga klientów szukających
-            konkretnych usług. Współpracujemy z firmami wykończeniowymi i
-            budowlanymi w całej Polsce.
+            projektach graficznych oraz pozycjonowaniu. Możemy zaprojektować Ci{' '}
+            <Link
+              prefetch={false}
+              className='inline-link'
+              href='/uslugi/projekty-graficzne/projekt-logo'
+            >
+              logo
+            </Link>
+            ,{' '}
+            <Link
+              prefetch={false}
+              className='inline-link'
+              href='/uslugi/projekty-graficzne/projekt-wizytowki'
+            >
+              wizytówki
+            </Link>{' '}
+            i materiały reklamowe, zająć się pozycjonowaniem strony i
+            prowadzeniem bloga, który przyciąga klientów szukających konkretnych
+            usług. Współpracujemy z firmami wykończeniowymi i budowlanymi w
+            całej Polsce.
           </p>
           <br />
           <p>
@@ -532,7 +548,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
                 'Obszar działania',
                 'Panel do samodzielnej edycji',
               ],
-              btnOne: 'Umów bezpłatną konsultację',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
             {
@@ -550,7 +566,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
                 'Pozycjonowanie stron ofertowych i SEO lokalne',
                 'Kalkulator wycen',
               ],
-              btnOne: 'Umów bezpłatną konsultację',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
               lastPlan: true,
             },
@@ -568,7 +584,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
                 'Galeria przed i po z dużą liczbą zdjęć bez utraty prędkości',
                 'Możliwość zbudowania dedykowanych narzędzi i rozwiązań dla klientów oraz zespołu',
               ],
-              btnOne: 'Umów bezpłatną konsultację',
+              btnOne: 'Darmowa wycena',
               btnOneHref: '#kontakt',
             },
           ]}
@@ -577,7 +593,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
         <Divider line />
 
         <SectionContactForm
-          title='Umów bezpłatną konsultację'
+          title='Darmowa wycena'
           imageSrc='/assets/projects/napilota/mockup-strony-napilota.webp'
           imageAlt='Realizacja strony internetowej dla firmy NaPilota - mockup Arteon'
           defaultSubject='Strona internetowa dla firmy wykończeniowej'
@@ -715,8 +731,8 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
 
       <CTABanner
         title='Zbudujmy stronę, która przynosi Twojej firmie zlecenia'
-        description='Umów bezpłatną konsultację. Doradzimy najlepsze rozwiązanie, pokażemy możliwości i przygotujemy bezpłatną wycenę.'
-        btnOne='Umów bezpłatną konsultację'
+        description='Darmowa wycena. Doradzimy najlepsze rozwiązanie, pokażemy możliwości i przygotujemy bezpłatną wycenę.'
+        btnOne='Darmowa wycena'
         btnOneHref='#kontakt'
         backgroundImage='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
         overlay='black'
