@@ -109,9 +109,6 @@ const navLinksPrimary = [
   { href: '/uslugi', label: 'Usługi' },
   { href: '/realizacje', label: 'Realizacje' },
   { href: '/o-nas', label: 'O nas' },
-];
-
-const navLinksSecondary = [
   { href: '/edukacja', label: 'Edukacja' },
   { href: '/narzedzia', label: 'Narzędzia' },
   { href: '/kontakt', label: 'Kontakt' },
@@ -123,40 +120,16 @@ const PL_LEGAL_LINKS = [
   { href: '/mapa-strony', label: 'Mapa strony' },
 ];
 
-const toolsLinks = [
-  {
-    href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
-    label: 'Licznik meta title i description',
-  },
-  {
-    href: '/narzedzia/kontrast-i-czytelnosc-kolorow',
-    label: 'Kontrast i czytelność kolorów',
-  },
-  {
-    href: '/narzedzia/ekstraktor-kolorow-z-obrazu',
-    label: 'Ekstraktor kolorów z obrazu',
-  },
-  {
-    href: '/narzedzia/generator-palet-kolorow',
-    label: 'Generator palet kolorów',
-  },
-  { href: '/narzedzia/konwerter-jpg-na-webp', label: 'Konwerter JPG na WebP' },
-  {
-    href: '/narzedzia/edytor-zdjec-online',
-    label: 'Kadrowanie i zmiana rozmiaru obrazu',
-  },
-  {
-    href: '/narzedzia/darmowy-generator-favicon-ico',
-    label: 'Generator favicon',
-  },
-  {
-    href: '/narzedzia/darmowy-generator-stopki-mailowej',
-    label: 'Generator stopki mailowej HTML',
-  },
-  {
-    href: '/narzedzia/darmowy-generator-kodow-qr',
-    label: 'Generator kodów QR',
-  },
+// PL footer: 4 kolumny narzędzi po 7 linków = 28 podlinkowanych narzędzi
+// (dla wewnętrznego linkowania / SEO). Klasy col-start muszą być statyczne,
+// żeby Tailwind je wygenerował.
+const PL_TOOLS_COUNT = 28;
+const PL_TOOL_COLUMNS = 4;
+const PL_TOOL_COL_CLASS = [
+  'lg:col-start-2 lg:row-start-2',
+  'lg:col-start-3 lg:row-start-2',
+  'lg:col-start-4 lg:row-start-2',
+  'lg:col-start-5 lg:row-start-2',
 ];
 
 interface FooterProps {
@@ -190,13 +163,11 @@ export default function Footer({
   const gfxRight = offerLinksThree.slice(midGfx);
 
   // Non-PL footers list the FULL tool catalogue (every localized tool) for
-  // maximum internal linking / SEO. PL keeps its own curated `toolsLinks`.
-  const localeToolsLinks = isPl
-    ? toolsLinks
-    : getToolsList(locale).map(tool => ({
-        href: tool.href,
-        label: tool.title,
-      }));
+  // maximum internal linking / SEO.
+  const localeToolsLinks = getToolsList(locale).map(tool => ({
+    href: tool.href,
+    label: tool.title,
+  }));
   // Non-PL footers list only privacy + terms; append the locale's sitemap page
   // so it is internally linked (not orphaned to the XML sitemap alone). PL keeps
   // its own PL_LEGAL_LINKS, which already includes /mapa-strony.
@@ -209,9 +180,14 @@ export default function Footer({
     },
   ];
 
-  const midTools = Math.ceil(localeToolsLinks.length / 2);
-  const toolsLeft = localeToolsLinks.slice(0, midTools);
-  const toolsRight = localeToolsLinks.slice(midTools);
+  // PL footer narzędzia: 28 linków w 4 kolumnach po 7, z rejestru narzędzi.
+  const plToolsLinks = getToolsList('pl')
+    .slice(0, PL_TOOLS_COUNT)
+    .map(tool => ({ href: tool.href, label: tool.title }));
+  const plToolColSize = Math.ceil(plToolsLinks.length / PL_TOOL_COLUMNS);
+  const plToolColumns = Array.from({ length: PL_TOOL_COLUMNS }, (_, i) =>
+    plToolsLinks.slice(i * plToolColSize, (i + 1) * plToolColSize),
+  ).filter(column => column.length > 0);
 
   // Non-PL footer spreads the full tool catalogue across 6 columns. The first
   // column sits beneath the logo, so it holds 3 fewer links than the others to
@@ -436,59 +412,38 @@ export default function Footer({
               </ul>
             </nav>
 
-            <nav
-              aria-label='Nawigacja (cd.)'
-              className='lg:col-start-2 lg:row-start-2'
-            >
-              <h3 className='h6 mb-3'>Inne</h3>
-              <ul className='flex flex-col gap-2 text-sm'>
-                {navLinksSecondary.map(({ href, label }) => (
-                  <li key={href}>
-                    <InlineLink className='text-left' href={href}>
-                      {label}
-                    </InlineLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <nav
-              aria-label='Narzędzia (1)'
-              className='lg:col-start-4 lg:row-start-2'
-            >
-              <h3 className='h6 mb-3'>Narzędzia</h3>
-              <ul className='flex flex-col gap-2 text-sm'>
-                {toolsLeft.map(({ href, label }) => (
-                  <li key={href}>
-                    <InlineLink href={href} className='text-left'>
-                      {label}
-                    </InlineLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <nav
-              aria-label='Narzędzia (2)'
-              className='lg:col-start-5 lg:row-start-2'
-            >
-              <h3 className='sr-only'>Narzędzia</h3>
-              <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
-                {toolsRight.map(({ href, label }) => (
-                  <li key={href}>
-                    <InlineLink href={href} className='text-left'>
-                      {label}
-                    </InlineLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            {plToolColumns.map((column, columnIndex) => (
+              <nav
+                key={column[0]?.href ?? columnIndex}
+                aria-label={`Narzędzia (${columnIndex + 1})`}
+                className={PL_TOOL_COL_CLASS[columnIndex]}
+              >
+                <h3 className={columnIndex === 0 ? 'h6 mb-3' : 'sr-only'}>
+                  Narzędzia
+                </h3>
+                <ul
+                  className={
+                    columnIndex === 0
+                      ? 'flex flex-col gap-2 text-sm'
+                      : 'flex flex-col gap-2 text-sm lg:mt-9'
+                  }
+                >
+                  {column.map(({ href, label }) => (
+                    <li key={href}>
+                      <InlineLink href={href} className='text-left'>
+                        {label}
+                      </InlineLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            ))}
           </div>
 
           <div className='mt-8 border-t border-neutral-200 pt-4 text-light'>
             <div className='flex flex-col items-center justify-between gap-2 md:flex-row md:items-start'>
               <small className='text-center text-sm md:text-left'>
-                &copy; <time dateTime='2025'>2025</time> Arteon. Wszelkie prawa
+                &copy; <time dateTime='2026'>2026</time> Arteon. Wszelkie prawa
                 zastrzeżone.
               </small>
               {PL_LEGAL_LINKS.map(({ href, label }) => (
