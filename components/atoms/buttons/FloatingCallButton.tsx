@@ -14,7 +14,7 @@ export default function FloatingCallButton() {
       aria-label='Zadzwoń: 516 466 255'
       className='group fixed right-4 bottom-4 z-50 flex h-auto! flex-col items-center gap-1 focus-visible:outline-none md:right-6 md:bottom-6'
     >
-      <span className='text-sm font-medium text-neutral-900 md:text-base'>
+      <span className='bg-accent px-1 text-sm font-medium text-neutral-900 md:text-base'>
         Zadzwoń
       </span>
       <span className='flex h-14! w-14! items-center justify-center rounded-full bg-neutral-900 text-neutral-50 shadow-lg transition-transform group-hover:scale-105 group-focus-visible:ring-2 group-focus-visible:ring-neutral-500 group-focus-visible:ring-offset-2 md:h-16 md:w-16'>
