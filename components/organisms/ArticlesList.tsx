@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Card from '@/components/organisms/Card';
 import {
   getAllArticlePreviews,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
+import ArrowIcon from '../atoms/ArrowIcon';
+import InlineLink from '../atoms/InlineLink';
+import CarouselCardShell from '../molecules/carousels/CarouselCardShell';
 
 const articles = getAllArticlePreviews();
 
@@ -38,35 +38,34 @@ export default function ArticlesList({
         const catSlug = getPrimaryCategorySlug(article);
         const href = `/edukacja/${catSlug}/${article.slug}`;
         return (
-          <Card key={article.slug} as='article' padding='md'>
-            <Link href={href} prefetch={false} className='block'>
-              {article.cover && (
-                <div className='relative aspect-video w-full overflow-hidden border-b border-neutral-200'>
-                  <Image
-                    src={article.cover}
-                    alt={article.title}
-                    fill
-                    className='object-cover'
-                    sizes='(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw'
-                  />
-                </div>
-              )}
-              <div className='p-4'>
-                <h3 className='h6'>{article.title}</h3>
-                <div className='mt-3 flex flex-wrap items-center gap-2'>
-                  {article.readingTime && article.datePublished && (
-                    <span className='inline-flex pt-2 text-sm text-light'>
-                      {article.readingTime} min czytania •{' '}
-                      {article.datePublished}
-                    </span>
-                  )}
-                </div>
-                <p className='mt-2 line-clamp-5 text-sm! text-light md:line-clamp-4'>
-                  {article.excerpt}
-                </p>
-              </div>
-            </Link>
-          </Card>
+          <CarouselCardShell
+            href={href}
+            image={article.cover}
+            title={article.title}
+          >
+            {article.readingTime && article.datePublished && (
+              <span className='inline-flex pt-2 text-sm text-light'>
+                {article.readingTime} min. czytania • {article.datePublished}
+              </span>
+            )}
+            {article.excerpt && (
+              <p className='line-clamp-3 pt-4 text-light'>{article.excerpt}</p>
+            )}
+            <div
+              className='mt-4 mb-2 h-px w-full bg-neutral-200'
+              aria-hidden='true'
+            />
+            <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
+              <InlineLink
+                href={href}
+                aria-label={`Przeczytaj artykuł: ${article.title}`}
+                className="inline-flex rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+              >
+                Przeczytaj artykuł
+                <ArrowIcon />
+              </InlineLink>
+            </div>
+          </CarouselCardShell>
         );
       })}
     </section>

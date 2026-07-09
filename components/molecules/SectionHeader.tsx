@@ -33,7 +33,7 @@ export default function SectionHeader({
   const hasButton = Boolean(buttonText && buttonLink);
 
   const content = (
-    <div className='mb-2 lg:mb-4'>
+    <div className='pb-4 md:pb-6'>
       {/* Reveal wraps only the subtitle + title. Descriptions are excluded on
           purpose: some sections add further copy below, and animating the
           description looked off where those stack. */}
@@ -45,14 +45,15 @@ export default function SectionHeader({
             </Subtitle>
           </div>
         )}
-        <h2
-          className={cn('h3 mb-2 scroll-mt-26 lg:mb-4', titleClassName)}
-          id={titleId}
-        >
+        <h2 className={cn('h3 scroll-mt-26', titleClassName)} id={titleId}>
           {title}
         </h2>
       </Reveal>
-      {description && <p className={descriptionClassName}>{description}</p>}
+      {description && (
+        <p className={cn('pt-4 md:pt-6', descriptionClassName)}>
+          {description}
+        </p>
+      )}
     </div>
   );
 
