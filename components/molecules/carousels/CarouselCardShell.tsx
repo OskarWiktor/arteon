@@ -27,7 +27,7 @@ export default function CarouselCardShell({
   if (multipleLinks) {
     <Card
       as='article'
-      className='group relative flex h-full flex-col'
+      className='group relative flex h-full flex-col gap-0'
       padding='md'
     >
       <Link href={href} prefetch={false} className='block'>
@@ -42,7 +42,7 @@ export default function CarouselCardShell({
             sizes='(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw'
           />
         </div>
-        <div className='flex grow flex-col p-2 md:px-7 md:py-5'>
+        <div className='flex grow flex-col px-2 pt-4 md:px-4 md:pt-6'>
           <h3 className='h5 line-clamp-2'>{title}</h3>
           {children}
         </div>
@@ -53,7 +53,7 @@ export default function CarouselCardShell({
   return (
     <Card
       as='article'
-      className='group relative flex h-full flex-col'
+      className='group relative flex h-full flex-col gap-0'
       padding='md'
     >
       <div
@@ -67,7 +67,7 @@ export default function CarouselCardShell({
           sizes='(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw'
         />
       </div>
-      <div className='flex grow flex-col p-2 md:px-7 md:py-5'>
+      <div className='flex grow flex-col px-2 pt-4 md:px-4 md:pt-6'>
         <h3 className='h5 line-clamp-2'>{title}</h3>
         {children}
       </div>

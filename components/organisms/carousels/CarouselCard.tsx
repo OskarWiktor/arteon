@@ -41,7 +41,7 @@ export default function CarouselCard(props: CarouselCardProps) {
     } = props;
     return (
       <CarouselCardShell href={href} image={image} title={title}>
-        <p className='mt-2 line-clamp-2 text-light'>{description}</p>
+        <p className='line-clamp-2 pt-4 text-light'>{description}</p>
         <div
           className='mt-4 mb-2 h-px w-full bg-neutral-200'
           aria-hidden='true'
@@ -61,7 +61,7 @@ export default function CarouselCard(props: CarouselCardProps) {
   }
 
   if (props.variant === 'article') {
-    const { article, href, readingTimeLabel } = props;
+    const { article, href } = props;
     return (
       <CarouselCardShell
         href={href}
@@ -70,11 +70,11 @@ export default function CarouselCard(props: CarouselCardProps) {
       >
         {article.readingTime && article.datePublished && (
           <span className='inline-flex pt-2 text-sm text-light'>
-            {article.readingTime} {readingTimeLabel} • {article.datePublished}
+            {article.readingTime} min. czytania • {article.datePublished}
           </span>
         )}
         {article.excerpt && (
-          <p className='mt-2 line-clamp-3 text-light'>{article.excerpt}</p>
+          <p className='line-clamp-3 pt-4 text-light'>{article.excerpt}</p>
         )}
         <div
           className='mt-4 mb-2 h-px w-full bg-neutral-200'
@@ -106,11 +106,11 @@ export default function CarouselCard(props: CarouselCardProps) {
       title={project.title}
       imageAspectClassName='aspect-3/2'
     >
-      <p className='mt-2 line-clamp-2 text-light'>{project.short}</p>
+      <p className='line-clamp-3 pt-4 text-light'>{project.short}</p>
 
       <div className='mt-auto'>
         <div
-          className='mt-4 mb-2 h-px w-full bg-neutral-200'
+          className='mt-4 mb-4 h-px w-full bg-neutral-200'
           aria-hidden='true'
         />
         <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>

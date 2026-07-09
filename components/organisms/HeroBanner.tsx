@@ -77,7 +77,7 @@ export default function HeroBanner({
             'max-w-[100vw] hyphens-auto',
             isCompact
               ? 'text-center md:w-full'
-              : 'w-full rounded-lg p-5 pt-4 text-on-dark md:max-w-[75%] md:p-7 lg:max-w-[65%]',
+              : 'w-full rounded-lg p-4 text-on-dark md:max-w-[75%] md:px-6 md:py-5 lg:max-w-[65%]',
             showOverlay && 'bg-black/60',
           )}
         >
@@ -104,7 +104,7 @@ export default function HeroBanner({
                 'text-base leading-relaxed text-pretty',
                 isCompact
                   ? 'mt-2 text-center text-mid! md:mt-3'
-                  : 'mt-3 text-on-dark! md:mt-5',
+                  : 'mt-3 text-on-dark! md:mt-4',
               )}
             >
               {description}

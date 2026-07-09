@@ -258,18 +258,21 @@ body {
 p,
 li,
 .p {
-  @apply leading-relaxed font-normal text-pretty text-mid;
+  @apply font-normal text-pretty text-mid;
   font-size: clamp(14px, calc(14px + 3 * ((100vw - 360px) / 1080)), 16px);
+  line-height: 1.5;
 }
 
 label {
-  @apply leading-relaxed font-normal text-pretty text-mid;
+  @apply font-normal text-pretty text-mid;
   font-size: clamp(16px, calc(16px + 2 * ((100vw - 360px) / 1080)), 18px);
+  line-height: 1.5;
 }
 
 .text-small {
-  @apply leading-relaxed font-normal;
+  @apply font-normal;
   font-size: clamp(13px, calc(13px + 1 * ((100vw - 360px) / 1080)), 14px);
+  line-height: 1.5;
 }
 
 h1,
@@ -321,7 +324,7 @@ h6,
 .h6 {
   font-weight: 400;
   font-size: clamp(16px, calc(16px + 4 * ((100vw - 360px) / 1080)), 20px);
-  line-height: 1.25;
+  line-height: 1.1;
   text-wrap: balance;
   letter-spacing: -0.25px;
 }

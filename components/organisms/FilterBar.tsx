@@ -79,9 +79,9 @@ export default function FilterBar({
 
   return (
     <>
-      <h2 className='mb-4'>Filtry artykułów</h2>
+      <h2>Filtry artykułów</h2>
 
-      <div className='pb-6 md:hidden'>
+      <div className='py-4 md:hidden'>
         <Button
           type='button'
           onClick={openModal}
@@ -93,7 +93,7 @@ export default function FilterBar({
         </Button>
       </div>
 
-      <div className='hidden pb-6 md:block md:pb-8 lg:pb-10'>
+      <div className='hidden py-2 md:block md:py-4 lg:py-6'>
         <div className='flex flex-wrap items-start gap-2'>
           <nav
             ref={navRef}
