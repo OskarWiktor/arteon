@@ -1,9 +1,17 @@
 'use client';
 
 import { useState } from 'react';
+import Filters, { type FilterItem } from '@/components/molecules/Filters';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
-import Filters from '../molecules/Filters';
 import ProjectsGrid from '../molecules/ProjectsGrid';
+
+const ORDER: readonly ProjectCategory[] = [
+  'strony',
+  'sklepy',
+  'blogi',
+  'projekty graficzne',
+  'treści',
+] as const;
 
 export default function ProjectsWithFilters({
   projects,
@@ -27,12 +35,24 @@ export default function ProjectsWithFilters({
 
   const onClear = () => setSelectedCategoriesSet(new Set());
 
+  const items: FilterItem[] = (() => {
+    const present = new Set<ProjectCategory>();
+    for (const p of projects) for (const c of p.category ?? []) present.add(c);
+    return ORDER.filter(c => present.has(c)).map(c => ({
+      value: c,
+      label: c.charAt(0).toUpperCase() + c.slice(1),
+    }));
+  })();
+
   return (
     <>
       <Filters
-        projects={projects}
+        mode='toggle'
+        title='Kliknij aby wybrać typ projektu'
+        toolbarAriaLabel='Filtry realizacji'
+        items={items}
         selected={selectedCategories}
-        onToggle={onToggle}
+        onToggle={value => onToggle(value as ProjectCategory)}
         onClear={onClear}
       />
       <ProjectsGrid

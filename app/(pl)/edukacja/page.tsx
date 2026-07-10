@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
+import Filters from '@/components/molecules/Filters';
 import ArticlesList from '@/components/organisms/ArticlesList';
-import FilterBar from '@/components/organisms/FilterBar';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import {
   getAllArticlePreviews,
@@ -66,8 +66,19 @@ export default function EdukacjaPage() {
         overlay='black'
       />
       <Wrapper>
-        <Divider size='sm' />
-        <FilterBar cats={cats} />
+        <Divider size='xs' />
+        <Filters
+          mode='link'
+          title='Filtry artykułów'
+          toolbarAriaLabel='Kategorie artykułów'
+          items={cats.map(c => ({
+            value: c.slug,
+            label: c.label,
+            count: c.count,
+            href: `/edukacja/${c.slug}`,
+          }))}
+          allHref='/edukacja'
+        />
         <ArticlesList />
         <Divider size='sm' />
       </Wrapper>

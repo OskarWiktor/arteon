@@ -34,7 +34,7 @@ export default function ArticlesList({
   return (
     <section
       aria-label='Lista artykułów'
-      className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'
+      className='grid auto-rows-max grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'
     >
       {items.map(article => {
         const catSlug = getPrimaryCategorySlug(article);

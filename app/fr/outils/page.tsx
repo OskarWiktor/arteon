@@ -15,9 +15,9 @@ import {
   RiLockLine,
   RiLoopLeftLine,
 } from 'react-icons/ri';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
+import ToolCardFooter from '@/components/molecules/ToolCardFooter';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
@@ -646,12 +646,13 @@ export default function ToolsIndexPage() {
       />
 
       <Wrapper>
-        <Divider size='sm' />
+        <Divider size='xs' />
 
         <SectionSteps
           title='Images et favicons'
           description='Outils pour préparer photos, graphiques et icônes pour les sites web et les réseaux sociaux.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiCropLine className={largeIconSizeClasses} />,
@@ -667,14 +668,10 @@ export default function ToolsIndexPage() {
                     saisissez des dimensions personnalisées et téléchargez
                     l\'image en PNG, JPG ou WebP.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/editeur-d-images-en-ligne'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/editeur-d-images-en-ligne'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -691,14 +688,10 @@ export default function ToolsIndexPage() {
                     180x180, 192x192 et 512x512 à partir d'une seule image –
                     conforme aux exigences des navigateurs et de Lighthouse.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/generateur-de-favicon-gratuit'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/generateur-de-favicon-gratuit'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -710,6 +703,7 @@ export default function ToolsIndexPage() {
           title='Texte et SEO'
           description='Outils pour vérifier la longueur de texte, les balises méta et prévisualiser votre page dans les résultats de recherche.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiFileTextLine className={largeIconSizeClasses} />,
@@ -725,14 +719,10 @@ export default function ToolsIndexPage() {
                     les résultats Google. Évitez les titres et descriptions
                     tronqués.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/verificateur-meta-titre-et-description'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/verificateur-meta-titre-et-description'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -750,14 +740,10 @@ export default function ToolsIndexPage() {
                     fiche produit. L'outil compte les mots, caractères,
                     paragraphes et estime le temps de lecture.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/compteur-de-mots-et-caracteres'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/compteur-de-mots-et-caracteres'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -775,11 +761,10 @@ export default function ToolsIndexPage() {
                     Lorem Ipsum, Hipster, Business, Bacon et plus. Copiez en
                     texte ou HTML.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/fr/outils/generateur-lorem-ipsum'>
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/generateur-lorem-ipsum'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -792,6 +777,7 @@ export default function ToolsIndexPage() {
           title='E-mail et communication'
           description='Outils pour une communication e-mail professionnelle et une image de marque cohérente.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiMailLine className={largeIconSizeClasses} />,
@@ -807,14 +793,10 @@ export default function ToolsIndexPage() {
                     copiez le code HTML dans Gmail, Outlook ou tout autre client
                     de messagerie.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/generateur-de-signature-email-gratuit'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/generateur-de-signature-email-gratuit'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -827,6 +809,7 @@ export default function ToolsIndexPage() {
           title='Codes QR'
           description='Générateur de codes QR pour sites web, cartes de visite, menus et supports imprimés.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiQrCodeLine className={largeIconSizeClasses} />,
@@ -841,14 +824,10 @@ export default function ToolsIndexPage() {
                     dépliant. Export en PNG et SVG – sans inscription, sans
                     limite.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/generateur-de-codes-qr-gratuit'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/generateur-de-codes-qr-gratuit'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -861,6 +840,7 @@ export default function ToolsIndexPage() {
           title='Couleurs et accessibilité'
           description="Outils pour travailler avec les couleurs, le contraste et l'accessibilité WCAG."
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiContrast2Line className={largeIconSizeClasses} />,
@@ -876,14 +856,10 @@ export default function ToolsIndexPage() {
                     de contraste <strong>WCAG</strong> et utilisez la fonction{' '}
                     <strong>Ajuster</strong> pour une correction automatique.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/verificateur-de-contraste-des-couleurs'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/verificateur-de-contraste-des-couleurs'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -900,14 +876,10 @@ export default function ToolsIndexPage() {
                     couleurs dominantes. Copiez les codes HEX en un clic et
                     utilisez-les partout.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/extracteur-de-couleurs-d-image'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/extracteur-de-couleurs-d-image'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -924,14 +896,10 @@ export default function ToolsIndexPage() {
                     monochromatique, complémentaire, triadique, pastel, sombre
                     et plus. Copiez les codes HEX en un clic.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/generateur-de-palettes-de-couleurs'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/generateur-de-palettes-de-couleurs'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -944,6 +912,7 @@ export default function ToolsIndexPage() {
           title="Convertisseurs de formats d'image"
           description="Convertisseurs d'images en ligne - changez de format entre JPG, PNG, WebP, SVG, BMP et GIF. Conversion dans le navigateur, sans envoi de fichiers."
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
@@ -957,14 +926,10 @@ export default function ToolsIndexPage() {
                     Convertissez vos photos JPG en WebP léger. Réduisez le poids
                     des images jusqu\'à 35%.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-jpg-en-webp'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-jpg-en-webp'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -980,14 +945,10 @@ export default function ToolsIndexPage() {
                     Convertissez vos fichiers PNG en JPG dans le navigateur.
                     Sans limite, sans inscription.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-png-en-jpg'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-png-en-jpg'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1003,14 +964,10 @@ export default function ToolsIndexPage() {
                     Convertissez vos fichiers WebP en JPG universel. Compatible
                     avec tous les logiciels.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-webp-en-jpg'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-webp-en-jpg'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1026,14 +983,10 @@ export default function ToolsIndexPage() {
                     Convertissez vos graphiques PNG en WebP. Fichiers réduits,
                     transparence préservée.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-png-en-webp'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-png-en-webp'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1049,14 +1002,10 @@ export default function ToolsIndexPage() {
                     Convertissez vos images JPG en PNG sans perte. Traitement
                     local, fichiers illimités.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-jpg-en-png'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-jpg-en-png'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1072,14 +1021,10 @@ export default function ToolsIndexPage() {
                     Convertissez vos images WebP en PNG sans perte. Traitement
                     local.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-webp-en-png'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-webp-en-png'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1091,6 +1036,7 @@ export default function ToolsIndexPage() {
           title='Convertisseurs de données'
           description='Convertisseurs de formats de données en ligne — convertissez entre CSV, JSON, XML, YAML, Markdown et HTML. Traitement dans le navigateur.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
@@ -1104,14 +1050,10 @@ export default function ToolsIndexPage() {
                     Convertissez CSV en format JSON. Détection automatique des
                     séparateurs et formatage.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-csv-en-json'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-csv-en-json'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1127,14 +1069,10 @@ export default function ToolsIndexPage() {
                     Convertissez des données JSON en format CSV. Traitement dans
                     le navigateur.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-json-en-csv'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-json-en-csv'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1150,14 +1088,10 @@ export default function ToolsIndexPage() {
                     Convertissez des données XML en JSON. Conversion avec
                     validation de structure.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-xml-en-json'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-xml-en-json'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1173,14 +1107,10 @@ export default function ToolsIndexPage() {
                     Convertissez des données JSON en XML valide. Conversion avec
                     formatage.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-json-en-xml'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-json-en-xml'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1196,14 +1126,10 @@ export default function ToolsIndexPage() {
                     Convertissez la configuration YAML en JSON. Validation et
                     formatage.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-yaml-en-json'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-yaml-en-json'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },
@@ -1219,14 +1145,10 @@ export default function ToolsIndexPage() {
                     Convertissez des données JSON en YAML lisible. Traitement
                     dans le navigateur.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/fr/outils/convertisseur-json-en-yaml'
-                    >
-                      Ouvrir l'outil
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/fr/outils/convertisseur-json-en-yaml'
+                    label="Ouvrir l'outil"
+                  />
                 </div>
               ),
             },

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
+import Filters from '@/components/molecules/Filters';
 import ArticlesList from '@/components/organisms/ArticlesList';
-import FilterBar from '@/components/organisms/FilterBar';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import {
   getAllArticlePreviews,
@@ -202,8 +202,20 @@ export default async function EdukacjaCategoryPage({
         overlay='black'
       />
       <Wrapper>
-        <Divider size='sm' />
-        <FilterBar cats={cats} active={category} />
+        <Divider size='xs' />
+        <Filters
+          mode='link'
+          title='Filtry artykułów'
+          toolbarAriaLabel='Kategorie artykułów'
+          items={cats.map(c => ({
+            value: c.slug,
+            label: c.label,
+            count: c.count,
+            href: `/edukacja/${c.slug}`,
+          }))}
+          activeValue={category}
+          allHref='/edukacja'
+        />
         <ArticlesList filterCategorySlug={category} />
         <Divider size='sm' />
       </Wrapper>

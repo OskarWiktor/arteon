@@ -17,6 +17,8 @@ interface SectionHeaderProps {
   buttonText?: string;
   buttonLink?: string;
   containerClassName?: string;
+  secondaryTitle?: string;
+  secondaryTitleClassName?: string;
 }
 
 export default function SectionHeader({
@@ -31,6 +33,8 @@ export default function SectionHeader({
   buttonText,
   buttonLink,
   containerClassName,
+  secondaryTitle,
+  secondaryTitleClassName,
 }: SectionHeaderProps) {
   const hasButton = Boolean(buttonText && buttonLink);
 
@@ -51,6 +55,16 @@ export default function SectionHeader({
           {title}
         </h2>
       </Reveal>
+      {secondaryTitle && (
+        <p
+          className={cn(
+            'pt-4 font-bold! text-primary! italic! md:pt-6',
+            secondaryTitleClassName,
+          )}
+        >
+          {secondaryTitle}
+        </p>
+      )}
       {description && (
         <p className={cn('pt-4 md:pt-6', descriptionClassName)}>
           {description}

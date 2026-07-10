@@ -22,13 +22,13 @@ const ANIMATION_MS = 260;
 const openPanelByGroup = new Map<string, () => void>();
 
 const detailsClasses =
-  'faq-details group hover:border-neutral-300 open:border-neutral-300 my-2 overflow-hidden rounded-lg border border-neutral-200 bg-white transition open:shadow-sm hover:shadow-md';
+  'faq-details group hover:border-neutral-300 open:border-neutral-300 mb-4 overflow-hidden rounded-lg bg-white shadow-[1px_1px_3px_#C6B7A2] transition open:shadow-sm hover:shadow-md';
 
 const summaryClasses =
-  'flex w-full cursor-pointer list-none items-center justify-between p-3 text-left transition-colors md:p-4 [&::-webkit-details-marker]:hidden';
+  'flex w-full cursor-pointer list-none items-center justify-between px-3.5 py-2.5 text-left transition-colors md:px-4.5 md:py-3.5 [&::-webkit-details-marker]:hidden';
 
 const iconClasses =
-  'bg-primary-light flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white';
+  'bg-primary-light flex h-14 w-14 shrink-0 items-center justify-center rounded-lg text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white';
 
 /**
  * Collapsible FAQ panel built on the native `<details>` element, with its
@@ -173,10 +173,10 @@ export default function FaqPanel({
       >
         {icon && <div className={iconClasses}>{icon}</div>}
 
-        <h3 className='h6 flex-1'>{question}</h3>
+        <h3 className='h6 flex-1 font-semibold!'>{question}</h3>
 
         <span
-          className='ml-2 transition-transform duration-200 group-open:rotate-45'
+          className='ml-2 rounded-md bg-[#E4D9CA] p-2 transition-transform duration-200 group-open:rotate-45'
           aria-hidden='true'
         >
           <svg
