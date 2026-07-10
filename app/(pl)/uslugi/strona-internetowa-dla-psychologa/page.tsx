@@ -160,8 +160,8 @@ export default function StronaDlaPsychologaPage() {
         }
         backgroundImage='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
         overlay='black'
-        primaryCtaLabel='Darmowa wycena'
-        primaryCtaHref='#kontakt'
+        secondaryCtaLabel='Darmowa wycena'
+        secondaryCtaHref='#kontakt'
       />
 
       <BenefitBelt variant='carousel' />

@@ -65,20 +65,20 @@
     "ariaLabel": "okruszki"
   },
   "contactForm": {
-    "nameLabel": "Imię i nazwisko | Nazwa firmy",
+    "nameLabel": "Imię i nazwisko",
     "namePlaceholder": "Jan Kowalski",
     "emailLabel": "Email",
     "emailPlaceholder": "jan.kowalski@gmail.com",
     "subjectLabel": "Temat",
     "subjectPlaceholder": "np. Strona | Sklep | media społecznościowe | Logo",
     "messageLabel": "Wiadomość",
-    "messagePlaceholder": "Prowadzę firmę zajmującą się... chciałbym stworzyć...",
-    "send": "Wyślij",
+    "messagePlaceholder": "Napisz co chcesz zrealizować",
+    "send": "Wyślij wiadomość",
     "error": "Coś poszło nie tak. Sprawdź poprawność danych i spróbuj ponownie.",
     "success": "Wiadomość wysłana! Odpowiemy tak szybko, jak to tylko możliwe.",
-    "consentPrefix": "Zapoznałem się z",
+    "consentPrefix": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z",
     "consentLinkText": "polityką prywatności",
-    "consentSuffix": "i wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie.",
+    "consentSuffix": ".",
     "consentRequiredError": "Zaznacz zgodę na przetwarzanie danych osobowych, aby wysłać formularz."
   },
   "toolsCarousel": {

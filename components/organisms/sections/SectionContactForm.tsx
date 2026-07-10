@@ -16,6 +16,7 @@ type SectionContactFormProps = {
   defaultSubject?: string;
   messagePlaceholder?: string;
   variant?: 'default-page' | 'tool-page';
+  noTopic?: boolean;
 };
 
 const benefits = [
@@ -55,17 +56,11 @@ export default function SectionContactForm({
   defaultSubject,
   messagePlaceholder,
   variant = 'default-page',
+  noTopic = true,
 }: SectionContactFormProps) {
   return (
     <section id='contact' className='scroll-mt-26'>
       <div className='grid gap-8 lg:grid-cols-2 lg:gap-12'>
-        <ContactForm
-          title={title}
-          description={description}
-          defaultSubject={defaultSubject}
-          messagePlaceholder={messagePlaceholder}
-        />
-
         <div className='flex flex-col justify-center'>
           <div className='relative mb-6 aspect-4/3 overflow-hidden'>
             <Image
@@ -89,6 +84,13 @@ export default function SectionContactForm({
             </ul>
           )}
         </div>
+        <ContactForm
+          title={title}
+          description={description}
+          defaultSubject={defaultSubject}
+          messagePlaceholder={messagePlaceholder}
+          noTopic={noTopic}
+        />
       </div>
     </section>
   );

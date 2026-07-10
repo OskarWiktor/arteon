@@ -181,8 +181,8 @@ export default function StronyInternetoweDlaFirmPage() {
         }
         backgroundImage='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
         overlay='black'
-        primaryCtaLabel='Darmowa wycena'
-        primaryCtaHref='#kontakt'
+        secondaryCtaLabel='Darmowa wycena'
+        secondaryCtaHref='#kontakt'
       />
 
       <BenefitBelt variant='carousel' />
@@ -840,7 +840,7 @@ export default function StronyInternetoweDlaFirmPage() {
           imageSrc='/assets/projects/arteon-baners-camper-albania-mockup.webp'
           imageAlt='Realizacja strony internetowej - Camper Albania mockup'
           defaultSubject='Tworzenie strony internetowej'
-          messagePlaceholder='Opisz swoją firmę, branżę i cele strony. Im więcej szczegółów, tym dokładniejsza wycena.'
+          messagePlaceholder='Napisz co chcesz zrealizować'
         />
 
         <Divider line />

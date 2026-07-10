@@ -18,6 +18,7 @@ type ContactFormProps = {
   action?: string;
   messagePlaceholder?: string;
   locale?: Locale;
+  noTopic?: boolean;
 };
 
 export default function ContactForm({
@@ -27,6 +28,7 @@ export default function ContactForm({
   action = 'https://formspree.io/f/xldnokbw',
   messagePlaceholder,
   locale: _locale = 'pl',
+  noTopic = false,
 }: ContactFormProps) {
   const dict = useDictionary();
   const t = dict.contactForm;
@@ -63,11 +65,17 @@ export default function ContactForm({
 
   return (
     <section id='kontakt' className='scroll-mt-26'>
-      <SectionHeader title={title} description={description} />
+      <SectionHeader
+        title={title}
+        description={description}
+        titleClassName='h4!'
+        descriptionClassName='pt-1! md:pt-2! text-[16px]!'
+        containerClassName='pb-0 md:pb-1'
+      />
 
       <form
         ref={formRef}
-        className='mt-6 flex w-full flex-col gap-5'
+        className='mt-6 flex w-full flex-col gap-4'
         action={action}
         method='POST'
         onSubmit={handleSubmit}
@@ -76,7 +84,7 @@ export default function ContactForm({
         <InputWithLabel
           id='name'
           label={t.nameLabel}
-          name='Imię i nazwisko | Nazwa firmy'
+          name='Imię i nazwisko'
           placeholder={t.namePlaceholder}
           type='text'
           autoComplete='name'
@@ -93,15 +101,17 @@ export default function ContactForm({
           required
         />
 
-        <InputWithLabel
-          id='subject'
-          label={t.subjectLabel}
-          name='Zakres współpracy'
-          placeholder={t.subjectPlaceholder}
-          type='text'
-          required
-          defaultValue={defaultSubject}
-        />
+        {!noTopic && (
+          <InputWithLabel
+            id='subject'
+            label={t.subjectLabel}
+            name='Zakres współpracy'
+            placeholder={t.subjectPlaceholder}
+            type='text'
+            required
+            defaultValue={defaultSubject}
+          />
+        )}
 
         <TextareaWithLabel
           id='message'
@@ -112,35 +122,37 @@ export default function ContactForm({
           className='h-48 resize-none'
         />
 
-        <div className='flex items-start gap-2'>
+        <div className='flex items-start gap-2 md:gap-3'>
           <InputCheckbox
             id='privacyConsent'
             name='Zgoda na przetwarzanie danych'
             value='Tak'
             required
-            className='mt-0.5 shrink-0'
+            className='h-6! w-6! items-center rounded-sm border-0! border-none! text-dark shadow-[1px_1px_3px_#C6B7A2]'
             onInvalid={e =>
               e.currentTarget.setCustomValidity(t.consentRequiredError)
             }
             onChange={e => e.currentTarget.setCustomValidity('')}
           />
-          <label htmlFor='privacyConsent' className='tool-value cursor-pointer'>
+          <label
+            htmlFor='privacyConsent'
+            className='tool-value cursor-pointer text-mid!'
+          >
             {t.consentPrefix}{' '}
             <Link
               href={privacyPolicyHref}
               target='_blank'
               rel='noopener noreferrer'
-              className='text-current underline underline-offset-2'
+              className='text-mid! underline underline-offset-2'
             >
               {t.consentLinkText}
-            </Link>{' '}
+            </Link>
             {t.consentSuffix}
           </label>
         </div>
 
         <Button
           variant='accent'
-          arrow
           onClick={() => formRef.current?.requestSubmit()}
         >
           {t.send}

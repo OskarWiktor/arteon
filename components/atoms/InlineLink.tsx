@@ -24,7 +24,7 @@ export default function InlineLink({
       href={href}
       prefetch={false}
       className={cn(
-        'hover-underline flex items-center rounded',
+        'hover-underline flex items-center rounded font-semibold',
         focusRingClasses,
         variants[variant],
         className,

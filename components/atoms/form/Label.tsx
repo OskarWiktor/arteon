@@ -29,8 +29,8 @@ export default function Label({
   return (
     <label
       className={cn(
-        'mb-1 block',
-        variant === 'tool' && 'text-sm! font-medium! text-mid! uppercase!',
+        'mb-1 block font-medium!',
+        variant === 'tool' && 'text-dark! uppercase!',
         className,
       )}
       {...props}
@@ -38,7 +38,7 @@ export default function Label({
       {children}
 
       {required && (
-        <span aria-hidden='true' className='ml-0.5 text-error-icon'>
+        <span aria-hidden='true' className='ml-0.5 text-[#380911]'>
           *
         </span>
       )}

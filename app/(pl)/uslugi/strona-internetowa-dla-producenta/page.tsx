@@ -165,8 +165,8 @@ export default function StronaDlaProducentaPage() {
         }
         backgroundImage='/assets/projects/stepard/strona/moskup-strony-stepard.webp'
         overlay='black'
-        primaryCtaLabel='Darmowa wycena'
-        primaryCtaHref='#kontakt'
+        secondaryCtaLabel='Darmowa wycena'
+        secondaryCtaHref='#kontakt'
       />
 
       <BenefitBelt variant='carousel' />

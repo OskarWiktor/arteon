@@ -93,7 +93,7 @@ export default function ProjectsCarouselClient({
         subtitle={subtitle}
         title={title}
         titleId='projects-heading'
-        buttonText='Sprawdź wszystkie realizacje'
+        buttonText='Inne realizacje'
         buttonLink='/realizacje'
       />
 
@@ -101,7 +101,7 @@ export default function ProjectsCarouselClient({
         <div
           ref={scrollRef}
           className={cn(
-            'flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+            'flex snap-x snap-mandatory gap-8 overflow-x-auto scroll-smooth pb-8',
             noScrollbarClasses,
             focusRingClasses,
           )}
@@ -122,7 +122,7 @@ export default function ProjectsCarouselClient({
                     }
                   : null
               }
-              className='w-85 shrink-0 snap-start md:w-105 lg:w-130'
+              className='w-80 shrink-0 snap-start md:w-90 lg:w-110'
               role='group'
               aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
             >

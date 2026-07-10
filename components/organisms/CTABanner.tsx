@@ -58,7 +58,7 @@ export default function CTABanner({
           aria-hidden='true'
           className={cn(
             'pointer-events-none absolute inset-0 z-0',
-            isBlack ? 'bg-black/70' : 'bg-white/80',
+            isBlack ? 'bg-black/40' : 'bg-white/80',
           )}
         />
       )}
@@ -67,7 +67,7 @@ export default function CTABanner({
         <div
           className={cn(
             'max-w-[100vw] rounded-lg px-6 py-4 md:max-w-[65%] md:p-8 md:text-center lg:p-10',
-            isBlack && 'bg-black/50 text-on-dark',
+            isBlack && 'bg-[#0D0103]/80 text-on-dark',
             overlay === 'white' && 'bg-white/70 text-dark',
             overlay === 'none' && 'text-dark',
           )}

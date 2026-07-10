@@ -207,7 +207,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               }
             />
             {srcFieldConfig.suffix && (
-              <span className='pointer-events-none absolute top-10 right-8 font-mono text-sm text-primary-mid'>
+              <span className='pointer-events-none absolute top-10 right-8 mt-1.5 font-mono text-sm text-primary-mid'>
                 {srcFieldConfig.suffix}
               </span>
             )}
@@ -272,7 +272,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               readOnly={isSpecial}
             />
             {tgtFieldConfig.suffix && (
-              <span className='pointer-events-none absolute top-10 right-8 font-mono text-sm text-primary-mid'>
+              <span className='pointer-events-none absolute top-10 right-8 mt-1.5 font-mono text-sm text-primary-mid'>
                 {tgtFieldConfig.suffix}
               </span>
             )}

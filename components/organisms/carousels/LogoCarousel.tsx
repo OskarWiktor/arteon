@@ -248,7 +248,7 @@ export default function LogoCarousel({
                     width={width}
                     height={height}
                     className={cn(
-                      'w-auto object-contain opacity-60 brightness-0 transition-opacity hover:opacity-100 dark:invert',
+                      'w-auto object-contain opacity-60 brightness-0 invert transition-opacity hover:opacity-100',
                       heightClass ?? 'h-12 md:h-14',
                     )}
                     onLoad={measure}

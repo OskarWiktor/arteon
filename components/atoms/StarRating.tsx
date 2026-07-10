@@ -6,7 +6,7 @@ function clamp(n: number, min: number, max: number) {
 
 export function StarRating({
   value,
-  size = 20,
+  size = 34,
   className,
 }: {
   value: number;
@@ -17,9 +17,9 @@ export function StarRating({
   const full = Math.floor(v);
   const half = v - full === 0.5;
   const empty = 5 - full - (half ? 1 : 0);
-  const box = 24;
+  const box = 30;
   const starCls = 'inline-block align-middle';
-  const starColor = '#fbca41';
+  const starColor = '#DCB893';
 
   const FullStar = (
     <svg
@@ -76,7 +76,7 @@ export function StarRating({
 
   return (
     <span
-      className={cn('text-accent', className)}
+      className={cn('text-xl font-bold text-[#DCB893]', className)}
       role='img'
       aria-label={`${v}/5`}
     >
@@ -87,6 +87,7 @@ export function StarRating({
       {Array.from({ length: empty }).map((_, i) => (
         <span key={`e-${i}`}>{EmptyStar}</span>
       ))}
+      5.0
     </span>
   );
 }

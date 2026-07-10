@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { startTransition, useEffect, useState } from 'react';
 import { RiCloseLine, RiMenuLine, RiSearchLine } from 'react-icons/ri';
 import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
-import ThemeToggle from '@/components/atoms/ThemeToggle';
+//import ThemeToggle from '@/components/atoms/ThemeToggle';
 import Wrapper from '@/components/atoms/Wrapper';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { DesktopNavSkeleton } from '@/components/organisms/skeletons/NavSkeleton';
@@ -68,7 +68,7 @@ export default function NavigationShell() {
   return (
     <header
       id='navigation'
-      className='sticky top-0 z-50 w-full bg-white shadow-md'
+      className='sticky top-0 z-50 w-full border-b border-b-[#380911] bg-white shadow-[1px_1px_3px_#C6B7A2]'
     >
       {/*
       <SectionInfoBanner
@@ -95,7 +95,6 @@ export default function NavigationShell() {
               height={30}
               alt={t.logoAlt}
               sizes='100px'
-              className='dark:invert'
             />
           </InlineLink>
 
@@ -128,14 +127,12 @@ export default function NavigationShell() {
             >
               #MadeWithNext.js
             </a>
-
-            <ThemeToggle />
-
+            {/*<ThemeToggle />*/}
             <LanguageSwitcher variant='desktop' />
           </div>
 
           <div className='flex items-center gap-1 lg:hidden'>
-            <ThemeToggle />
+            {/*<ThemeToggle />*/}
             <LanguageSwitcher variant='mobile' />
             <button
               type='button'

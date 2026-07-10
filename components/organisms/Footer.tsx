@@ -150,6 +150,7 @@ interface FooterProps {
  * @param toolsIndexHref - Href for the tools index logo/link in the non-PL footer
  * @returns The footer element (JSX) appropriate for the given locale and props
  */
+
 export default function Footer({
   locale,
   footerUi,
@@ -162,15 +163,11 @@ export default function Footer({
   const gfxLeft = offerLinksThree.slice(0, midGfx);
   const gfxRight = offerLinksThree.slice(midGfx);
 
-  // Non-PL footers list the FULL tool catalogue (every localized tool) for
-  // maximum internal linking / SEO.
   const localeToolsLinks = getToolsList(locale).map(tool => ({
     href: tool.href,
     label: tool.title,
   }));
-  // Non-PL footers list only privacy + terms; append the locale's sitemap page
-  // so it is internally linked (not orphaned to the XML sitemap alone). PL keeps
-  // its own PL_LEGAL_LINKS, which already includes /mapa-strony.
+
   const localeLegalLinks: LegalLink[] = [
     ...legalLinks,
     {
@@ -180,7 +177,6 @@ export default function Footer({
     },
   ];
 
-  // PL footer narzędzia: 28 linków w 4 kolumnach po 7, z rejestru narzędzi.
   const plToolsLinks = getToolsList('pl')
     .slice(0, PL_TOOLS_COUNT)
     .map(tool => ({ href: tool.href, label: tool.title }));
@@ -189,9 +185,6 @@ export default function Footer({
     plToolsLinks.slice(i * plToolColSize, (i + 1) * plToolColSize),
   ).filter(column => column.length > 0);
 
-  // Non-PL footer spreads the full tool catalogue across 6 columns. The first
-  // column sits beneath the logo, so it holds 3 fewer links than the others to
-  // stay visually balanced (the logo already fills that space).
   const FOOTER_TOOL_COLUMNS = 6;
   const LOGO_COLUMN_LINK_OFFSET = 3;
   const firstColumnCount = Math.max(
@@ -218,8 +211,6 @@ export default function Footer({
       >
         <Wrapper>
           <div className='grid grid-cols-1 items-start gap-8 md:grid-cols-2 lg:grid-cols-6'>
-            {/* Column 1: logo + description, then a gap, then the first tools
-                column so the space under the logo is no longer empty. */}
             <div>
               <section aria-label={ft.companyDataLabel} className='mb-8'>
                 <div className='mb-4'>
@@ -229,7 +220,6 @@ export default function Footer({
                       width={140}
                       height={50}
                       alt='Arteon logo'
-                      className='dark:invert'
                     />
                   </InlineLink>
                 </div>
@@ -340,7 +330,7 @@ export default function Footer({
               <ul className='flex flex-col gap-2 text-sm'>
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left' href={href}>
+                    <InlineLink className='font-regular! text-left' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -356,7 +346,7 @@ export default function Footer({
               <ul className='flex flex-col gap-2 text-sm'>
                 {offerLinksTwo.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left' href={href}>
+                    <InlineLink className='font-regular! text-left' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -372,7 +362,7 @@ export default function Footer({
               <ul className='flex flex-col gap-2 text-sm'>
                 {gfxLeft.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left' href={href}>
+                    <InlineLink className='font-regular! text-left' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -388,7 +378,7 @@ export default function Footer({
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {gfxRight.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left' href={href}>
+                    <InlineLink className='font-regular! text-left' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -404,7 +394,7 @@ export default function Footer({
               <ul className='flex flex-col gap-2 text-sm'>
                 {navLinksPrimary.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink className='text-left' href={href}>
+                    <InlineLink className='font-regular! text-left' href={href}>
                       {label}
                     </InlineLink>
                   </li>
@@ -430,7 +420,10 @@ export default function Footer({
                 >
                   {column.map(({ href, label }) => (
                     <li key={href}>
-                      <InlineLink href={href} className='text-left'>
+                      <InlineLink
+                        href={href}
+                        className='font-regular! text-left'
+                      >
                         {label}
                       </InlineLink>
                     </li>
