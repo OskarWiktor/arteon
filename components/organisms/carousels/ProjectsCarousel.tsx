@@ -8,6 +8,7 @@ type Props = {
   max?: number;
   title?: string;
   subtitle?: string;
+  secondaryTitle?: string;
   description?: ReactNode;
   category?: ProjectCategory;
   slugs?: string | string[];

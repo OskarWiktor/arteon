@@ -42,19 +42,21 @@ export default function CarouselCard(props: CarouselCardProps) {
     return (
       <CarouselCardShell href={href} image={image} title={title}>
         <p className='line-clamp-2 pt-4 text-[#AD9D90]!'>{description}</p>
-        <div
-          className='mt-4 mb-2 h-px w-full bg-[#483135]!'
-          aria-hidden='true'
-        />
-        <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
-          <InlineLink
-            href={href}
-            aria-label={`${buttonLabel}: ${title}`}
-            className="inline-flex rounded-lg text-[#AD9D90]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
-          >
-            <span className='text-[#E5DCD3]!'>{buttonLabel}</span>
-            <ArrowIcon />
-          </InlineLink>
+        <div className='mt-auto'>
+          <div
+            className='mt-4 mb-2 h-px w-full bg-[#483135]!'
+            aria-hidden='true'
+          />
+          <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
+            <InlineLink
+              href={href}
+              aria-label={`${buttonLabel}: ${title}`}
+              className="inline-flex rounded-lg text-[#AD9D90]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+            >
+              <span className='text-[#E5DCD3]!'>{buttonLabel}</span>
+              <ArrowIcon />
+            </InlineLink>
+          </div>
         </div>
       </CarouselCardShell>
     );
@@ -76,19 +78,21 @@ export default function CarouselCard(props: CarouselCardProps) {
         {article.excerpt && (
           <p className='line-clamp-3 pt-4 text-[#AD9D90]!'>{article.excerpt}</p>
         )}
-        <div
-          className='mt-4 mb-2 h-px w-full bg-[#483135]!'
-          aria-hidden='true'
-        />
-        <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
-          <InlineLink
-            href={href}
-            aria-label={`Przeczytaj artykuł: ${article.title}`}
-            className="inline-flex rounded-lg text-[#E5DCD3]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
-          >
-            Przeczytaj artykuł
-            <ArrowIcon />
-          </InlineLink>
+        <div className='mt-auto'>
+          <div
+            className='mt-4 mb-2 h-px w-full bg-[#483135]!'
+            aria-hidden='true'
+          />
+          <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
+            <InlineLink
+              href={href}
+              aria-label={`Przeczytaj artykuł: ${article.title}`}
+              className="inline-flex rounded-lg text-[#E5DCD3]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+            >
+              Przeczytaj artykuł
+              <ArrowIcon />
+            </InlineLink>
+          </div>
         </div>
       </CarouselCardShell>
     );

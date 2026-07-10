@@ -128,7 +128,10 @@ export default function HomePage() {
       <Wrapper>
         <Divider size='sm' />
 
-        <ProjectsCarousel title='Najnowsze realizacje stron internetowych i projektów graficznych' />
+        <ProjectsCarousel
+          title='Najnowsze realizacje stron internetowych i projektów graficznych'
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
+        />
 
         <Divider line />
 

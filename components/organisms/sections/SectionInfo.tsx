@@ -13,6 +13,8 @@ interface SectionInfoProps {
   btnTwo?: string;
   btnTwoHref?: string;
   id?: string;
+  secondaryTitle?: string;
+  secondaryTitleClassName?: string;
 }
 
 export default function SectionInfo({
@@ -26,6 +28,8 @@ export default function SectionInfo({
   btnTwoHref,
   children,
   id,
+  secondaryTitle,
+  secondaryTitleClassName,
 }: SectionInfoProps) {
   const autoId = useId();
   const headingId = id || `section-info-${autoId}`;
@@ -35,6 +39,8 @@ export default function SectionInfo({
       <SectionHeader
         subtitle={subtitle}
         title={title}
+        secondaryTitle={secondaryTitle}
+        secondaryTitleClassName={secondaryTitleClassName}
         description={description}
         descriptionClassName={descriptionClassName}
         titleId={headingId}

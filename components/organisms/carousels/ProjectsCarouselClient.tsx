@@ -21,6 +21,7 @@ type Props = {
   max?: number;
   title?: string;
   subtitle?: string;
+  secondaryTitle?: string;
   description?: ReactNode;
   category?: ProjectCategory;
   slugs?: string | string[];
@@ -50,6 +51,7 @@ export default function ProjectsCarouselClient({
   category,
   slugs,
   excludeSlug,
+  secondaryTitle,
 }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
@@ -100,9 +102,9 @@ export default function ProjectsCarouselClient({
           title={title}
           subtitle={subtitle}
           description={description}
-          descriptionClassName='font-medium italic'
           btnTwo='Inne realizacje'
           btnTwoHref='/realizacje'
+          secondaryTitle={secondaryTitle}
         />
       </div>
 

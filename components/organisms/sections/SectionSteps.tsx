@@ -28,6 +28,7 @@ interface SectionStepsProps {
   grid?: SectionStepsGridVariants;
   items: SectionStepItem[];
   inlineIcon?: boolean;
+  cardVariant?: 'light' | 'dark';
 }
 
 type SectionStepsGridVariants = 'one' | 'two' | 'three' | 'four';
@@ -59,11 +60,13 @@ export default function SectionSteps({
   items,
   grid,
   inlineIcon = false,
+  cardVariant = 'light',
 }: SectionStepsProps) {
   const autoId = useId();
   const titleId = `steps-title-${autoId}`;
   const gridClasses =
     SectionStepsGridClasses[resolveGridVariant(grid, items?.length ?? 0)];
+  const isDark = cardVariant === 'dark';
 
   return (
     <section
@@ -83,7 +86,11 @@ export default function SectionSteps({
         />
 
         <ol
-          className={cn('grid grid-cols-1 gap-4 md:auto-rows-fr', gridClasses)}
+          className={cn(
+            'grid grid-cols-1 md:auto-rows-fr',
+            gridClasses,
+            isDark ? 'gap-8' : 'gap-4 md:gap-6',
+          )}
         >
           {items.map((item, index) => {
             const {
@@ -114,15 +121,19 @@ export default function SectionSteps({
 
             return (
               <li key={index} className='flex flex-col items-stretch'>
-                <Card
-                  as='article'
-                  padding='lg'
-                  interactive={false}
-                  className='flex h-full w-full flex-col gap-0 border border-neutral-200'
-                >
-                  {topImageSrc && (
-                    <div className='mb-4 md:mb-6'>
-                      <div className='relative h-52 w-full overflow-hidden md:h-68'>
+                {isDark ? (
+                  // Mirrors CarouselCardShell (dark) exactly so the tool index
+                  // cards are identical to the tool carousel cards: same md
+                  // padding, aspect-2/1 image, content wrapper padding, title
+                  // and text colors.
+                  <Card
+                    as='article'
+                    padding='md'
+                    interactive={false}
+                    className='flex h-full w-full flex-col gap-0 bg-[#380911]'
+                  >
+                    {topImageSrc && (
+                      <div className='relative aspect-2/1 w-full overflow-hidden'>
                         <Image
                           src={topImageSrc}
                           alt={topImageAlt ?? ''}
@@ -132,43 +143,80 @@ export default function SectionSteps({
                           aria-hidden={topImageAlt ? undefined : true}
                         />
                       </div>
-                    </div>
-                  )}
-
-                  {!useInline && hasVisual && (
-                    <div className='mb-4 flex justify-start'>
-                      <div
-                        className={cn(
-                          'h-12 w-12 rounded-lg bg-primary-light text-primary',
-                          flexCenterClasses,
-                        )}
-                      >
-                        {visualNode}
-                      </div>
-                    </div>
-                  )}
-
-                  {useInline ? (
-                    <h3 className='h5 mb-1 flex items-center gap-2 text-dark'>
-                      {hasVisual && (
-                        <span className='shrink-0 text-primary'>
-                          {visualNode}
+                    )}
+                    <div className='flex grow flex-col px-2 pt-4 md:px-4 md:pt-6'>
+                      <h3 className='h5 line-clamp-2 text-[#F4ECE0]!'>
+                        {itemTitle}
+                      </h3>
+                      {itemSubtitle && (
+                        <span className='text-base text-[#AD9D90]!'>
+                          {itemSubtitle}
                         </span>
                       )}
-                      <span>{itemTitle}</span>
-                    </h3>
-                  ) : (
-                    <h3 className='h5 mb-1 text-dark'>{itemTitle}</h3>
-                  )}
+                      <div className='mt-2 flex flex-1 flex-col [&_p]:text-[#AD9D90]!'>
+                        {itemDesc}
+                      </div>
+                    </div>
+                  </Card>
+                ) : (
+                  <Card
+                    as='article'
+                    padding='lg'
+                    interactive={false}
+                    className='flex h-full w-full flex-col gap-0 border border-neutral-200'
+                  >
+                    {topImageSrc && (
+                      <div className='mb-4 md:mb-6'>
+                        <div className='relative h-52 w-full overflow-hidden md:h-68'>
+                          <Image
+                            src={topImageSrc}
+                            alt={topImageAlt ?? ''}
+                            fill
+                            className='pointer-events-none object-cover select-none'
+                            sizes='(min-width:1024px) 33vw, (min-width:768px) 50vw, 100vw'
+                            aria-hidden={topImageAlt ? undefined : true}
+                          />
+                        </div>
+                      </div>
+                    )}
 
-                  {itemSubtitle && (
-                    <span className='text-base text-light'>{itemSubtitle}</span>
-                  )}
+                    {!useInline && hasVisual && (
+                      <div className='mb-4 flex justify-start'>
+                        <div
+                          className={cn(
+                            'h-12 w-12 rounded-lg bg-primary-light text-primary',
+                            flexCenterClasses,
+                          )}
+                        >
+                          {visualNode}
+                        </div>
+                      </div>
+                    )}
 
-                  <div className='z-10 mt-2 flex flex-1 flex-col text-light'>
-                    {itemDesc}
-                  </div>
-                </Card>
+                    {useInline ? (
+                      <h3 className='h5 mb-1 flex items-center gap-2 text-dark'>
+                        {hasVisual && (
+                          <span className='shrink-0 text-primary'>
+                            {visualNode}
+                          </span>
+                        )}
+                        <span>{itemTitle}</span>
+                      </h3>
+                    ) : (
+                      <h3 className='h5 mb-1 text-dark'>{itemTitle}</h3>
+                    )}
+
+                    {itemSubtitle && (
+                      <span className='text-base text-light'>
+                        {itemSubtitle}
+                      </span>
+                    )}
+
+                    <div className='z-10 mt-2 flex flex-1 flex-col text-light'>
+                      {itemDesc}
+                    </div>
+                  </Card>
+                )}
               </li>
             );
           })}

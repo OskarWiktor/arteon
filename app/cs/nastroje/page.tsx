@@ -15,9 +15,9 @@ import {
   RiLockLine,
   RiLoopLeftLine,
 } from 'react-icons/ri';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
+import ToolCardFooter from '@/components/molecules/ToolCardFooter';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
@@ -630,12 +630,13 @@ export default function ToolsIndexPage() {
       />
 
       <Wrapper>
-        <Divider size='sm' />
+        <Divider size='xs' />
 
         <SectionSteps
           title='Obrazky a favicon'
           description='Nastroje pro pripravu fotek, grafiky a ikon pro web a socialni site.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiCropLine className={largeIconSizeClasses} />,
@@ -650,11 +651,10 @@ export default function ToolsIndexPage() {
                     hotový formát nebo zadejte vlastní rozměry a stáhněte
                     obrázek jako PNG, JPG nebo WebP.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/editor-obrazku'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/editor-obrazku'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -671,14 +671,10 @@ export default function ToolsIndexPage() {
                     192x192 a 512x512 z jednoho obrazku - v souladu s pozadavky
                     prohlizecu a Lighthouse.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/generator-favicon-zdarma'
-                    >
-                      Otevrit nastroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/generator-favicon-zdarma'
+                    label='Otevrit nastroj'
+                  />
                 </div>
               ),
             },
@@ -690,6 +686,7 @@ export default function ToolsIndexPage() {
           title='Text a SEO'
           description='Nastroje pro kontrolu delky textu, meta tagu a nahled stranky ve vysledcich vyhledavani.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiFileTextLine className={largeIconSizeClasses} />,
@@ -704,14 +701,10 @@ export default function ToolsIndexPage() {
                     nahledem Google. Vyhnete se oriznutym titulkum a popisum ve
                     vysledcich vyhledavani.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/kontrola-meta-titulku-a-popisu'
-                    >
-                      Otevrit nastroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/kontrola-meta-titulku-a-popisu'
+                    label='Otevrit nastroj'
+                  />
                 </div>
               ),
             },
@@ -729,14 +722,10 @@ export default function ToolsIndexPage() {
                     produktu. Nastroj pocita slova, znaky, odstavce a dobu
                     cteni.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/pocitadlo-slov-a-znaku'
-                    >
-                      Otevrit nastroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/pocitadlo-slov-a-znaku'
+                    label='Otevrit nastroj'
+                  />
                 </div>
               ),
             },
@@ -754,11 +743,10 @@ export default function ToolsIndexPage() {
                     Ipsum, Hipster, Business, Bacon a další. Zkopírujte jako
                     text nebo HTML.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/generator-lorem-ipsum'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/generator-lorem-ipsum'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -771,6 +759,7 @@ export default function ToolsIndexPage() {
           title='E-mail a komunikace'
           description='Nastroje pro profesionalni e-mailovou komunikaci a konzistentni image znacky.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiMailLine className={largeIconSizeClasses} />,
@@ -785,14 +774,10 @@ export default function ToolsIndexPage() {
                     sve udaje, vyberte barvy a zkopirujte hotovy HTML kod do
                     Gmailu, Outlooku nebo jineho e-mailoveho klienta.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/generator-podpisu-emailu-zdarma'
-                    >
-                      Otevrit nastroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/generator-podpisu-emailu-zdarma'
+                    label='Otevrit nastroj'
+                  />
                 </div>
               ),
             },
@@ -805,6 +790,7 @@ export default function ToolsIndexPage() {
           title='QR kod'
           description='Generator QR kodu pro web, vizitky, menu a tiskoviny.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiQrCodeLine className={largeIconSizeClasses} />,
@@ -818,14 +804,10 @@ export default function ToolsIndexPage() {
                     Vytvorte QR kod pro web, vCard, menu restaurace nebo letak.
                     Export do PNG a SVG - bez prihlaseni, bez limitu.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/generator-qr-kodu-zdarma'
-                    >
-                      Otevrit nastroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/generator-qr-kodu-zdarma'
+                    label='Otevrit nastroj'
+                  />
                 </div>
               ),
             },
@@ -838,6 +820,7 @@ export default function ToolsIndexPage() {
           title='Barvy a pristupnost'
           description='Nastroje pro praci s barvami, kontrastem a pristupnosti WCAG.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiContrast2Line className={largeIconSizeClasses} />,
@@ -853,14 +836,10 @@ export default function ToolsIndexPage() {
                     <strong>WCAG</strong> a pouzijte funkci{' '}
                     <strong>Match</strong> pro automatickou opravu.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/kontrola-kontrastu-barev'
-                    >
-                      Otevrit nastroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/kontrola-kontrastu-barev'
+                    label='Otevrit nastroj'
+                  />
                 </div>
               ),
             },
@@ -877,14 +856,10 @@ export default function ToolsIndexPage() {
                     barvy. Zkopirujte HEX kody jednim kliknutim a pouzijte je
                     kdekoliv.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/extraktor-barev-z-obrazku'
-                    >
-                      Otevrit nastroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/extraktor-barev-z-obrazku'
+                    label='Otevrit nastroj'
+                  />
                 </div>
               ),
             },
@@ -901,14 +876,10 @@ export default function ToolsIndexPage() {
                     monochromatickou, komplementarni, triadickou, pastelovou,
                     tmavou a dalsi. Zkopirujte HEX kody jednim kliknutim.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/generator-barevnych-palet'
-                    >
-                      Otevrit nastroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/generator-barevnych-palet'
+                    label='Otevrit nastroj'
+                  />
                 </div>
               ),
             },
@@ -921,6 +892,7 @@ export default function ToolsIndexPage() {
           title='Převodníky obrazových formátů'
           description='12 převodníků obrázků - převádějte mezi JPG, PNG, WebP, SVG, BMP a GIF. Převod v prohlížeči, bez odesílání souborů.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
@@ -934,11 +906,10 @@ export default function ToolsIndexPage() {
                     Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o
                     35%.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-jpg-na-webp'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-jpg-na-webp'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -954,11 +925,10 @@ export default function ToolsIndexPage() {
                     Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez
                     registrace.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-png-na-jpg'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-png-na-jpg'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -971,11 +941,10 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>Převeďte soubory WebP na univerzálně kompatibilní JPG.</p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-webp-na-jpg'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-webp-na-jpg'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -991,11 +960,10 @@ export default function ToolsIndexPage() {
                     Převeďte grafiku PNG na WebP. Menší soubory se zachováním
                     průhlednosti.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-png-na-webp'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-png-na-webp'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -1011,11 +979,10 @@ export default function ToolsIndexPage() {
                     Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování
                     v prohlížeči.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-jpg-na-png'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-jpg-na-png'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -1031,11 +998,10 @@ export default function ToolsIndexPage() {
                     Převeďte obrázky WebP na bezeztrátové PNG. Lokální
                     zpracování.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-webp-na-png'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-webp-na-png'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -1047,6 +1013,7 @@ export default function ToolsIndexPage() {
           title='Datové převodníky'
           description='Online převodníky datových formátů — převádějte mezi CSV, JSON, XML, YAML, Markdown a HTML. Zpracování v prohlížeči.'
           grid='three'
+          cardVariant='dark'
           items={[
             {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
@@ -1060,11 +1027,10 @@ export default function ToolsIndexPage() {
                     Převeďte CSV do formátu JSON. Automatické rozpoznání
                     oddělovačů a formátování.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-csv-na-json'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-csv-na-json'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -1079,11 +1045,10 @@ export default function ToolsIndexPage() {
                   <p>
                     Převeďte JSON data do formátu CSV. Zpracování v prohlížeči.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-json-na-csv'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-json-na-csv'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -1099,11 +1064,10 @@ export default function ToolsIndexPage() {
                     Převeďte XML data do JSON. Konverze v prohlížeči s validací
                     struktury.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-xml-na-json'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-xml-na-json'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -1119,11 +1083,10 @@ export default function ToolsIndexPage() {
                     Převeďte JSON data do platného XML. Konverze v prohlížeči s
                     formátováním.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-json-na-xml'>
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-json-na-xml'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -1139,14 +1102,10 @@ export default function ToolsIndexPage() {
                     Převeďte YAML konfiguraci do JSON. Validace a formátování v
                     prohlížeči.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/prevodnik-yaml-na-json'
-                    >
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-yaml-na-json'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },
@@ -1162,14 +1121,10 @@ export default function ToolsIndexPage() {
                     Převeďte JSON data do čitelného YAML. Zpracování v
                     prohlížeči.
                   </p>
-                  <div className='mt-4'>
-                    <ButtonLink
-                      arrow
-                      href='/cs/nastroje/prevodnik-json-na-yaml'
-                    >
-                      Otevřít nástroj
-                    </ButtonLink>
-                  </div>
+                  <ToolCardFooter
+                    href='/cs/nastroje/prevodnik-json-na-yaml'
+                    label='Otevřít nástroj'
+                  />
                 </div>
               ),
             },

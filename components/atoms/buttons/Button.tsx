@@ -22,6 +22,7 @@ interface ButtonProps {
   className?: string;
   type?: 'button' | 'submit' | 'reset';
   ariaLabel?: string;
+  ariaPressed?: boolean;
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -47,6 +48,7 @@ export default function Button({
   className,
   type = 'button',
   ariaLabel,
+  ariaPressed,
 }: ButtonProps) {
   return (
     <button
@@ -54,6 +56,7 @@ export default function Button({
       onClick={onClick}
       disabled={disabled}
       aria-label={ariaLabel}
+      aria-pressed={ariaPressed}
       className={cn(
         buttonClasses,
         focusRingClasses,
