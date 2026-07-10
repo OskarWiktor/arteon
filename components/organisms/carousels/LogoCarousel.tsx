@@ -27,7 +27,14 @@ import { useEventListener } from '@/hooks/useEventListener';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { useTimeout } from '@/hooks/useTimeout';
 import { cn } from '@/lib/clsx';
-import { flexCenterClasses, focusRingClasses } from '@/lib/uiClasses';
+import {
+  carouselEdgeFadeClasses,
+  carouselEdgeFadeLeftClasses,
+  carouselEdgeFadePrimaryLeftClasses,
+  carouselEdgeFadePrimaryRightClasses,
+  flexCenterClasses,
+  focusRingClasses,
+} from '@/lib/uiClasses';
 
 interface LogoCarouselDefaultItem {
   label: string;
@@ -225,7 +232,10 @@ export default function LogoCarousel({
       <section className='relative overflow-hidden'>
         <div
           ref={containerRef}
-          className={cn('overflow-hidden rounded-lg', focusRingClasses)}
+          className={cn(
+            'relative overflow-hidden rounded-lg',
+            focusRingClasses,
+          )}
           role='region'
           aria-label='Przewijana lista logo firm.'
           onMouseEnter={() => setIsPaused(true)}
@@ -258,6 +268,15 @@ export default function LogoCarousel({
               ),
             )}
           </ul>
+
+          <div
+            aria-hidden='true'
+            className={carouselEdgeFadePrimaryLeftClasses}
+          />
+          <div
+            aria-hidden='true'
+            className={carouselEdgeFadePrimaryRightClasses}
+          />
         </div>
       </section>
     );
@@ -275,7 +294,7 @@ export default function LogoCarousel({
 
       <div
         ref={containerRef}
-        className={cn('overflow-hidden rounded-lg', focusRingClasses)}
+        className={cn('relative overflow-hidden rounded-lg', focusRingClasses)}
         role='region'
         aria-label='Przewijana lista technologii.'
         onMouseEnter={() => setIsPaused(true)}
@@ -315,6 +334,9 @@ export default function LogoCarousel({
             ),
           )}
         </ul>
+
+        <div aria-hidden='true' className={carouselEdgeFadeLeftClasses} />
+        <div aria-hidden='true' className={carouselEdgeFadeClasses} />
       </div>
     </section>
   );

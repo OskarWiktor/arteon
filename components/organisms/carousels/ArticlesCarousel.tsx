@@ -1,13 +1,17 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, type ReactNode } from 'react';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { cn } from '@/lib/clsx';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
+import {
+  carouselEdgeFadeClasses,
+  focusRingClasses,
+  noScrollbarClasses,
+} from '@/lib/uiClasses';
 import type { ArticlePreview } from '@/types/article';
 import { getPrimaryCategorySlug } from '@/utils/blogCategory';
 
@@ -18,6 +22,7 @@ type Props = {
   max?: number;
   title?: string;
   subtitle?: string;
+  description?: ReactNode;
   categorySlug?: string;
   slugs?: string | string[];
   excludeSlug?: string;
@@ -40,6 +45,7 @@ export default function ArticlesCarousel({
   max = 10,
   title = 'Edukacja i artykuły',
   subtitle,
+  description,
   categorySlug,
   slugs,
   excludeSlug,
@@ -103,78 +109,85 @@ export default function ArticlesCarousel({
     : '/edukacja';
 
   return (
-    <section className='w-full' aria-labelledby='articles-heading'>
-      <SectionHeader
-        subtitle={subtitle}
-        title={title}
-        titleId='articles-heading'
-        buttonText='Zobacz wszystkie artykuły'
-        buttonLink={allArticlesHref}
-      />
-
-      <div className='relative'>
-        <div
-          ref={scrollRef}
-          className={cn(
-            'flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
-            noScrollbarClasses,
-            focusRingClasses,
-          )}
-          role='region'
-          aria-roledescription='carousel'
-          aria-label='Karuzela artykułów'
-          aria-live='polite'
-          tabIndex={0}
-          onKeyDown={onKeyDown}
-        >
-          {finalArticles.map((a, i) => {
-            const catSlug = getPrimaryCategorySlug(a);
-            const href = `/edukacja/${catSlug}/${a.slug}`;
-
-            return (
-              <div
-                key={a.slug}
-                ref={
-                  i === 0
-                    ? (el: HTMLDivElement | null) => {
-                        cardRef.current = el;
-                      }
-                    : null
-                }
-                className='w-85 shrink-0 snap-start md:w-105 lg:w-130'
-                role='group'
-                aria-label={`Artykuł ${i + 1} z ${finalArticles.length}`}
-              >
-                <CarouselCard
-                  variant='article'
-                  article={a}
-                  href={href}
-                  readingTimeLabel='min czytania'
-                />
-              </div>
-            );
-          })}
-        </div>
-
-        <CarouselNavButtons
-          isScrollable={isScrollable}
-          onPrev={() => scrollByCards('left')}
-          onNext={() => scrollByCards('right')}
-          prevLabel='Przewiń w lewo'
-          nextLabel='Przewiń w prawo'
+    <div className='flex w-full flex-col gap-6 lg:flex-row lg:items-center lg:gap-8'>
+      <div className='lg:w-1/3'>
+        <SectionInfo
+          title={title}
+          subtitle={subtitle}
+          description={description}
+          descriptionClassName='font-medium italic'
+          btnTwo='Zobacz wszystkie artykuły'
+          btnTwoHref={allArticlesHref}
         />
       </div>
 
-      <CarouselDots
-        isScrollable={isScrollable}
-        currentSlide={currentSlide}
-        maxSlides={maxSlides}
-        onDotClick={goToSlide}
-        carouselNavigationLabel='Nawigacja karuzeli artykułów'
-        goToSlideLabel='Przejdź do slajdu'
-        ofLabel='z'
-        slideLabel='Slajd'
-      />
-    </section>
+      <div className='lg:w-2/3'>
+        <div className='relative'>
+          <div
+            ref={scrollRef}
+            className={cn(
+              'flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+              noScrollbarClasses,
+              focusRingClasses,
+            )}
+            role='region'
+            aria-roledescription='carousel'
+            aria-label='Karuzela artykułów'
+            aria-live='polite'
+            tabIndex={0}
+            onKeyDown={onKeyDown}
+          >
+            {finalArticles.map((a, i) => {
+              const catSlug = getPrimaryCategorySlug(a);
+              const href = `/edukacja/${catSlug}/${a.slug}`;
+
+              return (
+                <div
+                  key={a.slug}
+                  ref={
+                    i === 0
+                      ? (el: HTMLDivElement | null) => {
+                          cardRef.current = el;
+                        }
+                      : null
+                  }
+                  className='w-85 shrink-0 snap-start md:w-105 lg:w-130'
+                  role='group'
+                  aria-label={`Artykuł ${i + 1} z ${finalArticles.length}`}
+                >
+                  <CarouselCard
+                    variant='article'
+                    article={a}
+                    href={href}
+                    readingTimeLabel='min czytania'
+                  />
+                </div>
+              );
+            })}
+          </div>
+
+          <div aria-hidden='true' className={carouselEdgeFadeClasses} />
+
+          <CarouselNavButtons
+            isScrollable={isScrollable}
+            onPrev={() => scrollByCards('left')}
+            onNext={() => scrollByCards('right')}
+            prevLabel='Przewiń w lewo'
+            nextLabel='Przewiń w prawo'
+          />
+        </div>
+
+        <CarouselDots
+          isScrollable={isScrollable}
+          currentSlide={currentSlide}
+          maxSlides={maxSlides}
+          onDotClick={goToSlide}
+          carouselNavigationLabel='Nawigacja karuzeli artykułów'
+          goToSlideLabel='Przejdź do slajdu'
+          ofLabel='z'
+          slideLabel='Slajd'
+        />
+      </div>
+    </div>
   );
 }

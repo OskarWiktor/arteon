@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { getAllProjectPreviews } from '@/lib/projectsDataService';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 import ProjectsCarouselClient from './ProjectsCarouselClient';
@@ -7,6 +8,7 @@ type Props = {
   max?: number;
   title?: string;
   subtitle?: string;
+  description?: ReactNode;
   category?: ProjectCategory;
   slugs?: string | string[];
   excludeSlug?: string;

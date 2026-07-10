@@ -41,7 +41,7 @@ export default function CarouselCard(props: CarouselCardProps) {
     } = props;
     return (
       <CarouselCardShell href={href} image={image} title={title}>
-        <p className='line-clamp-2 pt-4 text-[#B9AE9E]!'>{description}</p>
+        <p className='line-clamp-2 pt-4 text-[#AD9D90]!'>{description}</p>
         <div
           className='mt-4 mb-2 h-px w-full bg-[#483135]!'
           aria-hidden='true'
@@ -50,7 +50,7 @@ export default function CarouselCard(props: CarouselCardProps) {
           <InlineLink
             href={href}
             aria-label={`${buttonLabel}: ${title}`}
-            className="inline-flex rounded-lg text-[#B9AE9E]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+            className="inline-flex rounded-lg text-[#AD9D90]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
           >
             <span className='text-[#E5DCD3]!'>{buttonLabel}</span>
             <ArrowIcon />
@@ -69,12 +69,12 @@ export default function CarouselCard(props: CarouselCardProps) {
         title={article.title}
       >
         {article.readingTime && article.datePublished && (
-          <span className='inline-flex pt-2 text-sm text-[#B9AE9E]!'>
+          <span className='inline-flex pt-2 text-sm text-[#AD9D90]!'>
             {article.readingTime} min. czytania • {article.datePublished}
           </span>
         )}
         {article.excerpt && (
-          <p className='line-clamp-3 pt-4 text-[#B9AE9E]!'>{article.excerpt}</p>
+          <p className='line-clamp-3 pt-4 text-[#AD9D90]!'>{article.excerpt}</p>
         )}
         <div
           className='mt-4 mb-2 h-px w-full bg-[#483135]!'
@@ -106,7 +106,7 @@ export default function CarouselCard(props: CarouselCardProps) {
       title={project.title}
       imageAspectClassName='aspect-3/2'
     >
-      <p className='line-clamp-3 pt-4 text-[#B9AE9E]!'>{project.short}</p>
+      <p className='line-clamp-3 pt-4 text-[#AD9D90]!'>{project.short}</p>
 
       <div className='mt-auto'>
         <div

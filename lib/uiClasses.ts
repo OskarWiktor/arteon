@@ -22,3 +22,24 @@ export const modalContentClasses =
 
 export const noScrollbarClasses =
   '[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden';
+
+/**
+ * Shared geometry for a carousel edge fade: a full-height, non-interactive band
+ * (capped at 160px, 360px on md+) sitting above the track. `from-transparent`
+ * keeps the inner edge see-through; each variant below adds the side, direction
+ * and the color it fades into. Belongs inside a `relative` track container.
+ */
+const carouselEdgeFadeBaseClasses =
+  'pointer-events-none absolute inset-y-0 z-10 w-[160px] md:w-[360px] from-transparent';
+
+/** Right edge fading into the page background. */
+export const carouselEdgeFadeClasses = `${carouselEdgeFadeBaseClasses} right-0 bg-gradient-to-r to-[var(--background)]`;
+
+/** Left edge fading into the page background. */
+export const carouselEdgeFadeLeftClasses = `${carouselEdgeFadeBaseClasses} left-0 bg-gradient-to-l to-[var(--background)]`;
+
+/** Right edge fading into the primary maroon (matches carousel cards). */
+export const carouselEdgeFadePrimaryRightClasses = `${carouselEdgeFadeBaseClasses} right-0 bg-gradient-to-r to-[var(--primary)]`;
+
+/** Left edge fading into the primary maroon (matches carousel cards). */
+export const carouselEdgeFadePrimaryLeftClasses = `${carouselEdgeFadeBaseClasses} left-0 bg-gradient-to-l to-[var(--primary)]`;

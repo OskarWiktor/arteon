@@ -1,13 +1,16 @@
 'use client';
 
 import { useRef } from 'react';
-import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
-import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
+import { CarouselNavCentered } from '@/components/molecules/carousels/CarouselNavCentered';
 import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { cn } from '@/lib/clsx';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
+import {
+  carouselEdgeFadeClasses,
+  focusRingClasses,
+  noScrollbarClasses,
+} from '@/lib/uiClasses';
 import type { Testimonial } from '@/types/testimonial';
 import SectionHeader from '../../molecules/SectionHeader';
 
@@ -21,7 +24,7 @@ interface TestimonialsCarouselProps {
 }
 
 export default function TestimonialsCarousel({
-  title = 'Opinie od naszych klientów',
+  title = 'Zobacz co mówią o nas inni',
   subtitle,
   testimonials,
   ids,
@@ -65,6 +68,7 @@ export default function TestimonialsCarousel({
         subtitle={subtitle}
         title={title}
         titleId='testimonials-heading'
+        containerClassName='text-center'
       />
 
       <div className='relative'>
@@ -101,20 +105,18 @@ export default function TestimonialsCarousel({
           ))}
         </div>
 
-        <CarouselNavButtons
-          isScrollable={isScrollable}
-          onPrev={() => scrollByCards('left')}
-          onNext={() => scrollByCards('right')}
-          prevLabel='Przewiń w lewo'
-          nextLabel='Przewiń w prawo'
-        />
+        <div aria-hidden='true' className={carouselEdgeFadeClasses} />
       </div>
 
-      <CarouselDots
+      <CarouselNavCentered
         isScrollable={isScrollable}
         currentSlide={currentSlide}
         maxSlides={maxSlides}
+        onPrev={() => scrollByCards('left')}
+        onNext={() => scrollByCards('right')}
         onDotClick={goToSlide}
+        prevLabel='Przewiń w lewo'
+        nextLabel='Przewiń w prawo'
         carouselNavigationLabel='Nawigacja karuzeli'
         goToSlideLabel='Przejdź do slajdu'
         ofLabel='z'
