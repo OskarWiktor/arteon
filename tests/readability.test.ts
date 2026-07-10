@@ -90,12 +90,4 @@ describe('calculateReadability — nieobsługiwane alfabety', () => {
     expect(r.fleschScore).not.toBeNull();
     expect(r.unsupportedScript).toBe(false);
   });
-
-  it('ocenia grecki (obsługiwany alfabet) — bez flagi', () => {
-    const r = calculateReadability(
-      'Αυτό είναι ένα κείμενο. Εδώ είναι άλλη πρόταση. Πρέπει να δουλεύει.',
-      'el',
-    );
-    expect(r.unsupportedScript).toBe(false);
-  });
 });

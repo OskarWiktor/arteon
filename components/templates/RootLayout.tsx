@@ -187,7 +187,11 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
 
         {/* Google Tag Manager — placed after the Consent Mode defaults above so
             GTM and every tag it fires respect the default (denied) consent
-            state in EEA/UK regions. Reuses the dataLayer initialized there. */}
+            state in EEA/UK regions. Reuses the dataLayer initialized there.
+            Kept as an inline script (not the @next/third-parties GoogleTagManager
+            component) precisely to guarantee this ordering relative to the
+            inline Consent Mode defaults — the component gives no such control. */}
+        {/* eslint-disable-next-line @next/next/next-script-for-ga */}
         <script
           id='google-tag-manager'
           dangerouslySetInnerHTML={{

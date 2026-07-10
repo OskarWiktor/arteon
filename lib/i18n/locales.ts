@@ -1,6 +1,5 @@
 import csDict from '@/data/cs/dictionary.json';
 import deDict from '@/data/de/dictionary.json';
-import elDict from '@/data/el/dictionary.json';
 import enDict from '@/data/en/dictionary.json';
 import esDict from '@/data/es/dictionary.json';
 import frDict from '@/data/fr/dictionary.json';
@@ -41,7 +40,6 @@ const dicts = {
   pt: ptDict,
   it: itDict,
   cs: csDict,
-  el: elDict,
 } as const;
 
 export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
@@ -140,18 +138,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/cs/kontakt',
     privacyHref: '/cs/zasady-ochrany-soukromi',
     termsHref: '/cs/podminky-pouzivani',
-  },
-  el: {
-    lang: 'el',
-    hreflang: 'el',
-    label: 'EL',
-    name: 'Ελληνικά',
-    toolsBasePath: '/el/ergaleia',
-    toolsIndexHref: '/el/ergaleia',
-    aboutHref: '/el/sxetika-me-emas',
-    contactHref: '/el/epikoinonia',
-    privacyHref: '/el/politiki-aporritou',
-    termsHref: '/el/oroi-chrisis',
   },
 };
 

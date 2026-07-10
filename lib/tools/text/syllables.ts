@@ -37,8 +37,6 @@ export function countSyllablesInWord(
     case 'pl':
     case 'cs':
       return countSyllablesSlavic(w);
-    case 'el':
-      return countSyllablesEL(w);
     default:
       return countSyllablesGeneric(w);
   }
@@ -207,26 +205,6 @@ function countSyllablesSlavic(word: string): number {
   // The vowel-group approach (matching consecutive vowels) handles this correctly.
   // Vowels: a, e, i, o, u, y, ą, ę, ó (PL) + á, é, í, ú, ů, ý, ě (CS)
   const vowels = word.match(/[aeiouyąęóáéíúůýě]+/gi);
-  return Math.max(1, vowels ? vowels.length : 1);
-}
-
-// ---------------------------------------------------------------------------
-// Greek syllable counter
-// ---------------------------------------------------------------------------
-
-function countSyllablesEL(word: string): number {
-  if (word.length <= 1) return 1;
-
-  // Greek diphthongs: αι, ει, οι, ου, αυ, ευ, ηυ
-  let w = word;
-  w = w
-    .replace(/αι/g, 'X')
-    .replace(/ει/g, 'X')
-    .replace(/οι/g, 'X')
-    .replace(/ου/g, 'X');
-  w = w.replace(/αυ/g, 'X').replace(/ευ/g, 'X').replace(/ηυ/g, 'X');
-
-  const vowels = w.match(/[αεηιοωυάέήίόώύϊϋΐΰX]/gi);
   return Math.max(1, vowels ? vowels.length : 1);
 }
 

@@ -121,7 +121,6 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
     pt: 'Ferramentas',
     it: 'Strumenti',
     cs: 'Nástroje',
-    el: 'Εργαλεία',
   },
   about: {
     en: 'About',
@@ -131,7 +130,6 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
     pt: 'Sobre nós',
     it: 'Chi siamo',
     cs: 'O nás',
-    el: 'Σχετικά με εμάς',
   },
   contact: {
     en: 'Contact',
@@ -141,7 +139,6 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
     pt: 'Contacto',
     it: 'Contatto',
     cs: 'Kontakt',
-    el: 'Επικοινωνία',
   },
   privacy: {
     en: 'Privacy Policy',
@@ -151,7 +148,6 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
     pt: 'Política de privacidade',
     it: 'Informativa sulla privacy',
     cs: 'Zásady ochrany soukromí',
-    el: 'Πολιτική απορρήτου',
   },
 };
 

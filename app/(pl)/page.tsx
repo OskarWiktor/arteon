@@ -6,12 +6,12 @@ import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { getHomepageAlternates } from '@/lib/i18n/pages/toolMeta';
 import type { Testimonial } from '@/types/testimonial';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 
 export const metadata = {
   title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',

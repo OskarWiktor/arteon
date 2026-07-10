@@ -383,47 +383,6 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       avatarUrl: '',
     };
   }
-  if (locale === 'el') {
-    return {
-      fullName:
-        '\u0393\u03b9\u03ac\u03bd\u03bd\u03b7\u03c2 \u03a0\u03b1\u03c0\u03b1\u03b4\u03cc\u03c0\u03bf\u03c5\u03bb\u03bf\u03c2',
-      jobTitle:
-        '\u03a0\u03c1\u03bf\u03b3\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03b9\u03c3\u03c4\u03ae\u03c2 \u0399\u03c3\u03c4\u03bf\u03cd',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'giannis.papadopoulos@paradeigma.gr',
-      phone: '+30 210 123 4567',
-      website: 'https://www.istoselida-sas.gr',
-      address:
-        '\u039b\u03b5\u03c9\u03c6. \u039a\u03b7\u03c6\u03b9\u03c3\u03af\u03b1\u03c2 15, \u0391\u03b8\u03ae\u03bd\u03b1, 11523',
-      extraLine:
-        '\u0394\u03b7\u03bc\u03b9\u03bf\u03c5\u03c1\u03b3\u03ce \u03b3\u03c1\u03ae\u03b3\u03bf\u03c1\u03b5\u03c2 \u03ba\u03b1\u03b9 \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03b9\u03ba\u03ad\u03c2 \u03b9\u03c3\u03c4\u03bf\u03c3\u03b5\u03bb\u03af\u03b4\u03b5\u03c2.',
-      ctaLabel:
-        '\u039a\u03bb\u03b5\u03af\u03c3\u03c4\u03b5 \u03b4\u03c9\u03c1\u03b5\u03ac\u03bd \u03c3\u03c5\u03bc\u03b2\u03bf\u03c5\u03bb\u03b5\u03c5\u03c4\u03b9\u03ba\u03ae',
-      ctaUrl: 'https://www.istoselida-sas.gr',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/giannispapadopoulos',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote:
-        '\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03bc\u03ae\u03bd\u03c5\u03bc\u03b1 \u03bc\u03c0\u03bf\u03c1\u03b5\u03af \u03bd\u03b1 \u03c0\u03b5\u03c1\u03b9\u03ad\u03c7\u03b5\u03b9 \u03b5\u03bc\u03c0\u03b9\u03c3\u03c4\u03b5\u03c5\u03c4\u03b9\u03ba\u03ad\u03c2 \u03c0\u03bb\u03b7\u03c1\u03bf\u03c6\u03bf\u03c1\u03af\u03b5\u03c2. \u0391\u03bd \u03b4\u03b5\u03bd \u03b5\u03af\u03c3\u03c4\u03b5 \u03bf \u03c0\u03c1\u03bf\u03bf\u03c1\u03b9\u03b6\u03cc\u03bc\u03b5\u03bd\u03bf\u03c2 \u03c0\u03b1\u03c1\u03b1\u03bb\u03ae\u03c0\u03c4\u03b7\u03c2, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03bf\u03cd\u03bc\u03b5 \u03b5\u03bd\u03b7\u03bc\u03b5\u03c1\u03ce\u03c3\u03c4\u03b5 \u03c4\u03bf\u03bd \u03b1\u03c0\u03bf\u03c3\u03c4\u03bf\u03bb\u03ad\u03b1 \u03ba\u03b1\u03b9 \u03b4\u03b9\u03b1\u03b3\u03c1\u03ac\u03c8\u03c4\u03b5 \u03b1\u03c5\u03c4\u03cc \u03c4\u03bf \u03bc\u03ae\u03bd\u03c5\u03bc\u03b1.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
   return {
     fullName: 'Jan Kowalski',
     jobTitle: 'Web Developer',

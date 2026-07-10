@@ -3,10 +3,10 @@ import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getContactAlternates } from '@/lib/i18n/pages/contact';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 
 export const metadata = {
   title:

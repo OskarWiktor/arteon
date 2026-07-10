@@ -17,7 +17,6 @@ export const AD_LABEL: Record<Locale, string> = {
   pt: 'PUBLICIDADE',
   it: 'PUBBLICITÀ',
   cs: 'REKLAMA',
-  el: 'ΔΙΑΦΗΜΙΣΗ',
 };
 
 /** Zwraca etykietę reklamy dla danego języka (fallback: angielski). */

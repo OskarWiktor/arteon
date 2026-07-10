@@ -1,6 +1,5 @@
 ﻿import cs from '@/data/cs/tools-ui/word-count.json';
 import de from '@/data/de/tools-ui/word-count.json';
-import el from '@/data/el/tools-ui/word-count.json';
 import en from '@/data/en/tools-ui/word-count.json';
 import es from '@/data/es/tools-ui/word-count.json';
 import fr from '@/data/fr/tools-ui/word-count.json';
@@ -18,5 +17,4 @@ export const ui = {
   pt,
   it,
   cs,
-  el,
 } as const satisfies Record<Locale, unknown>;

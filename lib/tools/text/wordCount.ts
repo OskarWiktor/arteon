@@ -67,10 +67,6 @@ const READING_TIME_FMT: Record<Locale, (m: number) => string> = {
     if (m >= 2 && m <= 4) return `${m} minuty`;
     return `${m} minut`;
   },
-  el: m =>
-    m === 1
-      ? '1 \u03bb\u03b5\u03c0\u03c4\u03cc'
-      : `${m} \u03bb\u03b5\u03c0\u03c4\u03ac`,
 };
 
 export function formatReadingTime(

@@ -215,10 +215,6 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
     import('@/data/cs/dictionary.json').then(m =>
       DictionarySchema.parse(m.default),
     ),
-  el: () =>
-    import('@/data/el/dictionary.json').then(m =>
-      DictionarySchema.parse(m.default),
-    ),
 };
 
 const cache = new Map<Locale, Dictionary>();

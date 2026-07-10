@@ -204,9 +204,8 @@ export const CONVERTER_REDIRECTS: Record<string, string> = {
     '/cs/nastroje/prevodnik-jpg-na-webp',
   // FI
   '/fi/tyokalut/jpg-png-webp-muunnin': '/fi/tyokalut/jpg-webp-muunnin',
-  // EL
-  '/el/ergaleia/metatropeas-jpg-png-se-webp':
-    '/el/ergaleia/metatropeas-jpg-se-webp',
+  // EL (lokalizacja usunięta 2026-07-10 → bezpośrednio na /en/, bez łańcucha)
+  '/el/ergaleia/metatropeas-jpg-png-se-webp': '/en/tools/jpg-to-webp-converter',
 };
 
 /**
@@ -701,7 +700,133 @@ export const DPI_TO_PPI_REMOVAL_REDIRECTS: Record<string, string> = {
   '/nl/tools/dpi-naar-ppi-converter': '/nl/tools/px-naar-cm-converter',
   '/cs/nastroje/prevodnik-dpi-na-ppi': '/cs/nastroje/prevodnik-px-na-cm',
   '/fi/tyokalut/dpi-ppi-muunnin': '/fi/tyokalut/px-cm-muunnin',
-  '/el/ergaleia/metatropeas-dpi-se-ppi': '/el/ergaleia/metatropeas-px-se-cm',
+  // EL usunięte 2026-07-10 → bezpośrednio na /en/ (bez łańcucha przez /el/)
+  '/el/ergaleia/metatropeas-dpi-se-ppi': '/en/tools/px-to-cm-converter',
+};
+
+/**
+ * Redirecty dla usuniętej lokalizacji greckiej /el/ (2026-07-10)
+ * Tylko jedna strona przynosiła realny ruch; cała lokalizacja usunięta.
+ * Wszystkie URL-e (strony informacyjne + narzędzia) przekierowują na
+ * odpowiedniki angielskie /en/.
+ */
+export const EL_REMOVAL_REDIRECTS: Record<string, string> = {
+  '/el': '/en',
+  '/el/ergaleia': '/en/tools',
+  '/el/sxetika-me-emas': '/en/about',
+  '/el/epikoinonia': '/en/contact',
+  '/el/politiki-aporritou': '/en/privacy-policy',
+  '/el/oroi-chrisis': '/en/terms-of-service',
+  '/el/xartis-istotopou': '/en/sitemap',
+  '/el/ergaleia/epexergasia-eikonas': '/en/tools/online-image-editor',
+  '/el/ergaleia/dorean-dimiourgia-favicon': '/en/tools/free-favicon-generator',
+  '/el/ergaleia/elegkhos-meta-titlou-kai-perigrafis':
+    '/en/tools/meta-title-description-length-checker',
+  '/el/ergaleia/metritis-lexeon-kai-charaktiron':
+    '/en/tools/word-and-character-counter',
+  '/el/ergaleia/gennitra-lorem-ipsum': '/en/tools/lorem-ipsum-generator',
+  '/el/ergaleia/dorean-dimiourgia-ypografis-email':
+    '/en/tools/free-email-signature-generator',
+  '/el/ergaleia/elegkhos-kontrast-chromaton':
+    '/en/tools/color-contrast-checker',
+  '/el/ergaleia/exagogi-chromaton-apo-eikona':
+    '/en/tools/image-color-extractor',
+  '/el/ergaleia/dimiourgia-paletas-chromaton':
+    '/en/tools/color-palette-generator',
+  '/el/ergaleia/dorean-dimiourgia-kodikou-qr':
+    '/en/tools/free-qr-code-generator',
+  '/el/ergaleia/metatropeas-png-se-jpg': '/en/tools/png-to-jpg-converter',
+  '/el/ergaleia/metatropeas-jpg-se-png': '/en/tools/jpg-to-png-converter',
+  '/el/ergaleia/metatropeas-webp-se-jpg': '/en/tools/webp-to-jpg-converter',
+  '/el/ergaleia/metatropeas-webp-se-png': '/en/tools/webp-to-png-converter',
+  '/el/ergaleia/metatropeas-svg-se-png': '/en/tools/svg-to-png-converter',
+  '/el/ergaleia/metatropeas-svg-se-jpg': '/en/tools/svg-to-jpg-converter',
+  '/el/ergaleia/metatropeas-bmp-se-jpg': '/en/tools/bmp-to-jpg-converter',
+  '/el/ergaleia/metatropeas-bmp-se-png': '/en/tools/bmp-to-png-converter',
+  '/el/ergaleia/metatropeas-gif-se-png': '/en/tools/gif-to-png-converter',
+  '/el/ergaleia/metatropeas-gif-se-jpg': '/en/tools/gif-to-jpg-converter',
+  '/el/ergaleia/metatropeas-jpg-se-webp': '/en/tools/jpg-to-webp-converter',
+  '/el/ergaleia/metatropeas-png-se-webp': '/en/tools/png-to-webp-converter',
+  '/el/ergaleia/metatropeas-svg-se-webp': '/en/tools/svg-to-webp-converter',
+  '/el/ergaleia/metatropeas-gif-se-webp': '/en/tools/gif-to-webp-converter',
+  '/el/ergaleia/metatropeas-bmp-se-webp': '/en/tools/bmp-to-webp-converter',
+  '/el/ergaleia/metatropeas-avif-se-jpg': '/en/tools/avif-to-jpg-converter',
+  '/el/ergaleia/metatropeas-avif-se-png': '/en/tools/avif-to-png-converter',
+  '/el/ergaleia/metatropeas-avif-se-webp': '/en/tools/avif-to-webp-converter',
+  '/el/ergaleia/metatropeas-heic-se-jpg': '/en/tools/heic-to-jpg-converter',
+  '/el/ergaleia/metatropeas-heic-se-png': '/en/tools/heic-to-png-converter',
+  '/el/ergaleia/metatropeas-heic-se-webp': '/en/tools/heic-to-webp-converter',
+  '/el/ergaleia/metatropeas-tiff-se-jpg': '/en/tools/tiff-to-jpg-converter',
+  '/el/ergaleia/metatropeas-tiff-se-png': '/en/tools/tiff-to-png-converter',
+  '/el/ergaleia/metatropeas-tiff-se-webp': '/en/tools/tiff-to-webp-converter',
+  '/el/ergaleia/metatropeas-jpg-se-avif': '/en/tools/jpg-to-avif-converter',
+  '/el/ergaleia/metatropeas-png-se-avif': '/en/tools/png-to-avif-converter',
+  '/el/ergaleia/metatropeas-webp-se-avif': '/en/tools/webp-to-avif-converter',
+  '/el/ergaleia/metatropeas-svg-se-avif': '/en/tools/svg-to-avif-converter',
+  '/el/ergaleia/metatropeas-bmp-se-avif': '/en/tools/bmp-to-avif-converter',
+  '/el/ergaleia/metatropeas-gif-se-avif': '/en/tools/gif-to-avif-converter',
+  '/el/ergaleia/metatropeas-heic-se-avif': '/en/tools/heic-to-avif-converter',
+  '/el/ergaleia/metatropeas-tiff-se-avif': '/en/tools/tiff-to-avif-converter',
+  '/el/ergaleia/metatropeas-jpg-se-gif': '/en/tools/jpg-to-gif-converter',
+  '/el/ergaleia/metatropeas-png-se-gif': '/en/tools/png-to-gif-converter',
+  '/el/ergaleia/metatropeas-webp-se-gif': '/en/tools/webp-to-gif-converter',
+  '/el/ergaleia/metatropeas-svg-se-gif': '/en/tools/svg-to-gif-converter',
+  '/el/ergaleia/metatropeas-bmp-se-gif': '/en/tools/bmp-to-gif-converter',
+  '/el/ergaleia/metatropeas-jpg-se-tiff': '/en/tools/jpg-to-tiff-converter',
+  '/el/ergaleia/metatropeas-png-se-tiff': '/en/tools/png-to-tiff-converter',
+  '/el/ergaleia/metatropeas-webp-se-tiff': '/en/tools/webp-to-tiff-converter',
+  '/el/ergaleia/metatropeas-svg-se-tiff': '/en/tools/svg-to-tiff-converter',
+  '/el/ergaleia/metatropeas-bmp-se-tiff': '/en/tools/bmp-to-tiff-converter',
+  '/el/ergaleia/metatropeas-avif-se-tiff': '/en/tools/avif-to-tiff-converter',
+  '/el/ergaleia/metatropeas-heic-se-tiff': '/en/tools/heic-to-tiff-converter',
+  '/el/ergaleia/metatropeas-jpg-se-pdf': '/en/tools/jpg-to-pdf-converter',
+  '/el/ergaleia/metatropeas-png-se-pdf': '/en/tools/png-to-pdf-converter',
+  '/el/ergaleia/metatropeas-webp-se-pdf': '/en/tools/webp-to-pdf-converter',
+  '/el/ergaleia/metatropeas-heic-se-pdf': '/en/tools/heic-to-pdf-converter',
+  '/el/ergaleia/metatropeas-bmp-se-pdf': '/en/tools/bmp-to-pdf-converter',
+  '/el/ergaleia/metatropeas-tiff-se-pdf': '/en/tools/tiff-to-pdf-converter',
+  '/el/ergaleia/metatropeas-svg-se-pdf': '/en/tools/svg-to-pdf-converter',
+  '/el/ergaleia/metatropeas-pdf-se-jpg': '/en/tools/pdf-to-jpg-converter',
+  '/el/ergaleia/metatropeas-pdf-se-png': '/en/tools/pdf-to-png-converter',
+  '/el/ergaleia/metatropeas-pdf-se-webp': '/en/tools/pdf-to-webp-converter',
+  '/el/ergaleia/metatropeas-csv-se-json': '/en/tools/csv-to-json-converter',
+  '/el/ergaleia/metatropeas-json-se-csv': '/en/tools/json-to-csv-converter',
+  '/el/ergaleia/metatropeas-xml-se-json': '/en/tools/xml-to-json-converter',
+  '/el/ergaleia/metatropeas-json-se-xml': '/en/tools/json-to-xml-converter',
+  '/el/ergaleia/metatropeas-yaml-se-json': '/en/tools/yaml-to-json-converter',
+  '/el/ergaleia/metatropeas-json-se-yaml': '/en/tools/json-to-yaml-converter',
+  '/el/ergaleia/metatropeas-markdown-se-html':
+    '/en/tools/markdown-to-html-converter',
+  '/el/ergaleia/metatropeas-html-se-markdown':
+    '/en/tools/html-to-markdown-converter',
+  '/el/ergaleia/metatropeas-eikona-se-base64':
+    '/en/tools/image-to-base64-converter',
+  '/el/ergaleia/metatropeas-base64-se-eikona':
+    '/en/tools/base64-to-image-converter',
+  '/el/ergaleia/metatropeas-pt-se-px': '/en/tools/pt-to-px-converter',
+  '/el/ergaleia/metatropeas-rem-se-px': '/en/tools/rem-to-px-converter',
+  '/el/ergaleia/metatropeas-em-se-px': '/en/tools/em-to-px-converter',
+  '/el/ergaleia/metatropeas-cm-se-px': '/en/tools/cm-to-px-converter',
+  '/el/ergaleia/metatropeas-px-se-cm': '/en/tools/px-to-cm-converter',
+  '/el/ergaleia/metatropeas-mm-se-px': '/en/tools/mm-to-px-converter',
+  '/el/ergaleia/metatropeas-px-se-mm': '/en/tools/px-to-mm-converter',
+  '/el/ergaleia/metatropeas-intses-se-px': '/en/tools/inches-to-px-converter',
+  '/el/ergaleia/metatropeas-cm-se-intses': '/en/tools/cm-to-inches-converter',
+  '/el/ergaleia/metatropeas-intsOn-se-cm': '/en/tools/inches-to-cm-converter',
+  '/el/ergaleia/metatropeas-mm-se-intses': '/en/tools/mm-to-inches-converter',
+  '/el/ergaleia/metatropeas-intsOn-se-mm': '/en/tools/inches-to-mm-converter',
+  '/el/ergaleia/metatropeas-kg-se-livres': '/en/tools/kg-to-lb-converter',
+  '/el/ergaleia/metatropeas-livres-se-kg': '/en/tools/lb-to-kg-converter',
+  '/el/ergaleia/metatropeas-hex-se-rgb': '/en/tools/hex-to-rgb-converter',
+  '/el/ergaleia/metatropeas-rgb-se-cmyk': '/en/tools/rgb-to-cmyk-converter',
+  '/el/ergaleia/metatropeas-bytes': '/en/tools/bytes-converter',
+  '/el/ergaleia/metatropeas-unix-timestamp':
+    '/en/tools/unix-timestamp-converter',
+  '/el/ergaleia/metatropeas-dekadiko-se-dyad':
+    '/en/tools/decimal-to-binary-converter',
+  '/el/ergaleia/metatropeas-dekadiko-se-hex':
+    '/en/tools/decimal-to-hex-converter',
+  '/el/ergaleia/metatropeas-mbps-se-mbs': '/en/tools/mbps-to-mbs-converter',
 };
 
 /**
@@ -722,4 +847,5 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...REMOVED_LOCALE_REDIRECTS_EU,
   ...REMOVED_LOCALE_REDIRECTS,
   ...DPI_TO_PPI_REMOVAL_REDIRECTS,
+  ...EL_REMOVAL_REDIRECTS,
 };

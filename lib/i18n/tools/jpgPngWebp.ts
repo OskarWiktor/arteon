@@ -1,6 +1,5 @@
 ﻿import cs from '@/data/cs/tools-ui/jpg-png-webp.json';
 import de from '@/data/de/tools-ui/jpg-png-webp.json';
-import el from '@/data/el/tools-ui/jpg-png-webp.json';
 import en from '@/data/en/tools-ui/jpg-png-webp.json';
 import es from '@/data/es/tools-ui/jpg-png-webp.json';
 import fr from '@/data/fr/tools-ui/jpg-png-webp.json';
@@ -18,5 +17,4 @@ export const ui = {
   pt,
   it,
   cs,
-  el,
 } as const satisfies Record<Locale, unknown>;

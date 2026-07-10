@@ -1,6 +1,5 @@
 ﻿import cs from '@/data/cs/pages/about.json';
 import de from '@/data/de/pages/about.json';
-import el from '@/data/el/pages/about.json';
 import en from '@/data/en/pages/about.json';
 import es from '@/data/es/pages/about.json';
 import fr from '@/data/fr/pages/about.json';
@@ -63,7 +62,6 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   pt,
   it,
   cs,
-  el,
 };
 
 // ---------------------------------------------------------------------------
