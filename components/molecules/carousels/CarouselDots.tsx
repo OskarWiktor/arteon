@@ -12,6 +12,11 @@ type CarouselDotsProps = {
   goToSlideLabel: string;
   ofLabel: string;
   slideLabel: string;
+  /**
+   * `start` (default) offsets the dots to clear the bottom-left nav arrows.
+   * `center` drops that offset so the dots can sit in a centered nav row.
+   */
+  align?: 'start' | 'center';
 };
 
 export function CarouselDots({
@@ -23,13 +28,17 @@ export function CarouselDots({
   goToSlideLabel,
   ofLabel,
   slideLabel,
+  align = 'start',
 }: CarouselDotsProps) {
   if (!isScrollable || maxSlides <= 1) return null;
 
   return (
     <>
       <div
-        className='mt-2 ml-40 flex justify-start md:gap-2'
+        className={cn(
+          'flex md:gap-2',
+          align === 'center' ? 'justify-center' : 'mt-2 ml-40 justify-start',
+        )}
         role='group'
         aria-label={carouselNavigationLabel}
       >

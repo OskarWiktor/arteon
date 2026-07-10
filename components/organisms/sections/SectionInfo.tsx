@@ -5,7 +5,8 @@ import SectionHeader from '../../molecules/SectionHeader';
 interface SectionInfoProps {
   title: string;
   subtitle?: string;
-  description?: string;
+  description?: ReactNode;
+  descriptionClassName?: string;
   children?: ReactNode;
   btnOne?: string;
   btnOneHref?: string;
@@ -18,6 +19,7 @@ export default function SectionInfo({
   title,
   subtitle,
   description,
+  descriptionClassName,
   btnOne,
   btnOneHref,
   btnTwo,
@@ -34,6 +36,7 @@ export default function SectionInfo({
         subtitle={subtitle}
         title={title}
         description={description}
+        descriptionClassName={descriptionClassName}
         titleId={headingId}
       />
 

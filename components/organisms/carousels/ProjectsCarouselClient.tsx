@@ -1,13 +1,17 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, type ReactNode } from 'react';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { cn } from '@/lib/clsx';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
+import {
+  carouselEdgeFadeClasses,
+  focusRingClasses,
+  noScrollbarClasses,
+} from '@/lib/uiClasses';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
@@ -17,6 +21,7 @@ type Props = {
   max?: number;
   title?: string;
   subtitle?: string;
+  description?: ReactNode;
   category?: ProjectCategory;
   slugs?: string | string[];
   excludeSlug?: string;
@@ -41,6 +46,7 @@ export default function ProjectsCarouselClient({
   max = 10,
   title = 'Nasze Realizacje',
   subtitle,
+  description,
   category,
   slugs,
   excludeSlug,
@@ -88,68 +94,75 @@ export default function ProjectsCarouselClient({
   if (!finalProjects.length) return null;
 
   return (
-    <section className='w-full' aria-labelledby='projects-heading'>
-      <SectionHeader
-        subtitle={subtitle}
-        title={title}
-        titleId='projects-heading'
-        buttonText='Inne realizacje'
-        buttonLink='/realizacje'
-      />
-
-      <div className='relative'>
-        <div
-          ref={scrollRef}
-          className={cn(
-            'flex snap-x snap-mandatory gap-8 overflow-x-auto scroll-smooth pb-8',
-            noScrollbarClasses,
-            focusRingClasses,
-          )}
-          role='region'
-          aria-roledescription='carousel'
-          aria-label='Karuzela projektów'
-          aria-live='polite'
-          tabIndex={0}
-          onKeyDown={onKeyDown}
-        >
-          {finalProjects.map((project, i) => (
-            <div
-              key={project.slug}
-              ref={
-                i === 0
-                  ? (el: HTMLDivElement | null) => {
-                      cardRef.current = el;
-                    }
-                  : null
-              }
-              className='w-80 shrink-0 snap-start md:w-90 lg:w-110'
-              role='group'
-              aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
-            >
-              <CarouselCard variant='project' project={project} />
-            </div>
-          ))}
-        </div>
-
-        <CarouselNavButtons
-          isScrollable={isScrollable}
-          onPrev={() => scrollByCards('left')}
-          onNext={() => scrollByCards('right')}
-          prevLabel='Przewiń w lewo'
-          nextLabel='Przewiń w prawo'
+    <div className='flex w-full flex-col gap-6 lg:flex-row lg:items-center lg:gap-8'>
+      <div className='lg:w-1/3'>
+        <SectionInfo
+          title={title}
+          subtitle={subtitle}
+          description={description}
+          descriptionClassName='font-medium italic'
+          btnTwo='Inne realizacje'
+          btnTwoHref='/realizacje'
         />
       </div>
 
-      <CarouselDots
-        isScrollable={isScrollable}
-        currentSlide={currentSlide}
-        maxSlides={maxSlides}
-        onDotClick={goToSlide}
-        carouselNavigationLabel='Nawigacja karuzeli'
-        goToSlideLabel='Przejdź do slajdu'
-        ofLabel='z'
-        slideLabel='Slajd'
-      />
-    </section>
+      <div className='lg:w-2/3'>
+        <div className='relative'>
+          <div
+            ref={scrollRef}
+            className={cn(
+              'flex snap-x snap-mandatory gap-8 overflow-x-auto scroll-smooth pb-8',
+              noScrollbarClasses,
+              focusRingClasses,
+            )}
+            role='region'
+            aria-roledescription='carousel'
+            aria-label='Karuzela projektów'
+            aria-live='polite'
+            tabIndex={0}
+            onKeyDown={onKeyDown}
+          >
+            {finalProjects.map((project, i) => (
+              <div
+                key={project.slug}
+                ref={
+                  i === 0
+                    ? (el: HTMLDivElement | null) => {
+                        cardRef.current = el;
+                      }
+                    : null
+                }
+                className='w-80 shrink-0 snap-start md:w-90 lg:w-110'
+                role='group'
+                aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
+              >
+                <CarouselCard variant='project' project={project} />
+              </div>
+            ))}
+          </div>
+
+          <div aria-hidden='true' className={carouselEdgeFadeClasses} />
+
+          <CarouselNavButtons
+            isScrollable={isScrollable}
+            onPrev={() => scrollByCards('left')}
+            onNext={() => scrollByCards('right')}
+            prevLabel='Przewiń w lewo'
+            nextLabel='Przewiń w prawo'
+          />
+        </div>
+
+        <CarouselDots
+          isScrollable={isScrollable}
+          currentSlide={currentSlide}
+          maxSlides={maxSlides}
+          onDotClick={goToSlide}
+          carouselNavigationLabel='Nawigacja karuzeli'
+          goToSlideLabel='Przejdź do slajdu'
+          ofLabel='z'
+          slideLabel='Slajd'
+        />
+      </div>
+    </div>
   );
 }
