@@ -22,8 +22,8 @@ import {
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
 import Backdrop from '../atoms/Backdrop';
-import ButtonLink from '../atoms/buttons/ButtonLink';
 import Button from '../atoms/buttons/Button';
+import ButtonLink from '../atoms/buttons/ButtonLink';
 
 type Cat = { label: string; slug: string; count: number };
 

@@ -88,15 +88,6 @@ export const LOCALE_SITEMAP_META: Record<Locale, LocaleSitemapMeta> = {
     intro: 'Úplný seznam všech bezplatných nástrojů a stránek v češtině.',
     infoHeading: 'Informace',
   },
-  el: {
-    path: '/el/xartis-istotopou',
-    title: 'Χάρτης ιστότοπου',
-    description:
-      'Χάρτης ιστότοπου της Arteon — όλα τα δωρεάν εργαλεία και οι σελίδες πληροφοριών σε ένα μέρος.',
-    intro:
-      'Πλήρης κατάλογος όλων των δωρεάν εργαλείων και σελίδων στα ελληνικά.',
-    infoHeading: 'Πληροφορίες',
-  },
 };
 
 /** `alternates` (canonical + hreflang for every locale + x-default) for a sitemap page. */

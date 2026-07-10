@@ -1,6 +1,5 @@
 ﻿import cs from '@/data/cs/tools-ui/color-palette.json';
 import de from '@/data/de/tools-ui/color-palette.json';
-import el from '@/data/el/tools-ui/color-palette.json';
 import en from '@/data/en/tools-ui/color-palette.json';
 import es from '@/data/es/tools-ui/color-palette.json';
 import fr from '@/data/fr/tools-ui/color-palette.json';
@@ -18,5 +17,4 @@ export const ui = {
   pt,
   it,
   cs,
-  el,
 } as const satisfies Record<Locale, unknown>;

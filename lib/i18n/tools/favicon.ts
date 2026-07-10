@@ -1,6 +1,5 @@
 ﻿import cs from '@/data/cs/tools-ui/favicon.json';
 import de from '@/data/de/tools-ui/favicon.json';
-import el from '@/data/el/tools-ui/favicon.json';
 import en from '@/data/en/tools-ui/favicon.json';
 import es from '@/data/es/tools-ui/favicon.json';
 import fr from '@/data/fr/tools-ui/favicon.json';
@@ -18,5 +17,4 @@ export const ui = {
   pt,
   it,
   cs,
-  el,
 } as const satisfies Record<Locale, unknown>;

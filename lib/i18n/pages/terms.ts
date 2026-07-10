@@ -1,6 +1,5 @@
 ﻿import cs from '@/data/cs/pages/terms.json';
 import de from '@/data/de/pages/terms.json';
-import el from '@/data/el/pages/terms.json';
 import en from '@/data/en/pages/terms.json';
 import es from '@/data/es/pages/terms.json';
 import fr from '@/data/fr/pages/terms.json';
@@ -47,7 +46,6 @@ const TERMS_DATA: Partial<Record<Locale, TermsPageData>> = {
   pt,
   it,
   cs,
-  el,
 };
 
 // ---------------------------------------------------------------------------

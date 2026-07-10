@@ -37,10 +37,6 @@ const dictLoaders: Record<Locale, () => Promise<ClientDictionary>> = {
     import('@/data/cs/dictionary.json').then(
       m => m.default as unknown as ClientDictionary,
     ),
-  el: () =>
-    import('@/data/el/dictionary.json').then(
-      m => m.default as unknown as ClientDictionary,
-    ),
 };
 
 export async function getClientDictionary(

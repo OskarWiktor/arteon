@@ -103,7 +103,6 @@ const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
   cs: standardFlesch(52),
   // Hungarian adaptation - agglutinative language with very long words (~2.0+ syl/word)
   // Greek adaptation - inflectional, longer words than EN but less extreme than PL/HU
-  el: standardFlesch(66),
 };
 
 /**
@@ -222,13 +221,6 @@ const READABILITY_LABELS: Record<
     difficult: 'Obtížné',
     veryDifficult: 'Velmi obtížné',
   },
-  el: {
-    veryEasy: 'Πολύ εύκολο',
-    easy: 'Εύκολο',
-    moderate: 'Μέτριο',
-    difficult: 'Δύσκολο',
-    veryDifficult: 'Πολύ δύσκολο',
-  },
 };
 
 // Locale-aware thresholds for readability labels.
@@ -240,7 +232,6 @@ const READABILITY_THRESHOLDS: Partial<
   it: [80, 60, 40, 20], // Gulpease: 80+ elementary, 60+ middle school, 40+ high school, <40 university
   pl: [80, 60, 40, 20], // Polish adapted formula: shifted thresholds for inflectional language
   cs: [80, 60, 40, 20], // Czech adapted formula: Slavic, similar to Polish
-  el: [80, 60, 45, 25], // Greek adapted formula: inflectional, moderate correction
 };
 
 const DEFAULT_THRESHOLDS: [number, number, number, number] = [90, 70, 50, 30];

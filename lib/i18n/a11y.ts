@@ -85,13 +85,6 @@ export const A11Y_UI: Record<Locale, A11yStrings> = {
     meets: 'splňuje',
     doesNotMeet: 'nesplňuje',
   },
-  el: {
-    colorSwatch: (i, v) => `Χρώμα ${i}: ${v}`,
-    tableRegion: 'Πίνακας',
-    themeToggle: 'Εναλλαγή φωτεινής ή σκοτεινής λειτουργίας',
-    meets: 'πληροί',
-    doesNotMeet: 'δεν πληροί',
-  },
 };
 
 /** Zwraca zestaw etykiet dostępności dla danego języka (fallback: angielski). */

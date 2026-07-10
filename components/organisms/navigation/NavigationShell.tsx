@@ -5,7 +5,8 @@ import Image from 'next/image';
 import { startTransition, useEffect, useState } from 'react';
 import { RiCloseLine, RiMenuLine, RiSearchLine } from 'react-icons/ri';
 import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
-//import ThemeToggle from '@/components/atoms/ThemeToggle';
+// ThemeToggle celowo zachowany do przyszłego włączenia przełącznika motywu.
+// import ThemeToggle from '@/components/atoms/ThemeToggle';
 import Wrapper from '@/components/atoms/Wrapper';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { DesktopNavSkeleton } from '@/components/organisms/skeletons/NavSkeleton';

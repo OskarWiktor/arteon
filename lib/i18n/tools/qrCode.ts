@@ -1,6 +1,5 @@
 ﻿import cs from '@/data/cs/tools-ui/qr-code.json';
 import de from '@/data/de/tools-ui/qr-code.json';
-import el from '@/data/el/tools-ui/qr-code.json';
 import en from '@/data/en/tools-ui/qr-code.json';
 import es from '@/data/es/tools-ui/qr-code.json';
 import fr from '@/data/fr/tools-ui/qr-code.json';
@@ -18,5 +17,4 @@ export const ui = {
   pt,
   it,
   cs,
-  el,
 } as const satisfies Record<Locale, unknown>;

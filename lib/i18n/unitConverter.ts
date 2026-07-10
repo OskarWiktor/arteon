@@ -90,14 +90,6 @@ export const UNIT_CONVERTER_I18N: Record<Locale, UnitConverterI18n> = {
     pickerSource: 'Převést z',
     pickerTarget: 'Převést na',
   },
-  el: {
-    titleConvertTo: u => `Μετατρέψτε άλλες μονάδες σε ${u}`,
-    titleConvertFrom: u => `Μετατρέψτε ${u} σε άλλες μονάδες`,
-    titleOtherConverters: 'Εξερευνήστε άλλους μετατροπείς μονάδων',
-    connector: 'σε',
-    pickerSource: 'Μετατροπή από',
-    pickerTarget: 'Μετατροπή σε',
-  },
 };
 
 /** Zwraca teksty konwertera jednostek dla danego języka (fallback: angielski). */

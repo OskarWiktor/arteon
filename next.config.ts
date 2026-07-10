@@ -168,7 +168,6 @@ const nextConfig: NextConfig = {
       { source: '/pt', destination: '/pt/ferramentas', statusCode: 301 },
       { source: '/it', destination: '/it/strumenti', statusCode: 301 },
       { source: '/cs', destination: '/cs/nastroje', statusCode: 301 },
-      { source: '/el', destination: '/el/ergaleia', statusCode: 301 },
     ];
 
     const sitemapRedirects: Redirect[] = [

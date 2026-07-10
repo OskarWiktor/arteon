@@ -32,7 +32,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       pt: { title: 'Imagens e favicons' },
       it: { title: 'Immagini e favicon' },
       cs: { title: 'Obrázky a favicony' },
-      el: { title: 'Εικόνες και favicon' },
     },
   },
   {
@@ -47,7 +46,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       pt: { title: 'Texto e SEO' },
       it: { title: 'Testo e SEO' },
       cs: { title: 'Text a SEO' },
-      el: { title: 'Κείμενο & SEO' },
     },
   },
   {
@@ -62,7 +60,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       pt: { title: 'E-mail e comunicação' },
       it: { title: 'E-mail e comunicazione' },
       cs: { title: 'E-mail a komunikace' },
-      el: { title: 'Email & επικοινωνία' },
     },
   },
   {
@@ -77,7 +74,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       pt: { title: 'Cores e acessibilidade' },
       it: { title: 'Colori e accessibilità' },
       cs: { title: 'Barvy a přístupnost' },
-      el: { title: 'Χρώματα & παλέτες' },
     },
   },
   {
@@ -92,7 +88,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       pt: { title: 'Impressão e materiais' },
       it: { title: 'Stampa e materiali' },
       cs: { title: 'Tisk a materiály' },
-      el: { title: 'Εκτύπωση & QR' },
     },
   },
   {
@@ -106,7 +101,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       de: { title: 'Bildformat' },
       pt: { title: 'Conversores de formato' },
       it: { title: 'Convertitori di formato' },
-      el: { title: 'Μετατροπείς μορφής' },
       cs: { title: 'Konvertory formátů' },
     },
   },
@@ -122,7 +116,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       pt: { title: 'Conversores de dados' },
       it: { title: 'Convertitori di dati' },
       cs: { title: 'Datové převodníky' },
-      el: { title: 'Μετατροπείς δεδομένων' },
     },
   },
   {
@@ -137,7 +130,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       pt: { title: 'Conversores de unidades' },
       it: { title: 'Convertitori di unità' },
       cs: { title: 'Převodníky jednotek' },
-      el: { title: 'Μετατροπείς μονάδων' },
     },
   },
 ];
@@ -210,12 +202,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Změňte velikost, ořízněte a převeďte obrázek. Hotové formáty pro sociální sítě, kulaté avatary, export JPG/PNG/WebP.',
       },
-      el: {
-        slug: 'epexergasia-eikonas',
-        title: 'Επεξεργασία εικόνας',
-        description:
-          'Αλλάξτε μέγεθος, περικόψτε και μετατρέψτε την εικόνα σας. Έτοιμες μορφές για κοινωνικά δίκτυα, στρογγυλά avatar, εξαγωγή JPG/PNG/WebP.',
-      },
     },
   },
   {
@@ -272,12 +258,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Generátor favicon',
         description:
           'Vytvořte kompletní sadu favicon.ico pro svůj web z jednoho obrázku. Všechny potřebné velikosti, bez přihlášení.',
-      },
-      el: {
-        slug: 'dorean-dimiourgia-favicon',
-        title: 'Δημιουργία favicon',
-        description:
-          'Δημιουργήστε ένα πλήρες σετ favicon.ico για τον ιστότοπό σας από μία εικόνα. Όλα τα απαιτούμενα μεγέθη, χωρίς εγγραφή.',
       },
     },
   },
@@ -336,12 +316,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Zkontrolujte délku titulku a popisu v pixelech. Živý náhled v Google a tipy na optimalizaci.',
       },
-      el: {
-        slug: 'elegkhos-meta-titlou-kai-perigrafis',
-        title: 'Έλεγχος meta τίτλου και περιγραφής',
-        description:
-          'Ελέγξτε το μήκος τίτλου και περιγραφής σε pixels. Ζωντανή προεπισκόπηση Google και συμβουλές βελτιστοποίησης.',
-      },
     },
   },
   {
@@ -398,12 +372,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Počítadlo slov a znaků',
         description:
           'Spočítejte slova, znaky, věty a čas čtení. Zkontrolujte čitelnost pomocí skóre Flesch-Kincaid.',
-      },
-      el: {
-        slug: 'metritis-lexeon-kai-charaktiron',
-        title: 'Μετρητής λέξεων και χαρακτήρων',
-        description:
-          'Μετρήστε λέξεις, χαρακτήρες, προτάσεις και χρόνο ανάγνωσης. Ελέγξτε την αναγνωσιμότητα με τη βαθμολογία Flesch-Kincaid.',
       },
     },
   },
@@ -462,12 +430,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Bezplatný generátor Lorem Ipsum — 8 textových stylů, odstavce, věty nebo slova. Zkopírujte jedním kliknutím.',
       },
-      el: {
-        slug: 'gennitra-lorem-ipsum',
-        title: 'Γεννήτρια Lorem Ipsum',
-        description:
-          'Δωρεάν γεννήτρια Lorem Ipsum — 8 στυλ κειμένου, παραγράφους, προτάσεις ή λέξεις. Αντιγραφή με ένα κλικ.',
-      },
     },
   },
   {
@@ -523,12 +485,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Generátor podpisu e-mailu',
         description:
           'Vytvořte HTML e-mailový podpis s plnou personalizací. Hotové rozložení, ikony sociálních sítí a kód pro Gmail/Outlook.',
-      },
-      el: {
-        slug: 'dorean-dimiourgia-ypografis-email',
-        title: 'Δημιουργία υπογραφής email',
-        description:
-          'Δημιουργήστε υπογραφή email HTML με πλήρη προσαρμογή. Έτοιμα layouts, εικονίδια κοινωνικών δικτύων και κώδικας για Gmail/Outlook.',
       },
     },
   },
@@ -587,12 +543,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Zkontrolujte kontrast textu a pozadí podle WCAG 2.1 AA a AAA. Automatická korekce barev.',
       },
-      el: {
-        slug: 'elegkhos-kontrast-chromaton',
-        title: 'Έλεγχος αντίθεσης χρωμάτων',
-        description:
-          'Ελέγξτε την αντίθεση κειμένου και φόντου σύμφωνα με WCAG 2.1 AA και AAA. Αυτόματη διόρθωση χρωμάτων.',
-      },
     },
   },
   {
@@ -648,12 +598,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Extraktor barev z obrázku',
         description:
           'Extrahujte dominantní barvy z fotografie nebo loga. Hotové HEX a RGB kódy ke zkopírování.',
-      },
-      el: {
-        slug: 'exagogi-chromaton-apo-eikona',
-        title: 'Εξαγωγή χρωμάτων από εικόνα',
-        description:
-          'Εξάγετε τα κυρίαρχα χρώματα από μια φωτογραφία ή λογότυπο. Έτοιμοι κωδικοί HEX και RGB για αντιγραφή.',
       },
     },
   },
@@ -712,12 +656,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Vygenerujte 9 palet z jedné barvy: monochromatickou, komplementární, triádickou a další. Kódy HEX.',
       },
-      el: {
-        slug: 'dimiourgia-paletas-chromaton',
-        title: 'Δημιουργία παλέτας χρωμάτων',
-        description:
-          'Δημιουργήστε 9 παλέτες από ένα χρώμα: μονοχρωματική, συμπληρωματική, τριαδική και άλλες. Κωδικοί HEX.',
-      },
     },
   },
   {
@@ -775,12 +713,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Vytvořte QR kód pro web, vizitku vCard nebo tisk. Export PNG a SVG, bez registrace.',
       },
-      el: {
-        slug: 'dorean-dimiourgia-kodikou-qr',
-        title: 'Δωρεάν δημιουργία κωδικού QR',
-        description:
-          'Δημιουργήστε κωδικό QR για ιστότοπο, κάρτα vCard ή εκτύπωση. Εξαγωγή PNG και SVG, χωρίς εγγραφή.',
-      },
     },
   },
   // -------------------------------------------------------------------------
@@ -834,12 +766,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG in JPG',
         description:
           'Converti file PNG in JPG nel browser. Senza limiti, senza registrazione.',
-      },
-      el: {
-        slug: 'metatropeas-png-se-jpg',
-        title: 'PNG σε JPG',
-        description:
-          'Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς εγγραφή.',
       },
       cs: {
         slug: 'prevodnik-png-na-jpg',
@@ -896,12 +822,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG in PNG',
         description:
           'Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.',
-      },
-      el: {
-        slug: 'metatropeas-jpg-se-png',
-        title: 'JPG σε PNG',
-        description:
-          'Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.',
       },
       cs: {
         slug: 'prevodnik-jpg-na-png',
@@ -960,11 +880,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.',
       },
-      el: {
-        slug: 'metatropeas-webp-se-jpg',
-        title: 'WebP σε JPG',
-        description: 'Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.',
-      },
       cs: {
         slug: 'prevodnik-webp-na-jpg',
         title: 'WebP na JPG',
@@ -1019,12 +934,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP in PNG',
         description:
           'Converti immagini WebP in PNG senza perdita. Conversione locale, niente server.',
-      },
-      el: {
-        slug: 'metatropeas-webp-se-png',
-        title: 'WebP σε PNG',
-        description:
-          'Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.',
       },
       cs: {
         slug: 'prevodnik-webp-na-png',
@@ -1082,12 +991,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.',
       },
-      el: {
-        slug: 'metatropeas-svg-se-png',
-        title: 'SVG σε PNG',
-        description:
-          'Μετατρέψτε διανυσματικά SVG σε PNG. Ιδανικό για έγγραφα και κοινωνικά δίκτυα.',
-      },
       cs: {
         slug: 'prevodnik-svg-na-png',
         title: 'SVG na PNG',
@@ -1143,12 +1046,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG in JPG',
         description:
           'Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.',
-      },
-      el: {
-        slug: 'metatropeas-svg-se-jpg',
-        title: 'SVG σε JPG',
-        description:
-          'Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.',
       },
       cs: {
         slug: 'prevodnik-svg-na-jpg',
@@ -1206,12 +1103,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni.',
       },
-      el: {
-        slug: 'metatropeas-bmp-se-jpg',
-        title: 'BMP σε JPG',
-        description:
-          'Μετατρέψτε αρχεία BMP σε ελαφρύ JPG. Δραστική μείωση μεγέθους.',
-      },
       cs: {
         slug: 'prevodnik-bmp-na-jpg',
         title: 'BMP na JPG',
@@ -1267,12 +1158,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP in PNG',
         description:
           'Converti immagini BMP in PNG senza perdita. Qualità preservata, dimensioni ridotte.',
-      },
-      el: {
-        slug: 'metatropeas-bmp-se-png',
-        title: 'BMP σε PNG',
-        description:
-          'Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.',
       },
       cs: {
         slug: 'prevodnik-bmp-na-png',
@@ -1330,12 +1215,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.',
       },
-      el: {
-        slug: 'metatropeas-gif-se-png',
-        title: 'GIF σε PNG',
-        description:
-          'Εξαγωγή του πρώτου καρέ ενός GIF ως στατικό PNG. Χωρίς απώλεια ποιότητας.',
-      },
       cs: {
         slug: 'prevodnik-gif-na-png',
         title: 'GIF na PNG',
@@ -1391,12 +1270,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'GIF in JPG',
         description:
           'Esporta il primo fotogramma di un GIF come JPG compatto. File più piccolo.',
-      },
-      el: {
-        slug: 'metatropeas-gif-se-jpg',
-        title: 'GIF σε JPG',
-        description:
-          'Εξαγωγή του πρώτου καρέ ενός GIF ως συμπαγές JPG. Μικρότερο αρχείο.',
       },
       cs: {
         slug: 'prevodnik-gif-na-jpg',
@@ -1455,12 +1328,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti foto JPG in WebP leggero. Riduci il peso delle immagini fino al 35%.',
       },
-      el: {
-        slug: 'metatropeas-jpg-se-webp',
-        title: 'JPG σε WebP',
-        description:
-          'Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.',
-      },
       cs: {
         slug: 'prevodnik-jpg-na-webp',
         title: 'JPG na WebP',
@@ -1516,12 +1383,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG in WebP',
         description:
           'Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.',
-      },
-      el: {
-        slug: 'metatropeas-png-se-webp',
-        title: 'PNG σε WebP',
-        description:
-          'Μετατρέψτε γραφικά PNG σε WebP. Μικρότερα αρχεία διατηρώντας τη διαφάνεια.',
       },
       cs: {
         slug: 'prevodnik-png-na-webp',
@@ -1588,12 +1449,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte grafiku SVG na lehke WebP. Ideální pro weby a socialni site.',
       },
-      el: {
-        slug: 'metatropeas-svg-se-webp',
-        title: 'SVG σε WebP',
-        description:
-          'Μετατρέψτε γραφικά SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες και κοινωνικα δικτυα.',
-      },
     },
   },
   {
@@ -1649,12 +1504,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'GIF na WebP',
         description:
           'Exportujte první snímek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani.',
-      },
-      el: {
-        slug: 'metatropeas-gif-se-webp',
-        title: 'GIF σε WebP',
-        description:
-          'Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση.',
       },
     },
   },
@@ -1712,12 +1561,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.',
       },
-      el: {
-        slug: 'metatropeas-bmp-se-webp',
-        title: 'BMP σε WebP',
-        description:
-          'Μετατρέψτε αρχεια BMP σε ελαφρυ WebP. Μειωση μεγεθους εως 95%.',
-      },
     },
   },
   {
@@ -1773,12 +1616,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'AVIF na JPG',
         description:
           'Převeďte soubory AVIF na univerzální JPG. Kompatibilní s každým programem.',
-      },
-      el: {
-        slug: 'metatropeas-avif-se-jpg',
-        title: 'AVIF σε JPG',
-        description:
-          'Μετατρέψτε αρχεια AVIF σε καθολικο JPG. Συμβατό με κάθε πρόγραμμα και πλατφορμα.',
       },
     },
   },
@@ -1836,12 +1673,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.',
       },
-      el: {
-        slug: 'metatropeas-avif-se-png',
-        title: 'AVIF σε PNG',
-        description:
-          'Μετατρέψτε αρχεια AVIF σε PNG χωρις απωλειες. Διατηρηση πληρους ποιότητας.',
-      },
     },
   },
   {
@@ -1897,12 +1728,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'AVIF na WebP',
         description:
           'Převeďte soubory AVIF na WebP. Siroka kompatibilita pri male velikosti.',
-      },
-      el: {
-        slug: 'metatropeas-avif-se-webp',
-        title: 'AVIF σε WebP',
-        description:
-          'Μετατρέψτε αρχεια AVIF σε WebP. Ευρεια συμβατότητα με μικρο μεγεθος.',
       },
     },
   },
@@ -1963,12 +1788,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte fotky HEIC z iPhonu na univerzální JPG. Bez registrace, bez nahravani na server.',
       },
-      el: {
-        slug: 'metatropeas-heic-se-jpg',
-        title: 'HEIC σε JPG',
-        description:
-          'Μετατρέψτε φωτογραφίες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server.',
-      },
     },
   },
   {
@@ -2025,12 +1844,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost.',
       },
-      el: {
-        slug: 'metatropeas-heic-se-png',
-        title: 'HEIC σε PNG',
-        description:
-          'Μετατρέψτε φωτογραφίες HEIC απο iPhone σε PNG χωρις απωλειες. Πληρης ποιοτητα.',
-      },
     },
   },
   {
@@ -2086,12 +1899,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC na WebP',
         description:
           'Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.',
-      },
-      el: {
-        slug: 'metatropeas-heic-se-webp',
-        title: 'HEIC σε WebP',
-        description:
-          'Μετατρέψτε φωτογραφίες HEIC απο iPhone σε ελαφρυ WebP. Μικροτερο μεγεθος.',
       },
     },
   },
@@ -2152,12 +1959,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte soubory TIFF na kompaktni JPG. Ideální pro skeny a fotoarchivy.',
       },
-      el: {
-        slug: 'metatropeas-tiff-se-jpg',
-        title: 'TIFF σε JPG',
-        description:
-          'Μετατρέψτε αρχεια TIFF σε συμπαγες JPG. Ιδανικο για σαρωσεις και αρχεια φωτογραφιων.',
-      },
     },
   },
   {
@@ -2213,12 +2014,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'TIFF na PNG',
         description:
           'Převeďte soubory TIFF na bezztratove PNG. Zachovejte plnou kvalitu skenu.',
-      },
-      el: {
-        slug: 'metatropeas-tiff-se-png',
-        title: 'TIFF σε PNG',
-        description:
-          'Μετατρέψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιότητας σαρωσεων.',
       },
     },
   },
@@ -2276,12 +2071,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte soubory TIFF na lehke WebP. Masivni snizeni velikosti se zachovanim kvality.',
       },
-      el: {
-        slug: 'metatropeas-tiff-se-webp',
-        title: 'TIFF σε WebP',
-        description:
-          'Μετατρέψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση μεγεθους με διατηρηση ποιότητας.',
-      },
     },
   },
   {
@@ -2337,12 +2126,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG na AVIF',
         description:
           'Převeďte fotky JPG na moderní AVIF. Az o 50% lepší komprese než JPG pri zachování kvality.',
-      },
-      el: {
-        slug: 'metatropeas-jpg-se-avif',
-        title: 'JPG σε AVIF',
-        description:
-          'Μετατρέψτε φωτογραφίες JPG σε σύγχρονο AVIF. Εως 50% καλύτερη συμπίεση απο JPG.',
       },
     },
   },
@@ -2400,12 +2183,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory.',
       },
-      el: {
-        slug: 'metatropeas-png-se-avif',
-        title: 'PNG σε AVIF',
-        description:
-          'Μετατρέψτε γραφικά PNG σε AVIF με υποστηριξη διαφάνειας. Σημαντικα μικρότερα αρχεια.',
-      },
     },
   },
   {
@@ -2461,12 +2238,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP na AVIF',
         description:
           'Převeďte soubory WebP na AVIF. Jeste lepší komprese v modernim formatu.',
-      },
-      el: {
-        slug: 'metatropeas-webp-se-avif',
-        title: 'WebP σε AVIF',
-        description:
-          'Μετατρέψτε αρχεια WebP σε AVIF. Ακομη καλύτερη συμπίεση σε συγχρονη μορφή.',
       },
     },
   },
@@ -2524,12 +2295,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte vektorovou grafiku SVG na kompaktni rastrovy format AVIF.',
       },
-      el: {
-        slug: 'metatropeas-svg-se-avif',
-        title: 'SVG σε AVIF',
-        description:
-          'Μετατρέψτε διανυσματικα γραφικά SVG σε συμπαγη μορφή raster AVIF.',
-      },
     },
   },
   {
@@ -2583,11 +2348,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP na AVIF',
         description:
           'Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF.',
-      },
-      el: {
-        slug: 'metatropeas-bmp-se-avif',
-        title: 'BMP σε AVIF',
-        description: 'Μετατρέψτε ασυμπίεστα αρχεια BMP σε υπερσυμπαγες AVIF.',
       },
     },
   },
@@ -2645,12 +2405,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte první snimek GIF na staticky obraz AVIF s vynikajici kompresi.',
       },
-      el: {
-        slug: 'metatropeas-gif-se-avif',
-        title: 'GIF σε AVIF',
-        description:
-          'Μετατρέψτε το πρωτο καρε GIF σε στατικη εικονα AVIF με εξαιρετική συμπίεση.',
-      },
     },
   },
   {
@@ -2700,12 +2454,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-heic-na-avif',
         title: 'HEIC na AVIF',
         description: 'Převeďte fotky HEIC z iPhonu na moderní formát AVIF.',
-      },
-      el: {
-        slug: 'metatropeas-heic-se-avif',
-        title: 'HEIC σε AVIF',
-        description:
-          'Μετατρέψτε φωτογραφίες HEIC του iPhone σε συγχρονη μορφή AVIF.',
       },
     },
   },
@@ -2763,12 +2511,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte soubory TIFF na moderní AVIF. Masivni snizeni velikosti souboru.',
       },
-      el: {
-        slug: 'metatropeas-tiff-se-avif',
-        title: 'TIFF σε AVIF',
-        description:
-          'Μετατρέψτε αρχεια TIFF σε σύγχρονο AVIF. Τεραστια μειωση μεγεθους αρχειου.',
-      },
     },
   },
   {
@@ -2824,12 +2566,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG na GIF',
         description:
           'Převeďte fotky JPG na format GIF. Ideální pro jednoduchou grafiku a ikony.',
-      },
-      el: {
-        slug: 'metatropeas-jpg-se-gif',
-        title: 'JPG σε GIF',
-        description:
-          'Μετατρέψτε φωτογραφίες JPG σε μορφή GIF. Ιδανικο για απλα γραφικά και εικονιδια.',
       },
     },
   },
@@ -2887,12 +2623,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte grafiku PNG na GIF. Ideální pro jednoduche ikony a grafiku.',
       },
-      el: {
-        slug: 'metatropeas-png-se-gif',
-        title: 'PNG σε GIF',
-        description:
-          'Μετατρέψτε γραφικά PNG σε GIF. Ιδανικο για απλα εικονιδια και γραφικά.',
-      },
     },
   },
   {
@@ -2949,12 +2679,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte obrazky WebP na format GIF pro maximalni kompatibilitu.',
       },
-      el: {
-        slug: 'metatropeas-webp-se-gif',
-        title: 'WebP σε GIF',
-        description:
-          'Μετατρέψτε εικόνες WebP σε μορφή GIF για μέγιστη συμβατότητα.',
-      },
     },
   },
   {
@@ -3005,11 +2729,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG na GIF',
         description: 'Převeďte vektorovou grafiku SVG na rastrovy format GIF.',
       },
-      el: {
-        slug: 'metatropeas-svg-se-gif',
-        title: 'SVG σε GIF',
-        description: 'Μετατρέψτε διανυσματικα γραφικά SVG σε μορφή raster GIF.',
-      },
     },
   },
   {
@@ -3059,11 +2778,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-bmp-na-gif',
         title: 'BMP na GIF',
         description: 'Převeďte nekomprimované soubory BMP na lehky GIF.',
-      },
-      el: {
-        slug: 'metatropeas-bmp-se-gif',
-        title: 'BMP σε GIF',
-        description: 'Μετατρέψτε ασυμπίεστα αρχεια BMP σε ελαφρυ GIF.',
       },
     },
   },
@@ -3121,12 +2835,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte fotky JPG na bezztrátový TIFF. Pro tisk a archivaci.',
       },
-      el: {
-        slug: 'metatropeas-jpg-se-tiff',
-        title: 'JPG σε TIFF',
-        description:
-          'Μετατρέψτε φωτογραφίες JPG σε TIFF χωρις απωλειες. Για εκτύπωση και αρχειοθέτηση.',
-      },
     },
   },
   {
@@ -3176,11 +2884,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-png-na-tiff',
         title: 'PNG na TIFF',
         description: 'Převeďte grafiku PNG na profesionální formát TIFF.',
-      },
-      el: {
-        slug: 'metatropeas-png-se-tiff',
-        title: 'PNG σε TIFF',
-        description: 'Μετατρέψτε γραφικά PNG σε επαγγελματική μορφή TIFF.',
       },
     },
   },
@@ -3238,12 +2941,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte obrazky WebP na profesionální TIFF pro tisk a archivaci.',
       },
-      el: {
-        slug: 'metatropeas-webp-se-tiff',
-        title: 'WebP σε TIFF',
-        description:
-          'Μετατρέψτε εικόνες WebP σε επαγγελματικο TIFF για εκτύπωση και αρχειοθέτηση.',
-      },
     },
   },
   {
@@ -3298,12 +2995,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG na TIFF',
         description:
           'Převeďte vektorovou grafiku SVG na kvalitni rastrovy TIFF.',
-      },
-      el: {
-        slug: 'metatropeas-svg-se-tiff',
-        title: 'SVG σε TIFF',
-        description:
-          'Μετατρέψτε διανυσματικα γραφικά SVG σε υψηλής ποιότητας raster TIFF.',
       },
     },
   },
@@ -3360,12 +3051,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP na TIFF',
         description:
           'Převeďte soubory BMP na profesionální formát TIFF pro tisk.',
-      },
-      el: {
-        slug: 'metatropeas-bmp-se-tiff',
-        title: 'BMP σε TIFF',
-        description:
-          'Μετατρέψτε αρχεια BMP σε επαγγελματική μορφή TIFF για εκτύπωση.',
       },
     },
   },
@@ -3424,12 +3109,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte soubory AVIF do formátu TIFF. Zdarma, soukromě a bez omezení.',
       },
-      el: {
-        slug: 'metatropeas-avif-se-tiff',
-        title: 'AVIF σε TIFF',
-        description:
-          'Μετατρέψτε αρχεία AVIF σε μορφή TIFF. Δωρεάν, ιδιωτικό και απεριόριστο.',
-      },
     },
   },
   {
@@ -3484,12 +3163,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC na TIFF',
         description:
           'Převeďte fotky HEIC z iPhonu na profesionální formát TIFF.',
-      },
-      el: {
-        slug: 'metatropeas-heic-se-tiff',
-        title: 'HEIC σε TIFF',
-        description:
-          'Μετατρέψτε φωτογραφίες HEIC του iPhone σε επαγγελματική μορφή TIFF.',
       },
     },
   },
@@ -3551,12 +3224,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte obrázky JPG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-jpg-se-pdf',
-        title: 'JPG σε PDF',
-        description:
-          'Μετατρέψτε εικόνες JPG σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.',
-      },
     },
   },
   {
@@ -3613,12 +3280,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG na PDF',
         description:
           'Převeďte obrázky PNG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.',
-      },
-      el: {
-        slug: 'metatropeas-png-se-pdf',
-        title: 'PNG σε PDF',
-        description:
-          'Μετατρέψτε εικόνες PNG σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.',
       },
     },
   },
@@ -3677,12 +3338,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte obrázky WebP na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-webp-se-pdf',
-        title: 'WebP σε PDF',
-        description:
-          'Μετατρέψτε εικόνες WebP σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.',
-      },
     },
   },
   {
@@ -3739,12 +3394,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC na PDF',
         description:
           'Převeďte obrázky HEIC na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.',
-      },
-      el: {
-        slug: 'metatropeas-heic-se-pdf',
-        title: 'HEIC σε PDF',
-        description:
-          'Μετατρέψτε εικόνες HEIC σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.',
       },
     },
   },
@@ -3803,12 +3452,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte obrázky BMP na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-bmp-se-pdf',
-        title: 'BMP σε PDF',
-        description:
-          'Μετατρέψτε εικόνες BMP σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.',
-      },
     },
   },
   {
@@ -3866,12 +3509,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte obrázky TIFF na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-tiff-se-pdf',
-        title: 'TIFF σε PDF',
-        description:
-          'Μετατρέψτε εικόνες TIFF σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.',
-      },
     },
   },
   {
@@ -3928,12 +3565,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG na PDF',
         description:
           'Převeďte obrázky SVG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.',
-      },
-      el: {
-        slug: 'metatropeas-svg-se-pdf',
-        title: 'SVG σε PDF',
-        description:
-          'Μετατρέψτε εικόνες SVG σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.',
       },
     },
   },
@@ -3995,12 +3626,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte stránky PDF na obrázky JPG. Vysoká kvalita, bez omezení. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-pdf-se-jpg',
-        title: 'PDF σε JPG',
-        description:
-          'Μετατρέψτε σελίδες PDF σε εικόνες JPG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.',
-      },
     },
   },
   {
@@ -4058,12 +3683,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte stránky PDF na obrázky PNG. Vysoká kvalita, bez omezení. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-pdf-se-png',
-        title: 'PDF σε PNG',
-        description:
-          'Μετατρέψτε σελίδες PDF σε εικόνες PNG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.',
-      },
     },
   },
   {
@@ -4120,12 +3739,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PDF na WebP',
         description:
           'Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.',
-      },
-      el: {
-        slug: 'metatropeas-pdf-se-webp',
-        title: 'PDF σε WebP',
-        description:
-          'Μετατρέψτε σελίδες PDF σε εικόνες WebP. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.',
       },
     },
   },
@@ -4187,12 +3800,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte CSV do formátu JSON. Automatické parsování a formátování. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-csv-se-json',
-        title: 'CSV σε JSON',
-        description:
-          'Μετατρέψτε CSV σε μορφή JSON. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.',
-      },
     },
   },
   {
@@ -4249,12 +3856,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON na CSV',
         description:
           'Převeďte JSON do formátu CSV. Automatické parsování a formátování. Zdarma.',
-      },
-      el: {
-        slug: 'metatropeas-json-se-csv',
-        title: 'JSON σε CSV',
-        description:
-          'Μετατρέψτε JSON σε μορφή CSV. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.',
       },
     },
   },
@@ -4313,12 +3914,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte XML do formátu JSON. Automatické parsování a formátování. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-xml-se-json',
-        title: 'XML σε JSON',
-        description:
-          'Μετατρέψτε XML σε μορφή JSON. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.',
-      },
     },
   },
   {
@@ -4375,12 +3970,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON na XML',
         description:
           'Převeďte JSON do formátu XML. Automatické parsování a formátování. Zdarma.',
-      },
-      el: {
-        slug: 'metatropeas-json-se-xml',
-        title: 'JSON σε XML',
-        description:
-          'Μετατρέψτε JSON σε μορφή XML. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.',
       },
     },
   },
@@ -4439,12 +4028,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte YAML do formátu JSON. Automatické parsování a formátování. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-yaml-se-json',
-        title: 'YAML σε JSON',
-        description:
-          'Μετατρέψτε YAML σε μορφή JSON. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.',
-      },
     },
   },
   {
@@ -4501,12 +4084,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON na YAML',
         description:
           'Převeďte JSON do formátu YAML. Automatické parsování a formátování. Zdarma.',
-      },
-      el: {
-        slug: 'metatropeas-json-se-yaml',
-        title: 'JSON σε YAML',
-        description:
-          'Μετατρέψτε JSON σε μορφή YAML. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.',
       },
     },
   },
@@ -4565,12 +4142,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte Markdown do formátu HTML. Automatické parsování a formátování. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-markdown-se-html',
-        title: 'Markdown σε HTML',
-        description:
-          'Μετατρέψτε Markdown σε μορφή HTML. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.',
-      },
     },
   },
   {
@@ -4627,12 +4198,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HTML na Markdown',
         description:
           'Převeďte HTML do formátu Markdown. Automatické parsování a formátování. Zdarma.',
-      },
-      el: {
-        slug: 'metatropeas-html-se-markdown',
-        title: 'HTML σε Markdown',
-        description:
-          'Μετατρέψτε HTML σε μορφή Markdown. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.',
       },
     },
   },
@@ -4694,12 +4259,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Zakódujte obrázky do formátu Base64. Zkopírujte hotový kód pro CSS nebo HTML. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-eikona-se-base64',
-        title: 'Εικόνα σε Base64',
-        description:
-          'Κωδικοποιήστε εικόνες σε Base64. Αντιγράψτε έτοιμο κώδικα για CSS ή HTML. Δωρεάν.',
-      },
     },
   },
   {
@@ -4757,12 +4316,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Dekódujte řetězce Base64 na obrázky. Náhled a stažení v prohlížeči. Zdarma.',
       },
-      el: {
-        slug: 'metatropeas-base64-se-eikona',
-        title: 'Base64 σε Εικόνα',
-        description:
-          'Αποκωδικοποιήστε συμβολοσειρές Base64 σε εικόνες. Προεπισκόπηση και λήψη στον browser. Δωρεάν.',
-      },
     },
   },
   // ═══════════════════════════════════════════════════════════════════════════
@@ -4816,11 +4369,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'pt na px',
         description: 'Převeďte body na pixely a naopak.',
       },
-      el: {
-        slug: 'metatropeas-pt-se-px',
-        title: 'pt σε px',
-        description: 'Μετατρέψτε σημεία σε pixel και αντίστροφα.',
-      },
     },
   },
   {
@@ -4870,11 +4418,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-rem-na-px',
         title: 'rem na px',
         description: 'Převeďte CSS rem na pixely a naopak.',
-      },
-      el: {
-        slug: 'metatropeas-rem-se-px',
-        title: 'rem σε px',
-        description: 'Μετατρέψτε CSS rem σε pixel και αντίστροφα.',
       },
     },
   },
@@ -4926,11 +4469,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'em na px',
         description: 'Převeďte CSS em na pixely a naopak.',
       },
-      el: {
-        slug: 'metatropeas-em-se-px',
-        title: 'em σε px',
-        description: 'Μετατρέψτε CSS em σε pixel και αντίστροφα.',
-      },
     },
   },
   {
@@ -4980,11 +4518,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-cm-na-px',
         title: 'cm na px',
         description: 'Převeďte cm na pixely s podporou DPI.',
-      },
-      el: {
-        slug: 'metatropeas-cm-se-px',
-        title: 'cm σε px',
-        description: 'Μετατρέψτε cm σε pixel με υποστήριξη DPI.',
       },
     },
   },
@@ -5036,11 +4569,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'px na cm',
         description: 'Převeďte pixely na cm s podporou DPI.',
       },
-      el: {
-        slug: 'metatropeas-px-se-cm',
-        title: 'px σε cm',
-        description: 'Μετατρέψτε pixel σε cm με υποστήριξη DPI.',
-      },
     },
   },
   {
@@ -5090,11 +4618,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-mm-na-px',
         title: 'mm na px',
         description: 'Převeďte mm na pixely s podporou DPI.',
-      },
-      el: {
-        slug: 'metatropeas-mm-se-px',
-        title: 'mm σε px',
-        description: 'Μετατρέψτε mm σε pixel με υποστήριξη DPI.',
       },
     },
   },
@@ -5146,11 +4669,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'px na mm',
         description: 'Převeďte pixely na mm s podporou DPI.',
       },
-      el: {
-        slug: 'metatropeas-px-se-mm',
-        title: 'px σε mm',
-        description: 'Μετατρέψτε pixel σε mm με υποστήριξη DPI.',
-      },
     },
   },
   {
@@ -5200,11 +4718,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-palce-na-px',
         title: 'palce na px',
         description: 'Převeďte palce na pixely s podporou DPI.',
-      },
-      el: {
-        slug: 'metatropeas-intses-se-px',
-        title: 'ίντσες σε px',
-        description: 'Μετατρέψτε ίντσες σε pixel με υποστήριξη DPI.',
       },
     },
   },
@@ -5262,12 +4775,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeď centimetry na palce. Výška, velikosti oblečení, televizory, zavazadla.',
       },
-      el: {
-        slug: 'metatropeas-cm-se-intses',
-        title: 'cm σε ίντσες',
-        description:
-          'Μετατρέψτε εκατοστά σε ίντσες. Ύψος, ρούχα, τηλεοράσεις, αποσκευές.',
-      },
     },
   },
   {
@@ -5323,12 +4830,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'palce na cm',
         description:
           'Převeď palce na centimetry. Televizory, výška, velikosti oblečení, zavazadla.',
-      },
-      el: {
-        slug: 'metatropeas-intsOn-se-cm',
-        title: 'ίντσες σε cm',
-        description:
-          'Μετατρέψτε ίντσες σε εκατοστά. Τηλεόραση, ύψος, ρούχα, αποσκευές.',
       },
     },
   },
@@ -5386,12 +4887,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeď milimetry na palce. Vrtáky, šrouby, tloušťky materiálů, tabulka palcových zlomků.',
       },
-      el: {
-        slug: 'metatropeas-mm-se-intses',
-        title: 'mm σε ίντσες',
-        description:
-          'Μετατρέψτε χιλιοστά σε ίντσες. Τρυπάνια, βίδες, πάχη υλικών, πίνακας κλασμάτων ίντσας.',
-      },
     },
   },
   {
@@ -5447,12 +4942,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'palce na mm',
         description:
           'Převeď palce na milimetry. Vrtáky, šrouby, nástrčné klíče, úplná tabulka palcových zlomků.',
-      },
-      el: {
-        slug: 'metatropeas-intsOn-se-mm',
-        title: 'ίντσες σε mm',
-        description:
-          'Μετατρέψτε ίντσες σε χιλιοστά. Τρυπάνια, βίδες, καρυδάκια, πλήρης πίνακας κλασμάτων ίντσας.',
       },
     },
   },
@@ -5510,12 +4999,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeď kilogramy na libry. Tělesná hmotnost, posilovna, limity zavazadel.',
       },
-      el: {
-        slug: 'metatropeas-kg-se-livres',
-        title: 'kg σε λίβρες',
-        description:
-          'Μετατρέψτε κιλά σε λίβρες. Σωματικό βάρος, φορτία γυμναστηρίου και όρια αποσκευών.',
-      },
     },
   },
   {
@@ -5572,12 +5055,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeď libry na kilogramy. Tělesná hmotnost z amerických aplikací, posilovna, zavazadla.',
       },
-      el: {
-        slug: 'metatropeas-livres-se-kg',
-        title: 'λίβρες σε kg',
-        description:
-          'Μετατρέψτε λίβρες σε κιλά. Σωματικό βάρος από αμερικανικές εφαρμογές, γυμναστήριο.',
-      },
     },
   },
   {
@@ -5628,11 +5105,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-hex-na-rgb',
         title: 'HEX na RGB',
         description: 'Převeďte HEX kódy barev na RGB a naopak.',
-      },
-      el: {
-        slug: 'metatropeas-hex-se-rgb',
-        title: 'HEX σε RGB',
-        description: 'Μετατρέψτε κωδικούς χρωμάτων HEX σε RGB και αντίστροφα.',
       },
     },
   },
@@ -5689,12 +5161,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'RGB na CMYK',
         description: 'Převeďte RGB na CMYK a naopak. Pro přípravu tisku.',
       },
-      el: {
-        slug: 'metatropeas-rgb-se-cmyk',
-        title: 'RGB σε CMYK',
-        description:
-          'Μετατρέψτε RGB σε CMYK και αντίστροφα. Για προετοιμασία εκτύπωσης.',
-      },
     },
   },
   // ═══════════════════════════════════════════════════════════════════════════
@@ -5748,11 +5214,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'bajty na KB/MB/GB',
         description: 'Převeďte bajty na KB, MB, GB a naopak.',
       },
-      el: {
-        slug: 'metatropeas-bytes',
-        title: 'bytes σε KB/MB/GB',
-        description: 'Μετατρέψτε bytes σε KB, MB, GB και αντίστροφα.',
-      },
     },
   },
   {
@@ -5803,11 +5264,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Unix na datum',
         description: 'Převeďte Unix časové razítko na datum a čas.',
       },
-      el: {
-        slug: 'metatropeas-unix-timestamp',
-        title: 'Unix σε ημ/νία',
-        description: 'Μετατρέψτε Unix timestamp σε ημερομηνία και ώρα.',
-      },
     },
   },
   {
@@ -5857,11 +5313,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-desitkovy-na-binarni',
         title: 'DEC na BIN',
         description: 'Převeďte desítková čísla na binární a naopak.',
-      },
-      el: {
-        slug: 'metatropeas-dekadiko-se-dyad',
-        title: 'DEC σε BIN',
-        description: 'Μετατρέψτε δεκαδικούς σε δυαδικούς αριθμούς.',
       },
     },
   },
@@ -5914,11 +5365,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'DEC na HEX',
         description: 'Převeďte desítková čísla na hexadecimální a naopak.',
       },
-      el: {
-        slug: 'metatropeas-dekadiko-se-hex',
-        title: 'DEC σε HEX',
-        description: 'Μετατρέψτε δεκαδικούς σε δεκαεξαδικούς αριθμούς.',
-      },
     },
   },
   {
@@ -5968,11 +5414,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-mbps-na-mbs',
         title: 'Mbps na MB/s',
         description: 'Převeďte Mbps na MB/s a naopak.',
-      },
-      el: {
-        slug: 'metatropeas-mbps-se-mbs',
-        title: 'Mbps σε MB/s',
-        description: 'Μετατρέψτε Mbps σε MB/s και αντίστροφα.',
       },
     },
   },

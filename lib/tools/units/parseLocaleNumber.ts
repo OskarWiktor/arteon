@@ -14,7 +14,6 @@ export const COMMA_DECIMAL_LOCALES: ReadonlySet<Locale> = new Set([
   'pt',
   'it',
   'cs',
-  'el',
 ]);
 
 /**

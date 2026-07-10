@@ -1,6 +1,5 @@
 ﻿import cs from '@/data/cs/tools-ui/wcag-contrast.json';
 import de from '@/data/de/tools-ui/wcag-contrast.json';
-import el from '@/data/el/tools-ui/wcag-contrast.json';
 import en from '@/data/en/tools-ui/wcag-contrast.json';
 import es from '@/data/es/tools-ui/wcag-contrast.json';
 import fr from '@/data/fr/tools-ui/wcag-contrast.json';
@@ -18,5 +17,4 @@ export const ui = {
   pt,
   it,
   cs,
-  el,
 } as const satisfies Record<Locale, unknown>;

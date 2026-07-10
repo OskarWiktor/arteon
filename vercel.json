@@ -60,7 +60,7 @@
     },
     {
       "source": "/el/ergaleia/metatropeas-rgb-se-hsl",
-      "destination": "/el/ergaleia",
+      "destination": "/en/tools",
       "permanent": true
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "source": "/el/ergaleia/metatropeas-tailwind-css-spacing-se-px",
-      "destination": "/el/ergaleia",
+      "destination": "/en/tools",
       "permanent": true
     },
     {
@@ -165,7 +165,7 @@
     },
     {
       "source": "/el/ergaleia/metatropeas-vw-se-px",
-      "destination": "/el/ergaleia",
+      "destination": "/en/tools",
       "permanent": true
     }
   ],
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "source": "/(en|de|es|fr|pt|it|cs|el)/:path*",
+      "source": "/(en|de|es|fr|pt|it|cs)/:path*",
       "headers": [
         {
           "key": "Cache-Control",
