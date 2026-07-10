@@ -22,11 +22,11 @@ interface ButtonLinkProps {
 }
 
 const buttonLinkClasses =
-  'group inline-flex w-fit items-center px-3.25 py-1.75 md:px-5 md:py-2.5 rounded-sm text-sm font-medium md:text-base transition hover:-translate-y-0.5 active:translate-y-0 text-dark border border-neutral-200 bg-white shadow-sm hover:shadow-md';
+  'group inline-flex w-fit items-center px-3.25 py-1.75 md:px-5 md:py-2.5 rounded-sm text-sm font-semibold md:text-base transition hover:-translate-y-0.5 active:translate-y-0 text-dark bg-white shadow-[1px_1px_3px_#C6B7A2] hover:shadow-[2px_2px_4px_#C6B7A2]';
 
 const sizeClasses: Record<ButtonSize, string> = {
   small: 'px-2.5 py-1.5 md:px-3 md:py-1.5',
-  medium: 'px-4 py-2 md:px-5 md:py-2.5',
+  medium: 'px-3 py-1.5 md:px-4 md:py-2',
 };
 
 const variantClasses: Record<ButtonVariant, string> = {

@@ -1,4 +1,3 @@
-import ArrowIcon from '@/components/atoms/ArrowIcon';
 import type { Testimonial } from '@/types/testimonial';
 import InlineLink from '../../atoms/InlineLink';
 import { StarRating } from '../../atoms/StarRating';
@@ -6,7 +5,7 @@ import Card from '../Card';
 
 type Props = { item: Testimonial };
 
-const MAX_WORDS = 82;
+const MAX_WORDS = 42;
 
 function getDisplayedQuote(quote: string, maxWords: number) {
   if (!quote) return '';
@@ -31,34 +30,31 @@ export default function TestimonialCard({ item }: Props) {
   return (
     <Card
       as='figure'
-      padding='sm'
-      className='flex h-full w-full flex-col justify-between border-neutral-300'
+      padding='lg'
+      className='flex h-full w-full flex-col border-neutral-300'
     >
+      <div className='flex justify-center gap-6'>
+        <StarRating value={item.rating} />
+      </div>
+
+      <blockquote className='justify-center'>
+        <p className='text-dark'>"{displayedQuote}"</p>
+      </blockquote>
+
       <figcaption>
-        <p className='text-center text-xl! font-semibold! text-dark'>
+        <p className='text-xl! font-semibold! text-dark italic'>
           {item.author}
         </p>
-        {item.role && (
-          <p className='text-center text-sm text-light'>{item.role}</p>
-        )}
-        <div className='flex justify-center'>
-          <StarRating value={item.rating} />
-        </div>
       </figcaption>
-
-      <blockquote>
-        <p className='text-sm! text-dark'>"{displayedQuote}"</p>
-      </blockquote>
 
       {item.link && (
         <InlineLink
           href={item.link}
           target='_blank'
           rel='noopener noreferrer'
-          className='mx-auto mt-1 inline-flex text-center underline-offset-4 transition'
+          className='mt-1 w-33.5 text-xs! underline-offset-4 transition'
         >
           Zobacz opinię u źródła
-          <ArrowIcon />
         </InlineLink>
       )}
     </Card>

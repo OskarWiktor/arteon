@@ -158,8 +158,8 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
         }
         backgroundImage='/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp'
         overlay='black'
-        primaryCtaLabel='Darmowa wycena'
-        primaryCtaHref='#kontakt'
+        secondaryCtaLabel='Darmowa wycena'
+        secondaryCtaHref='#kontakt'
       />
 
       <BenefitBelt variant='carousel' />
@@ -597,7 +597,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
           imageSrc='/assets/projects/napilota/mockup-strony-napilota.webp'
           imageAlt='Realizacja strony internetowej dla firmy NaPilota - mockup Arteon'
           defaultSubject='Strona internetowa dla firmy wykończeniowej'
-          messagePlaceholder='Opisz swoją firmę: jakie usługi wykończeniowe oferujesz, w jakim obszarze działasz i czy potrzebujesz nowej strony, czy chcesz przebudować obecną.'
+          messagePlaceholder='Napisz co chcesz zrealizować'
         />
 
         <Divider line />

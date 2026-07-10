@@ -167,8 +167,8 @@ export default function StronaDlaFirmyBudowlanejPage() {
         }
         backgroundImage='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
         overlay='black'
-        primaryCtaLabel='Darmowa wycena'
-        primaryCtaHref='#kontakt'
+        secondaryCtaLabel='Darmowa wycena'
+        secondaryCtaHref='#kontakt'
       />
 
       <BenefitBelt variant='carousel' />
@@ -613,7 +613,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
           imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
           imageAlt='Realizacja strony dla firmy budowlanej Izoluk - mockup'
           defaultSubject='Strona internetowa dla firmy budowlanej'
-          messagePlaceholder='Opisz swoją firmę: jakie prace budowlane oferujesz, jakim sprzętem dysponujesz, w jakim regionie działasz i czy potrzebujesz nowej strony, czy chcesz przebudować obecną.'
+          messagePlaceholder='Napisz co chcesz zrealizować'
         />
 
         <Divider line />

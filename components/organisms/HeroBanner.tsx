@@ -68,7 +68,7 @@ export default function HeroBanner({
         />
       )}
       {showOverlay && (
-        <div aria-hidden='true' className='absolute inset-0 bg-black/70' />
+        <div aria-hidden='true' className='absolute inset-0 bg-black/40' />
       )}
 
       <Wrapper className='relative flex h-auto items-center'>
@@ -78,13 +78,13 @@ export default function HeroBanner({
             isCompact
               ? 'text-center md:w-full'
               : 'w-full rounded-lg p-4 text-on-dark md:max-w-[75%] md:px-6 md:py-5 lg:max-w-[65%]',
-            showOverlay && 'bg-black/60',
+            showOverlay && 'bg-[#0D0103]/80',
           )}
         >
           {subtitle && (
             <Subtitle
               variant='hero'
-              className={isCompact ? 'text-mid' : 'text-on-dark'}
+              className={isCompact ? 'text-mid' : 'text-[#e0d6ce]!'}
             >
               {subtitle}
             </Subtitle>
@@ -104,7 +104,7 @@ export default function HeroBanner({
                 'text-base leading-relaxed text-pretty',
                 isCompact
                   ? 'mt-2 text-center text-mid! md:mt-3'
-                  : 'mt-3 text-on-dark! md:mt-4',
+                  : 'mt-3 text-[#e0d6ce]! md:mt-4',
               )}
             >
               {description}

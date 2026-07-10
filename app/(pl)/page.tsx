@@ -1,33 +1,17 @@
-import { GoLaw } from 'react-icons/go';
-import { MdSupportAgent } from 'react-icons/md';
-import {
-  RiArticleLine,
-  RiBarChart2Line,
-  RiBookOpenLine,
-  RiBrushLine,
-} from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
-import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
-import CTABanner from '@/components/organisms/CTABanner';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import testimonialsPl from '@/data/pl/testimonials.json';
-import { getAllArticlePreviews } from '@/lib/blogDataService';
-import { cn } from '@/lib/clsx';
 import { getHomepageAlternates } from '@/lib/i18n/pages/toolMeta';
-import { getCarouselImages } from '@/lib/tools/carouselImages';
-import { normalIconSizeClasses } from '@/lib/uiClasses';
 import type { Testimonial } from '@/types/testimonial';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 
 export const metadata = {
   title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
@@ -128,19 +112,14 @@ function HomePageSchemas() {
 }
 
 export default function HomePage() {
-  const articlePreviews = getAllArticlePreviews();
-
   return (
     <>
       <HomePageSchemas />
       <HeroBanner
-        title='Strony internetowe, sklepy, treści i projekty graficzne'
+        subtitle='Agencja interaktywna'
+        title='Pomagamy dotrzeć tam, gdzie szukają Cie klienci'
         description='Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Zajmuje się również pozycjonowaniem witryn jak i budową aplikacji webowych. Wszystko zrealizujesz w jednym miejscu.'
         backgroundImage='/assets/bg/arteon-zbior-realizacji.webp'
-        secondaryCtaLabel='Sprawdź ofertę'
-        secondaryCtaHref='/uslugi'
-        primaryCtaLabel='Skontaktuj się'
-        primaryCtaHref='/kontakt'
         overlay='black'
       />
 
@@ -270,66 +249,6 @@ export default function HomePage() {
 
         <Divider line />
 
-        <FeatureGrid
-          title='Co możemy wnieść do Twojej marki?'
-          subtitle='Nasz standard pracy'
-          items={[
-            {
-              title: 'Treści dopasowane do Twojego wymarzonego klienta',
-              icon: (
-                <RiArticleLine
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-            {
-              title: 'Spójne projekty graficzne online oraz offline',
-              icon: (
-                <RiBrushLine
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-            {
-              title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
-              icon: (
-                <GoLaw className={cn('text-primary', normalIconSizeClasses)} />
-              ),
-            },
-            {
-              title:
-                'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
-              icon: (
-                <RiBarChart2Line
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-            {
-              title: 'Dedykowane szkolenia i instrukcje',
-              icon: (
-                <RiBookOpenLine
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-            {
-              title: 'Wsparcie w dalszym rozwoju po realizacji',
-              icon: (
-                <MdSupportAgent
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-          ]}
-        />
-
-        <Divider line />
-
-        <ToolsCarousel images={getCarouselImages('pl')} />
-
-        <Divider line />
-
         <TestimonialsCarousel />
 
         <Divider line />
@@ -338,28 +257,18 @@ export default function HomePage() {
 
         <Divider line />
 
-        <LogoCarousel />
-
-        <Divider line />
-
-        <ArticlesCarousel
-          title='Nasze artykuły i poradniki'
-          articles={articlePreviews}
+        <SectionContactForm
+          title='Skontaktuj się przez formularz'
+          description='Skontaktuj się z nami, przygotujemy dla Ciebie darmową wycenę i jasny plan działania.'
+          noTopic={true}
+          imageSrc='/assets/projects/arteon-baners-camper-albania-mockup.webp'
+          imageAlt='Realizacja strony internetowej - Camper Albania mockup'
+          defaultSubject='Tworzenie strony internetowej'
+          messagePlaceholder='Napisz co chcesz zrealizować'
         />
 
         <Divider size='sm' />
       </Wrapper>
-
-      <CTABanner
-        title='Zacznijmy od rozmowy'
-        description='Opisz swoją wizję rozwoju, a przygotujemy propozycję dopasowaną do Twoich celów.'
-        btnOne='Skontaktuj się'
-        btnOneHref='/kontakt'
-        btnTwo='Sprawdź pełną ofertę usług'
-        btnTwoHref='/uslugi'
-        backgroundImage='/assets/bg/arteon-hero-baner-z-realizacja-strony-jstax.webp'
-        overlay='black'
-      />
     </>
   );
 }

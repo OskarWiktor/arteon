@@ -16,6 +16,7 @@ interface SectionHeaderProps {
   titleId?: string;
   buttonText?: string;
   buttonLink?: string;
+  containerClassName?: string;
 }
 
 export default function SectionHeader({
@@ -29,11 +30,12 @@ export default function SectionHeader({
   titleId,
   buttonText,
   buttonLink,
+  containerClassName,
 }: SectionHeaderProps) {
   const hasButton = Boolean(buttonText && buttonLink);
 
   const content = (
-    <div className='pb-4 md:pb-6'>
+    <div className={cn('pb-4 md:pb-6', containerClassName)}>
       {/* Reveal wraps only the subtitle + title. Descriptions are excluded on
           purpose: some sections add further copy below, and animating the
           description looked off where those stack. */}
