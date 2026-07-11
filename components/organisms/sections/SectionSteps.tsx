@@ -130,7 +130,7 @@ export default function SectionSteps({
                     as='article'
                     padding='md'
                     interactive={false}
-                    className='flex h-full w-full flex-col gap-0 bg-[#380911]'
+                    className='flex h-full w-full flex-col gap-0 bg-[#1C1F32]'
                   >
                     {topImageSrc && (
                       <div className='relative aspect-2/1 w-full overflow-hidden'>
@@ -145,15 +145,15 @@ export default function SectionSteps({
                       </div>
                     )}
                     <div className='flex grow flex-col px-2 pt-4 md:px-4 md:pt-6'>
-                      <h3 className='h5 line-clamp-2 text-[#F4ECE0]!'>
+                      <h3 className='h5 line-clamp-2 text-[#F9F5F2]!'>
                         {itemTitle}
                       </h3>
                       {itemSubtitle && (
-                        <span className='text-base text-[#AD9D90]!'>
+                        <span className='text-base text-[#B3B0AC]!'>
                           {itemSubtitle}
                         </span>
                       )}
-                      <div className='mt-2 flex flex-1 flex-col [&_p]:text-[#AD9D90]!'>
+                      <div className='mt-2 flex flex-1 flex-col [&_p]:text-[#B3B0AC]!'>
                         {itemDesc}
                       </div>
                     </div>

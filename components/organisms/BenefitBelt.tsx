@@ -32,7 +32,7 @@ export default function BenefitBelt({
 
   if (variant === 'carousel') {
     return (
-      <section className='relative bg-[#380911]'>
+      <section className='relative bg-[#1C1F32]'>
         <Wrapper className='py-2 md:py-3'>
           <LogoCarousel variant='logo' />
         </Wrapper>
@@ -41,7 +41,7 @@ export default function BenefitBelt({
   }
 
   return (
-    <section className='relative bg-[#380911]'>
+    <section className='relative bg-[#1C1F32]'>
       <Wrapper className='py-4'>
         <ul className='flex flex-wrap items-center justify-between gap-y-4'>
           {data.map((item, i) => (

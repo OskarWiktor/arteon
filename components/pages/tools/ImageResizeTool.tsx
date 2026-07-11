@@ -14,6 +14,7 @@ import {
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import ButtonTool from '@/components/atoms/buttons/ButtonTool';
+import Label from '@/components/atoms/form/Label';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
@@ -503,8 +504,9 @@ export default function ImageResizeTool() {
       <Card interactive={false} padding='lg' variant='outlined'>
         <form onSubmit={handleSubmit} className='space-y-6'>
           <div>
-            <h2 className='h6 mb-2'>{t.addImage}</h2>
+            <Label htmlFor='imageresize-image'>{t.addImage}</Label>
             <FileDropzone
+              id='imageresize-image'
               accept='image/*'
               dropEffect='copy'
               onFiles={files => handleFileChange(files?.[0] ?? null)}

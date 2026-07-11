@@ -22,6 +22,7 @@ type Props = {
   max?: number;
   title?: string;
   subtitle?: string;
+  secondaryTitle?: string;
   description?: ReactNode;
   categorySlug?: string;
   slugs?: string | string[];
@@ -45,6 +46,7 @@ export default function ArticlesCarousel({
   max = 10,
   title = 'Edukacja i artykuły',
   subtitle,
+  secondaryTitle,
   description,
   categorySlug,
   slugs,
@@ -114,6 +116,7 @@ export default function ArticlesCarousel({
         <SectionInfo
           title={title}
           subtitle={subtitle}
+          secondaryTitle={secondaryTitle}
           description={description}
           descriptionClassName='font-medium italic'
           btnTwo='Zobacz wszystkie artykuły'

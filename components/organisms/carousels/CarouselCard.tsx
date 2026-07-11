@@ -41,19 +41,19 @@ export default function CarouselCard(props: CarouselCardProps) {
     } = props;
     return (
       <CarouselCardShell href={href} image={image} title={title}>
-        <p className='line-clamp-2 pt-4 text-[#AD9D90]!'>{description}</p>
+        <p className='line-clamp-2 pt-4 text-[#B3B0AC]!'>{description}</p>
         <div className='mt-auto'>
           <div
-            className='mt-4 mb-2 h-px w-full bg-[#483135]!'
+            className='mt-4 mb-2 h-px w-full bg-[#504E4C]!'
             aria-hidden='true'
           />
           <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
             <InlineLink
               href={href}
               aria-label={`${buttonLabel}: ${title}`}
-              className="inline-flex rounded-lg text-[#AD9D90]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+              className="inline-flex rounded-lg text-[#B3B0AC]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
             >
-              <span className='text-[#E5DCD3]!'>{buttonLabel}</span>
+              <span className='text-[#F9F5F2]!'>{buttonLabel}</span>
               <ArrowIcon />
             </InlineLink>
           </div>
@@ -71,23 +71,23 @@ export default function CarouselCard(props: CarouselCardProps) {
         title={article.title}
       >
         {article.readingTime && article.datePublished && (
-          <span className='inline-flex pt-2 text-sm text-[#AD9D90]!'>
+          <span className='inline-flex pt-2 text-sm text-[#B3B0AC]!'>
             {article.readingTime} min. czytania • {article.datePublished}
           </span>
         )}
         {article.excerpt && (
-          <p className='line-clamp-3 pt-4 text-[#AD9D90]!'>{article.excerpt}</p>
+          <p className='line-clamp-3 pt-4 text-[#B3B0AC]!'>{article.excerpt}</p>
         )}
         <div className='mt-auto'>
           <div
-            className='mt-4 mb-2 h-px w-full bg-[#483135]!'
+            className='mt-4 mb-2 h-px w-full bg-[#504E4C]!'
             aria-hidden='true'
           />
           <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
             <InlineLink
               href={href}
               aria-label={`Przeczytaj artykuł: ${article.title}`}
-              className="inline-flex rounded-lg text-[#E5DCD3]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+              className="inline-flex rounded-lg text-[#F9F5F2]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
             >
               Przeczytaj artykuł
               <ArrowIcon />
@@ -110,18 +110,18 @@ export default function CarouselCard(props: CarouselCardProps) {
       title={project.title}
       imageAspectClassName='aspect-3/2'
     >
-      <p className='line-clamp-3 pt-4 text-[#AD9D90]!'>{project.short}</p>
+      <p className='line-clamp-3 pt-4 text-[#B3B0AC]!'>{project.short}</p>
 
       <div className='mt-auto'>
         <div
-          className='mt-4 mb-4 h-px w-full bg-[#483135]!'
+          className='mt-4 mb-4 h-px w-full bg-[#504E4C]!'
           aria-hidden='true'
         />
         <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
           <InlineLink
             href={detailsHref}
             aria-label={`Szczegóły projektu: ${project.title}`}
-            className="inline-flex rounded-lg text-[#E5DCD3]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+            className="inline-flex rounded-lg text-[#F9F5F2]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
           >
             Szczegóły projektu
             <ArrowIcon />
@@ -133,7 +133,7 @@ export default function CarouselCard(props: CarouselCardProps) {
               target='_blank'
               rel='noopener noreferrer'
               aria-label={`Sprawdź stronę projektu ${project.title} (otwiera się w nowej karcie)`}
-              className='relative z-10 inline-flex rounded-lg text-[#E5DCD3]! transition hover:text-primary'
+              className='relative z-10 inline-flex rounded-lg text-[#F9F5F2]! transition hover:text-primary'
             >
               Sprawdź stronę
               <ArrowIcon />

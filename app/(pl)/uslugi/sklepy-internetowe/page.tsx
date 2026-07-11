@@ -112,6 +112,7 @@ export default function OfferWebPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Nasze realizacje sklepów internetowych'
           category='sklepy'
         />
@@ -408,7 +409,7 @@ export default function OfferWebPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel />
+        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
 
         <Divider line />
 
@@ -618,6 +619,7 @@ export default function OfferWebPage() {
         <Divider line />
 
         <ArticlesCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące sklepów internetowych'
           categorySlug='sklepy'
           articles={getArticlePreviewsByCategory('sklepy', 6)}

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Label from '@/components/atoms/form/Label';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import FileDropzone from '@/components/molecules/FileDropzone';
@@ -121,8 +122,9 @@ export default function PaletteExtractor() {
     <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
       <Card interactive={false} padding='lg' variant='outlined'>
         <div>
-          <h2 className='h6 mb-2'>{t.addImageLabel}</h2>
+          <Label htmlFor='palette-image'>{t.addImageLabel}</Label>
           <FileDropzone
+            id='palette-image'
             accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
             disabled={isProcessing}
             onFiles={handleFiles}

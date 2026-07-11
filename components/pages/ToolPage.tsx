@@ -306,18 +306,20 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
       />
 
       <ToolEditorLayout>
-        {isDesktopOnly ? (
-          <>
-            <div className='hidden lg:block'>
-              {tool ?? <DynamicToolRenderer toolKey={data.toolKey} />}
-            </div>
-            <div className='block lg:hidden'>
-              <DesktopOnlyNotice t={desktopOnlyT} />
-            </div>
-          </>
-        ) : (
-          (tool ?? <DynamicToolRenderer toolKey={data.toolKey} />)
-        )}
+        <div className='tool-editor'>
+          {isDesktopOnly ? (
+            <>
+              <div className='hidden lg:block'>
+                {tool ?? <DynamicToolRenderer toolKey={data.toolKey} />}
+              </div>
+              <div className='block lg:hidden'>
+                <DesktopOnlyNotice t={desktopOnlyT} />
+              </div>
+            </>
+          ) : (
+            (tool ?? <DynamicToolRenderer toolKey={data.toolKey} />)
+          )}
+        </div>
         <div className='not-prose m-auto mt-12 flex justify-center py-4'>
           <AdSense variant='responsive' locale={data.locale} />
         </div>

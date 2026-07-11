@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
+import Label from '@/components/atoms/form/Label';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
@@ -137,8 +138,9 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       <div className='overflow-hidden'>
         <div className='grid gap-4 md:grid-cols-2'>
           <Card interactive={false} padding='lg' variant='outlined'>
-            <h2 className='h6'>{t.imageHeading}</h2>
+            <Label htmlFor='base64-image'>{t.imageHeading}</Label>
             <FileDropzone
+              id='base64-image'
               accept='image/*'
               onFiles={handleAddFiles}
               dragLabel={t.dragImageHere}

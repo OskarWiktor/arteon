@@ -5,6 +5,8 @@ import Input from '../atoms/form/Input';
 import Label from '../atoms/form/Label';
 
 interface FileDropzoneProps {
+  /** Optional id set on the hidden file input so an external `<label htmlFor>` can point at it. */
+  id?: string;
   accept: string;
   multiple?: boolean;
   disabled?: boolean;
@@ -27,6 +29,7 @@ const FileDropzoneClasses =
  * @param formatsLabel - Text describing accepted file formats shown in the badge
  */
 export default function FileDropzone({
+  id,
   accept,
   multiple = false,
   disabled = false,
@@ -55,6 +58,7 @@ export default function FileDropzone({
         {formatsLabel}
       </Badge>
       <Input
+        id={id}
         type='file'
         accept={accept}
         multiple={multiple}

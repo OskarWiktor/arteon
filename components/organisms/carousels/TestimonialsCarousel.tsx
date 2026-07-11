@@ -19,6 +19,7 @@ const AUTO_PLAY_INTERVAL_MS = 4000;
 interface TestimonialsCarouselProps {
   title?: string;
   subtitle?: string;
+  secondaryTitle?: string;
   testimonials?: Testimonial[];
   ids?: string[];
 }
@@ -26,6 +27,7 @@ interface TestimonialsCarouselProps {
 export default function TestimonialsCarousel({
   title = 'Zobacz co mówią o nas inni',
   subtitle,
+  secondaryTitle,
   testimonials,
   ids,
 }: TestimonialsCarouselProps) {
@@ -67,6 +69,7 @@ export default function TestimonialsCarousel({
       <SectionHeader
         subtitle={subtitle}
         title={title}
+        secondaryTitle={secondaryTitle}
         titleId='testimonials-heading'
         containerClassName='text-center'
       />

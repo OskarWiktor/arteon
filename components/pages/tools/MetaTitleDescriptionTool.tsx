@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import Input from '@/components/atoms/form/Input';
+import Label from '@/components/atoms/form/Label';
 import Textarea from '@/components/atoms/form/Textarea';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import Card from '@/components/organisms/Card';
@@ -124,9 +125,10 @@ export default function MetaTitleDescriptionTool() {
     <>
       <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
         <Card interactive={false} padding='lg' variant='outlined'>
-          <h2 className='h6 mb-2'>{t.enterTitleLabel}</h2>
+          <Label htmlFor='meta-title'>{t.enterTitleLabel}</Label>
           <ToolFieldRow helper={titleAnalysis.helperText}>
             <Input
+              id='meta-title'
               type='text'
               value={title}
               onChange={e => setTitle(e.target.value)}
@@ -152,9 +154,12 @@ export default function MetaTitleDescriptionTool() {
             </div>
           </ToolFieldRow>
 
-          <h2 className='h6 mt-8 mb-2'>{t.enterDescriptionLabel}</h2>
+          <Label htmlFor='meta-description' className='mt-8'>
+            {t.enterDescriptionLabel}
+          </Label>
           <ToolFieldRow helper={descriptionAnalysis.helperText}>
             <Textarea
+              id='meta-description'
               value={description}
               onChange={e => setDescription(e.target.value)}
               className='min-h-27.5 resize-y'

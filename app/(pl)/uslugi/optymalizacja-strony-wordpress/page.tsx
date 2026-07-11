@@ -306,7 +306,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel />
+        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
 
         <Divider line />
 
@@ -387,6 +387,7 @@ export default function OfferOptimizationWordPressPage() {
         <Divider line />
 
         <ArticlesCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące stron internetowych'
           categorySlug='strony'
           articles={getArticlePreviewsByCategory('strony', 6)}
