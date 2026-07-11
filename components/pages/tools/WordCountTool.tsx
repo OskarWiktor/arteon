@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { RiFileCopyLine, RiCheckLine, RiDeleteBinLine } from 'react-icons/ri';
 import Button from '@/components/atoms/buttons/Button';
+import Label from '@/components/atoms/form/Label';
 import Textarea from '@/components/atoms/form/Textarea';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
@@ -132,7 +133,7 @@ export default function WordCountTool() {
           variant='outlined'
           className='order-1 lg:order-2'
         >
-          <h2 className='h6 mb-2'>{t.pasteText}</h2>
+          <Label htmlFor='wordcount-input'>{t.pasteText}</Label>
           <Textarea
             id='wordcount-input'
             value={text}

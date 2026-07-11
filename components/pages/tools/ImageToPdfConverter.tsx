@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
+import Label from '@/components/atoms/form/Label';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
@@ -309,8 +310,9 @@ export default function ImageToPdfConverter({
         <Card interactive={false} padding='lg' variant='outlined'>
           <form onSubmit={handleConvert} className='space-y-4'>
             <div>
-              <h2 className='h6 mb-2'>{t.addFiles}</h2>
+              <Label htmlFor='imagetopdf-files'>{t.addFiles}</Label>
               <FileDropzone
+                id='imagetopdf-files'
                 accept={acceptMime}
                 multiple
                 onFiles={handleAddFiles}

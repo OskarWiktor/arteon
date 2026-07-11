@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
 import Input from '@/components/atoms/form/Input';
+import Label from '@/components/atoms/form/Label';
 import Textarea from '@/components/atoms/form/Textarea';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import Card from '@/components/organisms/Card';
@@ -160,7 +161,9 @@ export default function TextFormatConverter({
       <div className='grid gap-4 md:grid-cols-2'>
         <Card interactive={false} padding='lg' variant='outlined'>
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
-            <h2 className='h6'>{sourceLabel}</h2>
+            <Label htmlFor='textformat-source' className='mb-0'>
+              {sourceLabel}
+            </Label>
             <label className='cursor-pointer text-xs font-medium text-primary-mid transition-colors hover:text-primary'>
               <Input
                 ref={fileInputRef}
@@ -175,6 +178,7 @@ export default function TextFormatConverter({
             </label>
           </div>
           <Textarea
+            id='textformat-source'
             className='min-h-75 resize-y'
             value={input}
             onChange={e => setInput(e.target.value)}
@@ -206,8 +210,9 @@ export default function TextFormatConverter({
         </Card>
 
         <Card interactive={false} padding='lg' variant='outlined'>
-          <h2 className='h6'>{targetLabel}</h2>
+          <Label htmlFor='textformat-target'>{targetLabel}</Label>
           <Textarea
+            id='textformat-target'
             className='min-h-75 resize-y'
             value={output}
             readOnly

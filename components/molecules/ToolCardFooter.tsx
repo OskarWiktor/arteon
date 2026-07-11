@@ -15,13 +15,13 @@ interface ToolCardFooterProps {
 export default function ToolCardFooter({ href, label }: ToolCardFooterProps) {
   return (
     <div className='mt-auto'>
-      <div className='mt-4 mb-2 h-px w-full bg-[#483135]!' aria-hidden='true' />
+      <div className='mt-4 mb-2 h-px w-full bg-[#504E4C]!' aria-hidden='true' />
       <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
         <InlineLink
           href={href}
-          className='inline-flex rounded-lg text-[#AD9D90]! transition'
+          className='inline-flex rounded-lg text-[#B3B0AC]! transition'
         >
-          <span className='text-[#E5DCD3]!'>{label}</span>
+          <span className='text-[#F9F5F2]!'>{label}</span>
           <ArrowIcon />
         </InlineLink>
       </div>

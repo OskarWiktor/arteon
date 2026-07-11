@@ -6,7 +6,7 @@ import { cn } from '@/lib/clsx';
 import { focusRingClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 
 const selectClasses =
-  'h-11 w-full cursor-pointer appearance-none rounded-sm border border-neutral-300 bg-white py-2 pr-9 pl-3 text-sm text-dark transition border border-[#E5DCD3]';
+  'h-11 w-full cursor-pointer appearance-none rounded-sm border border-neutral-300 bg-white py-2 pr-9 pl-3 text-sm text-dark transition border border-neutral-200';
 
 /**
  * Render a styled native select element matching the Input atom's appearance,

@@ -11,14 +11,14 @@
 :root {
   color-scheme: light;
 
-  --primary: #380911;
+  --primary: #1c1f32;
   --primary-light: #e0d6ce;
   --primary-mid: #493b30;
 
   --accent: #e0d6ce;
 
-  --background: #f5f0eb;
-  --foreground: #380911;
+  --background: #f9f5f2;
+  --foreground: #1c1f32;
   --text-light: #7e7c7a;
   --text-mid: #645d52;
   --text-on-dark: #f7f5f4;
@@ -336,6 +336,21 @@ strong {
 
 .inline-link {
   @apply underline underline-offset-4 hover:no-underline;
+}
+
+/* Tool editors only (forms elsewhere are untouched): the `.h6` field/section
+   headings above inputs are normalised to the form-label look (medium weight,
+   16-18px, no tight tracking), and the form-input shadow is dropped. */
+.tool-editor .h6 {
+  font-weight: 500;
+  font-size: clamp(16px, calc(16px + 4 * ((100vw - 360px) / 1080)), 18px);
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+.tool-editor input,
+.tool-editor textarea,
+.tool-editor select {
+  box-shadow: none;
 }
 
 @layer base {

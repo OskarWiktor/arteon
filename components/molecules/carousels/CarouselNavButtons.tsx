@@ -14,7 +14,7 @@ type CarouselNavButtonsProps = {
 };
 
 const carouselNavButtonsClasses =
-  'absolute bottom-[-42px] z-10 max-h-12 max-w-12 bg-[#380911]';
+  'absolute bottom-[-42px] z-10 max-h-12 max-w-12 bg-[#1C1F32]';
 
 export function CarouselNavButtons({
   isScrollable,

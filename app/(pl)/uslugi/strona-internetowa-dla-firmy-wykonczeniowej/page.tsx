@@ -177,6 +177,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Nasze realizacje stron internetowych'
           category='strony'
         />
@@ -214,7 +215,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel />
+        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
 
         <Divider line />
 
@@ -721,6 +722,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
         <Divider line />
 
         <ArticlesCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące stron internetowych'
           categorySlug='strony'
           articles={getArticlePreviewsByCategory('strony', 6)}

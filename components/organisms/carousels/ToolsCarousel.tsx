@@ -22,6 +22,7 @@ type Props = {
   max?: number;
   title?: string;
   subtitle?: string;
+  secondaryTitle?: string;
   description?: ReactNode;
   /** Preview images keyed by tool key, sourced from each tool page's own data. */
   images?: Partial<Record<ToolItemKey, string>>;
@@ -43,6 +44,7 @@ export default function ToolsCarousel({
   max = 10,
   title,
   subtitle,
+  secondaryTitle,
   description,
   images,
 }: Props) {
@@ -88,6 +90,7 @@ export default function ToolsCarousel({
         <SectionInfo
           title={displayTitle}
           subtitle={subtitle}
+          secondaryTitle={secondaryTitle}
           description={description}
           descriptionClassName='font-medium italic'
           btnTwo={t.seeAllTools}

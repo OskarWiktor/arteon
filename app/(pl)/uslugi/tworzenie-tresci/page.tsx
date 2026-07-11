@@ -316,7 +316,7 @@ export default function OfferContentPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel />
+        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
 
         <Divider line />
 
@@ -417,6 +417,7 @@ export default function OfferContentPage() {
         <Divider line />
 
         <ArticlesCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące tworzenia treści'
           categorySlug='tresci'
           articles={getArticlePreviewsByCategory('tresci', 6)}

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import Label from '@/components/atoms/form/Label';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
@@ -171,8 +172,9 @@ export default function JpgPngToWebp() {
       <Card interactive={false} padding='lg' variant='outlined'>
         <form onSubmit={handleSubmitWithAutoZip} className='space-y-4'>
           <div>
-            <h2 className='h6 mb-2'>{t.addFiles}</h2>
+            <Label htmlFor='jpgpng-files'>{t.addFiles}</Label>
             <FileDropzone
+              id='jpgpng-files'
               accept='image/jpeg,image/png'
               multiple
               onFiles={addFiles}

@@ -23,7 +23,7 @@ export default function Divider({ size = 'md', line = false }: DividerProps) {
     >
       {line && (
         <div className='absolute inset-x-0 top-1/2 -translate-y-1/2'>
-          <div className='h-px w-full bg-[#E5DCD3]' />
+          <div className='h-px w-full bg-[#F9F5F2]' />
         </div>
       )}
     </div>

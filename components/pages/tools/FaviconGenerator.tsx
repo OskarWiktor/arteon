@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import InputColor from '@/components/atoms/form/InputColor';
+import Label from '@/components/atoms/form/Label';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import FileDropzone from '@/components/molecules/FileDropzone';
@@ -162,8 +163,9 @@ export default function FaviconGenerator() {
         <Card interactive={false} padding='lg' variant='outlined'>
           <form onSubmit={handleGenerate} className='space-y-6'>
             <div>
-              <h2 className='h6 mb-2'>{t.addBaseImageLabel}</h2>
+              <Label htmlFor='favicon-image'>{t.addBaseImageLabel}</Label>
               <FileDropzone
+                id='favicon-image'
                 accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
                 onFiles={handleFiles}
                 dragLabel={t.dragDropImage}

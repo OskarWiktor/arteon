@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
+import Label from '@/components/atoms/form/Label';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
@@ -177,8 +178,9 @@ export default function ImageFormatConverter({
         <Card interactive={false} padding='lg' variant='outlined'>
           <form onSubmit={handleSubmit} className='space-y-4'>
             <div>
-              <h2 className='h6 mb-2'>{t.addFiles}</h2>
+              <Label htmlFor='imageformat-files'>{t.addFiles}</Label>
               <FileDropzone
+                id='imageformat-files'
                 accept={acceptMime}
                 multiple
                 onFiles={handleAddFiles}

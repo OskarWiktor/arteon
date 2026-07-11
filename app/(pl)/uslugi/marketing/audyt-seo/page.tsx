@@ -421,7 +421,7 @@ export default function OfferMarketingPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel />
+        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
 
         <Divider line />
 
@@ -539,6 +539,7 @@ export default function OfferMarketingPage() {
         <Divider line />
 
         <ArticlesCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące SEO'
           categorySlug='seo'
           articles={getArticlePreviewsByCategory('seo', 6)}

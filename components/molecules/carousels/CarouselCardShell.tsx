@@ -53,7 +53,7 @@ export default function CarouselCardShell({
   return (
     <Card
       as='article'
-      className='group relative flex h-full flex-col gap-0 bg-[#380911]'
+      className='group relative flex h-full flex-col gap-0 bg-[#1C1F32]'
       padding='md'
     >
       <div
@@ -68,7 +68,7 @@ export default function CarouselCardShell({
         />
       </div>
       <div className='flex grow flex-col px-2 pt-4 md:px-4 md:pt-6'>
-        <h3 className='h5 line-clamp-2 text-[#F4ECE0]!'>{title}</h3>
+        <h3 className='h5 line-clamp-2 text-[#F9F5F2]!'>{title}</h3>
         {children}
       </div>
     </Card>

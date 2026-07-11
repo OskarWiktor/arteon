@@ -69,7 +69,7 @@ export default function NavigationShell() {
   return (
     <header
       id='navigation'
-      className='sticky top-0 z-50 w-full border-b border-b-[#380911] bg-white shadow-[1px_1px_3px_#C6B7A2]'
+      className='sticky top-0 z-50 w-full bg-white shadow-[1px_1px_3px_#C6B7A2]'
     >
       {/*
       <SectionInfoBanner

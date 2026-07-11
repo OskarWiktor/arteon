@@ -185,15 +185,15 @@ function OfferItemLink({ item }: { item: OfferSectionItem }) {
       {ItemIcon ? (
         <ItemIcon
           className={cn(
-            'shrink-0 text-primary-mid transition-colors group-hover/link:text-primary',
-            normalIconSizeClasses,
+            'shrink-0 text-mid transition-colors group-hover/link:text-primary',
+            smallIconSizeClasses,
           )}
           aria-hidden='true'
         />
       ) : (
         <span className='h-2 w-2 shrink-0 rounded-lg bg-primary-light' />
       )}
-      <span className='text-sm font-medium text-mid transition-colors group-hover/link:text-primary'>
+      <span className='text-sm font-medium text-primary transition-colors group-hover/link:text-primary'>
         {item.title}
       </span>
     </InlineLink>
@@ -722,7 +722,7 @@ export default function DesktopNavigation() {
                             {ItemIcon ? (
                               <ItemIcon
                                 className={cn(
-                                  'shrink-0 text-primary-mid transition-colors group-hover/link:text-primary',
+                                  'shrink-0 text-mid transition-colors group-hover/link:text-primary',
                                   normalIconSizeClasses,
                                 )}
                                 aria-hidden='true'

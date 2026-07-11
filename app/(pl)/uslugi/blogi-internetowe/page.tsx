@@ -107,6 +107,7 @@ export default function OfferBlogPage() {
         <Divider size='xs' />
 
         <ProjectsCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Nasze realizacje stron internetowych i blogów'
           category='strony'
         />
@@ -335,7 +336,7 @@ export default function OfferBlogPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel />
+        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
 
         <Divider line />
 
@@ -512,6 +513,7 @@ export default function OfferBlogPage() {
         <Divider line />
 
         <ArticlesCarousel
+          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące stron i blogów'
           categorySlug='strony'
           articles={getArticlePreviewsByCategory('strony', 6)}

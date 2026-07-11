@@ -20,7 +20,7 @@ type CarouselNavCenteredProps = {
   slideLabel: string;
 };
 
-const arrowClasses = 'max-h-12 max-w-12 bg-[#380911]';
+const arrowClasses = 'max-h-12 max-w-12 bg-[#1C1F32]';
 
 /**
  * Centered carousel navigation: previous arrow, pagination dots and next arrow
