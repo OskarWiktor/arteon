@@ -107,9 +107,11 @@ export default function SectionFaqPanels({
             {heading}
             {description && <div className='mt-4 text-mid'>{description}</div>}
 
-            <div className='mt-8 lg:mt-auto lg:mb-4 lg:pt-8'>
+            <div className='mt-8 md:w-2/3 lg:mt-auto lg:mb-4 lg:pt-8'>
               <Card tone='beige' padding='lg' interactive={false}>
-                <h3 className='h5 text-primary'>{contactBoxTitle}</h3>
+                <h3 className='h5 font-semibold! text-primary'>
+                  {contactBoxTitle}
+                </h3>
                 <p className='text-[#645D52]'>{contactBoxText}</p>
                 <div>
                   <ButtonLink variant='accent' href={contactHref}>

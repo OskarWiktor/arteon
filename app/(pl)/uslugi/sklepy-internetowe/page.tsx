@@ -620,7 +620,6 @@ export default function OfferWebPage() {
         <Divider line />
 
         <ArticlesCarousel
-          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące sklepów internetowych'
           categorySlug='sklepy'
           articles={getArticlePreviewsByCategory('sklepy', 6)}

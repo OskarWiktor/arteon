@@ -514,7 +514,6 @@ export default function OfferBlogPage() {
         <Divider line />
 
         <ArticlesCarousel
-          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące stron i blogów'
           categorySlug='strony'
           articles={getArticlePreviewsByCategory('strony', 6)}
