@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, type ReactNode } from 'react';
+import { RiArrowDownSLine } from 'react-icons/ri';
 import { cn } from '@/lib/clsx';
 import { focusRingClasses } from '@/lib/uiClasses';
 
@@ -176,23 +177,10 @@ export default function FaqPanel({
         <h3 className='h6 flex-1 font-semibold!'>{question}</h3>
 
         <span
-          className='ml-2 rounded-md bg-[#E4D9CA] p-2 transition-transform duration-200 group-open:rotate-45'
+          className='ml-2 flex rounded-md bg-[#E4D9CA] p-2'
           aria-hidden='true'
         >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 24 24'
-            fill='none'
-            stroke='currentColor'
-            strokeWidth={2}
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            width='1em'
-            height='1em'
-          >
-            <line x1='12' y1='5' x2='12' y2='19' />
-            <line x1='5' y1='12' x2='19' y2='12' />
-          </svg>
+          <RiArrowDownSLine className='h-5 w-5 transition-transform duration-200 group-open:rotate-180' />
         </span>
       </summary>
 

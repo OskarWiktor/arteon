@@ -24,6 +24,23 @@ export const noScrollbarClasses =
   '[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden';
 
 /**
+ * The single source of truth for the gap between columns and between cards
+ * across the whole site (carousels, bento, SectionBasic, contact form, FAQ,
+ * card grids, feature grids, steps, demo, tables, article + table-of-contents,
+ * …). Change it here once to retune every section's spacing on any breakpoint.
+ */
+export const columnGapClasses = 'gap-6 md:gap-8';
+
+/**
+ * Shared carousel sizing so every carousel (projects, tools, articles,
+ * testimonials) sizes and spaces its cards identically — change it here once,
+ * not per carousel. `carouselTrackClasses` is the horizontal snap track (uses
+ * the shared gap); `carouselCardClasses` is each card slide's width.
+ */
+export const carouselTrackClasses = `flex snap-x snap-mandatory ${columnGapClasses} overflow-x-auto scroll-smooth pb-8`;
+export const carouselCardClasses = 'w-80 shrink-0 snap-start md:w-90 lg:w-110';
+
+/**
  * Shared geometry for a carousel edge fade: a full-height, non-interactive band
  * (capped at 160px, 360px on md+) sitting above the track. `from-transparent`
  * keeps the inner edge see-through; each variant below adds the side, direction

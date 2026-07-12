@@ -374,7 +374,7 @@ export default function OfferSeoSubscription() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -437,6 +437,7 @@ export default function OfferSeoSubscription() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           title='Najczęstsze pytania dotyczące pozycjonowania stron'
           pageUrl='https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron'

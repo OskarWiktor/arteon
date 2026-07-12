@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { RiMailSendLine, RiTimeLine, RiFileList2Line } from 'react-icons/ri';
 import { cn } from '@/lib/clsx';
 import {
+  columnGapClasses,
   flexCenterClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
@@ -60,9 +61,9 @@ export default function SectionContactForm({
 }: SectionContactFormProps) {
   return (
     <section id='contact' className='scroll-mt-26'>
-      <div className='grid gap-8 lg:grid-cols-2 lg:gap-12'>
-        <div className='flex flex-col justify-center'>
-          <div className='relative mb-6 aspect-4/3 overflow-hidden'>
+      <div className={cn('grid lg:grid-cols-2', columnGapClasses)}>
+        <div className='flex flex-col'>
+          <div className='relative mb-6 aspect-4/3 overflow-hidden lg:aspect-auto lg:min-h-0 lg:flex-1'>
             <Image
               src={imageSrc}
               alt={imageAlt}

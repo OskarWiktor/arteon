@@ -238,7 +238,7 @@ export default function OfferDesignPriceListPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -306,6 +306,7 @@ export default function OfferDesignPriceListPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika'
           title='Najczęstsze pytania o projekt cennika'

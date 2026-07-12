@@ -85,8 +85,8 @@ export default function SectionTimeline({
 
               <div
                 className={cn('flex-1', {
-                  'md:pr-16 md:text-right': index % 2 === 0,
-                  'md:pl-16': index % 2 !== 0,
+                  'md:pr-26 md:text-right': index % 2 === 0,
+                  'md:pl-26': index % 2 !== 0,
                 })}
               >
                 <Reveal delayMs={Math.min(index, 6) * 80}>
@@ -99,7 +99,9 @@ export default function SectionTimeline({
                     >
                       {step.icon}
                     </div>
-                    <h3 className='h5 mb-2'>{step.title}</h3>
+                    <h3 className='h5 font-semibold! text-dark'>
+                      {step.title}
+                    </h3>
                     <p className='text-light'>{step.description}</p>
                   </Card>
                 </Reveal>

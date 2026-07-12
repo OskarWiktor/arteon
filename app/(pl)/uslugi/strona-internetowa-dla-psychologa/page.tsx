@@ -214,7 +214,7 @@ export default function StronaDlaPsychologaPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -593,6 +593,7 @@ export default function StronaDlaPsychologaPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/strona-internetowa-dla-psychologa'
           title='Najczęstsze pytania o stronę dla psychologa'

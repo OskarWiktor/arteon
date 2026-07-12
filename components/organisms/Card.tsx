@@ -3,6 +3,7 @@ import { cn } from '@/lib/clsx';
 
 type CardVariant = 'default' | 'outlined';
 type CardPadding = 'sm' | 'md' | 'lg';
+type CardTone = 'white' | 'blue' | 'beige';
 
 const variantClasses: Record<CardVariant, string> = {
   default: '',
@@ -15,10 +16,17 @@ const paddingClasses: Record<CardPadding, string> = {
   lg: 'p-5 md:p-8',
 };
 
+const toneClasses: Record<CardTone, string> = {
+  white: 'bg-white',
+  blue: 'bg-primary text-on-dark',
+  beige: 'bg-[#E4D9CA] text-[#645D52]!',
+};
+
 type PolymorphicProps<T extends ElementType> = {
   as?: T;
   variant?: CardVariant;
   padding?: CardPadding;
+  tone?: CardTone;
   interactive?: boolean;
   className?: string;
   children?: ReactNode;
@@ -28,6 +36,7 @@ export default function Card<T extends ElementType = 'div'>({
   as,
   variant = 'default',
   padding = 'sm',
+  tone = 'white',
   interactive = true,
   className,
   children,
@@ -38,10 +47,11 @@ export default function Card<T extends ElementType = 'div'>({
   return (
     <Component
       className={cn(
-        'flex flex-col gap-3 overflow-hidden rounded-lg bg-white shadow-[1px_1px_3px_#C6B7A2]',
+        'flex flex-col gap-3 overflow-hidden rounded-lg shadow-[1px_1px_3px_#C6B7A2]',
         interactive &&
           'transition hover:-translate-y-0.5 hover:shadow-[2px_2px_4px_#C6B7A2]',
         variantClasses[variant],
+        toneClasses[tone],
         paddingClasses[padding],
         className,
       )}

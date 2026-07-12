@@ -286,7 +286,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -356,6 +356,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'
           title='Najczęstsze pytania dotyczące projektów kuponów i voucherów'

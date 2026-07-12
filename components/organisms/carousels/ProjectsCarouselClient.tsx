@@ -8,7 +8,9 @@ import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { cn } from '@/lib/clsx';
 import {
+  carouselCardClasses,
   carouselEdgeFadeClasses,
+  carouselTrackClasses,
   focusRingClasses,
   noScrollbarClasses,
 } from '@/lib/uiClasses';
@@ -113,7 +115,7 @@ export default function ProjectsCarouselClient({
           <div
             ref={scrollRef}
             className={cn(
-              'flex snap-x snap-mandatory gap-8 overflow-x-auto scroll-smooth pb-8',
+              carouselTrackClasses,
               noScrollbarClasses,
               focusRingClasses,
             )}
@@ -134,7 +136,7 @@ export default function ProjectsCarouselClient({
                       }
                     : null
                 }
-                className='w-80 shrink-0 snap-start md:w-90 lg:w-110'
+                className={carouselCardClasses}
                 role='group'
                 aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
               >

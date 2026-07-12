@@ -8,7 +8,9 @@ import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { cn } from '@/lib/clsx';
 import {
+  carouselCardClasses,
   carouselEdgeFadeClasses,
+  carouselTrackClasses,
   focusRingClasses,
   noScrollbarClasses,
 } from '@/lib/uiClasses';
@@ -129,7 +131,7 @@ export default function ArticlesCarousel({
           <div
             ref={scrollRef}
             className={cn(
-              'flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+              carouselTrackClasses,
               noScrollbarClasses,
               focusRingClasses,
             )}
@@ -154,7 +156,7 @@ export default function ArticlesCarousel({
                         }
                       : null
                   }
-                  className='w-85 shrink-0 snap-start md:w-105 lg:w-130'
+                  className={carouselCardClasses}
                   role='group'
                   aria-label={`Artykuł ${i + 1} z ${finalArticles.length}`}
                 >

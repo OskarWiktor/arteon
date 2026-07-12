@@ -38,7 +38,7 @@ export default function FeatureCard({
   const descId = description ? `feature-desc-${base}-${idx}` : undefined;
 
   const displayIcon = icon || (
-    <span className='inline-block h-2 w-2 rounded-xs bg-black' />
+    <span className='inline-block h-6 w-6 rounded-xs bg-black' />
   );
 
   if (variant === 'centered') {
@@ -47,18 +47,23 @@ export default function FeatureCard({
         as='section'
         aria-labelledby={headingId}
         aria-describedby={descId}
-        className={cn('h-full flex-col!', flexCenterClasses)}
+        padding='md'
+        className={cn('h-full flex-col! gap-3', flexCenterClasses)}
         {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
       >
         <div
           className={cn(
-            'mb-3 h-12 w-12 rounded-lg bg-primary-light text-primary',
+            'h-16 w-16 rounded-lg bg-primary-light text-primary',
             flexCenterClasses,
           )}
         >
           {displayIcon}
         </div>
-        <h3 id={headingId} className='h6 mb-1 text-dark' itemProp='name'>
+        <h3
+          id={headingId}
+          className='h5 font-semibold! text-dark'
+          itemProp='name'
+        >
           {title}
         </h3>
 

@@ -1,6 +1,6 @@
 import { useId, type ReactNode } from 'react';
 import { cn } from '@/lib/clsx';
-import { flexCenterClasses } from '@/lib/uiClasses';
+import { columnGapClasses, flexCenterClasses } from '@/lib/uiClasses';
 import SectionHeader from '../../molecules/SectionHeader';
 
 type Variant = 'left' | 'right';
@@ -29,7 +29,7 @@ export default function SectionDemo({
 
   return (
     <section id={id} aria-labelledby={headingId} className='w-full'>
-      <div className='flex flex-col gap-6 lg:flex-row lg:gap-8'>
+      <div className={cn('flex flex-col lg:flex-row', columnGapClasses)}>
         <div
           className={cn('w-full lg:w-2/5', flexCenterClasses, {
             'lg:order-2': variant === 'left',

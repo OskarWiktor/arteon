@@ -291,7 +291,7 @@ export default function OfferDesignLetterheadPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -364,6 +364,7 @@ export default function OfferDesignLetterheadPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego'
           title='Najczęstsze pytania dotyczące projektów papieru firmowego'

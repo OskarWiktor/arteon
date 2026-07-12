@@ -1,5 +1,7 @@
 'use client';
 
+import { cn } from '@/lib/clsx';
+import { columnGapClasses } from '@/lib/uiClasses';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 import CarouselCard from '../organisms/carousels/CarouselCard';
 
@@ -37,7 +39,12 @@ export default function ProjectsGrid({ projects, selectedCategories }: Props) {
 
   return (
     <section className='w-full'>
-      <div className='grid auto-rows-max grid-cols-1 gap-8 md:grid-cols-3'>
+      <div
+        className={cn(
+          'grid auto-rows-max grid-cols-1 md:grid-cols-3',
+          columnGapClasses,
+        )}
+      >
         {filteredProjects.map((project, i) => (
           <div
             key={project.slug}

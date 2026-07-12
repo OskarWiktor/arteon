@@ -336,7 +336,7 @@ export default function OfferBlogPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -433,6 +433,7 @@ export default function OfferBlogPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           title='Najczęstsze pytania dotyczące blogów internetowych'
           pageUrl='https://www.arteonagency.pl/uslugi/blogi-internetowe'
