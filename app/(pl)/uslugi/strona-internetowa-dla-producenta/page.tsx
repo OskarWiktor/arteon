@@ -734,7 +734,6 @@ export default function StronaDlaProducentaPage() {
         <Divider line />
 
         <ArticlesCarousel
-          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące stron internetowych'
           categorySlug='strony'
           articles={getArticlePreviewsByCategory('strony', 6)}

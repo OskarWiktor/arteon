@@ -490,7 +490,6 @@ export default function OfferDesignBrandIdentityDesignPage() {
         <Divider line />
 
         <ArticlesCarousel
-          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
           title='Przydatne artykuły dotyczące projektów graficznych'
           categorySlug='grafika'
           articles={getArticlePreviewsByCategory('grafika', 6)}
