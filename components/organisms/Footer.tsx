@@ -326,7 +326,7 @@ export default function Footer({
               aria-label='Usługi - Witryny, Treści i Marketing'
               className='lg:col-start-2 lg:row-start-1'
             >
-              <h3 className='h6 mb-3'>Witryny</h3>
+              <h3 className='h6 mb-3 font-semibold!'>Witryny</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
@@ -342,7 +342,7 @@ export default function Footer({
               aria-label='Treści i Marketing'
               className='lg:col-start-3 lg:row-start-1'
             >
-              <h3 className='h6 mb-3'>Treści + Marketing</h3>
+              <h3 className='h6 mb-3 font-semibold!'>Treści + Marketing</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {offerLinksTwo.map(({ href, title }) => (
                   <li key={href}>
@@ -358,7 +358,7 @@ export default function Footer({
               aria-label='Usługi - Projekty graficzne (1)'
               className='lg:col-start-4 lg:row-start-1'
             >
-              <h3 className='h6 mb-3'>Projekty graficzne</h3>
+              <h3 className='h6 mb-3 font-semibold!'>Projekty graficzne</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {gfxLeft.map(({ href, title }) => (
                   <li key={href}>
@@ -390,7 +390,7 @@ export default function Footer({
               aria-label='Główne sekcje'
               className='lg:col-start-1 lg:row-start-2'
             >
-              <h3 className='h6 mb-3'>Główne strony</h3>
+              <h3 className='h6 mb-3 font-semibold!'>Główne strony</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {navLinksPrimary.map(({ href, label }) => (
                   <li key={href}>
@@ -408,7 +408,11 @@ export default function Footer({
                 aria-label={`Narzędzia (${columnIndex + 1})`}
                 className={PL_TOOL_COL_CLASS[columnIndex]}
               >
-                <h3 className={columnIndex === 0 ? 'h6 mb-3' : 'sr-only'}>
+                <h3
+                  className={
+                    columnIndex === 0 ? 'h6 mb-3 font-semibold!' : 'sr-only'
+                  }
+                >
                   Narzędzia
                 </h3>
                 <ul
@@ -433,8 +437,8 @@ export default function Footer({
             ))}
           </div>
 
-          <div className='mt-8 border-t border-neutral-200 pt-4 text-light'>
-            <div className='flex flex-col items-center justify-between gap-2 md:flex-row md:items-start'>
+          <div className='mt-8 border-t border-neutral-200 text-light'>
+            <div className='mt-6 flex flex-col items-center justify-between gap-2 md:flex-row md:items-start'>
               <small className='text-center text-sm md:text-left'>
                 &copy; <time dateTime='2026'>2026</time> Arteon. Wszelkie prawa
                 zastrzeżone.

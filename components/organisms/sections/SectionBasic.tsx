@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useId, type ReactNode } from 'react';
 import { cn } from '@/lib/clsx';
+import { columnGapClasses } from '@/lib/uiClasses';
 import ButtonGroup from '../../molecules/ButtonGroup';
 import SectionHeader from '../../molecules/SectionHeader';
 
@@ -38,7 +39,7 @@ export default function SectionBasic({
 
   return (
     <section id={id} aria-labelledby={headingId} className='w-full'>
-      <div className='flex flex-col md:gap-4 lg:flex-row lg:gap-8'>
+      <div className={cn('flex flex-col lg:flex-row', columnGapClasses)}>
         <div
           className={cn('flex w-full lg:w-1/2', {
             'lg:order-2': variant === 'left',

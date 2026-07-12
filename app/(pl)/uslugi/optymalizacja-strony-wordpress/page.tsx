@@ -306,7 +306,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -321,6 +321,7 @@ export default function OfferOptimizationWordPressPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/optymalizacja-strony-wordpress'
           title='Najczęstsze pytania dotyczące optymalizacji stron internetowych w WordPress'

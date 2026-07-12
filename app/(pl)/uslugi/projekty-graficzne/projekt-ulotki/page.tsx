@@ -307,7 +307,7 @@ export default function OfferDesignFlyerPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -380,6 +380,7 @@ export default function OfferDesignFlyerPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki'
           title='Najczęstsze pytania dotyczące projektów ulotek'

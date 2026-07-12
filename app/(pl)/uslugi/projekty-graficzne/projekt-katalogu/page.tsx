@@ -297,7 +297,7 @@ export default function OfferDesignCatalogPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -367,6 +367,7 @@ export default function OfferDesignCatalogPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu'
           title='Najczęstsze pytania dotyczące projektów katalogów'

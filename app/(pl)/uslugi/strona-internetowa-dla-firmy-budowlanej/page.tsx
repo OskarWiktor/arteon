@@ -225,7 +225,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -689,6 +689,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/strona-internetowa-dla-firmy-budowlanej'
           title='Najczęstsze pytania o stronę dla firmy budowlanej'

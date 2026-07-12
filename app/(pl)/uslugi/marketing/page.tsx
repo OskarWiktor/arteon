@@ -303,7 +303,7 @@ export default function OfferMarketingHubPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 

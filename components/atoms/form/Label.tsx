@@ -29,7 +29,7 @@ export default function Label({
   return (
     <label
       className={cn(
-        'mb-1 block font-medium!',
+        'block font-medium!',
         variant === 'tool' && 'text-dark!',
         className,
       )}

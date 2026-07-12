@@ -421,7 +421,7 @@ export default function OfferMarketingPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -436,6 +436,7 @@ export default function OfferMarketingPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           title='Najczęstsze pytania dotyczące audytu SEO'
           pageUrl='https://www.arteonagency.pl/uslugi/marketing/audyt-seo'

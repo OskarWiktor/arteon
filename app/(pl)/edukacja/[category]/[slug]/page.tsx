@@ -22,6 +22,7 @@ import {
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
+import { columnGapClasses } from '@/lib/uiClasses';
 import type { Article } from '@/types/article';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
@@ -477,7 +478,10 @@ export default async function ArticlePage({
         id='article-root'
         itemScope
         itemType='https://schema.org/BlogPosting'
-        className='sm-8 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_300px]'
+        className={cn(
+          'flex flex-col-reverse lg:grid lg:grid-cols-[1fr_300px]',
+          columnGapClasses,
+        )}
       >
         <div>
           <header>

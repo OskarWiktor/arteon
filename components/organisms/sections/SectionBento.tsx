@@ -2,7 +2,7 @@ import Image from 'next/image';
 import type { ReactNode } from 'react';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { cn } from '@/lib/clsx';
-import { flexCenterClasses } from '@/lib/uiClasses';
+import { columnGapClasses, flexCenterClasses } from '@/lib/uiClasses';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
 
 type BentoItemSize = 'small' | 'medium' | 'large';
@@ -36,7 +36,12 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
     >
       {title && <SectionHeader title={title} />}
 
-      <div className='grid auto-rows-[240px] grid-cols-2 gap-3 md:grid-cols-4'>
+      <div
+        className={cn(
+          'grid auto-rows-[240px] grid-cols-2 md:grid-cols-4',
+          columnGapClasses,
+        )}
+      >
         {items.map((item, index) => {
           return (
             <div

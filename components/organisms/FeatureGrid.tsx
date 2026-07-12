@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/clsx';
+import { columnGapClasses } from '@/lib/uiClasses';
 import FeatureCard from './FeatureCard';
 import SectionHeader from '../molecules/SectionHeader';
 
@@ -56,7 +57,7 @@ export default function FeatureGrid({
         titleId={`${sectionId}-h`}
       />
 
-      <ul className={cn('grid gap-4', gridClasses)}>
+      <ul className={cn('grid', gridClasses, columnGapClasses)}>
         {items.map((item, idx) => (
           <li
             className='h-full'

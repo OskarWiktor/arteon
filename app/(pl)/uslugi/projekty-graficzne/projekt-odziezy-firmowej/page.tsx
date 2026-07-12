@@ -257,7 +257,7 @@ export default function OfferDesignCorporateApparelPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -329,6 +329,7 @@ export default function OfferDesignCorporateApparelPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej'
           title='Najczęstsze pytania dotyczące projektów odzieży firmowej'

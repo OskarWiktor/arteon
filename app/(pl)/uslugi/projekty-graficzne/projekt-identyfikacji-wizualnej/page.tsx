@@ -329,7 +329,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -399,6 +399,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           title='Najczęstsze pytania dotyczące projektów identyfikacji wizualnej'
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej'

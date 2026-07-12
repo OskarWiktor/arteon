@@ -2,6 +2,8 @@ import {
   getAllArticlePreviews,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
+import { cn } from '@/lib/clsx';
+import { columnGapClasses } from '@/lib/uiClasses';
 import { slugify } from '@/utils/slugify';
 import CarouselCard from './carousels/CarouselCard';
 
@@ -34,7 +36,10 @@ export default function ArticlesList({
   return (
     <section
       aria-label='Lista artykułów'
-      className='grid auto-rows-max grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'
+      className={cn(
+        'grid auto-rows-max grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
+        columnGapClasses,
+      )}
     >
       {items.map(article => {
         const catSlug = getPrimaryCategorySlug(article);

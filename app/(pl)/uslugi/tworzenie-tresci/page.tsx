@@ -316,7 +316,7 @@ export default function OfferContentPage() {
 
         <Divider line />
 
-        <TestimonialsCarousel secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych' />
+        <TestimonialsCarousel />
 
         <Divider line />
 
@@ -335,6 +335,7 @@ export default function OfferContentPage() {
         <Divider line />
 
         <SectionFaqPanels
+          variant='offer'
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/tworzenie-tresci'
           title='Najczęstsze pytania dotyczące tworzenia treści'

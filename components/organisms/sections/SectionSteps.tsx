@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useId, type ReactNode } from 'react';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import { cn } from '@/lib/clsx';
-import { flexCenterClasses } from '@/lib/uiClasses';
+import { columnGapClasses, flexCenterClasses } from '@/lib/uiClasses';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
 
@@ -89,7 +89,7 @@ export default function SectionSteps({
           className={cn(
             'grid grid-cols-1 md:auto-rows-fr',
             gridClasses,
-            isDark ? 'gap-8' : 'gap-4 md:gap-6',
+            columnGapClasses,
           )}
         >
           {items.map((item, index) => {

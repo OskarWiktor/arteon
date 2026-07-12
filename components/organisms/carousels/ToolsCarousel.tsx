@@ -10,7 +10,9 @@ import { cn } from '@/lib/clsx';
 import { getToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
+  carouselCardClasses,
   carouselEdgeFadeClasses,
+  carouselTrackClasses,
   focusRingClasses,
   noScrollbarClasses,
 } from '@/lib/uiClasses';
@@ -103,7 +105,7 @@ export default function ToolsCarousel({
           <div
             ref={scrollRef}
             className={cn(
-              'flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+              carouselTrackClasses,
               noScrollbarClasses,
               focusRingClasses,
             )}
@@ -124,7 +126,7 @@ export default function ToolsCarousel({
                       }
                     : null
                 }
-                className='w-85 shrink-0 snap-start md:w-105 lg:w-130'
+                className={carouselCardClasses}
                 role='group'
                 aria-label={`${t.tool} ${i + 1} ${t.of} ${items.length}`}
               >
