@@ -329,16 +329,6 @@ export default function OfferDesignLoyaltyCardPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź koszt realizacji karty lojalnościowej'
-          description='Napisz jak chcesz nagradzać klientów, ile wariantów potrzebujesz oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp'
-          imageAlt='Realizacja projektu karty lojalnościowej'
-          defaultSubject='Projekt karty lojalnościowej'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -367,6 +357,16 @@ export default function OfferDesignLoyaltyCardPage() {
                 'Tak, możemy przygotować serię spójną wizualnie dla wielu punktów, lokalizacji lub marek partnerskich - program pozostaje łatwy do zrozumienia, a jednocześnie dopasowany do konkretnych miejsc.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt realizacji karty lojalnościowej'
+          description='Napisz jak chcesz nagradzać klientów, ile wariantów potrzebujesz oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp'
+          imageAlt='Realizacja projektu karty lojalnościowej'
+          defaultSubject='Projekt karty lojalnościowej'
         />
 
         <Divider line />

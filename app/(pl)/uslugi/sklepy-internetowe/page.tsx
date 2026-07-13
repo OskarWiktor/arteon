@@ -496,17 +496,7 @@ export default function OfferWebPage() {
 
         <WorkSteps variant='web' />
 
-        <Divider size='sm' />
-
-        <SectionContactForm
-          title='Sprawdź koszt realizacji sklepu internetowego'
-          description='Napisz jakie produkty chcesz sprzedawać, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji.'
-          imageSrc='/assets/projects/trilllizo/moskup-strony-trilllizo.webp'
-          imageAlt='Realizacja sklepu internetowego - Trilllizo mockup'
-          defaultSubject='Sklep internetowy'
-        />
-
-        <Divider line />
+        <Divider />
 
         <SectionFaqPanels
           variant='offer'
@@ -575,6 +565,16 @@ export default function OfferWebPage() {
                 'Tak, uwielbiamy pomagać i edukować - prowadzimy cały proces w przystępny oraz transparentny sposób, objaśniając wszystkie kroki bez technologicznego żargonu.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt realizacji sklepu internetowego'
+          description='Napisz jakie produkty chcesz sprzedawać, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji.'
+          imageSrc='/assets/projects/trilllizo/moskup-strony-trilllizo.webp'
+          imageAlt='Realizacja sklepu internetowego - Trilllizo mockup'
+          defaultSubject='Sklep internetowy'
         />
 
         <Divider line />

@@ -44,7 +44,7 @@ export function CarouselNavCentered({
   if (!isScrollable || maxSlides <= 1) return null;
 
   return (
-    <div className='mt-4 flex items-center justify-center gap-4'>
+    <div className='mt-1 flex items-center justify-center gap-4 md:mt-4'>
       <ButtonCircle
         onClick={onPrev}
         ariaLabel={prevLabel}

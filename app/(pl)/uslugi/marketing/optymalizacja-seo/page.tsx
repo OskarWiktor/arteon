@@ -409,16 +409,6 @@ export default function OfferOptimizationSEO() {
           grid='two'
         />
 
-        <Divider size='sm' />
-
-        <SectionContactForm
-          title='Sprawdź koszt optymalizacji SEO'
-          description='Podaj adres swojej strony i napisz co chciałbyś/aś poprawić (szybkość, widoczność, błędy techniczne) - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.webp'
-          imageAlt='Optymalizacja SEO - edycja i poprawa widoczności strony'
-          defaultSubject='Optymalizacja SEO'
-        />
-
         <Divider line />
 
         <SectionFaqPanels
@@ -472,6 +462,14 @@ export default function OfferOptimizationSEO() {
                 'Po optymalizacji zwykle przechodzimy do pozycjonowania: rozwój treści, prace strukturalne i comiesięczny monitoring.',
             },
           ]}
+        />
+
+        <SectionContactForm
+          title='Sprawdź koszt optymalizacji SEO'
+          description='Podaj adres swojej strony i napisz co chciałbyś/aś poprawić (szybkość, widoczność, błędy techniczne) - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.webp'
+          imageAlt='Optymalizacja SEO - edycja i poprawa widoczności strony'
+          defaultSubject='Optymalizacja SEO'
         />
 
         <Divider line />

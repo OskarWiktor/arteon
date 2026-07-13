@@ -420,16 +420,6 @@ export default function OfferBlogPage() {
 
         <WorkSteps variant='web' />
 
-        <Divider size='sm' />
-
-        <SectionContactForm
-          title='Sprawdź koszt realizacji bloga internetowego'
-          description='Napisz o czym ma być Twój blog, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji.'
-          imageSrc='/assets/projects/jstax/moskup-strony-jstax.webp'
-          imageAlt='Realizacja strony z blogiem dla biura rachunkowego JSTax'
-          defaultSubject='Blog'
-        />
-
         <Divider line />
 
         <SectionFaqPanels
@@ -469,6 +459,16 @@ export default function OfferBlogPage() {
                 'Tak, pomagamy w budowie struktury bloga tak, aby pojawił się wyżej w Google.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt realizacji bloga internetowego'
+          description='Napisz o czym ma być Twój blog, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji.'
+          imageSrc='/assets/projects/jstax/moskup-strony-jstax.webp'
+          imageAlt='Realizacja strony z blogiem dla biura rachunkowego JSTax'
+          defaultSubject='Blog'
         />
 
         <Divider line />

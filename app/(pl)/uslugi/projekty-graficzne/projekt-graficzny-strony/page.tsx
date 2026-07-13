@@ -363,16 +363,6 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź koszt projektu graficznego strony'
-          description='Napisz co chciałbyś/aś umieścić na swojej stronie, ile podstron potrzebujesz oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-projekt-realizacji-stworzony-w-figma.webp'
-          imageAlt='Projekt graficzny strony internetowej w Figma'
-          defaultSubject='Projekt graficzny strony'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -422,6 +412,16 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
                 'Tak, projektujemy również pojedyncze ekrany, strony główne i landing page’e pod pojedyncze kampanie.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt projektu graficznego strony'
+          description='Napisz co chciałbyś/aś umieścić na swojej stronie, ile podstron potrzebujesz oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-projekt-realizacji-stworzony-w-figma.webp'
+          imageAlt='Projekt graficzny strony internetowej w Figma'
+          defaultSubject='Projekt graficzny strony'
         />
 
         <Divider line />

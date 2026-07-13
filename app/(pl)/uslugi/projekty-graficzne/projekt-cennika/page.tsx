@@ -295,16 +295,6 @@ export default function OfferDesignPriceListPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź koszt realizacji cennika'
-          description='Napisz jak wygląda oferta, ile pozycji ma zawierać cennik oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp'
-          imageAlt='Papier firmowy dla kancelarii LUX NOVA - przykład materiału drukowanego'
-          defaultSubject='Projekt cennika'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -338,6 +328,16 @@ export default function OfferDesignPriceListPage() {
                 'Tak, możemy zaprojektować katalog cenowy, menu lub broszurę z cennikiem w formie wielostronicowej.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt realizacji cennika'
+          description='Napisz jak wygląda oferta, ile pozycji ma zawierać cennik oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp'
+          imageAlt='Papier firmowy dla kancelarii LUX NOVA - przykład materiału drukowanego'
+          defaultSubject='Projekt cennika'
         />
 
         <Divider line />

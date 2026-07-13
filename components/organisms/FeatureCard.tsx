@@ -9,7 +9,7 @@ type FeatureCardProps = {
   description?: ReactNode;
   points?: string[];
   icon?: ReactNode;
-  variant?: 'default' | 'centered';
+  variant?: 'default' | 'centered' | 'bare';
 };
 
 /**
@@ -20,7 +20,7 @@ type FeatureCardProps = {
  * @param description - Optional descriptive content displayed under the title
  * @param points - Optional list of short feature points rendered as list items
  * @param icon - Optional override for the icon displayed; when omitted a small dot is used
- * @param variant - Layout variant: `'centered'` renders a vertically centered card, `'default'` renders a horizontal card (default: `'default'`)
+ * @param variant - Layout variant: `'centered'` renders a vertically centered card, `'bare'` is the centered card without its background/shadow, `'default'` renders a horizontal card (default: `'default'`)
  * @returns A React element representing the feature card section with appropriate accessibility attributes and microdata
  */
 export default function FeatureCard({
@@ -41,14 +41,21 @@ export default function FeatureCard({
     <span className='inline-block h-6 w-6 rounded-xs bg-black' />
   );
 
-  if (variant === 'centered') {
+  if (variant === 'centered' || variant === 'bare') {
     return (
       <Card
         as='section'
         aria-labelledby={headingId}
         aria-describedby={descId}
         padding='md'
-        className={cn('h-full flex-col! gap-3', flexCenterClasses)}
+        interactive={variant !== 'bare'}
+        className={cn(
+          'h-full flex-col! gap-3',
+          // Identical to the centered card, only without the surface: no
+          // background and no shadow.
+          variant === 'bare' && 'bg-transparent shadow-none',
+          flexCenterClasses,
+        )}
         {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
       >
         <div

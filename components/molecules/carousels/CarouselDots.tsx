@@ -37,7 +37,9 @@ export function CarouselDots({
       <div
         className={cn(
           'flex md:gap-2',
-          align === 'center' ? 'justify-center' : 'mt-2 ml-40 justify-start',
+          align === 'center'
+            ? 'justify-center'
+            : 'mt-3 ml-28 justify-start md:mt-2 md:ml-40',
         )}
         role='group'
         aria-label={carouselNavigationLabel}

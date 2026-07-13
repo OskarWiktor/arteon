@@ -425,16 +425,6 @@ export default function OfferMarketingPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź koszt audytu SEO'
-          description='Podaj adres swojej strony i napisz jakie problemy zauważasz (spadki pozycji, mały ruch, błędy techniczne) - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp'
-          imageAlt='Audyt SEO - analiza strony w Google Search Console'
-          defaultSubject='Audyt SEO'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -495,6 +485,16 @@ export default function OfferMarketingPage() {
                 'Rekomendujemy pełny audyt co 6-12 miesięcy lub przed większą przebudową serwisu. Lżejszy przegląd kwartalny pozwala utrzymać tempo wzrostu.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt audytu SEO'
+          description='Podaj adres swojej strony i napisz jakie problemy zauważasz (spadki pozycji, mały ruch, błędy techniczne) - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp'
+          imageAlt='Audyt SEO - analiza strony w Google Search Console'
+          defaultSubject='Audyt SEO'
         />
 
         <Divider line />

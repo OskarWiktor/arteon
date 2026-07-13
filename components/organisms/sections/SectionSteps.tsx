@@ -145,7 +145,7 @@ export default function SectionSteps({
                       </div>
                     )}
                     <div className='flex grow flex-col px-2 pt-4 md:px-4 md:pt-6'>
-                      <h3 className='h5 line-clamp-2 text-[#F9F5F2]!'>
+                      <h3 className='h5 line-clamp-2 font-semibold! text-[#F9F5F2]!'>
                         {itemTitle}
                       </h3>
                       {itemSubtitle && (

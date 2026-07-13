@@ -1,3 +1,9 @@
+import {
+  RiKey2Line,
+  RiPencilRuler2Line,
+  RiPriceTag3Line,
+  RiSecurePaymentLine,
+} from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
@@ -5,12 +11,15 @@ import Wrapper from '@/components/atoms/Wrapper';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { getHomepageAlternates } from '@/lib/i18n/pages/toolMeta';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import type { Testimonial } from '@/types/testimonial';
 
 export const metadata = {
@@ -257,6 +266,43 @@ export default function HomePage() {
         <Divider line />
 
         <WorkSteps />
+
+        <Divider line />
+
+        <SectionBar title='Jasne gwarancje, jasne zasady' />
+
+        <div>
+          <FeatureGrid
+            variant='bare'
+            columns={4}
+            items={[
+              {
+                icon: <RiPencilRuler2Line className={normalIconSizeClasses} />,
+                title: 'Indywidualne projekty',
+                description:
+                  'Wszystko projektujemy od zera - nie używamy gotowych szablonów, dzięki czemu Twoja strona, sklep czy projekt graficzny jest w pełni unikalny i dopasowany do Twojej firmy oraz grupy docelowej.',
+              },
+              {
+                icon: <RiSecurePaymentLine className={normalIconSizeClasses} />,
+                title: 'Brak zaliczek',
+                description:
+                  'Nie pobieramy zaliczek dla projektów do 5 tysięcy złotych brutto. Fakturę wystawiamy tylko po zakończeniu prac lub po zakończeniu poszczególnych etapów w przypadku większych projektów.',
+              },
+              {
+                icon: <RiPriceTag3Line className={normalIconSizeClasses} />,
+                title: 'Brak opłat abonamentowych',
+                description:
+                  'Nie pobieramy comiesięcznych opłat za stworzone witryny. Płacisz jednorazowo, za samą realizację a w przypadku dłuższych współprac, prace zawsze rozliczamy zadaniowo. Cenimy transparencję.',
+              },
+              {
+                icon: <RiKey2Line className={normalIconSizeClasses} />,
+                title: 'Pełna własność',
+                description:
+                  'Wszystko co stworzymy staje się Twoją własnością. Otrzymujesz stronę, dostępy do wszelkich zintegrowanych platform oraz pliki źródłowe. Możemy również przygotować umowę, która dodatkowo zabezpiecza Twoje prawa.',
+              },
+            ]}
+          />
+        </div>
 
         <Divider line />
 
