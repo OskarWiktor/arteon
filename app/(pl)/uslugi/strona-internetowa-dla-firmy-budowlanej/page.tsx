@@ -485,6 +485,30 @@ export default function StronaDlaFirmyBudowlanejPage() {
 
         <Divider line />
 
+        <SectionInfo
+          title='Formularz, który przysyła gotowych inwestorów'
+          subtitle='Zapytania od inwestorów gotowych do budowy'
+        >
+          <p>
+            Budowy nie da się rzetelnie wycenić w kilka sekund, dlatego budujemy
+            formularz dopasowany do budownictwa, które ułatwią Ci stworzenie
+            wyceny. Pytamy o to, co naprawdę ma znaczenie - czy inwestor ma już
+            projekt budowlany, czy szuka generalnego wykonawcy, na jakim etapie
+            jest budowa oraz czy rozliczenie ma być transzowe za poszczególne
+            etapy prac.
+          </p>
+          <br />
+          <p>
+            Dzięki temu trafiają do Ciebie zapytania od inwestorów, którzy
+            realnie planują budowę i wiedzą, czego potrzebują. Przy usługach,
+            które da się policzyć z powierzchni, jak ocieplenie czy elewacja,
+            dokładamy kalkulator pokazujący orientacyjne widełki lub dedykowane
+            do danej usługi formularze.
+          </p>
+        </SectionInfo>
+
+        <Divider line />
+
         <SectionBar title='Jasne gwarancje, jasne zasady' />
 
         <div>
@@ -519,30 +543,6 @@ export default function StronaDlaFirmyBudowlanejPage() {
             ]}
           />
         </div>
-
-        <Divider line />
-
-        <SectionInfo
-          title='Formularz, który przysyła gotowych inwestorów'
-          subtitle='Zapytania od inwestorów gotowych do budowy'
-        >
-          <p>
-            Budowy nie da się rzetelnie wycenić w kilka sekund, dlatego budujemy
-            formularz dopasowany do budownictwa, które ułatwią Ci stworzenie
-            wyceny. Pytamy o to, co naprawdę ma znaczenie - czy inwestor ma już
-            projekt budowlany, czy szuka generalnego wykonawcy, na jakim etapie
-            jest budowa oraz czy rozliczenie ma być transzowe za poszczególne
-            etapy prac.
-          </p>
-          <br />
-          <p>
-            Dzięki temu trafiają do Ciebie zapytania od inwestorów, którzy
-            realnie planują budowę i wiedzą, czego potrzebują. Przy usługach,
-            które da się policzyć z powierzchni, jak ocieplenie czy elewacja,
-            dokładamy kalkulator pokazujący orientacyjne widełki lub dedykowane
-            do danej usługi formularze.
-          </p>
-        </SectionInfo>
 
         <Divider line />
 

@@ -4,7 +4,11 @@ import {
   RiBrushLine,
   RiFileTextLine,
   RiFolderOpenLine,
+  RiKey2Line,
   RiMoneyDollarCircleLine,
+  RiPencilRuler2Line,
+  RiPriceTag3Line,
+  RiSecurePaymentLine,
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
@@ -27,6 +31,7 @@ import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
@@ -319,6 +324,43 @@ export default function OfferDesignPresentationFolderPage() {
 
         <Divider line />
 
+        <SectionBar title='Jasne gwarancje, jasne zasady' />
+
+        <div>
+          <FeatureGrid
+            variant='bare'
+            columns={4}
+            items={[
+              {
+                icon: <RiPencilRuler2Line className={normalIconSizeClasses} />,
+                title: 'Indywidualne projekty',
+                description:
+                  'Wszystko projektujemy od zera - nie używamy gotowych szablonów, dzięki czemu Twoja strona, sklep czy projekt graficzny jest w pełni unikalny i dopasowany do Twojej firmy oraz grupy docelowej.',
+              },
+              {
+                icon: <RiSecurePaymentLine className={normalIconSizeClasses} />,
+                title: 'Brak zaliczek',
+                description:
+                  'Nie pobieramy zaliczek dla projektów do 5 tysięcy złotych brutto. Fakturę wystawiamy tylko po zakończeniu prac lub po zakończeniu poszczególnych etapów w przypadku większych projektów.',
+              },
+              {
+                icon: <RiPriceTag3Line className={normalIconSizeClasses} />,
+                title: 'Brak opłat abonamentowych',
+                description:
+                  'Nie pobieramy comiesięcznych opłat za stworzone witryny. Płacisz jednorazowo, za samą realizację a w przypadku dłuższych współprac, prace zawsze rozliczamy zadaniowo. Cenimy transparencję.',
+              },
+              {
+                icon: <RiKey2Line className={normalIconSizeClasses} />,
+                title: 'Pełna własność',
+                description:
+                  'Wszystko co stworzymy staje się Twoją własnością. Otrzymujesz stronę, dostępy do wszelkich zintegrowanych platform oraz pliki źródłowe. Możemy również przygotować umowę, która dodatkowo zabezpiecza Twoje prawa.',
+              },
+            ]}
+          />
+        </div>
+
+        <Divider line />
+
         <SectionPrices
           title='Projekt teczki ofertowej - przykładowe pakiety'
           plans={[
@@ -377,16 +419,6 @@ export default function OfferDesignPresentationFolderPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź koszt realizacji teczki ofertowej'
-          description='Napisz jakie informacje chcesz umieścić na teczce, czy posiadasz logo oraz materiały graficzne i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
-          imageAlt='Realizacja teczki ofertowej - kancelaria Luxnova'
-          defaultSubject='Projekt teczki ofertowej'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -414,6 +446,16 @@ export default function OfferDesignPresentationFolderPage() {
                 'Tak, przygotowujemy pliki zgodnie z wymaganiami druku: odpowiedni format, spady, marginesy bezpieczeństwa oraz ustawienia kolorów, tak, aby można je było od razu przekazać do drukarni.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt realizacji teczki ofertowej'
+          description='Napisz jakie informacje chcesz umieścić na teczce, czy posiadasz logo oraz materiały graficzne i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
+          imageAlt='Realizacja teczki ofertowej - kancelaria Luxnova'
+          defaultSubject='Projekt teczki ofertowej'
         />
 
         <Divider line />

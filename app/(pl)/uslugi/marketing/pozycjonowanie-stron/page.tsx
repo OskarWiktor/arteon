@@ -2,11 +2,13 @@ import Script from 'next/script';
 import {
   RiBarChart2Fill,
   RiLightbulbFlashLine,
-  RiSearchLine,
   RiFileList2Line,
   RiLinksFill,
+  RiKey2Line,
+  RiPencilRuler2Line,
+  RiPriceTag3Line,
+  RiSecurePaymentLine,
 } from 'react-icons/ri';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
@@ -26,7 +28,8 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
@@ -301,6 +304,43 @@ export default function OfferSeoSubscription() {
 
         <Divider line />
 
+        <SectionBar title='Jasne gwarancje, jasne zasady' />
+
+        <div>
+          <FeatureGrid
+            variant='bare'
+            columns={4}
+            items={[
+              {
+                icon: <RiPencilRuler2Line className={normalIconSizeClasses} />,
+                title: 'Indywidualne projekty',
+                description:
+                  'Wszystko projektujemy od zera - nie używamy gotowych szablonów, dzięki czemu Twoja strona, sklep czy projekt graficzny jest w pełni unikalny i dopasowany do Twojej firmy oraz grupy docelowej.',
+              },
+              {
+                icon: <RiSecurePaymentLine className={normalIconSizeClasses} />,
+                title: 'Brak zaliczek',
+                description:
+                  'Nie pobieramy zaliczek dla projektów do 5 tysięcy złotych brutto. Fakturę wystawiamy tylko po zakończeniu prac lub po zakończeniu poszczególnych etapów w przypadku większych projektów.',
+              },
+              {
+                icon: <RiPriceTag3Line className={normalIconSizeClasses} />,
+                title: 'Brak opłat abonamentowych',
+                description:
+                  'Nie pobieramy comiesięcznych opłat za stworzone witryny. Płacisz jednorazowo, za samą realizację a w przypadku dłuższych współprac, prace zawsze rozliczamy zadaniowo. Cenimy transparencję.',
+              },
+              {
+                icon: <RiKey2Line className={normalIconSizeClasses} />,
+                title: 'Pełna własność',
+                description:
+                  'Wszystko co stworzymy staje się Twoją własnością. Otrzymujesz stronę, dostępy do wszelkich zintegrowanych platform oraz pliki źródłowe. Możemy również przygotować umowę, która dodatkowo zabezpiecza Twoje prawa.',
+              },
+            ]}
+          />
+        </div>
+
+        <Divider line />
+
         <SectionPrices
           title='Pakiety pozycjonowania'
           plans={[
@@ -375,54 +415,6 @@ export default function OfferSeoSubscription() {
         <Divider line />
 
         <TestimonialsCarousel />
-
-        <Divider line />
-
-        <SectionSteps
-          title='Zobacz też'
-          subtitle='Powiązane usługi'
-          description='Najlepsze efekty osiągamy, łącząc strategię treści z solidnym fundamentem technicznym.'
-          items={[
-            {
-              icon: <RiSearchLine className={largeIconSizeClasses} />,
-              title: 'Audyt SEO (diagnostyka)',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p className='mb-3 text-sm'>
-                    Jeśli jeszcze nie robiliśmy audytu - zaczniemy od diagnozy i
-                    listy priorytetów.
-                  </p>
-                  <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/marketing/audyt-seo'>
-                      Zobacz audyt SEO
-                    </ButtonLink>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileList2Line className={largeIconSizeClasses} />,
-              title: 'Optymalizacja SEO (wdrożenia)',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p className='mb-3 text-sm'>
-                    Wprowadzimy zmiany techniczne i treściowe, które poprawią
-                    widoczność i wygodę korzystania.
-                  </p>
-                  <div className='mt-auto'>
-                    <ButtonLink
-                      arrow
-                      href='/uslugi/marketing/optymalizacja-seo'
-                    >
-                      Przejdź do optymalizacji
-                    </ButtonLink>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid='two'
-        />
 
         <Divider line />
 

@@ -5,6 +5,9 @@ import {
   RiFileTextLine,
   RiImageLine,
   RiMoneyDollarCircleLine,
+  RiKey2Line,
+  RiPriceTag3Line,
+  RiSecurePaymentLine,
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
@@ -27,6 +30,7 @@ import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Projekt katalogu | Arteon',
@@ -301,6 +305,43 @@ export default function OfferDesignCatalogPage() {
 
         <Divider line />
 
+        <SectionBar title='Jasne gwarancje, jasne zasady' />
+
+        <div>
+          <FeatureGrid
+            variant='bare'
+            columns={4}
+            items={[
+              {
+                icon: <RiPencilRuler2Line className={normalIconSizeClasses} />,
+                title: 'Indywidualne projekty',
+                description:
+                  'Wszystko projektujemy od zera - nie używamy gotowych szablonów, dzięki czemu Twoja strona, sklep czy projekt graficzny jest w pełni unikalny i dopasowany do Twojej firmy oraz grupy docelowej.',
+              },
+              {
+                icon: <RiSecurePaymentLine className={normalIconSizeClasses} />,
+                title: 'Brak zaliczek',
+                description:
+                  'Nie pobieramy zaliczek dla projektów do 5 tysięcy złotych brutto. Fakturę wystawiamy tylko po zakończeniu prac lub po zakończeniu poszczególnych etapów w przypadku większych projektów.',
+              },
+              {
+                icon: <RiPriceTag3Line className={normalIconSizeClasses} />,
+                title: 'Brak opłat abonamentowych',
+                description:
+                  'Nie pobieramy comiesięcznych opłat za stworzone witryny. Płacisz jednorazowo, za samą realizację a w przypadku dłuższych współprac, prace zawsze rozliczamy zadaniowo. Cenimy transparencję.',
+              },
+              {
+                icon: <RiKey2Line className={normalIconSizeClasses} />,
+                title: 'Pełna własność',
+                description:
+                  'Wszystko co stworzymy staje się Twoją własnością. Otrzymujesz stronę, dostępy do wszelkich zintegrowanych platform oraz pliki źródłowe. Możemy również przygotować umowę, która dodatkowo zabezpiecza Twoje prawa.',
+              },
+            ]}
+          />
+        </div>
+
+        <Divider line />
+
         <SectionPrices
           title='Projekt katalogu - przykładowe zakresy'
           plans={[
@@ -356,16 +397,6 @@ export default function OfferDesignCatalogPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź koszt realizacji katalogu'
-          description='Napisz jaką ofertę chcesz przedstawić, ile stron ma mieć katalog oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/projects/restoquality/mockup-gazetka-restoquality.webp'
-          imageAlt='Realizacja projektu katalogu firmowego'
-          defaultSubject='Projekt katalogu'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -408,6 +439,16 @@ export default function OfferDesignCatalogPage() {
                 'Tak, wykonujemy katalogi jedno- i wielojęzyczne, z zachowaniem spójnej typografii i układu. Możemy też doradzić, jak najlepiej zaprezentować treści w kilku językach.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt realizacji katalogu'
+          description='Napisz jaką ofertę chcesz przedstawić, ile stron ma mieć katalog oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/restoquality/mockup-gazetka-restoquality.webp'
+          imageAlt='Realizacja projektu katalogu firmowego'
+          defaultSubject='Projekt katalogu'
         />
 
         <Divider line />

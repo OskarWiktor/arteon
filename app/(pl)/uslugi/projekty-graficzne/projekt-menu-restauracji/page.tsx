@@ -1,6 +1,14 @@
 import Script from 'next/script';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiFileTextLine, RiLayoutLine, RiBookOpenLine } from 'react-icons/ri';
+import {
+  RiFileTextLine,
+  RiLayoutLine,
+  RiBookOpenLine,
+  RiKey2Line,
+  RiPencilRuler2Line,
+  RiPriceTag3Line,
+  RiSecurePaymentLine,
+} from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
@@ -22,6 +30,7 @@ import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Projekt menu restauracji | Arteon',
@@ -277,6 +286,43 @@ export default function OfferDesignMenuPage() {
 
         <Divider line />
 
+        <SectionBar title='Jasne gwarancje, jasne zasady' />
+
+        <div>
+          <FeatureGrid
+            variant='bare'
+            columns={4}
+            items={[
+              {
+                icon: <RiPencilRuler2Line className={normalIconSizeClasses} />,
+                title: 'Indywidualne projekty',
+                description:
+                  'Wszystko projektujemy od zera - nie używamy gotowych szablonów, dzięki czemu Twoja strona, sklep czy projekt graficzny jest w pełni unikalny i dopasowany do Twojej firmy oraz grupy docelowej.',
+              },
+              {
+                icon: <RiSecurePaymentLine className={normalIconSizeClasses} />,
+                title: 'Brak zaliczek',
+                description:
+                  'Nie pobieramy zaliczek dla projektów do 5 tysięcy złotych brutto. Fakturę wystawiamy tylko po zakończeniu prac lub po zakończeniu poszczególnych etapów w przypadku większych projektów.',
+              },
+              {
+                icon: <RiPriceTag3Line className={normalIconSizeClasses} />,
+                title: 'Brak opłat abonamentowych',
+                description:
+                  'Nie pobieramy comiesięcznych opłat za stworzone witryny. Płacisz jednorazowo, za samą realizację a w przypadku dłuższych współprac, prace zawsze rozliczamy zadaniowo. Cenimy transparencję.',
+              },
+              {
+                icon: <RiKey2Line className={normalIconSizeClasses} />,
+                title: 'Pełna własność',
+                description:
+                  'Wszystko co stworzymy staje się Twoją własnością. Otrzymujesz stronę, dostępy do wszelkich zintegrowanych platform oraz pliki źródłowe. Możemy również przygotować umowę, która dodatkowo zabezpiecza Twoje prawa.',
+              },
+            ]}
+          />
+        </div>
+
+        <Divider line />
+
         <SectionPrices
           title='Projekt menu restauracji - przykładowe pakiety'
           plans={[
@@ -335,16 +381,6 @@ export default function OfferDesignMenuPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź koszt realizacji menu restauracji'
-          description='Napisz jakie dania są w ofercie, czy posiadasz logo oraz zdjęcia dań i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/projects/nocturna/nocturna-menu-mockup.webp'
-          imageAlt='Realizacja projektu menu - bar Nocturna'
-          defaultSubject='Projekt menu restauracji'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -378,6 +414,16 @@ export default function OfferDesignMenuPage() {
                 'Tak, oferujemy aktualizacje sezonowe oraz modyfikacje cen czy składów. Na życzenie przygotowujemy także pliki źródłowe, które umożliwiają samodzielną edycję.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt realizacji menu restauracji'
+          description='Napisz jakie dania są w ofercie, czy posiadasz logo oraz zdjęcia dań i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/nocturna/nocturna-menu-mockup.webp'
+          imageAlt='Realizacja projektu menu - bar Nocturna'
+          defaultSubject='Projekt menu restauracji'
         />
 
         <Divider line />
