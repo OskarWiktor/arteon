@@ -467,6 +467,28 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
 
         <Divider line />
 
+        <SectionInfo
+          title='Kalkulator wyceny, który przysyła gotowych klientów'
+          subtitle='Koniec z zapytaniami, które znikają'
+        >
+          <p>
+            Wielu klientów firm wykończeniowych chce tylko poznać orientacyjną
+            cenę i znika gdy tylko dostanie wycenę. Z myślą o tym, możemy
+            zbudować kalkulator kosztów prac, który pokazuje wycenę w czasie
+            rzeczywistym - klient podaje metraż i typ usługi, i od razu widzi
+            orientacyjne widełki.
+          </p>
+          <br />
+          <p>
+            Osoby, które tylko sprawdzają cenę, dostają odpowiedź na miejscu, a
+            zapytanie zostawiają przede wszystkim ci, którzy realnie planują
+            remont. Do Ciebie trafiają więc kontakty bardziej nastawione na
+            zlecenie, a nie na samo pytanie o cenę.
+          </p>
+        </SectionInfo>
+
+        <Divider line />
+
         <SectionBar title='Jasne gwarancje, jasne zasady' />
 
         <div>
@@ -501,28 +523,6 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
             ]}
           />
         </div>
-
-        <Divider line />
-
-        <SectionInfo
-          title='Kalkulator wyceny, który przysyła gotowych klientów'
-          subtitle='Koniec z zapytaniami, które znikają'
-        >
-          <p>
-            Wielu klientów firm wykończeniowych chce tylko poznać orientacyjną
-            cenę i znika gdy tylko dostanie wycenę. Z myślą o tym, możemy
-            zbudować kalkulator kosztów prac, który pokazuje wycenę w czasie
-            rzeczywistym - klient podaje metraż i typ usługi, i od razu widzi
-            orientacyjne widełki.
-          </p>
-          <br />
-          <p>
-            Osoby, które tylko sprawdzają cenę, dostają odpowiedź na miejscu, a
-            zapytanie zostawiają przede wszystkim ci, którzy realnie planują
-            remont. Do Ciebie trafiają więc kontakty bardziej nastawione na
-            zlecenie, a nie na samo pytanie o cenę.
-          </p>
-        </SectionInfo>
 
         <Divider line />
 
