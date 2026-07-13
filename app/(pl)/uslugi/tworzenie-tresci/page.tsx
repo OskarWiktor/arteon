@@ -322,16 +322,6 @@ export default function OfferContentPage() {
 
         <WorkSteps variant='content' />
 
-        <Divider size='sm' />
-
-        <SectionContactForm
-          title='Sprawdź koszt tworzenia treści'
-          description='Napisz czym zajmuje się Twoja firma, jakie treści chcesz tworzyć i na jakich kanałach publikujesz - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
-          imageAlt='Content marketing - tworzenie treści dla firm'
-          defaultSubject='Treści'
-        />
-
         <Divider line />
 
         <SectionFaqPanels
@@ -372,6 +362,16 @@ export default function OfferContentPage() {
                 'Tak, możliwa jest stała współpraca abonamentowa - np. comiesięczne artykuły, newslettery lub pakiety treści.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt tworzenia treści'
+          description='Napisz czym zajmuje się Twoja firma, jakie treści chcesz tworzyć i na jakich kanałach publikujesz - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
+          imageAlt='Content marketing - tworzenie treści dla firm'
+          defaultSubject='Treści'
         />
 
         <Divider line />

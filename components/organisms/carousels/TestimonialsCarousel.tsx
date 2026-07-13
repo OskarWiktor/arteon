@@ -89,7 +89,7 @@ export default function TestimonialsCarousel({
     <section className='w-full' aria-labelledby='testimonials-heading'>
       <div
         className={cn(
-          'mb-8 flex flex-col items-center justify-center md:flex-row',
+          'mb-6 flex flex-col items-center justify-center md:mb-8 md:flex-row',
           columnGapClasses,
         )}
       >

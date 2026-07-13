@@ -310,16 +310,6 @@ export default function OfferOptimizationWordPressPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź cenę optymalizacji strony WordPress'
-          description='Podaj adres swojej strony WordPress a my przygotujemy wycenę jej optymalizacji.'
-          imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp'
-          imageAlt='Wynik optymalizacji strony WordPress w PageSpeed Insights'
-          defaultSubject='Optymalizacja strony WordPress'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -344,6 +334,16 @@ export default function OfferOptimizationWordPressPage() {
                 'Tak, mamy sprawdzony sposób, który pozwala, bez zmian wizualnych i usuwania funkcjonalności, przyśpieszyć ładowanie wszystkich istniejących jak i nowych podstron. Optymalizujemy samo działanie systemu i sposób ładowania wszelkich treści, bez optymalizacji pojedynczych podstron lecz tego, co te podstrony tworzy.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź cenę optymalizacji strony WordPress'
+          description='Podaj adres swojej strony WordPress a my przygotujemy wycenę jej optymalizacji.'
+          imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp'
+          imageAlt='Wynik optymalizacji strony WordPress w PageSpeed Insights'
+          defaultSubject='Optymalizacja strony WordPress'
         />
 
         <Divider line />

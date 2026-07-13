@@ -41,6 +41,7 @@ import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Strona internetowa dla firmy wykończeniowej i remontowej | Arteon',
@@ -466,46 +467,40 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
 
         <Divider line />
 
-        <SectionBasic
-          variant='right'
-          title='Jasne gwarancje, jasne zasady'
-          imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
-          imageAlt='Realizacja strony internetowej dla firmy wykończeniowej i budowlanej Izoluk - mockup Arteon'
-        >
-          <div className='mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2'>
-            {[
+        <SectionBar title='Jasne gwarancje, jasne zasady' />
+
+        <div>
+          <FeatureGrid
+            variant='bare'
+            columns={4}
+            items={[
               {
-                icon: RiPencilRuler2Line,
-                title: 'Indywidualny projekt strony',
-                text: 'Każda strona jest projektowana od zera - masz pełną kontrolę nad wyglądem i układem treści.',
+                icon: <RiPencilRuler2Line className={normalIconSizeClasses} />,
+                title: 'Indywidualne projekty',
+                description:
+                  'Wszystko projektujemy od zera - nie używamy gotowych szablonów, dzięki czemu Twoja strona, sklep czy projekt graficzny jest w pełni unikalny i dopasowany do Twojej firmy oraz grupy docelowej.',
               },
               {
-                icon: RiSecurePaymentLine,
+                icon: <RiSecurePaymentLine className={normalIconSizeClasses} />,
                 title: 'Brak zaliczek',
-                text: 'Nie pobieramy zaliczek. Fakturę wystawiamy po publikacji i pełnej akceptacji witryny.',
+                description:
+                  'Nie pobieramy zaliczek dla projektów do 5 tysięcy złotych brutto. Fakturę wystawiamy tylko po zakończeniu prac lub po zakończeniu poszczególnych etapów w przypadku większych projektów.',
               },
               {
-                icon: RiPriceTag3Line,
+                icon: <RiPriceTag3Line className={normalIconSizeClasses} />,
                 title: 'Brak opłat abonamentowych',
-                text: 'Nie pobieramy comiesięcznych opłat za samą stronę. Płacisz jednorazowo, a licencję na Elementor Pro dostajesz w cenie.',
+                description:
+                  'Nie pobieramy comiesięcznych opłat za stworzone witryny. Płacisz jednorazowo, za samą realizację a w przypadku dłuższych współprac, prace zawsze rozliczamy zadaniowo. Cenimy transparencję.',
               },
               {
-                icon: RiKey2Line,
+                icon: <RiKey2Line className={normalIconSizeClasses} />,
                 title: 'Pełna własność',
-                text: 'Wszystko co stworzymy staje się Twoją własnością. Otrzymujesz stronę i dostępy do wszelkich zintegrowanych platform.',
+                description:
+                  'Wszystko co stworzymy staje się Twoją własnością. Otrzymujesz stronę, dostępy do wszelkich zintegrowanych platform oraz pliki źródłowe. Możemy również przygotować umowę, która dodatkowo zabezpiecza Twoje prawa.',
               },
-            ].map(tile => (
-              <div
-                key={tile.title}
-                className='rounded-lg border border-neutral-200 bg-white p-4'
-              >
-                <tile.icon className='mb-2 h-5 w-5 text-primary' />
-                <p className='text-sm font-medium text-dark'>{tile.title}</p>
-                <p className='mt-1 text-xs text-light'>{tile.text}</p>
-              </div>
-            ))}
-          </div>
-        </SectionBasic>
+            ]}
+          />
+        </div>
 
         <Divider line />
 
@@ -593,6 +588,16 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
 
         <Divider line />
 
+        <SectionFaqPanels
+          variant='offer'
+          defaultOpenIndex={1}
+          pageUrl='https://www.arteonagency.pl/uslugi/strona-internetowa-dla-firmy-wykonczeniowej'
+          title='Najczęstsze pytania o stronę dla firmy wykończeniowej'
+          items={FAQ_ITEMS}
+        />
+
+        <Divider line />
+
         <SectionContactForm
           title='Darmowa wycena'
           imageSrc='/assets/projects/napilota/mockup-strony-napilota.webp'
@@ -670,16 +675,6 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
             lipca 2026.
           </figcaption>
         </figure>
-
-        <Divider line />
-
-        <SectionFaqPanels
-          variant='offer'
-          defaultOpenIndex={1}
-          pageUrl='https://www.arteonagency.pl/uslugi/strona-internetowa-dla-firmy-wykonczeniowej'
-          title='Najczęstsze pytania o stronę dla firmy wykończeniowej'
-          items={FAQ_ITEMS}
-        />
 
         <Divider line />
 

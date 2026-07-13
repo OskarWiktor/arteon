@@ -388,16 +388,6 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <Divider line />
 
-        <SectionContactForm
-          title='Sprawdź koszt realizacji identyfikacji wizualnej'
-          description='Napisz czym zajmuje się Twoja firma, jakich materiałów potrzebujesz oraz czy posiadasz już logo - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_1.webp'
-          imageAlt='Realizacja identyfikacji wizualnej - Finish Masters'
-          defaultSubject='Identyfikacja wizualna'
-        />
-
-        <Divider line />
-
         <SectionFaqPanels
           variant='offer'
           defaultOpenIndex={1}
@@ -446,6 +436,16 @@ export default function OfferDesignBrandIdentityDesignPage() {
                 'Tak, opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia i zakazane zastosowania. To podstawa spójnej komunikacji w firmie i wygodna instrukcja dla podwykonawców.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt realizacji identyfikacji wizualnej'
+          description='Napisz czym zajmuje się Twoja firma, jakich materiałów potrzebujesz oraz czy posiadasz już logo - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_1.webp'
+          imageAlt='Realizacja identyfikacji wizualnej - Finish Masters'
+          defaultSubject='Identyfikacja wizualna'
         />
 
         <Divider line />

@@ -37,7 +37,7 @@ export function CarouselNavButtons({
       <ButtonCircle
         onClick={onNext}
         ariaLabel={nextLabel}
-        className={cn('left-18', carouselNavButtonsClasses)}
+        className={cn('left-14 md:left-18', carouselNavButtonsClasses)}
       >
         <RiArrowRightSLine
           className={largeIconSizeClasses}

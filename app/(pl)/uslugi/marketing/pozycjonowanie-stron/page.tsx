@@ -424,16 +424,6 @@ export default function OfferSeoSubscription() {
           grid='two'
         />
 
-        <Divider size='sm' />
-
-        <SectionContactForm
-          title='Sprawdź koszt pozycjonowania strony'
-          description='Podaj adres swojej strony i napisz jakie frazy są dla Ciebie kluczowe - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp'
-          imageAlt='Pozycjonowanie stron - widoczność w Google'
-          defaultSubject='Pozycjonowanie stron'
-        />
-
         <Divider line />
 
         <SectionFaqPanels
@@ -468,6 +458,16 @@ export default function OfferSeoSubscription() {
                 'Ta oferta jest skoncentrowana na stronach firmowych. Dla e-commerce przygotujemy osobną propozycję w oparciu o specyfikę produktów i potrzeby sklepu.',
             },
           ]}
+        />
+
+        <Divider line />
+
+        <SectionContactForm
+          title='Sprawdź koszt pozycjonowania strony'
+          description='Podaj adres swojej strony i napisz jakie frazy są dla Ciebie kluczowe - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp'
+          imageAlt='Pozycjonowanie stron - widoczność w Google'
+          defaultSubject='Pozycjonowanie stron'
         />
 
         <Divider line />
