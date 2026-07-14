@@ -4946,6 +4946,34 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'milesToKm',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-mil-na-kilometry',
+        title: 'mile na kilometry',
+        description:
+          'Przelicz mile na kilometry. Bieganie i maraton, limity prędkości (mph na km/h), podróże, mile morskie.',
+      },
+    },
+  },
+  {
+    key: 'kmToMiles',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-kilometrow-na-mile',
+        title: 'kilometry na mile',
+        description:
+          'Przelicz kilometry na mile. Bieganie i maraton, prędkość (km/h na mph), podróże do USA i Wielkiej Brytanii.',
+      },
+    },
+  },
+  {
     key: 'kgToLb',
     section: 'jednostki',
     icon: RiRulerLine,

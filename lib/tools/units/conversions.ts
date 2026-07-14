@@ -256,6 +256,30 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 
   {
+    toolKey: 'milesToKm',
+    category: 'length',
+    sourceField: { labelKey: 'miles', suffix: 'mi' },
+    targetField: { labelKey: 'kilometers', suffix: 'km' },
+    convert: v => v * 1.609344,
+    reverseConvert: v => v / 1.609344,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'kmToMiles',
+  },
+
+  {
+    toolKey: 'kmToMiles',
+    category: 'length',
+    sourceField: { labelKey: 'kilometers', suffix: 'km' },
+    targetField: { labelKey: 'miles', suffix: 'mi' },
+    convert: v => v / 1.609344,
+    reverseConvert: v => v * 1.609344,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'milesToKm',
+  },
+
+  {
     toolKey: 'kgToLb',
     category: 'weight',
     sourceField: { labelKey: 'kilograms', suffix: 'kg' },

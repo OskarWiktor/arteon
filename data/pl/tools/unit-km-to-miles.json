@@ -1,0 +1,259 @@
+{
+  "toolKey": "kmToMiles",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter kilometrów na mile – przelicz km na mile",
+    "description": "Przelicz kilometry na mile. Sprawdź gotowe tabele, które obejmują dystanse biegowe (z maratonem 42,2 km), prędkość km/h na mph oraz popularne dystanse jak 50 i 100 km. Konwerter km na mile działa w obu kierunkach i liczy natychmiast.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-kilometrow-na-mile"
+  },
+  "hero": {
+    "title": "Przelicz kilometry na mile",
+    "description": "Wpisz dowolną wartość w kilometrach i od razu odczytaj wynik w milach. Przelicznik przydaje się, gdy chcesz porównać swój dystans biegowy z wynikami podawanymi w milach, przygotować się do podróży do USA lub Wielkiej Brytanii albo przeliczyć prędkość z km/h na mile na godzinę. W dalszej części strony znajdziesz gotowe tabele dla wybranych popularnych dystansów i prędkości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-kilometrow-na-mile",
+      "label": "kilometry na mile"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik kilometrów na mile – konwerter km na mile",
+      "alternateName": [
+        "Konwerter kilometrów na mile",
+        "Kalkulator kilometrów na mile",
+        "Przelicznik kilometrów na mile",
+        "Kilometry na mile",
+        "km na mile",
+        "Przelicz km na mile",
+        "Zamiana kilometrów na mile",
+        "Ile mil ma kilometr",
+        "1 kilometr ile to mil",
+        "Przelicznik km/h na mph",
+        "Ile mil ma 100 km",
+        "Tabela kilometrów na mile",
+        "Ile mil ma maraton",
+        "km to miles",
+        "Konwerter kilometrów"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik kilometrów na mile działający w przeglądarce bez rejestracji. Wpisz wartość w kilometrach i natychmiast odczytaj wynik w milach. Przydatny przy porównywaniu dystansów biegowych, podróżach do krajów anglojęzycznych oraz przeliczaniu prędkości z km/h na mile na godzinę.",
+      "featureList": [
+        "Konwersja działa w obie strony, więc przeliczysz zarówno kilometry na mile, jak i mile na kilometry",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Gotowy wynik można skopiować do schowka jednym kliknięciem",
+        "Tabela przeliczeniowa obejmuje wartości od 1 km do 1000 km, razem z dystansem maratonu 42,2 km i półmaratonu 21,1 km",
+        "Osobna tabela przelicza prędkość z kilometrów na godzinę (km/h) na mile na godzinę (mph)",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór konwersji to mile = kilometry ÷ 1,609344",
+        "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć kilometry na mile?",
+      "description": "Krótka instrukcja użycia konwertera kilometrów na mile.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość w kilometrach",
+          "text": "W lewym polu wpisz liczbę kilometrów, którą chcesz przeliczyć na mile."
+        },
+        {
+          "name": "Odczytaj wynik w milach",
+          "text": "Wynik w milach pojawi się od razu w polu obok, po prawej stronie. Możesz go skopiować do schowka jednym kliknięciem."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przełączyć konwerter na przeliczanie mil na kilometry."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać kilometry na mile?",
+      "html": "<p class=\"text-mid mb-4\">Kilometr to podstawowa jednostka odległości w Polsce i większości krajów. Mila obowiązuje głównie w Stanach Zjednoczonych i Wielkiej Brytanii, dlatego przeliczenie kilometrów na mile przydaje się przede wszystkim wtedy, gdy chcesz, aby dany dystans zrozumiała osoba z tych krajów – albo gdy porównujesz własny wynik biegowy z rekordami i planami treningowymi podawanymi w milach.</p><p class=\"text-mid mb-4\">Jeden kilometr to około 0,621371 mili. Zależność jest stała, więc każde przeliczenie sprowadza się do jednego mnożenia albo dzielenia. Konwerter robi to za Ciebie od razu po wpisaniu wartości, także dla dystansów biegowych w rodzaju 42,2 km, czyli maratonu.</p><p class=\"text-mid mb-4\">Poniżej znajdziesz tabelę przeliczeniową dla popularnych dystansów oraz osobną tabelę dla prędkości, dzięki której odczytasz, ile mil na godzinę odpowiada wskazaniu prędkościomierza w km/h.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter kilometrów na mile – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja kilometrów na mile? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie kilometrów na mile opiera się na stałej zależności: jedna mila lądowa to dokładnie 1,609344 kilometra. Aby zamienić kilometry na mile, dzielisz liczbę kilometrów przez 1,609344 (to samo co mnożenie przez 0,621371).</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>mile = kilometry ÷ 1,609344</strong>. W drugą stronę: <strong>kilometry = mile × 1,609344</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile mil ma 100 kilometrów. Podstawiasz: 100 ÷ 1,609344 = 62,14 mili. W praktyce często wystarczy pomnożyć kilometry przez 0,62, aby otrzymać przybliżony wynik.</p><p class=\"text-mid\">Inny przykład: maraton ma długość 42,195 km, co po przeliczeniu daje 42,195 ÷ 1,609344 = 26,22 mili, czyli znane biegaczom 26,2 mili. Konwerter wykonuje oba kierunki obliczeń natychmiast po wpisaniu wartości.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa kilometrów na mile",
+      "description": "Poniższa tabela zawiera przeliczenie popularnych dystansów w kilometrach na mile. Wartości zaokrąglono do dwóch miejsc po przecinku. Aby przeliczyć dokładną wartość lub inny dystans, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Kilometry",
+      "cols": ["Mile"],
+      "rows": [
+        { "label": "1 km", "values": ["0,62 mi"] },
+        { "label": "2 km", "values": ["1,24 mi"] },
+        { "label": "3 km", "values": ["1,86 mi"] },
+        { "label": "4 km", "values": ["2,49 mi"] },
+        { "label": "5 km", "values": ["3,11 mi"], "emphasis": true },
+        { "label": "6 km", "values": ["3,73 mi"] },
+        { "label": "7 km", "values": ["4,35 mi"] },
+        { "label": "8 km", "values": ["4,97 mi"] },
+        { "label": "9 km", "values": ["5,59 mi"] },
+        { "label": "10 km", "values": ["6,21 mi"], "emphasis": true },
+        { "label": "15 km", "values": ["9,32 mi"] },
+        { "label": "20 km", "values": ["12,43 mi"], "emphasis": true },
+        { "label": "21,1 km", "values": ["13,11 mi"], "emphasis": true },
+        { "label": "25 km", "values": ["15,53 mi"] },
+        { "label": "30 km", "values": ["18,64 mi"] },
+        { "label": "35 km", "values": ["21,75 mi"] },
+        { "label": "40 km", "values": ["24,85 mi"] },
+        { "label": "42,2 km", "values": ["26,22 mi"], "emphasis": true },
+        { "label": "45 km", "values": ["27,96 mi"] },
+        { "label": "50 km", "values": ["31,07 mi"], "emphasis": true },
+        { "label": "60 km", "values": ["37,28 mi"] },
+        { "label": "70 km", "values": ["43,50 mi"] },
+        { "label": "80 km", "values": ["49,71 mi"] },
+        { "label": "90 km", "values": ["55,92 mi"] },
+        { "label": "100 km", "values": ["62,14 mi"], "emphasis": true },
+        { "label": "200 km", "values": ["124,27 mi"] },
+        { "label": "500 km", "values": ["310,69 mi"] },
+        { "label": "1000 km", "values": ["621,37 mi"], "emphasis": true }
+      ],
+      "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-mil-na-kilometry\">mil na kilometry</a> z tabelą prędkości mph i milami morskimi."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela prędkości: kilometry na godzinę (km/h) na mile na godzinę (mph)",
+      "description": "Gdy jeździsz za granicą albo czytasz opis samochodu z rynku amerykańskiego, przydaje się przeliczenie prędkości z km/h na mile na godzinę. Przelicznik jest ten sam co dla odległości – dzielisz przez 1,609344. Wartości zaokrąglono do dwóch miejsc po przecinku.",
+      "labelHeader": "Kilometry na godzinę",
+      "cols": ["Mile na godzinę"],
+      "rows": [
+        { "label": "30 km/h", "values": ["18,64 mph"] },
+        { "label": "50 km/h", "values": ["31,07 mph"], "emphasis": true },
+        { "label": "60 km/h", "values": ["37,28 mph"] },
+        { "label": "70 km/h", "values": ["43,50 mph"] },
+        { "label": "80 km/h", "values": ["49,71 mph"] },
+        { "label": "90 km/h", "values": ["55,92 mph"] },
+        { "label": "100 km/h", "values": ["62,14 mph"], "emphasis": true },
+        { "label": "110 km/h", "values": ["68,35 mph"] },
+        { "label": "120 km/h", "values": ["74,56 mph"] },
+        { "label": "130 km/h", "values": ["80,78 mph"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się kilometry na mile?",
+      "description": "Przeliczenie kilometrów na mile przydaje się głównie w kontakcie z krajami anglojęzycznymi. Każda z poniższych sytuacji ma własną specyfikę.",
+      "items": [
+        {
+          "title": "Bieganie i porównywanie dystansów",
+          "description": "Plany treningowe, rekordy i wyzwania biegowe z USA i Wielkiej Brytanii operują milami. Jeśli biegasz w kilometrach, przeliczenie pozwala porównać wynik: 10 km to 6,21 mili, półmaraton (21,1 km) to 13,11 mili, a maraton (42,2 km) to 26,22 mili. Dzięki temu łatwiej dopasujesz się do planu opisanego w milach."
+        },
+        {
+          "title": "Podróże do USA i Wielkiej Brytanii",
+          "description": "Zanim wyjaśnisz komuś w tych krajach, jak daleko masz do celu, przelicz dystans na mile – 100 km to 62,14 mili. Ułatwia to rozmowę o odległościach, planowanie tras i szacowanie czasu przejazdu w jednostkach zrozumiałych dla rozmówcy."
+        },
+        {
+          "title": "Prędkość i jazda za granicą",
+          "description": "Samochody z rynku amerykańskiego mają prędkościomierz w milach na godzinę. Polskie 100 km/h to około 62,14 mph, a 130 km/h to około 80,78 mph. Przeliczenie prędkości pomaga zrozumieć wskazania takiego auta i utrzymać się w granicach lokalnych limitów."
+        },
+        {
+          "title": "Sprzęt i aplikacje sportowe",
+          "description": "Zegarki, rowery treningowe i aplikacje ustawione domyślnie na jednostki imperialne pokazują dystans i tempo w milach. Jeśli wolisz myśleć w kilometrach, przeliczenie pozwala szybko przełożyć wynik z ekranu na znane Ci wartości metryczne."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie kilometrów na mile",
+      "items": [
+        {
+          "question": "Ile mil ma 100 kilometrów?",
+          "answer": "100 km to 62,14 mili. Obliczenie: 100 ÷ 1,609344 = 62,14 mili. W przybliżeniu 100 km to około 62 mile."
+        },
+        {
+          "question": "Ile mil ma 50 kilometrów?",
+          "answer": "50 km to 31,07 mili. Obliczenie: 50 ÷ 1,609344 = 31,07 mili."
+        },
+        {
+          "question": "Ile mil ma 5 km?",
+          "answer": "5 km to 3,11 mili. Obliczenie: 5 ÷ 1,609344 = 3,11 mili. Popularny bieg na 5 km odpowiada więc nieco ponad 3 milom."
+        },
+        {
+          "question": "Ile mil ma 10 km?",
+          "answer": "10 km to 6,21 mili. Obliczenie: 10 ÷ 1,609344 = 6,21 mili."
+        },
+        {
+          "question": "Ile mil ma maraton (42,195 km)?",
+          "answer": "Maraton to 26,22 mili, czyli znane biegaczom 26,2 mili. Obliczenie: 42,195 ÷ 1,609344 = 26,22 mili."
+        },
+        {
+          "question": "Ile mil ma półmaraton (21,1 km)?",
+          "answer": "Półmaraton to 13,11 mili. Obliczenie: 21,0975 ÷ 1,609344 = 13,11 mili. To dokładnie połowa dystansu maratonu."
+        },
+        {
+          "question": "Ile to 100 km/h w milach na godzinę?",
+          "answer": "100 km/h to około 62,14 mph. Obliczenie: 100 ÷ 1,609344 = 62,14 mph. Przelicznik prędkości jest taki sam jak dla odległości."
+        },
+        {
+          "question": "Czy 1 kilometr to pół mili?",
+          "answer": "Nie do końca. 1 km to 0,62 mili, czyli trochę więcej niż pół mili. Dokładnie pół mili to 0,805 km, więc kilometr jest od niego dłuższy."
+        },
+        {
+          "question": "Co jest większe: kilometr czy mila?",
+          "answer": "Większa jest mila. Jedna mila to 1,609344 km, więc jest o ponad 60% dłuższa od kilometra. Dlatego ten sam dystans w milach zawsze daje mniejszą liczbę niż w kilometrach."
+        },
+        {
+          "question": "Ile mil ma 500 kilometrów?",
+          "answer": "500 km to 310,69 mili. Obliczenie: 500 ÷ 1,609344 = 310,69 mili."
+        },
+        {
+          "question": "Ile mil ma 35 kilometrów?",
+          "answer": "35 km to 21,75 mili. Obliczenie: 35 ÷ 1,609344 = 21,75 mili."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie kilometrów na mile?",
+          "answer": "Wzór to: mile = kilometry ÷ 1,609344, co jest równoznaczne z mnożeniem przez 0,621371. Na przykład 30 km ÷ 1,609344 = 18,64 mili. W drugą stronę: kilometry = mile × 1,609344."
+        },
+        {
+          "question": "Ile mil mają 20 i 30 kilometrów?",
+          "answer": "20 km to 12,43 mili, a 30 km to 18,64 mili. Obie wartości powstają w ten sam sposób: dzielisz liczbę kilometrów przez 1,609344."
+        },
+        {
+          "question": "Jak szybko przeliczyć kilometry na mile w pamięci?",
+          "answer": "Najprościej pomnożyć liczbę kilometrów przez 0,6 – wynik jest bliski dokładnemu. Możesz też skorzystać z reguły „8 kilometrów to 5 mil\": 16 km to około 10 mil, a 80 km to około 50 mil. Do precyzyjnych obliczeń użyj konwertera."
+        },
+        {
+          "question": "Ile mil ma 200 kilometrów?",
+          "answer": "200 km to 124,27 mili. Obliczenie: 200 ÷ 1,609344 = 124,27 mili."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "subject": "Konwerter kilometrów na mile"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    }
+  ]
+}

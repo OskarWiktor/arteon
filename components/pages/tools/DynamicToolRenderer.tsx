@@ -194,6 +194,8 @@ const UNIT_KEYS = new Set([
   'inchesToCm',
   'mmToInches',
   'inchesToMm',
+  'milesToKm',
+  'kmToMiles',
   'kgToLb',
   'lbToKg',
   'hexToRgb',
