@@ -289,6 +289,8 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'inchesToCm',
   'mmToInches',
   'inchesToMm',
+  'milesToKm',
+  'kmToMiles',
   'kgToLb',
   'lbToKg',
   'hexToRgb',

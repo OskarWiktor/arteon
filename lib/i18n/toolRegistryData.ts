@@ -4946,6 +4946,118 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'milesToKm',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-mil-na-kilometry',
+        title: 'mile na kilometry',
+        description:
+          'Przelicz mile na kilometry. Bieganie i maraton, limity prędkości (mph na km/h), podróże, mile morskie.',
+      },
+      en: {
+        slug: 'miles-to-km-converter',
+        title: 'miles to km',
+        description:
+          'Convert miles to kilometers. Running and marathon, speed limits (mph to km/h), travel, nautical miles.',
+      },
+      de: {
+        slug: 'meilen-in-km-umrechner',
+        title: 'Meilen in km',
+        description:
+          'Meilen in Kilometer umrechnen. Laufen und Marathon, Tempolimits (mph in km/h), Reisen, Seemeilen.',
+      },
+      es: {
+        slug: 'convertidor-millas-a-km',
+        title: 'millas a km',
+        description:
+          'Convierte millas a kilómetros. Correr y maratón, límites de velocidad (mph a km/h), viajes, millas náuticas.',
+      },
+      fr: {
+        slug: 'convertisseur-miles-en-km',
+        title: 'miles en km',
+        description:
+          'Convertissez des miles en kilomètres. Course et marathon, limitations (mph en km/h), voyages, milles marins.',
+      },
+      pt: {
+        slug: 'conversor-milhas-para-km',
+        title: 'milhas para km',
+        description:
+          'Converta milhas em quilómetros. Corrida e maratona, limites de velocidade (mph para km/h), viagens, milhas náuticas.',
+      },
+      it: {
+        slug: 'convertitore-miglia-in-km',
+        title: 'miglia in km',
+        description:
+          'Converti miglia in chilometri. Corsa e maratona, limiti di velocità (mph in km/h), viaggi, miglia nautiche.',
+      },
+      cs: {
+        slug: 'prevodnik-mil-na-km',
+        title: 'míle na km',
+        description:
+          'Převeď míle na kilometry. Běhání a maraton, rychlostní limity (mph na km/h), cesty, námořní míle.',
+      },
+    },
+  },
+  {
+    key: 'kmToMiles',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-kilometrow-na-mile',
+        title: 'kilometry na mile',
+        description:
+          'Przelicz kilometry na mile. Bieganie i maraton, prędkość (km/h na mph), podróże do USA i Wielkiej Brytanii.',
+      },
+      en: {
+        slug: 'km-to-miles-converter',
+        title: 'km to miles',
+        description:
+          'Convert kilometers to miles. Running and marathon, speed (km/h to mph), trips to the US and UK.',
+      },
+      de: {
+        slug: 'km-in-meilen-umrechner',
+        title: 'km in Meilen',
+        description:
+          'Kilometer in Meilen umrechnen. Laufen und Marathon, Geschwindigkeit (km/h in mph), Reisen in die USA und nach Großbritannien.',
+      },
+      es: {
+        slug: 'convertidor-km-a-millas',
+        title: 'km a millas',
+        description:
+          'Convierte kilómetros a millas. Correr y maratón, velocidad (km/h a mph), viajes a EE. UU. y al Reino Unido.',
+      },
+      fr: {
+        slug: 'convertisseur-km-en-miles',
+        title: 'km en miles',
+        description:
+          'Convertissez des kilomètres en miles. Course et marathon, vitesse (km/h en mph), voyages aux États-Unis et au Royaume-Uni.',
+      },
+      pt: {
+        slug: 'conversor-km-para-milhas',
+        title: 'km para milhas',
+        description:
+          'Converta quilómetros em milhas. Corrida e maratona, velocidade (km/h para mph), viagens aos EUA e ao Reino Unido.',
+      },
+      it: {
+        slug: 'convertitore-km-in-miglia',
+        title: 'km in miglia',
+        description:
+          'Converti chilometri in miglia. Corsa e maratona, velocità (km/h in mph), viaggi negli USA e nel Regno Unito.',
+      },
+      cs: {
+        slug: 'prevodnik-km-na-mile',
+        title: 'km na míle',
+        description:
+          'Převeď kilometry na míle. Běhání a maraton, rychlost (km/h na mph), cesty do USA a Velké Británie.',
+      },
+    },
+  },
+  {
     key: 'kgToLb',
     section: 'jednostki',
     icon: RiRulerLine,

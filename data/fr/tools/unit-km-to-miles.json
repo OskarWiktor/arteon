@@ -1,0 +1,259 @@
+{
+  "toolKey": "kmToMiles",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur km en miles – convertir des kilomètres en miles",
+    "description": "Convertissez des kilomètres en miles. Des tableaux prêts à l'emploi couvrent les distances de course (avec le marathon de 42,2 km), la vitesse km/h en mph et des distances courantes comme 50 et 100 km. Le convertisseur km en miles fonctionne dans les deux sens et calcule instantanément.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-km-en-miles"
+  },
+  "hero": {
+    "title": "Convertir des kilomètres en miles",
+    "description": "Saisissez n'importe quelle valeur en kilomètres et lisez aussitôt le résultat en miles. Le convertisseur est utile lorsque vous souhaitez comparer votre distance de course avec des résultats indiqués en miles, préparer un voyage aux États-Unis ou au Royaume-Uni, ou convertir la vitesse de km/h en miles par heure. Plus bas sur la page, vous trouverez des tableaux prêts à l'emploi pour une sélection de distances et de vitesses courantes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-km-en-miles",
+      "label": "km en miles"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur de kilomètres en miles – calculateur km en miles",
+      "alternateName": [
+        "Convertisseur km en miles",
+        "Calculateur km en miles",
+        "Convertisseur de kilomètres en miles",
+        "Kilomètres en miles",
+        "km en miles",
+        "Convertir des km en miles",
+        "Conversion km en miles",
+        "Combien de miles dans un kilomètre",
+        "1 km en miles",
+        "Convertisseur km/h en mph",
+        "Combien de miles font 100 km",
+        "Tableau km en miles",
+        "Combien de miles fait un marathon",
+        "km to miles",
+        "Convertisseur de kilomètres"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertisseur de kilomètres en miles qui fonctionne dans le navigateur sans inscription. Saisissez une valeur en kilomètres et obtenez aussitôt le résultat en miles. Utile pour comparer des distances de course, voyager dans les pays anglophones et convertir la vitesse de km/h en miles par heure.",
+      "featureList": [
+        "La conversion fonctionne dans les deux sens, vous convertissez donc aussi bien des kilomètres en miles que des miles en kilomètres",
+        "Le résultat apparaît instantanément pendant la saisie, sans cliquer sur aucun bouton",
+        "Le résultat obtenu se copie dans le presse-papiers en un seul clic",
+        "Le tableau de conversion couvre des valeurs de 1 km à 1 000 km, y compris la distance du marathon de 42,2 km et le semi-marathon de 21,1 km",
+        "Un tableau distinct convertit la vitesse des kilomètres par heure (km/h) en miles par heure (mph)",
+        "Tous les calculs se font localement dans votre navigateur et vos données ne quittent pas l'appareil",
+        "La formule exacte de conversion est miles = kilomètres ÷ 1,609344",
+        "L'outil fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des kilomètres en miles ?",
+      "description": "Guide rapide pour utiliser le convertisseur de kilomètres en miles.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez la valeur en kilomètres",
+          "text": "Dans le champ de gauche, saisissez le nombre de kilomètres que vous souhaitez convertir en miles."
+        },
+        {
+          "name": "Lisez le résultat en miles",
+          "text": "Le résultat en miles apparaît aussitôt dans le champ voisin, à droite. Vous pouvez le copier dans le presse-papiers en un seul clic."
+        },
+        {
+          "name": "Inversez le sens si nécessaire",
+          "text": "Cliquez sur Changer l'ordre pour basculer le convertisseur en conversion des miles en kilomètres."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des kilomètres en miles ?",
+      "html": "<p class=\"text-mid mb-4\">Le kilomètre est l'unité de distance de base en France et dans la plupart des pays. Le mile prévaut surtout aux États-Unis et au Royaume-Uni ; convertir des kilomètres en miles est donc utile avant tout lorsque vous voulez qu'une personne de ces pays comprenne une distance, ou lorsque vous comparez votre propre résultat de course avec des records et des plans d'entraînement indiqués en miles.</p><p class=\"text-mid mb-4\">Un kilomètre vaut environ 0,621371 mile. La relation est constante, de sorte que chaque conversion se ramène à une seule multiplication ou division. Le convertisseur le fait pour vous dès que vous saisissez une valeur, y compris pour des distances de course comme 42,2 km, la longueur d'un marathon.</p><p class=\"text-mid mb-4\">Plus bas, vous trouverez un tableau de conversion pour les distances courantes ainsi qu'un tableau distinct pour la vitesse, qui vous permet de lire à combien de miles par heure correspond une indication du compteur en km/h.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit de kilomètres en miles – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des kilomètres en miles ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion des kilomètres en miles repose sur une relation constante : un mile terrestre équivaut exactement à 1,609344 kilomètre. Pour transformer des kilomètres en miles, vous divisez le nombre de kilomètres par 1,609344 (ce qui revient à multiplier par 0,621371).</p><p class=\"text-mid mb-4\">La formule complète : <strong>miles = kilomètres ÷ 1,609344</strong>. Dans l'autre sens : <strong>kilomètres = miles × 1,609344</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous voulez savoir combien de miles font 100 kilomètres. Vous remplacez : 100 ÷ 1,609344 = 62,14 miles. En pratique, il suffit souvent de multiplier les kilomètres par 0,62 pour obtenir un résultat approché.</p><p class=\"text-mid\">Autre exemple : un marathon fait 42,195 km, ce qui donne après conversion 42,195 ÷ 1,609344 = 26,22 miles, les 26,2 miles bien connus des coureurs. Le convertisseur effectue les deux sens dès que vous saisissez une valeur.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des kilomètres en miles",
+      "description": "Le tableau ci-dessous convertit des distances courantes en kilomètres en miles. Les valeurs sont arrondies à deux décimales. Pour convertir une valeur exacte ou une autre distance, utilisez le convertisseur ci-dessus.",
+      "labelHeader": "Kilomètres",
+      "cols": ["Miles"],
+      "rows": [
+        { "label": "1 km", "values": ["0,62 mi"] },
+        { "label": "2 km", "values": ["1,24 mi"] },
+        { "label": "3 km", "values": ["1,86 mi"] },
+        { "label": "4 km", "values": ["2,49 mi"] },
+        { "label": "5 km", "values": ["3,11 mi"], "emphasis": true },
+        { "label": "6 km", "values": ["3,73 mi"] },
+        { "label": "7 km", "values": ["4,35 mi"] },
+        { "label": "8 km", "values": ["4,97 mi"] },
+        { "label": "9 km", "values": ["5,59 mi"] },
+        { "label": "10 km", "values": ["6,21 mi"], "emphasis": true },
+        { "label": "15 km", "values": ["9,32 mi"] },
+        { "label": "20 km", "values": ["12,43 mi"], "emphasis": true },
+        { "label": "21,1 km", "values": ["13,11 mi"], "emphasis": true },
+        { "label": "25 km", "values": ["15,53 mi"] },
+        { "label": "30 km", "values": ["18,64 mi"] },
+        { "label": "35 km", "values": ["21,75 mi"] },
+        { "label": "40 km", "values": ["24,85 mi"] },
+        { "label": "42,2 km", "values": ["26,22 mi"], "emphasis": true },
+        { "label": "45 km", "values": ["27,96 mi"] },
+        { "label": "50 km", "values": ["31,07 mi"], "emphasis": true },
+        { "label": "60 km", "values": ["37,28 mi"] },
+        { "label": "70 km", "values": ["43,50 mi"] },
+        { "label": "80 km", "values": ["49,71 mi"] },
+        { "label": "90 km", "values": ["55,92 mi"] },
+        { "label": "100 km", "values": ["62,14 mi"], "emphasis": true },
+        { "label": "200 km", "values": ["124,27 mi"] },
+        { "label": "500 km", "values": ["310,69 mi"] },
+        { "label": "1 000 km", "values": ["621,37 mi"], "emphasis": true }
+      ],
+      "caption": "Vous voulez convertir dans l'autre sens ? Utilisez notre convertisseur <a href=\"/fr/outils/convertisseur-miles-en-km\">miles en kilomètres</a> avec un tableau de vitesse en mph et les milles marins."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de vitesse : kilomètres par heure (km/h) en miles par heure (mph)",
+      "description": "Lorsque vous conduisez à l'étranger ou lisez la fiche d'une voiture du marché américain, il est utile de convertir la vitesse de km/h en miles par heure. Le facteur est le même que pour la distance : vous divisez par 1,609344. Les valeurs sont arrondies à deux décimales.",
+      "labelHeader": "Kilomètres par heure",
+      "cols": ["Miles par heure"],
+      "rows": [
+        { "label": "30 km/h", "values": ["18,64 mph"] },
+        { "label": "50 km/h", "values": ["31,07 mph"], "emphasis": true },
+        { "label": "60 km/h", "values": ["37,28 mph"] },
+        { "label": "70 km/h", "values": ["43,50 mph"] },
+        { "label": "80 km/h", "values": ["49,71 mph"] },
+        { "label": "90 km/h", "values": ["55,92 mph"] },
+        { "label": "100 km/h", "values": ["62,14 mph"], "emphasis": true },
+        { "label": "110 km/h", "values": ["68,35 mph"] },
+        { "label": "120 km/h", "values": ["74,56 mph"] },
+        { "label": "130 km/h", "values": ["80,78 mph"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent des kilomètres en miles ?",
+      "description": "Convertir des kilomètres en miles est utile surtout lors d'un contact avec les pays anglophones. Chacune des situations ci-dessous a ses particularités.",
+      "items": [
+        {
+          "title": "Course à pied et comparaison des distances",
+          "description": "Les plans d'entraînement, les records et les défis de course des États-Unis et du Royaume-Uni fonctionnent en miles. Si vous courez en kilomètres, la conversion permet de comparer le résultat : 10 km font 6,21 miles, un semi-marathon (21,1 km) fait 13,11 miles et un marathon (42,2 km) fait 26,22 miles. Il est ainsi plus facile de suivre un plan décrit en miles."
+        },
+        {
+          "title": "Voyages aux États-Unis et au Royaume-Uni",
+          "description": "Avant d'expliquer à quelqu'un de ces pays la distance qui vous sépare de votre destination, convertissez-la en miles : 100 km font 62,14 miles. Cela facilite la conversation sur les distances, la planification des itinéraires et l'estimation du temps de trajet dans des unités que votre interlocuteur comprend."
+        },
+        {
+          "title": "Vitesse et conduite à l'étranger",
+          "description": "Les voitures du marché américain ont un compteur en miles par heure. Les 100 km/h en France font environ 62,14 mph, et 130 km/h environ 80,78 mph. Convertir la vitesse aide à lire une telle voiture et à rester dans les limites locales."
+        },
+        {
+          "title": "Équipements et applications sportives",
+          "description": "Les montres, les home-trainers et les applications réglées par défaut en unités impériales affichent la distance et l'allure en miles. Si vous préférez raisonner en kilomètres, la conversion permet de traduire rapidement ce qui est à l'écran dans les valeurs métriques que vous connaissez."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des kilomètres en miles",
+      "items": [
+        {
+          "question": "Combien de miles font 100 kilomètres ?",
+          "answer": "100 km font 62,14 miles. Calcul : 100 ÷ 1,609344 = 62,14 miles. De façon approchée, 100 km font environ 62 miles."
+        },
+        {
+          "question": "Combien de miles font 50 kilomètres ?",
+          "answer": "50 km font 31,07 miles. Calcul : 50 ÷ 1,609344 = 31,07 miles."
+        },
+        {
+          "question": "Combien de miles font 5 km ?",
+          "answer": "5 km font 3,11 miles. Calcul : 5 ÷ 1,609344 = 3,11 miles. Une populaire course de 5 km correspond donc à un peu plus de 3 miles."
+        },
+        {
+          "question": "Combien de miles font 10 km ?",
+          "answer": "10 km font 6,21 miles. Calcul : 10 ÷ 1,609344 = 6,21 miles."
+        },
+        {
+          "question": "Combien de miles fait un marathon (42,195 km) ?",
+          "answer": "Un marathon fait 26,22 miles, les 26,2 miles bien connus des coureurs. Calcul : 42,195 ÷ 1,609344 = 26,22 miles."
+        },
+        {
+          "question": "Combien de miles fait un semi-marathon (21,1 km) ?",
+          "answer": "Un semi-marathon fait 13,11 miles. Calcul : 21,0975 ÷ 1,609344 = 13,11 miles. C'est exactement la moitié de la distance du marathon."
+        },
+        {
+          "question": "Combien font 100 km/h en miles par heure ?",
+          "answer": "100 km/h font environ 62,14 mph. Calcul : 100 ÷ 1,609344 = 62,14 mph. Le facteur de conversion de la vitesse est le même que pour la distance."
+        },
+        {
+          "question": "1 kilomètre fait-il un demi-mile ?",
+          "answer": "Pas tout à fait. 1 km fait 0,62 mile, soit un peu plus qu'un demi-mile. Un demi-mile exact fait 0,805 km, donc un kilomètre est plus long."
+        },
+        {
+          "question": "Qu'est-ce qui est plus grand : un kilomètre ou un mile ?",
+          "answer": "C'est un mile qui est plus grand. Un mile fait 1,609344 km, il est donc plus long de plus de 60 % qu'un kilomètre. C'est pourquoi la même distance en miles donne toujours un nombre plus petit qu'en kilomètres."
+        },
+        {
+          "question": "Combien de miles font 500 kilomètres ?",
+          "answer": "500 km font 310,69 miles. Calcul : 500 ÷ 1,609344 = 310,69 miles."
+        },
+        {
+          "question": "Combien de miles font 35 kilomètres ?",
+          "answer": "35 km font 21,75 miles. Calcul : 35 ÷ 1,609344 = 21,75 miles."
+        },
+        {
+          "question": "Quelle est la formule pour convertir des kilomètres en miles ?",
+          "answer": "La formule est : miles = kilomètres ÷ 1,609344, ce qui revient à multiplier par 0,621371. Par exemple, 30 km ÷ 1,609344 = 18,64 miles. Dans l'autre sens : kilomètres = miles × 1,609344."
+        },
+        {
+          "question": "Combien de miles font 20 et 30 kilomètres ?",
+          "answer": "20 km font 12,43 miles et 30 km font 18,64 miles. Les deux valeurs s'obtiennent de la même façon : vous divisez le nombre de kilomètres par 1,609344."
+        },
+        {
+          "question": "Comment convertir des kilomètres en miles de tête ?",
+          "answer": "Le plus simple est de multiplier le nombre de kilomètres par 0,6 – le résultat est proche de la valeur exacte. Vous pouvez aussi utiliser la règle « 8 kilomètres font 5 miles » : 16 km font environ 10 miles et 80 km environ 50 miles. Pour des calculs précis, utilisez le convertisseur."
+        },
+        {
+          "question": "Combien de miles font 200 kilomètres ?",
+          "answer": "200 km font 124,27 miles. Calcul : 200 ÷ 1,609344 = 124,27 miles."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "title": "Vous avez une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageAlt": "Contact avec Arteon Agency",
+      "subject": "Convertisseur de kilomètres en miles"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités pratiques"
+    }
+  ]
+}
