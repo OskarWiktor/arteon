@@ -18,7 +18,7 @@ interface FeatureGridProps {
   description?: ReactNode;
   items: FeatureItem[];
   columns?: 2 | 3 | 4 | 6 | 8;
-  variant?: 'default' | 'centered' | 'bare';
+  variant?: 'centered' | 'bare';
 }
 
 const GRID_CLASSES: Record<2 | 3 | 4 | 6 | 8, string> = {
@@ -35,7 +35,7 @@ export default function FeatureGrid({
   description,
   items,
   columns = 2,
-  variant = 'default',
+  variant = 'centered',
 }: FeatureGridProps) {
   const sectionId = title
     ? `featuregrid-${String(title)

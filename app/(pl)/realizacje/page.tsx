@@ -1,6 +1,7 @@
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import ProjectWithFilters from '@/components/organisms/ProjectsWithFilters';
@@ -67,9 +68,12 @@ export default function ProjectsPage() {
       <HeroBanner
         title='Realizacje stron internetowych, sklepów oraz projektów graficznych'
         description='Specjalizujemy się w tworzeniu projektów graficznych oraz stronach i sklepach www. Sprawdź nasze ostatnie realizacje'
-        backgroundImage='/assets/bg/arteon-zbior-realizacji.webp'
+        backgroundImage='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
+        imageAlt='Realizacja strony internetowej dla firmy Izoluk wykonana przez Arteon - mockup'
         overlay='black'
       />
+
+      <BenefitBelt variant='carousel' />
 
       <Wrapper>
         <Divider size='xs' />

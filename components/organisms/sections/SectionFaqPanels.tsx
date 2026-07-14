@@ -99,30 +99,35 @@ export default function SectionFaqPanels({
       {variant === 'offer' ? (
         <div
           className={cn(
-            'grid lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]',
+            'grid lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:grid-rows-[auto_1fr]',
             columnGapClasses,
           )}
         >
-          <div className='flex flex-col'>
+          {/* Heading + description: top-left on desktop, first on mobile. */}
+          <div className='flex flex-col lg:col-start-1 lg:row-start-1'>
             {heading}
             {description && <div className='mt-4 text-mid'>{description}</div>}
-
-            <div className='mt-8 md:w-2/3 lg:mt-auto lg:mb-4 lg:pt-8'>
-              <Card tone='beige' padding='lg' interactive={false}>
-                <h3 className='h5 font-semibold! text-primary'>
-                  {contactBoxTitle}
-                </h3>
-                <p className='text-[#645D52]'>{contactBoxText}</p>
-                <div>
-                  <ButtonLink variant='accent' href={contactHref}>
-                    {contactBoxButtonLabel}
-                  </ButtonLink>
-                </div>
-              </Card>
-            </div>
           </div>
 
-          <div>{items.map(renderPanel)}</div>
+          {/* Panels: right column on desktop, second on mobile. */}
+          <div className='lg:col-start-2 lg:row-span-2 lg:row-start-1'>
+            {items.map(renderPanel)}
+          </div>
+
+          {/* Contact box: bottom-left on desktop, last on mobile. */}
+          <div className='md:w-2/3 lg:col-start-1 lg:row-start-2 lg:mb-4 lg:self-end lg:pt-8'>
+            <Card tone='beige' padding='lg' interactive={false}>
+              <h3 className='h5 font-semibold! text-primary'>
+                {contactBoxTitle}
+              </h3>
+              <p className='text-[#645D52]'>{contactBoxText}</p>
+              <div>
+                <ButtonLink variant='accent' href={contactHref}>
+                  {contactBoxButtonLabel}
+                </ButtonLink>
+              </div>
+            </Card>
+          </div>
         </div>
       ) : (
         <>

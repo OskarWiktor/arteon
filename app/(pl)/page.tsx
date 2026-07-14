@@ -1,10 +1,19 @@
 import {
+  RiGlobalLine,
+  RiIdCardLine,
   RiKey2Line,
+  RiLayoutMasonryLine,
+  RiLineChartLine,
+  RiPaletteLine,
   RiPencilRuler2Line,
+  RiPenNibLine,
   RiPriceTag3Line,
+  RiQuillPenLine,
+  RiSearchEyeLine,
   RiSecurePaymentLine,
+  RiStore2Line,
+  RiTrophyLine,
 } from 'react-icons/ri';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
@@ -15,22 +24,24 @@ import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBar from '@/components/organisms/sections/SectionBar';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import WorkSteps from '@/components/organisms/WorkSteps';
+import SectionHighlights from '@/components/organisms/sections/SectionHighlights';
+import SectionNumberSteps from '@/components/organisms/sections/SectionNumberSteps';
+import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { getHomepageAlternates } from '@/lib/i18n/pages/toolMeta';
+import { homeProcessSteps, processStepsSections } from '@/lib/processSteps';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
 import type { Testimonial } from '@/types/testimonial';
 
 export const metadata = {
   title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
   description:
-    'Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Sprawdź ofertę i dostań bezpłatną wycenę realizacji.',
+    'Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści, projekty graficzne oraz aplikacje webowe. Sprawdź naszą ofertę i opinie naszych realizacji.',
   alternates: getHomepageAlternates(),
   openGraph: {
     title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
     description:
-      'Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Sprawdź ofertę i dostań bezpłatną wycenę realizacji.',
+      'Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści, projekty graficzne oraz aplikacje webowe. Sprawdź naszą ofertę i opinie naszych realizacji.',
     url: 'https://www.arteonagency.pl',
     type: 'website',
     images: [
@@ -84,32 +95,14 @@ function HomePageSchemas() {
     name: 'Jak pracujemy',
     description:
       'Posiadamy jasny proces współpracy, który maksymalizuje indywidualne podejście i końcowy efekt',
-    step: [
-      {
-        '@type': 'HowToStep',
-        position: 1,
-        name: 'Rozmowa',
-        text: 'Pierwszy etap to zawsze rozmowa na której opowiadasz o tym czym się zajmujesz i co chcesz zrealizować.',
-      },
-      {
-        '@type': 'HowToStep',
-        position: 2,
-        name: 'Plan',
-        text: 'Po wstępnej rozmowie zawsze dostajesz plan, który jest nastawiony na Twoje potrzeby oraz na Twoich obiorców wraz z etapami realizacji oraz wyceną, której zawsze się trzymamy. Każdy plan dopracowujemy abyś dostał dokładnie to czego potrzebujesz.',
-      },
-      {
-        '@type': 'HowToStep',
-        position: 3,
-        name: 'Realizacja',
-        text: 'Po akceptacji planu przechodzimy do realizacji: tworzymy projekt graficzny strony, sklepu czy wybranego projektu do druku. Zawsze dostajesz kilka koncepcji wraz z możliwością naniesienia poprawek i wszelkich uwag. Wszystko dopracowujemy abyś był w pełni zadowolony z projektu.',
-      },
-      {
-        '@type': 'HowToStep',
-        position: 4,
-        name: 'Publikacja i wsparcie',
-        text: 'Gdy efekt jest dla Ciebie w 100% zadowalający publikujemy stronę lub dostarczamy gotowe pliki do druku. Dostajesz pełen dostęp do wszystkiego. Po przekazaniu wystawiamy fakturę za realizację z płatnością do 7 dni roboczych.',
-      },
-    ],
+    // Same source as the visible timeline (processStepsSections.home) so the
+    // structured data matches what the user sees.
+    step: homeProcessSteps.map((processStep, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: processStep.name,
+      text: processStep.text,
+    })),
   };
 
   return (
@@ -127,9 +120,14 @@ export default function HomePage() {
       <HeroBanner
         subtitle='Agencja interaktywna'
         title='Pomagamy dotrzeć tam, gdzie szukają Cie klienci'
-        description='Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Zajmuje się również pozycjonowaniem witryn jak i budową aplikacji webowych. Wszystko zrealizujesz w jednym miejscu.'
-        backgroundImage='/assets/bg/arteon-zbior-realizacji.webp'
-        overlay='black'
+        description='Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepy, treści, projekty graficzne, aplikacje webowe oraz zajmujemy się pozycjonowaniem i promocją Twojej firmy w sieci.'
+        backgroundImage='/assets/projects/napilota/mockup-strony-napilota.webp'
+        imageAlt='Realizacja strony internetowej NaPilota wykonana przez Arteon - mockup na laptopie'
+        primaryCtaLabel='Usługi'
+        primaryCtaHref='/uslugi'
+        secondaryCtaLabel='Realizacje'
+        secondaryCtaHref='/realizacje'
+        reputation
       />
 
       <BenefitBelt variant='carousel' />
@@ -139,122 +137,143 @@ export default function HomePage() {
 
         <ProjectsCarousel
           title='Najnowsze realizacje stron internetowych i projektów graficznych'
-          secondaryTitle='Od prostych wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
+          secondaryTitle='Od wizytówek, przez rozbudowane strony, do pełnych identyfikacji wizualnych'
         />
 
         <Divider line />
 
-        <SectionSteps
-          title='Elastyczny partner dla Twojej marki'
-          description='Działamy w czterech kluczowych obszarach, dzięki czemu masz wszystko w jednym miejscu. Niezależnie od branży i celów znajdziemy najlepszy sposób, aby rozwinąć Twój biznes i przyciągnąć właściwych klientów.'
-          grid='two'
-          buttonText='Sprawdź wszystkie nasze usługi'
+        <SectionHighlights
+          subtitle='Efekty naszych działań'
+          title='Stawiamy na mierzalne efekty wszelkich działań'
+          description={
+            <>
+              <p>
+                Najważniejszy dla nas jest efekt i skuteczność wszelkich
+                działań. Dlatego zawsze pokazujemy mierzalne efekty i tłumaczymy
+                prostym językiem jak dane rozwiązanie wpłynie na Twój biznes -
+                mówimy zawsze zarówno o plusach jak i minusach danego
+                rozwiązania.
+              </p>
+              <p>
+                Stosujemy nowoczesne technologie i standardy, które pozwalają na
+                szybsze dotarcie do potencjalnych klientów i które dają przewagę
+                nad konkurencję. Zawsze analizujemy Twoją branżę, Twój rynek
+                oraz to co istotne dla Ciebie abyś mógł znaleźć idealnych
+                odbiorców.
+              </p>
+              <p>
+                Bazujemy również na własnym doświadczeniu, wszelkie nowości i
+                techniki najpierw testujemy na sobie aby dokładnie wiedzieć
+                jakie w praktyce są plusy oraz minusy każdego podejścia. To co
+                wiemy, że sprawdza się najlepiej zastosujemy u Ciebie.
+              </p>
+            </>
+          }
+          btnOne='Kontakt'
+          btnOneHref='#kontakt'
+          boxes={[
+            {
+              type: 'stat',
+              icon: <RiSearchEyeLine />,
+              title: 'Widoczność',
+              text: 'Po trzech miesiącach pozycjonowania nasza strona jest widoczna na ponad 900 fraz.',
+            },
+            {
+              type: 'image',
+              image:
+                '/assets/dane-z-gsc-arteon-efekt-pozycjonowania-witryny-13-07-2026.png',
+              alt: 'Wzrost liczby kliknięć i wyświetleń strony Arteon w Google - dane z Google Search Console, 13 lipca 2026',
+              imagePosition: 'right',
+            },
+            {
+              type: 'image',
+              image: '/assets/ahref-organic-positions-arteon-4-07-2026.png',
+              alt: 'Wzrost widoczności w Google strony zbudowanej w technologii Next.js - dane Ahrefs dla arteonagency.pl',
+              imagePosition: 'right',
+            },
+            {
+              type: 'stat',
+              icon: <RiTrophyLine />,
+              title: 'Przewaga',
+              text: 'Dzięki najnowszym techniką jesteśmy w Top 3 na ponad 120 zapytań i to w kilku krajach.',
+            },
+            {
+              type: 'stat',
+              icon: <RiLineChartLine />,
+              title: 'Stabilność',
+              text: 'Nasze sposoby gwarantują stabilność wyników i odporność na zmiany algorytmów',
+            },
+            {
+              type: 'image',
+              image:
+                '/assets/dane-z-gsc-arteon-efekt-pozycjonowania-witryny-osiagniecia-z-klikniec-13-07-2026.png',
+              alt: 'Efekty pozycjonowania strony Arteon - osiągnięcia z kliknięć w Google Search Console, 13 lipca 2026',
+            },
+          ]}
+        />
+
+        <Divider line />
+
+        <SectionNumberSteps
+          title='Wszystko czego potrzebujesz w jednym miejscu'
+          buttonText='Wszystkie usługi'
           buttonHref='/uslugi'
           items={[
             {
-              topImageAlt: 'Papier firmowy dla kancelarii Lux Nova - mockup',
-              topImageSrc:
-                '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
-              title: 'Projekty graficzne',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p>
-                    Tworzymy rozmaite projekty graficzne. Od projektów do druku,
-                    jak wizytówki czy ulotki, przez projekty do mediów
-                    społecznościowych oraz stron, po pełne identyfikacje
-                    wizualne i projekty nadruków na odzież. Opieramy się na
-                    psychologii, dzięki czemu nasze projekty trafiają do
-                    odpowiednich grup odbiorczych, tworząc dla Ciebie idealne
-                    środowisko do pozyskiwania najlepszych klientów
-                  </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne'>
-                      Przejdź do projektów graficznych
-                    </ButtonLink>
-                  </div>
-                </div>
-              ),
+              icon: <RiGlobalLine />,
+              title: 'Strony www',
+              description:
+                'Tworzymy indywidualne projekty stron www, dopasowane do Twojej firmy i klientów, stawiając na widoczność w Google.',
+              href: '/uslugi/strony-internetowe-dla-firm',
             },
             {
-              topImageAlt: 'Wizualizacja realizacji strony internetowej dla ',
-              topImageSrc:
-                '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
-              title: 'Strony',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p>
-                    Tworzymy strony internetowe, sklepy, blogi oraz aplikacje
-                    webowe, dopasowując technologię, która w Twoim przypadku
-                    będzie najlepsza. Tworzymy witryny zgodne z krajowymi i
-                    międzynarodowymi wymogami prawnymi (m.in. RODO, WCAG 2.1
-                    AA), oferując przy tym bezpłatne wsparcie. Każdy proces
-                    pracy tłumaczymy jak najprostszym językiem, dzięki czemu nie
-                    musisz się martwić, jeśli nie posiadasz wiedzy technicznej.
-                  </p>
-                  <div className='mt-auto flex gap-4'>
-                    <ButtonLink
-                      arrow
-                      href='/uslugi/strony-internetowe-dla-firm'
-                    >
-                      Strony
-                    </ButtonLink>
-                    <ButtonLink arrow href='/uslugi/blogi-internetowe'>
-                      Blogi
-                    </ButtonLink>
-                    <ButtonLink arrow href='/uslugi/sklepy-internetowe'>
-                      Sklepy
-                    </ButtonLink>
-                  </div>
-                </div>
-              ),
+              icon: <RiStore2Line />,
+              title: 'Sklepy www',
+              description:
+                'Tworzymy sklepy, nastawione na intuicyjne zarzadzanie i proste skalowanie, w których zakupy są proste, a produkty łatwo znaleźć.',
+              href: '/uslugi/sklepy-internetowe',
             },
             {
-              topImageAlt:
-                'Mockup szablonów postów do medi społecznościowych dla MSC Psychotherapy',
-              topImageSrc:
-                '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
-              title: 'Marketing',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p>
-                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz
-                    pełnym marketingu firm w Google i nie tylko. Z nami zyskasz
-                    widoczność dokładnie tam, gdzie szukają Cię klienci.
-                    Zajmujemy się również tworzeniem kampanii reklamowych oraz
-                    prowadzeniem mediów społecznościowych. Przeprowadzamy
-                    dokładną analizę Twojej branży oraz konkurencji, aby móc
-                    zaproponować działania, które trafiają dokładnie w Twoją
-                    grupę odbiorców.
-                  </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/uslugi/marketing'>
-                      Sprawdź ofertę marketingu
-                    </ButtonLink>
-                  </div>
-                </div>
-              ),
+              icon: <RiLineChartLine />,
+              title: 'Pozycjonowanie stron',
+              description:
+                'Zajmujemy sie kompleksowym pozycjonowaniem Twojej witryny w sieci, stawiając na to aby znaleźli Cię idealni klienci.',
+              href: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
-              topImageAlt: 'Mockup realizacji strony internetowej NaPilota ',
-              topImageSrc:
-                '/assets/projects/napilota/mockup-strony-napilota.webp',
-              title: 'Treści',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p>
-                    Tworzymy treści sprzedażowe, promocyjne oraz edukacyjne na
-                    witryny internetowe oraz platformy społecznościowe, które w
-                    jasny sposób pokazują Twoją ofertą i Twoje kompetencje.
-                    Wszystko to w oparciu o rozwiązywanie realnych problemów
-                    Twoich klientów.
-                  </p>
-                  <div className='mt-4'>
-                    <ButtonLink arrow href='/uslugi/tworzenie-tresci'>
-                      Sprawdź ofertę tworzenia treści
-                    </ButtonLink>
-                  </div>
-                </div>
-              ),
+              icon: <RiQuillPenLine />,
+              title: 'Tworzenie treści',
+              description:
+                'Piszemy teksty, które podkreślają korzyści Twojego biznesu z nastawieniem na Twoich klientów oraz widoczność.',
+              href: '/uslugi/tworzenie-tresci',
+            },
+            {
+              icon: <RiPaletteLine />,
+              title: 'Identyfikacje wizualne',
+              description:
+                'Budujemy systemy wizualne dla firm, dzięki którym Twoja firma przyciągnie odpowiednich odbiorców.',
+              href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+            },
+            {
+              icon: <RiPenNibLine />,
+              title: 'Projekty logo',
+              description:
+                'Projektujemy systemy logo, nastawione na czytelność, łatwość zapamiętania i możliwość zastosowania w każdym miejscu i formacie.',
+              href: '/uslugi/projekty-graficzne/projekt-logo',
+            },
+            {
+              icon: <RiIdCardLine />,
+              title: 'Projekty wizytówek',
+              description:
+                'Projektujemy wizytówki wraz z przygotowaniem do druku, które szybko zapadną w pamięć Twoim klientom.',
+              href: '/uslugi/projekty-graficzne/projekt-wizytowki',
+            },
+            {
+              icon: <RiLayoutMasonryLine />,
+              title: 'Szablony do mediów społecznościowych',
+              description:
+                'Tworzymy spójne i łatwe w edycji szablony do mediów społecznościowych, dzięki którym łatwiej będzie Ci być aktywnym w sieci.',
+              href: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
             },
           ]}
         />
@@ -265,7 +284,7 @@ export default function HomePage() {
 
         <Divider line />
 
-        <WorkSteps />
+        <SectionTimeline {...processStepsSections.home} />
 
         <Divider line />
 
@@ -307,7 +326,7 @@ export default function HomePage() {
         <Divider line />
 
         <SectionContactForm
-          title='Skontaktuj się przez formularz'
+          title='Skontaktuj się'
           description='Skontaktuj się z nami, przygotujemy dla Ciebie darmową wycenę i jasny plan działania.'
           noTopic={true}
           imageSrc='/assets/projects/arteon-baners-camper-albania-mockup.webp'

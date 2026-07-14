@@ -20,17 +20,18 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
-import WorkSteps from '@/components/organisms/WorkSteps';
+import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
+import { processStepsSections } from '@/lib/processSteps';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
-import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Projekt odzieży firmowej | Arteon',
@@ -92,6 +93,7 @@ export default function OfferDesignCorporateApparelPage() {
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp'
         overlay='black'
+        reputation
       />
 
       <BenefitBelt variant='carousel' />
@@ -356,7 +358,7 @@ export default function OfferDesignCorporateApparelPage() {
 
         <Divider line />
 
-        <WorkSteps variant='design' />
+        <SectionTimeline {...processStepsSections.design} />
 
         <Divider line />
 

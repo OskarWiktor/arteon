@@ -29,6 +29,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
@@ -41,7 +42,6 @@ import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
-import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Strona internetowa dla firmy wykończeniowej i remontowej | Arteon',
@@ -161,6 +161,7 @@ export default function StronaDlaFirmyWykonczeniowejPage() {
         overlay='black'
         secondaryCtaLabel='Darmowa wycena'
         secondaryCtaHref='#kontakt'
+        reputation
       />
 
       <BenefitBelt variant='carousel' />

@@ -1,8 +1,8 @@
 'use client';
 
 import { useRef } from 'react';
-import { RiStarFill } from 'react-icons/ri';
 import { CarouselNavCentered } from '@/components/molecules/carousels/CarouselNavCentered';
+import RatingBadge from '@/components/molecules/RatingBadge';
 import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
@@ -14,22 +14,10 @@ import {
   focusRingClasses,
   noScrollbarClasses,
 } from '@/lib/uiClasses';
-import type { Testimonial, TestimonialSource } from '@/types/testimonial';
+import type { Testimonial } from '@/types/testimonial';
 import SectionHeader from '../../molecules/SectionHeader';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
-
-/** Review platforms shown in the header badge, linked to their profile. */
-const REVIEW_SOURCES: { label: string; source: TestimonialSource }[] = [
-  { label: 'Fixly', source: 'fixly' },
-  { label: 'Google', source: 'google' },
-  { label: 'Oferteo', source: 'oferteo' },
-];
-
-/** First available review link for a platform, taken from the testimonials data. */
-const reviewSourceHref = (source: TestimonialSource) =>
-  (testimonialsPl as Testimonial[]).find(t => t.source === source && t.link)
-    ?.link;
 
 interface TestimonialsCarouselProps {
   title?: string;
@@ -101,47 +89,10 @@ export default function TestimonialsCarousel({
           containerClassName='pb-0! text-center'
         />
 
-        <div className='inline-flex shrink-0 items-center gap-3 rounded-lg bg-[#E4D9CA] px-4 py-2.5'>
-          <span className='text-3xl leading-none font-bold text-primary'>
-            {averageRating.toFixed(1).replace('.', ',')}
-            <span className='sr-only'> na 5</span>
-          </span>
-          <span aria-hidden='true' className='h-9 w-px bg-primary/15' />
-          <div>
-            <div className='flex items-center gap-2'>
-              <span aria-hidden='true' className='flex gap-0.5 text-[#DCB893]'>
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <RiStarFill key={i} className='h-4 w-4' />
-                ))}
-              </span>
-              <span className='text-sm font-semibold text-primary'>
-                {reviewsCount} opinie
-              </span>
-            </div>
-            <span className='mt-1 block text-xs text-mid'>
-              {REVIEW_SOURCES.map((s, i) => {
-                const href = reviewSourceHref(s.source);
-                return (
-                  <span key={s.source}>
-                    {i > 0 && ', '}
-                    {href ? (
-                      <a
-                        href={href}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='hover-underline'
-                      >
-                        {s.label}
-                      </a>
-                    ) : (
-                      s.label
-                    )}
-                  </span>
-                );
-              })}
-            </span>
-          </div>
-        </div>
+        <RatingBadge
+          averageRating={averageRating}
+          reviewsCount={reviewsCount}
+        />
       </div>
 
       <div className='relative'>

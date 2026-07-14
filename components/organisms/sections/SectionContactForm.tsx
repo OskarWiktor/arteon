@@ -62,8 +62,9 @@ export default function SectionContactForm({
   return (
     <section id='contact' className='scroll-mt-26'>
       <div className={cn('grid lg:grid-cols-2', columnGapClasses)}>
-        <div className='flex flex-col'>
-          <div className='relative mb-6 aspect-4/3 overflow-hidden lg:aspect-auto lg:min-h-0 lg:flex-1'>
+        {/* Image + benefits: below the form on mobile, left column on desktop. */}
+        <div className='order-2 flex flex-col lg:order-0'>
+          <div className='relative mb-3 aspect-4/3 overflow-hidden lg:mb-6 lg:aspect-auto lg:min-h-0 lg:flex-1'>
             <Image
               src={imageSrc}
               alt={imageAlt}
@@ -73,25 +74,29 @@ export default function SectionContactForm({
             />
           </div>
           {variant === 'default-page' && (
-            <ul className='flex justify-between gap-2'>
+            <ul className='flex flex-col gap-3 lg:flex-row lg:justify-between lg:gap-2'>
               {benefits.map((item, i) => (
-                <li key={i} className='inline-flex flex-wrap items-center'>
+                <li key={i} className='flex items-center gap-2'>
                   <div className={cn(flexCenterClasses, normalIconSizeClasses)}>
                     {item.icon}
                   </div>
-                  <span className='text-sm'>{item.label}</span>
+                  <span className='text-sm text-primary!'>{item.label}</span>
                 </li>
               ))}
             </ul>
           )}
         </div>
-        <ContactForm
-          title={title}
-          description={description}
-          defaultSubject={defaultSubject}
-          messagePlaceholder={messagePlaceholder}
-          noTopic={noTopic}
-        />
+
+        {/* Form: on top on mobile, right column on desktop. */}
+        <div className='order-1 lg:order-0'>
+          <ContactForm
+            title={title}
+            description={description}
+            defaultSubject={defaultSubject}
+            messagePlaceholder={messagePlaceholder}
+            noTopic={noTopic}
+          />
+        </div>
       </div>
     </section>
   );

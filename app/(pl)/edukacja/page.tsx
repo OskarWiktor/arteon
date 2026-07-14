@@ -4,6 +4,7 @@ import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Filters from '@/components/molecules/Filters';
 import ArticlesList from '@/components/organisms/ArticlesList';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import {
   getAllArticlePreviews,
@@ -65,6 +66,9 @@ export default function EdukacjaPage() {
         backgroundImage='/assets/blog/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty.webp'
         overlay='black'
       />
+
+      <BenefitBelt variant='carousel' />
+
       <Wrapper>
         <Divider size='xs' />
         <Filters

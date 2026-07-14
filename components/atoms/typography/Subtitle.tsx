@@ -21,6 +21,12 @@ export default function Subtitle({
 
   return (
     <p id={id} className={cn(variantClasses[variant], className)}>
+      {variant === 'default' && (
+        <span
+          aria-hidden='true'
+          className='me-2 inline-block h-[0.8em] w-[0.8em] bg-primary align-middle'
+        />
+      )}
       {children}
     </p>
   );

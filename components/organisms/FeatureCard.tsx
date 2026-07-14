@@ -9,18 +9,19 @@ type FeatureCardProps = {
   description?: ReactNode;
   points?: string[];
   icon?: ReactNode;
-  variant?: 'default' | 'centered' | 'bare';
+  variant?: 'centered' | 'bare';
 };
 
 /**
- * Render a feature card section with a title, optional description, optional point list, and optional icon.
+ * Render a feature card: a vertically centered panel with an icon, title,
+ * optional description and optional point list.
  *
  * @param idx - Index appended to generated IDs to ensure uniqueness (default: `0`)
  * @param title - Heading text for the feature; used to generate the element IDs
  * @param description - Optional descriptive content displayed under the title
  * @param points - Optional list of short feature points rendered as list items
  * @param icon - Optional override for the icon displayed; when omitted a small dot is used
- * @param variant - Layout variant: `'centered'` renders a vertically centered card, `'bare'` is the centered card without its background/shadow, `'default'` renders a horizontal card (default: `'default'`)
+ * @param variant - `'centered'` (default) is the centered card with a white background; `'bare'` is the same card without its background/shadow
  * @returns A React element representing the feature card section with appropriate accessibility attributes and microdata
  */
 export default function FeatureCard({
@@ -29,7 +30,7 @@ export default function FeatureCard({
   description,
   points,
   icon,
-  variant = 'default',
+  variant = 'centered',
 }: FeatureCardProps) {
   const base = String(title)
     .toLowerCase()
@@ -41,103 +42,53 @@ export default function FeatureCard({
     <span className='inline-block h-6 w-6 rounded-xs bg-black' />
   );
 
-  if (variant === 'centered' || variant === 'bare') {
-    return (
-      <Card
-        as='section'
-        aria-labelledby={headingId}
-        aria-describedby={descId}
-        padding='md'
-        interactive={variant !== 'bare'}
-        className={cn(
-          'h-full flex-col! gap-3',
-          // Identical to the centered card, only without the surface: no
-          // background and no shadow.
-          variant === 'bare' && 'bg-transparent shadow-none',
-          flexCenterClasses,
-        )}
-        {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
-      >
-        <div
-          className={cn(
-            'h-16 w-16 rounded-lg bg-primary-light text-primary',
-            flexCenterClasses,
-          )}
-        >
-          {displayIcon}
-        </div>
-        <h3
-          id={headingId}
-          className='h5 font-semibold! text-dark'
-          itemProp='name'
-        >
-          {title}
-        </h3>
-
-        {description && (
-          <div
-            id={descId}
-            className='text-left leading-6'
-            itemProp='description'
-          >
-            {description}
-          </div>
-        )}
-
-        {Array.isArray(points) && points.length > 0 && (
-          <ul className='mt-2 space-y-2'>
-            {points.map((pt, i) => (
-              <li key={i} className={cn('gap-1', flexCenterClasses)}>
-                <span className='text-base text-light'>{pt}</span>
-              </li>
-            ))}
-          </ul>
-        )}
-      </Card>
-    );
-  }
-
   return (
     <Card
       as='section'
       aria-labelledby={headingId}
       aria-describedby={descId}
-      className='flex h-full gap-4'
+      padding='md'
+      interactive={variant !== 'bare'}
+      className={cn(
+        'h-full flex-col! gap-3',
+        // Identical to the centered card, only without the surface: no
+        // background and no shadow.
+        variant === 'bare' && 'bg-transparent shadow-none',
+        flexCenterClasses,
+      )}
       {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
     >
       <div
         className={cn(
-          'h-12 w-12 shrink-0 rounded-lg bg-primary-light text-primary',
+          'h-16 w-16 rounded-lg bg-primary-light text-primary',
           flexCenterClasses,
         )}
       >
         {displayIcon}
       </div>
-      <div className='flex flex-col'>
-        <h3 id={headingId} className='h6 mb-1 text-dark' itemProp='name'>
-          {title}
-        </h3>
+      <h3
+        id={headingId}
+        className='h5 font-semibold! text-dark'
+        itemProp='name'
+      >
+        {title}
+      </h3>
 
-        {description && (
-          <div
-            id={descId}
-            className='text-[15px] leading-6 text-light'
-            itemProp='description'
-          >
-            {description}
-          </div>
-        )}
+      {description && (
+        <div id={descId} className='text-left leading-6' itemProp='description'>
+          {description}
+        </div>
+      )}
 
-        {Array.isArray(points) && points.length > 0 && (
-          <ul className='mt-2 space-y-2'>
-            {points.map((pt, i) => (
-              <li key={i} className={cn('gap-1', flexCenterClasses)}>
-                <span className='text-base text-light'>{pt}</span>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+      {Array.isArray(points) && points.length > 0 && (
+        <ul className='mt-2 space-y-2'>
+          {points.map((pt, i) => (
+            <li key={i} className={cn('gap-1', flexCenterClasses)}>
+              <span className='text-base text-light'>{pt}</span>
+            </li>
+          ))}
+        </ul>
+      )}
     </Card>
   );
 }

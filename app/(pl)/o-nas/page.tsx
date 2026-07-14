@@ -8,8 +8,9 @@ import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import WorkSteps from '@/components/organisms/WorkSteps';
+import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import { getAboutAlternates } from '@/lib/i18n/pages/about';
+import { processStepsSections } from '@/lib/processSteps';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 const profilePageJsonLd = {
   '@context': 'https://schema.org',
@@ -145,7 +146,7 @@ export default function AboutPage() {
 
         <Divider line />
 
-        <WorkSteps />
+        <SectionTimeline {...processStepsSections.home} />
 
         <Divider line />
 

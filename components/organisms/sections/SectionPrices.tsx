@@ -1,15 +1,17 @@
 import type { ReactNode } from 'react';
-import { RiCheckFill } from 'react-icons/ri';
+import { RiCheckLine, RiGiftLine, RiStarFill } from 'react-icons/ri';
 import { cn } from '@/lib/clsx';
-import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/uiClasses';
-import Badge from '../../atoms/Badge';
+import { columnGapClasses } from '@/lib/uiClasses';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
-import IconText from '../../atoms/IconText';
-import ButtonGroup from '../../molecules/ButtonGroup';
+import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
 
 type Note = {
   text: ReactNode;
+  /** Optional heading shown above the text (e.g. "Wsparcie po publikacji"). */
+  title?: string;
+  /** Optional pill next to the title (e.g. "Bonus o wartości 500 zł"). */
+  badgeLabel?: string;
   ctaLabel?: string;
   ctaLink?: string;
 };
@@ -21,8 +23,12 @@ type SectionPricesPlan = {
   technology?: string;
   description: string;
   features: string[];
+  /** Marks the recommended plan: navy accent card + "Popularne" badge. */
   lastPlan?: boolean;
+  highlighted?: boolean;
+  /** Short tier label shown as a pill at the top of the card. */
   badgeLabel?: string;
+  popularLabel?: string;
   btnOne?: string;
   btnOneHref?: string;
   btnTwo?: string;
@@ -40,18 +46,11 @@ type SectionPricesProps = {
 };
 
 /**
- * Render a responsive, accessible pricing section composed of plan cards, an optional informational note, and optional legal text.
- *
- * The component generates ARIA ids for the section heading/subtitle and for each plan card (heading, platform, price, description)
- * to provide accessible relationships between labels and content.
- *
- * @param id - Root DOM id for the section; used as the base for generated ARIA ids. Defaults to `'pricing'`.
- * @param title - Main heading text for the section.
- * @param subtitle - Optional subtitle displayed above the heading; when present it is exposed via `aria-describedby`.
- * @param plans - Array of plan objects rendered as individual cards (name, optional platform, price, description, features, optional badges and action buttons).
- * @param note - Optional informational note shown below the plans; may include `text`, `ctaLabel`, and `ctaLink`.
- * @param legalNote - Optional legal or explanatory text shown below the note; defaults to a message about individualized pricing.
- * @returns A JSX element representing the complete pricing section.
+ * Pricing section. Each plan is a compact card (tier pill, name, price and a
+ * short description with a full-width CTA); the feature list sits below the
+ * card, outside its chrome, with bold checkmarks. The recommended plan (either
+ * `highlighted`/`lastPlan`, or the middle of three) gets a navy accent card and
+ * a "Popularne" badge. An optional bonus box closes the section.
  */
 export default function SectionPrices({
   id = 'pricing',
@@ -63,171 +62,220 @@ export default function SectionPrices({
   legalNote = 'Dokładne ceny ustalamy po zapoznaniu się z indywidualnymi potrzebami',
 }: SectionPricesProps) {
   const headingId = `${id}-heading`;
-  const subtitleId = subtitle ? `${id}-subtitle` : undefined;
-  const descriptionId = description ? `${id}-description` : undefined;
-  const describedBy =
-    [subtitleId, descriptionId].filter(Boolean).join(' ') || undefined;
+
+  const explicitHighlight = plans.findIndex(p => p.highlighted || p.lastPlan);
+  // Fall back to the middle plan when three are shown and none is flagged.
+  let highlightIndex = explicitHighlight;
+  if (highlightIndex < 0 && plans.length === 3) highlightIndex = 1;
+
+  const columnClasses = (count: number) => {
+    if (count >= 3) return 'sm:grid-cols-2 lg:grid-cols-3';
+    if (count === 2) return 'sm:grid-cols-2';
+    return '';
+  };
+  const gridColsClass = columnClasses(plans.length);
 
   return (
-    <section
-      id={id}
-      aria-labelledby={headingId}
-      aria-describedby={describedBy}
-      className='w-full'
-    >
-      <div className='mb-4 lg:mb-6'>
-        {subtitle && (
-          <span
-            id={subtitleId}
-            className='text-sm tracking-wider text-light uppercase'
-          >
-            {subtitle}
-          </span>
-        )}
-        {title && (
-          <h3
-            className='text-2xl font-semibold tracking-tight text-dark'
-            id={headingId}
-          >
-            {title}
-          </h3>
-        )}
-        {description && (
-          <p id={descriptionId} className='mt-3 max-w-3xl text-mid'>
-            {description}
-          </p>
-        )}
-      </div>
+    <section id={id} aria-labelledby={headingId} className='w-full'>
+      <SectionHeader
+        subtitle={subtitle}
+        title={title}
+        description={description}
+        titleId={headingId}
+      />
 
-      <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
+      <ol className={cn('grid grid-cols-1', gridColsClass, columnGapClasses)}>
         {plans.map((plan, idx) => {
+          const isHighlighted = idx === highlightIndex;
           const itemId = `${id}-plan-${idx}`;
           const itemHeadingId = `${itemId}-heading`;
-          const itemPlatformId = plan.platform
-            ? `${itemId}-platform`
-            : undefined;
-          const itemPriceId = `${itemId}-price`;
-          const itemTechId = plan.technology ? `${itemId}-tech` : undefined;
-          const itemDescId = `${itemId}-desc`;
-          const itemDescribedBy =
-            [itemPlatformId, itemPriceId, itemTechId, itemDescId]
-              .filter(Boolean)
-              .join(' ') || undefined;
 
           return (
-            <Card
-              as='article'
-              key={itemId}
-              padding='lg'
-              aria-labelledby={itemHeadingId}
-              aria-describedby={itemDescribedBy}
-              className={cn(
-                'group relative flex h-full flex-col justify-between ring-1 ring-neutral-200 duration-200',
-                plan.lastPlan ? 'ring-2 ring-neutral-900' : '',
-              )}
-            >
-              {plan.badgeLabel && (
-                <Badge
-                  variant='warning'
-                  size='sm'
-                  className='absolute -top-3 left-4 font-semibold tracking-wider shadow-sm'
-                  aria-label='Wyróżniony plan'
-                >
-                  {plan.badgeLabel}
-                </Badge>
-              )}
+            <li key={itemId} className='flex flex-col'>
+              <Card
+                as='article'
+                padding='lg'
+                interactive={false}
+                tone={isHighlighted ? 'blue' : 'white'}
+                aria-labelledby={itemHeadingId}
+                className={cn(
+                  'flex flex-col gap-0',
+                  !isHighlighted && 'ring-1 ring-neutral-200',
+                )}
+              >
+                {(plan.badgeLabel || isHighlighted) && (
+                  <div className='mb-4 flex flex-wrap items-center gap-2'>
+                    {plan.badgeLabel && (
+                      <span
+                        className={cn(
+                          'rounded-full px-3 py-1 text-xs font-semibold tracking-wide uppercase',
+                          isHighlighted
+                            ? 'bg-white/15 text-on-dark'
+                            : 'bg-primary-light text-primary',
+                        )}
+                      >
+                        {plan.badgeLabel}
+                      </span>
+                    )}
+                    {isHighlighted && (
+                      <span className='inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary'>
+                        <RiStarFill className='h-3 w-3' aria-hidden='true' />
+                        {plan.popularLabel ?? 'Popularne'}
+                      </span>
+                    )}
+                  </div>
+                )}
 
-              <div>
-                <h4
+                <h3
                   id={itemHeadingId}
-                  className='h5 text-xl font-semibold text-dark'
+                  className={cn(
+                    'h5 font-semibold!',
+                    isHighlighted ? 'text-on-dark!' : 'text-dark',
+                  )}
                 >
                   {plan.name}
-                </h4>
+                </h3>
 
                 {plan.platform && (
-                  <span id={itemPlatformId} className='mt-1 block text-sm'>
+                  <span
+                    className={cn(
+                      'mt-1 block text-sm',
+                      isHighlighted && 'text-on-dark!',
+                    )}
+                  >
                     {plan.platform}
                   </span>
                 )}
 
-                <p id={itemPriceId} className='mt-4'>
-                  <span className='text-xl font-semibold tracking-tight text-dark'>
-                    {plan.price}
-                  </span>
+                <p
+                  className={cn(
+                    'mt-4 text-2xl font-bold tracking-tight md:text-3xl',
+                    isHighlighted ? 'text-on-dark!' : 'text-dark',
+                  )}
+                >
+                  {plan.price}
                 </p>
 
                 {plan.technology && (
-                  <p id={itemTechId} className='mt-2 text-sm text-light'>
+                  <p
+                    className={cn(
+                      'mt-2 text-sm',
+                      isHighlighted ? 'text-[#B3B0AC]!' : 'text-light',
+                    )}
+                  >
                     Technologia:{' '}
-                    <span className='font-medium text-dark'>
+                    <span
+                      className={cn(
+                        'font-medium',
+                        isHighlighted ? 'text-on-dark!' : 'text-dark',
+                      )}
+                    >
                       {plan.technology}
                     </span>
                   </p>
                 )}
 
-                <p id={itemDescId} className='mt-2 text-[15px] leading-relaxed'>
+                <p
+                  className={cn(
+                    'mt-3 text-sm leading-relaxed',
+                    isHighlighted ? 'text-[#B3B0AC]!' : 'text-mid',
+                  )}
+                >
                   {plan.description}
                 </p>
 
-                <ul className='mt-6 space-y-3'>
-                  {(plan.features ?? []).map((f, i) => (
-                    <li key={`${itemId}-f-${i}`}>
-                      <IconText
-                        icon={
-                          <span
-                            className={cn(
-                              'group-hover:ring-primary8 mt-0.5 inline-flex flex-none items-center justify-center rounded-lg ring-1 ring-neutral-300',
-                              normalIconSizeClasses,
-                            )}
-                            title='Zawarte w planie'
-                          >
-                            <RiCheckFill className={smallIconSizeClasses} />
-                          </span>
-                        }
-                        gap='3'
-                        align='start'
+                {(plan.btnOne && plan.btnOneHref) ||
+                (plan.btnTwo && plan.btnTwoHref) ? (
+                  <div className='mt-6 flex flex-col gap-3'>
+                    {plan.btnOne && plan.btnOneHref && (
+                      <ButtonLink
+                        href={plan.btnOneHref}
+                        variant={isHighlighted ? 'normal' : 'accent'}
+                        arrow
+                        className='w-full justify-center'
                       >
-                        <span className='text-base leading-relaxed'>{f}</span>
-                      </IconText>
+                        {plan.btnOne}
+                      </ButtonLink>
+                    )}
+                    {plan.btnTwo && plan.btnTwoHref && (
+                      <ButtonLink
+                        href={plan.btnTwoHref}
+                        variant='normal'
+                        arrow
+                        className='w-full justify-center'
+                      >
+                        {plan.btnTwo}
+                      </ButtonLink>
+                    )}
+                  </div>
+                ) : null}
+              </Card>
+
+              {plan.features?.length > 0 && (
+                <ul className='mt-6 space-y-3'>
+                  {plan.features.map((feature, i) => (
+                    <li
+                      key={`${itemId}-f-${i}`}
+                      className='flex items-start gap-2.5'
+                    >
+                      <RiCheckLine
+                        className='mt-0.5 h-5 w-5 shrink-0 text-primary'
+                        aria-hidden='true'
+                      />
+                      <span className='text-sm font-medium text-dark'>
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              {(plan.btnOne && plan.btnOneHref) ||
-              (plan.btnTwo && plan.btnTwoHref) ? (
-                <ButtonGroup
-                  btnOne={plan.btnOne}
-                  btnOneHref={plan.btnOneHref}
-                  btnOneVariant={plan.lastPlan ? 'normal' : 'accent'}
-                  btnTwo={plan.btnTwo}
-                  btnTwoHref={plan.btnTwoHref}
-                  align='left'
-                  ariaLabel={`Działania planu: ${plan.name}`}
-                />
-              ) : null}
-            </Card>
+              )}
+            </li>
           );
         })}
-      </div>
+      </ol>
 
       {note && (
         <div
-          className='mt-8 rounded-lg bg-linear-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200'
+          className='mt-10 flex flex-col gap-4 rounded-lg bg-primary-light p-6 md:flex-row md:items-center md:gap-6 md:p-8'
           role='note'
-          aria-label='Informacja'
+          aria-label='Bonus'
         >
-          <div className='text-[15px] leading-relaxed text-mid'>
-            {note.text}
-          </div>
-          {note.ctaLink && note.ctaLabel && (
-            <div className='mt-4'>
-              <ButtonLink href={note.ctaLink} variant='accent' arrow>
-                {note.ctaLabel}
-              </ButtonLink>
+          {note.badgeLabel && (
+            <div className='flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-primary text-on-dark'>
+              <RiGiftLine className='h-7 w-7' aria-hidden='true' />
             </div>
           )}
+          <div>
+            {(note.title || note.badgeLabel) && (
+              <div className='flex flex-wrap items-center gap-3'>
+                {note.title && (
+                  <h3 className='h5 font-semibold! text-primary'>
+                    {note.title}
+                  </h3>
+                )}
+                {note.badgeLabel && (
+                  <span className='rounded-full bg-primary px-3 py-1 text-xs font-semibold text-on-dark'>
+                    {note.badgeLabel}
+                  </span>
+                )}
+              </div>
+            )}
+            <div
+              className={cn(
+                'leading-relaxed text-[#645D52]',
+                (note.title || note.badgeLabel) && 'mt-2',
+              )}
+            >
+              {note.text}
+            </div>
+            {note.ctaLink && note.ctaLabel && (
+              <div className='mt-4'>
+                <ButtonLink href={note.ctaLink} variant='accent' arrow>
+                  {note.ctaLabel}
+                </ButtonLink>
+              </div>
+            )}
+          </div>
         </div>
       )}
 

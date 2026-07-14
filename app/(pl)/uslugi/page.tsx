@@ -123,6 +123,7 @@ export default function OfferPage() {
             naciskiem na jakość i wyniki.
           </>
         }
+        reputation
       />
       <BenefitBelt variant='carousel' />
 

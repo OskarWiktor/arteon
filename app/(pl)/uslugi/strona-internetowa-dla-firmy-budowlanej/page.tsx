@@ -29,6 +29,7 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
@@ -41,7 +42,6 @@ import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
-import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Strona internetowa dla firmy budowlanej | Arteon',
@@ -170,6 +170,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
         overlay='black'
         secondaryCtaLabel='Darmowa wycena'
         secondaryCtaHref='#kontakt'
+        reputation
       />
 
       <BenefitBelt variant='carousel' />
@@ -553,6 +554,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
           plans={[
             {
               name: 'Strona wizytówka',
+              badgeLabel: 'Minimum',
               technology: 'WordPress',
               price: '2 200 - 2 800 zł',
               description:
@@ -568,6 +570,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
             },
             {
               name: 'Strona z pozycjonowaniem',
+              badgeLabel: 'Business',
               technology: 'WordPress',
               price: '3 500 - 4 800 zł',
               description:
@@ -586,6 +589,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
             },
             {
               name: 'Strona w technologii Next.js',
+              badgeLabel: 'Pro',
               technology: 'Next.js',
               price: 'od 8 000 zł',
               description:
@@ -600,6 +604,11 @@ export default function StronaDlaFirmyBudowlanejPage() {
               btnOneHref: '#kontakt',
             },
           ]}
+          note={{
+            title: 'Licencja i wsparcie w cenie',
+            badgeLabel: 'Elementor Pro gratis',
+            text: 'Do stron w WordPressie licencję Elementor Pro dodajemy w cenie realizacji. Po publikacji dostajesz 60 dni gwarancji oraz bezpłatne wsparcie przy drobnych zmianach.',
+          }}
         />
 
         <Divider line />

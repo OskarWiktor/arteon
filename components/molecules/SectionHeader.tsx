@@ -10,6 +10,9 @@ interface SectionHeaderProps {
   description?: ReactNode;
   SubtitleVariant?: 'default' | 'dynamic';
   SubtitleClassName?: string;
+  /** Visual size of the heading. The element stays an `<h2>`; only the
+   * typographic class changes. Defaults to `'h3'`. */
+  titleSize?: 'h2' | 'h3' | 'h4';
   titleClassName?: string;
   descriptionClassName?: string;
   subtitleId?: string;
@@ -26,6 +29,7 @@ export default function SectionHeader({
   title,
   description,
   SubtitleClassName,
+  titleSize = 'h3',
   titleClassName,
   descriptionClassName,
   subtitleId,
@@ -51,7 +55,10 @@ export default function SectionHeader({
             </Subtitle>
           </div>
         )}
-        <h2 className={cn('h3 scroll-mt-26', titleClassName)} id={titleId}>
+        <h2
+          className={cn(titleSize, 'scroll-mt-26', titleClassName)}
+          id={titleId}
+        >
           {title}
         </h2>
       </Reveal>

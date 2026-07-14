@@ -12,14 +12,14 @@
   color-scheme: light;
 
   --primary: #1c1f32;
-  --primary-light: #e0d6ce;
+  --primary-light: #e4d9ca;
   --primary-mid: #493b30;
 
-  --accent: #e0d6ce;
+  --accent: #e4d9ca;
 
   --background: #f9f5f2;
   --foreground: #1c1f32;
-  --text-light: #7e7c7a;
+  --text-light: #645d52;
   --text-mid: #645d52;
   --text-on-dark: #f7f5f4;
 
@@ -328,6 +328,36 @@ h6,
   line-height: 1.1;
   text-wrap: balance;
   letter-spacing: -0.25px;
+}
+
+/* On phones the headings shrink but the negative tracking above is a fixed px
+   amount, so at small sizes the letters read as cramped. Relax the tracking on
+   narrow viewports so headings keep breathing room on mobile. */
+@media (max-width: 640px) {
+  h1,
+  .h1 {
+    letter-spacing: -0.6px;
+  }
+  h2,
+  .h2 {
+    letter-spacing: -0.5px;
+  }
+  h3,
+  .h3 {
+    letter-spacing: -0.4px;
+  }
+  h4,
+  .h4 {
+    letter-spacing: -0.3px;
+  }
+  h5,
+  .h5 {
+    letter-spacing: -0.15px;
+  }
+  h6,
+  .h6 {
+    letter-spacing: normal;
+  }
 }
 
 strong {

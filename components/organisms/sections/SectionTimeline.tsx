@@ -52,6 +52,7 @@ export default function SectionTimeline({
     <section
       data-section='timeline'
       aria-labelledby={title ? headingId : undefined}
+      className='pb-2'
     >
       <SectionHeader
         subtitle={subtitle}
@@ -90,7 +91,11 @@ export default function SectionTimeline({
                 })}
               >
                 <Reveal delayMs={Math.min(index, 6) * 80}>
-                  <Card padding='lg' className='ml-16 md:ml-0'>
+                  <Card
+                    padding='lg'
+                    interactive={false}
+                    className='ml-16 md:ml-0'
+                  >
                     <div
                       className={cn(
                         'absolute top-6 left-0 h-12 w-12 rounded-lg bg-primary text-white shadow-lg md:hidden',

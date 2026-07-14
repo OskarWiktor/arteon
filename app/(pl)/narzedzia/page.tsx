@@ -9,6 +9,7 @@ import Divider from '@/components/atoms/Divider';
 import InlineLink from '@/components/atoms/InlineLink';
 import Wrapper from '@/components/atoms/Wrapper';
 import ToolCardFooter from '@/components/molecules/ToolCardFooter';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
@@ -688,6 +689,8 @@ export default function ToolsIndexPage() {
         backgroundImage='/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp'
         overlay='black'
       />
+
+      <BenefitBelt variant='carousel' />
 
       <Wrapper>
         <Divider size='xs' />
