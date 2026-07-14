@@ -1,0 +1,273 @@
+{
+  "toolKey": "milesToKm",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník mil na km – převeď míle na kilometry",
+    "description": "Převeď míle na kilometry. Hotové tabulky pokrývají běžecké vzdálenosti (s maratonem 26,2 míle), rychlost mph na km/h a námořní míle. Převodník mil na km funguje v obou směrech a počítá okamžitě.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-mil-na-km"
+  },
+  "hero": {
+    "title": "Převeď míle na kilometry",
+    "description": "Zadej libovolnou hodnotu v mílích a hned si přečti výsledek v kilometrech. Převodník se hodí při plánování cest do USA a Velké Británie, čtení běžeckých vzdáleností, kontrole rychlostních limitů uváděných v mílích za hodinu i při vzdálenostech na moři. Níže na stránce najdeš hotové tabulky pro oblíbené vzdálenosti, rychlosti a dokonce i námořní míle.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-mil-na-km",
+      "label": "míle na km"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník mil na kilometry – kalkulačka mil na km",
+      "alternateName": [
+        "Převodník mil na km",
+        "Kalkulačka mil na km",
+        "Převodník mil na kilometry",
+        "Míle na kilometry",
+        "míle na km",
+        "Převést míle na km",
+        "Převod mil na km",
+        "Kolik km je míle",
+        "1 míle v km",
+        "Převodník mph na km/h",
+        "Námořní míle na km",
+        "Tabulka mil na km",
+        "Kolik km má maraton",
+        "miles to km",
+        "Převodník mil"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník mil na kilometry, který běží v prohlížeči bez registrace. Zadej hodnotu v mílích a okamžitě získáš výsledek v kilometrech. Hodí se pro cesty do anglicky mluvících zemí, běžecké vzdálenosti, rychlostní limity v mílích za hodinu a vzdálenosti na moři.",
+      "featureList": [
+        "Převod funguje v obou směrech, takže převedeš míle na kilometry i kilometry na míle",
+        "Výsledek se objeví okamžitě při psaní, bez klikání na jakékoli tlačítko",
+        "Hotový výsledek zkopíruješ do schránky jedním kliknutím",
+        "Převodní tabulka zahrnuje hodnoty od 1 míle do 1 000 mil, včetně maratonské vzdálenosti 26,2 míle",
+        "Samostatná tabulka převádí rychlost z mil za hodinu (mph) na kilometry za hodinu (km/h)",
+        "Stránka vysvětluje rozdíl mezi pozemní mílí a námořní mílí a uvádí jejich převod na kilometry",
+        "Všechny výpočty probíhají lokálně v tvém prohlížeči a tvá data neopouštějí zařízení",
+        "Přesný vzorec převodu je kilometry = míle × 1,609344",
+        "Nástroj funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést míle na kilometry?",
+      "description": "Krátký návod k použití převodníku mil na kilometry.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu v mílích",
+          "text": "Do levého pole zadej počet mil, které chceš převést na kilometry."
+        },
+        {
+          "name": "Přečti si výsledek v kilometrech",
+          "text": "Výsledek v kilometrech se objeví hned ve vedlejším poli vpravo. Můžeš ho zkopírovat do schránky jedním kliknutím."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Změnit pořadí a přepni převodník na převod kilometrů na míle."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "K čemu je převod mil na kilometry?",
+      "html": "<p class=\"text-mid mb-4\">Míle je jednotka vzdálenosti, kterou používají hlavně Spojené státy a Velká Británie. V Česku a ve většině světa platí kilometr, proto se s mílí setkáš hlavně při kontaktu se zahraničím: na americké silniční mapě, u běžecké vzdálenosti uvedené v mílích, u rychlostního limitu na americké dálnici nebo v popisu trasy ve sportovní aplikaci nastavené na imperiální jednotky.</p><p class=\"text-mid mb-4\">Jedna pozemní míle je přesně 1,609344 kilometru. Tento vztah je stálý, takže každý převod se scvrkne na jedno násobení. Převodník to za tebe udělá hned po zadání hodnoty, i pro desetinné vzdálenosti jako 26,2 míle, což je délka maratonu.</p><p class=\"text-mid mb-4\">Pozor na jeden detail: námořní míle používaná v lodní a letecké dopravě je jiná jednotka než pozemní míle a měří 1,852 kilometru. Níže najdeš samostatné tabulky pro vzdálenosti, pro rychlost v mílích za hodinu a pro námořní míle.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník mil na kilometry – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod mil na kilometry? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod mil na kilometry stojí na stálém vztahu: jedna pozemní míle je přesně 1,609344 kilometru. Stačí tedy počet mil vynásobit číslem 1,609344 a získáš výsledek v kilometrech.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>kilometry = míle × 1,609344</strong>. Opačně: <strong>míle = kilometry ÷ 1,609344</strong>.</p><p class=\"text-mid mb-4\">Příklad: chceš zjistit, kolik kilometrů je 5 mil. Dosadíš: 5 × 1,609344 = 8,05 km. Odtud pochází oblíbený odhad, že 5 mil je zhruba 8 kilometrů – přesný výsledek je 8,0467 km.</p><p class=\"text-mid\">Další příklad: maraton je dlouhý 26,2 míle, což po převodu dává 26,2 × 1,609344 = 42,16 km. To je velmi blízko oficiální délce maratonské trati, tedy 42,195 km. Převodník provede oba směry hned po zadání hodnoty.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka mil na kilometry",
+      "description": "Tabulka níže převádí oblíbené vzdálenosti v mílích na kilometry. Hodnoty jsou zaokrouhleny na dvě desetinná místa. Pro převod přesné hodnoty nebo jiné vzdálenosti použij převodník výše.",
+      "labelHeader": "Míle",
+      "cols": ["Kilometry"],
+      "rows": [
+        { "label": "1 mi", "values": ["1,61 km"] },
+        { "label": "2 mi", "values": ["3,22 km"] },
+        { "label": "3 mi", "values": ["4,83 km"] },
+        { "label": "4 mi", "values": ["6,44 km"] },
+        { "label": "5 mi", "values": ["8,05 km"], "emphasis": true },
+        { "label": "6 mi", "values": ["9,66 km"] },
+        { "label": "7 mi", "values": ["11,27 km"] },
+        { "label": "8 mi", "values": ["12,87 km"] },
+        { "label": "9 mi", "values": ["14,48 km"] },
+        { "label": "10 mi", "values": ["16,09 km"], "emphasis": true },
+        { "label": "12 mi", "values": ["19,31 km"] },
+        { "label": "13 mi", "values": ["20,92 km"] },
+        { "label": "14 mi", "values": ["22,53 km"] },
+        { "label": "15 mi", "values": ["24,14 km"] },
+        { "label": "17 mi", "values": ["27,36 km"] },
+        { "label": "20 mi", "values": ["32,19 km"], "emphasis": true },
+        { "label": "23 mi", "values": ["37,01 km"] },
+        { "label": "25 mi", "values": ["40,23 km"], "emphasis": true },
+        { "label": "26 mi", "values": ["41,84 km"] },
+        { "label": "26,2 mi", "values": ["42,16 km"], "emphasis": true },
+        { "label": "30 mi", "values": ["48,28 km"] },
+        { "label": "35 mi", "values": ["56,33 km"] },
+        { "label": "40 mi", "values": ["64,37 km"] },
+        { "label": "45 mi", "values": ["72,42 km"] },
+        { "label": "50 mi", "values": ["80,47 km"], "emphasis": true },
+        { "label": "60 mi", "values": ["96,56 km"] },
+        { "label": "70 mi", "values": ["112,65 km"] },
+        { "label": "75 mi", "values": ["120,70 km"] },
+        { "label": "80 mi", "values": ["128,75 km"] },
+        { "label": "100 mi", "values": ["160,93 km"], "emphasis": true },
+        { "label": "120 mi", "values": ["193,12 km"] },
+        { "label": "180 mi", "values": ["289,68 km"] },
+        { "label": "500 mi", "values": ["804,67 km"] },
+        { "label": "1 000 mi", "values": ["1 609,34 km"], "emphasis": true }
+      ],
+      "caption": "Chceš převádět opačným směrem? Použij náš převodník <a href=\"/cs/nastroje/prevodnik-km-na-mile\">kilometrů na míle</a> s úplnou tabulkou pro metrické vzdálenosti."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabulka rychlosti: míle za hodinu (mph) na kilometry za hodinu (km/h)",
+      "description": "Rychlostní limity a údaje na tachometru v USA a Velké Británii se uvádějí v mílích za hodinu (mph). Přepočítací faktor rychlosti je stejný jako u vzdálenosti, protože násobíš číslem 1,609344 – mění se jen jednotka času. Hodnoty jsou zaokrouhleny na dvě desetinná místa.",
+      "labelHeader": "Míle za hodinu",
+      "cols": ["Kilometry za hodinu"],
+      "rows": [
+        { "label": "20 mph", "values": ["32,19 km/h"] },
+        { "label": "25 mph", "values": ["40,23 km/h"] },
+        { "label": "30 mph", "values": ["48,28 km/h"], "emphasis": true },
+        { "label": "40 mph", "values": ["64,37 km/h"] },
+        { "label": "50 mph", "values": ["80,47 km/h"], "emphasis": true },
+        { "label": "60 mph", "values": ["96,56 km/h"] },
+        { "label": "70 mph", "values": ["112,65 km/h"], "emphasis": true },
+        { "label": "75 mph", "values": ["120,70 km/h"] },
+        { "label": "80 mph", "values": ["128,75 km/h"] },
+        { "label": "90 mph", "values": ["144,84 km/h"] },
+        { "label": "100 mph", "values": ["160,93 km/h"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Námořní míle není totéž co pozemní míle",
+      "html": "<p class=\"text-mid mb-4\">V lodní a letecké dopravě se vzdálenosti uvádějí v námořních mílích, ne v pozemních. Námořní míle je delší: měří přesně 1,852 kilometru, zatímco pozemní míle je 1,609344 kilometru. Rozdíl plyne z definice – námořní míle přibližně odpovídá délce jedné úhlové minuty podél poledníku, tedy 1/60 stupně zeměpisné šířky.</p><p class=\"text-mid mb-4\">S námořní mílí souvisí i uzel, jednotka rychlosti rovná jedné námořní míli za hodinu (1 uzel = 1,852 km/h). Používají ho lodě a letadla.</p><p class=\"text-mid\">Pokud tedy vidíš vzdálenost popsanou jako míli v námořním nebo leteckém kontextu, převáděj ji číslem 1,852, a ne 1,609344. Pro orientaci: 1 námořní míle je 1,85 km, 5 námořních mil je 9,26 km a 10 námořních mil je 18,52 km.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí míle na kilometry?",
+      "description": "Míle se v běžném životě objevují hlavně při kontaktu se zahraničím. Každá z níže uvedených situací má svá specifika.",
+      "items": [
+        {
+          "title": "Běhání a maraton",
+          "description": "Oblíbené běžecké vzdálenosti se uvádějí v mílích, hlavně v americkém a britském obsahu. Maraton je 26,2 míle, tedy 42,16 km, a půlmaraton je 13,1 míle, tedy 21,08 km. Sportovní aplikace nastavené na imperiální jednotky ukazují tempo v mílích, takže převod pomáhá porovnat výsledek s metrickými vzdálenostmi v kilometrech."
+        },
+        {
+          "title": "Řízení a rychlostní limity",
+          "description": "V USA a Velké Británii tachometry i dopravní značky ukazují míle za hodinu. Dálničních 70 mph je zhruba 112,65 km/h a městských 30 mph zhruba 48,28 km/h. Když si v zahraničí půjčíš auto nebo čteš popis trasy, převod rychlosti ti pomůže vyhnout se pokutě a odhadnout reálný čas jízdy."
+        },
+        {
+          "title": "Cesty do USA a Velké Británie",
+          "description": "Mapy, ukazatele a vzdálenosti mezi městy se uvádějí v mílích. Než posoudíš, jestli je 180 mil hodina nebo půl dne jízdy, převeď je na kilometry – 180 mil je 289,68 km. Usnadní to plánování tankování, přestávek i času příjezdu."
+        },
+        {
+          "title": "Lodní a letecká doprava",
+          "description": "Na moři a ve vzduchu platí námořní míle 1,852 km a rychlost se měří v uzlech. Je to samostatná jednotka odlišná od pozemní míle, proto u námořních a leteckých vzdáleností použij faktor 1,852 a u silničních a běžeckých faktor 1,609344."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu mil na kilometry",
+      "items": [
+        {
+          "question": "Kolik kilometrů je 1 míle?",
+          "answer": "Jedna pozemní míle je přesně 1,609344 kilometru, tedy po zaokrouhlení asi 1,61 km. Je to stálá hodnota, takže stačí jakýkoli počet mil vynásobit číslem 1,609344."
+        },
+        {
+          "question": "Je 5 mil 8 kilometrů?",
+          "answer": "Skoro. 5 mil je přesně 8,0467 km, tedy po zaokrouhlení 8,05 km. Odhad „5 mil je 8 kilometrů\" se hodí pro počítání z hlavy a chyba je jen asi 47 metrů."
+        },
+        {
+          "question": "Kolik kilometrů je maraton (26,2 míle)?",
+          "answer": "26,2 míle je 42,16 km. Výpočet: 26,2 × 1,609344 = 42,16 km. Oficiální délka maratonské trati je 42,195 km – malý rozdíl plyne ze zaokrouhlení vzdálenosti na 26,2 míle."
+        },
+        {
+          "question": "Kolik je 70 mph v kilometrech za hodinu?",
+          "answer": "70 mil za hodinu je zhruba 112,65 km/h. Výpočet: 70 × 1,609344 = 112,65 km/h. Je to typický limit na amerických mezistátních dálnicích."
+        },
+        {
+          "question": "Co je větší: 1 míle, nebo 2 kilometry?",
+          "answer": "Větší jsou 2 kilometry. Jedna míle je 1,61 km, takže je kratší než 2 km. Míle leží mezi 1 a 2 kilometry, blíže ke 2 kilometrům."
+        },
+        {
+          "question": "Je 1 kilometr půl míle?",
+          "answer": "Ne tak úplně. 1 kilometr je 0,62 míle, tedy o něco více než půl míle. Přesně půl míle je 0,805 km, takže kilometr je delší."
+        },
+        {
+          "question": "Kolik kilometrů je 10 mil?",
+          "answer": "10 mil je 16,09 km. Výpočet: 10 × 1,609344 = 16,09 km."
+        },
+        {
+          "question": "Kolik kilometrů je 100 mil?",
+          "answer": "100 mil je 160,93 km. Výpočet: 100 × 1,609344 = 160,93 km."
+        },
+        {
+          "question": "Kolik kilometrů jsou 2, 3 a 20 mil?",
+          "answer": "2 míle jsou 3,22 km, 3 míle jsou 4,83 km a 20 mil je 32,19 km. Každou z těchto hodnot získáš vynásobením počtu mil číslem 1,609344."
+        },
+        {
+          "question": "Jak dlouho trvá ujít 5 mil pěšky?",
+          "answer": "5 mil je 8 km. Klidným tempem chůze (asi 5 km/h) to trvá zhruba 1,5 hodiny. Ujít 8 km za 50 minut by vyžadovalo velmi rychlé tempo blízké 9,5 km/h, takže jde spíš o sportovní chůzi než o běžnou procházku."
+        },
+        {
+          "question": "Kolik kilometrů je námořní míle?",
+          "answer": "Námořní míle je 1,852 km a je delší než pozemní míle (1,609344 km). Používá se v lodní a letecké dopravě a její přidruženou jednotkou rychlosti je uzel, tedy jedna námořní míle za hodinu."
+        },
+        {
+          "question": "Jaký je vzorec pro převod mil na kilometry?",
+          "answer": "Vzorec je: kilometry = míle × 1,609344. Například 30 mil × 1,609344 = 48,28 km. Opačně: míle = kilometry ÷ 1,609344."
+        },
+        {
+          "question": "Kolik kilometrů je 50 a 60 mil?",
+          "answer": "50 mil je 80,47 km a 60 mil je 96,56 km. Obě hodnoty vznikají stejně: počet mil vynásobíš číslem 1,609344."
+        },
+        {
+          "question": "Jak rychle převést míle na kilometry z hlavy?",
+          "answer": "Nejjednodušší je vynásobit počet mil číslem 1,6 – výsledek je velmi blízko přesnému. Můžeš také použít pravidlo „5 mil je 8 kilometrů\": 10 mil je asi 16 km, 15 mil asi 24 km a 25 mil asi 40 km. Pro přesné výpočty použij převodník."
+        },
+        {
+          "question": "Čím se liší míle od kilometru?",
+          "answer": "Míle je delší. Jedna pozemní míle je 1,609344 km, proto vzdálenost uvedená v mílích vždy odpovídá většímu počtu kilometrů. Míle patří do imperiální soustavy a kilometr do metrické."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "subject": "Převodník mil na kilometry"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

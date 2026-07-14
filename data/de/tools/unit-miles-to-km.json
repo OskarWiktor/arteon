@@ -1,0 +1,273 @@
+{
+  "toolKey": "milesToKm",
+  "locale": "de",
+  "metadata": {
+    "title": "Meilen in km Umrechner – Meilen in Kilometer umrechnen",
+    "description": "Rechnen Sie Meilen in Kilometer um. Fertige Tabellen decken Laufdistanzen (mit dem Marathon von 26,2 Meilen), mph in km/h sowie Seemeilen ab. Der Meilen-in-km-Umrechner arbeitet in beide Richtungen und rechnet sofort.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/meilen-in-km-umrechner"
+  },
+  "hero": {
+    "title": "Meilen in Kilometer umrechnen",
+    "description": "Geben Sie einen beliebigen Wert in Meilen ein und lesen Sie das Ergebnis sofort in Kilometern ab. Der Umrechner ist praktisch bei der Planung von Reisen in die USA und nach Großbritannien, beim Lesen von Laufdistanzen, beim Prüfen von Tempolimits in Meilen pro Stunde sowie bei Entfernungen auf See. Weiter unten auf der Seite finden Sie fertige Tabellen für beliebte Distanzen, Geschwindigkeiten und sogar Seemeilen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/meilen-in-km-umrechner",
+      "label": "Meilen in km"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Meilen-in-Kilometer-Umrechner – Meilen in km Rechner",
+      "alternateName": [
+        "Meilen in km Umrechner",
+        "Meilen in km Rechner",
+        "Meilen in Kilometer umrechnen",
+        "Meilen in Kilometer",
+        "Meilen in km",
+        "Meilen zu km",
+        "Umrechnung Meilen in km",
+        "Wie viele km sind eine Meile",
+        "1 Meile in km",
+        "mph in km/h Umrechner",
+        "Seemeilen in km",
+        "Meilen-km-Tabelle",
+        "Wie viele km ist ein Marathon",
+        "miles to km",
+        "Meilen Umrechner"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Ein Meilen-in-Kilometer-Umrechner, der ohne Registrierung im Browser läuft. Geben Sie einen Wert in Meilen ein und erhalten Sie das Ergebnis sofort in Kilometern. Praktisch für Reisen in englischsprachige Länder, Laufdistanzen, Tempolimits in Meilen pro Stunde und Entfernungen auf See.",
+      "featureList": [
+        "Die Umrechnung funktioniert in beide Richtungen, sodass Sie sowohl Meilen in Kilometer als auch Kilometer in Meilen umrechnen",
+        "Das Ergebnis erscheint sofort während der Eingabe, ohne dass Sie eine Schaltfläche anklicken müssen",
+        "Das fertige Ergebnis lässt sich mit einem Klick in die Zwischenablage kopieren",
+        "Die Umrechnungstabelle umfasst Werte von 1 Meile bis 1.000 Meilen, einschließlich der Marathondistanz von 26,2 Meilen",
+        "Eine separate Tabelle rechnet die Geschwindigkeit von Meilen pro Stunde (mph) in Kilometer pro Stunde (km/h) um",
+        "Die Seite erklärt den Unterschied zwischen einer Landmeile und einer Seemeile und gibt ihre Umrechnung in Kilometer an",
+        "Alle Berechnungen laufen lokal in Ihrem Browser, Ihre Daten verlassen das Gerät nicht",
+        "Die genaue Umrechnungsformel lautet Kilometer = Meilen × 1,609344",
+        "Das Werkzeug funktioniert auf Handy, Tablet und Computer ohne Installation"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Meilen in Kilometer um?",
+      "description": "Kurze Anleitung zur Nutzung des Meilen-in-Kilometer-Umrechners.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert in Meilen eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl der Meilen ein, die Sie in Kilometer umrechnen möchten."
+        },
+        {
+          "name": "Ergebnis in Kilometern ablesen",
+          "text": "Das Ergebnis in Kilometern erscheint sofort im Feld daneben, auf der rechten Seite. Sie können es mit einem Klick in die Zwischenablage kopieren."
+        },
+        {
+          "name": "Bei Bedarf die Richtung umkehren",
+          "text": "Klicken Sie auf Reihenfolge ändern, um den Umrechner auf Kilometer in Meilen umzuschalten."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Warum Meilen in Kilometer umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Die Meile ist eine Entfernungseinheit, die vor allem in den USA und in Großbritannien verwendet wird. In Deutschland und im Großteil der Welt gilt der Kilometer, deshalb begegnet Ihnen die Meile hauptsächlich im Kontakt mit dem Ausland: einer US-Straßenkarte, einer in Meilen angegebenen Laufdistanz, einem Tempolimit auf einem amerikanischen Highway oder einer Streckenbeschreibung in einer auf imperiale Einheiten eingestellten Sport-App.</p><p class=\"text-mid mb-4\">Eine Landmeile sind genau 1,609344 Kilometer. Diese Beziehung ist konstant, sodass sich jede Umrechnung auf eine einzige Multiplikation beschränkt. Der Umrechner erledigt das für Sie sofort nach der Eingabe eines Werts, auch für Bruchdistanzen wie 26,2 Meilen, die Länge eines Marathons.</p><p class=\"text-mid mb-4\">Achten Sie auf ein Detail: Die in der Schifffahrt und Luftfahrt verwendete Seemeile ist eine andere Einheit als die Landmeile und beträgt 1,852 Kilometer. Unten finden Sie separate Tabellen für Distanzen, für die Geschwindigkeit in Meilen pro Stunde und für Seemeilen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kostenloser Meilen-in-Kilometer-Umrechner – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung von Meilen in Kilometer? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Meilen in Kilometer beruht auf einer konstanten Beziehung: Eine Landmeile sind genau 1,609344 Kilometer. Multiplizieren Sie also die Anzahl der Meilen mit 1,609344, um das Ergebnis in Kilometern zu erhalten.</p><p class=\"text-mid mb-4\">Die vollständige Formel: <strong>Kilometer = Meilen × 1,609344</strong>. In die andere Richtung: <strong>Meilen = Kilometer ÷ 1,609344</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Kilometer 5 Meilen sind. Sie setzen ein: 5 × 1,609344 = 8,05 km. Daher stammt die verbreitete Näherung, dass 5 Meilen ungefähr 8 Kilometer sind – das genaue Ergebnis ist 8,0467 km.</p><p class=\"text-mid\">Ein weiteres Beispiel: Ein Marathon ist 26,2 Meilen lang, was umgerechnet 26,2 × 1,609344 = 42,16 km ergibt. Das liegt sehr nahe an der offiziellen Marathondistanz von 42,195 km. Der Umrechner führt beide Richtungen sofort nach der Eingabe eines Werts aus.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle Meilen in Kilometer",
+      "description": "Die folgende Tabelle rechnet beliebte Distanzen in Meilen in Kilometer um. Die Werte sind auf zwei Dezimalstellen gerundet. Um einen genauen Wert oder eine andere Distanz umzurechnen, nutzen Sie den Umrechner oben.",
+      "labelHeader": "Meilen",
+      "cols": ["Kilometer"],
+      "rows": [
+        { "label": "1 mi", "values": ["1,61 km"] },
+        { "label": "2 mi", "values": ["3,22 km"] },
+        { "label": "3 mi", "values": ["4,83 km"] },
+        { "label": "4 mi", "values": ["6,44 km"] },
+        { "label": "5 mi", "values": ["8,05 km"], "emphasis": true },
+        { "label": "6 mi", "values": ["9,66 km"] },
+        { "label": "7 mi", "values": ["11,27 km"] },
+        { "label": "8 mi", "values": ["12,87 km"] },
+        { "label": "9 mi", "values": ["14,48 km"] },
+        { "label": "10 mi", "values": ["16,09 km"], "emphasis": true },
+        { "label": "12 mi", "values": ["19,31 km"] },
+        { "label": "13 mi", "values": ["20,92 km"] },
+        { "label": "14 mi", "values": ["22,53 km"] },
+        { "label": "15 mi", "values": ["24,14 km"] },
+        { "label": "17 mi", "values": ["27,36 km"] },
+        { "label": "20 mi", "values": ["32,19 km"], "emphasis": true },
+        { "label": "23 mi", "values": ["37,01 km"] },
+        { "label": "25 mi", "values": ["40,23 km"], "emphasis": true },
+        { "label": "26 mi", "values": ["41,84 km"] },
+        { "label": "26,2 mi", "values": ["42,16 km"], "emphasis": true },
+        { "label": "30 mi", "values": ["48,28 km"] },
+        { "label": "35 mi", "values": ["56,33 km"] },
+        { "label": "40 mi", "values": ["64,37 km"] },
+        { "label": "45 mi", "values": ["72,42 km"] },
+        { "label": "50 mi", "values": ["80,47 km"], "emphasis": true },
+        { "label": "60 mi", "values": ["96,56 km"] },
+        { "label": "70 mi", "values": ["112,65 km"] },
+        { "label": "75 mi", "values": ["120,70 km"] },
+        { "label": "80 mi", "values": ["128,75 km"] },
+        { "label": "100 mi", "values": ["160,93 km"], "emphasis": true },
+        { "label": "120 mi", "values": ["193,12 km"] },
+        { "label": "180 mi", "values": ["289,68 km"] },
+        { "label": "500 mi", "values": ["804,67 km"] },
+        { "label": "1.000 mi", "values": ["1.609,34 km"], "emphasis": true }
+      ],
+      "caption": "Möchten Sie in die andere Richtung umrechnen? Nutzen Sie unseren Umrechner <a href=\"/de/werkzeuge/km-in-meilen-umrechner\">Kilometer in Meilen</a> mit einer vollständigen Tabelle für metrische Distanzen."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Geschwindigkeitstabelle: Meilen pro Stunde (mph) in Kilometer pro Stunde (km/h)",
+      "description": "Tempolimits und Tachoanzeigen in den USA und in Großbritannien werden in Meilen pro Stunde (mph) angegeben. Der Umrechnungsfaktor für die Geschwindigkeit ist derselbe wie für die Entfernung, denn Sie multiplizieren mit 1,609344 – nur die Zeiteinheit bleibt gleich. Die Werte sind auf zwei Dezimalstellen gerundet.",
+      "labelHeader": "Meilen pro Stunde",
+      "cols": ["Kilometer pro Stunde"],
+      "rows": [
+        { "label": "20 mph", "values": ["32,19 km/h"] },
+        { "label": "25 mph", "values": ["40,23 km/h"] },
+        { "label": "30 mph", "values": ["48,28 km/h"], "emphasis": true },
+        { "label": "40 mph", "values": ["64,37 km/h"] },
+        { "label": "50 mph", "values": ["80,47 km/h"], "emphasis": true },
+        { "label": "60 mph", "values": ["96,56 km/h"] },
+        { "label": "70 mph", "values": ["112,65 km/h"], "emphasis": true },
+        { "label": "75 mph", "values": ["120,70 km/h"] },
+        { "label": "80 mph", "values": ["128,75 km/h"] },
+        { "label": "90 mph", "values": ["144,84 km/h"] },
+        { "label": "100 mph", "values": ["160,93 km/h"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Eine Seemeile ist nicht dasselbe wie eine Landmeile",
+      "html": "<p class=\"text-mid mb-4\">In der Schifffahrt und Luftfahrt werden Entfernungen in Seemeilen angegeben, nicht in Landmeilen. Die Seemeile ist länger: Sie beträgt genau 1,852 Kilometer, während eine Landmeile 1,609344 Kilometer misst. Der Unterschied ergibt sich aus der Definition – eine Seemeile entspricht ungefähr der Länge einer Bogenminute entlang eines Meridians, also 1/60 eines Breitengrads.</p><p class=\"text-mid mb-4\">Mit der Seemeile hängt auch der Knoten zusammen, eine Geschwindigkeitseinheit von einer Seemeile pro Stunde (1 Knoten = 1,852 km/h). Schiffe und Flugzeuge verwenden ihn.</p><p class=\"text-mid\">Wenn Sie also eine Entfernung im maritimen oder Luftfahrtkontext als Meile beschrieben sehen, rechnen Sie sie mit 1,852 um, nicht mit 1,609344. Zur Orientierung: 1 Seemeile sind 1,85 km, 5 Seemeilen sind 9,26 km und 10 Seemeilen sind 18,52 km.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man am häufigsten Meilen in Kilometer um?",
+      "description": "Meilen tauchen im Alltag vor allem im Kontakt mit dem Ausland auf. Jede der folgenden Situationen hat ihre eigenen Besonderheiten.",
+      "items": [
+        {
+          "title": "Laufen und Marathon",
+          "description": "Beliebte Laufdistanzen werden in Meilen angegeben, besonders in amerikanischem und britischem Material. Ein Marathon sind 26,2 Meilen, also 42,16 km, und ein Halbmarathon sind 13,1 Meilen, also 21,08 km. Auf imperiale Einheiten eingestellte Sport-Apps zeigen das Tempo in Meilen an, deshalb hilft die Umrechnung, das Ergebnis mit metrischen Distanzen in Kilometern zu vergleichen."
+        },
+        {
+          "title": "Autofahren und Tempolimits",
+          "description": "In den USA und in Großbritannien zeigen Tachos und Verkehrsschilder Meilen pro Stunde an. Ein Autobahn-Wert von 70 mph sind etwa 112,65 km/h, ein innerstädtischer Wert von 30 mph etwa 48,28 km/h. Wenn Sie im Ausland ein Auto mieten oder eine Streckenbeschreibung lesen, hilft die Umrechnung der Geschwindigkeit, ein Bußgeld zu vermeiden und die reale Fahrzeit einzuschätzen."
+        },
+        {
+          "title": "Reisen in die USA und nach Großbritannien",
+          "description": "Karten, Wegweiser und Entfernungen zwischen Städten werden in Meilen angegeben. Bevor Sie einschätzen, ob 180 Meilen eine Stunde oder einen halben Tag Fahrt bedeuten, rechnen Sie sie in Kilometer um – 180 Meilen sind 289,68 km. Das erleichtert die Planung von Tankstopps, Pausen und Ankunftszeit."
+        },
+        {
+          "title": "Schifffahrt und Luftfahrt",
+          "description": "Auf See und in der Luft gilt die Seemeile von 1,852 km, und die Geschwindigkeit wird in Knoten gemessen. Sie ist eine eigene Einheit gegenüber der Landmeile, deshalb verwenden Sie bei maritimen und Luftfahrtdistanzen den Faktor 1,852 und bei Straßen- und Laufdistanzen den Faktor 1,609344."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Umrechnung von Meilen in Kilometer",
+      "items": [
+        {
+          "question": "Wie viele Kilometer sind 1 Meile?",
+          "answer": "Eine Landmeile sind genau 1,609344 Kilometer, also gerundet etwa 1,61 km. Es ist ein konstanter Wert, deshalb multiplizieren Sie einfach jede Anzahl von Meilen mit 1,609344."
+        },
+        {
+          "question": "Sind 5 Meilen 8 Kilometer?",
+          "answer": "Fast. 5 Meilen sind genau 8,0467 km, also gerundet 8,05 km. Die Näherung „5 Meilen sind 8 Kilometer\" ist praktisch fürs Kopfrechnen, und der Fehler beträgt nur etwa 47 Meter."
+        },
+        {
+          "question": "Wie viele Kilometer sind ein Marathon (26,2 Meilen)?",
+          "answer": "26,2 Meilen sind 42,16 km. Berechnung: 26,2 × 1,609344 = 42,16 km. Die offizielle Marathondistanz beträgt 42,195 km – der kleine Unterschied ergibt sich aus der Rundung der Distanz auf 26,2 Meilen."
+        },
+        {
+          "question": "Was sind 70 mph in Kilometern pro Stunde?",
+          "answer": "70 Meilen pro Stunde sind etwa 112,65 km/h. Berechnung: 70 × 1,609344 = 112,65 km/h. Das ist ein typisches Limit auf amerikanischen Interstate-Autobahnen."
+        },
+        {
+          "question": "Was ist größer: 1 Meile oder 2 Kilometer?",
+          "answer": "Größer sind 2 Kilometer. Eine Meile sind 1,61 km, also ist sie kürzer als 2 km. Eine Meile liegt zwischen 1 und 2 Kilometern, näher an 2 Kilometern."
+        },
+        {
+          "question": "Ist 1 Kilometer eine halbe Meile?",
+          "answer": "Nicht ganz. 1 Kilometer sind 0,62 Meilen, also etwas mehr als eine halbe Meile. Genau eine halbe Meile sind 0,805 km, ein Kilometer ist also länger."
+        },
+        {
+          "question": "Wie viele Kilometer sind 10 Meilen?",
+          "answer": "10 Meilen sind 16,09 km. Berechnung: 10 × 1,609344 = 16,09 km."
+        },
+        {
+          "question": "Wie viele Kilometer sind 100 Meilen?",
+          "answer": "100 Meilen sind 160,93 km. Berechnung: 100 × 1,609344 = 160,93 km."
+        },
+        {
+          "question": "Wie viele Kilometer sind 2, 3 und 20 Meilen?",
+          "answer": "2 Meilen sind 3,22 km, 3 Meilen sind 4,83 km und 20 Meilen sind 32,19 km. Jeden dieser Werte erhalten Sie, indem Sie die Anzahl der Meilen mit 1,609344 multiplizieren."
+        },
+        {
+          "question": "Wie lange dauert es, 5 Meilen zu gehen?",
+          "answer": "5 Meilen sind 8 km. In gemächlichem Gehtempo (etwa 5 km/h) dauert das ungefähr 1,5 Stunden. 8 km in 50 Minuten zu gehen, würde ein sehr schnelles Tempo von fast 9,5 km/h erfordern, das betrifft also eher sportliches Gehen als einen normalen Spaziergang."
+        },
+        {
+          "question": "Wie viele Kilometer sind eine Seemeile?",
+          "answer": "Eine Seemeile sind 1,852 km und ist länger als eine Landmeile (1,609344 km). Sie wird in der Schifffahrt und Luftfahrt verwendet, und die zugehörige Geschwindigkeitseinheit ist der Knoten, also eine Seemeile pro Stunde."
+        },
+        {
+          "question": "Wie lautet die Formel zur Umrechnung von Meilen in Kilometer?",
+          "answer": "Die Formel lautet: Kilometer = Meilen × 1,609344. Zum Beispiel 30 Meilen × 1,609344 = 48,28 km. In die andere Richtung: Meilen = Kilometer ÷ 1,609344."
+        },
+        {
+          "question": "Wie viele Kilometer sind 50 und 60 Meilen?",
+          "answer": "50 Meilen sind 80,47 km und 60 Meilen sind 96,56 km. Beide Werte entstehen auf dieselbe Weise: Sie multiplizieren die Anzahl der Meilen mit 1,609344."
+        },
+        {
+          "question": "Wie rechne ich Meilen im Kopf in Kilometer um?",
+          "answer": "Am einfachsten multiplizieren Sie die Anzahl der Meilen mit 1,6 – das Ergebnis liegt sehr nah am genauen Wert. Sie können auch die Regel „5 Meilen sind 8 Kilometer\" nutzen: 10 Meilen sind etwa 16 km, 15 Meilen etwa 24 km und 25 Meilen etwa 40 km. Für genaue Berechnungen nutzen Sie den Umrechner."
+        },
+        {
+          "question": "Worin unterscheidet sich eine Meile von einem Kilometer?",
+          "answer": "Eine Meile ist länger. Eine Landmeile sind 1,609344 km, deshalb entspricht eine in Meilen angegebene Distanz immer einer größeren Zahl von Kilometern. Die Meile gehört zum imperialen System, der Kilometer zum metrischen."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "title": "Haben Sie eine Frage oder einen Vorschlag?",
+      "description": "Wenn Sie einen Fehler in den Tabellen bemerkt haben oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageAlt": "Kontakt zu Arteon Agency",
+      "subject": "Meilen-in-Kilometer-Umrechner"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere praktische Einheiten-Umrechner"
+    }
+  ]
+}

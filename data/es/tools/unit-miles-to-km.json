@@ -1,0 +1,273 @@
+{
+  "toolKey": "milesToKm",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de millas a km – convierte millas a kilómetros",
+    "description": "Convierte millas a kilómetros. Las tablas listas cubren distancias de carrera (con el maratón de 26,2 millas), velocidad de mph a km/h y millas náuticas. El convertidor de millas a km funciona en ambos sentidos y calcula al instante.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-millas-a-km"
+  },
+  "hero": {
+    "title": "Convierte millas a kilómetros",
+    "description": "Introduce cualquier valor en millas y lee al instante el resultado en kilómetros. El convertidor resulta útil al planificar viajes a EE. UU. y al Reino Unido, leer distancias de carrera, comprobar límites de velocidad indicados en millas por hora y trabajar con distancias marítimas. Más abajo en la página encontrarás tablas listas para distancias populares, velocidades e incluso millas náuticas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-millas-a-km",
+      "label": "millas a km"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de millas a kilómetros – calculadora de millas a km",
+      "alternateName": [
+        "Convertidor de millas a km",
+        "Calculadora de millas a km",
+        "Convertidor de millas a kilómetros",
+        "Millas a kilómetros",
+        "millas a km",
+        "Convertir millas a km",
+        "Conversión de millas a km",
+        "Cuántos km tiene una milla",
+        "1 milla en km",
+        "Convertidor de mph a km/h",
+        "Millas náuticas a km",
+        "Tabla de millas a km",
+        "Cuántos km tiene un maratón",
+        "miles to km",
+        "Convertidor de millas"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertidor de millas a kilómetros que funciona en el navegador sin registro. Introduce un valor en millas y obtén al instante el resultado en kilómetros. Útil para viajes a países de habla inglesa, distancias de carrera, límites de velocidad en millas por hora y distancias marítimas.",
+      "featureList": [
+        "La conversión funciona en ambos sentidos, así que conviertes tanto millas a kilómetros como kilómetros a millas",
+        "El resultado aparece al instante mientras escribes, sin pulsar ningún botón",
+        "El resultado se puede copiar al portapapeles con un solo clic",
+        "La tabla de conversión abarca valores de 1 milla a 1.000 millas, incluida la distancia del maratón de 26,2 millas",
+        "Una tabla aparte convierte la velocidad de millas por hora (mph) a kilómetros por hora (km/h)",
+        "La página explica la diferencia entre una milla terrestre y una milla náutica e indica su conversión a kilómetros",
+        "Todos los cálculos se realizan localmente en tu navegador y tus datos no salen del dispositivo",
+        "La fórmula exacta de conversión es kilómetros = millas × 1,609344",
+        "La herramienta funciona en móvil, tableta y ordenador sin instalación"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo convertir millas a kilómetros?",
+      "description": "Guía breve para usar el convertidor de millas a kilómetros.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduce el valor en millas",
+          "text": "Escribe en el campo de la izquierda el número de millas que quieres convertir a kilómetros."
+        },
+        {
+          "name": "Lee el resultado en kilómetros",
+          "text": "El resultado en kilómetros aparece al instante en el campo de al lado, a la derecha. Puedes copiarlo al portapapeles con un solo clic."
+        },
+        {
+          "name": "Invierte el sentido si lo necesitas",
+          "text": "Haz clic en Cambiar orden para pasar el convertidor a convertir kilómetros a millas."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué convertir millas a kilómetros?",
+      "html": "<p class=\"text-mid mb-4\">La milla es una unidad de distancia que se usa sobre todo en Estados Unidos y el Reino Unido. En España y en la mayor parte del mundo rige el kilómetro, por eso la milla aparece principalmente al tratar con el extranjero: un mapa de carreteras de EE. UU., una distancia de carrera indicada en millas, un límite de velocidad en una autopista estadounidense o la descripción de una ruta en una aplicación deportiva configurada en unidades imperiales.</p><p class=\"text-mid mb-4\">Una milla terrestre son exactamente 1,609344 kilómetros. Esta relación es constante, así que cada conversión se reduce a una sola multiplicación. El convertidor lo hace por ti nada más introducir un valor, también para distancias con decimales como 26,2 millas, la longitud de un maratón.</p><p class=\"text-mid mb-4\">Ten cuidado con un detalle: la milla náutica que se usa en navegación y aviación es una unidad distinta de la milla terrestre y equivale a 1,852 kilómetros. Más abajo encontrarás tablas aparte para distancias, para la velocidad en millas por hora y para millas náuticas.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor gratuito de millas a kilómetros – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión de millas a kilómetros? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión de millas a kilómetros se basa en una relación constante: una milla terrestre son exactamente 1,609344 kilómetros. Basta con multiplicar el número de millas por 1,609344 para obtener el resultado en kilómetros.</p><p class=\"text-mid mb-4\">La fórmula completa: <strong>kilómetros = millas × 1,609344</strong>. En sentido inverso: <strong>millas = kilómetros ÷ 1,609344</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántos kilómetros son 5 millas. Sustituyes: 5 × 1,609344 = 8,05 km. De ahí viene la conocida aproximación de que 5 millas son más o menos 8 kilómetros; el resultado exacto es 8,0467 km.</p><p class=\"text-mid\">Otro ejemplo: un maratón mide 26,2 millas, lo que al convertirlo da 26,2 × 1,609344 = 42,16 km. Está muy cerca de la longitud oficial del recorrido del maratón, que es 42,195 km. El convertidor realiza ambos sentidos nada más introducir un valor.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión de millas a kilómetros",
+      "description": "La tabla siguiente convierte distancias populares en millas a kilómetros. Los valores se han redondeado a dos decimales. Para convertir un valor exacto u otra distancia, usa el convertidor de arriba.",
+      "labelHeader": "Millas",
+      "cols": ["Kilómetros"],
+      "rows": [
+        { "label": "1 mi", "values": ["1,61 km"] },
+        { "label": "2 mi", "values": ["3,22 km"] },
+        { "label": "3 mi", "values": ["4,83 km"] },
+        { "label": "4 mi", "values": ["6,44 km"] },
+        { "label": "5 mi", "values": ["8,05 km"], "emphasis": true },
+        { "label": "6 mi", "values": ["9,66 km"] },
+        { "label": "7 mi", "values": ["11,27 km"] },
+        { "label": "8 mi", "values": ["12,87 km"] },
+        { "label": "9 mi", "values": ["14,48 km"] },
+        { "label": "10 mi", "values": ["16,09 km"], "emphasis": true },
+        { "label": "12 mi", "values": ["19,31 km"] },
+        { "label": "13 mi", "values": ["20,92 km"] },
+        { "label": "14 mi", "values": ["22,53 km"] },
+        { "label": "15 mi", "values": ["24,14 km"] },
+        { "label": "17 mi", "values": ["27,36 km"] },
+        { "label": "20 mi", "values": ["32,19 km"], "emphasis": true },
+        { "label": "23 mi", "values": ["37,01 km"] },
+        { "label": "25 mi", "values": ["40,23 km"], "emphasis": true },
+        { "label": "26 mi", "values": ["41,84 km"] },
+        { "label": "26,2 mi", "values": ["42,16 km"], "emphasis": true },
+        { "label": "30 mi", "values": ["48,28 km"] },
+        { "label": "35 mi", "values": ["56,33 km"] },
+        { "label": "40 mi", "values": ["64,37 km"] },
+        { "label": "45 mi", "values": ["72,42 km"] },
+        { "label": "50 mi", "values": ["80,47 km"], "emphasis": true },
+        { "label": "60 mi", "values": ["96,56 km"] },
+        { "label": "70 mi", "values": ["112,65 km"] },
+        { "label": "75 mi", "values": ["120,70 km"] },
+        { "label": "80 mi", "values": ["128,75 km"] },
+        { "label": "100 mi", "values": ["160,93 km"], "emphasis": true },
+        { "label": "120 mi", "values": ["193,12 km"] },
+        { "label": "180 mi", "values": ["289,68 km"] },
+        { "label": "500 mi", "values": ["804,67 km"] },
+        { "label": "1.000 mi", "values": ["1.609,34 km"], "emphasis": true }
+      ],
+      "caption": "¿Quieres convertir en sentido inverso? Usa nuestro convertidor de <a href=\"/es/herramientas/convertidor-km-a-millas\">kilómetros a millas</a> con una tabla completa para distancias métricas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de velocidad: millas por hora (mph) a kilómetros por hora (km/h)",
+      "description": "Los límites de velocidad y las lecturas del velocímetro en EE. UU. y el Reino Unido se indican en millas por hora (mph). El factor de conversión de la velocidad es el mismo que el de la distancia, porque multiplicas por 1,609344; solo cambia la unidad de tiempo. Los valores se han redondeado a dos decimales.",
+      "labelHeader": "Millas por hora",
+      "cols": ["Kilómetros por hora"],
+      "rows": [
+        { "label": "20 mph", "values": ["32,19 km/h"] },
+        { "label": "25 mph", "values": ["40,23 km/h"] },
+        { "label": "30 mph", "values": ["48,28 km/h"], "emphasis": true },
+        { "label": "40 mph", "values": ["64,37 km/h"] },
+        { "label": "50 mph", "values": ["80,47 km/h"], "emphasis": true },
+        { "label": "60 mph", "values": ["96,56 km/h"] },
+        { "label": "70 mph", "values": ["112,65 km/h"], "emphasis": true },
+        { "label": "75 mph", "values": ["120,70 km/h"] },
+        { "label": "80 mph", "values": ["128,75 km/h"] },
+        { "label": "90 mph", "values": ["144,84 km/h"] },
+        { "label": "100 mph", "values": ["160,93 km/h"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Una milla náutica no es lo mismo que una milla terrestre",
+      "html": "<p class=\"text-mid mb-4\">En navegación y aviación las distancias se indican en millas náuticas, no terrestres. La milla náutica es más larga: equivale exactamente a 1,852 kilómetros, mientras que una milla terrestre son 1,609344 kilómetros. La diferencia viene de la definición: una milla náutica equivale aproximadamente a la longitud de un minuto de arco a lo largo de un meridiano, es decir, 1/60 de grado de latitud.</p><p class=\"text-mid mb-4\">A la milla náutica también se asocia el nudo, una unidad de velocidad igual a una milla náutica por hora (1 nudo = 1,852 km/h). La usan los barcos y los aviones.</p><p class=\"text-mid\">Así que si ves una distancia descrita como milla en un contexto marítimo o de aviación, conviértela con 1,852 y no con 1,609344. Como referencia: 1 milla náutica son 1,85 km, 5 millas náuticas son 9,26 km y 10 millas náuticas son 18,52 km.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierten millas a kilómetros con más frecuencia?",
+      "description": "Las millas aparecen en el día a día sobre todo al tratar con el extranjero. Cada una de las situaciones siguientes tiene sus particularidades.",
+      "items": [
+        {
+          "title": "Correr y el maratón",
+          "description": "Las distancias de carrera populares se indican en millas, sobre todo en material estadounidense y británico. Un maratón son 26,2 millas, es decir, 42,16 km, y un medio maratón son 13,1 millas, es decir, 21,08 km. Las aplicaciones deportivas configuradas en unidades imperiales muestran el ritmo en millas, así que la conversión ayuda a comparar el resultado con las distancias métricas en kilómetros."
+        },
+        {
+          "title": "Conducir y límites de velocidad",
+          "description": "En EE. UU. y el Reino Unido los velocímetros y las señales muestran millas por hora. Unas 70 mph de autopista son unos 112,65 km/h, y unas 30 mph urbanas, unos 48,28 km/h. Si alquilas un coche en el extranjero o lees la descripción de una ruta, convertir la velocidad te ayuda a evitar una multa y a estimar el tiempo real de trayecto."
+        },
+        {
+          "title": "Viajes a EE. UU. y al Reino Unido",
+          "description": "Los mapas, las señales y las distancias entre ciudades se indican en millas. Antes de valorar si 180 millas son una hora o medio día de conducción, conviértelas a kilómetros: 180 millas son 289,68 km. Así es más fácil planificar repostajes, paradas y la hora de llegada."
+        },
+        {
+          "title": "Náutica y aviación",
+          "description": "En el mar y en el aire rige la milla náutica de 1,852 km, y la velocidad se mide en nudos. Es una unidad distinta de la milla terrestre, así que para distancias marítimas y de aviación usa el factor 1,852, y para las de carretera y carrera, el factor 1,609344."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre convertir millas a kilómetros",
+      "items": [
+        {
+          "question": "¿Cuántos kilómetros son 1 milla?",
+          "answer": "Una milla terrestre son exactamente 1,609344 kilómetros, es decir, unos 1,61 km redondeando. Es un valor constante, así que solo tienes que multiplicar cualquier número de millas por 1,609344."
+        },
+        {
+          "question": "¿Son 5 millas 8 kilómetros?",
+          "answer": "Casi. 5 millas son exactamente 8,0467 km, es decir, 8,05 km redondeando. La aproximación «5 millas son 8 kilómetros» es cómoda para el cálculo mental, y el error es de solo unos 47 metros."
+        },
+        {
+          "question": "¿Cuántos kilómetros son un maratón (26,2 millas)?",
+          "answer": "26,2 millas son 42,16 km. Cálculo: 26,2 × 1,609344 = 42,16 km. La longitud oficial del recorrido del maratón es 42,195 km; la pequeña diferencia viene de redondear la distancia a 26,2 millas."
+        },
+        {
+          "question": "¿Cuánto son 70 mph en kilómetros por hora?",
+          "answer": "70 millas por hora son unos 112,65 km/h. Cálculo: 70 × 1,609344 = 112,65 km/h. Es un límite típico en las autopistas interestatales de EE. UU."
+        },
+        {
+          "question": "¿Qué es mayor: 1 milla o 2 kilómetros?",
+          "answer": "Mayores son 2 kilómetros. Una milla son 1,61 km, así que es más corta que 2 km. Una milla queda entre 1 y 2 kilómetros, más cerca de 2 kilómetros."
+        },
+        {
+          "question": "¿Es 1 kilómetro media milla?",
+          "answer": "No del todo. 1 kilómetro son 0,62 millas, un poco más de media milla. Exactamente media milla son 0,805 km, así que un kilómetro es más largo."
+        },
+        {
+          "question": "¿Cuántos kilómetros son 10 millas?",
+          "answer": "10 millas son 16,09 km. Cálculo: 10 × 1,609344 = 16,09 km."
+        },
+        {
+          "question": "¿Cuántos kilómetros son 100 millas?",
+          "answer": "100 millas son 160,93 km. Cálculo: 100 × 1,609344 = 160,93 km."
+        },
+        {
+          "question": "¿Cuántos kilómetros son 2, 3 y 20 millas?",
+          "answer": "2 millas son 3,22 km, 3 millas son 4,83 km y 20 millas son 32,19 km. Cada uno de estos valores lo obtienes multiplicando el número de millas por 1,609344."
+        },
+        {
+          "question": "¿Cuánto se tarda en caminar 5 millas?",
+          "answer": "5 millas son 8 km. A un ritmo de paseo tranquilo (unos 5 km/h) se tarda alrededor de 1,5 horas. Recorrer 8 km en 50 minutos exigiría un ritmo muy rápido, cerca de 9,5 km/h, así que corresponde más a la marcha atlética que a un paseo normal."
+        },
+        {
+          "question": "¿Cuántos kilómetros son una milla náutica?",
+          "answer": "Una milla náutica son 1,852 km y es más larga que una milla terrestre (1,609344 km). Se usa en navegación y aviación, y su unidad de velocidad asociada es el nudo, es decir, una milla náutica por hora."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir millas a kilómetros?",
+          "answer": "La fórmula es: kilómetros = millas × 1,609344. Por ejemplo, 30 millas × 1,609344 = 48,28 km. En sentido inverso: millas = kilómetros ÷ 1,609344."
+        },
+        {
+          "question": "¿Cuántos kilómetros son 50 y 60 millas?",
+          "answer": "50 millas son 80,47 km y 60 millas son 96,56 km. Ambos valores se obtienen del mismo modo: multiplicas el número de millas por 1,609344."
+        },
+        {
+          "question": "¿Cómo convertir millas a kilómetros mentalmente?",
+          "answer": "Lo más sencillo es multiplicar el número de millas por 1,6; el resultado queda muy cerca del exacto. También puedes usar la regla «5 millas son 8 kilómetros»: 10 millas son unos 16 km, 15 millas unos 24 km y 25 millas unos 40 km. Para cálculos precisos usa el convertidor."
+        },
+        {
+          "question": "¿En qué se diferencia una milla de un kilómetro?",
+          "answer": "Una milla es más larga. Una milla terrestre son 1,609344 km, así que una distancia indicada en millas siempre corresponde a un número mayor de kilómetros. La milla pertenece al sistema imperial y el kilómetro al métrico."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "title": "¿Tienes una pregunta o sugerencia?",
+      "description": "Si has detectado un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
+      "imageAlt": "Contacto con Arteon Agency",
+      "subject": "Convertidor de millas a kilómetros"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    }
+  ]
+}

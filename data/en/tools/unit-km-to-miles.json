@@ -1,0 +1,259 @@
+{
+  "toolKey": "kmToMiles",
+  "locale": "en",
+  "metadata": {
+    "title": "KM to Miles Converter – Convert Kilometers to Miles",
+    "description": "Convert kilometers to miles. Ready-made tables cover running distances (including the 42.2 km marathon), km/h to mph speeds, and popular distances such as 50 and 100 km. The km to miles converter works both ways and calculates instantly.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/km-to-miles-converter"
+  },
+  "hero": {
+    "title": "Convert kilometers to miles",
+    "description": "Enter any value in kilometers and instantly read the result in miles. The converter comes in handy when you want to compare your running distance with results given in miles, get ready for a trip to the US or UK, or convert speed from km/h to miles per hour. Further down the page you will find ready-made tables for selected popular distances and speeds.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/km-to-miles-converter",
+      "label": "km to miles"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kilometers to miles converter – km to miles calculator",
+      "alternateName": [
+        "Km to miles converter",
+        "Km to miles calculator",
+        "Kilometers to miles converter",
+        "Kilometres to miles",
+        "km to miles",
+        "Convert km to miles",
+        "Km to miles conversion",
+        "How many miles in a kilometer",
+        "1 km in miles",
+        "km/h to mph converter",
+        "How many miles is 100 km",
+        "Km to miles table",
+        "How many miles is a marathon",
+        "km into miles",
+        "Kilometer to mile converter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "A kilometers to miles converter that runs in your browser without registration. Enter a value in kilometers and instantly get the result in miles. Handy for comparing running distances, trips to English-speaking countries, and converting speed from km/h to miles per hour.",
+      "featureList": [
+        "The conversion works both ways, so you can convert both kilometers to miles and miles to kilometers",
+        "The result appears instantly as you type, without clicking any button",
+        "You can copy the result to the clipboard with a single click",
+        "The conversion table covers values from 1 km to 1,000 km, including the marathon distance of 42.2 km and the half marathon of 21.1 km",
+        "A separate table converts speed from kilometers per hour (km/h) to miles per hour (mph)",
+        "All calculations run locally in your browser, and your data never leaves your device",
+        "The exact conversion formula is miles = kilometers ÷ 1.609344",
+        "The tool works on phones, tablets, and computers without installation"
+      ]
+    },
+    "howTo": {
+      "name": "How to convert kilometers to miles?",
+      "description": "Quick guide to using the kilometers to miles converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter the value in kilometers",
+          "text": "Type the number of kilometers you want to convert into miles in the left field."
+        },
+        {
+          "name": "Read the result in miles",
+          "text": "The result in miles appears instantly in the field next to it, on the right. Click once to copy it to the clipboard."
+        },
+        {
+          "name": "Swap direction if needed",
+          "text": "Click Swap to switch the converter to miles-to-kilometers mode."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert kilometers to miles?",
+      "html": "<p class=\"text-mid mb-4\">The kilometer is the basic unit of distance in most countries. The mile is used mainly in the United States and the United Kingdom, so converting kilometers to miles is useful above all when you want someone from those countries to understand a distance — or when you compare your own running result with records and training plans given in miles.</p><p class=\"text-mid mb-4\">One kilometer is about 0.621371 miles. The relationship is fixed, so every conversion comes down to a single multiplication or division. The converter does it for you the moment you type a value, including running distances such as 42.2 km, the length of a marathon.</p><p class=\"text-mid mb-4\">Below you will find a conversion table for popular distances and a separate table for speed, so you can read how many miles per hour a speedometer reading in km/h corresponds to.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Free kilometers to miles converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does kilometers to miles conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">Converting kilometers to miles relies on one fixed relationship: one land mile is exactly 1.609344 kilometers. To turn kilometers into miles, divide the number of kilometers by 1.609344 (the same as multiplying by 0.621371).</p><p class=\"text-mid mb-4\">The full formula: <strong>miles = kilometers ÷ 1.609344</strong>. The other way around: <strong>kilometers = miles × 1.609344</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many miles 100 kilometers is. Plug it in: 100 ÷ 1.609344 = 62.14 miles. In practice it is often enough to multiply the kilometers by 0.62 to get an approximate result.</p><p class=\"text-mid\">Another example: a marathon is 42.195 km long, which converts to 42.195 ÷ 1.609344 = 26.22 miles, the 26.2 miles familiar to runners. The converter handles both directions the moment you type a value.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Kilometers to miles conversion table",
+      "description": "The table below converts popular distances in kilometers to miles. Values are rounded to two decimal places. To convert an exact value or a different distance, use the converter above.",
+      "labelHeader": "Kilometers",
+      "cols": ["Miles"],
+      "rows": [
+        { "label": "1 km", "values": ["0.62 mi"] },
+        { "label": "2 km", "values": ["1.24 mi"] },
+        { "label": "3 km", "values": ["1.86 mi"] },
+        { "label": "4 km", "values": ["2.49 mi"] },
+        { "label": "5 km", "values": ["3.11 mi"], "emphasis": true },
+        { "label": "6 km", "values": ["3.73 mi"] },
+        { "label": "7 km", "values": ["4.35 mi"] },
+        { "label": "8 km", "values": ["4.97 mi"] },
+        { "label": "9 km", "values": ["5.59 mi"] },
+        { "label": "10 km", "values": ["6.21 mi"], "emphasis": true },
+        { "label": "15 km", "values": ["9.32 mi"] },
+        { "label": "20 km", "values": ["12.43 mi"], "emphasis": true },
+        { "label": "21.1 km", "values": ["13.11 mi"], "emphasis": true },
+        { "label": "25 km", "values": ["15.53 mi"] },
+        { "label": "30 km", "values": ["18.64 mi"] },
+        { "label": "35 km", "values": ["21.75 mi"] },
+        { "label": "40 km", "values": ["24.85 mi"] },
+        { "label": "42.2 km", "values": ["26.22 mi"], "emphasis": true },
+        { "label": "45 km", "values": ["27.96 mi"] },
+        { "label": "50 km", "values": ["31.07 mi"], "emphasis": true },
+        { "label": "60 km", "values": ["37.28 mi"] },
+        { "label": "70 km", "values": ["43.50 mi"] },
+        { "label": "80 km", "values": ["49.71 mi"] },
+        { "label": "90 km", "values": ["55.92 mi"] },
+        { "label": "100 km", "values": ["62.14 mi"], "emphasis": true },
+        { "label": "200 km", "values": ["124.27 mi"] },
+        { "label": "500 km", "values": ["310.69 mi"] },
+        { "label": "1,000 km", "values": ["621.37 mi"], "emphasis": true }
+      ],
+      "caption": "Need the other direction? Use our <a href=\"/en/tools/miles-to-km-converter\">miles to kilometers</a> converter with an mph speed table and nautical miles."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Speed table: kilometers per hour (km/h) to miles per hour (mph)",
+      "description": "When you drive abroad or read a spec for a car from the American market, converting speed from km/h to miles per hour comes in handy. The factor is the same as for distance — you divide by 1.609344. Values are rounded to two decimal places.",
+      "labelHeader": "Kilometers per hour",
+      "cols": ["Miles per hour"],
+      "rows": [
+        { "label": "30 km/h", "values": ["18.64 mph"] },
+        { "label": "50 km/h", "values": ["31.07 mph"], "emphasis": true },
+        { "label": "60 km/h", "values": ["37.28 mph"] },
+        { "label": "70 km/h", "values": ["43.50 mph"] },
+        { "label": "80 km/h", "values": ["49.71 mph"] },
+        { "label": "90 km/h", "values": ["55.92 mph"] },
+        { "label": "100 km/h", "values": ["62.14 mph"], "emphasis": true },
+        { "label": "110 km/h", "values": ["68.35 mph"] },
+        { "label": "120 km/h", "values": ["74.56 mph"] },
+        { "label": "130 km/h", "values": ["80.78 mph"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do you most often convert kilometers to miles?",
+      "description": "Converting kilometers to miles is useful mainly through contact with English-speaking countries. Each of the situations below has its own specifics.",
+      "items": [
+        {
+          "title": "Running and comparing distances",
+          "description": "Training plans, records, and running challenges from the US and UK work in miles. If you run in kilometers, converting lets you compare the result: 10 km is 6.21 miles, a half marathon (21.1 km) is 13.11 miles, and a marathon (42.2 km) is 26.22 miles. That makes it easier to follow a plan described in miles."
+        },
+        {
+          "title": "Trips to the US and UK",
+          "description": "Before you explain to someone in those countries how far you have to go, convert the distance to miles — 100 km is 62.14 miles. That makes it easier to talk about distances, plan routes, and estimate travel time in units your listener understands."
+        },
+        {
+          "title": "Speed and driving abroad",
+          "description": "Cars from the American market have a speedometer in miles per hour. Poland's 100 km/h is about 62.14 mph, and 130 km/h is about 80.78 mph. Converting speed helps you read such a car and stay within local limits."
+        },
+        {
+          "title": "Gear and sports apps",
+          "description": "Watches, indoor trainers, and apps set to imperial units by default show distance and pace in miles. If you prefer to think in kilometers, converting lets you quickly translate what is on the screen into the metric values you know."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting kilometers to miles",
+      "items": [
+        {
+          "question": "How many miles is 100 kilometers?",
+          "answer": "100 km is 62.14 miles. Calculation: 100 ÷ 1.609344 = 62.14 miles. As a rough figure, 100 km is about 62 miles."
+        },
+        {
+          "question": "How many miles is 50 kilometers?",
+          "answer": "50 km is 31.07 miles. Calculation: 50 ÷ 1.609344 = 31.07 miles."
+        },
+        {
+          "question": "How many miles is 5 km?",
+          "answer": "5 km is 3.11 miles. Calculation: 5 ÷ 1.609344 = 3.11 miles. A popular 5 km run therefore comes to a little over 3 miles."
+        },
+        {
+          "question": "How many miles is 10 km?",
+          "answer": "10 km is 6.21 miles. Calculation: 10 ÷ 1.609344 = 6.21 miles."
+        },
+        {
+          "question": "How many miles is a marathon (42.195 km)?",
+          "answer": "A marathon is 26.22 miles, the 26.2 miles familiar to runners. Calculation: 42.195 ÷ 1.609344 = 26.22 miles."
+        },
+        {
+          "question": "How many miles is a half marathon (21.1 km)?",
+          "answer": "A half marathon is 13.11 miles. Calculation: 21.0975 ÷ 1.609344 = 13.11 miles. It is exactly half the marathon distance."
+        },
+        {
+          "question": "What is 100 km/h in miles per hour?",
+          "answer": "100 km/h is about 62.14 mph. Calculation: 100 ÷ 1.609344 = 62.14 mph. The speed conversion factor is the same as for distance."
+        },
+        {
+          "question": "Is 1 kilometer half a mile?",
+          "answer": "Not quite. 1 km is 0.62 miles, a little more than half a mile. Exactly half a mile is 0.805 km, so a kilometer is longer than that."
+        },
+        {
+          "question": "Which is bigger: a kilometer or a mile?",
+          "answer": "A mile is bigger. One mile is 1.609344 km, so it is more than 60% longer than a kilometer. That is why the same distance in miles always gives a smaller number than in kilometers."
+        },
+        {
+          "question": "How many miles is 500 kilometers?",
+          "answer": "500 km is 310.69 miles. Calculation: 500 ÷ 1.609344 = 310.69 miles."
+        },
+        {
+          "question": "How many miles is 35 kilometers?",
+          "answer": "35 km is 21.75 miles. Calculation: 35 ÷ 1.609344 = 21.75 miles."
+        },
+        {
+          "question": "What is the formula to convert kilometers to miles?",
+          "answer": "The formula is: miles = kilometers ÷ 1.609344, which is the same as multiplying by 0.621371. For example, 30 km ÷ 1.609344 = 18.64 miles. The other way around: kilometers = miles × 1.609344."
+        },
+        {
+          "question": "How many miles are 20 and 30 kilometers?",
+          "answer": "20 km is 12.43 miles, and 30 km is 18.64 miles. Both values are worked out the same way: divide the number of kilometers by 1.609344."
+        },
+        {
+          "question": "How can I convert kilometers to miles in my head?",
+          "answer": "The simplest way is to multiply the number of kilometers by 0.6 — the result is close to the exact figure. You can also use the rule \"8 kilometers is 5 miles\": 16 km is about 10 miles, and 80 km is about 50 miles. For precise results, use the converter."
+        },
+        {
+          "question": "How many miles is 200 kilometers?",
+          "answer": "200 km is 124.27 miles. Calculation: 200 ÷ 1.609344 = 124.27 miles."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "title": "Have a question or suggestion?",
+      "description": "If you spotted an error in the tables or have an idea to improve the converter, send us a message. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "Kilometers to miles converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other handy unit converters"
+    }
+  ]
+}

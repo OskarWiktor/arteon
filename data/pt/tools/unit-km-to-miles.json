@@ -1,0 +1,259 @@
+{
+  "toolKey": "kmToMiles",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de km para milhas – converta quilómetros em milhas",
+    "description": "Converta quilómetros em milhas. As tabelas prontas cobrem distâncias de corrida (com a maratona de 42,2 km), velocidade de km/h para mph e distâncias populares como 50 e 100 km. O conversor de km para milhas funciona nos dois sentidos e calcula de imediato.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-km-para-milhas"
+  },
+  "hero": {
+    "title": "Converta quilómetros em milhas",
+    "description": "Introduza qualquer valor em quilómetros e leia de imediato o resultado em milhas. O conversor é útil quando quer comparar a sua distância de corrida com resultados indicados em milhas, preparar uma viagem aos EUA ou ao Reino Unido, ou converter a velocidade de km/h para milhas por hora. Mais abaixo na página encontra tabelas prontas para distâncias e velocidades populares selecionadas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-km-para-milhas",
+      "label": "km para milhas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de quilómetros para milhas – calculadora de km para milhas",
+      "alternateName": [
+        "Conversor de km para milhas",
+        "Calculadora de km para milhas",
+        "Conversor de quilómetros para milhas",
+        "Quilómetros para milhas",
+        "km para milhas",
+        "Converter km em milhas",
+        "Conversão de km para milhas",
+        "Quantas milhas tem um quilómetro",
+        "1 km em milhas",
+        "Conversor de km/h para mph",
+        "Quantas milhas são 100 km",
+        "Tabela de km para milhas",
+        "Quantas milhas tem uma maratona",
+        "km to miles",
+        "Conversor de quilómetros"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Um conversor de quilómetros para milhas que funciona no navegador sem registo. Introduza um valor em quilómetros e obtenha de imediato o resultado em milhas. Útil para comparar distâncias de corrida, viagens a países de língua inglesa e converter a velocidade de km/h para milhas por hora.",
+      "featureList": [
+        "A conversão funciona nos dois sentidos, por isso converte tanto quilómetros para milhas como milhas para quilómetros",
+        "O resultado aparece de imediato enquanto escreve, sem clicar em qualquer botão",
+        "O resultado obtido pode ser copiado para a área de transferência com um único clique",
+        "A tabela de conversão abrange valores de 1 km a 1.000 km, incluindo a distância da maratona de 42,2 km e da meia maratona de 21,1 km",
+        "Uma tabela separada converte a velocidade de quilómetros por hora (km/h) para milhas por hora (mph)",
+        "Todos os cálculos são feitos localmente no seu navegador e os seus dados não saem do dispositivo",
+        "A fórmula exata de conversão é milhas = quilómetros ÷ 1,609344",
+        "A ferramenta funciona no telemóvel, tablet e computador sem instalação"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter quilómetros em milhas?",
+      "description": "Guia rápido para usar o conversor de quilómetros para milhas.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduza o valor em quilómetros",
+          "text": "No campo da esquerda, introduza o número de quilómetros que quer converter em milhas."
+        },
+        {
+          "name": "Leia o resultado em milhas",
+          "text": "O resultado em milhas aparece de imediato no campo ao lado, à direita. Pode copiá-lo para a área de transferência com um único clique."
+        },
+        {
+          "name": "Inverta o sentido se necessário",
+          "text": "Clique em Alterar ordem para mudar o conversor para converter milhas em quilómetros."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Para que converter quilómetros em milhas?",
+      "html": "<p class=\"text-mid mb-4\">O quilómetro é a unidade de distância básica em Portugal e na maioria dos países. A milha vigora sobretudo nos Estados Unidos e no Reino Unido, por isso converter quilómetros em milhas é útil acima de tudo quando quer que uma pessoa desses países entenda uma distância, ou quando compara o seu próprio resultado de corrida com recordes e planos de treino indicados em milhas.</p><p class=\"text-mid mb-4\">Um quilómetro são cerca de 0,621371 milhas. A relação é constante, por isso cada conversão resume-se a uma única multiplicação ou divisão. O conversor faz isso por si assim que introduz um valor, também para distâncias de corrida como 42,2 km, o comprimento de uma maratona.</p><p class=\"text-mid mb-4\">Mais abaixo encontra uma tabela de conversão para distâncias populares e uma tabela separada para a velocidade, com a qual lê a quantas milhas por hora corresponde uma indicação do velocímetro em km/h.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor gratuito de quilómetros para milhas – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão de quilómetros para milhas? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">A conversão de quilómetros para milhas baseia-se numa relação constante: uma milha terrestre são exatamente 1,609344 quilómetros. Para transformar quilómetros em milhas, divide o número de quilómetros por 1,609344 (o mesmo que multiplicar por 0,621371).</p><p class=\"text-mid mb-4\">A fórmula completa: <strong>milhas = quilómetros ÷ 1,609344</strong>. No sentido inverso: <strong>quilómetros = milhas × 1,609344</strong>.</p><p class=\"text-mid mb-4\">Exemplo: quer saber quantas milhas são 100 quilómetros. Substitui: 100 ÷ 1,609344 = 62,14 milhas. Na prática, muitas vezes basta multiplicar os quilómetros por 0,62 para obter um resultado aproximado.</p><p class=\"text-mid\">Outro exemplo: uma maratona tem 42,195 km, o que ao converter dá 42,195 ÷ 1,609344 = 26,22 milhas, as 26,2 milhas conhecidas pelos corredores. O conversor executa os dois sentidos assim que introduz um valor.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão de quilómetros para milhas",
+      "description": "A tabela abaixo converte distâncias populares em quilómetros para milhas. Os valores foram arredondados a duas casas decimais. Para converter um valor exato ou outra distância, use o conversor acima.",
+      "labelHeader": "Quilómetros",
+      "cols": ["Milhas"],
+      "rows": [
+        { "label": "1 km", "values": ["0,62 mi"] },
+        { "label": "2 km", "values": ["1,24 mi"] },
+        { "label": "3 km", "values": ["1,86 mi"] },
+        { "label": "4 km", "values": ["2,49 mi"] },
+        { "label": "5 km", "values": ["3,11 mi"], "emphasis": true },
+        { "label": "6 km", "values": ["3,73 mi"] },
+        { "label": "7 km", "values": ["4,35 mi"] },
+        { "label": "8 km", "values": ["4,97 mi"] },
+        { "label": "9 km", "values": ["5,59 mi"] },
+        { "label": "10 km", "values": ["6,21 mi"], "emphasis": true },
+        { "label": "15 km", "values": ["9,32 mi"] },
+        { "label": "20 km", "values": ["12,43 mi"], "emphasis": true },
+        { "label": "21,1 km", "values": ["13,11 mi"], "emphasis": true },
+        { "label": "25 km", "values": ["15,53 mi"] },
+        { "label": "30 km", "values": ["18,64 mi"] },
+        { "label": "35 km", "values": ["21,75 mi"] },
+        { "label": "40 km", "values": ["24,85 mi"] },
+        { "label": "42,2 km", "values": ["26,22 mi"], "emphasis": true },
+        { "label": "45 km", "values": ["27,96 mi"] },
+        { "label": "50 km", "values": ["31,07 mi"], "emphasis": true },
+        { "label": "60 km", "values": ["37,28 mi"] },
+        { "label": "70 km", "values": ["43,50 mi"] },
+        { "label": "80 km", "values": ["49,71 mi"] },
+        { "label": "90 km", "values": ["55,92 mi"] },
+        { "label": "100 km", "values": ["62,14 mi"], "emphasis": true },
+        { "label": "200 km", "values": ["124,27 mi"] },
+        { "label": "500 km", "values": ["310,69 mi"] },
+        { "label": "1.000 km", "values": ["621,37 mi"], "emphasis": true }
+      ],
+      "caption": "Quer converter no sentido inverso? Use o nosso conversor de <a href=\"/pt/ferramentas/conversor-milhas-para-km\">milhas para quilómetros</a> com tabela de velocidade em mph e milhas náuticas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de velocidade: quilómetros por hora (km/h) para milhas por hora (mph)",
+      "description": "Quando conduz no estrangeiro ou lê a ficha de um carro do mercado americano, é útil converter a velocidade de km/h para milhas por hora. O fator é o mesmo que o da distância – divide por 1,609344. Os valores foram arredondados a duas casas decimais.",
+      "labelHeader": "Quilómetros por hora",
+      "cols": ["Milhas por hora"],
+      "rows": [
+        { "label": "30 km/h", "values": ["18,64 mph"] },
+        { "label": "50 km/h", "values": ["31,07 mph"], "emphasis": true },
+        { "label": "60 km/h", "values": ["37,28 mph"] },
+        { "label": "70 km/h", "values": ["43,50 mph"] },
+        { "label": "80 km/h", "values": ["49,71 mph"] },
+        { "label": "90 km/h", "values": ["55,92 mph"] },
+        { "label": "100 km/h", "values": ["62,14 mph"], "emphasis": true },
+        { "label": "110 km/h", "values": ["68,35 mph"] },
+        { "label": "120 km/h", "values": ["74,56 mph"] },
+        { "label": "130 km/h", "values": ["80,78 mph"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando se convertem quilómetros em milhas com mais frequência?",
+      "description": "Converter quilómetros em milhas é útil sobretudo no contacto com países de língua inglesa. Cada uma das situações abaixo tem as suas particularidades.",
+      "items": [
+        {
+          "title": "Corrida e comparação de distâncias",
+          "description": "Os planos de treino, os recordes e os desafios de corrida dos EUA e do Reino Unido trabalham em milhas. Se corre em quilómetros, a conversão permite comparar o resultado: 10 km são 6,21 milhas, uma meia maratona (21,1 km) são 13,11 milhas e uma maratona (42,2 km) são 26,22 milhas. Assim é mais fácil seguir um plano descrito em milhas."
+        },
+        {
+          "title": "Viagens aos EUA e ao Reino Unido",
+          "description": "Antes de explicar a alguém desses países a que distância está do destino, converta-a em milhas: 100 km são 62,14 milhas. Assim é mais fácil falar de distâncias, planear percursos e estimar o tempo de viagem em unidades que o seu interlocutor entende."
+        },
+        {
+          "title": "Velocidade e conduzir no estrangeiro",
+          "description": "Os carros do mercado americano têm o velocímetro em milhas por hora. Os 100 km/h em Portugal são cerca de 62,14 mph, e 130 km/h cerca de 80,78 mph. Converter a velocidade ajuda a ler um carro assim e a manter-se dentro dos limites locais."
+        },
+        {
+          "title": "Equipamentos e aplicações desportivas",
+          "description": "Os relógios, os rolos de treino e as aplicações configuradas por predefinição em unidades imperiais mostram a distância e o ritmo em milhas. Se prefere pensar em quilómetros, a conversão permite traduzir rapidamente o que está no ecrã para os valores métricos que conhece."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre converter quilómetros em milhas",
+      "items": [
+        {
+          "question": "Quantas milhas são 100 quilómetros?",
+          "answer": "100 km são 62,14 milhas. Cálculo: 100 ÷ 1,609344 = 62,14 milhas. De forma aproximada, 100 km são cerca de 62 milhas."
+        },
+        {
+          "question": "Quantas milhas são 50 quilómetros?",
+          "answer": "50 km são 31,07 milhas. Cálculo: 50 ÷ 1,609344 = 31,07 milhas."
+        },
+        {
+          "question": "Quantas milhas são 5 km?",
+          "answer": "5 km são 3,11 milhas. Cálculo: 5 ÷ 1,609344 = 3,11 milhas. Uma popular corrida de 5 km corresponde, por isso, a pouco mais de 3 milhas."
+        },
+        {
+          "question": "Quantas milhas são 10 km?",
+          "answer": "10 km são 6,21 milhas. Cálculo: 10 ÷ 1,609344 = 6,21 milhas."
+        },
+        {
+          "question": "Quantas milhas são uma maratona (42,195 km)?",
+          "answer": "Uma maratona são 26,22 milhas, as 26,2 milhas conhecidas pelos corredores. Cálculo: 42,195 ÷ 1,609344 = 26,22 milhas."
+        },
+        {
+          "question": "Quantas milhas são uma meia maratona (21,1 km)?",
+          "answer": "Uma meia maratona são 13,11 milhas. Cálculo: 21,0975 ÷ 1,609344 = 13,11 milhas. É exatamente metade da distância da maratona."
+        },
+        {
+          "question": "Quanto são 100 km/h em milhas por hora?",
+          "answer": "100 km/h são cerca de 62,14 mph. Cálculo: 100 ÷ 1,609344 = 62,14 mph. O fator de conversão da velocidade é o mesmo que o da distância."
+        },
+        {
+          "question": "1 quilómetro é meia milha?",
+          "answer": "Não exatamente. 1 km são 0,62 milhas, um pouco mais do que meia milha. Meia milha exata são 0,805 km, por isso um quilómetro é mais longo."
+        },
+        {
+          "question": "O que é maior: um quilómetro ou uma milha?",
+          "answer": "Maior é uma milha. Uma milha são 1,609344 km, por isso é mais de 60 % mais longa do que um quilómetro. É por isso que a mesma distância em milhas dá sempre um número menor do que em quilómetros."
+        },
+        {
+          "question": "Quantas milhas são 500 quilómetros?",
+          "answer": "500 km são 310,69 milhas. Cálculo: 500 ÷ 1,609344 = 310,69 milhas."
+        },
+        {
+          "question": "Quantas milhas são 35 quilómetros?",
+          "answer": "35 km são 21,75 milhas. Cálculo: 35 ÷ 1,609344 = 21,75 milhas."
+        },
+        {
+          "question": "Qual é a fórmula para converter quilómetros em milhas?",
+          "answer": "A fórmula é: milhas = quilómetros ÷ 1,609344, o que equivale a multiplicar por 0,621371. Por exemplo, 30 km ÷ 1,609344 = 18,64 milhas. No sentido inverso: quilómetros = milhas × 1,609344."
+        },
+        {
+          "question": "Quantas milhas são 20 e 30 quilómetros?",
+          "answer": "20 km são 12,43 milhas e 30 km são 18,64 milhas. Ambos os valores surgem da mesma forma: divide o número de quilómetros por 1,609344."
+        },
+        {
+          "question": "Como converter quilómetros em milhas de cabeça?",
+          "answer": "O mais simples é multiplicar o número de quilómetros por 0,6 – o resultado fica perto do exato. Também pode usar a regra «8 quilómetros são 5 milhas»: 16 km são cerca de 10 milhas e 80 km cerca de 50 milhas. Para cálculos precisos, use o conversor."
+        },
+        {
+          "question": "Quantas milhas são 200 quilómetros?",
+          "answer": "200 km são 124,27 milhas. Cálculo: 200 ÷ 1,609344 = 124,27 milhas."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "title": "Tem uma pergunta ou sugestão?",
+      "description": "Se detetou um erro nas tabelas ou tem uma ideia para melhorar o conversor, escreva-nos. Respondemos a cada mensagem.",
+      "imageAlt": "Contacto com a Arteon Agency",
+      "subject": "Conversor de quilómetros para milhas"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    }
+  ]
+}

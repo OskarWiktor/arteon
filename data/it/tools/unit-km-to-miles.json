@@ -1,0 +1,259 @@
+{
+  "toolKey": "kmToMiles",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore km in miglia – converti chilometri in miglia",
+    "description": "Converti chilometri in miglia. Le tabelle pronte coprono le distanze di corsa (con la maratona di 42,2 km), la velocità da km/h a mph e distanze comuni come 50 e 100 km. Il convertitore da km a miglia funziona in entrambe le direzioni e calcola subito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-km-in-miglia"
+  },
+  "hero": {
+    "title": "Converti chilometri in miglia",
+    "description": "Inserisci un valore qualsiasi in chilometri e leggi subito il risultato in miglia. Il convertitore è utile quando vuoi confrontare la tua distanza di corsa con risultati indicati in miglia, prepararti a un viaggio negli USA o nel Regno Unito, oppure convertire la velocità da km/h a miglia orarie. Più in basso nella pagina trovi tabelle pronte per una selezione di distanze e velocità comuni.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-km-in-miglia",
+      "label": "km in miglia"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore da chilometri a miglia – calcolatore km in miglia",
+      "alternateName": [
+        "Convertitore km in miglia",
+        "Calcolatore km in miglia",
+        "Convertitore da chilometri a miglia",
+        "Chilometri in miglia",
+        "km in miglia",
+        "Convertire km in miglia",
+        "Conversione km in miglia",
+        "Quante miglia sono un chilometro",
+        "1 km in miglia",
+        "Convertitore km/h in mph",
+        "Quante miglia sono 100 km",
+        "Tabella km in miglia",
+        "Quante miglia sono una maratona",
+        "km to miles",
+        "Convertitore di chilometri"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertitore da chilometri a miglia che funziona nel browser senza registrazione. Inserisci un valore in chilometri e ottieni subito il risultato in miglia. Utile per confrontare distanze di corsa, viaggi nei paesi anglofoni e convertire la velocità da km/h a miglia orarie.",
+      "featureList": [
+        "La conversione funziona in entrambe le direzioni, quindi converti sia chilometri in miglia sia miglia in chilometri",
+        "Il risultato appare subito mentre digiti, senza premere alcun pulsante",
+        "Il risultato ottenuto si copia negli appunti con un solo clic",
+        "La tabella di conversione copre valori da 1 km a 1.000 km, inclusa la distanza della maratona di 42,2 km e della mezza maratona di 21,1 km",
+        "Una tabella separata converte la velocità da chilometri orari (km/h) a miglia orarie (mph)",
+        "Tutti i calcoli avvengono localmente nel tuo browser e i tuoi dati non lasciano il dispositivo",
+        "La formula esatta di conversione è miglia = chilometri ÷ 1,609344",
+        "Lo strumento funziona su telefono, tablet e computer senza installazione"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire chilometri in miglia?",
+      "description": "Breve guida all'uso del convertitore da chilometri a miglia.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserisci il valore in chilometri",
+          "text": "Nel campo a sinistra inserisci il numero di chilometri che vuoi convertire in miglia."
+        },
+        {
+          "name": "Leggi il risultato in miglia",
+          "text": "Il risultato in miglia appare subito nel campo accanto, a destra. Puoi copiarlo negli appunti con un solo clic."
+        },
+        {
+          "name": "Inverti la direzione se serve",
+          "text": "Clicca su Cambia ordine per passare il convertitore alla conversione da miglia a chilometri."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire chilometri in miglia?",
+      "html": "<p class=\"text-mid mb-4\">Il chilometro è l'unità di distanza di base in Italia e nella maggior parte dei paesi. Il miglio vale soprattutto negli Stati Uniti e nel Regno Unito, perciò convertire chilometri in miglia è utile soprattutto quando vuoi che una persona di quei paesi capisca una distanza, oppure quando confronti il tuo risultato di corsa con record e piani di allenamento indicati in miglia.</p><p class=\"text-mid mb-4\">Un chilometro è circa 0,621371 miglia. La relazione è costante, perciò ogni conversione si riduce a una sola moltiplicazione o divisione. Il convertitore lo fa per te appena inserisci un valore, anche per distanze di corsa come 42,2 km, la lunghezza di una maratona.</p><p class=\"text-mid mb-4\">Più in basso trovi una tabella di conversione per le distanze più comuni e una tabella separata per la velocità, con cui leggi a quante miglia orarie corrisponde un'indicazione del tachimetro in km/h.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore gratuito da chilometri a miglia – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione da chilometri a miglia? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione da chilometri a miglia si basa su una relazione costante: un miglio terrestre corrisponde esattamente a 1,609344 chilometri. Per trasformare i chilometri in miglia, dividi il numero di chilometri per 1,609344 (lo stesso che moltiplicare per 0,621371).</p><p class=\"text-mid mb-4\">La formula completa: <strong>miglia = chilometri ÷ 1,609344</strong>. Nella direzione opposta: <strong>chilometri = miglia × 1,609344</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quante miglia sono 100 chilometri. Sostituisci: 100 ÷ 1,609344 = 62,14 miglia. In pratica spesso basta moltiplicare i chilometri per 0,62 per ottenere un risultato approssimativo.</p><p class=\"text-mid\">Altro esempio: una maratona è lunga 42,195 km, che convertiti danno 42,195 ÷ 1,609344 = 26,22 miglia, le 26,2 miglia note ai corridori. Il convertitore esegue entrambe le direzioni appena inserisci un valore.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione da chilometri a miglia",
+      "description": "La tabella seguente converte le distanze più comuni in chilometri in miglia. I valori sono arrotondati a due decimali. Per convertire un valore esatto o un'altra distanza, usa il convertitore qui sopra.",
+      "labelHeader": "Chilometri",
+      "cols": ["Miglia"],
+      "rows": [
+        { "label": "1 km", "values": ["0,62 mi"] },
+        { "label": "2 km", "values": ["1,24 mi"] },
+        { "label": "3 km", "values": ["1,86 mi"] },
+        { "label": "4 km", "values": ["2,49 mi"] },
+        { "label": "5 km", "values": ["3,11 mi"], "emphasis": true },
+        { "label": "6 km", "values": ["3,73 mi"] },
+        { "label": "7 km", "values": ["4,35 mi"] },
+        { "label": "8 km", "values": ["4,97 mi"] },
+        { "label": "9 km", "values": ["5,59 mi"] },
+        { "label": "10 km", "values": ["6,21 mi"], "emphasis": true },
+        { "label": "15 km", "values": ["9,32 mi"] },
+        { "label": "20 km", "values": ["12,43 mi"], "emphasis": true },
+        { "label": "21,1 km", "values": ["13,11 mi"], "emphasis": true },
+        { "label": "25 km", "values": ["15,53 mi"] },
+        { "label": "30 km", "values": ["18,64 mi"] },
+        { "label": "35 km", "values": ["21,75 mi"] },
+        { "label": "40 km", "values": ["24,85 mi"] },
+        { "label": "42,2 km", "values": ["26,22 mi"], "emphasis": true },
+        { "label": "45 km", "values": ["27,96 mi"] },
+        { "label": "50 km", "values": ["31,07 mi"], "emphasis": true },
+        { "label": "60 km", "values": ["37,28 mi"] },
+        { "label": "70 km", "values": ["43,50 mi"] },
+        { "label": "80 km", "values": ["49,71 mi"] },
+        { "label": "90 km", "values": ["55,92 mi"] },
+        { "label": "100 km", "values": ["62,14 mi"], "emphasis": true },
+        { "label": "200 km", "values": ["124,27 mi"] },
+        { "label": "500 km", "values": ["310,69 mi"] },
+        { "label": "1.000 km", "values": ["621,37 mi"], "emphasis": true }
+      ],
+      "caption": "Vuoi convertire nella direzione opposta? Usa il nostro convertitore <a href=\"/it/strumenti/convertitore-miglia-in-km\">miglia in chilometri</a> con tabella di velocità in mph e miglia nautiche."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di velocità: chilometri orari (km/h) in miglia orarie (mph)",
+      "description": "Quando guidi all'estero o leggi la scheda di un'auto del mercato americano, è utile convertire la velocità da km/h a miglia orarie. Il fattore è lo stesso della distanza: dividi per 1,609344. I valori sono arrotondati a due decimali.",
+      "labelHeader": "Chilometri orari",
+      "cols": ["Miglia orarie"],
+      "rows": [
+        { "label": "30 km/h", "values": ["18,64 mph"] },
+        { "label": "50 km/h", "values": ["31,07 mph"], "emphasis": true },
+        { "label": "60 km/h", "values": ["37,28 mph"] },
+        { "label": "70 km/h", "values": ["43,50 mph"] },
+        { "label": "80 km/h", "values": ["49,71 mph"] },
+        { "label": "90 km/h", "values": ["55,92 mph"] },
+        { "label": "100 km/h", "values": ["62,14 mph"], "emphasis": true },
+        { "label": "110 km/h", "values": ["68,35 mph"] },
+        { "label": "120 km/h", "values": ["74,56 mph"] },
+        { "label": "130 km/h", "values": ["80,78 mph"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono più spesso i chilometri in miglia?",
+      "description": "Convertire chilometri in miglia è utile soprattutto nel contatto con i paesi anglofoni. Ognuna delle situazioni seguenti ha le sue particolarità.",
+      "items": [
+        {
+          "title": "Corsa e confronto delle distanze",
+          "description": "I piani di allenamento, i record e le sfide di corsa di USA e Regno Unito lavorano in miglia. Se corri in chilometri, la conversione permette di confrontare il risultato: 10 km sono 6,21 miglia, una mezza maratona (21,1 km) è 13,11 miglia e una maratona (42,2 km) è 26,22 miglia. Così è più facile seguire un piano descritto in miglia."
+        },
+        {
+          "title": "Viaggi negli USA e nel Regno Unito",
+          "description": "Prima di spiegare a qualcuno di quei paesi quanto sei distante dalla meta, converti la distanza in miglia: 100 km sono 62,14 miglia. Così è più facile parlare di distanze, pianificare i percorsi e stimare il tempo di viaggio in unità che il tuo interlocutore capisce."
+        },
+        {
+          "title": "Velocità e guida all'estero",
+          "description": "Le auto del mercato americano hanno il tachimetro in miglia orarie. I 100 km/h in Italia sono circa 62,14 mph, e 130 km/h circa 80,78 mph. Convertire la velocità aiuta a leggere un'auto del genere e a restare entro i limiti locali."
+        },
+        {
+          "title": "Dispositivi e app sportive",
+          "description": "Gli orologi, i rulli da allenamento e le app impostate di default su unità imperiali mostrano distanza e ritmo in miglia. Se preferisci ragionare in chilometri, la conversione ti permette di tradurre in fretta quello che vedi sullo schermo nei valori metrici che conosci."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da chilometri a miglia",
+      "items": [
+        {
+          "question": "Quante miglia sono 100 chilometri?",
+          "answer": "100 km sono 62,14 miglia. Calcolo: 100 ÷ 1,609344 = 62,14 miglia. In modo approssimativo, 100 km sono circa 62 miglia."
+        },
+        {
+          "question": "Quante miglia sono 50 chilometri?",
+          "answer": "50 km sono 31,07 miglia. Calcolo: 50 ÷ 1,609344 = 31,07 miglia."
+        },
+        {
+          "question": "Quante miglia sono 5 km?",
+          "answer": "5 km sono 3,11 miglia. Calcolo: 5 ÷ 1,609344 = 3,11 miglia. Una popolare corsa di 5 km corrisponde quindi a poco più di 3 miglia."
+        },
+        {
+          "question": "Quante miglia sono 10 km?",
+          "answer": "10 km sono 6,21 miglia. Calcolo: 10 ÷ 1,609344 = 6,21 miglia."
+        },
+        {
+          "question": "Quante miglia sono una maratona (42,195 km)?",
+          "answer": "Una maratona è 26,22 miglia, le 26,2 miglia note ai corridori. Calcolo: 42,195 ÷ 1,609344 = 26,22 miglia."
+        },
+        {
+          "question": "Quante miglia sono una mezza maratona (21,1 km)?",
+          "answer": "Una mezza maratona è 13,11 miglia. Calcolo: 21,0975 ÷ 1,609344 = 13,11 miglia. È esattamente metà della distanza della maratona."
+        },
+        {
+          "question": "Quanto sono 100 km/h in miglia orarie?",
+          "answer": "100 km/h sono circa 62,14 mph. Calcolo: 100 ÷ 1,609344 = 62,14 mph. Il fattore di conversione della velocità è lo stesso della distanza."
+        },
+        {
+          "question": "1 chilometro è mezzo miglio?",
+          "answer": "Non proprio. 1 km è 0,62 miglia, poco più di mezzo miglio. Mezzo miglio esatto è 0,805 km, quindi un chilometro è più lungo."
+        },
+        {
+          "question": "Cosa è più grande: un chilometro o un miglio?",
+          "answer": "Più grande è un miglio. Un miglio è 1,609344 km, quindi è più lungo di oltre il 60 % rispetto a un chilometro. Per questo la stessa distanza in miglia dà sempre un numero minore che in chilometri."
+        },
+        {
+          "question": "Quante miglia sono 500 chilometri?",
+          "answer": "500 km sono 310,69 miglia. Calcolo: 500 ÷ 1,609344 = 310,69 miglia."
+        },
+        {
+          "question": "Quante miglia sono 35 chilometri?",
+          "answer": "35 km sono 21,75 miglia. Calcolo: 35 ÷ 1,609344 = 21,75 miglia."
+        },
+        {
+          "question": "Qual è la formula per convertire chilometri in miglia?",
+          "answer": "La formula è: miglia = chilometri ÷ 1,609344, che equivale a moltiplicare per 0,621371. Per esempio, 30 km ÷ 1,609344 = 18,64 miglia. Nella direzione opposta: chilometri = miglia × 1,609344."
+        },
+        {
+          "question": "Quante miglia sono 20 e 30 chilometri?",
+          "answer": "20 km sono 12,43 miglia e 30 km sono 18,64 miglia. Entrambi i valori si ottengono allo stesso modo: dividi il numero di chilometri per 1,609344."
+        },
+        {
+          "question": "Come convertire i chilometri in miglia a mente?",
+          "answer": "Il modo più semplice è moltiplicare il numero di chilometri per 0,6: il risultato è vicino a quello esatto. Puoi anche usare la regola «8 chilometri sono 5 miglia»: 16 km sono circa 10 miglia e 80 km circa 50 miglia. Per calcoli precisi usa il convertitore."
+        },
+        {
+          "question": "Quante miglia sono 200 chilometri?",
+          "answer": "200 km sono 124,27 miglia. Calcolo: 200 ÷ 1,609344 = 124,27 miglia."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se hai notato un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contatto con Arteon Agency",
+      "subject": "Convertitore da chilometri a miglia"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}
