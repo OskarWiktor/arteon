@@ -22,8 +22,9 @@ import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import WorkSteps from '@/components/organisms/WorkSteps';
+import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import { cn } from '@/lib/clsx';
+import { processStepsSections } from '@/lib/processSteps';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { siteUrl } from '@/utils/absoluteUrl';
 
@@ -90,6 +91,7 @@ export default function OfferMarketingHubPage() {
         }
         backgroundImage='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
         overlay='black'
+        reputation
       />
 
       <BenefitBelt variant='carousel' />
@@ -307,7 +309,7 @@ export default function OfferMarketingHubPage() {
 
         <Divider line />
 
-        <WorkSteps variant='marketing' />
+        <SectionTimeline {...processStepsSections.marketing} />
 
         <Divider line />
 

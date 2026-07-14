@@ -22,10 +22,10 @@ export default function FloatingCallButton() {
         aria-label='Zadzwoń: 516 466 255'
         className='group pointer-events-auto flex h-auto! flex-col items-center gap-1 focus-visible:outline-none'
       >
-        <span className='bg-accent px-1 text-sm font-medium text-neutral-900 md:text-base'>
+        <span className='bg-accent px-1 text-sm font-medium text-primary md:text-base'>
           Zadzwoń
         </span>
-        <span className='flex h-14! w-14! items-center justify-center rounded-full bg-neutral-900 text-neutral-50 shadow-lg transition-transform group-hover:scale-105 group-focus-visible:ring-2 group-focus-visible:ring-neutral-500 group-focus-visible:ring-offset-2 md:h-16 md:w-16'>
+        <span className='flex h-14! w-14! items-center justify-center rounded-full bg-primary text-[#f9f5f2] shadow-lg transition-transform group-hover:scale-105 group-focus-visible:ring-2 group-focus-visible:ring-neutral-500 group-focus-visible:ring-offset-2 md:h-16 md:w-16'>
           <RiPhoneFill
             className='text-[26px] md:text-[36px]'
             aria-hidden='true'

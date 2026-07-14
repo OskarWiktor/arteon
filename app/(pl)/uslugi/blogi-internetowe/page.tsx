@@ -23,17 +23,18 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
-import WorkSteps from '@/components/organisms/WorkSteps';
+import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
+import { processStepsSections } from '@/lib/processSteps';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
-import SectionBar from '@/components/organisms/sections/SectionBar';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
@@ -93,6 +94,7 @@ export default function OfferBlogPage() {
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/jstax/moskup-strony-jstax.webp'
         overlay='black'
+        reputation
       />
 
       <BenefitBelt variant='carousel' />
@@ -458,7 +460,7 @@ export default function OfferBlogPage() {
 
         <Divider />
 
-        <WorkSteps variant='web' />
+        <SectionTimeline {...processStepsSections.web} />
 
         <Divider line />
 

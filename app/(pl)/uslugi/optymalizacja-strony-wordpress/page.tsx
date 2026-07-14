@@ -1,4 +1,10 @@
 import Script from 'next/script';
+import {
+  RiPencilRuler2Line,
+  RiSecurePaymentLine,
+  RiPriceTag3Line,
+  RiKey2Line,
+} from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
@@ -6,7 +12,9 @@ import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBar from '@/components/organisms/sections/SectionBar';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
@@ -17,16 +25,8 @@ import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
-import { siteUrl } from '@/utils/absoluteUrl';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionBar from '@/components/organisms/sections/SectionBar';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
-import {
-  RiPencilRuler2Line,
-  RiSecurePaymentLine,
-  RiPriceTag3Line,
-  RiKey2Line,
-} from 'react-icons/ri';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title:
@@ -102,6 +102,7 @@ export default function OfferOptimizationWordPressPage() {
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/arteon-baners-camper-albania-mockup.webp'
         overlay='black'
+        reputation
       />
 
       <BenefitBelt variant='carousel' />

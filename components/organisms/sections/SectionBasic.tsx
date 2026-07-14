@@ -45,14 +45,30 @@ export default function SectionBasic({
             'lg:order-2': variant === 'left',
           })}
         >
-          <div className='relative aspect-4/3 w-full'>
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              fill
-              className='object-cover'
-              sizes='(min-width:1024px) 50vw, 100vw'
+          <div className='relative w-full'>
+            {/* Navy backdrop: peeks past the image on the outer side, top and
+                bottom, and stops short of the image on the inner side. */}
+            <div
+              aria-hidden='true'
+              className={cn('absolute inset-y-0 bg-primary', {
+                'right-8 left-0': variant === 'right',
+                'right-0 left-8': variant === 'left',
+              })}
             />
+            <div
+              className={cn('relative my-10 aspect-4/3 overflow-hidden', {
+                'ml-10': variant === 'right',
+                'mr-10': variant === 'left',
+              })}
+            >
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                fill
+                className='object-cover'
+                sizes='(min-width:1024px) 50vw, 100vw'
+              />
+            </div>
           </div>
         </div>
 

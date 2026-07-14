@@ -27,9 +27,10 @@ import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import WorkSteps from '@/components/organisms/WorkSteps';
+import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { cn } from '@/lib/clsx';
+import { processStepsSections } from '@/lib/processSteps';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { siteUrl } from '@/utils/absoluteUrl';
@@ -89,6 +90,7 @@ export default function OfferContentPage() {
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
         overlay='black'
+        reputation
       />
 
       <BenefitBelt variant='carousel' />
@@ -320,7 +322,7 @@ export default function OfferContentPage() {
 
         <Divider line />
 
-        <WorkSteps variant='content' />
+        <SectionTimeline {...processStepsSections.content} />
 
         <Divider line />
 
