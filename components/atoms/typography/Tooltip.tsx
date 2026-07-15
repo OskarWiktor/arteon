@@ -101,7 +101,7 @@ export default function Tooltip({
     >
       <span
         className={cn(
-          'cursor-help rounded underline decoration-dotted underline-offset-2 transition-colors hover:text-dark focus-visible:text-dark',
+          'cursor-help underline decoration-dotted underline-offset-2 transition-colors hover:text-dark focus-visible:text-dark',
           focusRingClasses,
           className,
         )}
@@ -123,7 +123,7 @@ export default function Tooltip({
           id={bubbleId}
           role='tooltip'
           className={cn(
-            'absolute z-60 max-w-xs rounded-lg bg-black px-3 py-2 text-sm text-white shadow-lg',
+            'absolute z-60 max-w-xs bg-black px-3 py-2 text-sm text-white shadow-lg',
             placement === 'top'
               ? 'top-full left-1/2 mt-2 animate-[tooltip-in_0.18s_ease-out_both]'
               : 'bottom-full left-1/2 mb-2 animate-[tooltip-in-bottom_0.18s_ease-out_both]',

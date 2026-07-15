@@ -39,7 +39,7 @@ export default function FeatureCard({
   const descId = description ? `feature-desc-${base}-${idx}` : undefined;
 
   const displayIcon = icon || (
-    <span className='inline-block h-6 w-6 rounded-xs bg-black' />
+    <span className='inline-block h-6 w-6 bg-black' />
   );
 
   return (
@@ -60,7 +60,7 @@ export default function FeatureCard({
     >
       <div
         className={cn(
-          'h-16 w-16 rounded-lg bg-primary-light text-primary',
+          'h-16 w-16 bg-primary-light text-primary',
           flexCenterClasses,
         )}
       >

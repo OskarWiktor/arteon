@@ -17,7 +17,7 @@ export default function ThemeToggle() {
       onClick={toggle}
       aria-label={getA11y(locale).themeToggle}
       className={cn(
-        'flex h-8 w-8 cursor-pointer items-center justify-center rounded-md text-primary transition-colors hover:bg-primary-light',
+        'flex h-8 w-8 cursor-pointer items-center justify-center text-primary transition-colors hover:bg-primary-light',
         focusRingClasses,
       )}
     >

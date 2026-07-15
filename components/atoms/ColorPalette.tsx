@@ -19,7 +19,7 @@ export default function ColorPalette({ colors, locale }: ColorPaletteProps) {
         {colors.map((color, index) => (
           <div
             key={index}
-            className='h-10 w-10 rounded border border-neutral-200'
+            className='h-10 w-10 border border-neutral-200'
             style={{ backgroundColor: color }}
             title={color}
             role='img'

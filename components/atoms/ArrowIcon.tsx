@@ -4,7 +4,12 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
+import Triangle from './icons/Triangle';
 
+/**
+ * The "go there" marker on buttons and card links: the logo's square-inscribed
+ * triangle pointing to the side, with no arrow shaft or tail.
+ */
 const ArrowIcon = () => (
   <span
     className={cn(
@@ -14,14 +19,7 @@ const ArrowIcon = () => (
     )}
     aria-hidden='true'
   >
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 24 24'
-      fill='currentColor'
-      className={smallIconSizeClasses}
-    >
-      <path d='M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z' />
-    </svg>
+    <Triangle direction='right' className={smallIconSizeClasses} />
   </span>
 );
 

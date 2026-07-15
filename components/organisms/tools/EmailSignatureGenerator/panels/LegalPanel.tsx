@@ -115,7 +115,7 @@ export default function LegalPanel({
                 />
                 <div
                   className={cn(
-                    'cursor-pointer rounded border-2',
+                    'cursor-pointer border-2',
                     flexCenterClasses,
                     largeIconSizeClasses,
                     styleConfig.dividerColor

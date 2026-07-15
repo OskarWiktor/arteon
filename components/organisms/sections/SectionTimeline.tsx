@@ -80,7 +80,7 @@ export default function SectionTimeline({
                 'md:flex-row-reverse': index % 2 !== 0,
               })}
             >
-              <div className='hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:rounded-lg md:bg-primary md:text-white md:shadow-lg'>
+              <div className='hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:bg-primary md:text-white md:shadow-lg'>
                 {step.icon}
               </div>
 
@@ -98,7 +98,7 @@ export default function SectionTimeline({
                   >
                     <div
                       className={cn(
-                        'absolute top-6 left-0 h-12 w-12 rounded-lg bg-primary text-white shadow-lg md:hidden',
+                        'absolute top-6 left-0 h-12 w-12 bg-primary text-white shadow-lg md:hidden',
                         flexCenterClasses,
                       )}
                     >

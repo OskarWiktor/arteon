@@ -33,7 +33,7 @@ function WorkStepsSkeleton() {
       <div className='mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
         {Array.from({ length: 4 }).map((_, i) => (
           <Card key={i} variant='outlined' className='flex items-start'>
-            <Shimmer className='mb-3 h-10 w-10 rounded-lg!' />
+            <Shimmer className='mb-3 h-10 w-10' />
             <Shimmer className='h-5 w-3/4' />
             <Shimmer className='mt-2 h-3.5 w-full' />
             <Shimmer className='mt-1 h-3.5 w-5/6' />

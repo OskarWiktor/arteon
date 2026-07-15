@@ -74,7 +74,7 @@ export default function ConfirmModal({
         aria-labelledby='confirm-modal-title'
         tabIndex={-1}
         className={cn(
-          'relative w-full max-w-md overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5',
+          'relative w-full max-w-md overflow-hidden bg-white p-6 shadow-lg ring-1 ring-black/5',
           modalContentClasses,
         )}
       >

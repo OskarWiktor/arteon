@@ -29,11 +29,11 @@ export default function SectionStepsSkeleton({
               <Shimmer className='aspect-video w-full rounded-none! bg-neutral-300!' />
             )}
             <div className='space-y-3 p-6'>
-              {!hasImages && <Shimmer className='h-10 w-10 rounded-lg!' />}
+              {!hasImages && <Shimmer className='h-10 w-10' />}
               <Shimmer className='h-5 w-3/4' />
               <Shimmer className='h-3.5 w-full' />
               <Shimmer className='h-3.5 w-5/6' />
-              {hasImages && <Shimmer className='mt-2 h-9 w-40 rounded-lg!' />}
+              {hasImages && <Shimmer className='mt-2 h-9 w-40' />}
             </div>
           </Card>
         ))}

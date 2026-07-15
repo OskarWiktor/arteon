@@ -64,9 +64,7 @@ export default function ErrorPageComponent({
         {error.digest && (
           <p className='mt-8 text-xs text-light'>
             {t.errorCode}:{' '}
-            <code className='rounded bg-neutral-100 px-2 py-1'>
-              {error.digest}
-            </code>
+            <code className='bg-neutral-100 px-2 py-1'>{error.digest}</code>
           </p>
         )}
       </div>

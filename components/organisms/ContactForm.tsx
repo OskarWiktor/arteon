@@ -128,7 +128,7 @@ export default function ContactForm({
             name='Zgoda na przetwarzanie danych'
             value='Tak'
             required
-            className='h-6! w-6! items-center rounded-sm border-0! border-none! text-dark shadow-[1px_1px_3px_#C6B7A2]'
+            className='h-6! w-6! items-center border-0! border-none! text-dark shadow-[1px_1px_3px_#C6B7A2]'
             onInvalid={e =>
               e.currentTarget.setCustomValidity(t.consentRequiredError)
             }

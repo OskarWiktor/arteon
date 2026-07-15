@@ -22,10 +22,7 @@ export default function SectionBar({
   return (
     <div
       id={id}
-      className={cn(
-        'rounded-lg bg-primary p-6 text-on-dark md:p-10',
-        className,
-      )}
+      className={cn('bg-primary p-6 text-on-dark md:p-10', className)}
     >
       <h2 className='h3 text-on-dark'>{title}</h2>
       {description && <p className='mt-2 text-on-dark!'>{description}</p>}

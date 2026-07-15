@@ -1,11 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { useRef, useState } from 'react';
-import {
-  RiCloseLine,
-  RiArrowLeftLine,
-  RiArrowRightSLine,
-} from 'react-icons/ri';
+import { RiCloseLine } from 'react-icons/ri';
+import { TriangleLeft, TriangleRight } from '@/components/atoms/icons/Triangle';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { useDialogFocus } from '@/hooks/useDialogFocus';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
@@ -81,7 +78,7 @@ export default function SectionImageGallery({
             type='button'
             onClick={() => openLightbox(index)}
             className={cn(
-              'group relative aspect-square overflow-hidden rounded-lg',
+              'group relative aspect-square overflow-hidden',
               focusRingClasses,
             )}
           >
@@ -140,7 +137,7 @@ export default function SectionImageGallery({
             className='absolute left-4 text-white hover:text-neutral-300'
             aria-label='Poprzednie zdjęcie'
           >
-            <RiArrowLeftLine className={largeIconSizeClasses} />
+            <TriangleLeft className={largeIconSizeClasses} />
           </button>
 
           <div className='relative max-h-[80vh] max-w-[90vw]'>
@@ -167,7 +164,7 @@ export default function SectionImageGallery({
             className='absolute right-4 text-white hover:text-neutral-300'
             aria-label='Następne zdjęcie'
           >
-            <RiArrowRightSLine className={largeIconSizeClasses} />
+            <TriangleRight className={largeIconSizeClasses} />
           </button>
 
           <div className='absolute bottom-4 left-1/2 -translate-x-1/2 text-sm text-white'>

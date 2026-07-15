@@ -119,7 +119,7 @@ export default function TableOfContents({
               href={`#${i.id}`}
               aria-current={isActive ? 'location' : undefined}
               className={cn(
-                'flex items-center gap-1 rounded-lg px-2 py-1 text-mid hover:underline',
+                'flex items-center gap-1 px-2 py-1 text-mid hover:underline',
                 isActive ? 'bg-black/5' : '',
               )}
             >

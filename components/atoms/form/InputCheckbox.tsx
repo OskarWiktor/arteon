@@ -11,7 +11,7 @@ export default function InputCheckbox({
     <input
       type='checkbox'
       className={cn(
-        'rounded-sm border-neutral-300',
+        'border-neutral-200',
         smallIconSizeClasses,
         focusRingClasses,
         className,

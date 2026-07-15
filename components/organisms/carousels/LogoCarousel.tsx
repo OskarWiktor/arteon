@@ -232,10 +232,7 @@ export default function LogoCarousel({
       <section className='relative overflow-hidden'>
         <div
           ref={containerRef}
-          className={cn(
-            'relative overflow-hidden rounded-lg',
-            focusRingClasses,
-          )}
+          className={cn('relative overflow-hidden', focusRingClasses)}
           role='region'
           aria-label='Przewijana lista logo firm.'
           onMouseEnter={() => setIsPaused(true)}
@@ -294,7 +291,7 @@ export default function LogoCarousel({
 
       <div
         ref={containerRef}
-        className={cn('relative overflow-hidden rounded-lg', focusRingClasses)}
+        className={cn('relative overflow-hidden', focusRingClasses)}
         role='region'
         aria-label='Przewijana lista technologii.'
         onMouseEnter={() => setIsPaused(true)}

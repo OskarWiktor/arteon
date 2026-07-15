@@ -372,7 +372,7 @@ export default function WcagContrastChecker() {
                   <div className='flex min-w-0 items-center gap-3'>
                     <div
                       className={cn(
-                        'rounded-md border border-neutral-200',
+                        'border border-neutral-200',
                         largeIconSizeClasses,
                       )}
                       style={{ backgroundColor: matchedForeground }}
@@ -493,7 +493,7 @@ export default function WcagContrastChecker() {
             <div className='flex items-center gap-3'>
               <div
                 className={cn(
-                  'h-10 w-10 rounded-md border border-neutral-200',
+                  'h-10 w-10 border border-neutral-200',
                   flexCenterClasses,
                 )}
                 style={{

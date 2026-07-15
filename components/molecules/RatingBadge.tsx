@@ -36,7 +36,7 @@ export default function RatingBadge({
   return (
     <div
       className={cn(
-        'inline-flex shrink-0 items-center gap-3 rounded-lg bg-[#E4D9CA] px-4 py-2.5',
+        'inline-flex shrink-0 items-center gap-3 bg-[#E4D9CA] px-4 py-2.5',
         className,
       )}
     >

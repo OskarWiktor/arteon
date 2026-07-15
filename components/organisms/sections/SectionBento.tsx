@@ -47,7 +47,7 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
             <div
               key={index}
               className={cn(
-                'relative flex flex-col justify-end overflow-hidden rounded-lg',
+                'relative flex flex-col justify-end overflow-hidden',
                 {
                   [BentoItemSizeClasses[item.size]]: true,
                 },
@@ -70,7 +70,7 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
                 {item.icon && (
                   <div
                     className={cn(
-                      'mb-2 h-9 w-9 rounded-md bg-on-dark/20 text-on-dark',
+                      'mb-2 h-9 w-9 bg-on-dark/20 text-on-dark',
                       flexCenterClasses,
                     )}
                   >

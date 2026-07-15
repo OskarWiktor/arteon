@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, type ReactNode } from 'react';
-import { RiArrowDownSLine } from 'react-icons/ri';
+import { TriangleDown } from '@/components/atoms/icons/Triangle';
 import { cn } from '@/lib/clsx';
 import { focusRingClasses } from '@/lib/uiClasses';
 
@@ -23,13 +23,13 @@ const ANIMATION_MS = 260;
 const openPanelByGroup = new Map<string, () => void>();
 
 const detailsClasses =
-  'faq-details group hover:border-neutral-300 open:border-neutral-300 mb-4 overflow-hidden rounded-lg bg-white shadow-[1px_1px_3px_#C6B7A2] transition open:shadow-sm hover:shadow-md';
+  'faq-details group hover:border-neutral-300 open:border-neutral-300 mb-4 overflow-hidden bg-white shadow-[1px_1px_3px_#C6B7A2] transition open:shadow-sm hover:shadow-md';
 
 const summaryClasses =
   'flex w-full cursor-pointer list-none items-center justify-between px-3.5 py-2.5 text-left transition-colors md:px-4.5 md:py-3.5 [&::-webkit-details-marker]:hidden';
 
 const iconClasses =
-  'bg-primary-light flex h-14 w-14 shrink-0 items-center justify-center rounded-lg text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white';
+  'bg-primary-light flex h-14 w-14 shrink-0 items-center justify-center text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white';
 
 /**
  * Collapsible FAQ panel built on the native `<details>` element, with its
@@ -176,11 +176,8 @@ export default function FaqPanel({
 
         <h3 className='h6 flex-1 font-semibold!'>{question}</h3>
 
-        <span
-          className='ml-2 flex rounded-md bg-[#E4D9CA] p-2'
-          aria-hidden='true'
-        >
-          <RiArrowDownSLine className='h-5 w-5 transition-transform duration-200 group-open:rotate-180' />
+        <span className='ml-2 flex bg-[#E4D9CA] p-2' aria-hidden='true'>
+          <TriangleDown className='h-5 w-5 transition-transform duration-200 group-open:rotate-180' />
         </span>
       </summary>
 

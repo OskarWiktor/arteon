@@ -303,15 +303,15 @@ export default function OfferMarketingPage() {
           btnOneHref='#kontakt'
         >
           <ul className='mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3'>
-            <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
+            <li className='list-none bg-white p-4 ring-1 ring-neutral-200'>
               <strong>Więcej wejść z Google</strong> efekt może być zauważalny
               już po 2-3 miesiącach.
             </li>
-            <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
+            <li className='list-none bg-white p-4 ring-1 ring-neutral-200'>
               <strong>Szybsze działanie strony</strong> dzięki optymalizacji
               technicznej witryny.
             </li>
-            <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
+            <li className='list-none bg-white p-4 ring-1 ring-neutral-200'>
               <strong>Więcej zapytań z formularza i telefonów</strong> po
               dopracowaniu nagłówków, opisów i całej oferty.
             </li>

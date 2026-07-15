@@ -734,7 +734,7 @@ export default function EmailSignatureGenerator() {
                 type='button'
                 onClick={() => setPreviewBg('light')}
                 className={cn(
-                  'rounded-md border p-1.5',
+                  'border p-1.5',
                   previewBg === 'light'
                     ? 'border-primary bg-primary text-white'
                     : 'border-neutral-200 bg-white hover:bg-neutral-100',
@@ -747,7 +747,7 @@ export default function EmailSignatureGenerator() {
                 type='button'
                 onClick={() => setPreviewBg('dark')}
                 className={cn(
-                  'rounded-md border p-1.5',
+                  'border p-1.5',
                   previewBg === 'dark'
                     ? 'border-primary bg-primary text-white'
                     : 'border-neutral-200 bg-white hover:bg-neutral-100',
@@ -760,7 +760,7 @@ export default function EmailSignatureGenerator() {
                 type='button'
                 onClick={() => setPreviewBg('checker')}
                 className={cn(
-                  'rounded-md border p-1.5',
+                  'border p-1.5',
                   previewBg === 'checker'
                     ? 'border-primary bg-primary text-white'
                     : 'border-neutral-200 bg-white hover:bg-neutral-100',
@@ -893,12 +893,12 @@ export default function EmailSignatureGenerator() {
                   <button
                     type='button'
                     onClick={() => setShowSourceModal(false)}
-                    className='rounded-md p-1.5 hover:bg-neutral-100'
+                    className='p-1.5 hover:bg-neutral-100'
                   >
                     <RiCloseLine className={normalIconSizeClasses} />
                   </button>
                 </div>
-                <pre className='max-h-[60vh] overflow-auto rounded-md bg-neutral-50 p-4 text-xs! leading-relaxed break-all whitespace-pre-wrap'>
+                <pre className='max-h-[60vh] overflow-auto bg-neutral-50 p-4 text-xs! leading-relaxed break-all whitespace-pre-wrap'>
                   {signatureHtml}
                 </pre>
                 <div className='mt-4 flex gap-2'>

@@ -184,7 +184,7 @@ export default function SectionSteps({
                       <div className='mb-4 flex justify-start'>
                         <div
                           className={cn(
-                            'h-12 w-12 rounded-lg bg-primary-light text-primary',
+                            'h-12 w-12 bg-primary-light text-primary',
                             flexCenterClasses,
                           )}
                         >

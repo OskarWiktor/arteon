@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { RiArrowUpLine } from 'react-icons/ri';
+import { TriangleUp } from '@/components/atoms/icons/Triangle';
 import { useEventListener } from '@/hooks/useEventListener';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
 import ButtonCircle from './ButtonCircle';
@@ -47,7 +47,7 @@ export default function ButtonToTop({
       ariaLabel={label}
       className='fixed right-5 bottom-5 z-50'
     >
-      <RiArrowUpLine aria-hidden className={normalIconSizeClasses} />
+      <TriangleUp aria-hidden className={normalIconSizeClasses} />
     </ButtonCircle>
   );
 }

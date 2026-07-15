@@ -37,10 +37,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
       {title && <SectionHeader titleId={headingId} title={title} />}
 
       <div className='space-y-4'>
-        <div
-          className='flex gap-2 rounded-lg bg-primary-light p-1.5'
-          role='tablist'
-        >
+        <div className='flex gap-2 bg-primary-light p-1.5' role='tablist'>
           {tabs.map((tab, index) => (
             <button
               key={index}
@@ -51,7 +48,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
               id={`tab-${autoId}-${index}`}
               onClick={() => setActiveTab(index)}
               className={cn(
-                'flex-1 gap-2 rounded-md px-4 py-3 text-sm font-medium transition',
+                'flex-1 gap-2 px-4 py-3 text-sm font-medium transition',
                 flexCenterClasses,
                 {
                   'bg-white text-primary shadow-sm': activeTab === index,
@@ -69,7 +66,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
           id={`tabpanel-${autoId}-${activeTab}`}
           role='tabpanel'
           aria-labelledby={`tab-${autoId}-${activeTab}`}
-          className='rounded-lg border border-neutral-200 bg-white p-6'
+          className='border border-neutral-200 bg-white p-6'
         >
           {/* Keyed by activeTab so the entrance animation replays on each
               switch, giving a soft cross-fade between tab contents. */}

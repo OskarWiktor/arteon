@@ -35,7 +35,7 @@ export default function ContactPageSkeleton() {
             <Shimmer className='h-4 w-28' />
             <Shimmer className='h-32 w-full' />
           </div>
-          <Shimmer className='h-11 w-32 rounded-lg!' />
+          <Shimmer className='h-11 w-32' />
         </div>
 
         <DividerSkeleton variant='line' />
@@ -52,7 +52,7 @@ export default function ContactPageSkeleton() {
                 padding='md'
                 className='flex items-start gap-4'
               >
-                <Shimmer className='h-10 w-10 shrink-0 rounded-lg!' />
+                <Shimmer className='h-10 w-10 shrink-0' />
                 <div className='flex-1 space-y-2'>
                   <Shimmer className='h-5 w-1/2' />
                   <Shimmer className='h-4 w-3/4' />

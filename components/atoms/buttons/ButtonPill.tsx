@@ -12,7 +12,7 @@ interface ButtonPillProps<T extends string | number> {
 }
 
 const buttonPillClasses =
-  'flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px] transition';
+  'flex items-center gap-2 border px-3 py-1.5 text-[14px] transition';
 
 export default function ButtonPill<T extends string | number>({
   value,

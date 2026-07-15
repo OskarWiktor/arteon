@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { RiArrowDownSLine, RiArrowRightSLine } from 'react-icons/ri';
+import { TriangleDown, TriangleRight } from '@/components/atoms/icons/Triangle';
 import Wrapper from '@/components/atoms/Wrapper';
 import {
   DESKTOP_NAV_ITEMS_PL,
@@ -85,7 +85,7 @@ function ToolsNavItem({
         aria-controls={menuId}
         ref={btnRef}
         className={cn(
-          '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
+          '-mr-3.5 h-7 w-7 cursor-pointer text-primary transition-colors hover:bg-primary-light',
           flexCenterClasses,
           focusRingClasses,
         )}
@@ -95,10 +95,7 @@ function ToolsNavItem({
           className='inline-flex transition-transform duration-200'
           style={{ transform: isOpen ? 'rotate(180deg)' : undefined }}
         >
-          <RiArrowDownSLine
-            className={smallIconSizeClasses}
-            aria-hidden='true'
-          />
+          <TriangleDown className={smallIconSizeClasses} aria-hidden='true' />
         </span>
       </button>
     </li>
@@ -152,7 +149,7 @@ function OfferNavItem({
         aria-controls={menuId}
         ref={btnRef}
         className={cn(
-          '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
+          '-mr-3.5 h-7 w-7 cursor-pointer text-primary transition-colors hover:bg-primary-light',
           flexCenterClasses,
           focusRingClasses,
         )}
@@ -162,10 +159,7 @@ function OfferNavItem({
           className='inline-flex transition-transform duration-200'
           style={{ transform: isOpen ? 'rotate(180deg)' : undefined }}
         >
-          <RiArrowDownSLine
-            className={smallIconSizeClasses}
-            aria-hidden='true'
-          />
+          <TriangleDown className={smallIconSizeClasses} aria-hidden='true' />
         </span>
       </button>
     </li>
@@ -180,7 +174,7 @@ function OfferItemLink({ item }: { item: OfferSectionItem }) {
       href={item.href}
       role='menuitem'
       tabIndex={-1}
-      className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
+      className='group/link gap-3 px-3 py-2.5 transition-colors duration-150 hover:bg-white'
     >
       {ItemIcon ? (
         <ItemIcon
@@ -191,7 +185,7 @@ function OfferItemLink({ item }: { item: OfferSectionItem }) {
           aria-hidden='true'
         />
       ) : (
-        <span className='h-2 w-2 shrink-0 rounded-lg bg-primary-light' />
+        <span className='h-2 w-2 shrink-0 bg-primary-light' />
       )}
       <span className='text-sm font-medium text-primary transition-colors group-hover/link:text-primary'>
         {item.title}
@@ -516,7 +510,7 @@ export default function DesktopNavigation() {
                           onMouseEnter={() => handleCategoryHover(section.key)}
                           onFocus={() => handleCategoryHover(section.key)}
                           className={cn(
-                            'group/cat w-full justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200',
+                            'group/cat w-full justify-between gap-3 px-4 py-3 text-left transition-all duration-200',
                             {
                               'bg-white text-primary': isActiveCategory,
                               'text-primary-mid hover:bg-white hover:text-primary':
@@ -543,7 +537,7 @@ export default function DesktopNavigation() {
                               {section.title}
                             </span>
                           </span>
-                          <RiArrowRightSLine
+                          <TriangleRight
                             className={cn(
                               'transition-all duration-200',
                               smallIconSizeClasses,
@@ -640,7 +634,7 @@ export default function DesktopNavigation() {
                           }
                           onFocus={() => handleToolsCategoryHover(section.key)}
                           className={cn(
-                            'group/cat flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200',
+                            'group/cat flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition-all duration-200',
                             {
                               'bg-white text-primary': isActiveCategory,
                               'text-primary-mid hover:bg-white hover:text-primary':
@@ -667,7 +661,7 @@ export default function DesktopNavigation() {
                               {section.title}
                             </span>
                           </span>
-                          <RiArrowRightSLine
+                          <TriangleRight
                             className={cn(
                               'transition-all duration-200',
                               smallIconSizeClasses,
@@ -717,7 +711,7 @@ export default function DesktopNavigation() {
                             href={item.href}
                             role='menuitem'
                             tabIndex={-1}
-                            className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
+                            className='group/link gap-3 px-3 py-2.5 transition-colors duration-150 hover:bg-white'
                           >
                             {ItemIcon ? (
                               <ItemIcon
@@ -728,7 +722,7 @@ export default function DesktopNavigation() {
                                 aria-hidden='true'
                               />
                             ) : (
-                              <span className='h-2 w-2 shrink-0 rounded-lg bg-primary-light' />
+                              <span className='h-2 w-2 shrink-0 bg-primary-light' />
                             )}
                             <span className='text-sm font-medium text-primary transition-colors group-hover/link:text-primary'>
                               {item.title}

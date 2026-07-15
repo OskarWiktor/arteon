@@ -20,7 +20,7 @@ type ShareBlockProps = {
 // These buttons sit on fixed brand/black backgrounds, so the label must stay
 // light in both themes - `on-dark` (not `white`, which darkens as a surface token).
 const shareBlockLinkClasses =
-  'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-on-dark transition hover:opacity-90';
+  'flex items-center gap-2 px-4 py-2 text-sm font-medium text-on-dark transition hover:opacity-90';
 
 /**
  * Render a share panel with buttons for Facebook, X (Twitter), LinkedIn, e-mail, and a copy-link action.
@@ -85,7 +85,7 @@ export default function ShareBlock({ url, title }: ShareBlockProps) {
         <a
           href={mailHref}
           className={cn(
-            'flex items-center gap-2 rounded-lg border border-neutral-200 bg-white px-4 py-2 text-sm font-medium text-primary transition hover:bg-neutral-50',
+            'flex items-center gap-2 border border-neutral-200 bg-white px-4 py-2 text-sm font-medium text-primary transition hover:bg-neutral-50',
             focusRingClasses,
           )}
         >

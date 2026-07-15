@@ -1,8 +1,8 @@
 'use client';
 
-import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
+import { TriangleLeft, TriangleRight } from '@/components/atoms/icons/Triangle';
 import { cn } from '@/lib/clsx';
-import { largeIconSizeClasses } from '@/lib/uiClasses';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import ButtonCircle from '../../atoms/buttons/ButtonCircle';
 
 type CarouselNavButtonsProps = {
@@ -14,7 +14,7 @@ type CarouselNavButtonsProps = {
 };
 
 const carouselNavButtonsClasses =
-  'absolute bottom-[-42px] z-10 max-h-12 max-w-12 bg-[#1C1F32]';
+  'absolute bottom-[-42px] z-10 h-12 w-12 bg-[#1C1F32]';
 
 export function CarouselNavButtons({
   isScrollable,
@@ -32,15 +32,18 @@ export function CarouselNavButtons({
         ariaLabel={prevLabel}
         className={cn('left-2`', carouselNavButtonsClasses)}
       >
-        <RiArrowLeftSLine className={largeIconSizeClasses} aria-hidden='true' />
+        <TriangleLeft
+          className={cn(normalIconSizeClasses, 'mr-1')}
+          aria-hidden='true'
+        />
       </ButtonCircle>
       <ButtonCircle
         onClick={onNext}
         ariaLabel={nextLabel}
         className={cn('left-14 md:left-18', carouselNavButtonsClasses)}
       >
-        <RiArrowRightSLine
-          className={largeIconSizeClasses}
+        <TriangleRight
+          className={cn(normalIconSizeClasses, 'ml-1')}
           aria-hidden='true'
         />
       </ButtonCircle>

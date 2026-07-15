@@ -57,13 +57,13 @@ export default function AppearancePanel({
                 <>
                   <span
                     className={cn(
-                      'rounded-lg border border-neutral-300',
+                      'border border-neutral-300',
                       flexCenterClasses,
                       smallIconSizeClasses,
                     )}
                   >
                     <span
-                      className='h-3 w-3 rounded-lg'
+                      className='h-3 w-3'
                       style={{ backgroundColor: preset.accentColor }}
                     />
                   </span>

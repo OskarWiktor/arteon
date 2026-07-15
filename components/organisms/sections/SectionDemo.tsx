@@ -35,7 +35,7 @@ export default function SectionDemo({
             'lg:order-2': variant === 'left',
           })}
         >
-          <div className='w-full rounded-lg border border-neutral-200 bg-neutral-50 p-4 md:p-6'>
+          <div className='w-full border border-neutral-200 bg-neutral-50 p-4 md:p-6'>
             {demo}
           </div>
         </div>

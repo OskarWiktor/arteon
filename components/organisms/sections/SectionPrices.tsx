@@ -108,7 +108,7 @@ export default function SectionPrices({
                     {plan.badgeLabel && (
                       <span
                         className={cn(
-                          'rounded-full px-3 py-1 text-xs font-semibold tracking-wide uppercase',
+                          'px-3 py-1 text-xs font-semibold tracking-wide uppercase',
                           isHighlighted
                             ? 'bg-white/15 text-on-dark'
                             : 'bg-primary-light text-primary',
@@ -118,7 +118,7 @@ export default function SectionPrices({
                       </span>
                     )}
                     {isHighlighted && (
-                      <span className='inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary'>
+                      <span className='inline-flex items-center gap-1 bg-white px-3 py-1 text-xs font-semibold text-primary'>
                         <RiStarFill className='h-3 w-3' aria-hidden='true' />
                         {plan.popularLabel ?? 'Popularne'}
                       </span>
@@ -236,12 +236,12 @@ export default function SectionPrices({
 
       {note && (
         <div
-          className='mt-10 flex flex-col gap-4 rounded-lg bg-primary-light p-6 md:flex-row md:items-center md:gap-6 md:p-8'
+          className='mt-10 flex flex-col gap-4 bg-primary-light p-6 md:flex-row md:items-center md:gap-6 md:p-8'
           role='note'
           aria-label='Bonus'
         >
           {note.badgeLabel && (
-            <div className='flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-primary text-on-dark'>
+            <div className='flex h-14 w-14 shrink-0 items-center justify-center bg-primary text-on-dark'>
               <RiGiftLine className='h-7 w-7' aria-hidden='true' />
             </div>
           )}
@@ -254,7 +254,7 @@ export default function SectionPrices({
                   </h3>
                 )}
                 {note.badgeLabel && (
-                  <span className='rounded-full bg-primary px-3 py-1 text-xs font-semibold text-on-dark'>
+                  <span className='bg-primary px-3 py-1 text-xs font-semibold text-on-dark'>
                     {note.badgeLabel}
                   </span>
                 )}

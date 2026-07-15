@@ -55,7 +55,7 @@ export function CarouselDots({
             <span
               aria-hidden='true'
               className={cn(
-                'mx-auto block h-3 w-4 rounded-sm transition md:w-8',
+                'mx-auto block h-3 w-3 transition md:h-4 md:w-4',
                 i === currentSlide ? 'bg-[#1C1F32]' : 'bg-[#C6B7A2]',
               )}
             />

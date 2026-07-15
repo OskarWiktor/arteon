@@ -424,7 +424,7 @@ export default function JpgPngToWebp() {
                     <button
                       type='button'
                       onClick={() => previewFile(item.id)}
-                      className='hidden h-12 w-12 overflow-hidden rounded-md border border-neutral-200 bg-neutral-50 md:block'
+                      className='hidden h-12 w-12 overflow-hidden border border-neutral-200 bg-neutral-50 md:block'
                       title={t.actions.preview}
                     >
                       {item.previewUrl && (

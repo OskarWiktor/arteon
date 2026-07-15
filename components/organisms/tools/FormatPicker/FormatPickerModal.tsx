@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { useEffect, useRef, useState, cache } from 'react';
-import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
+import { RiCloseLine } from 'react-icons/ri';
+import { TriangleDown } from '@/components/atoms/icons/Triangle';
 import { cn } from '@/lib/clsx';
 import { getToolHref } from '@/lib/i18n/toolRegistry';
 import { getUnitConverterI18n } from '@/lib/i18n/unitConverter';
@@ -247,7 +248,7 @@ export default function FormatPickerModal({
         type='button'
         onClick={handleToggle}
         className={cn(
-          'inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-light',
+          'inline-flex items-center gap-1.5 border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-light',
           focusRingClasses,
         )}
         aria-expanded={open}
@@ -257,7 +258,7 @@ export default function FormatPickerModal({
           (currentFormat
             ? FORMAT_DISPLAY_LABELS[currentFormat as UniversalFormat]
             : '')}
-        <RiArrowDownSLine
+        <TriangleDown
           className={cn('transition-transform', smallIconSizeClasses, {
             'rotate-180': open,
           })}
@@ -277,7 +278,7 @@ export default function FormatPickerModal({
 
           <div
             ref={panelRef}
-            className='fixed inset-x-4 top-1/2 z-50 max-h-[80vh] -translate-y-1/2 overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-2xl md:absolute md:inset-x-auto md:top-full md:left-1/2 md:mt-2 md:max-h-105 md:w-130 md:-translate-x-1/2 md:translate-y-0 md:rounded-lg md:shadow-lg'
+            className='fixed inset-x-4 top-1/2 z-50 max-h-[80vh] -translate-y-1/2 overflow-hidden border border-neutral-200 bg-white shadow-2xl md:absolute md:inset-x-auto md:top-full md:left-1/2 md:mt-2 md:max-h-105 md:w-130 md:-translate-x-1/2 md:translate-y-0 md:shadow-lg'
             role='dialog'
             aria-modal='true'
           >
@@ -296,7 +297,7 @@ export default function FormatPickerModal({
               <button
                 type='button'
                 onClick={() => setOpen(false)}
-                className='rounded-md p-1 hover:bg-neutral-100'
+                className='p-1 hover:bg-neutral-100'
               >
                 <RiCloseLine className={normalIconSizeClasses} />
               </button>
@@ -311,7 +312,7 @@ export default function FormatPickerModal({
                     type='button'
                     onClick={() => setActiveCategory(cat.key)}
                     className={cn(
-                      'rounded-md px-3 py-2.5 text-left text-xs font-medium transition-colors',
+                      'px-3 py-2.5 text-left text-xs font-medium transition-colors',
                       {
                         'bg-primary/10 text-primary':
                           activeCategory === cat.key,
@@ -335,7 +336,7 @@ export default function FormatPickerModal({
                           <span
                             key={item.id}
                             className={cn(
-                              'rounded-md bg-primary px-2 py-2.5 text-center text-xs font-semibold text-white',
+                              'bg-primary px-2 py-2.5 text-center text-xs font-semibold text-white',
                               flexCenterClasses,
                             )}
                             aria-current='true'
@@ -349,7 +350,7 @@ export default function FormatPickerModal({
                           <span
                             key={item.id}
                             className={cn(
-                              'cursor-not-allowed rounded-md border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300',
+                              'cursor-not-allowed border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300',
                               flexCenterClasses,
                             )}
                             aria-disabled='true'
@@ -365,7 +366,7 @@ export default function FormatPickerModal({
                           scroll={false}
                           onClick={e => handleLinkClick(e, item.href)}
                           className={cn(
-                            'rounded-md border border-primary/20 bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors hover:border-primary/40 hover:bg-primary/5',
+                            'border border-primary/20 bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors hover:border-primary/40 hover:bg-primary/5',
                             flexCenterClasses,
                           )}
                           prefetch={false}
@@ -404,7 +405,7 @@ export default function FormatPickerModal({
                           <span
                             key={fmt}
                             className={cn(
-                              'rounded-md bg-primary px-2 py-2.5 text-center text-xs font-semibold text-white',
+                              'bg-primary px-2 py-2.5 text-center text-xs font-semibold text-white',
                               flexCenterClasses,
                             )}
                             aria-current='true'
@@ -419,7 +420,7 @@ export default function FormatPickerModal({
                           <span
                             key={fmt}
                             className={cn(
-                              'cursor-not-allowed rounded-md border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300',
+                              'cursor-not-allowed border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300',
                               flexCenterClasses,
                             )}
                             aria-disabled='true'
@@ -436,7 +437,7 @@ export default function FormatPickerModal({
                           scroll={false}
                           onClick={e => handleLinkClick(e, href)}
                           className={cn(
-                            'rounded-md border border-primary/20 bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors hover:border-primary/40 hover:bg-primary/5',
+                            'border border-primary/20 bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors hover:border-primary/40 hover:bg-primary/5',
                             flexCenterClasses,
                           )}
                           prefetch={false}

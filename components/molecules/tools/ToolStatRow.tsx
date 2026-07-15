@@ -16,7 +16,7 @@ export default function ToolStatRow({
   return (
     <div
       className={cn(
-        'rounded-md border border-neutral-200 bg-white px-3 py-2',
+        'border border-neutral-200 bg-white px-3 py-2',
         flexCenterBetweenClasses,
         className,
       )}

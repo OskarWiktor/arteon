@@ -364,7 +364,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
           </p>
           <div className='mt-6 grid grid-cols-1 gap-4 md:grid-cols-2'>
             <figure>
-              <div className='relative aspect-16/10 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50'>
+              <div className='relative aspect-16/10 overflow-hidden'>
                 <Image
                   src='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-wczesniejszy-wyglad-strony-stworzony-w-wix.webp'
                   alt='Stara strona firmy budowlanej Izoluk zbudowana na Wix - przed przebudową'
@@ -378,7 +378,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
               </figcaption>
             </figure>
             <figure>
-              <div className='relative aspect-16/10 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50'>
+              <div className='relative aspect-16/10 overflow-hidden'>
                 <Image
                   src='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-projekt-realizacji-stworzony-w-figma.webp'
                   alt='Nowa strona firmy budowlanej Izoluk zaprojektowana przez Arteon - po przebudowie'
@@ -689,7 +689,7 @@ export default function StronaDlaFirmyBudowlanejPage() {
             alt='Przykład wzrostu widoczności w Google strony zbudowanej w technologii Next.js - dane Ahrefs dla https://www.arteonagency.pl/'
             width={946}
             height={297}
-            className='h-auto w-full rounded-lg border border-neutral-200'
+            className='h-auto w-full'
             sizes='(min-width:1024px) 48rem, 100vw'
           />
           <figcaption className='mt-2 text-center text-xs text-light'>
