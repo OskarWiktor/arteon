@@ -1,0 +1,284 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter metrów na stopy – przelicz metry na stopy",
+    "description": "Przelicz metry na stopy. Sprawdź gotowe tabele, które obejmują wzrost w stopach i calach (1,80 m to 5 stóp 11 cali), popularne wymiary oraz dystanse. Konwerter metrów na stopy działa w obu kierunkach i liczy natychmiast.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-metrow-na-stopy"
+  },
+  "hero": {
+    "title": "Przelicz metry na stopy",
+    "description": "Wpisz dowolną wartość w metrach i od razu odczytaj wynik w stopach. Przelicznik przydaje się przy podawaniu wzrostu osobom z USA i Wielkiej Brytanii, czytaniu wymiarów sprzętu opisanego w stopach oraz sprawdzaniu wysokości w lotnictwie. W dalszej części strony znajdziesz osobną tabelę wzrostu, która pokazuje wynik w stopach i calach.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-metrow-na-stopy",
+      "label": "metry na stopy"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik metrów na stopy – konwerter metrów na stopy",
+      "alternateName": [
+        "Konwerter metrów na stopy",
+        "Kalkulator metrów na stopy",
+        "Przelicznik metrów na stopy",
+        "Metry na stopy",
+        "metry na ft",
+        "Przelicz metry na stopy",
+        "Zamiana metrów na stopy",
+        "Ile stóp ma metr",
+        "1 metr ile to stóp",
+        "Wzrost w stopach i calach",
+        "1,80 m ile to stóp",
+        "Tabela metrów na stopy",
+        "Ile stóp ma 100 metrów",
+        "meters to feet",
+        "Konwerter metrów"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik metrów na stopy działający w przeglądarce bez rejestracji. Wpisz wartość w metrach i natychmiast odczytaj wynik w stopach. Przydatny przy podawaniu wzrostu w krajach anglojęzycznych, wymiarach sprzętu oraz wysokości w lotnictwie.",
+      "featureList": [
+        "Konwersja działa w obie strony, więc przeliczysz zarówno metry na stopy, jak i stopy na metry",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Gotowy wynik można skopiować do schowka jednym kliknięciem",
+        "Tabela przeliczeniowa obejmuje wartości od 1 do 500 metrów",
+        "Osobna tabela wzrostu pokazuje, ile stóp i cali odpowiada wartościom od 1,50 m do 2,00 m",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór konwersji to stopy = metry ÷ 0,3048",
+        "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć metry na stopy?",
+      "description": "Krótka instrukcja użycia konwertera metrów na stopy.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość w metrach",
+          "text": "W lewym polu wpisz liczbę metrów, którą chcesz przeliczyć na stopy."
+        },
+        {
+          "name": "Odczytaj wynik w stopach",
+          "text": "Wynik w stopach pojawi się od razu w polu obok, po prawej stronie. Możesz go skopiować do schowka jednym kliknięciem."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przełączyć konwerter na przeliczanie stóp na metry."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać metry na stopy?",
+      "html": "<p class=\"text-mid mb-4\">Metr to podstawowa jednostka długości w Polsce i większości świata. Stopa obowiązuje przede wszystkim w Stanach Zjednoczonych i Wielkiej Brytanii, dlatego metry przelicza się na stopy głównie w kontakcie z zagranicą: gdy podajesz komuś swój wzrost, czytasz wymiary sprzętu opisane w stopach albo sprawdzasz wysokość lotu, którą lotnictwo na całym świecie podaje właśnie w stopach.</p><p class=\"text-mid mb-4\">Jedna stopa to dokładnie 0,3048 metra, a jeden metr to około 3,28 stopy. Zależność jest stała, więc każde przeliczenie sprowadza się do jednego dzielenia. Konwerter robi to za Ciebie od razu po wpisaniu wartości.</p><p class=\"text-mid mb-4\">Przy wzroście jest jeden haczyk: w krajach anglojęzycznych nie mówi się „5,91 stopy\", tylko „5 stóp 11 cali\". Konwerter podaje wynik w stopach dziesiętnych, dlatego niżej znajdziesz osobną tabelę wzrostu, która przelicza metry na stopy i cale.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter metrów na stopy – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja metrów na stopy? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie metrów na stopy opiera się na stałej zależności: jedna stopa to dokładnie 0,3048 metra. Aby zamienić metry na stopy, dzielisz liczbę metrów przez 0,3048 (to samo co mnożenie przez 3,280839895).</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>stopy = metry ÷ 0,3048</strong>. W drugą stronę: <strong>metry = stopy × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile stóp ma 1,80 m. Podstawiasz: 1,80 ÷ 0,3048 = 5,91 stopy. To nie znaczy „5 stóp i 91 cali\" – część dziesiętna to ułamek stopy. Aby otrzymać cale, mnożysz ją przez 12: 0,91 × 12 = 11 cali, czyli 1,80 m to 5 stóp 11 cali.</p><p class=\"text-mid\">Inny przykład: sprinterski dystans 100 m to 100 ÷ 0,3048 = 328,08 stopy. Konwerter wykonuje oba kierunki obliczeń natychmiast po wpisaniu wartości.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa metrów na stopy",
+      "description": "Poniższa tabela zawiera przeliczenie popularnych wartości w metrach na stopy dziesiętne. Wartości zaokrąglono do dwóch miejsc po przecinku. Aby przeliczyć dokładną wartość lub inny wymiar, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Metry",
+      "cols": ["Stopy"],
+      "rows": [
+        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
+        { "label": "1,6 m", "values": ["5,25 ft"] },
+        { "label": "1,7 m", "values": ["5,58 ft"] },
+        { "label": "1,75 m", "values": ["5,74 ft"] },
+        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
+        { "label": "1,9 m", "values": ["6,23 ft"] },
+        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
+        { "label": "2,5 m", "values": ["8,20 ft"] },
+        { "label": "3 m", "values": ["9,84 ft"] },
+        { "label": "4 m", "values": ["13,12 ft"] },
+        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
+        { "label": "6 m", "values": ["19,69 ft"] },
+        { "label": "7 m", "values": ["22,97 ft"] },
+        { "label": "8 m", "values": ["26,25 ft"] },
+        { "label": "9 m", "values": ["29,53 ft"] },
+        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
+        { "label": "15 m", "values": ["49,21 ft"] },
+        { "label": "20 m", "values": ["65,62 ft"] },
+        { "label": "25 m", "values": ["82,02 ft"] },
+        { "label": "30 m", "values": ["98,43 ft"] },
+        { "label": "40 m", "values": ["131,23 ft"] },
+        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
+        { "label": "60 m", "values": ["196,85 ft"] },
+        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
+        { "label": "200 m", "values": ["656,17 ft"] },
+        { "label": "500 m", "values": ["1 640,42 ft"] }
+      ],
+      "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-stop-na-metry\">stóp na metry</a> z pełną tabelą dla wymiarów podawanych w stopach."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela wzrostu: metry na stopy i cale",
+      "description": "W krajach anglojęzycznych wzrost podaje się w stopach i calach, a nie w stopach dziesiętnych. Poniższa tabela pokazuje obie formy: wynik konwertera w stopach oraz zapis używany w rozmowie. Cale zaokrąglono do pełnej wartości.",
+      "labelHeader": "Wzrost",
+      "cols": ["Stopy (dziesiętnie)", "Stopy i cale"],
+      "rows": [
+        { "label": "1,50 m", "values": ["4,92 ft", "4 stopy 11 cali"] },
+        { "label": "1,55 m", "values": ["5,09 ft", "5 stóp 1 cal"] },
+        {
+          "label": "1,60 m",
+          "values": ["5,25 ft", "5 stóp 3 cale"],
+          "emphasis": true
+        },
+        { "label": "1,65 m", "values": ["5,41 ft", "5 stóp 5 cali"] },
+        {
+          "label": "1,70 m",
+          "values": ["5,58 ft", "5 stóp 7 cali"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft", "5 stóp 9 cali"],
+          "emphasis": true
+        },
+        { "label": "1,78 m", "values": ["5,84 ft", "5 stóp 10 cali"] },
+        {
+          "label": "1,80 m",
+          "values": ["5,91 ft", "5 stóp 11 cali"],
+          "emphasis": true
+        },
+        { "label": "1,85 m", "values": ["6,07 ft", "6 stóp 1 cal"] },
+        {
+          "label": "1,90 m",
+          "values": ["6,23 ft", "6 stóp 3 cale"],
+          "emphasis": true
+        },
+        { "label": "1,95 m", "values": ["6,40 ft", "6 stóp 5 cali"] },
+        {
+          "label": "2,00 m",
+          "values": ["6,56 ft", "6 stóp 7 cali"],
+          "emphasis": true
+        }
+      ],
+      "caption": "Cale otrzymujesz, mnożąc część dziesiętną stopy przez 12. Przykład: 5,91 ft, czyli 0,91 × 12 = 11 cali."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się metry na stopy?",
+      "description": "Stopy pojawiają się w polskim życiu głównie przy kontakcie z zagranicą. Każda z poniższych sytuacji ma własną specyfikę.",
+      "items": [
+        {
+          "title": "Wzrost w rozmowie z obcokrajowcem",
+          "description": "To najczęstszy powód przeliczania metrów na stopy. Amerykanin czy Brytyjczyk zwykle nie ma wyczucia, ile to jest „180 cm\", za to od razu wie, jak wysoka jest osoba mierząca „5 stóp 11 cali\". Pamiętaj, że wynik konwertera (5,91 ft) to stopy dziesiętne, a nie stopy i cale – zapis do rozmowy znajdziesz w tabeli wzrostu powyżej."
+        },
+        {
+          "title": "Wysokość w lotnictwie",
+          "description": "Lotnictwo na całym świecie, także w Polsce, podaje wysokość w stopach. Poziom lotu FL100 to 10 000 stóp, czyli około 3 048 m. Jeśli czytasz dane lotu albo interesujesz się lataniem, przeliczenie pozwala odnieść te wartości do znanych Ci metrów."
+        },
+        {
+          "title": "Wymiary sprzętu i pomieszczeń",
+          "description": "Katalogi z rynku amerykańskiego podają długość desek, kabli czy wysokość pomieszczeń w stopach. Standardowa wysokość pokoju 8 stóp to 2,44 m, a 10 stóp to 3,05 m. Przeliczenie pomaga ocenić, czy sprzęt zmieści się w Twoim wnętrzu."
+        },
+        {
+          "title": "Sport i pływanie",
+          "description": "Basen o długości 25 m to 82,02 stopy, a dystans 100 m to 328,08 stopy. W materiałach anglojęzycznych dystanse bywają podawane w stopach lub jardach, dlatego przeliczenie ułatwia porównanie wyników z polskimi obiektami."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie metrów na stopy",
+      "items": [
+        {
+          "question": "Ile stóp ma 1 metr?",
+          "answer": "1 metr to 3,28 stopy. Obliczenie: 1 ÷ 0,3048 = 3,28 ft. Dokładna wartość to 3,280839895 stopy."
+        },
+        {
+          "question": "Czy 1 metr to dokładnie 3 stopy?",
+          "answer": "Nie. 1 metr to 3,28 stopy, czyli o ponad ćwierć stopy więcej niż 3 stopy. Same 3 stopy to 0,91 m, więc różnica wynosi około 9 centymetrów."
+        },
+        {
+          "question": "Czy 2 metry to 6 stóp?",
+          "answer": "Nie. 2 metry to 6,56 stopy, czyli 6 stóp i 7 cali. Samo 6 stóp to 1,83 m, więc 2 metry są o 17 centymetrów wyższe."
+        },
+        {
+          "question": "Czy 3 metry to 10 stóp?",
+          "answer": "Nie, choć są blisko. 3 metry to 9,84 stopy. Równe 10 stóp to 3,05 m, więc różnica wynosi około 5 centymetrów."
+        },
+        {
+          "question": "Ile stóp ma 1,80 m?",
+          "answer": "1,80 m to 5,91 stopy, czyli 5 stóp 11 cali. Obliczenie: 1,80 ÷ 0,3048 = 5,91 ft, a część dziesiętną zamieniasz na cale: 0,91 × 12 = 11 cali."
+        },
+        {
+          "question": "Ile stóp ma 1,75 m?",
+          "answer": "1,75 m to 5,74 stopy, czyli 5 stóp 9 cali. Obliczenie: 1,75 ÷ 0,3048 = 5,74 ft."
+        },
+        {
+          "question": "Ile stóp ma 1,60 m?",
+          "answer": "1,60 m to 5,25 stopy, czyli 5 stóp 3 cale. Obliczenie: 1,60 ÷ 0,3048 = 5,25 ft."
+        },
+        {
+          "question": "Czy 1,78 m to 5 stóp i 10 cali?",
+          "answer": "Tak. 1,78 m to 5,84 stopy, co po zamianie części dziesiętnej na cale daje 5 stóp 10 cali. To jeden z najczęściej podawanych wzrostów w krajach anglojęzycznych."
+        },
+        {
+          "question": "Ile stóp ma 100 metrów?",
+          "answer": "100 metrów to 328,08 stopy. Obliczenie: 100 ÷ 0,3048 = 328,08 ft."
+        },
+        {
+          "question": "Ile stóp mają 2, 5 i 10 metrów?",
+          "answer": "2 metry to 6,56 ft, 5 metrów to 16,40 ft, a 10 metrów to 32,81 ft. Każdą z tych wartości otrzymujesz, dzieląc liczbę metrów przez 0,3048."
+        },
+        {
+          "question": "Jak zamienić stopy dziesiętne na stopy i cale?",
+          "answer": "Część całkowitą zostawiasz jako stopy, a część dziesiętną mnożysz przez 12, żeby otrzymać cale. Przykład: 5,91 stopy to 5 stóp, a 0,91 × 12 = 11 cali, czyli 5 stóp 11 cali. Konwerter podaje wynik w stopach dziesiętnych – gotowe wartości dla wzrostu znajdziesz w tabeli powyżej."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie metrów na stopy?",
+          "answer": "Wzór to: stopy = metry ÷ 0,3048, co jest równoznaczne z mnożeniem przez 3,280839895. Na przykład 6 m ÷ 0,3048 = 19,69 ft. W drugą stronę: metry = stopy × 0,3048."
+        },
+        {
+          "question": "Czy ten konwerter przelicza stopy kwadratowe na metry kwadratowe?",
+          "answer": "Nie. To narzędzie przelicza długość, a stopa kwadratowa to jednostka powierzchni. Przelicznik jest inny: 1 stopa kwadratowa to 0,092903 metra kwadratowego, więc powierzchnię w stopach kwadratowych mnożysz przez 0,092903."
+        },
+        {
+          "question": "Czy przeliczę tu niutonometry na funto-stopy?",
+          "answer": "Nie. Niutonometry (Nm) i funto-stopy (ft-lb) to jednostki momentu obrotowego, a nie długości, więc ten konwerter ich nie obsługuje. Podobieństwo nazwy bierze się tylko stąd, że w obu jednostkach występuje metr i stopa."
+        },
+        {
+          "question": "Jak szybko przeliczyć metry na stopy w pamięci?",
+          "answer": "Najprościej pomnożyć liczbę metrów przez 3,3, czyli pomnożyć przez 3 i dodać jeszcze 10%. Dla 5 m daje to 15 + 1,5 = 16,5 ft, przy dokładnej wartości 16,40 ft – wynik jest lekko zawyżony, ale wystarcza do orientacji. Do precyzyjnych obliczeń użyj konwertera."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "subject": "Konwerter metrów na stopy"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    }
+  ]
+}

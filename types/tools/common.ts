@@ -97,6 +97,8 @@ export type ToolItemKey =
   | 'inchesToMm'
   | 'milesToKm'
   | 'kmToMiles'
+  | 'metersToFeet'
+  | 'feetToMeters'
   | 'kgToLb'
   | 'lbToKg'
   | 'hexToRgb'

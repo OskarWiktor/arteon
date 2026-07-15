@@ -5058,6 +5058,118 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'metersToFeet',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-metrow-na-stopy',
+        title: 'metry na stopy',
+        description:
+          'Przelicz metry na stopy. Wzrost w stopach i calach, wymiary, tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'meters-to-feet-converter',
+        title: 'meters to feet',
+        description:
+          'Convert meters to feet. Height in feet and inches, room and equipment sizes, full conversion table.',
+      },
+      de: {
+        slug: 'meter-in-fuss-umrechner',
+        title: 'Meter in Fuß',
+        description:
+          'Meter in Fuß umrechnen. Körpergröße in Fuß und Zoll, Flughöhen, vollständige Umrechnungstabelle.',
+      },
+      es: {
+        slug: 'convertidor-metros-a-pies',
+        title: 'metros a pies',
+        description:
+          'Convierte metros a pies. Altura en pies y pulgadas, jugadores de la NBA, tabla de conversión completa.',
+      },
+      fr: {
+        slug: 'convertisseur-metres-en-pieds',
+        title: 'mètres en pieds',
+        description:
+          'Convertissez des mètres en pieds. Taille en pieds et pouces, altitude en aviation, tableau complet.',
+      },
+      pt: {
+        slug: 'conversor-metros-para-pes',
+        title: 'metros para pés',
+        description:
+          'Converta metros em pés. Altura em pés e polegadas, jogadores da NBA, tabela de conversão completa.',
+      },
+      it: {
+        slug: 'convertitore-metri-in-piedi',
+        title: 'metri in piedi',
+        description:
+          'Converti metri in piedi. Altezza in piedi e pollici, giocatori NBA, tabella di conversione completa.',
+      },
+      cs: {
+        slug: 'prevodnik-metru-na-stopy',
+        title: 'metry na stopy',
+        description:
+          'Převeď metry na stopy. Výška v stopách a palcích, letecké výšky, úplná převodní tabulka.',
+      },
+    },
+  },
+  {
+    key: 'feetToMeters',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-stop-na-metry',
+        title: 'stopy na metry',
+        description:
+          'Przelicz stopy na metry. Wzrost w stopach i calach, wysokość w lotnictwie, tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'feet-to-meters-converter',
+        title: 'feet to meters',
+        description:
+          'Convert feet to meters. Height in feet and inches, aviation altitude, full conversion table.',
+      },
+      de: {
+        slug: 'fuss-in-meter-umrechner',
+        title: 'Fuß in Meter',
+        description:
+          'Fuß in Meter umrechnen. Körpergröße in Fuß und Zoll, Flughöhen, vollständige Umrechnungstabelle.',
+      },
+      es: {
+        slug: 'convertidor-pies-a-metros',
+        title: 'pies a metros',
+        description:
+          'Convierte pies a metros. Altura en pies y pulgadas, altitud en aviación, tabla de conversión completa.',
+      },
+      fr: {
+        slug: 'convertisseur-pieds-en-metres',
+        title: 'pieds en mètres',
+        description:
+          'Convertissez des pieds en mètres. Taille en pieds et pouces, immobilier au Québec, tableau complet.',
+      },
+      pt: {
+        slug: 'conversor-pes-para-metros',
+        title: 'pés para metros',
+        description:
+          'Converta pés em metros. Altura em pés e polegadas, altitude em aviação, tabela de conversão completa.',
+      },
+      it: {
+        slug: 'convertitore-piedi-in-metri',
+        title: 'piedi in metri',
+        description:
+          'Converti piedi in metri. Altezza in piedi e pollici, quota in aviazione, tabella di conversione completa.',
+      },
+      cs: {
+        slug: 'prevodnik-stop-na-metry',
+        title: 'stopy na metry',
+        description:
+          'Převeď stopy na metry. Výška v stopách a palcích, letecké výšky, úplná převodní tabulka.',
+      },
+    },
+  },
+  {
     key: 'kgToLb',
     section: 'jednostki',
     icon: RiRulerLine,

@@ -1,0 +1,284 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur mètres en pieds – convertir des mètres en pieds",
+    "description": "Convertissez des mètres en pieds. Consultez les tableaux prêts à l'emploi avec la taille en pieds et pouces (1,80 m font 5 pieds 11 pouces), les dimensions et les distances. Le convertisseur fonctionne dans les deux sens et calcule instantanément.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-metres-en-pieds"
+  },
+  "hero": {
+    "title": "Convertissez des mètres en pieds",
+    "description": "Saisissez n'importe quelle valeur en mètres et lisez aussitôt le résultat en pieds. Le convertisseur sert quand vous donnez votre taille à quelqu'un des États-Unis, quand vous lisez les dimensions d'un appareil indiquées en pieds ou quand vous situez une altitude en aviation. Plus bas, vous trouverez un tableau des tailles distinct qui affiche le résultat en pieds et pouces.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-metres-en-pieds",
+      "label": "mètres en pieds"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur de mètres en pieds – de m en ft",
+      "alternateName": [
+        "Convertisseur mètres en pieds",
+        "Calculateur mètres en pieds",
+        "Mètres en pieds",
+        "m en ft",
+        "Convertir des mètres en pieds",
+        "Combien de pieds dans un mètre",
+        "1 mètre en pieds",
+        "1,80 m en pieds",
+        "1,75 m en pieds",
+        "Taille en pieds et pouces",
+        "Tableau mètres pieds",
+        "Combien de pieds font 100 mètres",
+        "2 mètres en pieds",
+        "meters to feet",
+        "Convertisseur de longueur"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertisseur de mètres en pieds qui fonctionne dans le navigateur, sans inscription. Saisissez une valeur en mètres et lisez instantanément le résultat en pieds. Utile pour les tailles dans les pays anglophones, les dimensions d'appareils et les altitudes en aviation.",
+      "featureList": [
+        "La conversion fonctionne dans les deux sens : vous convertissez aussi bien des mètres en pieds que des pieds en mètres",
+        "Le résultat apparaît instantanément pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Le résultat peut être copié dans le presse-papiers en un seul clic",
+        "Le tableau de conversion couvre les valeurs de 1 à 500 mètres",
+        "Un tableau des tailles distinct indique à combien de pieds et pouces correspondent les valeurs de 1,50 m à 2,00 m",
+        "Tous les calculs se font localement dans le navigateur : vos données ne quittent pas votre appareil",
+        "La formule exacte de conversion est pieds = mètres ÷ 0,3048",
+        "L'outil fonctionne sur téléphone, tablette et ordinateur, sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des mètres en pieds ?",
+      "description": "Un guide court pour utiliser le convertisseur de mètres en pieds.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez la valeur en mètres",
+          "text": "Dans le champ de gauche, saisissez le nombre de mètres que vous souhaitez convertir en pieds."
+        },
+        {
+          "name": "Lisez le résultat en pieds",
+          "text": "Le résultat en pieds apparaît aussitôt dans le champ voisin, à droite. Vous pouvez le copier dans le presse-papiers en un seul clic."
+        },
+        {
+          "name": "Inversez le sens si nécessaire",
+          "text": "Cliquez sur Changer l'ordre pour basculer le convertisseur sur les pieds en mètres."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des mètres en pieds ?",
+      "html": "<p class=\"text-mid mb-4\">Le mètre est l'unité de longueur courante en France, en Belgique, en Suisse et dans la majeure partie du monde. Le pied s'emploie surtout aux États-Unis et au Royaume-Uni. Les mètres se convertissent donc en pieds principalement au contact de l'étranger : quand vous donnez votre taille, quand vous lisez les dimensions d'un appareil issu d'un catalogue américain, ou quand vous situez une altitude que l'aviation indique partout en pieds.</p><p class=\"text-mid mb-4\">Un pied fait exactement 0,3048 mètre et un mètre fait environ 3,28 pieds. Le rapport est constant : chaque conversion se ramène donc à une seule division. Le convertisseur s'en charge dès que vous saisissez une valeur.</p><p class=\"text-mid mb-4\">La taille cache un piège : dans les pays anglophones, personne ne dit «5,91 pieds», mais «5 pieds 11 pouces». Le convertisseur donne un résultat en pieds décimaux, c'est pourquoi vous trouverez plus bas un tableau des tailles distinct qui convertit les mètres en pieds et pouces.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit de mètres en pieds – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des mètres en pieds ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion des mètres en pieds repose sur un rapport fixe : un pied fait exactement 0,3048 mètre. Pour transformer des mètres en pieds, vous divisez le nombre de mètres par 0,3048, ce qui revient à multiplier par 3,280839895.</p><p class=\"text-mid mb-4\">La formule complète : <strong>pieds = mètres ÷ 0,3048</strong>. Dans l'autre sens : <strong>mètres = pieds × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous voulez savoir combien de pieds font 1,80 m. Vous remplacez : 1,80 ÷ 0,3048 = 5,91 pieds. Cela ne signifie pas «5 pieds et 91 pouces» : la partie décimale est une fraction de pied. Pour obtenir les pouces, vous la multipliez par 12 : 0,91 × 12 = 11 pouces. 1,80 m font donc 5 pieds 11 pouces.</p><p class=\"text-mid\">Autre exemple : la distance de 100 m du sprint donne 100 ÷ 0,3048 = 328,08 pieds. Le convertisseur effectue les deux sens dès la saisie d'une valeur.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des mètres en pieds",
+      "description": "Le tableau ci-dessous convertit les valeurs courantes en mètres vers des pieds décimaux. Les valeurs sont arrondies à deux décimales. Pour convertir une valeur exacte ou une autre dimension, utilisez le convertisseur ci-dessus.",
+      "labelHeader": "Mètres",
+      "cols": ["Pieds"],
+      "rows": [
+        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
+        { "label": "1,6 m", "values": ["5,25 ft"] },
+        { "label": "1,7 m", "values": ["5,58 ft"] },
+        { "label": "1,75 m", "values": ["5,74 ft"] },
+        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
+        { "label": "1,9 m", "values": ["6,23 ft"] },
+        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
+        { "label": "2,5 m", "values": ["8,20 ft"] },
+        { "label": "3 m", "values": ["9,84 ft"] },
+        { "label": "4 m", "values": ["13,12 ft"] },
+        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
+        { "label": "6 m", "values": ["19,69 ft"] },
+        { "label": "7 m", "values": ["22,97 ft"] },
+        { "label": "8 m", "values": ["26,25 ft"] },
+        { "label": "9 m", "values": ["29,53 ft"] },
+        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
+        { "label": "15 m", "values": ["49,21 ft"] },
+        { "label": "20 m", "values": ["65,62 ft"] },
+        { "label": "25 m", "values": ["82,02 ft"] },
+        { "label": "30 m", "values": ["98,43 ft"] },
+        { "label": "40 m", "values": ["131,23 ft"] },
+        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
+        { "label": "60 m", "values": ["196,85 ft"] },
+        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
+        { "label": "200 m", "values": ["656,17 ft"] },
+        { "label": "500 m", "values": ["1 640,42 ft"] }
+      ],
+      "caption": "Vous souhaitez convertir dans l'autre sens ? Utilisez notre convertisseur <a href=\"/fr/outils/convertisseur-pieds-en-metres\">pieds en mètres</a> avec un tableau complet pour les dimensions données en pieds."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau des tailles : mètres en pieds et pouces",
+      "description": "Dans les pays anglophones, la taille se donne en pieds et pouces, et non en pieds décimaux. Le tableau ci-dessous présente les deux formes : le résultat du convertisseur en pieds et la façon dont on l'exprime à l'oral. Les pouces sont arrondis à l'unité.",
+      "labelHeader": "Taille",
+      "cols": ["Pieds (décimaux)", "Pieds et pouces"],
+      "rows": [
+        { "label": "1,50 m", "values": ["4,92 ft", "4 pieds 11 pouces"] },
+        { "label": "1,55 m", "values": ["5,09 ft", "5 pieds 1 pouce"] },
+        {
+          "label": "1,60 m",
+          "values": ["5,25 ft", "5 pieds 3 pouces"],
+          "emphasis": true
+        },
+        { "label": "1,65 m", "values": ["5,41 ft", "5 pieds 5 pouces"] },
+        {
+          "label": "1,70 m",
+          "values": ["5,58 ft", "5 pieds 7 pouces"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft", "5 pieds 9 pouces"],
+          "emphasis": true
+        },
+        { "label": "1,78 m", "values": ["5,84 ft", "5 pieds 10 pouces"] },
+        {
+          "label": "1,80 m",
+          "values": ["5,91 ft", "5 pieds 11 pouces"],
+          "emphasis": true
+        },
+        { "label": "1,85 m", "values": ["6,07 ft", "6 pieds 1 pouce"] },
+        {
+          "label": "1,90 m",
+          "values": ["6,23 ft", "6 pieds 3 pouces"],
+          "emphasis": true
+        },
+        { "label": "1,95 m", "values": ["6,40 ft", "6 pieds 5 pouces"] },
+        {
+          "label": "2,00 m",
+          "values": ["6,56 ft", "6 pieds 7 pouces"],
+          "emphasis": true
+        }
+      ],
+      "caption": "Vous obtenez les pouces en multipliant par 12 la partie décimale du pied. Exemple : 5,91 ft, soit 0,91 × 12 = 11 pouces."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on des mètres en pieds ?",
+      "description": "Les pieds apparaissent surtout au contact du monde anglophone. Chacune de ces situations a sa particularité.",
+      "items": [
+        {
+          "title": "La taille dans une conversation",
+          "description": "C'est la raison la plus fréquente de convertir des mètres en pieds. Un Américain ou un Britannique se représente rarement ce que valent «1,80 m», alors qu'il situe aussitôt une personne de «5 pieds 11 pouces». Rappelez-vous que le résultat du convertisseur (5,91 ft) est en pieds décimaux et non en pieds et pouces : la forme parlée figure dans le tableau des tailles ci-dessus."
+        },
+        {
+          "title": "L'altitude en aviation",
+          "description": "L'aviation indique les altitudes en pieds dans le monde entier, y compris au-dessus de la France. Le niveau de vol FL100 correspond à 10 000 pieds, soit environ 3 048 m. Si vous suivez des vols ou vous intéressez au pilotage, la conversion ramène ces valeurs aux mètres qui vous sont familiers."
+        },
+        {
+          "title": "L'immobilier au Québec",
+          "description": "Au Québec, les superficies et les hauteurs sont couramment annoncées en pieds, même si le Canada est officiellement métrique. Un plafond de 8 pieds fait 2,44 m et de 9 pieds fait 2,74 m. La conversion vous permet de lire une annonce québécoise avec les repères européens."
+        },
+        {
+          "title": "Sport et natation",
+          "description": "Un bassin de 25 m fait 82,02 pieds et une distance de 100 m fait 328,08 pieds. Dans les sources anglophones, les distances sont parfois données en pieds ou en yards : la conversion facilite la comparaison avec les installations d'ici."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des mètres en pieds",
+      "items": [
+        {
+          "question": "Combien de pieds font 1 mètre ?",
+          "answer": "1 mètre fait 3,28 pieds. Le calcul : 1 ÷ 0,3048 = 3,28 ft. La valeur exacte est de 3,280839895 pieds."
+        },
+        {
+          "question": "1 mètre fait-il exactement 3 pieds ?",
+          "answer": "Non. 1 mètre fait 3,28 pieds, soit plus d'un quart de pied de plus que 3 pieds. Trois pieds seuls font 0,91 m : l'écart est donc d'environ 9 centimètres."
+        },
+        {
+          "question": "2 mètres font-ils 6 pieds ?",
+          "answer": "Non. 2 mètres font 6,56 pieds, soit 6 pieds et 7 pouces. Six pieds seuls font 1,83 m : 2 mètres font donc environ 17 centimètres de plus."
+        },
+        {
+          "question": "3 mètres équivalent-ils à 10 pieds ?",
+          "answer": "Non, même si les valeurs sont proches. 3 mètres font 9,84 pieds. Dix pieds tout ronds font 3,05 m : l'écart est donc d'environ 5 centimètres."
+        },
+        {
+          "question": "Combien de pieds font 1,80 m ?",
+          "answer": "1,80 m font 5,91 pieds, soit 5 pieds 11 pouces. Le calcul : 1,80 ÷ 0,3048 = 5,91 ft, puis vous convertissez la partie décimale en pouces : 0,91 × 12 = 11 pouces."
+        },
+        {
+          "question": "Combien de pieds font 1,75 m ?",
+          "answer": "1,75 m font 5,74 pieds, soit 5 pieds 9 pouces. Le calcul : 1,75 ÷ 0,3048 = 5,74 ft."
+        },
+        {
+          "question": "Combien de pieds font 1,60 m ?",
+          "answer": "1,60 m font 5,25 pieds, soit 5 pieds 3 pouces. Le calcul : 1,60 ÷ 0,3048 = 5,25 ft."
+        },
+        {
+          "question": "1,78 m font-ils 5 pieds et 10 pouces ?",
+          "answer": "Oui. 1,78 m font 5,84 pieds, et la partie décimale convertie en pouces donne 5 pieds 10 pouces. C'est l'une des tailles les plus souvent citées dans les pays anglophones."
+        },
+        {
+          "question": "Combien de pieds font 100 mètres ?",
+          "answer": "100 mètres font 328,08 pieds. Le calcul : 100 ÷ 0,3048 = 328,08 ft."
+        },
+        {
+          "question": "Combien de pieds font 2, 5 et 10 mètres ?",
+          "answer": "2 mètres font 6,56 ft, 5 mètres font 16,40 ft et 10 mètres font 32,81 ft. Vous obtenez chacune de ces valeurs en divisant le nombre de mètres par 0,3048."
+        },
+        {
+          "question": "Comment convertir des pieds décimaux en pieds et pouces ?",
+          "answer": "Vous gardez la partie entière comme pieds et vous multipliez la partie décimale par 12 pour obtenir les pouces. Exemple : 5,91 pieds font 5 pieds, et 0,91 × 12 = 11 pouces, soit 5 pieds 11 pouces. Le convertisseur donne des pieds décimaux : les valeurs prêtes pour les tailles figurent dans le tableau ci-dessus."
+        },
+        {
+          "question": "Quelle est la formule pour convertir des mètres en pieds ?",
+          "answer": "La formule est : pieds = mètres ÷ 0,3048, ce qui équivaut à multiplier par 3,280839895. Par exemple, 6 m ÷ 0,3048 = 19,69 ft. Dans l'autre sens : mètres = pieds × 0,3048."
+        },
+        {
+          "question": "Ce convertisseur convertit-il les pieds carrés en mètres carrés ?",
+          "answer": "Non. Cet outil convertit des longueurs, alors que le pied carré est une unité de superficie. Le facteur est différent : 1 mètre carré fait 10,7639 pieds carrés, vous multipliez donc une superficie en mètres carrés par 10,7639."
+        },
+        {
+          "question": "Puis-je convertir ici des newtons-mètres en livres-pieds ?",
+          "answer": "Non. Le newton-mètre (Nm) et la livre-pied (ft-lb) sont des unités de couple et non de longueur : ce convertisseur ne les prend donc pas en charge. La ressemblance des noms tient seulement au fait que le mètre et le pied apparaissent dans les deux unités."
+        },
+        {
+          "question": "Comment convertir des mètres en pieds de tête ?",
+          "answer": "Le plus simple est de multiplier le nombre de mètres par 3,3, ce qui revient à multiplier par 3 puis à ajouter encore 10 %. Pour 5 m, cela donne 15 + 1,5 = 16,5 ft, contre une valeur exacte de 16,40 ft : le résultat est légèrement supérieur, mais suffit pour se repérer. Pour des calculs précis, utilisez le convertisseur."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "title": "Vous avez une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageAlt": "Contact avec Arteon Agency",
+      "subject": "Convertisseur de mètres en pieds"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    }
+  ]
+}
