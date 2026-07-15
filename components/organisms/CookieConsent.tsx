@@ -142,7 +142,7 @@ export default function CookieConsent({
       aria-describedby={descId}
       className='fixed inset-x-0 bottom-0 z-70 bg-transparent'
     >
-      <div className='mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 text-dark shadow-lg ring-1 ring-black/5'>
+      <div className='mx-auto mb-4 w-[min(92vw,1280px)] bg-white p-5 text-dark shadow-lg ring-1 ring-black/5'>
         {!panel ? (
           <div className='flex flex-col gap-4 md:flex-row md:items-center md:justify-between'>
             <div className='space-y-1'>
@@ -167,7 +167,7 @@ export default function CookieConsent({
                 ref={firstNativeBtnRef}
                 onClick={() => saveAndClose({ analytics: true, ads: true })}
                 className={cn(
-                  'inline-flex w-fit cursor-pointer items-center rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base',
+                  'inline-flex w-fit cursor-pointer items-center bg-primary px-3 py-1.5 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base',
                   focusRingClasses,
                 )}
               >
@@ -179,7 +179,7 @@ export default function CookieConsent({
                   focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
                 }}
                 className={cn(
-                  'inline-flex w-fit items-center rounded-lg border border-neutral-200 bg-white px-3 py-1 text-sm font-medium text-dark transition hover:bg-neutral-50',
+                  'inline-flex w-fit items-center border border-neutral-200 bg-white px-3 py-1 text-sm font-medium text-dark transition hover:bg-neutral-50',
                   focusRingClasses,
                 )}
               >
@@ -199,7 +199,7 @@ export default function CookieConsent({
             <fieldset className='space-y-2'>
               <legend className='sr-only'>{t.categoriesLegend}</legend>
 
-              <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
+              <div className='flex items-start justify-between gap-4 border border-neutral-200 bg-white px-4 py-2'>
                 <div>
                   <span className='text-base font-medium'>
                     {t.essentialTitle}
@@ -208,12 +208,12 @@ export default function CookieConsent({
                     {t.essentialDescription}
                   </span>
                 </div>
-                <span className='rounded-lg bg-primary-light px-3 py-1 text-xs font-semibold text-dark'>
+                <span className='bg-primary-light px-3 py-1 text-xs font-semibold text-dark'>
                   {t.essentialStatus}
                 </span>
               </div>
 
-              <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
+              <div className='flex items-start justify-between gap-4 border border-neutral-200 bg-white px-4 py-2'>
                 <div>
                   <span className='text-base font-medium'>
                     {t.analyticsTitle}
@@ -233,7 +233,7 @@ export default function CookieConsent({
                 </div>
               </div>
 
-              <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
+              <div className='flex items-start justify-between gap-4 border border-neutral-200 bg-white px-4 py-2'>
                 <div>
                   <span className='text-base font-medium'>{t.adsTitle}</span>
                   <span className='ml-2 text-sm font-medium text-dark'>
@@ -261,7 +261,7 @@ export default function CookieConsent({
                 <button
                   onClick={() => saveAndClose({ analytics: false, ads: false })}
                   className={cn(
-                    'inline-flex w-fit items-center rounded-lg border border-primary-light bg-white px-3 py-1 text-sm font-medium text-dark shadow transition hover:-translate-y-0.5 hover:shadow-lg',
+                    'inline-flex w-fit items-center border border-primary-light bg-white px-3 py-1 text-sm font-medium text-dark shadow transition hover:-translate-y-0.5 hover:shadow-lg',
                     focusRingClasses,
                   )}
                 >

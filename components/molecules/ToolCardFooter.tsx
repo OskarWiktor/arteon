@@ -19,7 +19,7 @@ export default function ToolCardFooter({ href, label }: ToolCardFooterProps) {
       <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
         <InlineLink
           href={href}
-          className='inline-flex rounded-lg text-[#B3B0AC]! transition'
+          className='inline-flex text-[#B3B0AC]! transition'
         >
           <span className='text-[#F9F5F2]!'>{label}</span>
           <ArrowIcon />

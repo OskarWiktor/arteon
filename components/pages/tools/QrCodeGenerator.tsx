@@ -380,7 +380,7 @@ export default function QrCodeGenerator() {
         <div className='flex flex-col items-center'>
           <div
             className={cn(
-              'max-w-full rounded-md border border-neutral-200 p-4',
+              'max-w-full border border-neutral-200 p-4',
               flexCenterClasses,
             )}
             style={{

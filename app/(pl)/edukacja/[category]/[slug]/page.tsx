@@ -94,7 +94,7 @@ function Aspect({
 }) {
   if (ratio === 'auto')
     return (
-      <div className='relative overflow-hidden rounded-lg border border-neutral-200'>
+      <div className='relative overflow-hidden border border-neutral-200'>
         {children}
       </div>
     );
@@ -106,7 +106,7 @@ function Aspect({
   return (
     <div
       className={cn(
-        'relative overflow-hidden rounded-lg border border-neutral-200',
+        'relative overflow-hidden border border-neutral-200',
         map[ratio] || '',
       )}
     >
@@ -181,7 +181,7 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
         if (b.type === 'quote') {
           return (
             <div key={`f-q-${i}`} className='not-prose my-6'>
-              <figure className='rounded-lg bg-white p-6 shadow-md'>
+              <figure className='bg-white p-6 shadow-md'>
                 <blockquote>
                   <p className='text-lg leading-relaxed'>“{b.text}”</p>
                 </blockquote>
@@ -271,7 +271,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                 className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}
               >
                 {isAuto ? (
-                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
+                  <div className='overflow-hidden border border-neutral-200'>
                     <Image
                       src={b.src}
                       alt={b.alt}
@@ -306,7 +306,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'imageText') {
           const Img =
             b.ratio === 'auto' ? (
-              <div className='overflow-hidden rounded-lg border border-neutral-200'>
+              <div className='overflow-hidden border border-neutral-200'>
                 <Image
                   src={b.src}
                   alt={b.alt}

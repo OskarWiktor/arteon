@@ -118,7 +118,7 @@ export default function SectionNumberSteps({
                       <InlineLink
                         href={href}
                         aria-label={`${buttonLabel}: ${itemTitle}`}
-                        className="inline-flex rounded-lg text-primary! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+                        className="inline-flex text-primary! transition before:absolute before:inset-0 before:content-['']"
                       >
                         {buttonLabel}
                         <ArrowIcon />

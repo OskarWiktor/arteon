@@ -21,12 +21,12 @@ function ProjectCardSkeleton() {
   return (
     <div className='w-85 shrink-0 snap-start md:w-105 lg:w-130'>
       <Card interactive={false} variant='outlined'>
-        <Shimmer className='aspect-2/1 w-full rounded-none! bg-neutral-300!' />
+        <Shimmer className='aspect-2/1 w-full bg-neutral-300!' />
         <div className='space-y-3 px-6 py-4 md:px-7 md:py-5'>
           <Shimmer className='h-5 w-3/4' />
           <Shimmer className='h-3.5 w-full' />
           <div className='mt-2 h-px w-full bg-neutral-200' />
-          <Shimmer className='h-8 w-36 rounded-lg!' />
+          <Shimmer className='h-8 w-36' />
         </div>
       </Card>
     </div>
@@ -50,7 +50,7 @@ function ToolCardSkeleton() {
           <Shimmer className='h-5 w-3/5' />
           <Shimmer className='h-3.5 w-full' />
           <Shimmer className='h-3.5 w-4/5' />
-          <Shimmer className='mt-2 h-9 w-36 rounded-lg!' />
+          <Shimmer className='mt-2 h-9 w-36' />
         </div>
       </Card>
     </div>
@@ -102,7 +102,7 @@ function TestimonialCardSkeleton() {
         <Shimmer className='mt-2 h-4 w-28' />
         <div className='mt-2 flex gap-1'>
           {[1, 2, 3, 4, 5].map(i => (
-            <Shimmer key={i} className='h-5 w-5 rounded-sm! bg-warning-bg!' />
+            <Shimmer key={i} className='! h-5 w-5 bg-warning-bg!' />
           ))}
         </div>
         <div className='mt-4 w-full space-y-2'>
@@ -152,7 +152,7 @@ export default function CarouselSkeleton({
       </div>
       <div className='flex justify-center gap-2'>
         {Array.from({ length: Math.min(count, 5) }).map((_, i) => (
-          <Shimmer key={i} className='h-2.5 w-2.5 rounded-lg!' />
+          <Shimmer key={i} className='h-2.5 w-2.5' />
         ))}
       </div>
     </div>

@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
+import { TriangleDown, TriangleUp } from '@/components/atoms/icons/Triangle';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import Card from '@/components/organisms/Card';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
@@ -230,19 +231,10 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
           <div className='flex flex-wrap gap-3'>
             {config.swappable && (
               <Button onClick={handleSwap} size='small' className='gap-1.5'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='16'
-                  height='16'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                >
-                  <path d='M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4' />
-                </svg>
+                <span className='flex items-center gap-0.5' aria-hidden='true'>
+                  <TriangleUp className='h-3 w-3' />
+                  <TriangleDown className='h-3 w-3' />
+                </span>
                 {t.swapOrder}
               </Button>
             )}

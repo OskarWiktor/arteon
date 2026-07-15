@@ -33,7 +33,7 @@ export default function SectionFeatureList({
       aria-labelledby={title ? 'feature-list-title' : undefined}
     >
       <Wrapper>
-        <div className='mx-auto max-w-2xl rounded-lg border border-neutral-200 bg-white p-8'>
+        <div className='mx-auto max-w-2xl border border-neutral-200 bg-white p-8'>
           {title && (
             <SectionHeader title={title} titleClassName='text-center' />
           )}
@@ -43,7 +43,7 @@ export default function SectionFeatureList({
               <li key={index} className='flex items-center gap-3'>
                 <div
                   className={cn(
-                    'shrink-0 rounded-lg bg-success-bg',
+                    'shrink-0 bg-success-bg',
                     flexCenterClasses,
                     normalIconSizeClasses,
                   )}

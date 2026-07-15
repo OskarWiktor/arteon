@@ -23,7 +23,7 @@ const variantClasses: Record<ButtonCopyVariant, string> = {
 };
 
 const buttonCopyClasses =
-  'inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium cursor-pointer transition';
+  'inline-flex items-center gap-2 border px-4 py-2 text-sm font-medium cursor-pointer transition';
 
 export default function ButtonCopy({
   text,

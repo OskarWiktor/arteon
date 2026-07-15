@@ -18,8 +18,7 @@ const sizeClasses: Record<ButtonIconSize, string> = {
   medium: 'h-9 w-9',
 };
 
-const buttonIconClasses =
-  'inline-flex items-center justify-center rounded transition';
+const buttonIconClasses = 'inline-flex items-center justify-center transition';
 
 export default function ButtonIcon({
   label,

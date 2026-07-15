@@ -86,7 +86,7 @@ export default function CropPreview({
 
       <div
         ref={previewRef}
-        className='relative w-full overflow-hidden rounded-lg border border-neutral-300 bg-primary'
+        className='relative w-full overflow-hidden border border-neutral-300 bg-primary'
         style={{ paddingBottom: `${previewPadding}%` }}
       >
         <div className='absolute inset-0'>
@@ -135,7 +135,7 @@ export default function CropPreview({
 
               <div
                 className={cn(
-                  'absolute -top-1 -left-1 cursor-nwse-resize rounded-xs border-2 bg-white/80',
+                  'absolute -top-1 -left-1 cursor-nwse-resize border-2 bg-white/80',
                   smallIconSizeClasses,
                 )}
                 style={{ borderColor: gridStroke }}
@@ -143,7 +143,7 @@ export default function CropPreview({
               />
               <div
                 className={cn(
-                  'absolute -top-1 -right-1 cursor-nesw-resize rounded-xs border-2 bg-white/80',
+                  'absolute -top-1 -right-1 cursor-nesw-resize border-2 bg-white/80',
                   smallIconSizeClasses,
                 )}
                 style={{ borderColor: gridStroke }}
@@ -151,7 +151,7 @@ export default function CropPreview({
               />
               <div
                 className={cn(
-                  'absolute -bottom-1 -left-1 cursor-nesw-resize rounded-xs border-2 bg-white/80',
+                  'absolute -bottom-1 -left-1 cursor-nesw-resize border-2 bg-white/80',
                   smallIconSizeClasses,
                 )}
                 style={{ borderColor: gridStroke }}
@@ -159,7 +159,7 @@ export default function CropPreview({
               />
               <div
                 className={cn(
-                  'absolute -right-1 -bottom-1 cursor-nwse-resize rounded-xs border-2 bg-white/80',
+                  'absolute -right-1 -bottom-1 cursor-nwse-resize border-2 bg-white/80',
                   smallIconSizeClasses,
                 )}
                 style={{ borderColor: gridStroke }}

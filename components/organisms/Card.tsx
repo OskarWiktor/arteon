@@ -47,7 +47,7 @@ export default function Card<T extends ElementType = 'div'>({
   return (
     <Component
       className={cn(
-        'flex flex-col gap-3 overflow-hidden rounded-lg shadow-[1px_1px_3px_#C6B7A2]',
+        'flex flex-col gap-3 overflow-hidden shadow-[1px_1px_3px_#C6B7A2]',
         interactive &&
           'transition hover:-translate-y-0.5 hover:shadow-[2px_2px_4px_#C6B7A2]',
         variantClasses[variant],

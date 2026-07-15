@@ -3,7 +3,8 @@
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { RiSearchLine, RiCloseLine, RiArrowRightSLine } from 'react-icons/ri';
+import { RiSearchLine, RiCloseLine } from 'react-icons/ri';
+import { TriangleRight } from '@/components/atoms/icons/Triangle';
 import { useDialogFocus } from '@/hooks/useDialogFocus';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
@@ -184,7 +185,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
         aria-label={t.ariaLabel}
         tabIndex={-1}
         className={cn(
-          'relative w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black/5',
+          'relative w-full max-w-xl overflow-hidden bg-white shadow-lg ring-1 ring-black/5',
           modalContentClasses,
         )}
       >
@@ -209,7 +210,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
           <button
             type='button'
             onClick={onClose}
-            className='rounded p-0.5 text-primary hover:bg-primary-light'
+            className='p-0.5 text-primary hover:bg-primary-light'
             aria-label={t.ariaClose}
           >
             <RiCloseLine className={largeIconSizeClasses} />
@@ -309,7 +310,7 @@ function SearchResultItem({
           <div className='truncate text-xs text-light'>{item.description}</div>
         )}
       </div>
-      <RiArrowRightSLine
+      <TriangleRight
         className={cn(
           'shrink-0 text-primary transition',
           smallIconSizeClasses,

@@ -45,7 +45,7 @@ export default function SectionBeforeAfter({
         {title && <SectionHeader title={title} />}
 
         <div className='mx-auto max-w-2xl'>
-          <div className='relative aspect-video overflow-hidden rounded-lg shadow-lg'>
+          <div className='relative aspect-video overflow-hidden shadow-lg'>
             <div className='absolute inset-0'>
               <Image
                 src={afterImage}
@@ -77,7 +77,7 @@ export default function SectionBeforeAfter({
               <button
                 type='button'
                 className={cn(
-                  'absolute top-1/2 left-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white shadow-lg',
+                  'absolute top-1/2 left-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg',
                   flexCenterClasses,
                 )}
               >
@@ -96,10 +96,10 @@ export default function SectionBeforeAfter({
               aria-label='Suwak porównania przed i po'
             />
 
-            <div className='absolute bottom-4 left-4 rounded-lg bg-black/70 px-3 py-1 text-sm text-white'>
+            <div className='absolute bottom-4 left-4 bg-black/70 px-3 py-1 text-sm text-white'>
               {beforeLabel}
             </div>
-            <div className='absolute right-4 bottom-4 rounded-lg bg-black/70 px-3 py-1 text-sm text-white'>
+            <div className='absolute right-4 bottom-4 bg-black/70 px-3 py-1 text-sm text-white'>
               {afterLabel}
             </div>
           </div>

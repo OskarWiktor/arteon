@@ -18,9 +18,9 @@ export default function ToolColorSwatch({
   onCopy,
 }: ToolColorSwatchProps) {
   return (
-    <div className='flex items-center gap-3 overflow-hidden rounded-lg border border-neutral-200 bg-white px-3 py-2'>
+    <div className='flex items-center gap-3 overflow-hidden border border-neutral-200 bg-white px-3 py-2'>
       <div
-        className='h-9 w-9 rounded-md border border-neutral-200'
+        className='h-9 w-9 border border-neutral-200'
         style={{ backgroundColor: hex }}
         role='img'
         aria-label={ariaLabelPrefix ? `${ariaLabelPrefix} ${hex}` : hex}

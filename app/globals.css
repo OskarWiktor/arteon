@@ -405,7 +405,7 @@ strong {
 }
 
 .tool-input {
-  @apply h-11 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-dark transition;
+  @apply h-11 w-full border border-neutral-300 bg-white px-3 py-2 text-sm text-dark transition;
 }
 
 .hover-underline {
@@ -441,7 +441,7 @@ strong {
 }
 
 .tool-button {
-  @apply flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! transition;
+  @apply flex items-center gap-2 border px-3 py-1.5 text-[14px]! transition;
 }
 
 .tool-button-inactive {
@@ -449,7 +449,7 @@ strong {
 }
 
 .tool-info-box {
-  @apply rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3;
+  @apply border border-neutral-200 bg-neutral-50 px-4 py-3;
 }
 
 .tool-value {

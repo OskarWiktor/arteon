@@ -66,7 +66,7 @@ export default function CTABanner({
       <Wrapper className='relative flex h-auto justify-center md:items-center'>
         <div
           className={cn(
-            'max-w-[100vw] rounded-lg px-6 py-4 md:max-w-[65%] md:p-8 md:text-center lg:p-10',
+            'max-w-[100vw] px-6 py-4 md:max-w-[65%] md:p-8 md:text-center lg:p-10',
             isBlack && 'bg-[#0D0103]/80 text-on-dark',
             overlay === 'white' && 'bg-white/70 text-dark',
             overlay === 'none' && 'text-dark',

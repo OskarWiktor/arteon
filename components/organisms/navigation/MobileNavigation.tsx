@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState, type JSX } from 'react';
 import { createPortal } from 'react-dom';
-import { RiArrowDownSLine } from 'react-icons/ri';
+import { TriangleDown } from '@/components/atoms/icons/Triangle';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import {
   MOBILE_NAV_ITEMS_PL,
@@ -85,7 +85,7 @@ function MobileOfferLink({
         href={item.href}
         prefetch={false}
         onClick={onNavigate}
-        className='group flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] text-dark transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+        className='group flex items-center gap-3 px-2 py-1.75 text-[15px] text-dark transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
       >
         <IconText
           icon={
@@ -124,7 +124,7 @@ function MobileOfferSections({
           <div key={sec.key} className='mb-1'>
             <div
               className={cn(
-                'rounded-lg py-1 transition-colors hover:bg-neutral-100',
+                'py-1 transition-colors hover:bg-neutral-100',
                 flexCenterBetweenClasses,
               )}
             >
@@ -134,7 +134,7 @@ function MobileOfferSections({
                   prefetch={false}
                   onClick={onNavigate}
                   className={cn(
-                    'inline-block rounded px-3 py-1 text-[15px] text-dark outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
+                    'inline-block px-3 py-1 text-[15px] text-dark outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                     {
                       'font-semibold': pathname.startsWith(sec.hubHref),
                     },
@@ -154,7 +154,7 @@ function MobileOfferSections({
                 aria-controls={`sec-${sec.key}`}
                 onClick={() => toggleKey(sec.key)}
                 className={cn(
-                  'h-9 w-9 rounded-md text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
+                  'h-9 w-9 text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                   flexCenterClasses,
                 )}
               >
@@ -164,7 +164,7 @@ function MobileOfferSections({
                     transform: expanded ? 'rotate(180deg)' : undefined,
                   }}
                 >
-                  <RiArrowDownSLine
+                  <TriangleDown
                     className={normalIconSizeClasses}
                     aria-hidden='true'
                   />
@@ -237,7 +237,7 @@ function MobileOfferSections({
 
 function navLinkClasses(isActive: boolean) {
   return cn(
-    'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
+    'block px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
     {
       'bg-neutral-50 font-semibold text-dark': isActive,
       'text-dark hover:bg-neutral-100': !isActive,
@@ -318,7 +318,7 @@ function MobilePlNav({
       )}
 
       {narzedziaNav && toolsSections.length > 0 && (
-        <div className='rounded-lg py-1 transition-colors hover:bg-neutral-100'>
+        <div className='py-1 transition-colors hover:bg-neutral-100'>
           <div className={flexCenterBetweenClasses}>
             <Link
               href={narzedziaNav.href}
@@ -328,7 +328,7 @@ function MobilePlNav({
                 pathname.startsWith(narzedziaNav.href) ? 'page' : undefined
               }
               className={cn(
-                'rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
+                'px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                 {
                   'font-semibold text-dark': pathname.startsWith(
                     narzedziaNav.href,
@@ -346,7 +346,7 @@ function MobilePlNav({
               aria-controls='tools-submenu-mobile'
               onClick={toggleTools}
               className={cn(
-                'h-9 w-9 rounded-md text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
+                'h-9 w-9 text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                 flexCenterClasses,
               )}
             >
@@ -356,7 +356,7 @@ function MobilePlNav({
                   transform: isToolsOpen ? 'rotate(180deg)' : undefined,
                 }}
               >
-                <RiArrowDownSLine
+                <TriangleDown
                   className={normalIconSizeClasses}
                   aria-hidden='true'
                 />
@@ -382,7 +382,7 @@ function MobilePlNav({
                           onClick={onNavigate}
                           aria-current={isToolActive ? 'page' : undefined}
                           className={cn(
-                            'flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
+                            'flex items-center gap-3 px-2 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                             {
                               'bg-neutral-50 font-semibold text-dark':
                                 isToolActive,
@@ -457,7 +457,7 @@ function MobileToolsOnlyNav({
           pathname === localeConfig.toolsIndexHref ? 'page' : undefined
         }
         className={cn(
-          'mb-2 block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
+          'mb-2 block px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
           {
             'bg-neutral-50 font-semibold text-dark':
               pathname === localeConfig.toolsIndexHref,
@@ -476,7 +476,7 @@ function MobileToolsOnlyNav({
             <div key={sec.key} className='mb-1'>
               <div
                 className={cn(
-                  'rounded-lg py-1 transition-colors hover:bg-neutral-100',
+                  'py-1 transition-colors hover:bg-neutral-100',
                   flexCenterBetweenClasses,
                 )}
               >
@@ -490,7 +490,7 @@ function MobileToolsOnlyNav({
                   aria-controls={`sec-${locale}-${sec.key}`}
                   onClick={() => toggleToolSection(sec.key)}
                   className={cn(
-                    'h-9 w-9 rounded-md text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
+                    'h-9 w-9 text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                     flexCenterClasses,
                   )}
                 >
@@ -500,7 +500,7 @@ function MobileToolsOnlyNav({
                       transform: expanded ? 'rotate(180deg)' : undefined,
                     }}
                   >
-                    <RiArrowDownSLine
+                    <TriangleDown
                       className={normalIconSizeClasses}
                       aria-hidden='true'
                     />
@@ -532,7 +532,7 @@ function MobileToolsOnlyNav({
                             href={it.href}
                             prefetch={false}
                             onClick={onNavigate}
-                            className='group flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] text-dark transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+                            className='group flex items-center gap-3 px-2 py-1.75 text-[15px] text-dark transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
                           >
                             <IconText
                               icon={
@@ -790,7 +790,7 @@ export default function MobileNavigation({
         <div className='flex items-center justify-end px-4 pt-3'>
           <button
             onClick={() => setIsOpen(false)}
-            className='rounded px-3 pt-1 ring-primary ring-offset-2 outline-none focus-visible:ring-2'
+            className='px-3 pt-1 ring-primary ring-offset-2 outline-none focus-visible:ring-2'
           >
             <span className='text-sm font-medium text-light'>
               {mobileNavUi.close}
@@ -846,7 +846,7 @@ export default function MobileNavigation({
                   href={href}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  className='block rounded-lg px-3 py-1.75 text-[15px] text-dark outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+                  className='block px-3 py-1.75 text-[15px] text-dark outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
                 >
                   {label}
                 </Link>
@@ -862,7 +862,7 @@ export default function MobileNavigation({
                   href={contactHref}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  className='rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-white transition-colors outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+                  className='bg-primary px-3 py-2 text-sm font-semibold text-white transition-colors outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
                 >
                   {mobileNavUi.contact}
                 </Link>

@@ -54,7 +54,7 @@ export default function TextStyleRow({
         <button
           type='button'
           onClick={() => onColorChange(elementKey, null)}
-          className='rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100'
+          className='border border-neutral-300 p-1.5 hover:bg-neutral-100'
           title='Reset'
         >
           <RiRefreshLine className='h-3.5 w-3.5 text-primary' />
@@ -99,7 +99,7 @@ export default function TextStyleRow({
         <button
           type='button'
           onClick={() => onSizeChange(elementKey, -2)}
-          className='rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100'
+          className='border border-neutral-300 p-1.5 hover:bg-neutral-100'
           aria-label='Zmniejsz rozmiar'
         >
           <RiSubtractLine className='h-3.5 w-3.5 text-primary' />
@@ -111,7 +111,7 @@ export default function TextStyleRow({
         <button
           type='button'
           onClick={() => onSizeChange(elementKey, 2)}
-          className='rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100'
+          className='border border-neutral-300 p-1.5 hover:bg-neutral-100'
           aria-label='Zwiększ rozmiar'
         >
           <RiAddLine className='h-3.5 w-3.5 text-primary' />

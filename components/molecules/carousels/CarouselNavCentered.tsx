@@ -1,7 +1,8 @@
 'use client';
 
-import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
-import { largeIconSizeClasses } from '@/lib/uiClasses';
+import { TriangleLeft, TriangleRight } from '@/components/atoms/icons/Triangle';
+import { cn } from '@/lib/clsx';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { CarouselDots } from './CarouselDots';
 import ButtonCircle from '../../atoms/buttons/ButtonCircle';
 
@@ -20,7 +21,7 @@ type CarouselNavCenteredProps = {
   slideLabel: string;
 };
 
-const arrowClasses = 'max-h-12 max-w-12 bg-[#1C1F32]';
+const arrowClasses = 'h-12 w-12 bg-[#1C1F32]';
 
 /**
  * Centered carousel navigation: previous arrow, pagination dots and next arrow
@@ -50,7 +51,10 @@ export function CarouselNavCentered({
         ariaLabel={prevLabel}
         className={arrowClasses}
       >
-        <RiArrowLeftSLine className={largeIconSizeClasses} aria-hidden='true' />
+        <TriangleLeft
+          className={cn(normalIconSizeClasses, 'mr-1')}
+          aria-hidden='true'
+        />
       </ButtonCircle>
 
       <CarouselDots
@@ -70,8 +74,8 @@ export function CarouselNavCentered({
         ariaLabel={nextLabel}
         className={arrowClasses}
       >
-        <RiArrowRightSLine
-          className={largeIconSizeClasses}
+        <TriangleRight
+          className={cn(normalIconSizeClasses, 'ml-1')}
           aria-hidden='true'
         />
       </ButtonCircle>

@@ -60,9 +60,9 @@ export default function SectionMetrics({
                   <span className='h3'>{metric.value}</span>
                   <span className='text-sm text-light'>{metric.unit}</span>
                 </div>
-                <div className='h-2 overflow-hidden rounded-lg bg-primary-light'>
+                <div className='h-2 overflow-hidden bg-primary-light'>
                   <div
-                    className={cn('h-full rounded-lg', metric.color)}
+                    className={cn('h-full', metric.color)}
                     style={{ width: `${percentage}%` }}
                     role='progressbar'
                     aria-valuenow={metric.value}

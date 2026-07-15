@@ -200,7 +200,7 @@ export default function MetaTitleDescriptionTool() {
                   alt='Arteon'
                   width={32}
                   height={32}
-                  className={cn(largeIconSizeClasses, 'rounded-sm')}
+                  className={cn(largeIconSizeClasses, '')}
                 />
               </div>
 

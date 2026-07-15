@@ -24,7 +24,7 @@ export default function Subtitle({
       {variant === 'default' && (
         <span
           aria-hidden='true'
-          className='me-2 inline-block h-[0.8em] w-[0.8em] bg-primary align-middle'
+          className='me-2 mb-1 inline-block h-[0.8em] w-[0.8em] bg-primary align-middle'
         />
       )}
       {children}

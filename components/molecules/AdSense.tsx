@@ -292,7 +292,7 @@ export default function AdSense({
     return (
       <div
         className={cn(
-          'ad-placeholder flex min-h-27.5 flex-col items-center rounded bg-neutral-50',
+          'ad-placeholder flex min-h-27.5 flex-col items-center bg-neutral-50',
           className,
         )}
       >
@@ -306,7 +306,7 @@ export default function AdSense({
     return (
       <div
         className={cn(
-          'ad-placeholder min-h-62.5 w-full rounded bg-neutral-50',
+          'ad-placeholder min-h-62.5 w-full bg-neutral-50',
           className,
         )}
       >
@@ -320,7 +320,7 @@ export default function AdSense({
     return (
       <div
         className={cn(
-          'ad-placeholder inline-block min-h-150 w-40 rounded bg-neutral-50',
+          'ad-placeholder inline-block min-h-150 w-40 bg-neutral-50',
           className,
         )}
       >
@@ -334,7 +334,7 @@ export default function AdSense({
     return (
       <div
         className={cn(
-          'ad-placeholder min-h-70 w-full rounded bg-neutral-50',
+          'ad-placeholder min-h-70 w-full bg-neutral-50',
           className,
         )}
       >
@@ -345,7 +345,7 @@ export default function AdSense({
   }
 
   return (
-    <div className={cn('ad-placeholder rounded bg-neutral-50', className)}>
+    <div className={cn('ad-placeholder bg-neutral-50', className)}>
       {labelNode}
       <div ref={containerRef} />
     </div>

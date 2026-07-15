@@ -25,7 +25,7 @@ export type ToolPanelVariant =
 function AdBannerShimmer() {
   return (
     <div className='my-3 flex justify-center'>
-      <Shimmer className='h-22.5 w-full max-w-182 rounded-lg! bg-neutral-50!' />
+      <Shimmer className='h-22.5 w-full max-w-182 bg-neutral-50!' />
     </div>
   );
 }
@@ -106,10 +106,10 @@ function MetaCounterPanel() {
         <div key={i} className='space-y-2'>
           <div className={flexCenterBetweenClasses}>
             <Shimmer className='h-3.5 w-24' />
-            <Shimmer className='h-6 w-16 rounded-lg!' />
+            <Shimmer className='h-6 w-16' />
           </div>
           <Shimmer className='h-10 w-full' />
-          <Shimmer className='h-2 w-full rounded-lg!' />
+          <Shimmer className='h-2 w-full' />
           <Shimmer className='h-3 w-48' />
         </div>
       ))}
@@ -148,7 +148,7 @@ function ContrastCheckerPanel() {
             </div>
           ))}
         </div>
-        <Shimmer className='mx-auto h-20 w-full rounded-lg! bg-neutral-200!' />
+        <Shimmer className='mx-auto h-20 w-full bg-neutral-200!' />
         <Shimmer className='mx-auto h-8 w-48' />
       </SectionBox>
 
@@ -164,8 +164,8 @@ function ContrastCheckerPanel() {
           >
             <Shimmer className='h-4 w-32' />
             <div className='flex gap-2'>
-              <Shimmer className='h-6 w-16 rounded-lg!' />
-              <Shimmer className='h-6 w-16 rounded-lg!' />
+              <Shimmer className='h-6 w-16' />
+              <Shimmer className='h-6 w-16' />
             </div>
           </Card>
         ))}
@@ -188,7 +188,7 @@ function UploadToolPanel() {
     <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
       <SectionBox className='space-y-4'>
         <Shimmer className='h-5 w-28' />
-        <Shimmer className='h-32 w-full rounded-lg! border border-dashed border-neutral-200! bg-neutral-50!' />
+        <Shimmer className='h-32 w-full border border-dashed border-neutral-200! bg-neutral-50!' />
         <Shimmer className='h-3 w-48' />
         <div className='flex gap-3 pt-2'>
           <ButtonShimmer />
@@ -200,10 +200,7 @@ function UploadToolPanel() {
         <Shimmer className='h-5 w-32' />
         <div className='grid gap-3 sm:grid-cols-2'>
           {[1, 2, 3, 4].map(i => (
-            <Shimmer
-              key={i}
-              className='h-20 w-full rounded-lg! bg-neutral-200!'
-            />
+            <Shimmer key={i} className='h-20 w-full bg-neutral-200!' />
           ))}
         </div>
       </SectionBox>
@@ -236,9 +233,9 @@ function WordCountPanel() {
         <div className='space-y-2'>
           <div className={flexCenterBetweenClasses}>
             <Shimmer className='h-4 w-32' />
-            <Shimmer className='h-6 w-16 rounded-lg!' />
+            <Shimmer className='h-6 w-16' />
           </div>
-          <Shimmer className='h-2 w-full rounded-lg!' />
+          <Shimmer className='h-2 w-full' />
         </div>
         <ButtonShimmer width='w-full' />
       </SectionBox>
@@ -266,7 +263,7 @@ function ImageEditorPanel() {
     <div className='grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,2.5fr)]'>
       <SectionBox className='space-y-4'>
         <Shimmer className='h-5 w-28' />
-        <Shimmer className='h-32 w-full rounded-lg! border border-dashed border-neutral-200! bg-neutral-50!' />
+        <Shimmer className='h-32 w-full border border-dashed border-neutral-200! bg-neutral-50!' />
         <Shimmer className='h-3 w-48' />
 
         <Shimmer className='mt-2 h-5 w-36' />
@@ -366,7 +363,7 @@ function EmailSignaturePanel() {
         <Shimmer className='h-4 w-16' />
         <div className='flex flex-wrap gap-1'>
           {[1, 2, 3, 4, 5].map(i => (
-            <Shimmer key={i} className='h-7 w-16 rounded-lg!' />
+            <Shimmer key={i} className='h-7 w-16' />
           ))}
         </div>
       </SectionBox>
@@ -407,7 +404,7 @@ function EmailSignaturePanel() {
               <Shimmer className={largeIconSizeClasses} />
             </div>
           </div>
-          <Shimmer className='min-h-85 w-full flex-1 rounded-lg! bg-neutral-200!' />
+          <Shimmer className='min-h-85 w-full flex-1 bg-neutral-200!' />
           <div className='flex flex-wrap gap-2'>
             <ButtonShimmer width='w-32' />
             <ButtonShimmer width='w-32' />
@@ -435,7 +432,7 @@ interface ToolPanelSkeletonProps {
 function SideAdShimmer() {
   return (
     <div className='sticky top-4'>
-      <Shimmer className='h-150 w-full rounded-lg! bg-neutral-50!' />
+      <Shimmer className='h-150 w-full bg-neutral-50!' />
     </div>
   );
 }

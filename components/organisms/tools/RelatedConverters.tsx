@@ -34,7 +34,7 @@ function LinkGrid({
           key={r.toolKey}
           href={r.href}
           className={cn(
-            'rounded-md border border-primary/20 bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors hover:border-primary/40 hover:bg-primary/5',
+            'border border-primary/20 bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors hover:border-primary/40 hover:bg-primary/5',
             flexCenterClasses,
           )}
         >

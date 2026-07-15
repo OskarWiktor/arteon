@@ -10,7 +10,7 @@ interface ButtonToolProps<T extends string> {
 }
 
 const buttonToolClasses =
-  'flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]!';
+  'flex items-center gap-2 border px-3 py-1.5 text-[14px]!';
 
 export default function ButtonTool<T extends string>({
   id,

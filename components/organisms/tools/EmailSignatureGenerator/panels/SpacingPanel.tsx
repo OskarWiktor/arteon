@@ -48,7 +48,7 @@ function SpacingRow({
         <button
           type='button'
           onClick={() => onSpacingChange(spacingKey, -2)}
-          className='rounded-md border border-neutral-300 p-1 hover:bg-neutral-100'
+          className='border border-neutral-300 p-1 hover:bg-neutral-100'
           aria-label='Zmniejsz odstęp'
         >
           <RiSubtractLine
@@ -61,7 +61,7 @@ function SpacingRow({
         <button
           type='button'
           onClick={() => onSpacingChange(spacingKey, 2)}
-          className='rounded-md border border-neutral-300 p-1 hover:bg-neutral-100'
+          className='border border-neutral-300 p-1 hover:bg-neutral-100'
           aria-label='Zwiększ odstęp'
         >
           <RiAddLine className={cn('text-primary', smallIconSizeClasses)} />

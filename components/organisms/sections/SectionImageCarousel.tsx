@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useEffect, useCallback } from 'react';
-import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
+import { TriangleLeft, TriangleRight } from '@/components/atoms/icons/Triangle';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { cn } from '@/lib/clsx';
 import { flexCenterClasses, normalIconSizeClasses } from '@/lib/uiClasses';
@@ -67,7 +67,7 @@ export default function SectionImageCarousel({
         {title && <SectionHeader title={title} />}
 
         <div
-          className={cn('relative mx-auto overflow-hidden rounded-lg', {
+          className={cn('relative mx-auto overflow-hidden', {
             'max-w-full': variant === 'fullWidth',
             'max-w-4xl': variant === 'default',
           })}
@@ -122,12 +122,12 @@ export default function SectionImageCarousel({
                 type='button'
                 onClick={goToPrev}
                 className={cn(
-                  'absolute top-1/2 left-4 h-10 w-10 -translate-y-1/2 rounded-lg bg-white/90 shadow-lg transition hover:bg-white',
+                  'absolute top-1/2 left-4 h-10 w-10 -translate-y-1/2 bg-white/90 shadow-lg transition hover:bg-white',
                   flexCenterClasses,
                 )}
                 aria-label='Poprzedni slajd'
               >
-                <RiArrowLeftLine
+                <TriangleLeft
                   className={cn('text-primary', normalIconSizeClasses)}
                 />
               </button>
@@ -136,12 +136,12 @@ export default function SectionImageCarousel({
                 type='button'
                 onClick={goToNext}
                 className={cn(
-                  'absolute top-1/2 right-4 h-10 w-10 -translate-y-1/2 rounded-lg bg-white/90 shadow-lg transition hover:bg-white',
+                  'absolute top-1/2 right-4 h-10 w-10 -translate-y-1/2 bg-white/90 shadow-lg transition hover:bg-white',
                   flexCenterClasses,
                 )}
                 aria-label='Następny slajd'
               >
-                <RiArrowRightSLine
+                <TriangleRight
                   className={cn('text-primary', normalIconSizeClasses)}
                 />
               </button>
@@ -152,7 +152,7 @@ export default function SectionImageCarousel({
                     key={index}
                     type='button'
                     onClick={() => setCurrentSlide(index)}
-                    className={cn('h-2 w-8 rounded-lg transition', {
+                    className={cn('h-2 w-8 transition', {
                       'bg-white': index === currentSlide,
                       'bg-white/30': index !== currentSlide,
                     })}

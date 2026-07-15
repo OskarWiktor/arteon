@@ -267,8 +267,7 @@ export default function ImageResizeTool() {
   const gridStroke = getGridStroke(state.gridColor);
   const presetList = IMAGE_PRESETS[state.selectedCategory];
   const shapeNeedsAlpha = state.shape === 'circle';
-  const selectionShapeClass =
-    state.shape === 'circle' ? 'rounded-lg' : 'rounded-md';
+  const selectionShapeClass = state.shape === 'circle' ? 'rounded-lg' : '';
 
   const handleFileChange = (file: File | null) => {
     if (!file) return;
@@ -663,7 +662,7 @@ export default function ImageResizeTool() {
                 <RiImageLine className='text-5xl' aria-hidden='true' />
                 <span className='text-sm! font-medium'>{t.demoPreset}</span>
               </div>
-              <div className='pointer-events-none absolute inset-4 grid grid-cols-3 grid-rows-3 rounded-md border border-dashed border-neutral-300'>
+              <div className='pointer-events-none absolute inset-4 grid grid-cols-3 grid-rows-3 border border-dashed border-neutral-300'>
                 {Array.from({ length: 9 }).map((_, i) => (
                   <div
                     key={i}

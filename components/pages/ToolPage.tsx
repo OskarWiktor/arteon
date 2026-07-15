@@ -54,10 +54,10 @@ const DESKTOP_ONLY_TOOLS = new Set([
  */
 function DesktopOnlyNotice({ t }: { t: DesktopOnlyUi }) {
   return (
-    <section className='mx-auto my-6 max-w-xl rounded-lg border border-neutral-200 bg-white/90 p-6 text-sm shadow-sm'>
+    <section className='mx-auto my-6 max-w-xl border border-neutral-200 bg-white/90 p-6 text-sm shadow-sm'>
       <h2 className='mb-3 text-lg font-semibold'>{t.title}</h2>
       <p className='mb-3'>{t.description}</p>
-      <div className='rounded-lg bg-neutral-50 px-4 py-3 text-xs text-light'>
+      <div className='bg-neutral-50 px-4 py-3 text-xs text-light'>
         <p className='mb-1 font-medium'>{t.tipTitle}</p>
         <p>{t.tipText}</p>
       </div>

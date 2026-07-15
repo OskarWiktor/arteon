@@ -106,7 +106,7 @@ export default function NavigationShell() {
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
               className={cn(
-                'rounded-md text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
+                'text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
                 flexCenterClasses,
                 largeIconSizeClasses,
                 focusRingClasses,
@@ -139,7 +139,7 @@ export default function NavigationShell() {
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
               className={cn(
-                'h-10 w-10 rounded-md text-primary transition-colors hover:bg-primary-light hover:text-primary',
+                'h-10 w-10 text-primary transition-colors hover:bg-primary-light hover:text-primary',
                 flexCenterClasses,
                 focusRingClasses,
               )}

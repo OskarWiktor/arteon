@@ -34,7 +34,7 @@ export default function ToolAlert({
   return (
     <div
       className={cn(
-        'rounded-lg border px-3 py-2 text-[11px]!',
+        'border px-3 py-2 text-[11px]!',
         variantClasses[variant],
         className,
       )}

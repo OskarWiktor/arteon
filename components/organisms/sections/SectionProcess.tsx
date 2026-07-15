@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { RiArrowRightSLine } from 'react-icons/ri';
+import { TriangleRight } from '@/components/atoms/icons/Triangle';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { cn } from '@/lib/clsx';
 import { flexCenterClasses } from '@/lib/uiClasses';
@@ -42,7 +42,7 @@ export default function SectionProcess({ title, steps }: SectionProcessProps) {
               <Card interactive={false} className='flex flex-1 items-center'>
                 <div
                   className={cn(
-                    'h-12 w-12 shrink-0 rounded-lg bg-primary text-white',
+                    'h-12 w-12 shrink-0 bg-primary text-white',
                     flexCenterClasses,
                   )}
                 >
@@ -56,7 +56,7 @@ export default function SectionProcess({ title, steps }: SectionProcessProps) {
                 </div>
               </Card>
               {index < steps.length - 1 && (
-                <RiArrowRightSLine
+                <TriangleRight
                   className='mx-2 hidden h-5 w-5 shrink-0 text-primary-light md:block'
                   aria-hidden='true'
                 />

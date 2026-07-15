@@ -36,7 +36,7 @@ const variantClasses: Record<ButtonVariant, string> = {
 };
 
 const buttonClasses =
-  'group inline-flex w-fit items-center rounded-sm text-sm font-medium md:text-base transition hover:-translate-y-0.5 active:translate-y-0';
+  'group inline-flex w-fit items-center text-sm font-medium md:text-base transition hover:-translate-y-0.5 active:translate-y-0';
 
 export default function Button({
   children,

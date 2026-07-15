@@ -42,7 +42,7 @@ const variantClasses = {
   dark: 'bg-neutral-900 text-white',
   warning: 'bg-warning-bg text-warning-text',
   info: 'bg-info-bg text-info-mid',
-  tech: 'rounded-md! border border-primary-light bg-white',
+  tech: 'border border-primary-light bg-white',
 };
 
 export default function Badge({
@@ -67,7 +67,7 @@ export default function Badge({
   const ResolvedComponent = Component ?? 'span';
   const content = children ?? text;
 
-  const baseClasses = 'inline-flex items-center rounded-lg font-medium';
+  const baseClasses = 'inline-flex items-center font-medium';
   const hoverClasses =
     ResolvedComponent !== 'span' && !disabled
       ? 'cursor-pointer hover:border-light'

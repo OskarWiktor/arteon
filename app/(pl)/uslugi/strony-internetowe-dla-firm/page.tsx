@@ -671,7 +671,7 @@ export default function StronyInternetoweDlaFirmPage() {
             alt='Przykład wzrostu widoczności w Google strony zbudowanej w technologii Next.js - dane Ahrefs dla https://www.arteonagency.pl/'
             width={946}
             height={297}
-            className='h-auto w-full rounded-lg border border-neutral-200'
+            className='h-auto w-full'
             sizes='(min-width:1024px) 48rem, 100vw'
           />
           <figcaption className='mt-2 text-center text-xs text-light'>

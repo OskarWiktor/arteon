@@ -51,7 +51,7 @@ export default function CarouselCard(props: CarouselCardProps) {
             <InlineLink
               href={href}
               aria-label={`${buttonLabel}: ${title}`}
-              className="inline-flex rounded-lg text-[#B3B0AC]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+              className="inline-flex text-[#B3B0AC]! transition before:absolute before:inset-0 before:content-['']"
             >
               <span className='text-[#F9F5F2]!'>{buttonLabel}</span>
               <ArrowIcon />
@@ -87,7 +87,7 @@ export default function CarouselCard(props: CarouselCardProps) {
             <InlineLink
               href={href}
               aria-label={`Przeczytaj artykuł: ${article.title}`}
-              className="inline-flex rounded-lg text-[#F9F5F2]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+              className="inline-flex text-[#F9F5F2]! transition before:absolute before:inset-0 before:content-['']"
             >
               Przeczytaj artykuł
               <ArrowIcon />
@@ -121,7 +121,7 @@ export default function CarouselCard(props: CarouselCardProps) {
           <InlineLink
             href={detailsHref}
             aria-label={`Szczegóły projektu: ${project.title}`}
-            className="inline-flex rounded-lg text-[#F9F5F2]! transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+            className="inline-flex text-[#F9F5F2]! transition before:absolute before:inset-0 before:content-['']"
           >
             Szczegóły projektu
             <ArrowIcon />
@@ -133,7 +133,7 @@ export default function CarouselCard(props: CarouselCardProps) {
               target='_blank'
               rel='noopener noreferrer'
               aria-label={`Sprawdź stronę projektu ${project.title} (otwiera się w nowej karcie)`}
-              className='relative z-10 inline-flex rounded-lg text-[#F9F5F2]! transition hover:text-primary'
+              className='relative z-10 inline-flex text-[#F9F5F2]! transition hover:text-primary'
             >
               Sprawdź stronę
               <ArrowIcon />

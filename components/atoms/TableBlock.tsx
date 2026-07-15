@@ -47,7 +47,7 @@ export default function TableBlock({
     <figure className='not-prose'>
       <div
         className={cn(
-          'overflow-x-auto rounded-lg border border-neutral-200 bg-white shadow-sm',
+          'overflow-x-auto border border-neutral-200 bg-white shadow-sm',
           className,
         )}
         role='region'
@@ -60,7 +60,7 @@ export default function TableBlock({
         )}
 
         <table className='w-full text-left'>
-          <thead className='bg-(--foreground) text-white'>
+          <thead className='bg-dark text-white'>
             <tr>
               {columns.map((c, i) => (
                 <th

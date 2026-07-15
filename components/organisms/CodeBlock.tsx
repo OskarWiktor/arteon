@@ -28,19 +28,19 @@ export default function CodeBlock({
   return (
     <figure
       className={cn(
-        'group rounded-lg border border-neutral-200 bg-linear-to-b from-(--foreground) to-neutral-900 text-on-dark shadow-sm',
+        'group border border-neutral-200 bg-linear-to-b from-(--foreground) to-neutral-900 text-on-dark shadow-sm',
         className,
       )}
     >
       <div
         className={cn(
-          'gap-3 rounded-t-xl border-b border-white/10 px-4 py-2',
+          'gap-3 border-b border-white/10 px-4 py-2',
           flexCenterBetweenClasses,
         )}
       >
         <div className='flex items-center gap-2'>
           {language ? (
-            <span className='inline-block rounded bg-white/10 px-2 py-0.5 text-xs text-white/70'>
+            <span className='inline-block bg-white/10 px-2 py-0.5 text-xs text-white/70'>
               {language}
             </span>
           ) : null}
@@ -53,13 +53,13 @@ export default function CodeBlock({
           label='Kopiuj'
           copiedLabel='Skopiowano'
           variant='dark'
-          className='gap-2 rounded-md px-2 py-1 text-xs'
+          className='gap-2 px-2 py-1 text-xs'
         />
       </div>
 
       <pre
         className={cn(
-          'relative overflow-x-auto rounded-b-xl p-4 text-[13px] leading-relaxed',
+          'relative overflow-x-auto p-4 text-[13px] leading-relaxed',
           {
             'wrap-break-word whitespace-pre-wrap': wrap,
             'whitespace-pre': !wrap,

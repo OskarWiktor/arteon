@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import {
   RiCheckLine,
-  RiArrowRightSLine,
   RiFlashlightLine,
   RiFocus3Line,
   RiLineChartLine,
@@ -32,6 +31,7 @@ import {
 import Badge from '@/components/atoms/Badge';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
+import { TriangleRight } from '@/components/atoms/icons/Triangle';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
@@ -155,7 +155,7 @@ function Aspect({
 }) {
   if (ratio === 'auto') {
     return (
-      <div className='relative overflow-hidden rounded-lg border border-neutral-200'>
+      <div className='relative overflow-hidden border border-neutral-200'>
         {children}
       </div>
     );
@@ -170,7 +170,7 @@ function Aspect({
   return (
     <div
       className={cn(
-        'relative overflow-hidden rounded-lg border border-neutral-200',
+        'relative overflow-hidden border border-neutral-200',
         map[ratio] || '',
       )}
     >
@@ -198,7 +198,7 @@ const ICON_MAP: Record<string, React.ElementType> = {
   cart: RiShoppingCartLine,
   pen: RiPencilLine,
   check: RiCheckLine,
-  arrow: RiArrowRightSLine,
+  arrow: TriangleRight,
   search: RiSearchLine,
   layout: RiLayoutLine,
   eye: RiEyeLine,
@@ -261,7 +261,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                 <Divider size='xs' />
                 <figure>
                   {isAuto ? (
-                    <div className='overflow-hidden rounded-lg border border-neutral-200'>
+                    <div className='overflow-hidden border border-neutral-200'>
                       <Image
                         src={b.src}
                         alt={b.alt}
@@ -297,7 +297,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           case 'imageText': {
             const Img =
               b.ratio === 'auto' ? (
-                <div className='overflow-hidden rounded-lg border border-neutral-200'>
+                <div className='overflow-hidden border border-neutral-200'>
                   <Image
                     src={b.src}
                     alt={b.alt}
@@ -343,7 +343,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           case 'quote': {
             return (
               <div key={`quote-${i}`} className={wrapperClass}>
-                <figure className='rounded-lg bg-white p-6 shadow-md'>
+                <figure className='bg-white p-6 shadow-md'>
                   <blockquote>
                     <p className='text-lg'>"{b.text}"</p>
                   </blockquote>
@@ -479,7 +479,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
             return (
               <div key={`testimonial-${i}`} className={wrapperClass}>
                 <SectionInfo title='Ocena współpracy'>
-                  <blockquote className='rounded-lg bg-white p-6 shadow-md'>
+                  <blockquote className='bg-white p-6 shadow-md'>
                     <p className='text-lg'>"{b.quote}"</p>
                     {(b.author || b.role) && (
                       <footer className='mt-2'>
@@ -507,7 +507,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                 <SectionInfo title={b.title || 'Jak było - jak jest'}>
                   <div className='grid grid-cols-1 items-start gap-6 md:grid-cols-2'>
                     <figure>
-                      <div className='overflow-hidden rounded-lg border border-neutral-200'>
+                      <div className='overflow-hidden border border-neutral-200'>
                         <Image
                           src={b.beforeImage}
                           alt={b.beforeLabel || 'Widok przed zmianami'}
@@ -522,7 +522,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                       </figcaption>
                     </figure>
                     <figure>
-                      <div className='overflow-hidden rounded-lg border border-neutral-200'>
+                      <div className='overflow-hidden border border-neutral-200'>
                         <Image
                           src={b.afterImage}
                           alt={b.afterLabel || 'Widok po wdrożeniu'}
@@ -571,7 +571,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                 <div className='grid grid-cols-1 gap-4 sm:grid-cols-3'>
                   {b.images.map((img, idx) => (
                     <figure key={idx}>
-                      <div className='overflow-hidden rounded-lg border border-neutral-200'>
+                      <div className='overflow-hidden border border-neutral-200'>
                         <Image
                           src={img.src}
                           alt={img.alt}
@@ -701,10 +701,10 @@ function ProjectProcessSection({ project }: { project: Project }) {
       <SectionInfo title='Proces'>
         <ul className='grid gap-3 md:grid-cols-2'>
           {project.process_steps.map((step, i) => (
-            <li key={i} className='rounded-lg bg-white p-3 shadow-md'>
+            <li key={i} className='bg-white p-3 shadow-md'>
               <span
                 className={cn(
-                  'mr-2 inline-flex items-center justify-center rounded-lg border border-light text-xs font-bold text-light',
+                  'mr-2 inline-flex items-center justify-center border border-light text-xs font-bold text-light',
                   largeIconSizeClasses,
                 )}
               >
@@ -748,7 +748,7 @@ function ProjectBeforeAfterSection({ project }: { project: Project }) {
       <SectionInfo title='Jak było - jak jest'>
         <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
           <figure>
-            <div className='relative aspect-video overflow-hidden rounded-lg border border-neutral-200'>
+            <div className='relative aspect-video overflow-hidden border border-neutral-200'>
               <Image
                 src={ba.beforeImage || project.image}
                 alt='Widok przed zmianami'
@@ -761,7 +761,7 @@ function ProjectBeforeAfterSection({ project }: { project: Project }) {
           </figure>
 
           <figure>
-            <div className='relative aspect-video overflow-hidden rounded-lg border border-neutral-200'>
+            <div className='relative aspect-video overflow-hidden border border-neutral-200'>
               <Image
                 src={ba.afterImage || project.image}
                 alt='Widok po wdrożeniu'
@@ -834,7 +834,7 @@ function ProjectTestimonialSection({ project }: { project: Project }) {
     <>
       <Divider size='sm' line />
       <SectionInfo title='Ocena współpracy'>
-        <blockquote className='rounded-lg bg-white p-6 shadow-md'>
+        <blockquote className='bg-white p-6 shadow-md'>
           <p className='text-lg'>“{testimonial.quote}”</p>
           {(testimonial.author || testimonial.role) && (
             <footer className='mt-2'>

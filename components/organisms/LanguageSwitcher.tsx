@@ -3,7 +3,8 @@
 import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { RiArrowDownSLine, RiCloseLine, RiTranslate2 } from 'react-icons/ri';
+import { RiCloseLine, RiTranslate2 } from 'react-icons/ri';
+import { TriangleDown } from '@/components/atoms/icons/Triangle';
 import Wrapper from '@/components/atoms/Wrapper';
 import { useDialogFocus } from '@/hooks/useDialogFocus';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
@@ -165,7 +166,7 @@ export default function LanguageSwitcher({
       hrefLang={link.hreflang}
       title={link.title}
       onClick={close}
-      className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-white'
+      className='group/link gap-3 px-3 py-2.5 transition-colors hover:bg-white'
     >
       <span className='w-6 text-center text-xs font-semibold text-primary-mid uppercase transition-colors group-hover/link:text-primary'>
         {link.label}
@@ -195,7 +196,7 @@ export default function LanguageSwitcher({
             aria-expanded={isOpen}
             aria-label={t.toggleLabel}
             className={cn(
-              'flex h-8 items-center gap-1.5 rounded-md px-2 text-primary transition-colors hover:bg-primary-light',
+              'flex h-8 items-center gap-1.5 px-2 text-primary transition-colors hover:bg-primary-light',
               focusRingClasses,
             )}
           >
@@ -210,7 +211,7 @@ export default function LanguageSwitcher({
               className='inline-flex transition-transform duration-200'
               style={{ transform: isOpen ? 'rotate(180deg)' : undefined }}
             >
-              <RiArrowDownSLine
+              <TriangleDown
                 className={smallIconSizeClasses}
                 aria-hidden='true'
               />
@@ -232,7 +233,7 @@ export default function LanguageSwitcher({
               <Wrapper>
                 <div className='grid grid-cols-5 gap-0'>
                   <div className='border-r border-primary-light pr-4'>
-                    <div className='flex items-center gap-3 rounded-lg bg-white px-4 py-3 text-primary'>
+                    <div className='flex items-center gap-3 bg-white px-4 py-3 text-primary'>
                       <RiTranslate2
                         className={cn('shrink-0', normalIconSizeClasses)}
                         aria-hidden='true'
@@ -273,7 +274,7 @@ export default function LanguageSwitcher({
           aria-expanded={isOpen}
           aria-label={t.toggleLabel}
           className={cn(
-            'flex h-8 items-center gap-1.5 rounded-md px-2 text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
+            'flex h-8 items-center gap-1.5 px-2 text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
             focusRingClasses,
           )}
         >
@@ -303,7 +304,7 @@ export default function LanguageSwitcher({
               aria-modal='true'
               aria-label={t.chooseLabel}
               tabIndex={-1}
-              className='fixed inset-x-4 top-1/2 z-1101 max-h-[80dvh] -translate-y-1/2 animate-[dropdown-in_0.2s_ease-out_both] overflow-y-auto rounded-lg bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-105 sm:-translate-x-1/2'
+              className='fixed inset-x-4 top-1/2 z-1101 max-h-[80dvh] -translate-y-1/2 animate-[dropdown-in_0.2s_ease-out_both] overflow-y-auto bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-105 sm:-translate-x-1/2'
             >
               <div className={cn('mb-4', flexCenterBetweenClasses)}>
                 <h2 className='text-base font-semibold text-dark'>
@@ -313,7 +314,7 @@ export default function LanguageSwitcher({
                   type='button'
                   onClick={close}
                   className={cn(
-                    'rounded-md text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
+                    'text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
                     flexCenterClasses,
                     focusRingClasses,
                     largeIconSizeClasses,
@@ -327,7 +328,7 @@ export default function LanguageSwitcher({
                 </button>
               </div>
 
-              <div className='mb-4 flex items-center gap-2.5 rounded-lg bg-neutral-50 px-3 py-2.5'>
+              <div className='mb-4 flex items-center gap-2.5 bg-neutral-50 px-3 py-2.5'>
                 <RiTranslate2
                   className={cn('shrink-0 text-primary', smallIconSizeClasses)}
                   aria-hidden='true'
@@ -347,7 +348,7 @@ export default function LanguageSwitcher({
                         hrefLang={link.hreflang}
                         title={link.title}
                         onClick={close}
-                        className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
+                        className='gap-2 px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                       >
                         <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
                           {link.label}
