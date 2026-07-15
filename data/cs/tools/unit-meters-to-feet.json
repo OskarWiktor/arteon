@@ -1,0 +1,284 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník metrů na stopy – převeď metry na stopy",
+    "description": "Převeď metry na stopy. Podívej se na hotové tabulky s výškou ve stopách a palcích (1,80 m je 5 stop 11 palců), rozměry a vzdálenostmi. Převodník funguje v obou směrech a počítá okamžitě.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-metru-na-stopy"
+  },
+  "hero": {
+    "title": "Převeď metry na stopy",
+    "description": "Zadej libovolnou hodnotu v metrech a hned si přečti výsledek ve stopách. Převodník se hodí, když někomu z USA nebo Británie říkáš svoji výšku, když čteš rozměry vybavení uvedené ve stopách nebo když si zařazuješ letovou výšku. Níže na stránce najdeš samostatnou tabulku výšek, která ukazuje výsledek ve stopách a palcích.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-metru-na-stopy",
+      "label": "metry na stopy"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník metrů na stopy – z m na ft",
+      "alternateName": [
+        "Převodník metrů na stopy",
+        "Kalkulačka metrů na stopy",
+        "Metry na stopy",
+        "m na ft",
+        "Převést metry na stopy",
+        "Kolik stop má metr",
+        "1 metr kolik je stop",
+        "1,80 m ve stopách",
+        "1,75 m ve stopách",
+        "Výška ve stopách a palcích",
+        "Tabulka metrů na stopy",
+        "Kolik stop je 100 metrů",
+        "2 metry ve stopách",
+        "meters to feet",
+        "Převodník délky"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník metrů na stopy, který běží v prohlížeči a bez registrace. Zadej hodnotu v metrech a okamžitě si přečti výsledek ve stopách. Hodí se pro výšku v anglicky mluvících zemích, rozměry vybavení a letové výšky.",
+      "featureList": [
+        "Převod funguje v obou směrech, převedeš tedy metry na stopy i stopy na metry",
+        "Výsledek se objeví okamžitě při psaní, aniž bys musel klikat na jakékoli tlačítko",
+        "Hotový výsledek zkopíruješ do schránky jedním kliknutím",
+        "Převodní tabulka zahrnuje hodnoty od 1 do 500 metrů",
+        "Samostatná tabulka výšek ukazuje, kolik stop a palců odpovídá hodnotám od 1,50 m do 2,00 m",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvoje data zařízení neopustí",
+        "Přesný vzorec převodu je stopy = metry ÷ 0,3048",
+        "Nástroj funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést metry na stopy?",
+      "description": "Krátký návod k použití převodníku metrů na stopy.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu v metrech",
+          "text": "Do levého pole napiš počet metrů, který chceš převést na stopy."
+        },
+        {
+          "name": "Přečti si výsledek ve stopách",
+          "text": "Výsledek ve stopách se hned objeví ve vedlejším poli vpravo. Můžeš ho jedním kliknutím zkopírovat do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Změnit pořadí a převodník přepneš na převod stop na metry."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "K čemu je převod metrů na stopy?",
+      "html": "<p class=\"text-mid mb-4\">Metr je základní jednotka délky v Česku i ve většině světa. Stopa platí především ve Spojených státech a ve Velké Británii, takže metry se na stopy převádějí hlavně při kontaktu se zahraničím: když někomu říkáš svoji výšku, když čteš rozměry vybavení popsané ve stopách nebo když si zařazuješ letovou výšku, kterou letectví po celém světě uvádí právě ve stopách.</p><p class=\"text-mid mb-4\">Jedna stopa je přesně 0,3048 metru a jeden metr je zhruba 3,28 stopy. Vztah je stálý, takže každý převod se scvrkne na jediné dělení. Převodník to za tebe udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid mb-4\">U výšky je jeden háček: v anglicky mluvících zemích se neříká „5,91 stopy\", ale „5 stop 11 palců\". Převodník dává výsledek v desetinných stopách, proto níže najdeš samostatnou tabulku výšek, která převádí metry na stopy a palce.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník metrů na stopy – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod metrů na stopy? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod metrů na stopy stojí na stálém vztahu: jedna stopa je přesně 0,3048 metru. Když chceš změnit metry na stopy, vydělíš počet metrů číslem 0,3048 (což je totéž jako násobení číslem 3,280839895).</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>stopy = metry ÷ 0,3048</strong>. Opačným směrem: <strong>metry = stopy × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Příklad: chceš zjistit, kolik stop je 1,80 m. Dosadíš: 1,80 ÷ 0,3048 = 5,91 stopy. Neznamená to „5 stop a 91 palců\" – desetinná část je zlomek stopy. Palce získáš tak, že ji vynásobíš dvanácti: 0,91 × 12 = 11 palců, takže 1,80 m je 5 stop 11 palců.</p><p class=\"text-mid\">Jiný příklad: sprinterská trať 100 m má 100 ÷ 0,3048 = 328,08 stopy. Převodník počítá oba směry okamžitě po zadání hodnoty.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka metrů na stopy",
+      "description": "Následující tabulka převádí běžné hodnoty v metrech na desetinné stopy. Hodnoty jsou zaokrouhlené na dvě desetinná místa. Pokud potřebuješ přesnou hodnotu nebo jiný rozměr, použij převodník výše.",
+      "labelHeader": "Metry",
+      "cols": ["Stopy"],
+      "rows": [
+        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
+        { "label": "1,6 m", "values": ["5,25 ft"] },
+        { "label": "1,7 m", "values": ["5,58 ft"] },
+        { "label": "1,75 m", "values": ["5,74 ft"] },
+        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
+        { "label": "1,9 m", "values": ["6,23 ft"] },
+        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
+        { "label": "2,5 m", "values": ["8,20 ft"] },
+        { "label": "3 m", "values": ["9,84 ft"] },
+        { "label": "4 m", "values": ["13,12 ft"] },
+        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
+        { "label": "6 m", "values": ["19,69 ft"] },
+        { "label": "7 m", "values": ["22,97 ft"] },
+        { "label": "8 m", "values": ["26,25 ft"] },
+        { "label": "9 m", "values": ["29,53 ft"] },
+        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
+        { "label": "15 m", "values": ["49,21 ft"] },
+        { "label": "20 m", "values": ["65,62 ft"] },
+        { "label": "25 m", "values": ["82,02 ft"] },
+        { "label": "30 m", "values": ["98,43 ft"] },
+        { "label": "40 m", "values": ["131,23 ft"] },
+        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
+        { "label": "60 m", "values": ["196,85 ft"] },
+        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
+        { "label": "200 m", "values": ["656,17 ft"] },
+        { "label": "500 m", "values": ["1 640,42 ft"] }
+      ],
+      "caption": "Chceš převádět opačným směrem? Použij náš převodník <a href=\"/cs/nastroje/prevodnik-stop-na-metry\">stop na metry</a> s úplnou tabulkou pro rozměry uváděné ve stopách."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabulka výšek: metry na stopy a palce",
+      "description": "V anglicky mluvících zemích se výška uvádí ve stopách a palcích, ne v desetinných stopách. Následující tabulka ukazuje obě podoby: výsledek převodníku ve stopách a zápis, který se používá v hovoru. Palce jsou zaokrouhlené na celé hodnoty.",
+      "labelHeader": "Výška",
+      "cols": ["Stopy (desetinné)", "Stopy a palce"],
+      "rows": [
+        { "label": "1,50 m", "values": ["4,92 ft", "4 stopy 11 palců"] },
+        { "label": "1,55 m", "values": ["5,09 ft", "5 stop 1 palec"] },
+        {
+          "label": "1,60 m",
+          "values": ["5,25 ft", "5 stop 3 palce"],
+          "emphasis": true
+        },
+        { "label": "1,65 m", "values": ["5,41 ft", "5 stop 5 palců"] },
+        {
+          "label": "1,70 m",
+          "values": ["5,58 ft", "5 stop 7 palců"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft", "5 stop 9 palců"],
+          "emphasis": true
+        },
+        { "label": "1,78 m", "values": ["5,84 ft", "5 stop 10 palců"] },
+        {
+          "label": "1,80 m",
+          "values": ["5,91 ft", "5 stop 11 palců"],
+          "emphasis": true
+        },
+        { "label": "1,85 m", "values": ["6,07 ft", "6 stop 1 palec"] },
+        {
+          "label": "1,90 m",
+          "values": ["6,23 ft", "6 stop 3 palce"],
+          "emphasis": true
+        },
+        { "label": "1,95 m", "values": ["6,40 ft", "6 stop 5 palců"] },
+        {
+          "label": "2,00 m",
+          "values": ["6,56 ft", "6 stop 7 palců"],
+          "emphasis": true
+        }
+      ],
+      "caption": "Palce získáš tak, že desetinnou část stopy vynásobíš dvanácti. Příklad: 5,91 ft, tedy 0,91 × 12 = 11 palců."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí metry na stopy?",
+      "description": "Stopy se v českém životě objevují hlavně při kontaktu se zahraničím. Každá z těchto situací má svoje specifika.",
+      "items": [
+        {
+          "title": "Výška v hovoru s cizincem",
+          "description": "To je nejčastější důvod, proč se metry převádějí na stopy. Američan nebo Brit si obvykle nedokáže představit, kolik je „180 cm\", ale hned ví, jak vysoký je člověk s „5 stopami 11 palci\". Pamatuj, že výsledek převodníku (5,91 ft) jsou desetinné stopy, ne stopy a palce – zápis do hovoru najdeš v tabulce výšek výše."
+        },
+        {
+          "title": "Letová výška v letectví",
+          "description": "Letectví po celém světě, i v Česku, uvádí výšku ve stopách. Letová hladina FL100 je 10 000 stop, tedy zhruba 3 048 m. Pokud čteš data o letu nebo tě zajímá létání, převod ti tyhle hodnoty zařadí k metrům, které znáš."
+        },
+        {
+          "title": "Rozměry vybavení a místností",
+          "description": "Katalogy z amerického trhu uvádějí délku prken, kabelů nebo výšku místností ve stopách. Běžná výška pokoje 8 stop je 2,44 m a 10 stop je 3,05 m. Převod pomůže posoudit, jestli se vybavení vejde do tvého interiéru."
+        },
+        {
+          "title": "Hory a sport",
+          "description": "Sněžka s 1 603 m odpovídá 5 259,19 stopy a bazén dlouhý 25 m má 82,02 stopy. V anglicky psaných zdrojích se výšky a vzdálenosti často uvádějí ve stopách, převod tedy umožní srovnání s domácími údaji."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu metrů na stopy",
+      "items": [
+        {
+          "question": "Kolik stop má 1 metr?",
+          "answer": "1 metr je 3,28 stopy. Výpočet: 1 ÷ 0,3048 = 3,28 ft. Přesná hodnota je 3,280839895 stopy."
+        },
+        {
+          "question": "Je 1 metr přesně 3 stopy?",
+          "answer": "Ne. 1 metr je 3,28 stopy, tedy o víc než čtvrt stopy víc než 3 stopy. Samotné 3 stopy jsou 0,91 m, rozdíl tedy dělá zhruba 9 centimetrů."
+        },
+        {
+          "question": "Jsou 2 metry 6 stop?",
+          "answer": "Ne. 2 metry jsou 6,56 stopy, tedy 6 stop a 7 palců. Samotných 6 stop je 1,83 m, takže 2 metry jsou zhruba o 17 centimetrů víc."
+        },
+        {
+          "question": "Odpovídají 3 metry 10 stopám?",
+          "answer": "Ne, i když jsou si blízké. 3 metry jsou 9,84 stopy. Rovných 10 stop je 3,05 m, rozdíl tedy dělá zhruba 5 centimetrů."
+        },
+        {
+          "question": "Kolik stop je 1,80 m?",
+          "answer": "1,80 m je 5,91 stopy, tedy 5 stop 11 palců. Výpočet: 1,80 ÷ 0,3048 = 5,91 ft a desetinnou část převedeš na palce: 0,91 × 12 = 11 palců."
+        },
+        {
+          "question": "Kolik stop je 1,75 m?",
+          "answer": "1,75 m je 5,74 stopy, tedy 5 stop 9 palců. Výpočet: 1,75 ÷ 0,3048 = 5,74 ft."
+        },
+        {
+          "question": "Kolik stop je 1,60 m?",
+          "answer": "1,60 m je 5,25 stopy, tedy 5 stop 3 palce. Výpočet: 1,60 ÷ 0,3048 = 5,25 ft."
+        },
+        {
+          "question": "Je 1,78 m 5 stop a 10 palců?",
+          "answer": "Ano. 1,78 m je 5,84 stopy, což po převodu desetinné části na palce dává 5 stop 10 palců. Je to jedna z nejčastěji uváděných výšek v anglicky mluvících zemích."
+        },
+        {
+          "question": "Kolik stop je 100 metrů?",
+          "answer": "100 metrů je 328,08 stopy. Výpočet: 100 ÷ 0,3048 = 328,08 ft."
+        },
+        {
+          "question": "Kolik stop jsou 2, 5 a 10 metrů?",
+          "answer": "2 metry jsou 6,56 ft, 5 metrů je 16,40 ft a 10 metrů je 32,81 ft. Každou z těchto hodnot získáš tak, že počet metrů vydělíš číslem 0,3048."
+        },
+        {
+          "question": "Jak převést desetinné stopy na stopy a palce?",
+          "answer": "Celou část necháš jako stopy a desetinnou část vynásobíš dvanácti, čímž získáš palce. Příklad: 5,91 stopy je 5 stop a 0,91 × 12 = 11 palců, tedy 5 stop 11 palců. Převodník dává výsledek v desetinných stopách – hotové hodnoty pro výšku najdeš v tabulce výše."
+        },
+        {
+          "question": "Jaký je vzorec pro převod metrů na stopy?",
+          "answer": "Vzorec zní: stopy = metry ÷ 0,3048, což je totéž jako násobení číslem 3,280839895. Například 6 m ÷ 0,3048 = 19,69 ft. Opačným směrem: metry = stopy × 0,3048."
+        },
+        {
+          "question": "Převádí tenhle převodník čtvereční stopy na metry čtvereční?",
+          "answer": "Ne. Tenhle nástroj převádí délku, kdežto čtvereční stopa je jednotka plochy. Přepočet je jiný: 1 metr čtvereční je 10,7639 čtverečních stop, plochu v metrech čtverečních tedy násobíš číslem 10,7639."
+        },
+        {
+          "question": "Převedu tady newtonmetry na librostopy?",
+          "answer": "Ne. Newtonmetry (Nm) a librostopy (ft-lb) jsou jednotky točivého momentu, ne délky, takže je tenhle převodník nepodporuje. Podobnost názvu plyne jen z toho, že se v obou jednotkách vyskytuje metr a stopa."
+        },
+        {
+          "question": "Jak rychle převést metry na stopy z hlavy?",
+          "answer": "Nejjednodušší je vynásobit počet metrů číslem 3,3, což je totéž jako vynásobit třemi a přidat ještě 10 %. Pro 5 m to dává 15 + 1,5 = 16,5 ft oproti přesné hodnotě 16,40 ft – výsledek je mírně nadsazený, ale k orientaci stačí. Na přesné výpočty použij převodník."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "subject": "Převodník metrů na stopy"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

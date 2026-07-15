@@ -1,0 +1,284 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "de",
+  "metadata": {
+    "title": "Meter in Fuß umrechnen – Umrechner Meter zu Fuß",
+    "description": "Rechnen Sie Meter in Fuß um. Mit fertigen Tabellen für Körpergröße in Fuß und Zoll (1,80 m sind 5 Fuß 11 Zoll), Maße und Entfernungen. Der Umrechner arbeitet in beide Richtungen und rechnet sofort.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/meter-in-fuss-umrechner"
+  },
+  "hero": {
+    "title": "Meter in Fuß umrechnen",
+    "description": "Geben Sie einen beliebigen Wert in Metern ein und lesen Sie das Ergebnis sofort in Fuß ab. Der Umrechner hilft, wenn Sie Ihre Körpergröße gegenüber Menschen aus den USA oder Großbritannien angeben, Maße von Geräten in Fuß lesen oder Flughöhen einordnen. Weiter unten finden Sie eine eigene Größentabelle, die das Ergebnis in Fuß und Zoll zeigt.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/meter-in-fuss-umrechner",
+      "label": "Meter in Fuß"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Umrechner Meter in Fuß – Meter zu Fuß",
+      "alternateName": [
+        "Meter in Fuß Umrechner",
+        "Meter in Fuß Rechner",
+        "Meter zu Fuß",
+        "m in ft",
+        "Meter in Fuß umrechnen",
+        "Wie viele Fuß hat ein Meter",
+        "1 Meter in Fuß",
+        "1,80 m in Fuß",
+        "1,75 m in Fuß",
+        "Körpergröße in Fuß und Zoll",
+        "Tabelle Meter Fuß",
+        "Wie viele Fuß sind 100 Meter",
+        "2 Meter in Fuß",
+        "meters to feet",
+        "Längenumrechner"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Ein Umrechner von Meter in Fuß, der ohne Anmeldung im Browser läuft. Geben Sie einen Wert in Metern ein und lesen Sie das Ergebnis sofort in Fuß ab. Nützlich für Körpergrößen im englischsprachigen Raum, Gerätemaße und Flughöhen.",
+      "featureList": [
+        "Die Umrechnung funktioniert in beide Richtungen, Sie rechnen also Meter in Fuß und Fuß in Meter um",
+        "Das Ergebnis erscheint sofort während der Eingabe, ganz ohne Klick auf eine Schaltfläche",
+        "Das fertige Ergebnis lässt sich mit einem Klick in die Zwischenablage kopieren",
+        "Die Umrechnungstabelle umfasst Werte von 1 bis 500 Metern",
+        "Eine eigene Größentabelle zeigt, wie viele Fuß und Zoll den Werten von 1,50 m bis 2,00 m entsprechen",
+        "Alle Berechnungen laufen lokal im Browser, Ihre Daten verlassen das Gerät nicht",
+        "Die genaue Umrechnungsformel lautet Fuß = Meter ÷ 0,3048",
+        "Das Werkzeug läuft auf Handy, Tablet und Computer ohne Installation"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Meter in Fuß um?",
+      "description": "Eine kurze Anleitung für den Umrechner von Meter in Fuß.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert in Metern eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl der Meter ein, die Sie in Fuß umrechnen möchten."
+        },
+        {
+          "name": "Ergebnis in Fuß ablesen",
+          "text": "Das Ergebnis in Fuß erscheint sofort im Feld daneben auf der rechten Seite. Sie können es mit einem Klick in die Zwischenablage kopieren."
+        },
+        {
+          "name": "Richtung bei Bedarf umkehren",
+          "text": "Klicken Sie auf Reihenfolge ändern, um den Umrechner auf Fuß in Meter umzustellen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Wozu Meter in Fuß umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Der Meter ist im deutschsprachigen Raum und im größten Teil der Welt die übliche Längeneinheit. Der Fuß gilt vor allem in den USA und in Großbritannien. Meter werden deshalb meist im Kontakt mit dem Ausland umgerechnet: wenn Sie Ihre Körpergröße angeben, Maße von Geräten aus amerikanischen Katalogen lesen oder eine Flughöhe einordnen, die die Luftfahrt weltweit in Fuß angibt.</p><p class=\"text-mid mb-4\">Ein Fuß sind genau 0,3048 Meter, ein Meter sind rund 3,28 Fuß. Das Verhältnis ist konstant, jede Umrechnung ist also eine einzige Division. Der Umrechner übernimmt das für Sie, sobald Sie einen Wert eingeben.</p><p class=\"text-mid mb-4\">Bei der Körpergröße gibt es einen Haken: Im englischsprachigen Raum sagt niemand „5,91 Fuß\", sondern „5 Fuß 11 Zoll\". Der Umrechner liefert Dezimalfuß, deshalb finden Sie unten eine eigene Größentabelle, die Meter in Fuß und Zoll umrechnet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kostenloser Umrechner von Meter in Fuß – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung von Meter in Fuß? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Meter in Fuß beruht auf einem festen Verhältnis: Ein Fuß sind genau 0,3048 Meter. Um Meter in Fuß umzuwandeln, teilen Sie die Anzahl der Meter durch 0,3048 – das entspricht einer Multiplikation mit 3,280839895.</p><p class=\"text-mid mb-4\">Die vollständige Formel: <strong>Fuß = Meter ÷ 0,3048</strong>. In die andere Richtung: <strong>Meter = Fuß × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Fuß 1,80 m sind. Sie setzen ein: 1,80 ÷ 0,3048 = 5,91 Fuß. Das bedeutet nicht „5 Fuß und 91 Zoll\" – der Nachkommateil ist ein Bruchteil eines Fußes. Für die Zoll multiplizieren Sie ihn mit 12: 0,91 × 12 = 11 Zoll. 1,80 m sind also 5 Fuß 11 Zoll.</p><p class=\"text-mid\">Ein weiteres Beispiel: Die Sprintstrecke von 100 m ergibt 100 ÷ 0,3048 = 328,08 Fuß. Der Umrechner rechnet beide Richtungen sofort nach der Eingabe.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle Meter in Fuß",
+      "description": "Die folgende Tabelle rechnet gängige Werte in Metern in Dezimalfuß um. Die Werte sind auf zwei Nachkommastellen gerundet. Für einen genauen Wert oder ein anderes Maß nutzen Sie den Umrechner oben.",
+      "labelHeader": "Meter",
+      "cols": ["Fuß"],
+      "rows": [
+        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
+        { "label": "1,6 m", "values": ["5,25 ft"] },
+        { "label": "1,7 m", "values": ["5,58 ft"] },
+        { "label": "1,75 m", "values": ["5,74 ft"] },
+        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
+        { "label": "1,9 m", "values": ["6,23 ft"] },
+        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
+        { "label": "2,5 m", "values": ["8,20 ft"] },
+        { "label": "3 m", "values": ["9,84 ft"] },
+        { "label": "4 m", "values": ["13,12 ft"] },
+        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
+        { "label": "6 m", "values": ["19,69 ft"] },
+        { "label": "7 m", "values": ["22,97 ft"] },
+        { "label": "8 m", "values": ["26,25 ft"] },
+        { "label": "9 m", "values": ["29,53 ft"] },
+        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
+        { "label": "15 m", "values": ["49,21 ft"] },
+        { "label": "20 m", "values": ["65,62 ft"] },
+        { "label": "25 m", "values": ["82,02 ft"] },
+        { "label": "30 m", "values": ["98,43 ft"] },
+        { "label": "40 m", "values": ["131,23 ft"] },
+        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
+        { "label": "60 m", "values": ["196,85 ft"] },
+        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
+        { "label": "200 m", "values": ["656,17 ft"] },
+        { "label": "500 m", "values": ["1.640,42 ft"] }
+      ],
+      "caption": "Sie möchten in die andere Richtung rechnen? Nutzen Sie unseren Umrechner <a href=\"/de/werkzeuge/fuss-in-meter-umrechner\">Fuß in Meter</a> mit vollständiger Tabelle für Maße in Fuß."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Größentabelle: Meter in Fuß und Zoll",
+      "description": "Im englischsprachigen Raum wird die Körpergröße in Fuß und Zoll angegeben, nicht in Dezimalfuß. Die folgende Tabelle zeigt beide Formen: das Ergebnis des Umrechners in Fuß und die Schreibweise, die im Gespräch verwendet wird. Die Zoll sind auf ganze Werte gerundet.",
+      "labelHeader": "Körpergröße",
+      "cols": ["Fuß (dezimal)", "Fuß und Zoll"],
+      "rows": [
+        { "label": "1,50 m", "values": ["4,92 ft", "4 Fuß 11 Zoll"] },
+        { "label": "1,55 m", "values": ["5,09 ft", "5 Fuß 1 Zoll"] },
+        {
+          "label": "1,60 m",
+          "values": ["5,25 ft", "5 Fuß 3 Zoll"],
+          "emphasis": true
+        },
+        { "label": "1,65 m", "values": ["5,41 ft", "5 Fuß 5 Zoll"] },
+        {
+          "label": "1,70 m",
+          "values": ["5,58 ft", "5 Fuß 7 Zoll"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft", "5 Fuß 9 Zoll"],
+          "emphasis": true
+        },
+        { "label": "1,78 m", "values": ["5,84 ft", "5 Fuß 10 Zoll"] },
+        {
+          "label": "1,80 m",
+          "values": ["5,91 ft", "5 Fuß 11 Zoll"],
+          "emphasis": true
+        },
+        { "label": "1,85 m", "values": ["6,07 ft", "6 Fuß 1 Zoll"] },
+        {
+          "label": "1,90 m",
+          "values": ["6,23 ft", "6 Fuß 3 Zoll"],
+          "emphasis": true
+        },
+        { "label": "1,95 m", "values": ["6,40 ft", "6 Fuß 5 Zoll"] },
+        {
+          "label": "2,00 m",
+          "values": ["6,56 ft", "6 Fuß 7 Zoll"],
+          "emphasis": true
+        }
+      ],
+      "caption": "Die Zoll erhalten Sie, indem Sie den Nachkommateil des Fußes mit 12 multiplizieren. Beispiel: 5,91 ft, also 0,91 × 12 = 11 Zoll."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man Meter in Fuß um?",
+      "description": "Fuß begegnen Ihnen im deutschsprachigen Alltag vor allem im Kontakt mit dem Ausland. Jede dieser Situationen hat ihre eigene Besonderheit.",
+      "items": [
+        {
+          "title": "Körpergröße im Gespräch mit Amerikanern",
+          "description": "Das ist der häufigste Grund für die Umrechnung. Mit „180 cm\" kann ein Amerikaner oder Brite meist wenig anfangen, „5 Fuß 11 Zoll\" ordnet er dagegen sofort ein. Denken Sie daran, dass das Ergebnis des Umrechners (5,91 ft) Dezimalfuß sind und keine Fuß und Zoll – die Schreibweise fürs Gespräch steht in der Größentabelle oben."
+        },
+        {
+          "title": "Flughöhen in der Luftfahrt",
+          "description": "Die Luftfahrt gibt Höhen weltweit in Fuß an, auch über Deutschland und Österreich. Die Flugfläche FL100 entspricht 10.000 Fuß, also rund 3.048 m. Wenn Sie Flugdaten lesen oder sich fürs Fliegen interessieren, ordnet die Umrechnung diese Werte in vertraute Meter ein."
+        },
+        {
+          "title": "Maße von Geräten und Räumen",
+          "description": "Kataloge vom amerikanischen Markt geben Kabellängen, Bretter oder Raumhöhen in Fuß an. Eine übliche Raumhöhe von 8 Fuß sind 2,44 m, 10 Fuß sind 3,05 m. Die Umrechnung zeigt Ihnen, ob ein Gerät in Ihre Räume passt."
+        },
+        {
+          "title": "Berge und Sport",
+          "description": "Die Zugspitze mit 2.962 m entspricht rund 9.718 Fuß, ein 25-m-Becken sind 82,02 Fuß. In englischsprachigen Quellen erscheinen Höhen und Strecken oft in Fuß, die Umrechnung macht den Vergleich mit heimischen Angaben möglich."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Umrechnung von Meter in Fuß",
+      "items": [
+        {
+          "question": "Wie viele Fuß hat 1 Meter?",
+          "answer": "1 Meter sind 3,28 Fuß. Die Rechnung: 1 ÷ 0,3048 = 3,28 ft. Der genaue Wert beträgt 3,280839895 Fuß."
+        },
+        {
+          "question": "Sind 1 Meter genau 3 Fuß?",
+          "answer": "Nein. 1 Meter sind 3,28 Fuß, also über einen Viertelfuß mehr als 3 Fuß. Drei Fuß allein sind 0,91 m, der Unterschied beträgt somit rund 9 Zentimeter."
+        },
+        {
+          "question": "Sind 2 Meter gleich 6 Fuß?",
+          "answer": "Nein. 2 Meter sind 6,56 Fuß, also 6 Fuß und 7 Zoll. Sechs Fuß allein sind 1,83 m, 2 Meter sind demnach rund 17 Zentimeter mehr."
+        },
+        {
+          "question": "Entsprechen 3 Meter 10 Fuß?",
+          "answer": "Nein, auch wenn die Werte nah beieinanderliegen. 3 Meter sind 9,84 Fuß. Glatte 10 Fuß sind 3,05 m, der Unterschied beträgt also rund 5 Zentimeter."
+        },
+        {
+          "question": "Wie viele Fuß sind 1,80 m?",
+          "answer": "1,80 m sind 5,91 Fuß, also 5 Fuß 11 Zoll. Die Rechnung: 1,80 ÷ 0,3048 = 5,91 ft, den Nachkommateil rechnen Sie in Zoll um: 0,91 × 12 = 11 Zoll."
+        },
+        {
+          "question": "Wie viele Fuß sind 1,75 m?",
+          "answer": "1,75 m sind 5,74 Fuß, also 5 Fuß 9 Zoll. Die Rechnung: 1,75 ÷ 0,3048 = 5,74 ft."
+        },
+        {
+          "question": "Wie viele Fuß sind 1,60 m?",
+          "answer": "1,60 m sind 5,25 Fuß, also 5 Fuß 3 Zoll. Die Rechnung: 1,60 ÷ 0,3048 = 5,25 ft."
+        },
+        {
+          "question": "Sind 1,78 m gleich 5 Fuß und 10 Zoll?",
+          "answer": "Ja. 1,78 m sind 5,84 Fuß, und der in Zoll umgerechnete Nachkommateil ergibt 5 Fuß 10 Zoll. Das ist eine der am häufigsten genannten Körpergrößen im englischsprachigen Raum."
+        },
+        {
+          "question": "Wie viele Fuß sind 100 Meter?",
+          "answer": "100 Meter sind 328,08 Fuß. Die Rechnung: 100 ÷ 0,3048 = 328,08 ft."
+        },
+        {
+          "question": "Wie viele Fuß sind 2, 5 und 10 Meter?",
+          "answer": "2 Meter sind 6,56 ft, 5 Meter sind 16,40 ft und 10 Meter sind 32,81 ft. Jeden dieser Werte erhalten Sie, indem Sie die Anzahl der Meter durch 0,3048 teilen."
+        },
+        {
+          "question": "Wie rechnet man Dezimalfuß in Fuß und Zoll um?",
+          "answer": "Den ganzzahligen Teil behalten Sie als Fuß, den Nachkommateil multiplizieren Sie mit 12, um die Zoll zu erhalten. Beispiel: 5,91 Fuß sind 5 Fuß, und 0,91 × 12 = 11 Zoll, also 5 Fuß 11 Zoll. Der Umrechner liefert Dezimalfuß – fertige Werte für Körpergrößen stehen in der Tabelle oben."
+        },
+        {
+          "question": "Wie lautet die Formel für die Umrechnung von Meter in Fuß?",
+          "answer": "Die Formel lautet: Fuß = Meter ÷ 0,3048, was einer Multiplikation mit 3,280839895 entspricht. Beispiel: 6 m ÷ 0,3048 = 19,69 ft. In die andere Richtung: Meter = Fuß × 0,3048."
+        },
+        {
+          "question": "Rechnet dieser Umrechner Quadratfuß in Quadratmeter um?",
+          "answer": "Nein. Dieses Werkzeug rechnet Längen um, ein Quadratfuß ist dagegen eine Flächeneinheit. Der Faktor ist ein anderer: 1 Quadratmeter sind 10,7639 Quadratfuß, eine Fläche in Quadratmetern multiplizieren Sie also mit 10,7639."
+        },
+        {
+          "question": "Kann ich hier Newtonmeter in Foot-pound umrechnen?",
+          "answer": "Nein. Newtonmeter (Nm) und Foot-pound (ft-lb) sind Einheiten des Drehmoments und keine Längeneinheiten, dieser Umrechner unterstützt sie deshalb nicht. Die Namensähnlichkeit rührt nur daher, dass in beiden Einheiten Meter und Fuß vorkommen."
+        },
+        {
+          "question": "Wie rechnet man Meter im Kopf schnell in Fuß um?",
+          "answer": "Am einfachsten multiplizieren Sie die Anzahl der Meter mit 3,3, also mit 3 und schlagen weitere 10 % auf. Für 5 m ergibt das 15 + 1,5 = 16,5 ft, bei einem genauen Wert von 16,40 ft – das Ergebnis liegt leicht darüber, reicht zur Orientierung aber aus. Für genaue Werte nutzen Sie den Umrechner."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "title": "Haben Sie eine Frage oder einen Vorschlag?",
+      "description": "Wenn Sie einen Fehler in den Tabellen entdeckt haben oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageAlt": "Kontakt zu Arteon Agency",
+      "subject": "Umrechner Meter in Fuß"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere nützliche Einheitenumrechner"
+    }
+  ]
+}

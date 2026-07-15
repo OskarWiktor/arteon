@@ -1,0 +1,284 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "en",
+  "metadata": {
+    "title": "Meters to Feet Converter – Convert Meters to Feet",
+    "description": "Convert meters to feet. Check ready-made tables covering height in feet and inches (1.80 m is 5 ft 11 in), room sizes and distances. The meters to feet converter works both ways and calculates instantly.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/meters-to-feet-converter"
+  },
+  "hero": {
+    "title": "Convert meters to feet",
+    "description": "Enter any value in meters and read the result in feet straight away. The converter helps when someone gives their height in meters, when you read specs written for metric markets, or when a map lists elevation in meters. Further down the page you will find a separate height table that shows the result in feet and inches.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/meters-to-feet-converter",
+      "label": "meters to feet"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Meters to feet converter – convert m to ft",
+      "alternateName": [
+        "Meters to feet converter",
+        "Meters to feet calculator",
+        "m to ft converter",
+        "Meters to feet",
+        "Convert meters to feet",
+        "How many feet in a meter",
+        "1 meter to feet",
+        "1.8 m in feet",
+        "1.75 m in feet",
+        "Height in feet and inches",
+        "Meters to feet table",
+        "How many feet is 100 meters",
+        "2 meters in feet",
+        "Metre to feet",
+        "Length converter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "A meters to feet converter that runs in your browser with no sign-up. Enter a value in meters and read the result in feet instantly. Useful for height given in meters, specs written for metric markets and elevation on metric maps.",
+      "featureList": [
+        "The conversion works both ways, so you can convert meters to feet and feet to meters",
+        "The result appears instantly as you type, with no button to click",
+        "You can copy the result to the clipboard with a single click",
+        "The conversion table covers values from 1 to 500 meters",
+        "A separate height table shows how many feet and inches match values from 1.50 m to 2.00 m",
+        "All calculations run locally in your browser, so your data never leaves your device",
+        "The exact conversion formula is feet = meters ÷ 0.3048",
+        "The tool works on phones, tablets and computers with nothing to install"
+      ]
+    },
+    "howTo": {
+      "name": "How do you convert meters to feet?",
+      "description": "A short guide to using the meters to feet converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter the value in meters",
+          "text": "In the left field, type the number of meters you want to convert to feet."
+        },
+        {
+          "name": "Read the result in feet",
+          "text": "The result in feet appears immediately in the field next to it, on the right. You can copy it to the clipboard with a single click."
+        },
+        {
+          "name": "Reverse the direction if you need to",
+          "text": "Click Swap to switch the converter over to converting feet to meters."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert meters to feet?",
+      "html": "<p class=\"text-mid mb-4\">The meter is the standard unit of length across most of the world, while the foot is used mainly in the United States and, alongside metric units, in the United Kingdom. So meters get converted to feet whenever a metric source meets a reader who thinks in feet: someone gives their height as 1.80 m, a product made for a metric market lists its dimensions in meters, or a trail map marks elevation in meters.</p><p class=\"text-mid mb-4\">One foot is exactly 0.3048 meters, and one meter is about 3.28 feet. The relationship never changes, so every conversion comes down to a single division. The converter does that for you the moment you type a value.</p><p class=\"text-mid mb-4\">Height comes with a catch. Nobody says \"I'm 5.91 feet tall\" – they say \"five foot eleven\". The converter gives decimal feet, so below you will find a separate height table that converts meters into feet and inches.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Free meters to feet converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does the meters to feet conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">Converting meters to feet rests on one fixed relationship: a foot is exactly 0.3048 meters. To turn meters into feet, you divide the number of meters by 0.3048, which is the same as multiplying by 3.280839895.</p><p class=\"text-mid mb-4\">The full formula: <strong>feet = meters ÷ 0.3048</strong>. The other way round: <strong>meters = feet × 0.3048</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many feet 1.80 m is. You substitute: 1.80 ÷ 0.3048 = 5.91 feet. That does not mean \"5 feet and 91 inches\" – the decimal part is a fraction of a foot. To get inches, you multiply it by 12: 0.91 × 12 = 11 inches, so 1.80 m is 5 ft 11 in.</p><p class=\"text-mid\">Another example: the 100 m sprint distance works out at 100 ÷ 0.3048 = 328.08 feet. The converter runs both directions the moment you type a value.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Meters to feet conversion table",
+      "description": "The table below converts common values in meters into decimal feet. Values are rounded to two decimal places. To convert an exact value or a different measurement, use the converter above.",
+      "labelHeader": "Meters",
+      "cols": ["Feet"],
+      "rows": [
+        { "label": "1 m", "values": ["3.28 ft"], "emphasis": true },
+        { "label": "1.6 m", "values": ["5.25 ft"] },
+        { "label": "1.7 m", "values": ["5.58 ft"] },
+        { "label": "1.75 m", "values": ["5.74 ft"] },
+        { "label": "1.8 m", "values": ["5.91 ft"], "emphasis": true },
+        { "label": "1.9 m", "values": ["6.23 ft"] },
+        { "label": "2 m", "values": ["6.56 ft"], "emphasis": true },
+        { "label": "2.5 m", "values": ["8.20 ft"] },
+        { "label": "3 m", "values": ["9.84 ft"] },
+        { "label": "4 m", "values": ["13.12 ft"] },
+        { "label": "5 m", "values": ["16.40 ft"], "emphasis": true },
+        { "label": "6 m", "values": ["19.69 ft"] },
+        { "label": "7 m", "values": ["22.97 ft"] },
+        { "label": "8 m", "values": ["26.25 ft"] },
+        { "label": "9 m", "values": ["29.53 ft"] },
+        { "label": "10 m", "values": ["32.81 ft"], "emphasis": true },
+        { "label": "15 m", "values": ["49.21 ft"] },
+        { "label": "20 m", "values": ["65.62 ft"] },
+        { "label": "25 m", "values": ["82.02 ft"] },
+        { "label": "30 m", "values": ["98.43 ft"] },
+        { "label": "40 m", "values": ["131.23 ft"] },
+        { "label": "50 m", "values": ["164.04 ft"], "emphasis": true },
+        { "label": "60 m", "values": ["196.85 ft"] },
+        { "label": "100 m", "values": ["328.08 ft"], "emphasis": true },
+        { "label": "200 m", "values": ["656.17 ft"] },
+        { "label": "500 m", "values": ["1,640.42 ft"] }
+      ],
+      "caption": "Need the other direction? Use our <a href=\"/en/tools/feet-to-meters-converter\">feet to meters converter</a> with a full table for measurements given in feet."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Height table: meters to feet and inches",
+      "description": "Height is spoken in feet and inches, not decimal feet. The table below shows both forms: the converter result in feet, and the way you would actually say it. Inches are rounded to the nearest whole number.",
+      "labelHeader": "Height",
+      "cols": ["Feet (decimal)", "Feet and inches"],
+      "rows": [
+        { "label": "1.50 m", "values": ["4.92 ft", "4 ft 11 in"] },
+        { "label": "1.55 m", "values": ["5.09 ft", "5 ft 1 in"] },
+        {
+          "label": "1.60 m",
+          "values": ["5.25 ft", "5 ft 3 in"],
+          "emphasis": true
+        },
+        { "label": "1.65 m", "values": ["5.41 ft", "5 ft 5 in"] },
+        {
+          "label": "1.70 m",
+          "values": ["5.58 ft", "5 ft 7 in"],
+          "emphasis": true
+        },
+        {
+          "label": "1.75 m",
+          "values": ["5.74 ft", "5 ft 9 in"],
+          "emphasis": true
+        },
+        { "label": "1.78 m", "values": ["5.84 ft", "5 ft 10 in"] },
+        {
+          "label": "1.80 m",
+          "values": ["5.91 ft", "5 ft 11 in"],
+          "emphasis": true
+        },
+        { "label": "1.85 m", "values": ["6.07 ft", "6 ft 1 in"] },
+        {
+          "label": "1.90 m",
+          "values": ["6.23 ft", "6 ft 3 in"],
+          "emphasis": true
+        },
+        { "label": "1.95 m", "values": ["6.40 ft", "6 ft 5 in"] },
+        {
+          "label": "2.00 m",
+          "values": ["6.56 ft", "6 ft 7 in"],
+          "emphasis": true
+        }
+      ],
+      "caption": "You get the inches by multiplying the decimal part of the foot by 12. Example: 5.91 ft, so 0.91 × 12 = 11 inches."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do people convert meters to feet?",
+      "description": "Meters turn up whenever a metric source reaches a reader who thinks in feet. Each of these situations has its own quirk.",
+      "items": [
+        {
+          "title": "Someone gives their height in meters",
+          "description": "This is the most common reason for converting meters to feet. A footballer listed at 1.85 m is 6 ft 1 in, and 1.80 m is 5 ft 11 in. Remember that the converter result (5.91 ft) is decimal feet, not feet and inches – the spoken form is in the height table above."
+        },
+        {
+          "title": "Specs written for metric markets",
+          "description": "European furniture, cable lengths and appliance dimensions are listed in meters. A 2.4 m worktop is 7.87 feet, and a 3 m cable is 9.84 feet. Converting tells you whether something fits the space you actually have."
+        },
+        {
+          "title": "Elevation and trail maps",
+          "description": "Maps outside the United States mark elevation in meters. Mont Blanc at 4,808 m is 15,774 feet, and a 1,000 m climb is 3,280.84 feet. Aviation reports altitude in feet worldwide, so converting lines the two up."
+        },
+        {
+          "title": "Sport and swimming",
+          "description": "International sport is measured in meters. An Olympic pool at 50 m is 164.04 feet, and the 100 m sprint is 328.08 feet. Converting makes those distances easier to picture against a track measured in yards or feet."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting meters to feet",
+      "items": [
+        {
+          "question": "How many feet are in 1 meter?",
+          "answer": "1 meter is 3.28 feet. The calculation: 1 ÷ 0.3048 = 3.28 ft. The exact value is 3.280839895 feet."
+        },
+        {
+          "question": "Is 1 meter exactly 3 feet?",
+          "answer": "No. 1 meter is 3.28 feet, more than a quarter of a foot over 3 feet. Three feet on their own come to 0.91 m, so the gap is about 9 centimeters, or roughly 3.5 inches."
+        },
+        {
+          "question": "Is 2 meters equal to 6 feet?",
+          "answer": "No. 2 meters is 6.56 feet, which is 6 ft 7 in. Six feet on their own come to 1.83 m, so 2 meters is about 17 centimeters taller."
+        },
+        {
+          "question": "Does 3 meters equal 10 feet?",
+          "answer": "No, though it is close. 3 meters is 9.84 feet. A full 10 feet is 3.05 m, so the gap is about 5 centimeters, or roughly 2 inches."
+        },
+        {
+          "question": "How many feet is 1.8 m?",
+          "answer": "1.80 m is 5.91 feet, which is 5 ft 11 in. The calculation: 1.80 ÷ 0.3048 = 5.91 ft, and you turn the decimal part into inches with 0.91 × 12 = 11 inches."
+        },
+        {
+          "question": "How many feet is 1.75 m?",
+          "answer": "1.75 m is 5.74 feet, which is 5 ft 9 in. The calculation: 1.75 ÷ 0.3048 = 5.74 ft."
+        },
+        {
+          "question": "How many feet is 1.6 m?",
+          "answer": "1.60 m is 5.25 feet, which is 5 ft 3 in. The calculation: 1.60 ÷ 0.3048 = 5.25 ft."
+        },
+        {
+          "question": "Is 1.78 m 5 foot 10?",
+          "answer": "Yes. 1.78 m is 5.84 feet, and turning the decimal part into inches gives 5 ft 10 in. It is one of the most commonly quoted heights."
+        },
+        {
+          "question": "How many feet is 100 meters?",
+          "answer": "100 meters is 328.08 feet. The calculation: 100 ÷ 0.3048 = 328.08 ft."
+        },
+        {
+          "question": "How many feet are 2, 5 and 10 meters?",
+          "answer": "2 meters is 6.56 ft, 5 meters is 16.40 ft, and 10 meters is 32.81 ft. You get each of them by dividing the number of meters by 0.3048."
+        },
+        {
+          "question": "How do you turn decimal feet into feet and inches?",
+          "answer": "Keep the whole number as feet and multiply the decimal part by 12 to get inches. Example: 5.91 feet is 5 feet, and 0.91 × 12 = 11 inches, so 5 ft 11 in. The converter gives decimal feet – ready values for height are in the table above."
+        },
+        {
+          "question": "What is the formula for converting meters to feet?",
+          "answer": "The formula is: feet = meters ÷ 0.3048, which is the same as multiplying by 3.280839895. For example, 6 m ÷ 0.3048 = 19.69 ft. The other way round: meters = feet × 0.3048."
+        },
+        {
+          "question": "Does this converter convert square meters to square feet?",
+          "answer": "No. This tool converts length, and a square meter is a unit of area. The factor is different: 1 square meter is 10.7639 square feet, so you multiply an area in square meters by 10.7639."
+        },
+        {
+          "question": "Can I convert newton-meters to foot-pounds here?",
+          "answer": "No. Newton-meters (Nm) and foot-pounds (ft-lb) are units of torque, not length, so this converter does not handle them. The names only look similar because a meter and a foot appear in both."
+        },
+        {
+          "question": "How do you convert meters to feet in your head?",
+          "answer": "The simplest way is to multiply the number of meters by 3.3, which is the same as multiplying by 3 and adding another 10%. For 5 m that gives 15 + 1.5 = 16.5 ft, against an exact 16.40 ft – slightly high, but close enough to get your bearings. Use the converter when you need precision."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "title": "Have a question or a suggestion?",
+      "description": "If you have spotted a mistake in the tables or have an idea for improving the converter, write to us. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "Meters to feet converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de metros a pies – convierte metros a pies",
+    "description": "Convierte metros a pies. Consulta las tablas ya preparadas con la altura en pies y pulgadas (1,80 m son 5 pies 11 pulgadas), medidas y distancias. El convertidor funciona en ambos sentidos y calcula al instante.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-metros-a-pies"
+  },
+  "hero": {
+    "title": "Convierte metros a pies",
+    "description": "Escribe cualquier valor en metros y lee el resultado en pies al momento. El convertidor te sirve cuando das tu altura a alguien de Estados Unidos, cuando lees la altura de un jugador de la NBA o cuando compruebas la altitud de un vuelo. Más abajo encontrarás una tabla de alturas aparte que muestra el resultado en pies y pulgadas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-metros-a-pies",
+      "label": "metros a pies"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de metros a pies – de m a ft",
+      "alternateName": [
+        "Convertidor de metros a pies",
+        "Calculadora de metros a pies",
+        "Metros a pies",
+        "m a ft",
+        "Convertir metros a pies",
+        "Cuántos pies tiene un metro",
+        "1 metro cuántos pies son",
+        "1,80 m en pies",
+        "1,75 m en pies",
+        "Altura en pies y pulgadas",
+        "Tabla de metros a pies",
+        "Cuántos pies son 100 metros",
+        "2 metros en pies",
+        "meters to feet",
+        "Convertidor de longitud"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertidor de metros a pies que funciona en el navegador y sin registro. Escribe un valor en metros y lee el resultado en pies al instante. Útil para la altura en países anglosajones, las medidas de aparatos y la altitud en aviación.",
+      "featureList": [
+        "La conversión funciona en ambos sentidos, así que puedes pasar de metros a pies y de pies a metros",
+        "El resultado aparece al momento mientras escribes, sin tener que pulsar ningún botón",
+        "Puedes copiar el resultado al portapapeles con un solo clic",
+        "La tabla de conversión abarca valores de 1 a 500 metros",
+        "Una tabla de alturas aparte muestra cuántos pies y pulgadas corresponden a los valores de 1,50 m a 2,00 m",
+        "Todos los cálculos se hacen en tu navegador, así que tus datos no salen del dispositivo",
+        "La fórmula exacta de conversión es pies = metros ÷ 0,3048",
+        "La herramienta funciona en móvil, tableta y ordenador sin instalar nada"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo se convierten metros a pies?",
+      "description": "Una guía breve para usar el convertidor de metros a pies.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escribe el valor en metros",
+          "text": "En el campo de la izquierda, escribe el número de metros que quieres convertir a pies."
+        },
+        {
+          "name": "Lee el resultado en pies",
+          "text": "El resultado en pies aparece al momento en el campo de al lado, a la derecha. Puedes copiarlo al portapapeles con un solo clic."
+        },
+        {
+          "name": "Invierte el sentido si lo necesitas",
+          "text": "Haz clic en Cambiar orden para pasar el convertidor a pies a metros."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué convertir metros a pies?",
+      "html": "<p class=\"text-mid mb-4\">El metro es la unidad de longitud habitual en España, en Latinoamérica y en la mayor parte del mundo. El pie se usa sobre todo en Estados Unidos y en el Reino Unido, así que los metros se convierten a pies casi siempre en el contacto con el mundo anglosajón: cuando das tu altura, cuando lees la ficha de un jugador de la NBA o cuando miras la altitud de un vuelo, que la aviación indica en pies en todo el mundo.</p><p class=\"text-mid mb-4\">Un pie son exactamente 0,3048 metros y un metro son unos 3,28 pies. La relación es constante, así que cada conversión se reduce a una única división. El convertidor lo hace por ti en cuanto escribes un valor.</p><p class=\"text-mid mb-4\">Con la altura hay una trampa: en los países anglosajones nadie dice «5,91 pies», sino «5 pies 11 pulgadas». El convertidor da el resultado en pies decimales, así que más abajo tienes una tabla de alturas aparte que pasa los metros a pies y pulgadas.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor gratuito de metros a pies – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión de metros a pies? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión de metros a pies se apoya en una relación fija: un pie son exactamente 0,3048 metros. Para pasar metros a pies, divides el número de metros entre 0,3048, que es lo mismo que multiplicar por 3,280839895.</p><p class=\"text-mid mb-4\">La fórmula completa: <strong>pies = metros ÷ 0,3048</strong>. En sentido contrario: <strong>metros = pies × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántos pies son 1,80 m. Sustituyes: 1,80 ÷ 0,3048 = 5,91 pies. Eso no significa «5 pies y 91 pulgadas»: la parte decimal es una fracción de pie. Para sacar las pulgadas, la multiplicas por 12: 0,91 × 12 = 11 pulgadas, así que 1,80 m son 5 pies 11 pulgadas.</p><p class=\"text-mid\">Otro ejemplo: la distancia de 100 m del esprint da 100 ÷ 0,3048 = 328,08 pies. El convertidor hace los dos sentidos al momento en cuanto escribes un valor.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión de metros a pies",
+      "description": "La tabla siguiente pasa los valores más habituales en metros a pies decimales. Los valores están redondeados a dos decimales. Para convertir un valor exacto u otra medida, usa el convertidor de arriba.",
+      "labelHeader": "Metros",
+      "cols": ["Pies"],
+      "rows": [
+        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
+        { "label": "1,6 m", "values": ["5,25 ft"] },
+        { "label": "1,7 m", "values": ["5,58 ft"] },
+        { "label": "1,75 m", "values": ["5,74 ft"] },
+        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
+        { "label": "1,9 m", "values": ["6,23 ft"] },
+        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
+        { "label": "2,5 m", "values": ["8,20 ft"] },
+        { "label": "3 m", "values": ["9,84 ft"] },
+        { "label": "4 m", "values": ["13,12 ft"] },
+        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
+        { "label": "6 m", "values": ["19,69 ft"] },
+        { "label": "7 m", "values": ["22,97 ft"] },
+        { "label": "8 m", "values": ["26,25 ft"] },
+        { "label": "9 m", "values": ["29,53 ft"] },
+        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
+        { "label": "15 m", "values": ["49,21 ft"] },
+        { "label": "20 m", "values": ["65,62 ft"] },
+        { "label": "25 m", "values": ["82,02 ft"] },
+        { "label": "30 m", "values": ["98,43 ft"] },
+        { "label": "40 m", "values": ["131,23 ft"] },
+        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
+        { "label": "60 m", "values": ["196,85 ft"] },
+        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
+        { "label": "200 m", "values": ["656,17 ft"] },
+        { "label": "500 m", "values": ["1.640,42 ft"] }
+      ],
+      "caption": "¿Quieres convertir en el otro sentido? Usa nuestro convertidor de <a href=\"/es/herramientas/convertidor-pies-a-metros\">pies a metros</a> con la tabla completa para medidas dadas en pies."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de alturas: metros a pies y pulgadas",
+      "description": "En los países anglosajones la altura se da en pies y pulgadas, no en pies decimales. La tabla siguiente muestra las dos formas: el resultado del convertidor en pies y la manera en que se dice en una conversación. Las pulgadas están redondeadas a números enteros.",
+      "labelHeader": "Altura",
+      "cols": ["Pies (decimales)", "Pies y pulgadas"],
+      "rows": [
+        { "label": "1,50 m", "values": ["4,92 ft", "4 pies 11 pulgadas"] },
+        { "label": "1,55 m", "values": ["5,09 ft", "5 pies 1 pulgada"] },
+        {
+          "label": "1,60 m",
+          "values": ["5,25 ft", "5 pies 3 pulgadas"],
+          "emphasis": true
+        },
+        { "label": "1,65 m", "values": ["5,41 ft", "5 pies 5 pulgadas"] },
+        {
+          "label": "1,70 m",
+          "values": ["5,58 ft", "5 pies 7 pulgadas"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft", "5 pies 9 pulgadas"],
+          "emphasis": true
+        },
+        { "label": "1,78 m", "values": ["5,84 ft", "5 pies 10 pulgadas"] },
+        {
+          "label": "1,80 m",
+          "values": ["5,91 ft", "5 pies 11 pulgadas"],
+          "emphasis": true
+        },
+        { "label": "1,85 m", "values": ["6,07 ft", "6 pies 1 pulgada"] },
+        {
+          "label": "1,90 m",
+          "values": ["6,23 ft", "6 pies 3 pulgadas"],
+          "emphasis": true
+        },
+        { "label": "1,95 m", "values": ["6,40 ft", "6 pies 5 pulgadas"] },
+        {
+          "label": "2,00 m",
+          "values": ["6,56 ft", "6 pies 7 pulgadas"],
+          "emphasis": true
+        }
+      ],
+      "caption": "Las pulgadas las sacas multiplicando por 12 la parte decimal del pie. Ejemplo: 5,91 ft, o sea 0,91 × 12 = 11 pulgadas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierten metros a pies?",
+      "description": "Los pies aparecen sobre todo en el contacto con el mundo anglosajón. Cada una de estas situaciones tiene su particularidad.",
+      "items": [
+        {
+          "title": "La altura en una conversación",
+          "description": "Es el motivo más habitual para convertir metros a pies. Un estadounidense o un británico no suele hacerse una idea de cuánto es «1,80 m», pero sí sabe al momento lo que mide alguien de «5 pies 11 pulgadas». Recuerda que el resultado del convertidor (5,91 ft) son pies decimales, no pies y pulgadas: la forma para hablar está en la tabla de alturas de arriba."
+        },
+        {
+          "title": "La altura de los jugadores de la NBA",
+          "description": "Las fichas de la NBA dan la altura en pies y pulgadas. Pau Gasol, con 2,15 m, aparece como 7 pies 1 pulgada, y un base de 1,90 m es 6 pies 3 pulgadas. Convertir te deja comparar esas fichas con las alturas en metros de la liga española."
+        },
+        {
+          "title": "Altitud en aviación",
+          "description": "La aviación indica la altitud en pies en todo el mundo, también en España y en Latinoamérica. El nivel de vuelo FL100 son 10.000 pies, es decir unos 3.048 m. Si sigues vuelos o te interesa volar, la conversión te acerca esos valores a los metros de siempre."
+        },
+        {
+          "title": "Medidas de aparatos y habitaciones",
+          "description": "Los catálogos del mercado estadounidense dan la longitud de tablones y cables o la altura de las habitaciones en pies. Una altura de techo habitual de 8 pies son 2,44 m, y 10 pies son 3,05 m. La conversión te ayuda a ver si algo cabe en tu casa."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre convertir metros a pies",
+      "items": [
+        {
+          "question": "¿Cuántos pies tiene 1 metro?",
+          "answer": "1 metro son 3,28 pies. El cálculo: 1 ÷ 0,3048 = 3,28 ft. El valor exacto es 3,280839895 pies."
+        },
+        {
+          "question": "¿1 metro son exactamente 3 pies?",
+          "answer": "No. 1 metro son 3,28 pies, más de un cuarto de pie por encima de 3 pies. Tres pies por sí solos son 0,91 m, así que la diferencia ronda los 9 centímetros."
+        },
+        {
+          "question": "¿2 metros son 6 pies?",
+          "answer": "No. 2 metros son 6,56 pies, es decir 6 pies y 7 pulgadas. Seis pies por sí solos son 1,83 m, así que 2 metros son unos 17 centímetros más."
+        },
+        {
+          "question": "¿3 metros equivalen a 10 pies?",
+          "answer": "No, aunque andan cerca. 3 metros son 9,84 pies. Diez pies justos son 3,05 m, así que la diferencia ronda los 5 centímetros."
+        },
+        {
+          "question": "¿Cuántos pies son 1,80 m?",
+          "answer": "1,80 m son 5,91 pies, es decir 5 pies 11 pulgadas. El cálculo: 1,80 ÷ 0,3048 = 5,91 ft, y la parte decimal la pasas a pulgadas: 0,91 × 12 = 11 pulgadas."
+        },
+        {
+          "question": "¿Cuántos pies son 1,75 m?",
+          "answer": "1,75 m son 5,74 pies, es decir 5 pies 9 pulgadas. El cálculo: 1,75 ÷ 0,3048 = 5,74 ft."
+        },
+        {
+          "question": "¿Cuántos pies son 1,60 m?",
+          "answer": "1,60 m son 5,25 pies, es decir 5 pies 3 pulgadas. El cálculo: 1,60 ÷ 0,3048 = 5,25 ft."
+        },
+        {
+          "question": "¿1,78 m son 5 pies y 10 pulgadas?",
+          "answer": "Sí. 1,78 m son 5,84 pies, y al pasar la parte decimal a pulgadas salen 5 pies 10 pulgadas. Es una de las alturas que más se citan en los países anglosajones."
+        },
+        {
+          "question": "¿Cuántos pies son 100 metros?",
+          "answer": "100 metros son 328,08 pies. El cálculo: 100 ÷ 0,3048 = 328,08 ft."
+        },
+        {
+          "question": "¿Cuántos pies son 2, 5 y 10 metros?",
+          "answer": "2 metros son 6,56 ft, 5 metros son 16,40 ft y 10 metros son 32,81 ft. Cada uno de estos valores lo sacas dividiendo el número de metros entre 0,3048."
+        },
+        {
+          "question": "¿Cómo se pasan los pies decimales a pies y pulgadas?",
+          "answer": "La parte entera la dejas como pies y la parte decimal la multiplicas por 12 para sacar las pulgadas. Ejemplo: 5,91 pies son 5 pies, y 0,91 × 12 = 11 pulgadas, o sea 5 pies 11 pulgadas. El convertidor da pies decimales: los valores ya hechos para la altura están en la tabla de arriba."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir metros a pies?",
+          "answer": "La fórmula es: pies = metros ÷ 0,3048, que equivale a multiplicar por 3,280839895. Por ejemplo, 6 m ÷ 0,3048 = 19,69 ft. En sentido contrario: metros = pies × 0,3048."
+        },
+        {
+          "question": "¿Este convertidor pasa pies cuadrados a metros cuadrados?",
+          "answer": "No. Esta herramienta convierte longitud, y el pie cuadrado es una unidad de superficie. El factor es otro: 1 metro cuadrado son 10,7639 pies cuadrados, así que una superficie en metros cuadrados la multiplicas por 10,7639."
+        },
+        {
+          "question": "¿Puedo convertir aquí newton metro a libra pie?",
+          "answer": "No. El newton metro (Nm) y la libra pie (ft-lb) son unidades de par motor, no de longitud, así que este convertidor no las admite. El parecido en el nombre viene solo de que en las dos unidades aparecen el metro y el pie."
+        },
+        {
+          "question": "¿Cómo convertir metros a pies mentalmente?",
+          "answer": "Lo más fácil es multiplicar el número de metros por 3,3, que es lo mismo que multiplicar por 3 y añadir otro 10 %. Para 5 m sale 15 + 1,5 = 16,5 ft, frente al valor exacto de 16,40 ft: se queda algo por encima, pero sirve para hacerte una idea. Para cálculos precisos usa el convertidor."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "title": "¿Tienes alguna pregunta o sugerencia?",
+      "description": "Si has visto un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a todos los mensajes.",
+      "imageAlt": "Contacto con Arteon Agency",
+      "subject": "Convertidor de metros a pies"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    }
+  ]
+}

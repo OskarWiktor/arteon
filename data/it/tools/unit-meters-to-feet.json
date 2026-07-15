@@ -1,0 +1,284 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore da metri a piedi – converti metri in piedi",
+    "description": "Converti metri in piedi. Consulta le tabelle già pronte con l'altezza in piedi e pollici (1,80 m sono 5 piedi 11 pollici), misure e distanze. Il convertitore funziona in entrambe le direzioni e calcola subito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-metri-in-piedi"
+  },
+  "hero": {
+    "title": "Converti metri in piedi",
+    "description": "Inserisci un valore qualsiasi in metri e leggi subito il risultato in piedi. Il convertitore ti serve quando dai la tua altezza a qualcuno degli Stati Uniti, quando leggi la scheda di un giocatore NBA o quando controlli la quota di un volo. Più in basso trovi una tabella delle altezze a parte, che mostra il risultato in piedi e pollici.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-metri-in-piedi",
+      "label": "metri in piedi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore da metri a piedi – da m a ft",
+      "alternateName": [
+        "Convertitore da metri a piedi",
+        "Calcolatore da metri a piedi",
+        "Metri in piedi",
+        "m in ft",
+        "Convertire metri in piedi",
+        "Quanti piedi ha un metro",
+        "1 metro quanti piedi sono",
+        "1,80 m in piedi",
+        "1,75 m in piedi",
+        "Altezza in piedi e pollici",
+        "Tabella metri piedi",
+        "Quanti piedi sono 100 metri",
+        "2 metri in piedi",
+        "meters to feet",
+        "Convertitore di lunghezza"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertitore da metri a piedi che funziona nel browser e senza registrazione. Inserisci un valore in metri e leggi subito il risultato in piedi. Utile per l'altezza nei paesi anglosassoni, le misure delle apparecchiature e la quota in aviazione.",
+      "featureList": [
+        "La conversione funziona in entrambe le direzioni, quindi converti sia metri in piedi sia piedi in metri",
+        "Il risultato compare subito mentre scrivi, senza dover premere alcun pulsante",
+        "Il risultato si copia negli appunti con un solo clic",
+        "La tabella di conversione copre i valori da 1 a 500 metri",
+        "Una tabella delle altezze a parte mostra a quanti piedi e pollici corrispondono i valori da 1,50 m a 2,00 m",
+        "Tutti i calcoli avvengono nel tuo browser, quindi i dati non escono dal dispositivo",
+        "La formula esatta di conversione è piedi = metri ÷ 0,3048",
+        "Lo strumento funziona su telefono, tablet e computer senza installare nulla"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire i metri in piedi?",
+      "description": "Una guida breve per usare il convertitore da metri a piedi.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserisci il valore in metri",
+          "text": "Nel campo di sinistra, scrivi il numero di metri che vuoi convertire in piedi."
+        },
+        {
+          "name": "Leggi il risultato in piedi",
+          "text": "Il risultato in piedi compare subito nel campo accanto, a destra. Puoi copiarlo negli appunti con un solo clic."
+        },
+        {
+          "name": "Inverti la direzione se ti serve",
+          "text": "Fai clic su Cambia ordine per passare il convertitore a piedi in metri."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire i metri in piedi?",
+      "html": "<p class=\"text-mid mb-4\">Il metro è l'unità di lunghezza abituale in Italia e nella maggior parte del mondo. Il piede si usa soprattutto negli Stati Uniti e nel Regno Unito, quindi i metri si convertono in piedi quasi sempre nel contatto con il mondo anglosassone: quando dai la tua altezza, quando leggi la scheda di un giocatore NBA o quando guardi la quota di un volo, che l'aviazione indica in piedi in tutto il mondo.</p><p class=\"text-mid mb-4\">Un piede è esattamente 0,3048 metri e un metro è circa 3,28 piedi. Il rapporto è costante, quindi ogni conversione si riduce a una sola divisione. Il convertitore lo fa per te appena inserisci un valore.</p><p class=\"text-mid mb-4\">Con l'altezza c'è un tranello: nei paesi anglosassoni nessuno dice «5,91 piedi», ma «5 piedi 11 pollici». Il convertitore dà il risultato in piedi decimali, perciò più in basso trovi una tabella delle altezze a parte, che passa i metri a piedi e pollici.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore gratuito da metri a piedi – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione da metri a piedi? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione da metri a piedi si basa su un rapporto fisso: un piede è esattamente 0,3048 metri. Per trasformare i metri in piedi, dividi il numero di metri per 0,3048, che equivale a moltiplicare per 3,280839895.</p><p class=\"text-mid mb-4\">La formula completa: <strong>piedi = metri ÷ 0,3048</strong>. Nella direzione opposta: <strong>metri = piedi × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti piedi sono 1,80 m. Sostituisci: 1,80 ÷ 0,3048 = 5,91 piedi. Non significa «5 piedi e 91 pollici»: la parte decimale è una frazione di piede. Per ottenere i pollici la moltiplichi per 12: 0,91 × 12 = 11 pollici, quindi 1,80 m sono 5 piedi 11 pollici.</p><p class=\"text-mid\">Altro esempio: la distanza dei 100 m dello sprint dà 100 ÷ 0,3048 = 328,08 piedi. Il convertitore esegue entrambe le direzioni appena inserisci un valore.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione da metri a piedi",
+      "description": "La tabella seguente converte i valori più comuni in metri in piedi decimali. I valori sono arrotondati a due cifre decimali. Per convertire un valore esatto o un'altra misura, usa il convertitore qui sopra.",
+      "labelHeader": "Metri",
+      "cols": ["Piedi"],
+      "rows": [
+        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
+        { "label": "1,6 m", "values": ["5,25 ft"] },
+        { "label": "1,7 m", "values": ["5,58 ft"] },
+        { "label": "1,75 m", "values": ["5,74 ft"] },
+        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
+        { "label": "1,9 m", "values": ["6,23 ft"] },
+        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
+        { "label": "2,5 m", "values": ["8,20 ft"] },
+        { "label": "3 m", "values": ["9,84 ft"] },
+        { "label": "4 m", "values": ["13,12 ft"] },
+        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
+        { "label": "6 m", "values": ["19,69 ft"] },
+        { "label": "7 m", "values": ["22,97 ft"] },
+        { "label": "8 m", "values": ["26,25 ft"] },
+        { "label": "9 m", "values": ["29,53 ft"] },
+        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
+        { "label": "15 m", "values": ["49,21 ft"] },
+        { "label": "20 m", "values": ["65,62 ft"] },
+        { "label": "25 m", "values": ["82,02 ft"] },
+        { "label": "30 m", "values": ["98,43 ft"] },
+        { "label": "40 m", "values": ["131,23 ft"] },
+        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
+        { "label": "60 m", "values": ["196,85 ft"] },
+        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
+        { "label": "200 m", "values": ["656,17 ft"] },
+        { "label": "500 m", "values": ["1.640,42 ft"] }
+      ],
+      "caption": "Vuoi convertire nella direzione opposta? Usa il nostro convertitore da <a href=\"/it/strumenti/convertitore-piedi-in-metri\">piedi a metri</a> con la tabella completa per le misure indicate in piedi."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella delle altezze: metri in piedi e pollici",
+      "description": "Nei paesi anglosassoni l'altezza si indica in piedi e pollici, non in piedi decimali. La tabella seguente mostra entrambe le forme: il risultato del convertitore in piedi e il modo in cui si dice parlando. I pollici sono arrotondati a numeri interi.",
+      "labelHeader": "Altezza",
+      "cols": ["Piedi (decimali)", "Piedi e pollici"],
+      "rows": [
+        { "label": "1,50 m", "values": ["4,92 ft", "4 piedi 11 pollici"] },
+        { "label": "1,55 m", "values": ["5,09 ft", "5 piedi 1 pollice"] },
+        {
+          "label": "1,60 m",
+          "values": ["5,25 ft", "5 piedi 3 pollici"],
+          "emphasis": true
+        },
+        { "label": "1,65 m", "values": ["5,41 ft", "5 piedi 5 pollici"] },
+        {
+          "label": "1,70 m",
+          "values": ["5,58 ft", "5 piedi 7 pollici"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft", "5 piedi 9 pollici"],
+          "emphasis": true
+        },
+        { "label": "1,78 m", "values": ["5,84 ft", "5 piedi 10 pollici"] },
+        {
+          "label": "1,80 m",
+          "values": ["5,91 ft", "5 piedi 11 pollici"],
+          "emphasis": true
+        },
+        { "label": "1,85 m", "values": ["6,07 ft", "6 piedi 1 pollice"] },
+        {
+          "label": "1,90 m",
+          "values": ["6,23 ft", "6 piedi 3 pollici"],
+          "emphasis": true
+        },
+        { "label": "1,95 m", "values": ["6,40 ft", "6 piedi 5 pollici"] },
+        {
+          "label": "2,00 m",
+          "values": ["6,56 ft", "6 piedi 7 pollici"],
+          "emphasis": true
+        }
+      ],
+      "caption": "I pollici li ottieni moltiplicando per 12 la parte decimale del piede. Esempio: 5,91 ft, cioè 0,91 × 12 = 11 pollici."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono i metri in piedi?",
+      "description": "I piedi compaiono soprattutto nel contatto con il mondo anglosassone. Ognuna di queste situazioni ha la sua particolarità.",
+      "items": [
+        {
+          "title": "L'altezza in una conversazione",
+          "description": "È il motivo più comune per convertire i metri in piedi. Un americano o un britannico di solito non si figura quanto sia «1,80 m», mentre coglie subito l'altezza di una persona di «5 piedi 11 pollici». Ricorda che il risultato del convertitore (5,91 ft) è in piedi decimali e non in piedi e pollici: la forma da usare parlando è nella tabella delle altezze qui sopra."
+        },
+        {
+          "title": "Le schede dei giocatori NBA",
+          "description": "L'NBA indica l'altezza dei giocatori in piedi e pollici. Un centro di 7 piedi misura 2,13 m e un'ala di 6 piedi 6 pollici misura 1,98 m. La conversione ti permette di confrontare quelle schede con le altezze in metri usate nella Serie A di basket."
+        },
+        {
+          "title": "La quota in aviazione",
+          "description": "L'aviazione indica la quota in piedi in tutto il mondo, anche sopra l'Italia. Il livello di volo FL100 corrisponde a 10.000 piedi, cioè circa 3.048 m. Se segui i voli o ti interessa volare, la conversione avvicina questi valori ai metri che conosci."
+        },
+        {
+          "title": "Misure di apparecchi e stanze",
+          "description": "I cataloghi del mercato americano indicano la lunghezza di assi e cavi o l'altezza delle stanze in piedi. Un'altezza di soffitto comune di 8 piedi è 2,44 m e 10 piedi sono 3,05 m. La conversione ti aiuta a capire se qualcosa entra in casa tua."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da metri a piedi",
+      "items": [
+        {
+          "question": "Quanti piedi sono 1 metro?",
+          "answer": "1 metro è 3,28 piedi. Il calcolo: 1 ÷ 0,3048 = 3,28 ft. Il valore esatto è 3,280839895 piedi."
+        },
+        {
+          "question": "1 metro è esattamente 3 piedi?",
+          "answer": "No. 1 metro è 3,28 piedi, oltre un quarto di piede in più rispetto a 3 piedi. Tre piedi da soli sono 0,91 m, quindi la differenza è di circa 9 centimetri."
+        },
+        {
+          "question": "2 metri sono 6 piedi?",
+          "answer": "No. 2 metri sono 6,56 piedi, cioè 6 piedi e 7 pollici. Sei piedi da soli sono 1,83 m, quindi 2 metri sono circa 17 centimetri in più."
+        },
+        {
+          "question": "3 metri equivalgono a 10 piedi?",
+          "answer": "No, anche se i valori sono vicini. 3 metri sono 9,84 piedi. Dieci piedi esatti sono 3,05 m, quindi la differenza è di circa 5 centimetri."
+        },
+        {
+          "question": "Quanti piedi sono 1,80 m?",
+          "answer": "1,80 m sono 5,91 piedi, cioè 5 piedi 11 pollici. Il calcolo: 1,80 ÷ 0,3048 = 5,91 ft, e la parte decimale la converti in pollici: 0,91 × 12 = 11 pollici."
+        },
+        {
+          "question": "Quanti piedi sono 1,75 m?",
+          "answer": "1,75 m sono 5,74 piedi, cioè 5 piedi 9 pollici. Il calcolo: 1,75 ÷ 0,3048 = 5,74 ft."
+        },
+        {
+          "question": "Quanti piedi sono 1,60 m?",
+          "answer": "1,60 m sono 5,25 piedi, cioè 5 piedi 3 pollici. Il calcolo: 1,60 ÷ 0,3048 = 5,25 ft."
+        },
+        {
+          "question": "1,78 m sono 5 piedi e 10 pollici?",
+          "answer": "Sì. 1,78 m sono 5,84 piedi e, convertendo la parte decimale in pollici, si ottiene 5 piedi 10 pollici. È una delle altezze più citate nei paesi anglosassoni."
+        },
+        {
+          "question": "Quanti piedi sono 100 metri?",
+          "answer": "100 metri sono 328,08 piedi. Il calcolo: 100 ÷ 0,3048 = 328,08 ft."
+        },
+        {
+          "question": "Quanti piedi sono 2, 5 e 10 metri?",
+          "answer": "2 metri sono 6,56 ft, 5 metri sono 16,40 ft e 10 metri sono 32,81 ft. Ottieni ognuno di questi valori dividendo il numero di metri per 0,3048."
+        },
+        {
+          "question": "Come si passa dai piedi decimali a piedi e pollici?",
+          "answer": "Tieni la parte intera come piedi e moltiplichi la parte decimale per 12 per ottenere i pollici. Esempio: 5,91 piedi sono 5 piedi, e 0,91 × 12 = 11 pollici, cioè 5 piedi 11 pollici. Il convertitore dà piedi decimali: i valori già pronti per l'altezza sono nella tabella qui sopra."
+        },
+        {
+          "question": "Qual è la formula per convertire i metri in piedi?",
+          "answer": "La formula è: piedi = metri ÷ 0,3048, che equivale a moltiplicare per 3,280839895. Per esempio, 6 m ÷ 0,3048 = 19,69 ft. Nella direzione opposta: metri = piedi × 0,3048."
+        },
+        {
+          "question": "Questo convertitore converte i piedi quadrati in metri quadrati?",
+          "answer": "No. Questo strumento converte lunghezze, mentre il piede quadrato è un'unità di superficie. Il fattore è diverso: 1 metro quadrato è 10,7639 piedi quadrati, quindi una superficie in metri quadrati la moltiplichi per 10,7639."
+        },
+        {
+          "question": "Posso convertire qui i newton metro in libbre piede?",
+          "answer": "No. Il newton metro (Nm) e la libbra piede (ft-lb) sono unità di coppia e non di lunghezza, quindi questo convertitore non le supporta. La somiglianza del nome dipende solo dal fatto che in entrambe le unità compaiono il metro e il piede."
+        },
+        {
+          "question": "Come convertire i metri in piedi a mente?",
+          "answer": "Il modo più semplice è moltiplicare il numero di metri per 3,3, che equivale a moltiplicare per 3 e aggiungere un altro 10 %. Per 5 m dà 15 + 1,5 = 16,5 ft, contro un valore esatto di 16,40 ft: resta leggermente sopra, ma basta per orientarsi. Per calcoli precisi usa il convertitore."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se hai notato un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contatto con Arteon Agency",
+      "subject": "Convertitore da metri a piedi"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}

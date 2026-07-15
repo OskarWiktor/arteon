@@ -1,0 +1,284 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de metros para pés – converta metros em pés",
+    "description": "Converta metros em pés. Consulte as tabelas já prontas com a altura em pés e polegadas (1,80 m são 5 pés 11 polegadas), medidas e distâncias. O conversor funciona nos dois sentidos e calcula de imediato.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-metros-para-pes"
+  },
+  "hero": {
+    "title": "Converta metros em pés",
+    "description": "Introduza qualquer valor em metros e leia imediatamente o resultado em pés. O conversor é útil quando indica a sua altura a alguém dos Estados Unidos, quando lê a ficha de um jogador da NBA ou quando consulta a altitude de um voo. Mais abaixo encontra uma tabela de alturas própria, que mostra o resultado em pés e polegadas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-metros-para-pes",
+      "label": "metros para pés"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de metros para pés – de m para ft",
+      "alternateName": [
+        "Conversor de metros para pés",
+        "Calculadora de metros para pés",
+        "Metros para pés",
+        "m para ft",
+        "Converter metros em pés",
+        "Quantos pés tem um metro",
+        "1 metro quantos pés são",
+        "1,80 m em pés",
+        "1,75 m em pés",
+        "Altura em pés e polegadas",
+        "Tabela de metros para pés",
+        "Quantos pés são 100 metros",
+        "2 metros em pés",
+        "meters to feet",
+        "Conversor de comprimento"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Um conversor de metros para pés que funciona no navegador e sem registo. Introduza um valor em metros e leia de imediato o resultado em pés. Útil para a altura nos países anglófonos, as medidas de equipamentos e a altitude em aviação.",
+      "featureList": [
+        "A conversão funciona nos dois sentidos, pelo que converte tanto metros em pés como pés em metros",
+        "O resultado aparece de imediato enquanto escreve, sem ser preciso clicar em nenhum botão",
+        "O resultado pode ser copiado para a área de transferência com um único clique",
+        "A tabela de conversão abrange valores de 1 a 500 metros",
+        "Uma tabela de alturas própria mostra a quantos pés e polegadas correspondem os valores de 1,50 m a 2,00 m",
+        "Todos os cálculos são feitos no seu navegador, pelo que os dados não saem do dispositivo",
+        "A fórmula exata de conversão é pés = metros ÷ 0,3048",
+        "A ferramenta funciona no telemóvel, no tablet e no computador, sem instalar nada"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter metros em pés?",
+      "description": "Um guia breve para utilizar o conversor de metros para pés.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduza o valor em metros",
+          "text": "No campo da esquerda, escreva o número de metros que pretende converter em pés."
+        },
+        {
+          "name": "Leia o resultado em pés",
+          "text": "O resultado em pés aparece de imediato no campo ao lado, à direita. Pode copiá-lo para a área de transferência com um único clique."
+        },
+        {
+          "name": "Inverta o sentido se precisar",
+          "text": "Clique em Alterar ordem para passar o conversor para pés em metros."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Para que serve converter metros em pés?",
+      "html": "<p class=\"text-mid mb-4\">O metro é a unidade de comprimento habitual em Portugal, no Brasil e na maior parte do mundo. O pé usa-se sobretudo nos Estados Unidos e no Reino Unido, pelo que os metros se convertem em pés quase sempre no contacto com o mundo anglófono: quando indica a sua altura, quando lê a ficha de um jogador da NBA ou quando consulta a altitude de um voo, que a aviação indica em pés em todo o mundo.</p><p class=\"text-mid mb-4\">Um pé são exatamente 0,3048 metros e um metro são cerca de 3,28 pés. A relação é constante, pelo que cada conversão se resume a uma única divisão. O conversor trata disso assim que introduz um valor.</p><p class=\"text-mid mb-4\">Na altura há uma armadilha: nos países anglófonos ninguém diz «5,91 pés», mas sim «5 pés 11 polegadas». O conversor dá o resultado em pés decimais, por isso encontra mais abaixo uma tabela de alturas própria, que passa os metros para pés e polegadas.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor gratuito de metros para pés – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão de metros para pés? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">A conversão de metros para pés assenta numa relação fixa: um pé são exatamente 0,3048 metros. Para passar metros a pés, divide o número de metros por 0,3048, o que equivale a multiplicar por 3,280839895.</p><p class=\"text-mid mb-4\">A fórmula completa: <strong>pés = metros ÷ 0,3048</strong>. No sentido inverso: <strong>metros = pés × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Exemplo: quer saber quantos pés são 1,80 m. Substitui: 1,80 ÷ 0,3048 = 5,91 pés. Isto não significa «5 pés e 91 polegadas» – a parte decimal é uma fração de pé. Para obter as polegadas, multiplica-a por 12: 0,91 × 12 = 11 polegadas, ou seja, 1,80 m são 5 pés 11 polegadas.</p><p class=\"text-mid\">Outro exemplo: a distância de 100 m do sprint dá 100 ÷ 0,3048 = 328,08 pés. O conversor faz os dois sentidos de imediato assim que introduz um valor.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão de metros para pés",
+      "description": "A tabela seguinte passa os valores mais comuns em metros para pés decimais. Os valores estão arredondados a duas casas decimais. Para converter um valor exato ou outra medida, utilize o conversor acima.",
+      "labelHeader": "Metros",
+      "cols": ["Pés"],
+      "rows": [
+        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
+        { "label": "1,6 m", "values": ["5,25 ft"] },
+        { "label": "1,7 m", "values": ["5,58 ft"] },
+        { "label": "1,75 m", "values": ["5,74 ft"] },
+        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
+        { "label": "1,9 m", "values": ["6,23 ft"] },
+        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
+        { "label": "2,5 m", "values": ["8,20 ft"] },
+        { "label": "3 m", "values": ["9,84 ft"] },
+        { "label": "4 m", "values": ["13,12 ft"] },
+        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
+        { "label": "6 m", "values": ["19,69 ft"] },
+        { "label": "7 m", "values": ["22,97 ft"] },
+        { "label": "8 m", "values": ["26,25 ft"] },
+        { "label": "9 m", "values": ["29,53 ft"] },
+        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
+        { "label": "15 m", "values": ["49,21 ft"] },
+        { "label": "20 m", "values": ["65,62 ft"] },
+        { "label": "25 m", "values": ["82,02 ft"] },
+        { "label": "30 m", "values": ["98,43 ft"] },
+        { "label": "40 m", "values": ["131,23 ft"] },
+        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
+        { "label": "60 m", "values": ["196,85 ft"] },
+        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
+        { "label": "200 m", "values": ["656,17 ft"] },
+        { "label": "500 m", "values": ["1.640,42 ft"] }
+      ],
+      "caption": "Quer converter no sentido inverso? Utilize o nosso conversor de <a href=\"/pt/ferramentas/conversor-pes-para-metros\">pés para metros</a> com a tabela completa para medidas indicadas em pés."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de alturas: metros para pés e polegadas",
+      "description": "Nos países anglófonos a altura indica-se em pés e polegadas, e não em pés decimais. A tabela seguinte mostra as duas formas: o resultado do conversor em pés e a forma usada na conversa. As polegadas estão arredondadas a números inteiros.",
+      "labelHeader": "Altura",
+      "cols": ["Pés (decimais)", "Pés e polegadas"],
+      "rows": [
+        { "label": "1,50 m", "values": ["4,92 ft", "4 pés 11 polegadas"] },
+        { "label": "1,55 m", "values": ["5,09 ft", "5 pés 1 polegada"] },
+        {
+          "label": "1,60 m",
+          "values": ["5,25 ft", "5 pés 3 polegadas"],
+          "emphasis": true
+        },
+        { "label": "1,65 m", "values": ["5,41 ft", "5 pés 5 polegadas"] },
+        {
+          "label": "1,70 m",
+          "values": ["5,58 ft", "5 pés 7 polegadas"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft", "5 pés 9 polegadas"],
+          "emphasis": true
+        },
+        { "label": "1,78 m", "values": ["5,84 ft", "5 pés 10 polegadas"] },
+        {
+          "label": "1,80 m",
+          "values": ["5,91 ft", "5 pés 11 polegadas"],
+          "emphasis": true
+        },
+        { "label": "1,85 m", "values": ["6,07 ft", "6 pés 1 polegada"] },
+        {
+          "label": "1,90 m",
+          "values": ["6,23 ft", "6 pés 3 polegadas"],
+          "emphasis": true
+        },
+        { "label": "1,95 m", "values": ["6,40 ft", "6 pés 5 polegadas"] },
+        {
+          "label": "2,00 m",
+          "values": ["6,56 ft", "6 pés 7 polegadas"],
+          "emphasis": true
+        }
+      ],
+      "caption": "Obtém as polegadas multiplicando por 12 a parte decimal do pé. Exemplo: 5,91 ft, ou seja, 0,91 × 12 = 11 polegadas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando se convertem metros em pés?",
+      "description": "Os pés surgem sobretudo no contacto com o mundo anglófono. Cada uma destas situações tem a sua particularidade.",
+      "items": [
+        {
+          "title": "A altura numa conversa",
+          "description": "É o motivo mais comum para converter metros em pés. Um norte-americano ou um britânico raramente faz ideia de quanto são «1,80 m», mas percebe logo a altura de alguém com «5 pés 11 polegadas». Lembre-se de que o resultado do conversor (5,91 ft) são pés decimais e não pés e polegadas – a forma usada na conversa está na tabela de alturas acima."
+        },
+        {
+          "title": "As fichas dos jogadores da NBA",
+          "description": "A NBA indica a altura dos jogadores em pés e polegadas. Um poste de 7 pés mede 2,13 m e um extremo de 6 pés 6 polegadas mede 1,98 m. A conversão permite comparar essas fichas com as alturas em metros usadas nas ligas europeias."
+        },
+        {
+          "title": "Altitude em aviação",
+          "description": "A aviação indica a altitude em pés em todo o mundo, também sobre Portugal e o Brasil. O nível de voo FL100 corresponde a 10.000 pés, ou seja, cerca de 3.048 m. Se acompanha voos ou se interessa por aviação, a conversão aproxima esses valores dos metros que conhece."
+        },
+        {
+          "title": "Medidas de equipamentos e divisões",
+          "description": "Os catálogos do mercado norte-americano indicam o comprimento de tábuas e cabos ou a altura das divisões em pés. Um pé-direito comum de 8 pés são 2,44 m e 10 pés são 3,05 m. A conversão ajuda a perceber se um equipamento cabe em sua casa."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre converter metros em pés",
+      "items": [
+        {
+          "question": "Quantos pés tem 1 metro?",
+          "answer": "1 metro são 3,28 pés. O cálculo: 1 ÷ 0,3048 = 3,28 ft. O valor exato é 3,280839895 pés."
+        },
+        {
+          "question": "1 metro são exatamente 3 pés?",
+          "answer": "Não. 1 metro são 3,28 pés, mais de um quarto de pé acima de 3 pés. Três pés sozinhos são 0,91 m, pelo que a diferença ronda os 9 centímetros."
+        },
+        {
+          "question": "2 metros são 6 pés?",
+          "answer": "Não. 2 metros são 6,56 pés, ou seja, 6 pés e 7 polegadas. Seis pés sozinhos são 1,83 m, pelo que 2 metros são cerca de 17 centímetros mais."
+        },
+        {
+          "question": "3 metros equivalem a 10 pés?",
+          "answer": "Não, embora os valores estejam próximos. 3 metros são 9,84 pés. Dez pés certos são 3,05 m, pelo que a diferença ronda os 5 centímetros."
+        },
+        {
+          "question": "Quantos pés são 1,80 m?",
+          "answer": "1,80 m são 5,91 pés, ou seja, 5 pés 11 polegadas. O cálculo: 1,80 ÷ 0,3048 = 5,91 ft, e a parte decimal passa a polegadas: 0,91 × 12 = 11 polegadas."
+        },
+        {
+          "question": "Quantos pés são 1,75 m?",
+          "answer": "1,75 m são 5,74 pés, ou seja, 5 pés 9 polegadas. O cálculo: 1,75 ÷ 0,3048 = 5,74 ft."
+        },
+        {
+          "question": "Quantos pés são 1,60 m?",
+          "answer": "1,60 m são 5,25 pés, ou seja, 5 pés 3 polegadas. O cálculo: 1,60 ÷ 0,3048 = 5,25 ft."
+        },
+        {
+          "question": "1,78 m são 5 pés e 10 polegadas?",
+          "answer": "Sim. 1,78 m são 5,84 pés e, ao passar a parte decimal a polegadas, dá 5 pés 10 polegadas. É uma das alturas mais citadas nos países anglófonos."
+        },
+        {
+          "question": "Quantos pés são 100 metros?",
+          "answer": "100 metros são 328,08 pés. O cálculo: 100 ÷ 0,3048 = 328,08 ft."
+        },
+        {
+          "question": "Quantos pés são 2, 5 e 10 metros?",
+          "answer": "2 metros são 6,56 ft, 5 metros são 16,40 ft e 10 metros são 32,81 ft. Obtém cada um destes valores dividindo o número de metros por 0,3048."
+        },
+        {
+          "question": "Como passar pés decimais a pés e polegadas?",
+          "answer": "Mantém a parte inteira como pés e multiplica a parte decimal por 12 para obter as polegadas. Exemplo: 5,91 pés são 5 pés, e 0,91 × 12 = 11 polegadas, ou seja, 5 pés 11 polegadas. O conversor dá pés decimais – os valores já prontos para a altura estão na tabela acima."
+        },
+        {
+          "question": "Qual é a fórmula para converter metros em pés?",
+          "answer": "A fórmula é: pés = metros ÷ 0,3048, o que equivale a multiplicar por 3,280839895. Por exemplo, 6 m ÷ 0,3048 = 19,69 ft. No sentido inverso: metros = pés × 0,3048."
+        },
+        {
+          "question": "Este conversor passa pés quadrados a metros quadrados?",
+          "answer": "Não. Esta ferramenta converte comprimento, e o pé quadrado é uma unidade de área. O fator é outro: 1 metro quadrado são 10,7639 pés quadrados, pelo que multiplica uma área em metros quadrados por 10,7639."
+        },
+        {
+          "question": "Posso converter aqui newton-metro em libra-pé?",
+          "answer": "Não. O newton-metro (Nm) e a libra-pé (ft-lb) são unidades de binário e não de comprimento, pelo que este conversor não as suporta. A semelhança do nome deve-se apenas ao facto de o metro e o pé aparecerem nas duas unidades."
+        },
+        {
+          "question": "Como converter metros em pés de cabeça?",
+          "answer": "O mais simples é multiplicar o número de metros por 3,3, o que equivale a multiplicar por 3 e acrescentar mais 10 %. Para 5 m dá 15 + 1,5 = 16,5 ft, face ao valor exato de 16,40 ft – fica ligeiramente acima, mas chega para se orientar. Para cálculos precisos, utilize o conversor."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "title": "Tem alguma dúvida ou sugestão?",
+      "description": "Se detetou um erro nas tabelas ou tem uma ideia para melhorar o conversor, escreva-nos. Respondemos a todas as mensagens.",
+      "imageAlt": "Contacto com a Arteon Agency",
+      "subject": "Conversor de metros para pés"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    }
+  ]
+}

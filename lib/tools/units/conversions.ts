@@ -280,6 +280,30 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 
   {
+    toolKey: 'metersToFeet',
+    category: 'length',
+    sourceField: { labelKey: 'meters', suffix: 'm' },
+    targetField: { labelKey: 'feet', suffix: 'ft' },
+    convert: v => v / 0.3048,
+    reverseConvert: v => v * 0.3048,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'feetToMeters',
+  },
+
+  {
+    toolKey: 'feetToMeters',
+    category: 'length',
+    sourceField: { labelKey: 'feet', suffix: 'ft' },
+    targetField: { labelKey: 'meters', suffix: 'm' },
+    convert: v => v * 0.3048,
+    reverseConvert: v => v / 0.3048,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'metersToFeet',
+  },
+
+  {
     toolKey: 'kgToLb',
     category: 'weight',
     sourceField: { labelKey: 'kilograms', suffix: 'kg' },
