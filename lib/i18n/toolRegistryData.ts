@@ -5170,6 +5170,118 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'inchesToFeet',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-cali-na-stopy',
+        title: 'cale na stopy',
+        description:
+          'Przelicz cale na stopy. Wzrost z cali na stopy i cale, tabela wzrostu, pełna tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'inches-to-feet-converter',
+        title: 'inches to feet',
+        description:
+          'Convert inches to feet. Height in feet and inches, height table, full conversion table.',
+      },
+      de: {
+        slug: 'zoll-in-fuss-umrechner',
+        title: 'Zoll in Fuß',
+        description:
+          'Zoll in Fuß umrechnen. Körpergröße in Fuß und Zoll, Größentabelle, vollständige Umrechnungstabelle.',
+      },
+      es: {
+        slug: 'convertidor-pulgadas-a-pies',
+        title: 'pulgadas a pies',
+        description:
+          'Convierte pulgadas a pies. Altura en pies y pulgadas, tabla de alturas, tabla de conversión completa.',
+      },
+      fr: {
+        slug: 'convertisseur-pouces-en-pieds',
+        title: 'pouces en pieds',
+        description:
+          'Convertissez des pouces en pieds. Taille en pieds et pouces, tableau des tailles, tableau complet.',
+      },
+      pt: {
+        slug: 'conversor-polegadas-para-pes',
+        title: 'polegadas para pés',
+        description:
+          'Converta polegadas em pés. Altura em pés e polegadas, tabela de alturas, tabela de conversão completa.',
+      },
+      it: {
+        slug: 'convertitore-pollici-in-piedi',
+        title: 'pollici in piedi',
+        description:
+          'Converti pollici in piedi. Altezza in piedi e pollici, tabella delle altezze, tabella di conversione completa.',
+      },
+      cs: {
+        slug: 'prevodnik-palcu-na-stopy',
+        title: 'palce na stopy',
+        description:
+          'Převeď palce na stopy. Výška ve stopách a palcích, tabulka výšek, úplná převodní tabulka.',
+      },
+    },
+  },
+  {
+    key: 'feetToInches',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-stop-na-cale',
+        title: 'stopy na cale',
+        description:
+          'Przelicz stopy na cale. Wzrost ze stóp i cali na cale, tabela wzrostu, pełna tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'feet-to-inches-converter',
+        title: 'feet to inches',
+        description:
+          'Convert feet to inches. Height in feet and inches to total inches, height table, full conversion table.',
+      },
+      de: {
+        slug: 'fuss-in-zoll-umrechner',
+        title: 'Fuß in Zoll',
+        description:
+          'Fuß in Zoll umrechnen. Körpergröße in Fuß und Zoll in Zoll gesamt, Größentabelle, vollständige Umrechnungstabelle.',
+      },
+      es: {
+        slug: 'convertidor-pies-a-pulgadas',
+        title: 'pies a pulgadas',
+        description:
+          'Convierte pies a pulgadas. Altura en pies y pulgadas a pulgadas totales, tabla de alturas, tabla de conversión completa.',
+      },
+      fr: {
+        slug: 'convertisseur-pieds-en-pouces',
+        title: 'pieds en pouces',
+        description:
+          'Convertissez des pieds en pouces. Taille en pieds et pouces en pouces au total, tableau des tailles, tableau complet.',
+      },
+      pt: {
+        slug: 'conversor-pes-para-polegadas',
+        title: 'pés para polegadas',
+        description:
+          'Converta pés em polegadas. Altura em pés e polegadas para polegadas totais, tabela de alturas, tabela de conversão completa.',
+      },
+      it: {
+        slug: 'convertitore-piedi-in-pollici',
+        title: 'piedi in pollici',
+        description:
+          'Converti piedi in pollici. Altezza in piedi e pollici in pollici totali, tabella delle altezze, tabella di conversione completa.',
+      },
+      cs: {
+        slug: 'prevodnik-stop-na-palce',
+        title: 'stopy na palce',
+        description:
+          'Převeď stopy na palce. Výška ve stopách a palcích na palce celkem, tabulka výšek, úplná převodní tabulka.',
+      },
+    },
+  },
+  {
     key: 'mlToOz',
     section: 'jednostki',
     icon: RiRulerLine,

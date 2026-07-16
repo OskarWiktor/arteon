@@ -1,0 +1,246 @@
+{
+  "toolKey": "feetToInches",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de pés para polegadas – converte pés em polegadas",
+    "description": "Converta pés em polegadas. As tabelas no final da página mostram a altura em pés e polegadas como polegadas totais (5 pés 7 polegadas são 67 polegadas) e medidas comuns. O conversor funciona nos dois sentidos e calcula de imediato.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-pes-para-polegadas"
+  },
+  "hero": {
+    "title": "Converta pés em polegadas",
+    "description": "Introduza um valor em pés e leia o resultado em polegadas de imediato. Os pés passam-se a polegadas sobretudo na altura, nas medidas de aparelhos e nas diagonais de ecrã. Atenção à notação da altura: 5 pés 7 polegadas não é o mesmo que 5,7 pés. Uma tabela à parte mais abaixo mostra quantas polegadas dá uma altura em pés e polegadas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-pes-para-polegadas",
+      "label": "pés para polegadas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de pés para polegadas – de ft para in",
+      "alternateName": [
+        "Conversor de pés para polegadas",
+        "Calculadora de pés para polegadas",
+        "Pés para polegadas",
+        "ft para in",
+        "Converter pés em polegadas",
+        "Quantas polegadas são 6 pés",
+        "5 pés em polegadas",
+        "5 pés 7 polegadas em polegadas",
+        "Altura em pés para polegadas",
+        "Tabela de pés para polegadas",
+        "Quantas polegadas tem um pé",
+        "4 pés em polegadas",
+        "feet to inches",
+        "Conversor de comprimento",
+        "ft para polegadas"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Um conversor de pés para polegadas que funciona no navegador e sem registo. Introduza um valor em pés e leia o resultado em polegadas de imediato. Útil para a altura, as medidas de aparelhos e as diagonais de ecrã em pés.",
+      "featureList": [
+        "A conversão funciona nos dois sentidos, pelo que converte tanto pés em polegadas como polegadas em pés",
+        "O resultado aparece de imediato enquanto escreve, sem ser preciso clicar em nenhum botão",
+        "O botão Copiar resultado coloca o valor final na área de transferência",
+        "A tabela de conversão abrange valores de 1 a 67 pés",
+        "Uma tabela de alturas à parte mostra quantas polegadas dá um valor de 5 pés 0 polegadas a 6 pés 3 polegadas",
+        "Todos os cálculos são feitos no seu navegador, pelo que os dados não saem do dispositivo",
+        "A fórmula exata é: polegadas = pés × 12",
+        "A ferramenta funciona no telemóvel, no tablet e no computador, sem instalar nada"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter pés em polegadas?",
+      "description": "Um guia breve para utilizar o conversor de pés para polegadas.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduza o valor em pés",
+          "text": "No campo da esquerda, escreva o número de pés que pretende converter em polegadas. O conversor aceita um único número, por isso uma altura como 5 pés 7 polegadas passe-a antes a polegadas com a tabela abaixo."
+        },
+        {
+          "name": "Leia o resultado em polegadas",
+          "text": "O resultado em polegadas aparece de imediato no campo ao lado, à direita. O botão Copiar resultado coloca-o na área de transferência."
+        },
+        {
+          "name": "Inverta o sentido se precisar",
+          "text": "Clique em Alterar ordem para passar a converter polegadas em pés."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Para que serve converter pés em polegadas?",
+      "html": "<p class=\"text-mid mb-4\">O pé e a polegada são unidades de comprimento usadas sobretudo nos Estados Unidos. Em Portugal e no Brasil medimos em centímetros, por isso os pés passam-se a polegadas quase sempre no contacto com dados norte-americanos: quando quer dar uma altura em polegadas, quando a compara com a diagonal de um ecrã ou quando a medida de um aparelho vem em pés e precisa do valor mais fino em polegadas.</p><p class=\"text-mid mb-4\">A relação é simples e exata: um pé são 12 polegadas. Para passar pés a polegadas, multiplica o número de pés por 12. O conversor trata disso assim que introduz um valor.</p><p class=\"text-mid mb-4\">Na notação da altura há, no entanto, uma armadilha. «5 pés 7 polegadas» não é o mesmo que «5,7 pés». O conversor aceita um único número, por isso se escrever 5,7 calcula 5,7 × 12 = 68,4 polegadas. Mas 5 pés 7 polegadas são 67 polegadas. Por isso uma altura em pés e polegadas converta-a com a tabela abaixo, e não escrevendo-a com uma vírgula.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor gratuito de pés para polegadas – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão de pés para polegadas? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">A conversão de pés para polegadas assenta numa relação fixa: um pé são exatamente 12 polegadas. Para passar pés a polegadas, multiplica o número de pés por 12.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>polegadas = pés × 12</strong>. No sentido inverso: <strong>pés = polegadas ÷ 12</strong>.</p><p class=\"text-mid mb-4\">Exemplo: quer saber quantas polegadas são 6 pés. Substitui: 6 × 12 = 72 polegadas. É o valor mais convertido, porque «six feet» é uma altura comum nos países anglófonos.</p><p class=\"text-mid\">Atenção à notação da altura. Se tem 5 pés 7 polegadas, não escreva 5,7, porque o conversor daria 68,4 polegadas. As polegadas de uma altura calcula-as assim: multiplica os pés por 12 e soma as polegadas. Para 5 pés 7 polegadas dá 5 × 12 + 7 = 67 polegadas. Os valores já prontos estão na tabela de alturas abaixo.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão de pés para polegadas",
+      "description": "A tabela seguinte passa os valores mais comuns em pés para polegadas. Os valores são exatos, porque cada pé são 12 polegadas. Para converter outra medida, utilize o conversor acima.",
+      "labelHeader": "Pés",
+      "cols": ["Polegadas"],
+      "rows": [
+        { "label": "1 ft", "values": ["12 in"], "emphasis": true },
+        { "label": "2 ft", "values": ["24 in"] },
+        { "label": "3 ft", "values": ["36 in"] },
+        { "label": "4 ft", "values": ["48 in"], "emphasis": true },
+        { "label": "5 ft", "values": ["60 in"], "emphasis": true },
+        { "label": "6 ft", "values": ["72 in"], "emphasis": true },
+        { "label": "7 ft", "values": ["84 in"] },
+        { "label": "8 ft", "values": ["96 in"] },
+        { "label": "9 ft", "values": ["108 in"] },
+        { "label": "10 ft", "values": ["120 in"] },
+        { "label": "12 ft", "values": ["144 in"] },
+        { "label": "16 ft", "values": ["192 in"] },
+        { "label": "20 ft", "values": ["240 in"] },
+        { "label": "30 ft", "values": ["360 in"] },
+        { "label": "32 ft", "values": ["384 in"] },
+        { "label": "40 ft", "values": ["480 in"] },
+        { "label": "55 ft", "values": ["660 in"] },
+        { "label": "67 ft", "values": ["804 in"] }
+      ],
+      "caption": "Quer converter no sentido inverso? Utilize o nosso conversor de <a href=\"/pt/ferramentas/conversor-polegadas-para-pes\">polegadas para pés</a> com a tabela de alturas em pés e polegadas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de alturas: pés e polegadas para polegadas totais",
+      "description": "A altura nos países anglófonos escreve-se em pés e polegadas, por exemplo 5 pés 7 polegadas. Para as polegadas totais, multiplica os pés por 12 e soma as polegadas. A tabela seguinte dá resultados já prontos para as alturas mais comuns, evitando a confusão com a forma decimal.",
+      "labelHeader": "Altura",
+      "cols": ["Polegadas totais"],
+      "rows": [
+        { "label": "5 pés 0 polegadas", "values": ["60 in"], "emphasis": true },
+        { "label": "5 pés 2 polegadas", "values": ["62 in"] },
+        { "label": "5 pés 4 polegadas", "values": ["64 in"] },
+        { "label": "5 pés 5 polegadas", "values": ["65 in"] },
+        { "label": "5 pés 6 polegadas", "values": ["66 in"] },
+        { "label": "5 pés 7 polegadas", "values": ["67 in"], "emphasis": true },
+        { "label": "5 pés 8 polegadas", "values": ["68 in"] },
+        { "label": "5 pés 9 polegadas", "values": ["69 in"] },
+        {
+          "label": "5 pés 10 polegadas",
+          "values": ["70 in"],
+          "emphasis": true
+        },
+        { "label": "5 pés 11 polegadas", "values": ["71 in"] },
+        { "label": "6 pés 0 polegadas", "values": ["72 in"], "emphasis": true },
+        { "label": "6 pés 1 polegada", "values": ["73 in"] },
+        { "label": "6 pés 2 polegadas", "values": ["74 in"] },
+        { "label": "6 pés 3 polegadas", "values": ["75 in"] }
+      ],
+      "caption": "Exemplo: 5 pés 7 polegadas são 5 × 12 + 7 = 67 polegadas. Não confunda com 5,7 pés, que dá 68,4 polegadas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando se convertem pés em polegadas?",
+      "description": "Os pés passam-se a polegadas numas quantas situações do dia a dia.",
+      "items": [
+        {
+          "title": "Altura em pés e polegadas",
+          "description": "A altura dá-se em pés e polegadas, por exemplo 5 pés 10 polegadas. Para a passar a polegadas totais, multiplica os pés por 12 e soma as polegadas: 5 × 12 + 10 = 70 polegadas. Os valores já prontos estão na tabela de alturas acima, por isso não confunde a notação com um número decimal."
+        },
+        {
+          "title": "Diagonais de ecrã",
+          "description": "As diagonais de ecrã dão-se em polegadas, por isso uma medida em pés às vezes tem de ser passada a polegadas para comparar. Um ecrã com 5 pés de diagonal são 60 polegadas, e um projetor com 8 pés de diagonal são 96 polegadas. Converter ajuda a ajustar o aparelho ao espaço."
+        },
+        {
+          "title": "Medidas de móveis e aparelhos",
+          "description": "Os catálogos dão as medidas em pés, mas para encaixar precisa do valor mais fino em polegadas. Uma bancada de 4 pés de comprimento são 48 polegadas, e um armário de 6 pés de altura são 72 polegadas. Converter dá a medida na unidade em que se costumam indicar os detalhes."
+        },
+        {
+          "title": "Bricolage e madeira",
+          "description": "As tábuas, os frisos e os perfis vendem-se ao pé e cortam-se à polegada. Uma tábua de 8 pés são 96 polegadas, e um friso de 3 pés são 36 polegadas. Converter ajuda a planear o corte sem erros."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre converter pés em polegadas",
+      "items": [
+        {
+          "question": "Quantas polegadas são 6 pés?",
+          "answer": "6 pés são 72 polegadas. O cálculo: 6 × 12 = 72 polegadas. É o valor mais convertido, porque «six feet» é uma altura comum nos países anglófonos."
+        },
+        {
+          "question": "Quantas polegadas são 5 pés?",
+          "answer": "5 pés são 60 polegadas. O cálculo: 5 × 12 = 60 polegadas. É ao mesmo tempo a altura 5 pés 0 polegadas."
+        },
+        {
+          "question": "Quantas polegadas são 5 pés 7 polegadas?",
+          "answer": "5 pés 7 polegadas são 67 polegadas. O cálculo: 5 × 12 + 7 = 67 polegadas. Não confunda com 5,7 pés, que dá 68,4 polegadas: é uma notação completamente diferente."
+        },
+        {
+          "question": "5,7 pés são o mesmo que 5 pés 7 polegadas?",
+          "answer": "Não. 5,7 pés é um número decimal e dá 5,7 × 12 = 68,4 polegadas. Uma altura de 5 pés 7 polegadas são 67 polegadas. A diferença vem de 0,7 de pé serem 8,4 polegadas, e não 7 polegadas. Escreva sempre a altura como pés e polegadas separados."
+        },
+        {
+          "question": "Quantas polegadas são 5 pés 10 polegadas?",
+          "answer": "5 pés 10 polegadas são 70 polegadas. O cálculo: 5 × 12 + 10 = 70 polegadas."
+        },
+        {
+          "question": "Quantas polegadas são 3 e 4 pés?",
+          "answer": "3 pés são 36 polegadas, e 4 pés são 48 polegadas. Obtém os dois multiplicando o número de pés por 12."
+        },
+        {
+          "question": "Quantas polegadas são 12 pés?",
+          "answer": "12 pés são 144 polegadas. O cálculo: 12 × 12 = 144 polegadas. O mesmo número, 144, é também as polegadas quadradas num pé quadrado, mas isso é outra grandeza."
+        },
+        {
+          "question": "Quantas polegadas são 67 pés?",
+          "answer": "67 pés são 804 polegadas. O cálculo: 67 × 12 = 804 polegadas. Se procurava a altura 5 pés 7 polegadas, isso são 67 polegadas, e não 67 pés."
+        },
+        {
+          "question": "Como passar uma altura em pés e polegadas para polegadas totais?",
+          "answer": "Multiplique os pés por 12 e some as polegadas. Exemplo: 6 pés 2 polegadas são 6 × 12 + 2 = 74 polegadas. Os valores já prontos para as alturas mais comuns estão na tabela acima."
+        },
+        {
+          "question": "Qual é a fórmula para converter pés em polegadas?",
+          "answer": "A fórmula é: polegadas = pés × 12. Por exemplo, 7 × 12 = 84 polegadas. No sentido inverso: pés = polegadas ÷ 12."
+        },
+        {
+          "question": "Este conversor passa pés quadrados a polegadas quadradas?",
+          "answer": "Não. Esta ferramenta converte comprimento, e o pé quadrado é uma unidade de área. O fator é outro: 1 pé quadrado são 144 polegadas quadradas, por isso uma área em pés quadrados multiplica-a por 144."
+        },
+        {
+          "question": "Posso converter aqui libra-pé em libra-polegada?",
+          "answer": "Não. A libra-pé e a libra-polegada são unidades de binário, não de comprimento, por isso este conversor não as suporta. O fator é o mesmo (1 libra-pé são 12 libra-polegadas), mas é outra grandeza física."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "title": "Tem alguma dúvida ou sugestão?",
+      "description": "Se detetou um erro nas tabelas ou tem uma ideia para melhorar o conversor, escreva-nos. Respondemos a todas as mensagens.",
+      "imageAlt": "Contacto com a Arteon Agency",
+      "subject": "Conversor de pés para polegadas"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    }
+  ]
+}

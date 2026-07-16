@@ -1,0 +1,263 @@
+{
+  "toolKey": "inchesToFeet",
+  "locale": "en",
+  "metadata": {
+    "title": "Inches to Feet Converter – Convert Inches to Feet",
+    "description": "Convert inches to feet. Ready-made tables lower on the page show height in feet and inches (70 inches is 5 feet 10 inches), screen diagonals and furniture sizes. The inches to feet converter works both ways and calculates instantly.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/inches-to-feet-converter"
+  },
+  "hero": {
+    "title": "Convert inches to feet",
+    "description": "Enter a value in inches and read the result in feet straight away. Inches turn into feet most often with height recorded as a single inch figure, with screen diagonals and with measurements taken in inches. The converter gives the result in decimal feet, and a separate table lower down shows height as feet and inches.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/inches-to-feet-converter",
+      "label": "inches to feet"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Inches to feet converter – convert in to ft",
+      "alternateName": [
+        "inches to feet converter",
+        "inches to feet calculator",
+        "in to ft converter",
+        "inches to feet",
+        "convert inches to feet",
+        "how many feet is 72 inches",
+        "70 inches in feet",
+        "60 inches in feet",
+        "height in inches to feet",
+        "inches to feet table",
+        "how many inches in a foot",
+        "66 inches in feet",
+        "inches to ft",
+        "length converter",
+        "in to feet"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "An inches to feet converter that runs in your browser with no sign-up. Enter a value in inches and read the result in feet instantly. Useful for height recorded in inches, screen diagonals and measurements taken in inches.",
+      "featureList": [
+        "The conversion works both ways, so you can convert inches to feet and feet to inches",
+        "The result appears instantly as you type, with no button to click",
+        "The Copy result button places the finished value on the clipboard",
+        "The conversion table covers values from 1 to 120 inches",
+        "A separate height table shows how many feet and inches match values from 58 to 75 inches",
+        "All calculations run locally in your browser, so your data never leaves your device",
+        "The exact formula is: feet = inches ÷ 12",
+        "The tool works on phones, tablets and computers with nothing to install"
+      ]
+    },
+    "howTo": {
+      "name": "How do you convert inches to feet?",
+      "description": "A short guide to using the inches to feet converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter the value in inches",
+          "text": "In the left field, type the number of inches you want to convert to feet."
+        },
+        {
+          "name": "Read the result in feet",
+          "text": "The result in feet appears immediately in the field next to it, on the right. The Copy result button places it on the clipboard."
+        },
+        {
+          "name": "Reverse the direction if you need to",
+          "text": "Click Swap to move over to converting feet to inches."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert inches to feet?",
+      "html": "<p class=\"text-mid mb-4\">Inches and feet sit side by side in everyday measuring, so you convert whenever a value in one has to read as the other: a height recorded as a single inch figure on a form, a screen diagonal quoted in inches, or a measurement taken in inches that you want to state in feet.</p><p class=\"text-mid mb-4\">The relationship is simple and exact: one foot is 12 inches. So every conversion comes down to a single division. The converter does that for you the moment you type a value.</p><p class=\"text-mid mb-4\">Height comes with a catch. The converter gives the result in decimal feet, so 70 inches shows as 5.83 feet. Nobody says \"5.83 feet\" out loud, though — they say \"5 foot 10\". That is why the separate height table below converts inches into feet and inches.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Free inches to feet converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does the inches to feet conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">Converting inches to feet rests on one fixed relationship: one foot is exactly 12 inches. To turn inches into feet, you divide the number of inches by 12.</p><p class=\"text-mid mb-4\">Full formula: <strong>feet = inches ÷ 12</strong>. The other way round: <strong>inches = feet × 12</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many feet 72 inches is. You substitute: 72 ÷ 12 = 6 feet. It is one of the few conversions that comes out even, because 72 divides by 12 with no remainder.</p><p class=\"text-mid\">Another example: 70 inches is 70 ÷ 12 = 5.83 feet. That figure is decimal feet, not \"5 feet and 83 inches\". To read it as height in feet and inches, divide the inches by 12 with a remainder: 70 ÷ 12 is 5 remainder 10, so 5 feet 10 inches. Ready values for height are in the table below.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Inches to feet conversion table",
+      "description": "The table below converts common values in inches into decimal feet. Values are rounded to two decimal places. To convert a different measurement, use the converter above.",
+      "labelHeader": "Inches",
+      "cols": ["Feet"],
+      "rows": [
+        { "label": "1 in", "values": ["0.08 ft"] },
+        { "label": "10 in", "values": ["0.83 ft"] },
+        { "label": "12 in", "values": ["1.00 ft"], "emphasis": true },
+        { "label": "24 in", "values": ["2.00 ft"] },
+        { "label": "30 in", "values": ["2.50 ft"] },
+        { "label": "36 in", "values": ["3.00 ft"], "emphasis": true },
+        { "label": "40 in", "values": ["3.33 ft"] },
+        { "label": "42 in", "values": ["3.50 ft"] },
+        { "label": "48 in", "values": ["4.00 ft"], "emphasis": true },
+        { "label": "50 in", "values": ["4.17 ft"] },
+        { "label": "55 in", "values": ["4.58 ft"] },
+        { "label": "60 in", "values": ["5.00 ft"], "emphasis": true },
+        { "label": "63 in", "values": ["5.25 ft"] },
+        { "label": "66 in", "values": ["5.50 ft"] },
+        { "label": "67 in", "values": ["5.58 ft"] },
+        { "label": "68 in", "values": ["5.67 ft"] },
+        { "label": "70 in", "values": ["5.83 ft"], "emphasis": true },
+        { "label": "72 in", "values": ["6.00 ft"], "emphasis": true },
+        { "label": "79 in", "values": ["6.58 ft"] },
+        { "label": "84 in", "values": ["7.00 ft"] },
+        { "label": "96 in", "values": ["8.00 ft"] },
+        { "label": "120 in", "values": ["10.00 ft"] }
+      ],
+      "caption": "Need the other direction? Use our <a href=\"/en/tools/feet-to-inches-converter\">feet to inches converter</a> with a full table for measurements given in feet."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Height table: inches to feet and inches",
+      "description": "A height in inches is usually read as feet and inches, not decimal feet. The table below shows both forms: the converter result in feet, and the way you would actually say it. It also answers the common question of whether 66 inches is 5 foot 5 or 5 foot 6.",
+      "labelHeader": "Height",
+      "cols": ["Feet (decimal)", "Feet and inches"],
+      "rows": [
+        { "label": "58 in", "values": ["4.83 ft", "4 ft 10 in"] },
+        { "label": "59 in", "values": ["4.92 ft", "4 ft 11 in"] },
+        {
+          "label": "60 in",
+          "values": ["5.00 ft", "5 ft 0 in"],
+          "emphasis": true
+        },
+        { "label": "62 in", "values": ["5.17 ft", "5 ft 2 in"] },
+        { "label": "63 in", "values": ["5.25 ft", "5 ft 3 in"] },
+        { "label": "64 in", "values": ["5.33 ft", "5 ft 4 in"] },
+        { "label": "65 in", "values": ["5.42 ft", "5 ft 5 in"] },
+        {
+          "label": "66 in",
+          "values": ["5.50 ft", "5 ft 6 in"],
+          "emphasis": true
+        },
+        { "label": "67 in", "values": ["5.58 ft", "5 ft 7 in"] },
+        { "label": "68 in", "values": ["5.67 ft", "5 ft 8 in"] },
+        { "label": "69 in", "values": ["5.75 ft", "5 ft 9 in"] },
+        {
+          "label": "70 in",
+          "values": ["5.83 ft", "5 ft 10 in"],
+          "emphasis": true
+        },
+        { "label": "71 in", "values": ["5.92 ft", "5 ft 11 in"] },
+        {
+          "label": "72 in",
+          "values": ["6.00 ft", "6 ft 0 in"],
+          "emphasis": true
+        },
+        { "label": "74 in", "values": ["6.17 ft", "6 ft 2 in"] }
+      ],
+      "caption": "You read the inches straight from the remainder after dividing by 12. Example: 70 ÷ 12 = 5 remainder 10, so 5 feet 10 inches."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do people convert inches to feet?",
+      "description": "Inches turn into feet in a handful of everyday situations.",
+      "items": [
+        {
+          "title": "Height recorded in inches",
+          "description": "Medical records and ID forms often store height as a single inch figure, for example 70 inches. That is 5 feet 10 inches. Remember that the converter result (5.83 feet) is decimal feet, not feet and inches, so read the spoken form from the height table above."
+        },
+        {
+          "title": "Screen diagonals",
+          "description": "TVs and monitors are described by a diagonal in inches. A large 84-inch TV is exactly 7 feet, and a cinema projector can run past 120 inches, which is over 10 feet. Converting helps you picture the real width of the image."
+        },
+        {
+          "title": "Furniture and equipment",
+          "description": "Catalogs sometimes mix the two units: some dimensions in inches, others in feet. A worktop 24 inches deep is exactly 2 feet, and a shelf 72 inches tall is 6 feet. Converting brings everything to feet so the proportions of the whole piece are easier to grasp."
+        },
+        {
+          "title": "Sport and size charts",
+          "description": "Player heights and clothing size charts often give inches. 60 inches is 5 feet, and 63 inches is 5 feet 3 inches. Converting lets you make quick sense of a figure listed in inches."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting inches to feet",
+      "items": [
+        {
+          "question": "How many feet is 72 inches?",
+          "answer": "72 inches is exactly 6 feet. The calculation: 72 ÷ 12 = 6 feet. It comes out with no remainder, so 72 inches is exactly 6 feet, written as 6 foot 0 for height."
+        },
+        {
+          "question": "Is 12 inches one foot?",
+          "answer": "Yes, exactly. A foot is defined as 12 inches, so 12 inches is always exactly 1 foot. The relationship is fixed and there is no rounding involved."
+        },
+        {
+          "question": "How many feet is 70 inches?",
+          "answer": "70 inches is 5.83 feet, which is 5 feet 10 inches. The calculation: 70 ÷ 12 = 5 remainder 10, so 5 feet and 10 inches. It is one of the most commonly quoted heights in inches."
+        },
+        {
+          "question": "Is 66 inches 5 foot 5 or 5 foot 6?",
+          "answer": "66 inches is 5 foot 6. The calculation: 66 ÷ 12 = 5 remainder 6. A height of 5 foot 5 is 65 inches, so one inch less."
+        },
+        {
+          "question": "How many feet is 60 inches?",
+          "answer": "60 inches is exactly 5 feet. The calculation: 60 ÷ 12 = 5 feet, written as 5 foot 0 for height."
+        },
+        {
+          "question": "How many feet is 63 inches?",
+          "answer": "63 inches is 5.25 feet, which is 5 feet 3 inches. The calculation: 63 ÷ 12 = 5 remainder 3."
+        },
+        {
+          "question": "How many feet are 48 and 84 inches?",
+          "answer": "48 inches is exactly 4 feet, and 84 inches is exactly 7 feet. Both divide by 12 with no remainder, so they come out as whole feet."
+        },
+        {
+          "question": "How do you turn a decimal feet result into feet and inches?",
+          "answer": "The simplest way is to go back to the inches and divide by 12 with a remainder. The remainder is the inches, and the whole number is the feet. Example: 70 ÷ 12 is 5 remainder 10, so 5 feet 10 inches. Multiplying the decimal part by 12 also works, but rounding the feet can make it less exact."
+        },
+        {
+          "question": "What is the formula for converting inches to feet?",
+          "answer": "The formula is: feet = inches ÷ 12. For example, 96 ÷ 12 = 8 feet. The other way round: inches = feet × 12."
+        },
+        {
+          "question": "Does this converter convert square inches to square feet?",
+          "answer": "No. This tool converts length, and a square inch is a unit of area. The factor is different: 1 square foot is 144 square inches, so you divide an area in square inches by 144."
+        },
+        {
+          "question": "Can I convert pound-feet to pound-inches here?",
+          "answer": "No. Pound-feet and pound-inches are units of torque, not length, so this converter does not handle them. The factor happens to be the same (1 pound-foot is 12 pound-inches), but it is a different physical quantity."
+        },
+        {
+          "question": "How many feet is 5 inches?",
+          "answer": "5 inches is 0.42 feet. The calculation: 5 ÷ 12 = 0.42 feet. As height it is simply 0 feet 5 inches, since 5 inches does not yet make a full foot."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "title": "Have a question or a suggestion?",
+      "description": "If you have spotted a mistake in the tables or have an idea for improving the converter, write to us. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "inches to feet converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    }
+  ]
+}

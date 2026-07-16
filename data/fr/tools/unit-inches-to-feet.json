@@ -1,0 +1,263 @@
+{
+  "toolKey": "inchesToFeet",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur pouces en pieds – convertir des pouces en pieds",
+    "description": "Convertissez des pouces en pieds. Les tableaux en bas de page montrent la taille en pieds et pouces (70 pouces font 5 pieds 10 pouces), les diagonales d'écran et les dimensions de meubles. Le convertisseur fonctionne dans les deux sens et calcule instantanément.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-pouces-en-pieds"
+  },
+  "hero": {
+    "title": "Convertissez des pouces en pieds",
+    "description": "Saisissez une valeur en pouces et lisez aussitôt le résultat en pieds. Les pouces se convertissent en pieds surtout quand une taille est donnée en un seul nombre de pouces, avec les diagonales d'écran et avec des mesures prises en pouces. Le convertisseur donne le résultat en pieds décimaux, et un tableau distinct plus bas montre la taille en pieds et pouces.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-pouces-en-pieds",
+      "label": "pouces en pieds"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur de pouces en pieds – de in à ft",
+      "alternateName": [
+        "Convertisseur pouces en pieds",
+        "Calculateur pouces en pieds",
+        "Pouces en pieds",
+        "in en ft",
+        "Convertir des pouces en pieds",
+        "Combien de pieds font 72 pouces",
+        "70 pouces en pieds",
+        "60 pouces en pieds",
+        "Taille en pouces en pieds",
+        "Tableau pouces pieds",
+        "Combien de pouces dans un pied",
+        "66 pouces en pieds",
+        "inches to feet",
+        "Convertisseur de longueur",
+        "pouces en ft"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertisseur de pouces en pieds qui fonctionne dans le navigateur, sans inscription. Saisissez une valeur en pouces et lisez le résultat en pieds instantanément. Utile pour la taille en pouces, les diagonales d'écran et les mesures prises en pouces.",
+      "featureList": [
+        "La conversion fonctionne dans les deux sens : vous convertissez aussi bien des pouces en pieds que des pieds en pouces",
+        "Le résultat apparaît instantanément pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Le bouton Copier le résultat place la valeur obtenue dans le presse-papiers",
+        "Le tableau de conversion couvre les valeurs de 1 à 120 pouces",
+        "Un tableau des tailles distinct indique à combien de pieds et pouces correspondent les valeurs de 58 à 75 pouces",
+        "Tous les calculs se font localement dans le navigateur : vos données ne quittent pas votre appareil",
+        "La formule exacte est : pieds = pouces ÷ 12",
+        "L'outil fonctionne sur téléphone, tablette et ordinateur, sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des pouces en pieds ?",
+      "description": "Un guide court pour utiliser le convertisseur de pouces en pieds.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez la valeur en pouces",
+          "text": "Dans le champ de gauche, saisissez le nombre de pouces que vous souhaitez convertir en pieds."
+        },
+        {
+          "name": "Lisez le résultat en pieds",
+          "text": "Le résultat en pieds apparaît aussitôt dans le champ voisin, à droite. Le bouton Copier le résultat le place dans le presse-papiers."
+        },
+        {
+          "name": "Inversez le sens si nécessaire",
+          "text": "Cliquez sur Changer l'ordre pour passer à la conversion des pieds en pouces."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des pouces en pieds ?",
+      "html": "<p class=\"text-mid mb-4\">Le pouce et le pied sont des unités de longueur employées surtout aux États-Unis. En France, en Belgique et en Suisse, nous mesurons en centimètres, alors on convertit les pouces en pieds surtout au contact de données américaines : quand quelqu'un donne sa taille en pouces, quand vous lisez la diagonale d'un écran ou quand la mesure d'un meuble ou d'un appareil est donnée en pouces.</p><p class=\"text-mid mb-4\">Le rapport est simple et exact : un pied fait 12 pouces. Chaque conversion se ramène donc à une seule division. Le convertisseur s'en charge dès que vous saisissez une valeur.</p><p class=\"text-mid mb-4\">La taille cache un piège. Le convertisseur donne le résultat en pieds décimaux, si bien que 70 pouces s'affichent comme 5,83 pieds. À l'oral, pourtant, personne ne dit «5,83 pieds», mais «5 pieds 10 pouces». C'est pourquoi le tableau des tailles ci-dessous convertit les pouces en pieds et pouces.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit de pouces en pieds – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des pouces en pieds ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion des pouces en pieds repose sur un rapport fixe : un pied fait exactement 12 pouces. Pour transformer des pouces en pieds, vous divisez le nombre de pouces par 12.</p><p class=\"text-mid mb-4\">Formule complète : <strong>pieds = pouces ÷ 12</strong>. Dans l'autre sens : <strong>pouces = pieds × 12</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous voulez savoir combien de pieds font 72 pouces. Vous remplacez : 72 ÷ 12 = 6 pieds. C'est l'une des rares conversions qui tombe juste, car 72 se divise par 12 sans reste.</p><p class=\"text-mid\">Autre exemple : 70 pouces font 70 ÷ 12 = 5,83 pieds. Ce nombre est en pieds décimaux, et non «5 pieds et 83 pouces». Pour le lire comme une taille en pieds et pouces, vous divisez les pouces par 12 avec un reste : 70 ÷ 12 fait 5 reste 10, soit 5 pieds 10 pouces. Les valeurs prêtes pour la taille figurent dans le tableau ci-dessous.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des pouces en pieds",
+      "description": "Le tableau ci-dessous convertit les valeurs courantes en pouces vers des pieds décimaux. Les valeurs sont arrondies à deux décimales. Pour convertir une autre mesure, utilisez le convertisseur ci-dessus.",
+      "labelHeader": "Pouces",
+      "cols": ["Pieds"],
+      "rows": [
+        { "label": "1 in", "values": ["0,08 ft"] },
+        { "label": "10 in", "values": ["0,83 ft"] },
+        { "label": "12 in", "values": ["1,00 ft"], "emphasis": true },
+        { "label": "24 in", "values": ["2,00 ft"] },
+        { "label": "30 in", "values": ["2,50 ft"] },
+        { "label": "36 in", "values": ["3,00 ft"], "emphasis": true },
+        { "label": "40 in", "values": ["3,33 ft"] },
+        { "label": "42 in", "values": ["3,50 ft"] },
+        { "label": "48 in", "values": ["4,00 ft"], "emphasis": true },
+        { "label": "50 in", "values": ["4,17 ft"] },
+        { "label": "55 in", "values": ["4,58 ft"] },
+        { "label": "60 in", "values": ["5,00 ft"], "emphasis": true },
+        { "label": "63 in", "values": ["5,25 ft"] },
+        { "label": "66 in", "values": ["5,50 ft"] },
+        { "label": "67 in", "values": ["5,58 ft"] },
+        { "label": "68 in", "values": ["5,67 ft"] },
+        { "label": "70 in", "values": ["5,83 ft"], "emphasis": true },
+        { "label": "72 in", "values": ["6,00 ft"], "emphasis": true },
+        { "label": "79 in", "values": ["6,58 ft"] },
+        { "label": "84 in", "values": ["7,00 ft"] },
+        { "label": "96 in", "values": ["8,00 ft"] },
+        { "label": "120 in", "values": ["10,00 ft"] }
+      ],
+      "caption": "Vous souhaitez convertir dans l'autre sens ? Utilisez notre convertisseur <a href=\"/fr/outils/convertisseur-pieds-en-pouces\">pieds en pouces</a> avec un tableau complet pour les mesures données en pieds."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau des tailles : pouces en pieds et pouces",
+      "description": "Une taille en pouces se lit d'ordinaire en pieds et pouces, non en pieds décimaux. Le tableau ci-dessous présente les deux formes : le résultat du convertisseur en pieds et la façon dont on l'exprime. Il répond aussi à la question fréquente de savoir si 66 pouces font 5 pieds 5 pouces ou 5 pieds 6 pouces.",
+      "labelHeader": "Taille",
+      "cols": ["Pieds (décimaux)", "Pieds et pouces"],
+      "rows": [
+        { "label": "58 in", "values": ["4,83 ft", "4 pieds 10 pouces"] },
+        { "label": "59 in", "values": ["4,92 ft", "4 pieds 11 pouces"] },
+        {
+          "label": "60 in",
+          "values": ["5,00 ft", "5 pieds 0 pouce"],
+          "emphasis": true
+        },
+        { "label": "62 in", "values": ["5,17 ft", "5 pieds 2 pouces"] },
+        { "label": "63 in", "values": ["5,25 ft", "5 pieds 3 pouces"] },
+        { "label": "64 in", "values": ["5,33 ft", "5 pieds 4 pouces"] },
+        { "label": "65 in", "values": ["5,42 ft", "5 pieds 5 pouces"] },
+        {
+          "label": "66 in",
+          "values": ["5,50 ft", "5 pieds 6 pouces"],
+          "emphasis": true
+        },
+        { "label": "67 in", "values": ["5,58 ft", "5 pieds 7 pouces"] },
+        { "label": "68 in", "values": ["5,67 ft", "5 pieds 8 pouces"] },
+        { "label": "69 in", "values": ["5,75 ft", "5 pieds 9 pouces"] },
+        {
+          "label": "70 in",
+          "values": ["5,83 ft", "5 pieds 10 pouces"],
+          "emphasis": true
+        },
+        { "label": "71 in", "values": ["5,92 ft", "5 pieds 11 pouces"] },
+        {
+          "label": "72 in",
+          "values": ["6,00 ft", "6 pieds 0 pouce"],
+          "emphasis": true
+        },
+        { "label": "74 in", "values": ["6,17 ft", "6 pieds 2 pouces"] }
+      ],
+      "caption": "Les pouces se lisent directement dans le reste de la division par 12. Exemple : 70 ÷ 12 = 5 reste 10, soit 5 pieds 10 pouces."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on des pouces en pieds ?",
+      "description": "Les pouces se convertissent en pieds dans quelques situations du quotidien.",
+      "items": [
+        {
+          "title": "Taille donnée en pouces",
+          "description": "Les Américains donnent souvent la taille en un seul nombre de pouces, par exemple 70 pouces. Cela fait 5 pieds 10 pouces, soit environ 178 cm. Rappelez-vous que le résultat du convertisseur (5,83 pieds) est en pieds décimaux et non en pieds et pouces : la forme parlée se lit dans le tableau des tailles ci-dessus."
+        },
+        {
+          "title": "Diagonales d'écran",
+          "description": "Les téléviseurs et les moniteurs sont décrits par une diagonale en pouces. Un grand téléviseur de 84 pouces fait exactement 7 pieds, et un projecteur de cinéma peut dépasser 120 pouces, soit plus de 10 pieds. La conversion aide à se représenter la largeur réelle de l'image."
+        },
+        {
+          "title": "Dimensions de meubles et d'appareils",
+          "description": "Les catalogues mélangent les unités : certaines dimensions en pouces, d'autres en pieds. Un plan de travail de 24 pouces de profondeur fait exactement 2 pieds, et une étagère de 72 pouces de haut fait 6 pieds. La conversion ramène tout aux pieds, ce qui aide à saisir les proportions du meuble entier."
+        },
+        {
+          "title": "Sport et guides des tailles",
+          "description": "Les tailles des sportifs et les guides des tailles de vêtements donnent souvent des pouces. 60 pouces font 5 pieds, et 63 pouces font 5 pieds 3 pouces. La conversion permet de comprendre vite un chiffre donné en pouces."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des pouces en pieds",
+      "items": [
+        {
+          "question": "Combien de pieds font 72 pouces ?",
+          "answer": "72 pouces font exactement 6 pieds. Le calcul : 72 ÷ 12 = 6 pieds. Cela tombe sans reste, donc 72 pouces font exactement 6 pieds, écrit 6 pieds 0 pouce pour une taille."
+        },
+        {
+          "question": "12 pouces font-ils un pied ?",
+          "answer": "Oui, exactement. Un pied est défini comme 12 pouces, donc 12 pouces font toujours exactement 1 pied. Le rapport est fixe et il n'y a aucun arrondi."
+        },
+        {
+          "question": "Combien de pieds font 70 pouces ?",
+          "answer": "70 pouces font 5,83 pieds, soit 5 pieds 10 pouces. Le calcul : 70 ÷ 12 = 5 reste 10, soit 5 pieds et 10 pouces. C'est l'une des tailles les plus souvent citées en pouces."
+        },
+        {
+          "question": "66 pouces font-ils 5 pieds 5 pouces ou 5 pieds 6 pouces ?",
+          "answer": "66 pouces font 5 pieds 6 pouces. Le calcul : 66 ÷ 12 = 5 reste 6. Une taille de 5 pieds 5 pouces fait 65 pouces, soit un pouce de moins."
+        },
+        {
+          "question": "Combien de pieds font 60 pouces ?",
+          "answer": "60 pouces font exactement 5 pieds. Le calcul : 60 ÷ 12 = 5 pieds, écrit 5 pieds 0 pouce pour une taille."
+        },
+        {
+          "question": "Combien de pieds font 63 pouces ?",
+          "answer": "63 pouces font 5,25 pieds, soit 5 pieds 3 pouces. Le calcul : 63 ÷ 12 = 5 reste 3."
+        },
+        {
+          "question": "Combien de pieds font 48 et 84 pouces ?",
+          "answer": "48 pouces font exactement 4 pieds, et 84 pouces font exactement 7 pieds. Les deux se divisent par 12 sans reste, ils donnent donc des pieds entiers."
+        },
+        {
+          "question": "Comment transformer un résultat en pieds décimaux en pieds et pouces ?",
+          "answer": "Le plus simple est de revenir aux pouces et de diviser par 12 avec un reste. Le reste, ce sont les pouces, et le nombre entier, les pieds. Exemple : 70 ÷ 12 fait 5 reste 10, soit 5 pieds 10 pouces. Multiplier la partie décimale par 12 fonctionne aussi, mais l'arrondi des pieds le rend moins exact."
+        },
+        {
+          "question": "Quelle est la formule pour convertir des pouces en pieds ?",
+          "answer": "La formule est : pieds = pouces ÷ 12. Par exemple, 96 ÷ 12 = 8 pieds. Dans l'autre sens : pouces = pieds × 12."
+        },
+        {
+          "question": "Ce convertisseur convertit-il les pouces carrés en pieds carrés ?",
+          "answer": "Non. Cet outil convertit des longueurs, alors que le pouce carré est une unité de superficie. Le facteur est différent : 1 pied carré fait 144 pouces carrés, vous divisez donc une superficie en pouces carrés par 144."
+        },
+        {
+          "question": "Puis-je convertir ici des livres-pieds en livres-pouces ?",
+          "answer": "Non. La livre-pied et la livre-pouce sont des unités de couple et non de longueur : ce convertisseur ne les prend donc pas en charge. Le facteur se trouve être le même (1 livre-pied fait 12 livres-pouces), mais c'est une autre grandeur physique."
+        },
+        {
+          "question": "Combien de pieds font 5 pouces ?",
+          "answer": "5 pouces font 0,42 pied. Le calcul : 5 ÷ 12 = 0,42 pied. Comme taille, cela fait simplement 0 pied 5 pouces, car 5 pouces ne forment pas encore un pied entier."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "title": "Vous avez une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageAlt": "Contact avec Arteon Agency",
+      "subject": "Convertisseur de pouces en pieds"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    }
+  ]
+}

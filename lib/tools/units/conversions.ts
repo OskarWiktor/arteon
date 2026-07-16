@@ -341,6 +341,30 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 
   {
+    toolKey: 'inchesToFeet',
+    category: 'length',
+    sourceField: { labelKey: 'inches', suffix: 'in' },
+    targetField: { labelKey: 'feet', suffix: 'ft' },
+    convert: v => v / 12,
+    reverseConvert: v => v * 12,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'feetToInches',
+  },
+
+  {
+    toolKey: 'feetToInches',
+    category: 'length',
+    sourceField: { labelKey: 'feet', suffix: 'ft' },
+    targetField: { labelKey: 'inches', suffix: 'in' },
+    convert: v => v * 12,
+    reverseConvert: v => v / 12,
+    precision: 2,
+    swappable: true,
+    reverseToolKey: 'inchesToFeet',
+  },
+
+  {
     toolKey: 'mlToOz',
     category: 'volume',
     sourceField: { labelKey: 'milliliters', suffix: 'ml' },

@@ -1,0 +1,263 @@
+{
+  "toolKey": "inchesToFeet",
+  "locale": "de",
+  "metadata": {
+    "title": "Zoll in Fuß umrechnen – Umrechner Zoll zu Fuß",
+    "description": "Rechnen Sie Zoll in Fuß um. Fertige Tabellen weiter unten zeigen die Körpergröße in Fuß und Zoll (70 Zoll sind 5 Fuß 10 Zoll), Bildschirmdiagonalen und Möbelmaße. Der Umrechner arbeitet in beide Richtungen und rechnet sofort.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/zoll-in-fuss-umrechner"
+  },
+  "hero": {
+    "title": "Zoll in Fuß umrechnen",
+    "description": "Geben Sie einen Wert in Zoll ein und lesen Sie das Ergebnis sofort in Fuß ab. Zoll werden am häufigsten in Fuß umgerechnet, wenn eine Körpergröße als einzelne Zollzahl angegeben ist, bei Bildschirmdiagonalen und bei in Zoll gemessenen Maßen. Der Umrechner liefert das Ergebnis in Dezimalfuß, und eine eigene Tabelle weiter unten zeigt die Größe in Fuß und Zoll.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/zoll-in-fuss-umrechner",
+      "label": "Zoll in Fuß"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Umrechner Zoll in Fuß – Zoll zu Fuß",
+      "alternateName": [
+        "Zoll in Fuß Umrechner",
+        "Zoll in Fuß Rechner",
+        "Zoll zu Fuß",
+        "in in ft",
+        "Zoll in Fuß umrechnen",
+        "Wie viele Fuß sind 72 Zoll",
+        "70 Zoll in Fuß",
+        "60 Zoll in Fuß",
+        "Körpergröße in Zoll in Fuß",
+        "Tabelle Zoll Fuß",
+        "Wie viele Zoll hat ein Fuß",
+        "66 Zoll in Fuß",
+        "inches to feet",
+        "Längenumrechner",
+        "Zoll zu ft"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Ein Umrechner von Zoll in Fuß, der ohne Anmeldung im Browser läuft. Geben Sie einen Wert in Zoll ein und lesen Sie das Ergebnis sofort in Fuß ab. Nützlich für Körpergrößen in Zoll, Bildschirmdiagonalen und in Zoll gemessene Maße.",
+      "featureList": [
+        "Die Umrechnung funktioniert in beide Richtungen, Sie rechnen also Zoll in Fuß und Fuß in Zoll um",
+        "Das Ergebnis erscheint sofort während der Eingabe, ganz ohne Klick auf eine Schaltfläche",
+        "Die Schaltfläche Ergebnis kopieren legt den fertigen Wert in die Zwischenablage",
+        "Die Umrechnungstabelle umfasst Werte von 1 bis 120 Zoll",
+        "Eine eigene Größentabelle zeigt, wie viele Fuß und Zoll den Werten von 58 bis 75 Zoll entsprechen",
+        "Alle Berechnungen laufen lokal im Browser, Ihre Daten verlassen das Gerät nicht",
+        "Die genaue Formel lautet: Fuß = Zoll ÷ 12",
+        "Das Werkzeug läuft auf Handy, Tablet und Computer ohne Installation"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Zoll in Fuß um?",
+      "description": "Eine kurze Anleitung für den Umrechner von Zoll in Fuß.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert in Zoll eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl der Zoll ein, die Sie in Fuß umrechnen möchten."
+        },
+        {
+          "name": "Ergebnis in Fuß ablesen",
+          "text": "Das Ergebnis in Fuß erscheint sofort im Feld daneben auf der rechten Seite. Die Schaltfläche Ergebnis kopieren legt es in die Zwischenablage."
+        },
+        {
+          "name": "Richtung bei Bedarf umkehren",
+          "text": "Klicken Sie auf Reihenfolge ändern, um zur Umrechnung von Fuß in Zoll zu wechseln."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Wozu Zoll in Fuß umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Zoll und Fuß sind Längeneinheiten, die vor allem in den USA verwendet werden. Im deutschsprachigen Raum messen wir in Zentimetern, deshalb rechnet man Zoll in Fuß meist im Umgang mit amerikanischen Angaben um: wenn jemand seine Körpergröße in Zoll nennt, wenn Sie eine Bildschirmdiagonale lesen oder wenn ein Möbel- oder Gerätemaß in Zoll angegeben ist.</p><p class=\"text-mid mb-4\">Der Zusammenhang ist einfach und exakt: Ein Fuß sind 12 Zoll. Deshalb ist jede Umrechnung eine einzige Division. Der Umrechner übernimmt das für Sie, sobald Sie einen Wert eingeben.</p><p class=\"text-mid mb-4\">Bei der Körpergröße gibt es einen Haken. Der Umrechner liefert das Ergebnis in Dezimalfuß, 70 Zoll erscheinen also als 5,83 Fuß. Im Gespräch sagt man aber nicht „5,83 Fuß“, sondern „5 Fuß 10 Zoll“. Deshalb rechnet die eigene Größentabelle weiter unten Zoll in Fuß und Zoll um.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kostenloser Umrechner von Zoll in Fuß – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung von Zoll in Fuß? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Zoll in Fuß beruht auf einem festen Zusammenhang: Ein Fuß sind genau 12 Zoll. Um Zoll in Fuß umzuwandeln, teilen Sie die Anzahl der Zoll durch 12.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Fuß = Zoll ÷ 12</strong>. In die andere Richtung: <strong>Zoll = Fuß × 12</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Fuß 72 Zoll sind. Sie setzen ein: 72 ÷ 12 = 6 Fuß. Es ist eine der wenigen Umrechnungen, die glatt aufgeht, weil sich 72 ohne Rest durch 12 teilen lässt.</p><p class=\"text-mid\">Ein weiteres Beispiel: 70 Zoll sind 70 ÷ 12 = 5,83 Fuß. Diese Zahl sind Dezimalfuß, nicht „5 Fuß und 83 Zoll“. Um sie als Körpergröße in Fuß und Zoll zu lesen, teilen Sie die Zoll mit Rest durch 12: 70 ÷ 12 ist 5 Rest 10, also 5 Fuß 10 Zoll. Fertige Werte für Körpergrößen stehen in der Tabelle unten.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle Zoll in Fuß",
+      "description": "Die folgende Tabelle rechnet gängige Werte in Zoll in Dezimalfuß um. Die Werte sind auf zwei Nachkommastellen gerundet. Für ein anderes Maß nutzen Sie den Umrechner oben.",
+      "labelHeader": "Zoll",
+      "cols": ["Fuß"],
+      "rows": [
+        { "label": "1 in", "values": ["0,08 ft"] },
+        { "label": "10 in", "values": ["0,83 ft"] },
+        { "label": "12 in", "values": ["1,00 ft"], "emphasis": true },
+        { "label": "24 in", "values": ["2,00 ft"] },
+        { "label": "30 in", "values": ["2,50 ft"] },
+        { "label": "36 in", "values": ["3,00 ft"], "emphasis": true },
+        { "label": "40 in", "values": ["3,33 ft"] },
+        { "label": "42 in", "values": ["3,50 ft"] },
+        { "label": "48 in", "values": ["4,00 ft"], "emphasis": true },
+        { "label": "50 in", "values": ["4,17 ft"] },
+        { "label": "55 in", "values": ["4,58 ft"] },
+        { "label": "60 in", "values": ["5,00 ft"], "emphasis": true },
+        { "label": "63 in", "values": ["5,25 ft"] },
+        { "label": "66 in", "values": ["5,50 ft"] },
+        { "label": "67 in", "values": ["5,58 ft"] },
+        { "label": "68 in", "values": ["5,67 ft"] },
+        { "label": "70 in", "values": ["5,83 ft"], "emphasis": true },
+        { "label": "72 in", "values": ["6,00 ft"], "emphasis": true },
+        { "label": "79 in", "values": ["6,58 ft"] },
+        { "label": "84 in", "values": ["7,00 ft"] },
+        { "label": "96 in", "values": ["8,00 ft"] },
+        { "label": "120 in", "values": ["10,00 ft"] }
+      ],
+      "caption": "Möchten Sie in die andere Richtung rechnen? Nutzen Sie unseren Umrechner <a href=\"/de/werkzeuge/fuss-in-zoll-umrechner\">Fuß in Zoll</a> mit vollständiger Tabelle für Maße in Fuß."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Größentabelle: Zoll in Fuß und Zoll",
+      "description": "Eine Körpergröße in Zoll liest man meist als Fuß und Zoll, nicht als Dezimalfuß. Die folgende Tabelle zeigt beide Formen: das Ergebnis des Umrechners in Fuß und die gesprochene Schreibweise. Sie beantwortet auch die häufige Frage, ob 66 Zoll 5 Fuß 5 Zoll oder 5 Fuß 6 Zoll sind.",
+      "labelHeader": "Körpergröße",
+      "cols": ["Fuß (dezimal)", "Fuß und Zoll"],
+      "rows": [
+        { "label": "58 in", "values": ["4,83 ft", "4 Fuß 10 Zoll"] },
+        { "label": "59 in", "values": ["4,92 ft", "4 Fuß 11 Zoll"] },
+        {
+          "label": "60 in",
+          "values": ["5,00 ft", "5 Fuß 0 Zoll"],
+          "emphasis": true
+        },
+        { "label": "62 in", "values": ["5,17 ft", "5 Fuß 2 Zoll"] },
+        { "label": "63 in", "values": ["5,25 ft", "5 Fuß 3 Zoll"] },
+        { "label": "64 in", "values": ["5,33 ft", "5 Fuß 4 Zoll"] },
+        { "label": "65 in", "values": ["5,42 ft", "5 Fuß 5 Zoll"] },
+        {
+          "label": "66 in",
+          "values": ["5,50 ft", "5 Fuß 6 Zoll"],
+          "emphasis": true
+        },
+        { "label": "67 in", "values": ["5,58 ft", "5 Fuß 7 Zoll"] },
+        { "label": "68 in", "values": ["5,67 ft", "5 Fuß 8 Zoll"] },
+        { "label": "69 in", "values": ["5,75 ft", "5 Fuß 9 Zoll"] },
+        {
+          "label": "70 in",
+          "values": ["5,83 ft", "5 Fuß 10 Zoll"],
+          "emphasis": true
+        },
+        { "label": "71 in", "values": ["5,92 ft", "5 Fuß 11 Zoll"] },
+        {
+          "label": "72 in",
+          "values": ["6,00 ft", "6 Fuß 0 Zoll"],
+          "emphasis": true
+        },
+        { "label": "74 in", "values": ["6,17 ft", "6 Fuß 2 Zoll"] }
+      ],
+      "caption": "Die Zoll lesen Sie direkt aus dem Rest der Division durch 12 ab. Beispiel: 70 ÷ 12 = 5 Rest 10, also 5 Fuß 10 Zoll."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man Zoll in Fuß um?",
+      "description": "Zoll werden in einigen Alltagssituationen in Fuß umgerechnet.",
+      "items": [
+        {
+          "title": "Körpergröße in Zoll",
+          "description": "Amerikaner geben die Körpergröße oft als einzelne Zollzahl an, zum Beispiel 70 Zoll. Das sind 5 Fuß 10 Zoll, also rund 178 cm. Denken Sie daran, dass das Ergebnis des Umrechners (5,83 Fuß) Dezimalfuß sind und keine Fuß und Zoll, deshalb lesen Sie die gesprochene Form aus der Größentabelle oben."
+        },
+        {
+          "title": "Bildschirmdiagonalen",
+          "description": "Fernseher und Monitore werden über die Diagonale in Zoll beschrieben. Ein großer Fernseher mit 84 Zoll sind genau 7 Fuß, und ein Kinoprojektor kann über 120 Zoll erreichen, also über 10 Fuß. Die Umrechnung hilft, sich die tatsächliche Bildbreite vorzustellen."
+        },
+        {
+          "title": "Möbel- und Gerätemaße",
+          "description": "Kataloge mischen die Einheiten: einige Maße in Zoll, andere in Fuß. Eine Arbeitsplatte mit 24 Zoll Tiefe sind genau 2 Fuß, und ein Regal mit 72 Zoll Höhe sind 6 Fuß. Die Umrechnung bringt alles auf Fuß, so überblicken Sie die Proportionen des ganzen Möbelstücks leichter."
+        },
+        {
+          "title": "Sport und Größentabellen",
+          "description": "Körpergrößen von Sportlern und Größentabellen für Kleidung geben oft Zoll an. 60 Zoll sind 5 Fuß, und 63 Zoll sind 5 Fuß 3 Zoll. Die Umrechnung hilft, sich in einer in Zoll angegebenen Angabe schnell zurechtzufinden."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Umrechnung von Zoll in Fuß",
+      "items": [
+        {
+          "question": "Wie viele Fuß sind 72 Zoll?",
+          "answer": "72 Zoll sind genau 6 Fuß. Die Rechnung: 72 ÷ 12 = 6 Fuß. Es geht ohne Rest auf, 72 Zoll sind also genau 6 Fuß, als Körpergröße geschrieben 6 Fuß 0 Zoll."
+        },
+        {
+          "question": "Sind 12 Zoll ein Fuß?",
+          "answer": "Ja, genau. Ein Fuß ist als 12 Zoll definiert, 12 Zoll sind also immer genau 1 Fuß. Der Zusammenhang ist fest, und es gibt keine Rundung."
+        },
+        {
+          "question": "Wie viele Fuß sind 70 Zoll?",
+          "answer": "70 Zoll sind 5,83 Fuß, also 5 Fuß 10 Zoll. Die Rechnung: 70 ÷ 12 = 5 Rest 10, also 5 Fuß und 10 Zoll. Es ist eine der am häufigsten genannten Körpergrößen in Zoll."
+        },
+        {
+          "question": "Sind 66 Zoll 5 Fuß 5 Zoll oder 5 Fuß 6 Zoll?",
+          "answer": "66 Zoll sind 5 Fuß 6 Zoll. Die Rechnung: 66 ÷ 12 = 5 Rest 6. Eine Größe von 5 Fuß 5 Zoll sind 65 Zoll, also ein Zoll weniger."
+        },
+        {
+          "question": "Wie viele Fuß sind 60 Zoll?",
+          "answer": "60 Zoll sind genau 5 Fuß. Die Rechnung: 60 ÷ 12 = 5 Fuß, als Körpergröße geschrieben 5 Fuß 0 Zoll."
+        },
+        {
+          "question": "Wie viele Fuß sind 63 Zoll?",
+          "answer": "63 Zoll sind 5,25 Fuß, also 5 Fuß 3 Zoll. Die Rechnung: 63 ÷ 12 = 5 Rest 3."
+        },
+        {
+          "question": "Wie viele Fuß sind 48 und 84 Zoll?",
+          "answer": "48 Zoll sind genau 4 Fuß, und 84 Zoll sind genau 7 Fuß. Beide teilen sich ohne Rest durch 12, sie ergeben also volle Fuß."
+        },
+        {
+          "question": "Wie wandelt man ein Ergebnis in Dezimalfuß in Fuß und Zoll um?",
+          "answer": "Am einfachsten gehen Sie zurück zu den Zoll und teilen mit Rest durch 12. Der Rest sind die Zoll, die ganze Zahl sind die Fuß. Beispiel: 70 ÷ 12 ist 5 Rest 10, also 5 Fuß 10 Zoll. Den Nachkommateil mit 12 zu multiplizieren geht auch, ist durch die Rundung der Fuß aber weniger genau."
+        },
+        {
+          "question": "Wie lautet die Formel für die Umrechnung von Zoll in Fuß?",
+          "answer": "Die Formel lautet: Fuß = Zoll ÷ 12. Zum Beispiel 96 ÷ 12 = 8 Fuß. In die andere Richtung: Zoll = Fuß × 12."
+        },
+        {
+          "question": "Rechnet dieser Umrechner Quadratzoll in Quadratfuß um?",
+          "answer": "Nein. Dieses Werkzeug rechnet Längen um, ein Quadratzoll ist dagegen eine Flächeneinheit. Der Faktor ist ein anderer: 1 Quadratfuß sind 144 Quadratzoll, eine Fläche in Quadratzoll teilen Sie also durch 144."
+        },
+        {
+          "question": "Kann ich hier Pound-Feet in Pound-Inches umrechnen?",
+          "answer": "Nein. Pound-Feet und Pound-Inches sind Einheiten des Drehmoments und keine Längeneinheiten, dieser Umrechner unterstützt sie deshalb nicht. Der Faktor ist zwar derselbe (1 Pound-Foot sind 12 Pound-Inches), aber es ist eine andere physikalische Größe."
+        },
+        {
+          "question": "Wie viele Fuß sind 5 Zoll?",
+          "answer": "5 Zoll sind 0,42 Fuß. Die Rechnung: 5 ÷ 12 = 0,42 Fuß. Als Körpergröße sind das schlicht 0 Fuß 5 Zoll, denn 5 Zoll ergeben noch keinen vollen Fuß."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "title": "Haben Sie eine Frage oder einen Vorschlag?",
+      "description": "Wenn Sie einen Fehler in den Tabellen entdeckt haben oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageAlt": "Kontakt zu Arteon Agency",
+      "subject": "Umrechner Zoll in Fuß"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere nützliche Einheitenumrechner"
+    }
+  ]
+}
