@@ -1,0 +1,242 @@
+{
+  "toolKey": "feetToInches",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník stop na palce – převeď stopy na palce",
+    "description": "Převeď stopy na palce. Hotové tabulky na konci stránky ukazují výšku ve stopách a palcích jako palce celkem (5 stop 7 palců je 67 palců) a běžné rozměry. Převodník funguje v obou směrech a počítá okamžitě.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-stop-na-palce"
+  },
+  "hero": {
+    "title": "Převeď stopy na palce",
+    "description": "Zadej hodnotu ve stopách a hned si přečti výsledek v palcích. Stopy na palce se převádějí hlavně u výšky, u rozměrů zařízení a u úhlopříček obrazovek. Pozor na zápis výšky: 5 stop 7 palců není totéž co 5,7 stopy. Samostatná tabulka níže ukazuje, kolik palců má výška uvedená ve stopách a palcích.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-stop-na-palce",
+      "label": "stopy na palce"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník stop na palce – z ft na in",
+      "alternateName": [
+        "Převodník stop na palce",
+        "Kalkulačka stop na palce",
+        "Stopy na palce",
+        "ft na in",
+        "Převést stopy na palce",
+        "Kolik palců je 6 stop",
+        "5 stop v palcích",
+        "5 stop 7 palců v palcích",
+        "Výška ve stopách na palce",
+        "Tabulka stop na palce",
+        "Kolik palců má stopa",
+        "4 stopy v palcích",
+        "feet to inches",
+        "Převodník délky",
+        "ft na palce"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník stop na palce, který běží v prohlížeči a bez registrace. Zadej hodnotu ve stopách a okamžitě si přečti výsledek v palcích. Hodí se pro výšku, rozměry zařízení a úhlopříčky obrazovek ve stopách.",
+      "featureList": [
+        "Převod funguje v obou směrech, převedeš tedy stopy na palce i palce na stopy",
+        "Výsledek se objeví okamžitě při psaní, aniž bys musel klikat na jakékoli tlačítko",
+        "Tlačítko Kopírovat výsledek přenese hotovou hodnotu do schránky",
+        "Převodní tabulka zahrnuje hodnoty od 1 do 67 stop",
+        "Samostatná tabulka výšek ukazuje, kolik palců má hodnota od 5 stop 0 palců do 6 stop 3 palců",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvoje data zařízení neopustí",
+        "Přesný vzorec je: palce = stopy × 12",
+        "Nástroj funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést stopy na palce?",
+      "description": "Krátký návod k použití převodníku stop na palce.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu ve stopách",
+          "text": "Do levého pole napiš počet stop, který chceš převést na palce. Převodník přijímá jediné číslo, takže výšku typu 5 stop 7 palců nejdřív převeď na palce podle tabulky níže."
+        },
+        {
+          "name": "Přečti si výsledek v palcích",
+          "text": "Výsledek v palcích se hned objeví ve vedlejším poli vpravo. Tlačítkem Kopírovat výsledek ho přeneseš do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Změnit pořadí a přejdeš k převodu palců na stopy."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "K čemu je převod stop na palce?",
+      "html": "<p class=\"text-mid mb-4\">Stopa a palec jsou jednotky délky používané hlavně ve Spojených státech. V Česku měříme v centimetrech, takže stopy se na palce převádějí obvykle při kontaktu s americkými údaji: když chceš uvést výšku v palcích, když ji srovnáváš s úhlopříčkou obrazovky nebo když je rozměr zařízení uvedený ve stopách a ty potřebuješ přesnější hodnotu v palcích.</p><p class=\"text-mid mb-4\">Vztah je jednoduchý a přesný: jedna stopa je 12 palců. Když chceš změnit stopy na palce, vynásobíš počet stop dvanácti. Převodník to za tebe udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid mb-4\">V zápisu výšky je ale past. „5 stop 7 palců“ není totéž co „5,7 stopy“. Převodník přijímá jediné číslo, takže když zadáš 5,7, spočítá 5,7 × 12 = 68,4 palce. Jenže 5 stop 7 palců je 67 palců. Proto výšku ve stopách a palcích převáděj podle tabulky níže, ne zápisem s desetinnou čárkou.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník stop na palce – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod stop na palce? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod stop na palce stojí na stálém vztahu: jedna stopa je přesně 12 palců. Když chceš změnit stopy na palce, vynásobíš počet stop dvanácti.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>palce = stopy × 12</strong>. Opačným směrem: <strong>stopy = palce ÷ 12</strong>.</p><p class=\"text-mid mb-4\">Příklad: chceš zjistit, kolik palců je 6 stop. Dosadíš: 6 × 12 = 72 palce. Je to nejčastěji převáděná hodnota, protože „six feet“ je běžná výška v anglicky mluvících zemích.</p><p class=\"text-mid\">Pozor na zápis výšky. Pokud máš 5 stop 7 palců, nezadávej 5,7, protože převodník by spočítal 68,4 palce. Palce z výšky spočítáš takto: stopy vynásobíš dvanácti a přičteš palce. Pro 5 stop 7 palců to je 5 × 12 + 7 = 67 palců. Hotové hodnoty najdeš v tabulce výšek níže.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka stop na palce",
+      "description": "Následující tabulka převádí běžné hodnoty ve stopách na palce. Hodnoty jsou přesné, protože každá stopa je 12 palců. Pro jiný rozměr použij převodník výše.",
+      "labelHeader": "Stopy",
+      "cols": ["Palce"],
+      "rows": [
+        { "label": "1 ft", "values": ["12 in"], "emphasis": true },
+        { "label": "2 ft", "values": ["24 in"] },
+        { "label": "3 ft", "values": ["36 in"] },
+        { "label": "4 ft", "values": ["48 in"], "emphasis": true },
+        { "label": "5 ft", "values": ["60 in"], "emphasis": true },
+        { "label": "6 ft", "values": ["72 in"], "emphasis": true },
+        { "label": "7 ft", "values": ["84 in"] },
+        { "label": "8 ft", "values": ["96 in"] },
+        { "label": "9 ft", "values": ["108 in"] },
+        { "label": "10 ft", "values": ["120 in"] },
+        { "label": "12 ft", "values": ["144 in"] },
+        { "label": "16 ft", "values": ["192 in"] },
+        { "label": "20 ft", "values": ["240 in"] },
+        { "label": "30 ft", "values": ["360 in"] },
+        { "label": "32 ft", "values": ["384 in"] },
+        { "label": "40 ft", "values": ["480 in"] },
+        { "label": "55 ft", "values": ["660 in"] },
+        { "label": "67 ft", "values": ["804 in"] }
+      ],
+      "caption": "Chceš převádět opačným směrem? Použij náš převodník <a href=\"/cs/nastroje/prevodnik-palcu-na-stopy\">palců na stopy</a> s tabulkou výšek ve stopách a palcích."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabulka výšek: stopy a palce na palce celkem",
+      "description": "Výška se v anglicky mluvících zemích zapisuje ve stopách a palcích, například 5 stop 7 palců. Pro palce celkem vynásobíš stopy dvanácti a přičteš palce. Následující tabulka dává hotové výsledky pro nejčastější výšky, takže se vyhneš záměně s desetinným tvarem.",
+      "labelHeader": "Výška",
+      "cols": ["Palce celkem"],
+      "rows": [
+        { "label": "5 stop 0 palců", "values": ["60 in"], "emphasis": true },
+        { "label": "5 stop 2 palce", "values": ["62 in"] },
+        { "label": "5 stop 4 palce", "values": ["64 in"] },
+        { "label": "5 stop 5 palců", "values": ["65 in"] },
+        { "label": "5 stop 6 palců", "values": ["66 in"] },
+        { "label": "5 stop 7 palců", "values": ["67 in"], "emphasis": true },
+        { "label": "5 stop 8 palců", "values": ["68 in"] },
+        { "label": "5 stop 9 palců", "values": ["69 in"] },
+        { "label": "5 stop 10 palců", "values": ["70 in"], "emphasis": true },
+        { "label": "5 stop 11 palců", "values": ["71 in"] },
+        { "label": "6 stop 0 palců", "values": ["72 in"], "emphasis": true },
+        { "label": "6 stop 1 palec", "values": ["73 in"] },
+        { "label": "6 stop 2 palce", "values": ["74 in"] },
+        { "label": "6 stop 3 palce", "values": ["75 in"] }
+      ],
+      "caption": "Příklad: 5 stop 7 palců je 5 × 12 + 7 = 67 palců. Nepleť si to s 5,7 stopy, což dává 68,4 palce."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí stopy na palce?",
+      "description": "Stopy se na palce převádějí v několika běžných situacích.",
+      "items": [
+        {
+          "title": "Výška ve stopách a palcích",
+          "description": "Výška se uvádí jako stopy a palce, například 5 stop 10 palců. Abys ji převedl na palce celkem, vynásobíš stopy dvanácti a přičteš palce: 5 × 12 + 10 = 70 palců. Hotové hodnoty najdeš v tabulce výšek výše, takže si zápis nespleteš s desetinným číslem."
+        },
+        {
+          "title": "Úhlopříčky obrazovek",
+          "description": "Úhlopříčky obrazovek se uvádějí v palcích, takže rozměr uvedený ve stopách je někdy potřeba převést na palce kvůli srovnání. Obrazovka s úhlopříčkou 5 stop je 60 palců a projektor s úhlopříčkou 8 stop je 96 palců. Převod pomáhá přizpůsobit zařízení prostoru."
+        },
+        {
+          "title": "Rozměry nábytku a zařízení",
+          "description": "Katalogy uvádějí rozměry ve stopách, ale při zabudování potřebuješ přesnější hodnotu v palcích. Pracovní deska dlouhá 4 stopy je 48 palců a skříň vysoká 6 stop je 72 palce. Převod dá rozměr v jednotce, ve které se obvykle uvádějí detaily."
+        },
+        {
+          "title": "Kutilství a dřevo",
+          "description": "Prkna, lišty a profily se prodávají na stopy a řežou na palce. Prkno dlouhé 8 stop je 96 palců a lišta 3 stopy je 36 palců. Převod pomáhá naplánovat řez bez chyby."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu stop na palce",
+      "items": [
+        {
+          "question": "Kolik palců je 6 stop?",
+          "answer": "6 stop je 72 palce. Výpočet: 6 × 12 = 72 palce. Je to nejčastěji převáděná hodnota, protože „six feet“ je běžná výška v anglicky mluvících zemích."
+        },
+        {
+          "question": "Kolik palců je 5 stop?",
+          "answer": "5 stop je 60 palců. Výpočet: 5 × 12 = 60 palců. Je to zároveň výška 5 stop 0 palců."
+        },
+        {
+          "question": "Kolik palců je 5 stop 7 palců?",
+          "answer": "5 stop 7 palců je 67 palců. Výpočet: 5 × 12 + 7 = 67 palců. Nepleť si to s 5,7 stopy, což dává 68,4 palce — to je úplně jiný zápis."
+        },
+        {
+          "question": "Je 5,7 stopy totéž co 5 stop 7 palců?",
+          "answer": "Ne. 5,7 stopy je desetinné číslo a dává 5,7 × 12 = 68,4 palce. Výška 5 stop 7 palců je 67 palců. Rozdíl plyne z toho, že 0,7 stopy je 8,4 palce, a ne 7 palců. Výšku vždy zapisuj jako oddělené stopy a palce."
+        },
+        {
+          "question": "Kolik palců je 5 stop 10 palců?",
+          "answer": "5 stop 10 palců je 70 palců. Výpočet: 5 × 12 + 10 = 70 palců."
+        },
+        {
+          "question": "Kolik palců je 3 a 4 stopy?",
+          "answer": "3 stopy jsou 36 palců a 4 stopy jsou 48 palců. Obě hodnoty získáš tak, že počet stop vynásobíš dvanácti."
+        },
+        {
+          "question": "Kolik palců je 12 stop?",
+          "answer": "12 stop je 144 palce. Výpočet: 12 × 12 = 144 palce. Totéž číslo, 144, je zároveň počet čtverečních palců v jedné čtvereční stopě, ale to je jiná veličina."
+        },
+        {
+          "question": "Kolik palců je 67 stop?",
+          "answer": "67 stop je 804 palce. Výpočet: 67 × 12 = 804 palce. Pokud jsi hledal výšku 5 stop 7 palců, to je 67 palců, ne 67 stop."
+        },
+        {
+          "question": "Jak převést výšku ve stopách a palcích na palce celkem?",
+          "answer": "Stopy vynásob dvanácti a přičti palce. Příklad: 6 stop 2 palce je 6 × 12 + 2 = 74 palce. Hotové hodnoty pro nejčastější výšky najdeš v tabulce výše."
+        },
+        {
+          "question": "Jaký je vzorec pro převod stop na palce?",
+          "answer": "Vzorec zní: palce = stopy × 12. Například 7 × 12 = 84 palce. Opačným směrem: stopy = palce ÷ 12."
+        },
+        {
+          "question": "Převádí tenhle převodník čtvereční stopy na čtvereční palce?",
+          "answer": "Ne. Tenhle nástroj převádí délku, kdežto čtvereční stopa je jednotka plochy. Přepočet je jiný: 1 čtvereční stopa je 144 čtverečních palců, plochu ve čtverečních stopách tedy vynásob číslem 144."
+        },
+        {
+          "question": "Převedu tady librostopy na libropalce?",
+          "answer": "Ne. Librostopy a libropalce jsou jednotky točivého momentu, ne délky, takže je tenhle převodník nepodporuje. Přepočet je stejný (1 librostopa je 12 libropalců), ale je to jiná fyzikální veličina."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "subject": "Převodník stop na palce"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

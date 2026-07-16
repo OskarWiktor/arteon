@@ -1,0 +1,242 @@
+{
+  "toolKey": "feetToInches",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter stóp na cale – przelicz stopy na cale",
+    "description": "Przelicz stopy na cale. Gotowe tabele na dole strony pokazują wzrost ze stóp i cali na cale (5 stóp 7 cali to 67 cali) oraz popularne wymiary. Konwerter stóp na cale działa w obu kierunkach i liczy natychmiast.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-stop-na-cale"
+  },
+  "hero": {
+    "title": "Przelicz stopy na cale",
+    "description": "Wpisz wartość w stopach i od razu odczytaj wynik w calach. Cale i stopy podają głównie Amerykanie, więc przeliczamy je zwykle przy wzroście, wymiarach sprzętu oraz przekątnych ekranów. Uwaga na zapis wzrostu: 5 stóp 7 cali to nie to samo co 5,7 stopy. Osobna tabela niżej pokazuje, ile cali ma wzrost podany w stopach i calach.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-stop-na-cale",
+      "label": "stopy na cale"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik stóp na cale – konwerter stóp na cale",
+      "alternateName": [
+        "Konwerter stóp na cale",
+        "Kalkulator stóp na cale",
+        "Przelicznik stóp na cale",
+        "Stopy na cale",
+        "stopy na cale",
+        "Przelicz stopy na cale",
+        "Ile cali ma 6 stóp",
+        "5 stóp ile to cali",
+        "5 stóp 7 cali ile to cali",
+        "Wzrost ze stóp na cale",
+        "Tabela stóp na cale",
+        "Ile cali ma stopa",
+        "4 stopy ile to cali",
+        "feet to inches",
+        "Konwerter długości"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik stóp na cale działający w przeglądarce bez rejestracji. Wpisz wartość w stopach i natychmiast odczytaj wynik w calach. Przydatny przy wzroście, wymiarach sprzętu oraz przekątnych ekranów z rynku amerykańskiego.",
+      "featureList": [
+        "Konwersja działa w obie strony, więc przeliczysz zarówno stopy na cale, jak i cale na stopy",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Tabela przeliczeniowa obejmuje wartości od 1 do 67 stóp",
+        "Osobna tabela wzrostu pokazuje, ile cali ma zapis od 5 stóp 0 cali do 6 stóp 3 cali",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: cale = stopy × 12",
+        "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć stopy na cale?",
+      "description": "Krótka instrukcja użycia konwertera stóp na cale.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość w stopach",
+          "text": "W lewym polu wpisz liczbę stóp, którą chcesz przeliczyć na cale. Konwerter przyjmuje jedną liczbę, więc wzrost typu 5 stóp 7 cali najpierw zamień na cale według tabeli poniżej."
+        },
+        {
+          "name": "Odczytaj wynik w calach",
+          "text": "Wynik w calach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania cali na stopy."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać stopy na cale?",
+      "html": "<p class=\"text-mid mb-4\">Stopa i cal to jednostki długości używane głównie w Stanach Zjednoczonych. W Polsce mierzymy w centymetrach, więc stopy na cale przeliczamy zwykle przy amerykańskich danych: gdy chcesz podać wzrost w calach, gdy porównujesz go z przekątną ekranu albo gdy wymiar sprzętu podany jest w stopach, a Ty potrzebujesz dokładniejszej wartości w calach.</p><p class=\"text-mid mb-4\">Zależność jest prosta i dokładna: jedna stopa to równo 12 cali. Aby zamienić stopy na cale, mnożysz liczbę stóp przez 12. Konwerter robi to za Ciebie od razu po wpisaniu wartości.</p><p class=\"text-mid mb-4\">Jest jednak pułapka w zapisie wzrostu. „5 stóp 7 cali” to nie to samo co „5,7 stopy”. Konwerter przyjmuje jedną liczbę, więc jeśli wpiszesz 5,7, policzy 5,7 × 12 = 68,4 cala. Tymczasem 5 stóp 7 cali to 67 cali. Dlatego wzrost w stopach i calach przeliczaj według tabeli poniżej, a nie wpisując go z przecinkiem.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter stóp na cale – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja stóp na cale? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie stóp na cale opiera się na stałej zależności: jedna stopa to dokładnie 12 cali. Aby zamienić stopy na cale, mnożysz liczbę stóp przez 12.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>cale = stopy × 12</strong>. W drugą stronę: <strong>stopy = cale ÷ 12</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile cali ma 6 stóp. Podstawiasz: 6 × 12 = 72 cale. To najczęściej przeliczana wartość, bo „six feet” to popularny wzrost w krajach anglojęzycznych.</p><p class=\"text-mid\">Uwaga na zapis wzrostu. Jeśli masz 5 stóp 7 cali, nie wpisuj 5,7, bo konwerter policzy 68,4 cala. Cale ze wzrostu liczysz tak: stopy mnożysz przez 12 i dodajesz cale. Dla 5 stóp 7 cali to 5 × 12 + 7 = 67 cali. Gotowe wartości znajdziesz w tabeli wzrostu poniżej.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa stóp na cale",
+      "description": "Poniższa tabela zawiera przeliczenie popularnych wartości w stopach na cale. Wartości są dokładne, bo każda stopa to równo 12 cali. Aby przeliczyć inny wymiar, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Stopy",
+      "cols": ["Cale"],
+      "rows": [
+        { "label": "1 ft", "values": ["12 in"], "emphasis": true },
+        { "label": "2 ft", "values": ["24 in"] },
+        { "label": "3 ft", "values": ["36 in"] },
+        { "label": "4 ft", "values": ["48 in"], "emphasis": true },
+        { "label": "5 ft", "values": ["60 in"], "emphasis": true },
+        { "label": "6 ft", "values": ["72 in"], "emphasis": true },
+        { "label": "7 ft", "values": ["84 in"] },
+        { "label": "8 ft", "values": ["96 in"] },
+        { "label": "9 ft", "values": ["108 in"] },
+        { "label": "10 ft", "values": ["120 in"] },
+        { "label": "12 ft", "values": ["144 in"] },
+        { "label": "16 ft", "values": ["192 in"] },
+        { "label": "20 ft", "values": ["240 in"] },
+        { "label": "30 ft", "values": ["360 in"] },
+        { "label": "32 ft", "values": ["384 in"] },
+        { "label": "40 ft", "values": ["480 in"] },
+        { "label": "55 ft", "values": ["660 in"] },
+        { "label": "67 ft", "values": ["804 in"] }
+      ],
+      "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-cali-na-stopy\">cali na stopy</a> z tabelą wzrostu w stopach i calach."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela wzrostu: stopy i cale na cale łącznie",
+      "description": "Wzrost w krajach anglojęzycznych zapisuje się w stopach i calach, na przykład 5 stóp 7 cali. Żeby otrzymać cale łącznie, mnożysz stopy przez 12 i dodajesz cale. Poniższa tabela pokazuje gotowe wyniki dla najczęstszych wzrostów, dzięki czemu unikniesz pomyłki z zapisem dziesiętnym.",
+      "labelHeader": "Wzrost",
+      "cols": ["Cale łącznie"],
+      "rows": [
+        { "label": "5 stóp 0 cali", "values": ["60 in"], "emphasis": true },
+        { "label": "5 stóp 2 cale", "values": ["62 in"] },
+        { "label": "5 stóp 4 cale", "values": ["64 in"] },
+        { "label": "5 stóp 5 cali", "values": ["65 in"] },
+        { "label": "5 stóp 6 cali", "values": ["66 in"] },
+        { "label": "5 stóp 7 cali", "values": ["67 in"], "emphasis": true },
+        { "label": "5 stóp 8 cali", "values": ["68 in"] },
+        { "label": "5 stóp 9 cali", "values": ["69 in"] },
+        { "label": "5 stóp 10 cali", "values": ["70 in"], "emphasis": true },
+        { "label": "5 stóp 11 cali", "values": ["71 in"] },
+        { "label": "6 stóp 0 cali", "values": ["72 in"], "emphasis": true },
+        { "label": "6 stóp 1 cal", "values": ["73 in"] },
+        { "label": "6 stóp 2 cale", "values": ["74 in"] },
+        { "label": "6 stóp 3 cale", "values": ["75 in"] }
+      ],
+      "caption": "Przykład: 5 stóp 7 cali to 5 × 12 + 7 = 67 cali. Nie myl tego z 5,7 stopy, które daje 68,4 cala."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się stopy na cale?",
+      "description": "Stopy i cale spotkasz w Polsce głównie przy amerykańskich danych.",
+      "items": [
+        {
+          "title": "Wzrost w stopach i calach",
+          "description": "Amerykanie podają wzrost jako stopy i cale, na przykład 5 stóp 10 cali. Żeby zamienić go na cale łącznie, mnożysz stopy przez 12 i dodajesz cale: 5 × 12 + 10 = 70 cali. Gotowe wartości znajdziesz w tabeli wzrostu powyżej, dzięki czemu nie pomylisz zapisu z liczbą dziesiętną."
+        },
+        {
+          "title": "Przekątne ekranów",
+          "description": "Przekątne ekranów podaje się w calach, więc czasem trzeba zamienić stopy na cale, żeby porównać wymiary. Ekran o przekątnej 5 stóp to 60 cali, a projektor o przekątnej 8 stóp to 96 cali. Przeliczenie ułatwia dopasowanie sprzętu do przestrzeni."
+        },
+        {
+          "title": "Wymiary mebli i sprzętu",
+          "description": "Amerykańskie katalogi podają wymiary w stopach, a przy montażu potrzebujesz dokładniejszej wartości w calach. Blat o długości 4 stóp to 48 cali, a szafa wysoka na 6 stóp to 72 cale. Przeliczenie daje wymiar w jednostce, w której zwykle podaje się szczegóły."
+        },
+        {
+          "title": "Majsterkowanie i drewno",
+          "description": "Deski, listwy i profile na rynku amerykańskim opisuje się w stopach, a docina w calach. Deska o długości 8 stóp to 96 cali, a listwa 3 stopy to 36 cali. Przeliczenie pomaga zaplanować cięcie bez pomyłki."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie stóp na cale",
+      "items": [
+        {
+          "question": "Ile cali ma 6 stóp?",
+          "answer": "6 stóp to 72 cale. Obliczenie: 6 × 12 = 72 cale. To najczęściej przeliczana wartość, bo „six feet” to popularny wzrost w krajach anglojęzycznych."
+        },
+        {
+          "question": "Ile cali ma 5 stóp?",
+          "answer": "5 stóp to 60 cali. Obliczenie: 5 × 12 = 60 cali. To zarazem wzrost 5 stóp 0 cali."
+        },
+        {
+          "question": "Ile cali ma 5 stóp 7 cali?",
+          "answer": "5 stóp 7 cali to 67 cali. Obliczenie: 5 × 12 + 7 = 67 cali. Nie myl tego z 5,7 stopy, które daje 68,4 cala, bo to zupełnie inny zapis."
+        },
+        {
+          "question": "Czy 5,7 stopy to 5 stóp 7 cali?",
+          "answer": "Nie. 5,7 stopy to zapis dziesiętny i daje 5,7 × 12 = 68,4 cala. Wzrost 5 stóp 7 cali to 67 cali. Różnica bierze się stąd, że 0,7 stopy to 8,4 cala, a nie 7 cali. Wzrost zawsze zapisuj jako osobne stopy i cale."
+        },
+        {
+          "question": "Ile cali ma 5 stóp 10 cali?",
+          "answer": "5 stóp 10 cali to 70 cali. Obliczenie: 5 × 12 + 10 = 70 cali."
+        },
+        {
+          "question": "Ile cali mają 3 i 4 stopy?",
+          "answer": "3 stopy to 36 cali, a 4 stopy to 48 cali. Obie wartości otrzymujesz, mnożąc liczbę stóp przez 12."
+        },
+        {
+          "question": "Ile cali ma 12 stóp?",
+          "answer": "12 stóp to 144 cale. Obliczenie: 12 × 12 = 144 cale. Ta sama liczba, 144, to zarazem liczba cali kwadratowych w jednej stopie kwadratowej, ale to już inna wielkość."
+        },
+        {
+          "question": "Ile cali ma 67 stóp?",
+          "answer": "67 stóp to 804 cale. Obliczenie: 67 × 12 = 804 cale. Jeśli szukałeś wzrostu 5 stóp 7 cali, to jest 67 cali, a nie 67 stóp."
+        },
+        {
+          "question": "Jak zamienić wzrost w stopach i calach na cale łącznie?",
+          "answer": "Stopy mnożysz przez 12 i dodajesz cale. Przykład: 6 stóp 2 cale to 6 × 12 + 2 = 74 cale. Gotowe wartości dla najczęstszych wzrostów znajdziesz w tabeli powyżej."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie stóp na cale?",
+          "answer": "Wzór to: cale = stopy × 12. Na przykład 7 × 12 = 84 cale. W drugą stronę: stopy = cale ÷ 12."
+        },
+        {
+          "question": "Czy ten konwerter przelicza stopy kwadratowe na cale kwadratowe?",
+          "answer": "Nie. To narzędzie przelicza długość, a stopa kwadratowa to jednostka powierzchni. Przelicznik jest inny: 1 stopa kwadratowa to 144 cale kwadratowe, więc powierzchnię w stopach kwadratowych mnożysz przez 144."
+        },
+        {
+          "question": "Czy przeliczę tu funto-stopy na funto-cale?",
+          "answer": "Nie. Funto-stopy i funto-cale to jednostki momentu obrotowego, a nie długości, więc ten konwerter ich nie obsługuje. Przelicznik jest wprawdzie taki sam (1 funto-stopa to 12 funto-cali), ale to inna wielkość fizyczna."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "subject": "Konwerter stóp na cale"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    }
+  ]
+}

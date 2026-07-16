@@ -1,0 +1,263 @@
+{
+  "toolKey": "inchesToFeet",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de pulgadas a pies – convierte pulgadas a pies",
+    "description": "Convierte pulgadas a pies. Las tablas del final de la página muestran la altura en pies y pulgadas (70 pulgadas son 5 pies 10 pulgadas), diagonales de pantalla y medidas de muebles. El convertidor funciona en ambos sentidos y calcula al instante.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-pulgadas-a-pies"
+  },
+  "hero": {
+    "title": "Convierte pulgadas a pies",
+    "description": "Escribe un valor en pulgadas y lee el resultado en pies al momento. Las pulgadas se pasan a pies sobre todo cuando una altura viene como una sola cifra en pulgadas, con las diagonales de pantalla y con medidas tomadas en pulgadas. El convertidor da el resultado en pies decimales, y una tabla aparte más abajo muestra la altura en pies y pulgadas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-pulgadas-a-pies",
+      "label": "pulgadas a pies"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de pulgadas a pies – de in a ft",
+      "alternateName": [
+        "Convertidor de pulgadas a pies",
+        "Calculadora de pulgadas a pies",
+        "Pulgadas a pies",
+        "in a ft",
+        "Convertir pulgadas a pies",
+        "Cuántos pies son 72 pulgadas",
+        "70 pulgadas en pies",
+        "60 pulgadas en pies",
+        "Altura en pulgadas a pies",
+        "Tabla de pulgadas a pies",
+        "Cuántas pulgadas tiene un pie",
+        "66 pulgadas en pies",
+        "inches to feet",
+        "Convertidor de longitud",
+        "pulgadas a ft"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertidor de pulgadas a pies que funciona en el navegador y sin registro. Escribe un valor en pulgadas y lee el resultado en pies al instante. Útil para la altura en pulgadas, las diagonales de pantalla y las medidas tomadas en pulgadas.",
+      "featureList": [
+        "La conversión funciona en ambos sentidos, así que pasas de pulgadas a pies y de pies a pulgadas",
+        "El resultado aparece al momento mientras escribes, sin pulsar ningún botón",
+        "El botón Copiar resultado pone el valor terminado en el portapapeles",
+        "La tabla de conversión abarca valores de 1 a 120 pulgadas",
+        "Una tabla de alturas aparte muestra cuántos pies y pulgadas corresponden a los valores de 58 a 75 pulgadas",
+        "Todos los cálculos se hacen en tu navegador, así que tus datos no salen del dispositivo",
+        "La fórmula exacta es: pies = pulgadas ÷ 12",
+        "La herramienta funciona en móvil, tableta y ordenador sin instalar nada"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo se convierten pulgadas a pies?",
+      "description": "Una guía breve para usar el convertidor de pulgadas a pies.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escribe el valor en pulgadas",
+          "text": "En el campo de la izquierda, escribe el número de pulgadas que quieres convertir a pies."
+        },
+        {
+          "name": "Lee el resultado en pies",
+          "text": "El resultado en pies aparece al momento en el campo de al lado, a la derecha. El botón Copiar resultado lo pone en el portapapeles."
+        },
+        {
+          "name": "Invierte el sentido si lo necesitas",
+          "text": "Haz clic en Cambiar orden para pasar a convertir pies a pulgadas."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué convertir pulgadas a pies?",
+      "html": "<p class=\"text-mid mb-4\">La pulgada y el pie son unidades de longitud que se usan sobre todo en Estados Unidos. En España y en Latinoamérica medimos en centímetros, así que las pulgadas se pasan a pies casi siempre al tratar con datos estadounidenses: cuando alguien da su altura en pulgadas, cuando lees la diagonal de una pantalla o cuando la medida de un mueble o un aparato viene en pulgadas.</p><p class=\"text-mid mb-4\">La relación es sencilla y exacta: un pie son 12 pulgadas. Por eso cada conversión se reduce a una única división. El convertidor lo hace por ti en cuanto escribes un valor.</p><p class=\"text-mid mb-4\">Con la altura hay una trampa. El convertidor da el resultado en pies decimales, así que 70 pulgadas aparecen como 5,83 pies. Al hablar, sin embargo, nadie dice «5,83 pies», sino «5 pies 10 pulgadas». Por eso la tabla de alturas de más abajo pasa las pulgadas a pies y pulgadas.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor gratuito de pulgadas a pies – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión de pulgadas a pies? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión de pulgadas a pies se apoya en una relación fija: un pie son exactamente 12 pulgadas. Para pasar pulgadas a pies, divides el número de pulgadas entre 12.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>pies = pulgadas ÷ 12</strong>. En sentido contrario: <strong>pulgadas = pies × 12</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántos pies son 72 pulgadas. Sustituyes: 72 ÷ 12 = 6 pies. Es una de las pocas conversiones que sale exacta, porque 72 se divide entre 12 sin resto.</p><p class=\"text-mid\">Otro ejemplo: 70 pulgadas son 70 ÷ 12 = 5,83 pies. Esa cifra son pies decimales, no «5 pies y 83 pulgadas». Para leerla como altura en pies y pulgadas, divides las pulgadas entre 12 con resto: 70 ÷ 12 es 5 con resto 10, o sea 5 pies 10 pulgadas. Los valores ya hechos para la altura están en la tabla de abajo.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión de pulgadas a pies",
+      "description": "La tabla siguiente pasa los valores más comunes en pulgadas a pies decimales. Los valores están redondeados a dos decimales. Para convertir otra medida, usa el convertidor de arriba.",
+      "labelHeader": "Pulgadas",
+      "cols": ["Pies"],
+      "rows": [
+        { "label": "1 in", "values": ["0,08 ft"] },
+        { "label": "10 in", "values": ["0,83 ft"] },
+        { "label": "12 in", "values": ["1,00 ft"], "emphasis": true },
+        { "label": "24 in", "values": ["2,00 ft"] },
+        { "label": "30 in", "values": ["2,50 ft"] },
+        { "label": "36 in", "values": ["3,00 ft"], "emphasis": true },
+        { "label": "40 in", "values": ["3,33 ft"] },
+        { "label": "42 in", "values": ["3,50 ft"] },
+        { "label": "48 in", "values": ["4,00 ft"], "emphasis": true },
+        { "label": "50 in", "values": ["4,17 ft"] },
+        { "label": "55 in", "values": ["4,58 ft"] },
+        { "label": "60 in", "values": ["5,00 ft"], "emphasis": true },
+        { "label": "63 in", "values": ["5,25 ft"] },
+        { "label": "66 in", "values": ["5,50 ft"] },
+        { "label": "67 in", "values": ["5,58 ft"] },
+        { "label": "68 in", "values": ["5,67 ft"] },
+        { "label": "70 in", "values": ["5,83 ft"], "emphasis": true },
+        { "label": "72 in", "values": ["6,00 ft"], "emphasis": true },
+        { "label": "79 in", "values": ["6,58 ft"] },
+        { "label": "84 in", "values": ["7,00 ft"] },
+        { "label": "96 in", "values": ["8,00 ft"] },
+        { "label": "120 in", "values": ["10,00 ft"] }
+      ],
+      "caption": "¿Quieres convertir en el otro sentido? Usa nuestro convertidor de <a href=\"/es/herramientas/convertidor-pies-a-pulgadas\">pies a pulgadas</a> con la tabla completa para medidas dadas en pies."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de alturas: pulgadas a pies y pulgadas",
+      "description": "Una altura en pulgadas se lee normalmente en pies y pulgadas, no en pies decimales. La tabla siguiente muestra las dos formas: el resultado del convertidor en pies y la manera en que se dice. También responde a la duda habitual de si 66 pulgadas son 5 pies 5 pulgadas o 5 pies 6 pulgadas.",
+      "labelHeader": "Altura",
+      "cols": ["Pies (decimales)", "Pies y pulgadas"],
+      "rows": [
+        { "label": "58 in", "values": ["4,83 ft", "4 pies 10 pulgadas"] },
+        { "label": "59 in", "values": ["4,92 ft", "4 pies 11 pulgadas"] },
+        {
+          "label": "60 in",
+          "values": ["5,00 ft", "5 pies 0 pulgadas"],
+          "emphasis": true
+        },
+        { "label": "62 in", "values": ["5,17 ft", "5 pies 2 pulgadas"] },
+        { "label": "63 in", "values": ["5,25 ft", "5 pies 3 pulgadas"] },
+        { "label": "64 in", "values": ["5,33 ft", "5 pies 4 pulgadas"] },
+        { "label": "65 in", "values": ["5,42 ft", "5 pies 5 pulgadas"] },
+        {
+          "label": "66 in",
+          "values": ["5,50 ft", "5 pies 6 pulgadas"],
+          "emphasis": true
+        },
+        { "label": "67 in", "values": ["5,58 ft", "5 pies 7 pulgadas"] },
+        { "label": "68 in", "values": ["5,67 ft", "5 pies 8 pulgadas"] },
+        { "label": "69 in", "values": ["5,75 ft", "5 pies 9 pulgadas"] },
+        {
+          "label": "70 in",
+          "values": ["5,83 ft", "5 pies 10 pulgadas"],
+          "emphasis": true
+        },
+        { "label": "71 in", "values": ["5,92 ft", "5 pies 11 pulgadas"] },
+        {
+          "label": "72 in",
+          "values": ["6,00 ft", "6 pies 0 pulgadas"],
+          "emphasis": true
+        },
+        { "label": "74 in", "values": ["6,17 ft", "6 pies 2 pulgadas"] }
+      ],
+      "caption": "Las pulgadas las lees directamente del resto al dividir entre 12. Ejemplo: 70 ÷ 12 = 5 con resto 10, o sea 5 pies 10 pulgadas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierten pulgadas a pies?",
+      "description": "Las pulgadas se pasan a pies en unas cuantas situaciones cotidianas.",
+      "items": [
+        {
+          "title": "Altura dada en pulgadas",
+          "description": "Los estadounidenses suelen dar la altura como una sola cifra en pulgadas, por ejemplo 70 pulgadas. Son 5 pies 10 pulgadas, es decir unos 178 cm. Recuerda que el resultado del convertidor (5,83 pies) son pies decimales, no pies y pulgadas, así que la forma para hablar la lees de la tabla de alturas de arriba."
+        },
+        {
+          "title": "Diagonales de pantalla",
+          "description": "Los televisores y monitores se describen por la diagonal en pulgadas. Un televisor grande de 84 pulgadas son exactamente 7 pies, y un proyector de cine puede pasar de 120 pulgadas, es decir más de 10 pies. Convertir ayuda a imaginar el ancho real de la imagen."
+        },
+        {
+          "title": "Medidas de muebles y aparatos",
+          "description": "Los catálogos mezclan las unidades: unas medidas en pulgadas y otras en pies. Una encimera de 24 pulgadas de fondo son exactamente 2 pies, y una estantería de 72 pulgadas de alto son 6 pies. Convertir lo lleva todo a pies, así captas mejor las proporciones del mueble entero."
+        },
+        {
+          "title": "Deporte y tablas de tallas",
+          "description": "Las alturas de los deportistas y las tablas de tallas de ropa suelen dar pulgadas. 60 pulgadas son 5 pies, y 63 pulgadas son 5 pies 3 pulgadas. Convertir te deja entender rápido una cifra dada en pulgadas."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre convertir pulgadas a pies",
+      "items": [
+        {
+          "question": "¿Cuántos pies son 72 pulgadas?",
+          "answer": "72 pulgadas son exactamente 6 pies. El cálculo: 72 ÷ 12 = 6 pies. Sale sin resto, así que 72 pulgadas son exactamente 6 pies, escrito como 6 pies 0 pulgadas para la altura."
+        },
+        {
+          "question": "¿12 pulgadas son un pie?",
+          "answer": "Sí, exactamente. Un pie está definido como 12 pulgadas, así que 12 pulgadas son siempre exactamente 1 pie. La relación es fija y no hay redondeo."
+        },
+        {
+          "question": "¿Cuántos pies son 70 pulgadas?",
+          "answer": "70 pulgadas son 5,83 pies, es decir 5 pies 10 pulgadas. El cálculo: 70 ÷ 12 = 5 con resto 10, o sea 5 pies y 10 pulgadas. Es una de las alturas que más se citan en pulgadas."
+        },
+        {
+          "question": "¿66 pulgadas son 5 pies 5 pulgadas o 5 pies 6 pulgadas?",
+          "answer": "66 pulgadas son 5 pies 6 pulgadas. El cálculo: 66 ÷ 12 = 5 con resto 6. Una altura de 5 pies 5 pulgadas son 65 pulgadas, es decir una pulgada menos."
+        },
+        {
+          "question": "¿Cuántos pies son 60 pulgadas?",
+          "answer": "60 pulgadas son exactamente 5 pies. El cálculo: 60 ÷ 12 = 5 pies, escrito como 5 pies 0 pulgadas para la altura."
+        },
+        {
+          "question": "¿Cuántos pies son 63 pulgadas?",
+          "answer": "63 pulgadas son 5,25 pies, es decir 5 pies 3 pulgadas. El cálculo: 63 ÷ 12 = 5 con resto 3."
+        },
+        {
+          "question": "¿Cuántos pies son 48 y 84 pulgadas?",
+          "answer": "48 pulgadas son exactamente 4 pies, y 84 pulgadas son exactamente 7 pies. Las dos se dividen entre 12 sin resto, así que salen como pies enteros."
+        },
+        {
+          "question": "¿Cómo pasar un resultado en pies decimales a pies y pulgadas?",
+          "answer": "Lo más sencillo es volver a las pulgadas y dividir entre 12 con resto. El resto son las pulgadas y el número entero son los pies. Ejemplo: 70 ÷ 12 es 5 con resto 10, o sea 5 pies 10 pulgadas. Multiplicar la parte decimal por 12 también funciona, pero por el redondeo de los pies queda menos exacto."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir pulgadas a pies?",
+          "answer": "La fórmula es: pies = pulgadas ÷ 12. Por ejemplo, 96 ÷ 12 = 8 pies. En sentido contrario: pulgadas = pies × 12."
+        },
+        {
+          "question": "¿Este convertidor pasa pulgadas cuadradas a pies cuadrados?",
+          "answer": "No. Esta herramienta convierte longitud, y la pulgada cuadrada es una unidad de superficie. El factor es otro: 1 pie cuadrado son 144 pulgadas cuadradas, así que una superficie en pulgadas cuadradas la divides entre 144."
+        },
+        {
+          "question": "¿Puedo convertir aquí libra-pie a libra-pulgada?",
+          "answer": "No. La libra-pie y la libra-pulgada son unidades de par motor, no de longitud, así que este convertidor no las admite. El factor resulta ser el mismo (1 libra-pie son 12 libra-pulgadas), pero es otra magnitud física."
+        },
+        {
+          "question": "¿Cuántos pies son 5 pulgadas?",
+          "answer": "5 pulgadas son 0,42 pies. El cálculo: 5 ÷ 12 = 0,42 pies. Como altura son simplemente 0 pies 5 pulgadas, porque 5 pulgadas todavía no forman un pie entero."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "title": "¿Tienes alguna pregunta o sugerencia?",
+      "description": "Si has visto un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a todos los mensajes.",
+      "imageAlt": "Contacto con Arteon Agency",
+      "subject": "Convertidor de pulgadas a pies"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    }
+  ]
+}

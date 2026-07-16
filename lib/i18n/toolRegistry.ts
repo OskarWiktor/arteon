@@ -293,6 +293,8 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'kmToMiles',
   'metersToFeet',
   'feetToMeters',
+  'inchesToFeet',
+  'feetToInches',
   'mlToOz',
   'ozToMl',
   'kgToLb',

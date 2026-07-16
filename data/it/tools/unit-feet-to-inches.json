@@ -1,0 +1,246 @@
+{
+  "toolKey": "feetToInches",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore da piedi a pollici – converti piedi in pollici",
+    "description": "Converti piedi in pollici. Le tabelle a fondo pagina mostrano l'altezza in piedi e pollici come pollici totali (5 piedi 7 pollici sono 67 pollici) e misure comuni. Il convertitore funziona in entrambe le direzioni e calcola subito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-piedi-in-pollici"
+  },
+  "hero": {
+    "title": "Converti piedi in pollici",
+    "description": "Inserisci un valore in piedi e leggi subito il risultato in pollici. I piedi si convertono in pollici soprattutto per l'altezza, le misure degli apparecchi e le diagonali degli schermi. Attenzione alla notazione dell'altezza: 5 piedi 7 pollici non è la stessa cosa di 5,7 piedi. Una tabella a parte più in basso mostra a quanti pollici corrisponde un'altezza in piedi e pollici.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-piedi-in-pollici",
+      "label": "piedi in pollici"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore da piedi a pollici – da ft a in",
+      "alternateName": [
+        "Convertitore da piedi a pollici",
+        "Calcolatore da piedi a pollici",
+        "Piedi in pollici",
+        "ft in in",
+        "Convertire piedi in pollici",
+        "Quanti pollici sono 6 piedi",
+        "5 piedi in pollici",
+        "5 piedi 7 pollici in pollici",
+        "Altezza in piedi in pollici",
+        "Tabella piedi pollici",
+        "Quanti pollici ha un piede",
+        "4 piedi in pollici",
+        "feet to inches",
+        "Convertitore di lunghezza",
+        "ft in pollici"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertitore da piedi a pollici che funziona nel browser e senza registrazione. Inserisci un valore in piedi e leggi subito il risultato in pollici. Utile per l'altezza, le misure degli apparecchi e le diagonali degli schermi in piedi.",
+      "featureList": [
+        "La conversione funziona in entrambe le direzioni, quindi converti sia piedi in pollici sia pollici in piedi",
+        "Il risultato compare subito mentre scrivi, senza dover premere alcun pulsante",
+        "Il pulsante Copia risultato porta il valore finito negli appunti",
+        "La tabella di conversione copre i valori da 1 a 67 piedi",
+        "Una tabella delle altezze a parte mostra a quanti pollici corrisponde un valore da 5 piedi 0 pollici a 6 piedi 3 pollici",
+        "Tutti i calcoli avvengono nel tuo browser, quindi i dati non escono dal dispositivo",
+        "La formula esatta è: pollici = piedi × 12",
+        "Lo strumento funziona su telefono, tablet e computer senza installare nulla"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire i piedi in pollici?",
+      "description": "Una guida breve per usare il convertitore da piedi a pollici.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserisci il valore in piedi",
+          "text": "Nel campo di sinistra, scrivi il numero di piedi che vuoi convertire in pollici. Il convertitore prende un solo numero, quindi un'altezza come 5 piedi 7 pollici convertila prima in pollici con la tabella qui sotto."
+        },
+        {
+          "name": "Leggi il risultato in pollici",
+          "text": "Il risultato in pollici compare subito nel campo accanto, a destra. Il pulsante Copia risultato lo porta negli appunti."
+        },
+        {
+          "name": "Inverti la direzione se ti serve",
+          "text": "Fai clic su Cambia ordine per passare alla conversione dei pollici in piedi."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire i piedi in pollici?",
+      "html": "<p class=\"text-mid mb-4\">Il piede e il pollice sono unità di lunghezza usate soprattutto negli Stati Uniti. In Italia misuriamo in centimetri, perciò i piedi si convertono in pollici quasi sempre nel contatto con dati americani: quando vuoi dare un'altezza in pollici, quando la confronti con la diagonale di uno schermo o quando la misura di un apparecchio è data in piedi e ti serve il valore più fine in pollici.</p><p class=\"text-mid mb-4\">Il rapporto è semplice ed esatto: un piede è 12 pollici. Per trasformare i piedi in pollici, moltiplichi il numero di piedi per 12. Il convertitore lo fa per te appena inserisci un valore.</p><p class=\"text-mid mb-4\">Nella notazione dell'altezza c'è però un tranello. «5 piedi 7 pollici» non è la stessa cosa di «5,7 piedi». Il convertitore prende un solo numero, quindi se scrivi 5,7 calcola 5,7 × 12 = 68,4 pollici. Ma 5 piedi 7 pollici sono 67 pollici. Perciò un'altezza in piedi e pollici convertila con la tabella qui sotto, e non scrivendola con una virgola.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore gratuito da piedi a pollici – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione da piedi a pollici? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione da piedi a pollici si basa su un rapporto fisso: un piede è esattamente 12 pollici. Per trasformare i piedi in pollici, moltiplichi il numero di piedi per 12.</p><p class=\"text-mid mb-4\">Formula completa: <strong>pollici = piedi × 12</strong>. Nella direzione opposta: <strong>piedi = pollici ÷ 12</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti pollici sono 6 piedi. Sostituisci: 6 × 12 = 72 pollici. È il valore convertito più spesso, perché «six feet» è un'altezza comune nei paesi anglosassoni.</p><p class=\"text-mid\">Attenzione alla notazione dell'altezza. Se hai 5 piedi 7 pollici, non scrivere 5,7, perché il convertitore darebbe 68,4 pollici. I pollici di un'altezza si calcolano così: moltiplichi i piedi per 12 e aggiungi i pollici. Per 5 piedi 7 pollici fa 5 × 12 + 7 = 67 pollici. I valori già pronti sono nella tabella delle altezze qui sotto.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione da piedi a pollici",
+      "description": "La tabella seguente converte i valori più comuni in piedi in pollici. I valori sono esatti, perché ogni piede è 12 pollici. Per convertire un'altra misura, usa il convertitore qui sopra.",
+      "labelHeader": "Piedi",
+      "cols": ["Pollici"],
+      "rows": [
+        { "label": "1 ft", "values": ["12 in"], "emphasis": true },
+        { "label": "2 ft", "values": ["24 in"] },
+        { "label": "3 ft", "values": ["36 in"] },
+        { "label": "4 ft", "values": ["48 in"], "emphasis": true },
+        { "label": "5 ft", "values": ["60 in"], "emphasis": true },
+        { "label": "6 ft", "values": ["72 in"], "emphasis": true },
+        { "label": "7 ft", "values": ["84 in"] },
+        { "label": "8 ft", "values": ["96 in"] },
+        { "label": "9 ft", "values": ["108 in"] },
+        { "label": "10 ft", "values": ["120 in"] },
+        { "label": "12 ft", "values": ["144 in"] },
+        { "label": "16 ft", "values": ["192 in"] },
+        { "label": "20 ft", "values": ["240 in"] },
+        { "label": "30 ft", "values": ["360 in"] },
+        { "label": "32 ft", "values": ["384 in"] },
+        { "label": "40 ft", "values": ["480 in"] },
+        { "label": "55 ft", "values": ["660 in"] },
+        { "label": "67 ft", "values": ["804 in"] }
+      ],
+      "caption": "Vuoi convertire nella direzione opposta? Usa il nostro convertitore da <a href=\"/it/strumenti/convertitore-pollici-in-piedi\">pollici a piedi</a> con la tabella delle altezze in piedi e pollici."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella delle altezze: piedi e pollici in pollici totali",
+      "description": "L'altezza nei paesi anglosassoni si scrive in piedi e pollici, per esempio 5 piedi 7 pollici. Per i pollici totali, moltiplichi i piedi per 12 e aggiungi i pollici. La tabella seguente dà risultati già pronti per le altezze più comuni, così eviti la confusione con la forma decimale.",
+      "labelHeader": "Altezza",
+      "cols": ["Pollici totali"],
+      "rows": [
+        { "label": "5 piedi 0 pollici", "values": ["60 in"], "emphasis": true },
+        { "label": "5 piedi 2 pollici", "values": ["62 in"] },
+        { "label": "5 piedi 4 pollici", "values": ["64 in"] },
+        { "label": "5 piedi 5 pollici", "values": ["65 in"] },
+        { "label": "5 piedi 6 pollici", "values": ["66 in"] },
+        { "label": "5 piedi 7 pollici", "values": ["67 in"], "emphasis": true },
+        { "label": "5 piedi 8 pollici", "values": ["68 in"] },
+        { "label": "5 piedi 9 pollici", "values": ["69 in"] },
+        {
+          "label": "5 piedi 10 pollici",
+          "values": ["70 in"],
+          "emphasis": true
+        },
+        { "label": "5 piedi 11 pollici", "values": ["71 in"] },
+        { "label": "6 piedi 0 pollici", "values": ["72 in"], "emphasis": true },
+        { "label": "6 piedi 1 pollice", "values": ["73 in"] },
+        { "label": "6 piedi 2 pollici", "values": ["74 in"] },
+        { "label": "6 piedi 3 pollici", "values": ["75 in"] }
+      ],
+      "caption": "Esempio: 5 piedi 7 pollici sono 5 × 12 + 7 = 67 pollici. Non confonderlo con 5,7 piedi, che dà 68,4 pollici."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono i piedi in pollici?",
+      "description": "I piedi si convertono in pollici in alcune situazioni di tutti i giorni.",
+      "items": [
+        {
+          "title": "Altezza in piedi e pollici",
+          "description": "L'altezza si dà in piedi e pollici, per esempio 5 piedi 10 pollici. Per passarla a pollici totali, moltiplichi i piedi per 12 e aggiungi i pollici: 5 × 12 + 10 = 70 pollici. I valori già pronti sono nella tabella delle altezze qui sopra, così non confondi la notazione con un numero decimale."
+        },
+        {
+          "title": "Diagonali degli schermi",
+          "description": "Le diagonali degli schermi si danno in pollici, quindi una misura in piedi a volte va convertita in pollici per confrontare. Uno schermo con 5 piedi di diagonale sono 60 pollici, e un proiettore con 8 piedi di diagonale sono 96 pollici. La conversione aiuta ad adattare l'apparecchio allo spazio."
+        },
+        {
+          "title": "Misure di mobili e apparecchi",
+          "description": "I cataloghi danno le misure in piedi, ma per l'incastro ti serve il valore più fine in pollici. Un piano di lavoro di 4 piedi di lunghezza sono 48 pollici, e un armadio di 6 piedi di altezza sono 72 pollici. La conversione dà la misura nell'unità in cui si indicano di solito i dettagli."
+        },
+        {
+          "title": "Fai da te e legno",
+          "description": "Le assi, i listelli e i profili si vendono a piede e si tagliano a pollice. Un'asse di 8 piedi sono 96 pollici, e un listello di 3 piedi sono 36 pollici. La conversione aiuta a pianificare il taglio senza errori."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione dei piedi in pollici",
+      "items": [
+        {
+          "question": "Quanti pollici sono 6 piedi?",
+          "answer": "6 piedi sono 72 pollici. Il calcolo: 6 × 12 = 72 pollici. È il valore convertito più spesso, perché «six feet» è un'altezza comune nei paesi anglosassoni."
+        },
+        {
+          "question": "Quanti pollici sono 5 piedi?",
+          "answer": "5 piedi sono 60 pollici. Il calcolo: 5 × 12 = 60 pollici. È al tempo stesso l'altezza 5 piedi 0 pollici."
+        },
+        {
+          "question": "Quanti pollici sono 5 piedi 7 pollici?",
+          "answer": "5 piedi 7 pollici sono 67 pollici. Il calcolo: 5 × 12 + 7 = 67 pollici. Non confonderlo con 5,7 piedi, che dà 68,4 pollici: è una notazione completamente diversa."
+        },
+        {
+          "question": "5,7 piedi sono la stessa cosa di 5 piedi 7 pollici?",
+          "answer": "No. 5,7 piedi è un numero decimale e dà 5,7 × 12 = 68,4 pollici. Un'altezza di 5 piedi 7 pollici sono 67 pollici. La differenza viene dal fatto che 0,7 di piede sono 8,4 pollici, e non 7 pollici. Scrivi sempre l'altezza come piedi e pollici separati."
+        },
+        {
+          "question": "Quanti pollici sono 5 piedi 10 pollici?",
+          "answer": "5 piedi 10 pollici sono 70 pollici. Il calcolo: 5 × 12 + 10 = 70 pollici."
+        },
+        {
+          "question": "Quanti pollici sono 3 e 4 piedi?",
+          "answer": "3 piedi sono 36 pollici, e 4 piedi sono 48 pollici. Ottieni entrambi moltiplicando il numero di piedi per 12."
+        },
+        {
+          "question": "Quanti pollici sono 12 piedi?",
+          "answer": "12 piedi sono 144 pollici. Il calcolo: 12 × 12 = 144 pollici. Lo stesso numero, 144, è anche i pollici quadrati in un piede quadrato, ma è un'altra grandezza."
+        },
+        {
+          "question": "Quanti pollici sono 67 piedi?",
+          "answer": "67 piedi sono 804 pollici. Il calcolo: 67 × 12 = 804 pollici. Se cercavi l'altezza 5 piedi 7 pollici, sono 67 pollici, non 67 piedi."
+        },
+        {
+          "question": "Come si passa da un'altezza in piedi e pollici a pollici totali?",
+          "answer": "Moltiplica i piedi per 12 e aggiungi i pollici. Esempio: 6 piedi 2 pollici sono 6 × 12 + 2 = 74 pollici. I valori già pronti per le altezze più comuni sono nella tabella qui sopra."
+        },
+        {
+          "question": "Qual è la formula per convertire i piedi in pollici?",
+          "answer": "La formula è: pollici = piedi × 12. Per esempio, 7 × 12 = 84 pollici. Nella direzione opposta: piedi = pollici ÷ 12."
+        },
+        {
+          "question": "Questo convertitore converte i piedi quadrati in pollici quadrati?",
+          "answer": "No. Questo strumento converte lunghezze, mentre il piede quadrato è un'unità di superficie. Il fattore è diverso: 1 piede quadrato è 144 pollici quadrati, quindi una superficie in piedi quadrati la moltiplichi per 144."
+        },
+        {
+          "question": "Posso convertire qui le libbra-piede in libbra-pollice?",
+          "answer": "No. La libbra-piede e la libbra-pollice sono unità di coppia e non di lunghezza, quindi questo convertitore non le supporta. Il fattore è lo stesso (1 libbra-piede è 12 libbra-pollici), ma è un'altra grandezza fisica."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se hai notato un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contatto con Arteon Agency",
+      "subject": "Convertitore da piedi a pollici"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}
