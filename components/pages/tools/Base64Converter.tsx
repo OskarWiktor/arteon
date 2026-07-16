@@ -236,7 +236,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
             <div className='space-y-3'>
               <div
                 className={cn(
-                  'rounded-lg border border-neutral-200 bg-neutral-50 p-4',
+                  'border border-neutral-200 bg-neutral-50 p-4',
                   flexCenterClasses,
                 )}
               >
@@ -254,7 +254,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           ) : (
             <div
               className={cn(
-                'min-h-75 rounded-lg border border-neutral-200 bg-neutral-50 p-4',
+                'min-h-75 border border-neutral-200 bg-neutral-50 p-4',
                 flexCenterClasses,
               )}
             >

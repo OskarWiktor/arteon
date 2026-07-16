@@ -1,0 +1,297 @@
+{
+  "toolKey": "mlToOz",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de ml a onzas – convierte mililitros a onzas",
+    "description": "Convierte mililitros a onzas líquidas. Cambia entre la onza estadounidense y la británica, que se diferencian en un 4%. Las tablas del final de la página muestran la botella de vino de 750 ml, el límite de líquidos de 100 ml y recetas de cocina.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-ml-a-onzas"
+  },
+  "hero": {
+    "title": "Convierte mililitros a onzas líquidas",
+    "description": "Escribe un valor en mililitros y lee el resultado en onzas líquidas al momento. La onza estadounidense y la británica son dos medidas distintas, así que con el selector Tipo de onza eliges la que necesitas. Está puesta la estadounidense por defecto, porque es la que más te encuentras en recetas, cosmética y bebidas de ultramar.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-ml-a-onzas",
+      "label": "ml a onzas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de mililitros a onzas líquidas – ml a oz",
+      "alternateName": [
+        "Convertidor de ml a onzas",
+        "Calculadora de ml a oz",
+        "Convertidor de mililitros a onzas",
+        "ml a oz",
+        "ml a fl oz",
+        "Convertir ml a onzas",
+        "Cuántas onzas son 100 ml",
+        "750 ml a onzas",
+        "500 ml a onzas",
+        "Onza estadounidense y británica",
+        "Tabla de ml a onzas",
+        "Cuántos ml tiene una onza",
+        "Onza líquida",
+        "ml to oz",
+        "Convertidor de volumen"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertidor de mililitros a onzas líquidas que funciona en el navegador y sin registro. Escribe un valor en mililitros y lee el resultado al instante. El selector Tipo de onza elige la onza estadounidense o la británica, que se diferencian en un 4%.",
+      "featureList": [
+        "El selector Tipo de onza convierte a la onza estadounidense (US) o británica (UK), porque ambas se usan y se diferencian en un 4%",
+        "Está puesta la onza estadounidense por defecto, que es la que más te encuentras",
+        "La conversión funciona en ambos sentidos, así que pasas de mililitros a onzas y de onzas a mililitros",
+        "El resultado aparece al momento mientras escribes, sin pulsar ningún botón",
+        "El botón Copiar resultado pone el valor terminado en el portapapeles",
+        "La tabla de conversión abarca valores de 5 a 1.500 mililitros",
+        "Una tabla aparte muestra la onza estadounidense y la británica una al lado de la otra",
+        "Todos los cálculos se hacen en tu navegador, así que tus datos no salen del dispositivo",
+        "Para la onza estadounidense la fórmula exacta es: onzas = mililitros ÷ 29,5735"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo se convierten mililitros a onzas líquidas?",
+      "description": "Una guía breve para usar el convertidor de mililitros a onzas líquidas.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escribe el valor en mililitros",
+          "text": "En el campo de la izquierda, escribe el número de mililitros que quieres convertir a onzas."
+        },
+        {
+          "name": "Elige el tipo de onza",
+          "text": "Debajo del campo de resultado encontrarás el selector Tipo de onza. Con él eliges la onza estadounidense o la británica. Está puesta la estadounidense por defecto, y el resultado se recalcula en cuanto la cambias."
+        },
+        {
+          "name": "Lee el resultado en onzas",
+          "text": "El resultado aparece en el campo de la derecha, y en ese mismo campo verás la abreviatura de la onza elegida: US fl oz o UK fl oz. El botón Copiar resultado lo pone en el portapapeles."
+        },
+        {
+          "name": "Invierte el sentido si lo necesitas",
+          "text": "Haz clic en Cambiar orden para pasar a convertir onzas a mililitros."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué convertir mililitros a onzas?",
+      "html": "<p class=\"text-mid mb-4\">En España y en Latinoamérica medimos en mililitros las bebidas, la cosmética y los medicamentos. La onza aparece solo con productos y recetas de Estados Unidos y del Reino Unido. La ves en la receta de un blog estadounidense, en un perfume marcado como 3,4 fl oz o en una lata de refresco.</p><p class=\"text-mid mb-4\">El problema es que la onza no es una sola. La estadounidense mide 29,5735 ml y la británica (imperial) 28,4131 ml. La diferencia ronda el 4%, así que en una botella de vino el desfase ya supera una onza entera: 750 ml son 25,36 onzas estadounidenses o 26,40 británicas. Por eso eliges la medida con el selector Tipo de onza, y en el campo de resultado ves la abreviatura de la que estás leyendo: US fl oz o UK fl oz.</p><p class=\"text-mid mb-4\">Dejamos puesta la onza estadounidense por defecto, porque en la práctica es la que más te encuentras. Si el producto o la receta viene del Reino Unido, cambia a la británica.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor gratuito de mililitros a onzas líquidas – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión de ml a onzas? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">Cada una de las dos onzas tiene su propio factor fijo. La onza líquida estadounidense mide exactamente 29,5735295625 ml y la británica 28,4130625 ml. Ambos valores están definidos, así que la conversión se reduce a una única división.</p><p class=\"text-mid mb-4\">Fórmula para la onza estadounidense: <strong>onzas = mililitros ÷ 29,5735</strong>. Para la británica: <strong>onzas = mililitros ÷ 28,4131</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántas onzas tiene una botella de vino de 750 ml. Sustituyes: 750 ÷ 29,5735 = 25,36 onzas estadounidenses. La misma botella en la medida británica es 750 ÷ 28,4131 = 26,40 onzas. Los dos números son correctos, solo que describen dos medidas distintas.</p><p class=\"text-mid\">Cuidado con un lío frecuente. La onza líquida (fl oz) mide volumen, mientras que la onza a secas (oz), sin apellido, suele ser una unidad de masa igual a 28,35 g. Esta herramienta trabaja solo con volumen. Si en el envase tienes harina en onzas, es peso y necesitas un convertidor de masa.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión de mililitros a onzas estadounidenses",
+      "description": "La tabla siguiente pasa las capacidades más comunes a onzas estadounidenses, el ajuste por defecto del convertidor. Los valores están redondeados a dos decimales. La comparación con la onza británica está en la tabla de abajo.",
+      "labelHeader": "Mililitros",
+      "cols": ["Onzas estadounidenses"],
+      "rows": [
+        { "label": "5 ml", "values": ["0,17 US fl oz"] },
+        { "label": "10 ml", "values": ["0,34 US fl oz"] },
+        { "label": "15 ml", "values": ["0,51 US fl oz"] },
+        { "label": "20 ml", "values": ["0,68 US fl oz"] },
+        { "label": "25 ml", "values": ["0,85 US fl oz"] },
+        { "label": "30 ml", "values": ["1,01 US fl oz"], "emphasis": true },
+        { "label": "40 ml", "values": ["1,35 US fl oz"] },
+        { "label": "50 ml", "values": ["1,69 US fl oz"], "emphasis": true },
+        { "label": "60 ml", "values": ["2,03 US fl oz"] },
+        { "label": "80 ml", "values": ["2,71 US fl oz"] },
+        { "label": "90 ml", "values": ["3,04 US fl oz"] },
+        { "label": "100 ml", "values": ["3,38 US fl oz"], "emphasis": true },
+        { "label": "125 ml", "values": ["4,23 US fl oz"] },
+        { "label": "150 ml", "values": ["5,07 US fl oz"] },
+        { "label": "180 ml", "values": ["6,09 US fl oz"] },
+        { "label": "187 ml", "values": ["6,32 US fl oz"] },
+        { "label": "200 ml", "values": ["6,76 US fl oz"] },
+        { "label": "240 ml", "values": ["8,12 US fl oz"], "emphasis": true },
+        { "label": "250 ml", "values": ["8,45 US fl oz"] },
+        { "label": "300 ml", "values": ["10,14 US fl oz"] },
+        { "label": "350 ml", "values": ["11,83 US fl oz"] },
+        { "label": "355 ml", "values": ["12,00 US fl oz"], "emphasis": true },
+        { "label": "375 ml", "values": ["12,68 US fl oz"] },
+        { "label": "400 ml", "values": ["13,53 US fl oz"] },
+        { "label": "450 ml", "values": ["15,22 US fl oz"] },
+        { "label": "500 ml", "values": ["16,91 US fl oz"], "emphasis": true },
+        { "label": "600 ml", "values": ["20,29 US fl oz"] },
+        { "label": "700 ml", "values": ["23,67 US fl oz"] },
+        { "label": "750 ml", "values": ["25,36 US fl oz"], "emphasis": true },
+        { "label": "1.000 ml", "values": ["33,81 US fl oz"] },
+        { "label": "1.500 ml", "values": ["50,72 US fl oz"] }
+      ],
+      "caption": "¿Quieres convertir en el otro sentido? Usa nuestro convertidor de <a href=\"/es/herramientas/convertidor-onzas-a-ml\">onzas a mililitros</a> con la tabla completa para capacidades dadas en onzas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Onza estadounidense y británica: los mismos mililitros, dos resultados",
+      "description": "La misma capacidad da dos números de onzas distintos, según la medida que tomes. Cuanto mayor es el volumen, mayor es el desfase. La tabla siguiente muestra los dos resultados uno al lado del otro para que se vea la escala de la diferencia.",
+      "labelHeader": "Mililitros",
+      "cols": ["Onzas estadounidenses", "Onzas británicas", "Diferencia"],
+      "rows": [
+        {
+          "label": "25 ml",
+          "values": ["0,85 US fl oz", "0,88 UK fl oz", "0,03"]
+        },
+        {
+          "label": "50 ml",
+          "values": ["1,69 US fl oz", "1,76 UK fl oz", "0,07"]
+        },
+        {
+          "label": "100 ml",
+          "values": ["3,38 US fl oz", "3,52 UK fl oz", "0,14"],
+          "emphasis": true
+        },
+        {
+          "label": "200 ml",
+          "values": ["6,76 US fl oz", "7,04 UK fl oz", "0,28"]
+        },
+        {
+          "label": "250 ml",
+          "values": ["8,45 US fl oz", "8,80 UK fl oz", "0,35"]
+        },
+        {
+          "label": "330 ml",
+          "values": ["11,16 US fl oz", "11,61 UK fl oz", "0,46"]
+        },
+        {
+          "label": "500 ml",
+          "values": ["16,91 US fl oz", "17,60 UK fl oz", "0,69"],
+          "emphasis": true
+        },
+        {
+          "label": "750 ml",
+          "values": ["25,36 US fl oz", "26,40 UK fl oz", "1,04"],
+          "emphasis": true
+        },
+        {
+          "label": "1.000 ml",
+          "values": ["33,81 US fl oz", "35,20 UK fl oz", "1,38"]
+        }
+      ],
+      "caption": "La onza británica es más pequeña que la estadounidense, así que el mismo volumen da en ella un número mayor de onzas. Con el selector Tipo de onza del convertidor eliges cuál de estas dos columnas lees."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierten mililitros a onzas?",
+      "description": "Las onzas llegan a través de productos y recetas de fuera. Cada una de estas situaciones tiene su particularidad.",
+      "items": [
+        {
+          "title": "Recetas de blogs estadounidenses",
+          "description": "Las recetas estadounidenses dan los líquidos en onzas y tazas. Una taza estadounidense son 8 onzas, es decir 236,59 ml, y no 250 ml como una taza métrica. Esa diferencia puede estropear un bizcocho, así que es mejor convertir que redondear de memoria."
+        },
+        {
+          "title": "Cosmética y perfumes",
+          "description": "Un frasco marcado como 3,4 fl oz son sencillamente 100 ml, y 1,7 fl oz son 50 ml. Los fabricantes ponen las dos medidas porque venden en varios mercados. Si en la etiqueta solo está la onza, al convertir sabes cuánto compras de verdad."
+        },
+        {
+          "title": "Límite de líquidos en el equipaje de mano",
+          "description": "En toda la Unión Europea el límite por envase es de 100 ml, que equivale a 3,38 onzas estadounidenses. En Estados Unidos el mismo límite se escribe como 3,4 onzas. Es la misma regla en dos unidades, así que un envase de 100 ml pasa el control a los dos lados del Atlántico."
+        },
+        {
+          "title": "Bebidas y alcohol",
+          "description": "Una lata estadounidense tiene 12 onzas, es decir 355 ml, y una botella de vino de 750 ml son 25,36 onzas estadounidenses. Una medida de alcohol en un pub británico son 25 ml, es decir 0,88 onzas británicas. Al convertir comparas capacidades que en las etiquetas parecen no tener nada que ver."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre convertir mililitros a onzas",
+      "items": [
+        {
+          "question": "¿1 onza son 30 ml?",
+          "answer": "No, aunque es un redondeo habitual. La onza estadounidense son 29,57 ml, es decir 0,43 ml menos que 30. La onza británica son 28,41 ml. El valor de 30 ml viene de las etiquetas y la medicina, donde se redondea al alza por comodidad."
+        },
+        {
+          "question": "¿Cuántas onzas son 100 ml?",
+          "answer": "100 ml son 3,38 onzas estadounidenses o 3,52 onzas británicas. Cálculo para la estadounidense: 100 ÷ 29,5735 = 3,38 US fl oz."
+        },
+        {
+          "question": "¿100 ml son 8 onzas?",
+          "answer": "No, y es un error grande. 100 ml son solo 3,38 onzas estadounidenses. 8 onzas estadounidenses son 236,59 ml, más del doble."
+        },
+        {
+          "question": "¿Cuántas onzas tiene una botella de vino de 750 ml?",
+          "answer": "750 ml son 25,36 onzas estadounidenses o 26,40 onzas británicas. Cálculo para la estadounidense: 750 ÷ 29,5735 = 25,36 US fl oz."
+        },
+        {
+          "question": "¿750 ml son 16 onzas?",
+          "answer": "No. 750 ml son 25,36 onzas estadounidenses. 16 onzas estadounidenses son 473,18 ml, más o menos dos tercios de una botella de vino."
+        },
+        {
+          "question": "¿750 ml son 32 onzas?",
+          "answer": "No. 32 onzas estadounidenses son 946,35 ml, es decir casi 200 ml más que una botella de vino."
+        },
+        {
+          "question": "¿En qué se diferencian la onza estadounidense y la británica?",
+          "answer": "La onza estadounidense son 29,5735 ml y la británica (imperial) 28,4131 ml, así que la británica es un 4% más pequeña. En 100 ml la diferencia es de 0,14 onzas, pero en un litro ya es de 1,38 onzas. En el convertidor eliges la correcta con el selector Tipo de onza."
+        },
+        {
+          "question": "¿Qué onza se usa en las recetas de cocina?",
+          "answer": "Depende del origen de la receta. Los blogs y libros estadounidenses usan la onza estadounidense; las fuentes británicas, normalmente la imperial. Si en la receta aparecen tazas (cups), es casi seguro de origen estadounidense."
+        },
+        {
+          "question": "¿Cuántas onzas son 500 ml?",
+          "answer": "500 ml son 16,91 onzas estadounidenses o 17,60 onzas británicas."
+        },
+        {
+          "question": "¿500 ml son 16 onzas?",
+          "answer": "No, aunque los valores están cerca. 500 ml son 16,91 onzas estadounidenses. 16 onzas estadounidenses justas son 473,18 ml, así que faltan casi 27 ml."
+        },
+        {
+          "question": "¿Cuántas onzas son 30, 50 y 250 ml?",
+          "answer": "30 ml son 1,01 onzas estadounidenses, 50 ml son 1,69 onzas y 250 ml son 8,45 onzas. Cada uno de estos valores lo sacas dividiendo los mililitros entre 29,5735."
+        },
+        {
+          "question": "¿Una onza líquida es lo mismo que una onza de peso?",
+          "answer": "No. La onza líquida (fl oz) mide volumen, mientras que una onza de peso son 28,35 g. Esta herramienta trabaja solo con volumen. Confunde que para el agua los dos valores salen parecidos, porque el agua tiene una densidad de aproximadamente 1 g/ml, pero para el aceite o la harina esa coincidencia deja de funcionar."
+        },
+        {
+          "question": "¿Cuántos mililitros tiene una taza de una receta estadounidense?",
+          "answer": "Una taza estadounidense son 8 onzas líquidas, es decir 236,59 ml. No la confundas con una taza métrica, que son 250 ml justos. La diferencia es de unos 13 ml por taza, y con varias tazas se nota."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir mililitros a onzas?",
+          "answer": "Para la onza estadounidense: onzas = mililitros ÷ 29,5735. Para la británica: onzas = mililitros ÷ 28,4131. En el otro sentido, multiplicas por el mismo valor."
+        },
+        {
+          "question": "¿Cómo convertir mililitros a onzas mentalmente?",
+          "answer": "Divide los mililitros entre 30. Para 750 ml salen 25 onzas, frente al valor exacto de 25,36 US fl oz, así que se queda algo por debajo, pero sirve para hacerte una idea. Para cálculos precisos usa el convertidor."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "title": "¿Tienes alguna pregunta o sugerencia?",
+      "description": "Si has visto un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a todos los mensajes.",
+      "imageAlt": "Contacto con Arteon Agency",
+      "subject": "Convertidor de ml a onzas"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    }
+  ]
+}

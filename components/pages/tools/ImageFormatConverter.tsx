@@ -313,7 +313,7 @@ export default function ImageFormatConverter({
           </div>
 
           {files.length === 0 && (
-            <div className='rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-6 text-center'>
+            <div className='border border-neutral-200 bg-neutral-50 px-4 py-6 text-center'>
               <p className='tool-meta'>
                 {tpl(t.emptyState, {
                   source: sourceLabel,

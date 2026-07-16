@@ -1,0 +1,297 @@
+{
+  "toolKey": "mlToOz",
+  "locale": "de",
+  "metadata": {
+    "title": "ml in Unzen umrechnen – Milliliter in Flüssigunzen",
+    "description": "Rechnen Sie Milliliter in Flüssigunzen um. Schalten Sie zwischen US- und UK-Unze um, die sich um etwa 4 % unterscheiden. Fertige Tabellen weiter unten zeigen die 750-ml-Weinflasche, das 100-ml-Handgepäcklimit und gängige Rezeptmengen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/ml-in-unzen-umrechner"
+  },
+  "hero": {
+    "title": "Milliliter in Flüssigunzen umrechnen",
+    "description": "Geben Sie einen Wert in Millilitern ein und lesen Sie das Ergebnis sofort in Flüssigunzen ab. Die US- und die UK-Unze sind zwei verschiedene Maße, deshalb wählen Sie mit dem Umschalter Unzen-Typ das passende aus. Voreingestellt ist die US-Unze, denn ihr begegnen Sie am häufigsten: in Rezepten, Kosmetik und Getränken aus Übersee.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/ml-in-unzen-umrechner",
+      "label": "ml in Unzen"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Milliliter in Flüssigunzen Umrechner – ml in oz",
+      "alternateName": [
+        "ml in Unzen Umrechner",
+        "ml in oz Rechner",
+        "Milliliter in Unzen umrechnen",
+        "ml in oz",
+        "ml in fl oz",
+        "ml in Unzen",
+        "Wie viele Unzen sind 100 ml",
+        "750 ml in Unzen",
+        "500 ml in Unzen",
+        "US-Unze vs UK-Unze",
+        "Tabelle ml in Unzen",
+        "Wie viele ml hat eine Unze",
+        "Flüssigunze",
+        "ml to oz",
+        "Volumenumrechner"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Ein Umrechner von Millilitern in Flüssigunzen, der ohne Anmeldung im Browser läuft. Geben Sie einen Wert in Millilitern ein und lesen Sie das Ergebnis sofort ab. Der Umschalter Unzen-Typ wählt die US- oder UK-Unze, die sich um etwa 4 % unterscheiden.",
+      "featureList": [
+        "Der Umschalter Unzen-Typ rechnet in die US- oder UK-Unze um, denn beide sind in Gebrauch und unterscheiden sich um etwa 4 %",
+        "Voreingestellt ist die US-Unze, der Sie am häufigsten begegnen",
+        "Die Umrechnung funktioniert in beide Richtungen, Sie rechnen also Milliliter in Unzen und Unzen in Milliliter um",
+        "Das Ergebnis erscheint sofort während der Eingabe, ganz ohne Klick auf eine Schaltfläche",
+        "Die Schaltfläche Ergebnis kopieren legt den fertigen Wert in die Zwischenablage",
+        "Die Umrechnungstabelle umfasst Werte von 5 bis 1.500 Millilitern",
+        "Eine eigene Tabelle stellt die US- und die UK-Unze bei denselben Werten nebeneinander",
+        "Alle Berechnungen laufen lokal im Browser, Ihre Daten verlassen das Gerät nicht",
+        "Für die US-Unze lautet die genaue Formel: Unzen = Milliliter ÷ 29,5735"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Milliliter in Flüssigunzen um?",
+      "description": "Eine kurze Anleitung für den Umrechner von Millilitern in Flüssigunzen.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert in Millilitern eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl der Milliliter ein, die Sie in Unzen umrechnen möchten."
+        },
+        {
+          "name": "Unzen-Typ wählen",
+          "text": "Unter dem Ergebnisfeld finden Sie den Umschalter Unzen-Typ. Wählen Sie damit die US- oder die UK-Unze. Voreingestellt ist die US-Unze, und das Ergebnis rechnet sich sofort nach der Umschaltung neu."
+        },
+        {
+          "name": "Ergebnis in Unzen ablesen",
+          "text": "Das Ergebnis erscheint im Feld auf der rechten Seite, und im selben Feld sehen Sie das Kürzel der gewählten Unze: US fl oz oder UK fl oz. Die Schaltfläche Ergebnis kopieren legt es in die Zwischenablage."
+        },
+        {
+          "name": "Richtung bei Bedarf umkehren",
+          "text": "Klicken Sie auf Reihenfolge ändern, um zur Umrechnung von Unzen in Milliliter zu wechseln."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Wozu Milliliter in Unzen umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Im deutschsprachigen Raum messen wir Getränke, Kosmetik und Medikamente in Millilitern. Die Unze taucht erst bei Produkten und Rezepten aus den USA und Großbritannien auf. Sie sehen sie im Rezept eines amerikanischen Blogs, auf einem Parfüm mit der Angabe 3,4 fl oz oder auf einer Getränkedose.</p><p class=\"text-mid mb-4\">Das Problem: Die Unze ist nicht eindeutig. Die amerikanische misst 29,5735 ml, die britische (imperiale) 28,4131 ml. Der Unterschied beträgt rund 4 %, bei einer Weinflasche überschreitet der Abstand also schon eine ganze Unze: 750 ml sind 25,36 US-Unzen oder 26,40 britische. Deshalb wählen Sie das Maß mit dem Umschalter Unzen-Typ, und im Ergebnisfeld sehen Sie das Kürzel der Unze, die Sie gerade ablesen: US fl oz oder UK fl oz.</p><p class=\"text-mid mb-4\">Voreingestellt ist die US-Unze, denn ihr begegnen Sie in der Praxis am häufigsten. Stammt das Produkt oder Rezept aus Großbritannien, schalten Sie auf die britische um.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kostenloser Umrechner von Millilitern in Flüssigunzen – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung von ml in Unzen? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Jede der beiden Unzen hat ihren eigenen, festen Umrechnungsfaktor. Die amerikanische Flüssigunze misst genau 29,5735295625 ml, die britische genau 28,4130625 ml. Beide Werte sind definiert, die Umrechnung ist also eine einzige Division.</p><p class=\"text-mid mb-4\">Formel für die US-Unze: <strong>Unzen = Milliliter ÷ 29,5735</strong>. Für die britische: <strong>Unzen = Milliliter ÷ 28,4131</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Unzen eine Weinflasche mit 750 ml fasst. Sie setzen ein: 750 ÷ 29,5735 = 25,36 US-Unzen. Dieselbe Flasche im britischen Maß ist 750 ÷ 28,4131 = 26,40 Unzen. Beide Zahlen sind richtig, sie beschreiben nur zwei verschiedene Maße.</p><p class=\"text-mid\">Achten Sie auf einen Denkfehler. Die Flüssigunze (fl oz) misst Volumen, die reine Unze (oz) ohne Zusatz ist dagegen meist eine Masseeinheit von 28,35 g. Dieses Werkzeug rechnet ausschließlich Volumen. Steht auf der Packung Mehl in Unzen, geht es um Gewicht, und Sie brauchen einen Massenumrechner.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle Milliliter in US-Unzen",
+      "description": "Die folgende Tabelle rechnet gängige Mengen in US-Unzen um, die Voreinstellung des Umrechners. Die Werte sind auf zwei Nachkommastellen gerundet. Der Vergleich mit der britischen Unze steht in der Tabelle darunter.",
+      "labelHeader": "Milliliter",
+      "cols": ["US-Unzen"],
+      "rows": [
+        { "label": "5 ml", "values": ["0,17 US fl oz"] },
+        { "label": "10 ml", "values": ["0,34 US fl oz"] },
+        { "label": "15 ml", "values": ["0,51 US fl oz"] },
+        { "label": "20 ml", "values": ["0,68 US fl oz"] },
+        { "label": "25 ml", "values": ["0,85 US fl oz"] },
+        { "label": "30 ml", "values": ["1,01 US fl oz"], "emphasis": true },
+        { "label": "40 ml", "values": ["1,35 US fl oz"] },
+        { "label": "50 ml", "values": ["1,69 US fl oz"], "emphasis": true },
+        { "label": "60 ml", "values": ["2,03 US fl oz"] },
+        { "label": "80 ml", "values": ["2,71 US fl oz"] },
+        { "label": "90 ml", "values": ["3,04 US fl oz"] },
+        { "label": "100 ml", "values": ["3,38 US fl oz"], "emphasis": true },
+        { "label": "125 ml", "values": ["4,23 US fl oz"] },
+        { "label": "150 ml", "values": ["5,07 US fl oz"] },
+        { "label": "180 ml", "values": ["6,09 US fl oz"] },
+        { "label": "187 ml", "values": ["6,32 US fl oz"] },
+        { "label": "200 ml", "values": ["6,76 US fl oz"] },
+        { "label": "240 ml", "values": ["8,12 US fl oz"], "emphasis": true },
+        { "label": "250 ml", "values": ["8,45 US fl oz"] },
+        { "label": "300 ml", "values": ["10,14 US fl oz"] },
+        { "label": "350 ml", "values": ["11,83 US fl oz"] },
+        { "label": "355 ml", "values": ["12,00 US fl oz"], "emphasis": true },
+        { "label": "375 ml", "values": ["12,68 US fl oz"] },
+        { "label": "400 ml", "values": ["13,53 US fl oz"] },
+        { "label": "450 ml", "values": ["15,22 US fl oz"] },
+        { "label": "500 ml", "values": ["16,91 US fl oz"], "emphasis": true },
+        { "label": "600 ml", "values": ["20,29 US fl oz"] },
+        { "label": "700 ml", "values": ["23,67 US fl oz"] },
+        { "label": "750 ml", "values": ["25,36 US fl oz"], "emphasis": true },
+        { "label": "1.000 ml", "values": ["33,81 US fl oz"] },
+        { "label": "1.500 ml", "values": ["50,72 US fl oz"] }
+      ],
+      "caption": "Möchten Sie in die andere Richtung rechnen? Nutzen Sie unseren Umrechner <a href=\"/de/werkzeuge/unzen-in-ml-umrechner\">Unzen in Milliliter</a> mit vollständiger Tabelle für Mengen in Unzen."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "US-Unze vs UK-Unze: dieselben Milliliter, zwei Ergebnisse",
+      "description": "Dieselbe Menge ergibt zwei verschiedene Unzenzahlen, je nachdem, welches Maß Sie zugrunde legen. Je größer das Volumen, desto größer der Abstand. Die folgende Tabelle zeigt beide Ergebnisse nebeneinander, damit die Größenordnung sichtbar wird.",
+      "labelHeader": "Milliliter",
+      "cols": ["US-Unzen", "UK-Unzen", "Unterschied"],
+      "rows": [
+        {
+          "label": "25 ml",
+          "values": ["0,85 US fl oz", "0,88 UK fl oz", "0,03"]
+        },
+        {
+          "label": "50 ml",
+          "values": ["1,69 US fl oz", "1,76 UK fl oz", "0,07"]
+        },
+        {
+          "label": "100 ml",
+          "values": ["3,38 US fl oz", "3,52 UK fl oz", "0,14"],
+          "emphasis": true
+        },
+        {
+          "label": "200 ml",
+          "values": ["6,76 US fl oz", "7,04 UK fl oz", "0,28"]
+        },
+        {
+          "label": "250 ml",
+          "values": ["8,45 US fl oz", "8,80 UK fl oz", "0,35"]
+        },
+        {
+          "label": "330 ml",
+          "values": ["11,16 US fl oz", "11,61 UK fl oz", "0,46"]
+        },
+        {
+          "label": "500 ml",
+          "values": ["16,91 US fl oz", "17,60 UK fl oz", "0,69"],
+          "emphasis": true
+        },
+        {
+          "label": "750 ml",
+          "values": ["25,36 US fl oz", "26,40 UK fl oz", "1,04"],
+          "emphasis": true
+        },
+        {
+          "label": "1.000 ml",
+          "values": ["33,81 US fl oz", "35,20 UK fl oz", "1,38"]
+        }
+      ],
+      "caption": "Die britische Unze ist kleiner als die amerikanische, deshalb ergibt dasselbe Volumen in ihr eine größere Unzenzahl. Mit dem Umschalter Unzen-Typ wählen Sie, welche der beiden Spalten Sie ablesen."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man Milliliter in Unzen um?",
+      "description": "Unzen erreichen den deutschsprachigen Alltag über Produkte und Rezepte aus dem Ausland. Jede dieser Situationen hat ihre eigene Besonderheit.",
+      "items": [
+        {
+          "title": "Rezepte aus amerikanischen Blogs",
+          "description": "Amerikanische Rezepte geben Flüssigkeiten in Unzen und Cups an. Ein US-Cup fasst 8 Unzen, also 236,59 ml, nicht 250 ml wie ein metrischer Messbecher. Dieser Unterschied kann einen Kuchen verderben, deshalb rechnen Sie lieber um, statt im Kopf zu runden."
+        },
+        {
+          "title": "Kosmetik und Parfüm",
+          "description": "Ein Flakon mit der Angabe 3,4 fl oz sind schlicht 100 ml, und 1,7 fl oz sind 50 ml. Die Hersteller nennen beide Maße, weil sie in mehreren Märkten verkaufen. Steht auf dem Etikett nur die Unze, wissen Sie nach dem Umrechnen, wie viel Sie wirklich kaufen."
+        },
+        {
+          "title": "Flüssigkeitslimit im Handgepäck",
+          "description": "In der gesamten EU liegt das Limit für einen einzelnen Behälter bei 100 ml, das entspricht 3,38 US-Unzen. In den USA wird dasselbe Limit als 3,4 Unzen angegeben. Es ist dieselbe Regel in zwei Einheiten, ein 100-ml-Behälter kommt also auf beiden Seiten des Atlantiks durch die Kontrolle."
+        },
+        {
+          "title": "Getränke und Alkohol",
+          "description": "Eine amerikanische Getränkedose fasst 12 Unzen, also 355 ml, und eine 750-ml-Weinflasche sind 25,36 US-Unzen. Ein Alkoholmaß in einem britischen Pub sind 25 ml, also 0,88 britische Unzen. Durch das Umrechnen vergleichen Sie Mengen, die auf den Etiketten völlig unterschiedlich aussehen."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Umrechnung von Millilitern in Unzen",
+      "items": [
+        {
+          "question": "Ist 1 Unze gleich 30 ml?",
+          "answer": "Nein, auch wenn das eine verbreitete Rundung ist. Die US-Unze misst 29,57 ml, also 0,43 ml weniger als 30. Die britische Unze misst 28,41 ml. Der Wert 30 ml stammt von Etiketten und aus der Medizin, wo zur Vereinfachung aufgerundet wird."
+        },
+        {
+          "question": "Wie viele Unzen sind 100 ml?",
+          "answer": "100 ml sind 3,38 US-Unzen oder 3,52 britische Unzen. Rechnung für die US-Unze: 100 ÷ 29,5735 = 3,38 US fl oz."
+        },
+        {
+          "question": "Sind 100 ml gleich 8 Unzen?",
+          "answer": "Nein, das ist ein grober Irrtum. 100 ml sind nur 3,38 US-Unzen. Acht US-Unzen sind 236,59 ml, also mehr als doppelt so viel."
+        },
+        {
+          "question": "Wie viele Unzen fasst eine 750-ml-Weinflasche?",
+          "answer": "750 ml sind 25,36 US-Unzen oder 26,40 britische Unzen. Rechnung für die US-Unze: 750 ÷ 29,5735 = 25,36 US fl oz."
+        },
+        {
+          "question": "Sind 750 ml gleich 16 Unzen?",
+          "answer": "Nein. 750 ml sind 25,36 US-Unzen. Sechzehn US-Unzen sind 473,18 ml, also etwa zwei Drittel einer Weinflasche."
+        },
+        {
+          "question": "Sind 750 ml gleich 32 Unzen?",
+          "answer": "Nein. Zweiunddreißig US-Unzen sind 946,35 ml, also knapp 200 ml mehr als eine Weinflasche."
+        },
+        {
+          "question": "Worin unterscheiden sich US-Unze und britische Unze?",
+          "answer": "Die US-Unze misst 29,5735 ml, die britische (imperiale) 28,4131 ml, die britische ist also rund 4 % kleiner. Bei 100 ml beträgt der Unterschied 0,14 Unzen, bei einem Liter schon 1,38 Unzen. Im Umrechner wählen Sie die passende mit dem Umschalter Unzen-Typ."
+        },
+        {
+          "question": "Welche Unze verwenden Kochrezepte?",
+          "answer": "Das hängt von der Herkunft des Rezepts ab. Amerikanische Blogs und Bücher verwenden die US-Unze, britische Quellen meist die imperiale. Tauchen im Rezept Cups auf, stammt es fast sicher aus den USA."
+        },
+        {
+          "question": "Wie viele Unzen sind 500 ml?",
+          "answer": "500 ml sind 16,91 US-Unzen oder 17,60 britische Unzen."
+        },
+        {
+          "question": "Sind 500 ml gleich 16 Unzen?",
+          "answer": "Nein, auch wenn die Werte nah beieinanderliegen. 500 ml sind 16,91 US-Unzen. Glatte 16 US-Unzen sind 473,18 ml, es fehlen also knapp 27 ml."
+        },
+        {
+          "question": "Wie viele Unzen sind 30, 50 und 250 ml?",
+          "answer": "30 ml sind 1,01 US-Unzen, 50 ml sind 1,69 Unzen und 250 ml sind 8,45 Unzen. Jeden dieser Werte erhalten Sie, indem Sie die Milliliter durch 29,5735 teilen."
+        },
+        {
+          "question": "Ist eine Flüssigunze dasselbe wie eine Gewichtsunze?",
+          "answer": "Nein. Die Flüssigunze (fl oz) misst Volumen, eine Gewichtsunze sind 28,35 g. Dieses Werkzeug rechnet ausschließlich Volumen. Verwirrend ist, dass die beiden Werte bei Wasser ähnlich ausfallen, weil Wasser eine Dichte von etwa 1 g/ml hat, aber bei Öl oder Mehl greift diese Übereinstimmung nicht mehr."
+        },
+        {
+          "question": "Wie viele Milliliter fasst ein Cup aus einem US-Rezept?",
+          "answer": "Ein US-Cup fasst 8 Flüssigunzen, also 236,59 ml. Verwechseln Sie ihn nicht mit einem metrischen Messbecher, der glatte 250 ml fasst. Der Unterschied beträgt rund 13 ml pro Cup und summiert sich bei mehreren Cups."
+        },
+        {
+          "question": "Wie lautet die Formel für die Umrechnung von Millilitern in Unzen?",
+          "answer": "Für die US-Unze: Unzen = Milliliter ÷ 29,5735. Für die britische: Unzen = Milliliter ÷ 28,4131. In die andere Richtung multiplizieren Sie mit demselben Wert."
+        },
+        {
+          "question": "Wie rechnet man Milliliter im Kopf schnell in Unzen um?",
+          "answer": "Teilen Sie die Milliliter durch 30. Für 750 ml ergibt das 25 Unzen, bei einem genauen Wert von 25,36 US fl oz, das Ergebnis fällt also leicht zu niedrig aus, reicht zur Orientierung aber aus. Für genaue Werte nutzen Sie den Umrechner."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "title": "Haben Sie eine Frage oder einen Vorschlag?",
+      "description": "Wenn Sie einen Fehler in den Tabellen entdeckt haben oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageAlt": "Kontakt zu Arteon Agency",
+      "subject": "Umrechner ml in Unzen"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere nützliche Einheitenumrechner"
+    }
+  ]
+}

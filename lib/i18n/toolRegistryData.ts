@@ -5170,6 +5170,118 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'mlToOz',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-ml-na-uncje',
+        title: 'ml na uncje',
+        description:
+          'Przelicz mililitry na uncje płynu. Uncja amerykańska i brytyjska, butelka wina, limit płynów w bagażu.',
+      },
+      en: {
+        slug: 'ml-to-oz-converter',
+        title: 'ml to oz',
+        description:
+          'Convert millilitres to fluid ounces. US or UK ounce switch, wine bottle, carry-on liquid limit.',
+      },
+      de: {
+        slug: 'ml-in-unzen-umrechner',
+        title: 'ml in Unzen',
+        description:
+          'Milliliter in Flüssigunzen umrechnen. Umschalter für US- oder UK-Unze, Weinflasche, Handgepäck-Limit.',
+      },
+      es: {
+        slug: 'convertidor-ml-a-onzas',
+        title: 'ml a onzas',
+        description:
+          'Convierte mililitros a onzas líquidas. Onza estadounidense o británica, botella de vino, límite de líquidos.',
+      },
+      fr: {
+        slug: 'convertisseur-ml-en-onces',
+        title: 'ml en onces',
+        description:
+          'Convertissez des millilitres en onces liquides. Once américaine ou britannique, bouteille de vin, bagage cabine.',
+      },
+      pt: {
+        slug: 'conversor-ml-para-oncas',
+        title: 'ml para onças',
+        description:
+          'Converta mililitros em onças líquidas. Onça norte-americana ou britânica, garrafa de vinho, limite de líquidos.',
+      },
+      it: {
+        slug: 'convertitore-ml-in-once',
+        title: 'ml in once',
+        description:
+          'Converti millilitri in once liquide. Oncia americana o britannica, bottiglia di vino, limite liquidi bagaglio.',
+      },
+      cs: {
+        slug: 'prevodnik-ml-na-unce',
+        title: 'ml na unce',
+        description:
+          'Převeď mililitry na tekuté unce. Přepínač americké nebo britské unce, láhev vína, limit tekutin.',
+      },
+    },
+  },
+  {
+    key: 'ozToMl',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-uncji-na-ml',
+        title: 'uncje na ml',
+        description:
+          'Przelicz uncje płynu na mililitry. Uncja amerykańska i brytyjska, kubek US, przepisy kuchenne.',
+      },
+      en: {
+        slug: 'oz-to-ml-converter',
+        title: 'oz to ml',
+        description:
+          'Convert fluid ounces to millilitres. US or UK ounce switch, US cup, kitchen recipes.',
+      },
+      de: {
+        slug: 'unzen-in-ml-umrechner',
+        title: 'Unzen in ml',
+        description:
+          'Flüssigunzen in Milliliter umrechnen. Umschalter für US- oder UK-Unze, US-Cup, Kochrezepte.',
+      },
+      es: {
+        slug: 'convertidor-onzas-a-ml',
+        title: 'onzas a ml',
+        description:
+          'Convierte onzas líquidas a mililitros. Onza estadounidense o británica, taza US, recetas de cocina.',
+      },
+      fr: {
+        slug: 'convertisseur-onces-en-ml',
+        title: 'onces en ml',
+        description:
+          'Convertissez des onces liquides en millilitres. Once américaine ou britannique, tasse US, recettes de cuisine.',
+      },
+      pt: {
+        slug: 'conversor-oncas-para-ml',
+        title: 'onças para ml',
+        description:
+          'Converta onças líquidas em mililitros. Onça norte-americana ou britânica, chávena US, receitas de cozinha.',
+      },
+      it: {
+        slug: 'convertitore-once-in-ml',
+        title: 'once in ml',
+        description:
+          'Converti once liquide in millilitri. Oncia americana o britannica, tazza US, ricette di cucina.',
+      },
+      cs: {
+        slug: 'prevodnik-unci-na-ml',
+        title: 'unce na ml',
+        description:
+          'Převeď tekuté unce na mililitry. Přepínač americké nebo britské unce, americký hrnek, kuchařské recepty.',
+      },
+    },
+  },
+  {
     key: 'kgToLb',
     section: 'jednostki',
     icon: RiRulerLine,

@@ -24,7 +24,7 @@ export default function HeroBannerSkeleton({
   return (
     <div className='relative flex min-h-100 items-center overflow-hidden bg-black py-10 md:min-h-110 md:py-0 lg:min-h-115'>
       <div className='m-auto w-[94%] max-w-355 2xl:max-w-none'>
-        <div className='max-w-[100vw] rounded-lg bg-black/60 p-5 pt-4 hyphens-auto md:max-w-[65%] md:p-7'>
+        <div className='max-w-[100vw] bg-black/60 p-5 pt-4 hyphens-auto md:max-w-[65%] md:p-7'>
           <Shimmer className='mb-3 h-4 w-24 bg-white/10!' />
           <Shimmer className='mb-3 h-9 w-full bg-white/15! md:w-4/5' />
           <Shimmer className='mb-2 h-5 w-full bg-white/10! md:w-3/4' />

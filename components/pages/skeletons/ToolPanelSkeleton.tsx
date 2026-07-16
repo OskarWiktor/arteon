@@ -40,7 +40,7 @@ function SectionBox({
   return (
     <div
       className={cn(
-        'rounded-lg border border-neutral-200 bg-white/80 p-7 shadow-sm',
+        'border border-neutral-200 bg-white/80 p-7 shadow-sm',
         className,
       )}
     >

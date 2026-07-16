@@ -24,9 +24,9 @@ export default function ToolEditorSkeleton() {
       </div>
 
       <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
-        <div className='h-24 rounded-lg bg-neutral-200' />
-        <div className='h-24 rounded-lg bg-neutral-200' />
-        <div className='hidden h-24 rounded-lg bg-neutral-200 md:block' />
+        <div className='h-24 bg-neutral-200' />
+        <div className='h-24 bg-neutral-200' />
+        <div className='hidden h-24 bg-neutral-200 md:block' />
       </div>
 
       <div className='mt-6 flex gap-3'>
