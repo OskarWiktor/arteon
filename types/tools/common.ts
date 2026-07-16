@@ -99,6 +99,8 @@ export type ToolItemKey =
   | 'kmToMiles'
   | 'metersToFeet'
   | 'feetToMeters'
+  | 'mlToOz'
+  | 'ozToMl'
   | 'kgToLb'
   | 'lbToKg'
   | 'hexToRgb'

@@ -18,12 +18,12 @@ export default function ProjectDetailSkeleton() {
           <div className='space-y-6'>
             <div className='flex flex-wrap gap-2'>
               {Array.from({ length: 3 }).map((_, i) => (
-                <Shimmer key={i} className='h-7 w-24 !rounded-lg' />
+                <Shimmer key={i} className='! h-7 w-24' />
               ))}
             </div>
             <Shimmer className='h-4 w-full' />
             <Shimmer className='h-4 w-5/6' />
-            <Shimmer className='aspect-video w-full !rounded-lg !bg-neutral-300' />
+            <Shimmer className='! aspect-video w-full !bg-neutral-300' />
             <Shimmer className='h-4 w-full' />
             <Shimmer className='h-4 w-full' />
             <Shimmer className='h-4 w-4/5' />

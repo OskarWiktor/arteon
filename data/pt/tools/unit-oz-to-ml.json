@@ -1,0 +1,284 @@
+{
+  "toolKey": "ozToMl",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de onças para ml – converte onças em mililitros",
+    "description": "Converta onças líquidas em mililitros. Alterne entre a onça norte-americana e a britânica, que diferem cerca de 4%. As tabelas no final da página mostram a chávena de 8 onças, a lata de 12 onças e receitas de cozinha.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-oncas-para-ml"
+  },
+  "hero": {
+    "title": "Converta onças líquidas em mililitros",
+    "description": "Introduza um valor em onças líquidas e leia o resultado em mililitros de imediato. A onça norte-americana e a britânica são duas medidas diferentes, por isso com o seletor Tipo de onça escolhe a que precisa. Está definida a norte-americana por predefinição, porque é a medida por detrás da maioria das receitas e produtos que indicam onças.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-oncas-para-ml",
+      "label": "onças para ml"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de onças líquidas para mililitros – oz para ml",
+      "alternateName": [
+        "Conversor de onças para ml",
+        "Calculadora de oz para ml",
+        "Conversor de onças para mililitros",
+        "oz para ml",
+        "fl oz para ml",
+        "Converter onças em ml",
+        "Quantos ml tem uma onça",
+        "8 onças em ml",
+        "16 onças em ml",
+        "Onça norte-americana e britânica",
+        "Tabela de onças para ml",
+        "1 onça em ml",
+        "Onça líquida",
+        "oz to ml",
+        "Conversor de volume"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Um conversor de onças líquidas para mililitros que funciona no navegador e sem registo. Introduza um valor em onças e leia o resultado de imediato. O seletor Tipo de onça escolhe a onça norte-americana ou a britânica, que diferem cerca de 4%.",
+      "featureList": [
+        "O seletor Tipo de onça converte a onça norte-americana (US) ou britânica (UK), porque ambas estão em uso e diferem cerca de 4%",
+        "Está definida a onça norte-americana por predefinição, a que encontra com mais frequência",
+        "A conversão funciona nos dois sentidos, pelo que converte tanto onças em mililitros como mililitros em onças",
+        "O resultado aparece de imediato enquanto escreve, sem ser preciso clicar em nenhum botão",
+        "O botão Copiar resultado coloca o valor final na área de transferência",
+        "A tabela de conversão abrange valores de 0,5 a 150 onças",
+        "Uma tabela à parte mostra a onça norte-americana e a britânica lado a lado",
+        "Todos os cálculos são feitos no seu navegador, pelo que os dados não saem do dispositivo",
+        "Para a onça norte-americana a fórmula exata é: mililitros = onças × 29,5735"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter onças líquidas em mililitros?",
+      "description": "Um guia breve para utilizar o conversor de onças líquidas para mililitros.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduza o valor em onças",
+          "text": "No campo da esquerda, escreva o número de onças líquidas que pretende converter em mililitros."
+        },
+        {
+          "name": "Escolha o tipo de onça",
+          "text": "Por baixo do campo onde escreve as onças encontra o seletor Tipo de onça. Com ele escolhe a onça norte-americana ou a britânica. Está definida a norte-americana por predefinição, e o resultado recalcula-se assim que a altera."
+        },
+        {
+          "name": "Leia o resultado em mililitros",
+          "text": "O resultado aparece no campo à direita. O botão Copiar resultado coloca-o na área de transferência."
+        },
+        {
+          "name": "Inverta o sentido se precisar",
+          "text": "Clique em Alterar ordem para passar a converter mililitros em onças."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Para que serve converter onças em mililitros?",
+      "html": "<p class=\"text-mid mb-4\">A onça líquida é uma medida de volume usada nos Estados Unidos e no Reino Unido. Em Portugal e no Brasil vigora o mililitro, por isso as onças convertem-se sobretudo quando uma receita, um cosmético ou uma bebida vêm de fora. Na maioria das vezes é a cozinha: uma receita norte-americana pede 8 onças de leite, e o copo medidor da gaveta está marcado em mililitros.</p><p class=\"text-mid mb-4\">O senão é que há duas onças. A norte-americana são 29,5735 ml e a britânica (imperial) 28,4131 ml. O mesmo número de onças dá, por isso, dois resultados: 16 onças são 473,18 ml na medida norte-americana, mas 454,61 ml na britânica. Uma diferença de quase 19 ml pode mudar a textura de um bolo, por isso escolhe a medida certa com o seletor Tipo de onça.</p><p class=\"text-mid mb-4\">Deixámos definida a onça norte-americana por predefinição, porque é a medida por detrás da maioria das receitas e produtos que chegam a uma cozinha métrica. Se a fonte for britânica, mude para a onça britânica.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor gratuito de onças líquidas para mililitros – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão de oz para ml? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">Cada uma das duas onças tem o seu próprio fator fixo. A onça líquida norte-americana mede exatamente 29,5735295625 ml e a britânica 28,4130625 ml. Ambos os valores estão definidos, pelo que a conversão se resume a uma única multiplicação.</p><p class=\"text-mid mb-4\">Fórmula para a onça norte-americana: <strong>mililitros = onças × 29,5735</strong>. Para a britânica: <strong>mililitros = onças × 28,4131</strong>.</p><p class=\"text-mid mb-4\">Exemplo: uma receita pede 8 onças de leite. Substitui: 8 × 29,5735 = 236,59 ml, exatamente uma chávena norte-americana. Se a receita fosse britânica, essas mesmas 8 onças seriam 8 × 28,4131 = 227,30 ml, mais de 9 ml a menos.</p><p class=\"text-mid\">Atenção a uma confusão comum. A onça líquida (fl oz) mede volume, ao passo que a onça simples (oz), sem qualificativo, costuma ser uma unidade de massa igual a 28,35 g. Esta ferramenta trata apenas de volume. Se uma receita pede 8 onças de queijo ou de farinha, é peso e precisa de um conversor de massa.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão de onças norte-americanas para mililitros",
+      "description": "A tabela seguinte passa as quantidades de onças norte-americanas mais comuns para mililitros, a predefinição do conversor. Os valores estão arredondados a duas casas decimais. A comparação com a onça britânica está na tabela abaixo.",
+      "labelHeader": "Onças norte-americanas",
+      "cols": ["Mililitros"],
+      "rows": [
+        { "label": "0,5 US fl oz", "values": ["14,79 ml"] },
+        { "label": "1 US fl oz", "values": ["29,57 ml"], "emphasis": true },
+        { "label": "2 US fl oz", "values": ["59,15 ml"], "emphasis": true },
+        { "label": "3 US fl oz", "values": ["88,72 ml"], "emphasis": true },
+        { "label": "4 US fl oz", "values": ["118,29 ml"] },
+        { "label": "5 US fl oz", "values": ["147,87 ml"] },
+        { "label": "6 US fl oz", "values": ["177,44 ml"] },
+        { "label": "7 US fl oz", "values": ["207,01 ml"] },
+        { "label": "8 US fl oz", "values": ["236,59 ml"], "emphasis": true },
+        { "label": "9 US fl oz", "values": ["266,16 ml"] },
+        { "label": "10 US fl oz", "values": ["295,74 ml"] },
+        { "label": "12 US fl oz", "values": ["354,88 ml"], "emphasis": true },
+        { "label": "14 US fl oz", "values": ["414,03 ml"] },
+        { "label": "16 US fl oz", "values": ["473,18 ml"], "emphasis": true },
+        { "label": "18 US fl oz", "values": ["532,32 ml"] },
+        { "label": "20 US fl oz", "values": ["591,47 ml"] },
+        { "label": "22 US fl oz", "values": ["650,62 ml"] },
+        { "label": "24 US fl oz", "values": ["709,76 ml"] },
+        { "label": "32 US fl oz", "values": ["946,35 ml"], "emphasis": true },
+        { "label": "40 US fl oz", "values": ["1.182,94 ml"] },
+        { "label": "60 US fl oz", "values": ["1.774,41 ml"] },
+        { "label": "64 US fl oz", "values": ["1.892,71 ml"] },
+        { "label": "150 US fl oz", "values": ["4.436,03 ml"] }
+      ],
+      "caption": "Quer converter no sentido inverso? Utilize o nosso conversor de <a href=\"/pt/ferramentas/conversor-ml-para-oncas\">mililitros para onças</a> com a tabela completa para quantidades indicadas em mililitros."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Onça norte-americana e britânica: as mesmas onças, dois resultados",
+      "description": "O mesmo número de onças dá um volume diferente, consoante a medida que adotar. Quantas mais onças, maior o desvio. A tabela seguinte mostra os dois resultados lado a lado.",
+      "labelHeader": "Onças líquidas",
+      "cols": ["Medida norte-americana", "Medida britânica", "Diferença"],
+      "rows": [
+        {
+          "label": "1 fl oz",
+          "values": ["29,57 ml", "28,41 ml", "1,16 ml"],
+          "emphasis": true
+        },
+        { "label": "2 fl oz", "values": ["59,15 ml", "56,83 ml", "2,32 ml"] },
+        { "label": "4 fl oz", "values": ["118,29 ml", "113,65 ml", "4,64 ml"] },
+        {
+          "label": "8 fl oz",
+          "values": ["236,59 ml", "227,30 ml", "9,28 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "12 fl oz",
+          "values": ["354,88 ml", "340,96 ml", "13,93 ml"]
+        },
+        {
+          "label": "16 fl oz",
+          "values": ["473,18 ml", "454,61 ml", "18,57 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "20 fl oz",
+          "values": ["591,47 ml", "568,26 ml", "23,21 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "32 fl oz",
+          "values": ["946,35 ml", "909,22 ml", "37,13 ml"]
+        },
+        {
+          "label": "64 fl oz",
+          "values": ["1.892,71 ml", "1.818,44 ml", "74,27 ml"]
+        }
+      ],
+      "caption": "A onça britânica é mais pequena, por isso o mesmo número delas dá menos mililitros. Com o seletor Tipo de onça no conversor escolhe qual destas duas colunas lê."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando se convertem onças em mililitros?",
+      "description": "As onças chegam à cozinha e à casa de banho através de produtos de fora. Cada uma destas situações tem a sua particularidade.",
+      "items": [
+        {
+          "title": "Receitas de cozinha norte-americanas",
+          "description": "É o motivo mais comum para converter onças em mililitros. Uma chávena norte-americana são 8 onças, ou seja 236,59 ml, e não 250 ml como uma chávena métrica. Se a receita der chávenas ou onças líquidas, converta-as antes de medir."
+        },
+        {
+          "title": "Bebidas e latas",
+          "description": "Uma lata norte-americana de bebida tem 12 onças, ou seja 354,88 ml, razão pela qual o seu equivalente europeu indica 355 ml. Um café grande é muitas vezes de 20 onças, ou seja 591,47 ml. Ao converter compara estas capacidades com as métricas."
+        },
+        {
+          "title": "Pinta britânica e norte-americana",
+          "description": "Uma pinta norte-americana são 16 onças, ou seja 473,18 ml. Uma pinta britânica são 20 onças imperiais, ou seja 568,26 ml. A mesma palavra significa, por isso, duas capacidades que diferem em quase 100 ml, e é precisamente por isso que o seletor Tipo de onça está aqui."
+        },
+        {
+          "title": "Cosmética e viagens",
+          "description": "Um produto indicado como 3,4 fl oz são 100 ml, ou seja exatamente o limite da União Europeia por embalagem na bagagem de mão. Nos Estados Unidos o mesmo limite escreve-se como 3,4 onças, por isso é uma regra em duas unidades."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre converter onças em mililitros",
+      "items": [
+        {
+          "question": "Quantos mililitros tem 1 onça líquida?",
+          "answer": "A onça norte-americana são 29,57 ml e a britânica 28,41 ml. Os valores exatos são 29,5735295625 ml e 28,4130625 ml, e ambos estão definidos, não medidos."
+        },
+        {
+          "question": "1 onça são 30 ml?",
+          "answer": "Não, embora seja um arredondamento comum. A onça norte-americana são 29,57 ml, ou seja 0,43 ml a menos do que 30. A onça britânica são 28,41 ml, por isso está ainda mais longe de 30. O valor de 30 ml vem dos rótulos e da medicina, onde se arredonda por comodidade."
+        },
+        {
+          "question": "Quantos ml são 8 onças?",
+          "answer": "8 onças norte-americanas são 236,59 ml e 8 onças britânicas 227,30 ml. Cálculo para a norte-americana: 8 × 29,5735 = 236,59 ml. É exatamente uma chávena norte-americana."
+        },
+        {
+          "question": "8 onças são 250 ml?",
+          "answer": "Não. 8 onças norte-americanas são 236,59 ml, mais de 13 ml a menos do que 250 ml. O valor de 250 ml é uma chávena métrica das receitas europeias, não uma chávena norte-americana."
+        },
+        {
+          "question": "Quantos ml são 16 onças?",
+          "answer": "16 onças norte-americanas são 473,18 ml e 16 onças britânicas 454,61 ml. É a capacidade de uma pinta norte-americana."
+        },
+        {
+          "question": "16 onças são 500 ml?",
+          "answer": "Não, embora os valores estejam próximos. 16 onças norte-americanas são 473,18 ml, quase 27 ml a menos do que meio litro."
+        },
+        {
+          "question": "Qual é a diferença entre a onça norte-americana e a britânica?",
+          "answer": "A onça norte-americana são 29,5735 ml e a britânica (imperial) 28,4131 ml, por isso a britânica é cerca de 4% mais pequena. Numa onça a diferença é de 1,16 ml, mas em 16 onças já é de quase 19 ml. No conversor escolhe a correta com o seletor Tipo de onça."
+        },
+        {
+          "question": "Quantos ml são 12 onças?",
+          "answer": "12 onças norte-americanas são 354,88 ml. Por isso uma lata norte-americana de 12 onças indica 355 ml no rótulo europeu."
+        },
+        {
+          "question": "Quantos ml são 2, 4 e 6 onças?",
+          "answer": "2 onças norte-americanas são 59,15 ml, 4 onças 118,29 ml e 6 onças 177,44 ml. Obtém cada um destes valores multiplicando as onças por 29,5735."
+        },
+        {
+          "question": "Quantos ml são 3 onças?",
+          "answer": "3 onças norte-americanas são 88,72 ml. Este valor surge muitas vezes em viagens, porque o limite norte-americano de líquidos na bagagem de mão é de 3,4 onças, ou seja 100 ml."
+        },
+        {
+          "question": "Quantos ml tem uma pinta?",
+          "answer": "Depende de qual pinta se trata. Uma pinta norte-americana são 16 onças norte-americanas, ou seja 473,18 ml. Uma pinta britânica são 20 onças imperiais, ou seja 568,26 ml. A pinta britânica é, por isso, quase 100 ml maior do que a norte-americana."
+        },
+        {
+          "question": "Uma onça líquida é o mesmo que uma onça de peso?",
+          "answer": "Não. A onça líquida (fl oz) mede volume, ao passo que uma onça de peso são 28,35 g. Esta ferramenta trata apenas de volume. Confunde que, para a água, os dois valores saem parecidos, porque a água tem uma densidade de cerca de 1 g/ml, mas para o óleo ou a farinha essa coincidência deixa de funcionar."
+        },
+        {
+          "question": "Quantos ml são 32 onças?",
+          "answer": "32 onças norte-americanas são 946,35 ml, quase um litro. É a capacidade de um quarto de galão norte-americano."
+        },
+        {
+          "question": "Qual é a fórmula para converter onças em mililitros?",
+          "answer": "Para a onça norte-americana: mililitros = onças × 29,5735. Para a britânica: mililitros = onças × 28,4131. No sentido inverso, divide pelo mesmo valor."
+        },
+        {
+          "question": "Como converter onças em mililitros de cabeça?",
+          "answer": "Multiplique as onças por 30. Para 8 onças dá 240 ml, face ao valor exato de 236,59 ml, por isso fica um pouco acima, mas chega para se orientar. Para cálculos precisos, utilize o conversor."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "title": "Tem alguma dúvida ou sugestão?",
+      "description": "Se detetou um erro nas tabelas ou tem uma ideia para melhorar o conversor, escreva-nos. Respondemos a todas as mensagens.",
+      "imageAlt": "Contacto com a Arteon Agency",
+      "subject": "Conversor de onças para ml"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    }
+  ]
+}

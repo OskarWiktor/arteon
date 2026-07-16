@@ -1,0 +1,284 @@
+{
+  "toolKey": "ozToMl",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter uncji na ml – przelicz uncje na mililitry",
+    "description": "Przelicz uncje na mililitry. Wybierz liczenie uncji amerykańskiej lub brytyjskiej, które różnią się o 4%. Gotowe tabele na dole strony pokazują kubek 8 uncji, puszkę 12 uncji i wybrane przepisy kuchenne.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-uncji-na-ml"
+  },
+  "hero": {
+    "title": "Przelicz uncje płynu na mililitry",
+    "description": "Wpisz wartość w uncjach płynu i od razu odczytaj wynik w mililitrach. Uncja amerykańska i brytyjska to dwie różne miary, dlatego przełącznikiem Rodzaj uncji wybierasz tę, której potrzebujesz. Domyślnie ustawiona jest amerykańska, bo w tej mierze podaje wartości większość przepisów i produktów trafiających do Polski.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-uncji-na-ml",
+      "label": "uncje na ml"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik uncji płynu na mililitry – konwerter oz na ml",
+      "alternateName": [
+        "Konwerter uncji na ml",
+        "Kalkulator oz na ml",
+        "Przelicznik uncji na mililitry",
+        "oz na ml",
+        "fl oz na ml",
+        "Przelicz uncje na ml",
+        "Ile ml ma uncja",
+        "8 uncji ile to ml",
+        "16 uncji ile to ml",
+        "Uncja amerykańska a brytyjska",
+        "Tabela uncji na ml",
+        "1 uncja ile to ml",
+        "Uncja płynu",
+        "oz to ml",
+        "Konwerter objętości"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik uncji płynu na mililitry działający w przeglądarce bez rejestracji. Wpisz wartość w uncjach i natychmiast odczytaj wynik. Uncję amerykańską albo brytyjską, które różnią się o około 4%, wybierasz przełącznikiem Rodzaj uncji.",
+      "featureList": [
+        "Przełącznikiem Rodzaj uncji wybierasz uncję amerykańską (US) albo brytyjską (UK), bo obie są w użyciu i różnią się o około 4%",
+        "Domyślnie ustawiona jest uncja amerykańska, którą spotykasz najczęściej",
+        "Konwersja działa w obie strony, więc przeliczysz zarówno uncje na mililitry, jak i mililitry na uncje",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Tabela przeliczeniowa obejmuje wartości od 0,5 do 150 uncji",
+        "Osobna tabela pokazuje wyniki dla uncji amerykańskiej i brytyjskiej obok siebie",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dla uncji amerykańskiej dokładny wzór to: mililitry = uncje × 29,5735"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć uncje płynu na mililitry?",
+      "description": "Krótka instrukcja użycia konwertera uncji płynu na mililitry.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość w uncjach",
+          "text": "W lewym polu wpisz liczbę uncji płynu, którą chcesz przeliczyć na mililitry."
+        },
+        {
+          "name": "Wybierz rodzaj uncji",
+          "text": "Pod polem, w które wpisujesz uncje, znajdziesz przełącznik Rodzaj uncji. Wskaż nim uncję amerykańską albo brytyjską. Domyślnie ustawiona jest amerykańska, a wynik przelicza się od razu po zmianie."
+        },
+        {
+          "name": "Odczytaj wynik w mililitrach",
+          "text": "Wynik pojawi się w polu po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania mililitrów na uncje."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać uncje na mililitry?",
+      "html": "<p class=\"text-mid mb-4\">Uncja płynu to miara objętości używana w Stanach Zjednoczonych i Wielkiej Brytanii. W Polsce liczymy w mililitrach, więc uncje przeliczamy wtedy, gdy przepis, kosmetyk albo napój pochodzi zza granicy. Najczęściej chodzi o kuchnię, bo amerykański przepis podaje 8 uncji mleka, a miarka w szufladzie ma podziałkę w mililitrach.</p><p class=\"text-mid mb-4\">Kłopot polega na tym, że uncje są dwie. Amerykańska to 29,5735 ml, a brytyjska (imperialna) 28,4131 ml. Ta sama liczba uncji daje więc dwa różne wyniki: 16 uncji to 473,18 ml w mierze amerykańskiej, ale 454,61 ml w brytyjskiej. Różnica prawie 19 ml potrafi zmienić konsystencję ciasta, dlatego właściwą miarę wybierasz przełącznikiem Rodzaj uncji.</p><p class=\"text-mid mb-4\">Domyślnie ustawiliśmy uncję amerykańską, bo w tej mierze podaje wartości większość przepisów i produktów trafiających do Polski. Jeśli źródło jest brytyjskie, przełącz na uncję brytyjską.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter uncji płynu na mililitry – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja uncji na mililitry? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Każda z dwóch uncji ma własny, stały przelicznik. Amerykańska uncja płynu to dokładnie 29,5735295625 ml, a brytyjska 28,4130625 ml. Obie wartości są zdefiniowane, więc przeliczenie sprowadza się do jednego mnożenia.</p><p class=\"text-mid mb-4\">Wzór dla uncji amerykańskiej: <strong>mililitry = uncje × 29,5735</strong>. Dla brytyjskiej: <strong>mililitry = uncje × 28,4131</strong>.</p><p class=\"text-mid mb-4\">Przykład: przepis podaje 8 uncji mleka. Podstawiasz: 8 × 29,5735 = 236,59 ml, czyli dokładnie jeden kubek amerykański. Gdyby przepis był brytyjski, te same 8 uncji dałoby 8 × 28,4131 = 227,30 ml, czyli o ponad 9 ml mniej.</p><p class=\"text-mid\">Uważaj na jeden skrót myślowy. Uncja płynu (fl oz) mierzy objętość, a sama uncja (oz) bez dopisku to zwykle jednostka masy równa 28,35 g. To narzędzie liczy wyłącznie objętość. Jeśli przepis podaje 8 uncji sera albo mąki, chodzi o wagę i potrzebujesz przelicznika masy.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa uncji amerykańskich na mililitry",
+      "description": "Poniższa tabela przelicza popularne wartości uncji amerykańskich na mililitry, czyli ustawienie domyślne konwertera. Wartości zaokrąglono do dwóch miejsc po przecinku. Zestawienie z uncją brytyjską znajdziesz w tabeli niżej.",
+      "labelHeader": "Uncje amerykańskie",
+      "cols": ["Mililitry"],
+      "rows": [
+        { "label": "0,5 US fl oz", "values": ["14,79 ml"] },
+        { "label": "1 US fl oz", "values": ["29,57 ml"], "emphasis": true },
+        { "label": "2 US fl oz", "values": ["59,15 ml"], "emphasis": true },
+        { "label": "3 US fl oz", "values": ["88,72 ml"], "emphasis": true },
+        { "label": "4 US fl oz", "values": ["118,29 ml"] },
+        { "label": "5 US fl oz", "values": ["147,87 ml"] },
+        { "label": "6 US fl oz", "values": ["177,44 ml"] },
+        { "label": "7 US fl oz", "values": ["207,01 ml"] },
+        { "label": "8 US fl oz", "values": ["236,59 ml"], "emphasis": true },
+        { "label": "9 US fl oz", "values": ["266,16 ml"] },
+        { "label": "10 US fl oz", "values": ["295,74 ml"] },
+        { "label": "12 US fl oz", "values": ["354,88 ml"], "emphasis": true },
+        { "label": "14 US fl oz", "values": ["414,03 ml"] },
+        { "label": "16 US fl oz", "values": ["473,18 ml"], "emphasis": true },
+        { "label": "18 US fl oz", "values": ["532,32 ml"] },
+        { "label": "20 US fl oz", "values": ["591,47 ml"] },
+        { "label": "22 US fl oz", "values": ["650,62 ml"] },
+        { "label": "24 US fl oz", "values": ["709,76 ml"] },
+        { "label": "32 US fl oz", "values": ["946,35 ml"], "emphasis": true },
+        { "label": "40 US fl oz", "values": ["1 182,94 ml"] },
+        { "label": "60 US fl oz", "values": ["1 774,41 ml"] },
+        { "label": "64 US fl oz", "values": ["1 892,71 ml"] },
+        { "label": "150 US fl oz", "values": ["4 436,03 ml"] }
+      ],
+      "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-ml-na-uncje\">mililitrów na uncje</a> z tabelą popularnych pojemności."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Uncja amerykańska a brytyjska: te same uncje, dwa wyniki",
+      "description": "Ta sama liczba uncji daje inną objętość, zależnie od tego, którą miarę przyjmiesz. Im więcej uncji, tym większy rozjazd. Poniższa tabela pokazuje oba wyniki obok siebie.",
+      "labelHeader": "Uncje płynu",
+      "cols": ["Miara amerykańska", "Miara brytyjska", "Różnica"],
+      "rows": [
+        {
+          "label": "1 fl oz",
+          "values": ["29,57 ml", "28,41 ml", "1,16 ml"],
+          "emphasis": true
+        },
+        { "label": "2 fl oz", "values": ["59,15 ml", "56,83 ml", "2,32 ml"] },
+        { "label": "4 fl oz", "values": ["118,29 ml", "113,65 ml", "4,64 ml"] },
+        {
+          "label": "8 fl oz",
+          "values": ["236,59 ml", "227,30 ml", "9,28 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "12 fl oz",
+          "values": ["354,88 ml", "340,96 ml", "13,93 ml"]
+        },
+        {
+          "label": "16 fl oz",
+          "values": ["473,18 ml", "454,61 ml", "18,57 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "20 fl oz",
+          "values": ["591,47 ml", "568,26 ml", "23,21 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "32 fl oz",
+          "values": ["946,35 ml", "909,22 ml", "37,13 ml"]
+        },
+        {
+          "label": "64 fl oz",
+          "values": ["1 892,71 ml", "1 818,44 ml", "74,27 ml"]
+        }
+      ],
+      "caption": "Uncja brytyjska jest mniejsza, więc ta sama ich liczba daje mniej mililitrów. Przełącznikiem Rodzaj uncji w konwerterze wybierasz, którą z tych dwóch kolumn liczysz."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się uncje na mililitry?",
+      "description": "Uncje spotkasz w polskiej kuchni i łazience głównie przy produktach zza granicy.",
+      "items": [
+        {
+          "title": "Amerykańskie przepisy kuchenne",
+          "description": "To najczęstszy powód przeliczania uncji na mililitry. Kubek amerykański to 8 uncji, czyli 236,59 ml, a nie 250 ml jak kubek metryczny. Jeśli przepis podaje kubki albo uncje płynu, przelicz je, zanim odmierzysz."
+        },
+        {
+          "title": "Napoje i puszki",
+          "description": "Amerykańska puszka napoju ma 12 uncji, czyli 354,88 ml, dlatego na europejskich odpowiednikach widnieje 355 ml. Duży kubek kawy to często 20 uncji, czyli 591,47 ml. Po przeliczeniu porównasz te pojemności z polskimi."
+        },
+        {
+          "title": "Pinta brytyjska i amerykańska",
+          "description": "Pinta amerykańska to 16 uncji, czyli 473,18 ml. Pinta brytyjska to 20 uncji imperialnych, czyli 568,26 ml. To samo słowo oznacza więc dwie pojemności różniące się o blisko 100 ml i właśnie dlatego przełącznik Rodzaj uncji jest tu potrzebny."
+        },
+        {
+          "title": "Kosmetyki i podróże",
+          "description": "Kosmetyk opisany jako 3,4 fl oz to 100 ml, czyli dokładnie tyle, ile wynosi limit dla pojedynczego opakowania w bagażu podręcznym w Unii. W Stanach ten sam limit zapisuje się jako 3,4 uncji, więc jest to ta sama zasada w dwóch jednostkach."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie uncji na mililitry",
+      "items": [
+        {
+          "question": "Ile mililitrów ma 1 uncja płynu?",
+          "answer": "Uncja amerykańska to 29,57 ml, a brytyjska 28,41 ml. Dokładne wartości to 29,5735295625 ml oraz 28,4130625 ml i obie są zdefiniowane, a nie zmierzone."
+        },
+        {
+          "question": "Czy 1 uncja to 30 ml?",
+          "answer": "Nie, choć to popularne zaokrąglenie. Uncja amerykańska to 29,57 ml, czyli o 0,43 ml mniej niż 30. Uncja brytyjska to 28,41 ml, więc jest jeszcze dalej od 30. Wartość 30 ml bierze się z etykiet i medycyny, gdzie zaokrągla się dla wygody."
+        },
+        {
+          "question": "Ile ml ma 8 uncji?",
+          "answer": "8 uncji amerykańskich to 236,59 ml, a brytyjskich 227,30 ml. Obliczenie dla amerykańskiej: 8 × 29,5735 = 236,59 ml. To dokładnie jeden kubek amerykański."
+        },
+        {
+          "question": "Czy 8 uncji to 250 ml?",
+          "answer": "Nie. 8 uncji amerykańskich to 236,59 ml, czyli o ponad 13 ml mniej niż 250 ml. Wartość 250 ml to kubek metryczny z europejskich przepisów, a nie kubek amerykański."
+        },
+        {
+          "question": "Ile ml ma 16 uncji?",
+          "answer": "16 uncji amerykańskich to 473,18 ml, a brytyjskich 454,61 ml. To pojemność amerykańskiej pinty."
+        },
+        {
+          "question": "Czy 16 uncji to 500 ml?",
+          "answer": "Nie, choć wartości leżą blisko siebie. 16 uncji amerykańskich to 473,18 ml, czyli o niecałe 27 ml mniej niż pół litra."
+        },
+        {
+          "question": "Czym różni się uncja amerykańska od brytyjskiej?",
+          "answer": "Uncja amerykańska to 29,5735 ml, a brytyjska (imperialna) 28,4131 ml, więc brytyjska jest o około 4% mniejsza. Przy jednej uncji różnica to 1,16 ml, ale przy 16 uncjach już prawie 19 ml. W konwerterze wybierasz właściwą przełącznikiem Rodzaj uncji."
+        },
+        {
+          "question": "Ile ml ma 12 uncji?",
+          "answer": "12 uncji amerykańskich to 354,88 ml. Dlatego amerykańska puszka napoju o pojemności 12 uncji ma na europejskiej etykiecie 355 ml."
+        },
+        {
+          "question": "Ile ml mają 2, 4 i 6 uncji?",
+          "answer": "2 uncje amerykańskie to 59,15 ml, 4 uncje to 118,29 ml, a 6 uncji to 177,44 ml. Każdą z tych wartości otrzymujesz, mnożąc liczbę uncji przez 29,5735."
+        },
+        {
+          "question": "Ile ml ma 3 uncje?",
+          "answer": "3 uncje amerykańskie to 88,72 ml. Ta wartość pojawia się często przy podróżach, bo amerykański limit płynów w bagażu podręcznym wynosi 3,4 uncji, czyli 100 ml."
+        },
+        {
+          "question": "Ile ml ma pinta?",
+          "answer": "To zależy, o którą pintę chodzi. Pinta amerykańska to 16 uncji amerykańskich, czyli 473,18 ml. Pinta brytyjska to 20 uncji imperialnych, czyli 568,26 ml. Brytyjska jest więc o blisko 100 ml większa od amerykańskiej."
+        },
+        {
+          "question": "Czy uncja płynu to to samo co uncja wagi?",
+          "answer": "Nie. Uncja płynu (fl oz) mierzy objętość, a uncja masy to 28,35 g. To narzędzie liczy wyłącznie objętość. Mylące bywa to, że dla wody obie wartości wychodzą podobnie, bo woda ma gęstość około 1 g/ml, ale dla oleju czy mąki ta zbieżność już nie działa."
+        },
+        {
+          "question": "Ile ml ma 32 uncje?",
+          "answer": "32 uncje amerykańskie to 946,35 ml, czyli niecały litr. To pojemność amerykańskiej kwarty."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie uncji na mililitry?",
+          "answer": "Dla uncji amerykańskiej: mililitry = uncje × 29,5735. Dla brytyjskiej: mililitry = uncje × 28,4131. W drugą stronę dzielisz przez tę samą wartość."
+        },
+        {
+          "question": "Jak szybko przeliczyć uncje na mililitry w pamięci?",
+          "answer": "Pomnóż liczbę uncji przez 30. Dla 8 uncji daje to 240 ml, przy dokładnej wartości 236,59 ml, więc wynik jest lekko zawyżony, ale wystarcza do orientacji. Do precyzyjnych obliczeń użyj konwertera."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "subject": "Konwerter uncji na ml"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    }
+  ]
+}

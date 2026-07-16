@@ -143,7 +143,7 @@ export default function MetaTitleDescriptionTool() {
               </span>
               <span
                 className={cn(
-                  'ml-auto inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium',
+                  'ml-auto inline-flex items-center px-2.5 py-0.5 text-xs! font-medium',
                   getStatusClasses(titleAnalysis.status),
                 )}
               >
@@ -174,7 +174,7 @@ export default function MetaTitleDescriptionTool() {
               </span>
               <span
                 className={cn(
-                  'ml-auto inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium',
+                  'ml-auto inline-flex items-center px-2.5 py-0.5 text-xs! font-medium',
                   getStatusClasses(descriptionAnalysis.status),
                 )}
               >
@@ -187,11 +187,11 @@ export default function MetaTitleDescriptionTool() {
         </Card>
 
         <Card interactive={false} padding='lg' variant='outlined'>
-          <div className='rounded-lg border border-neutral-200 bg-white p-4 text-sm shadow-inner'>
+          <div className='border border-neutral-200 bg-white p-4 text-sm shadow-inner'>
             <div className='flex gap-3'>
               <div
                 className={cn(
-                  'h-12 w-12 shrink-0 rounded-lg border border-neutral-300 bg-white p-1',
+                  'h-12 w-12 shrink-0 border border-neutral-300 bg-white p-1',
                   flexCenterClasses,
                 )}
               >
@@ -210,9 +210,9 @@ export default function MetaTitleDescriptionTool() {
                 <div className='flex items-center gap-1'>
                   <p className='truncate text-[13px]!'>{t.exampleUrl}</p>
                   <div className='ml-3 flex flex-col gap-0.5'>
-                    <div className='h-0.5 w-0.5 rounded-lg bg-light'></div>
-                    <div className='h-0.5 w-0.5 rounded-lg bg-light'></div>
-                    <div className='h-0.5 w-0.5 rounded-lg bg-light'></div>
+                    <div className='h-0.5 w-0.5 bg-light'></div>
+                    <div className='h-0.5 w-0.5 bg-light'></div>
+                    <div className='h-0.5 w-0.5 bg-light'></div>
                   </div>
                 </div>
               </div>

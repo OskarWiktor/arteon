@@ -1,0 +1,284 @@
+{
+  "toolKey": "ozToMl",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník uncí na ml – převeď unce na mililitry",
+    "description": "Převeď tekuté unce na mililitry. Přepínej mezi americkou a britskou uncí, které se liší asi o 4 %. Hotové tabulky na konci stránky ukazují hrnek 8 uncí, plechovku 12 uncí a kuchařské recepty.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-unci-na-ml"
+  },
+  "hero": {
+    "title": "Převeď tekuté unce na mililitry",
+    "description": "Zadej hodnotu v tekutých uncích a hned si přečti výsledek v mililitrech. Americká a britská unce jsou dvě různé míry, proto přepínačem Typ unce vybereš tu, kterou potřebuješ. Ve výchozím nastavení je americká, protože je to míra za většinou receptů a produktů, které uvádějí unce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-unci-na-ml",
+      "label": "unce na ml"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník tekutých uncí na mililitry – oz na ml",
+      "alternateName": [
+        "Převodník uncí na ml",
+        "Kalkulačka oz na ml",
+        "Převodník uncí na mililitry",
+        "oz na ml",
+        "fl oz na ml",
+        "Převést unce na ml",
+        "Kolik ml má unce",
+        "8 uncí na ml",
+        "16 uncí na ml",
+        "Americká a britská unce",
+        "Tabulka uncí na ml",
+        "1 unce na ml",
+        "Tekutá unce",
+        "oz to ml",
+        "Převodník objemu"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník tekutých uncí na mililitry, který běží v prohlížeči a bez registrace. Zadej hodnotu v uncích a okamžitě si přečti výsledek. Přepínač Typ unce vybere americkou nebo britskou unci, které se liší asi o 4 %.",
+      "featureList": [
+        "Přepínač Typ unce převádí americkou (US) nebo britskou (UK) unci, protože obě se používají a liší se asi o 4 %",
+        "Ve výchozím nastavení je americká unce, na kterou narazíš nejčastěji",
+        "Převod funguje v obou směrech, převedeš tedy unce na mililitry i mililitry na unce",
+        "Výsledek se objeví okamžitě při psaní, aniž bys musel klikat na jakékoli tlačítko",
+        "Tlačítko Kopírovat výsledek přenese hotovou hodnotu do schránky",
+        "Převodní tabulka zahrnuje hodnoty od 0,5 do 150 uncí",
+        "Samostatná tabulka ukazuje americkou a britskou unci vedle sebe",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvoje data zařízení neopustí",
+        "Pro americkou unci je přesný vzorec: mililitry = unce × 29,5735"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést tekuté unce na mililitry?",
+      "description": "Krátký návod k použití převodníku tekutých uncí na mililitry.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu v uncích",
+          "text": "Do levého pole napiš počet tekutých uncí, který chceš převést na mililitry."
+        },
+        {
+          "name": "Vyber typ unce",
+          "text": "Pod polem, do kterého píšeš unce, najdeš přepínač Typ unce. Vyber jím americkou nebo britskou unci. Ve výchozím nastavení je americká a výsledek se přepočítá hned po změně."
+        },
+        {
+          "name": "Přečti si výsledek v mililitrech",
+          "text": "Výsledek se objeví v poli vpravo. Tlačítkem Kopírovat výsledek ho přeneseš do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Změnit pořadí a přejdeš k převodu mililitrů na unce."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "K čemu je převod uncí na mililitry?",
+      "html": "<p class=\"text-mid mb-4\">Tekutá unce je míra objemu používaná v USA a ve Velké Británii. V Česku platí mililitr, takže unce se převádějí hlavně tehdy, když recept, kosmetika nebo nápoj pocházejí ze zahraničí. Nejčastěji jde o kuchyni: americký recept žádá 8 uncí mléka a odměrka v šuplíku má stupnici v mililitrech.</p><p class=\"text-mid mb-4\">Háček je v tom, že unce jsou dvě. Americká je 29,5735 ml, britská (imperiální) 28,4131 ml. Tentýž počet uncí tedy dává dva výsledky: 16 uncí je 473,18 ml v americké míře, ale 454,61 ml v britské. Rozdíl téměř 19 ml dokáže změnit konzistenci koláče, proto správnou míru vybíráš přepínačem Typ unce.</p><p class=\"text-mid mb-4\">Ve výchozím nastavení jsme nechali americkou unci, protože je to míra za většinou receptů a produktů, které se dostanou do metrické kuchyně. Pokud je zdroj britský, přepni na britskou unci.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník tekutých uncí na mililitry – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod oz na ml? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Každá z obou uncí má svůj vlastní, pevný přepočet. Americká tekutá unce měří přesně 29,5735295625 ml, britská přesně 28,4130625 ml. Obě hodnoty jsou dané definicí, takže převod se scvrkne na jediné násobení.</p><p class=\"text-mid mb-4\">Vzorec pro americkou unci: <strong>mililitry = unce × 29,5735</strong>. Pro britskou: <strong>mililitry = unce × 28,4131</strong>.</p><p class=\"text-mid mb-4\">Příklad: recept žádá 8 uncí mléka. Dosadíš: 8 × 29,5735 = 236,59 ml, přesně jeden americký hrnek. Kdyby byl recept britský, tytéž 8 uncí by daly 8 × 28,4131 = 227,30 ml, tedy o více než 9 ml méně.</p><p class=\"text-mid\">Pozor na jedno nedorozumění. Tekutá unce (fl oz) měří objem, kdežto samotná unce (oz) bez přívlastku je obvykle jednotka hmotnosti rovná 28,35 g. Tenhle nástroj počítá jen objem. Pokud recept žádá 8 uncí sýra nebo mouky, jde o váhu a potřebuješ převodník hmotnosti.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka amerických uncí na mililitry",
+      "description": "Následující tabulka převádí běžné množství amerických uncí na mililitry, výchozí nastavení převodníku. Hodnoty jsou zaokrouhlené na dvě desetinná místa. Srovnání s britskou uncí najdeš v tabulce níže.",
+      "labelHeader": "Americké unce",
+      "cols": ["Mililitry"],
+      "rows": [
+        { "label": "0,5 US fl oz", "values": ["14,79 ml"] },
+        { "label": "1 US fl oz", "values": ["29,57 ml"], "emphasis": true },
+        { "label": "2 US fl oz", "values": ["59,15 ml"], "emphasis": true },
+        { "label": "3 US fl oz", "values": ["88,72 ml"], "emphasis": true },
+        { "label": "4 US fl oz", "values": ["118,29 ml"] },
+        { "label": "5 US fl oz", "values": ["147,87 ml"] },
+        { "label": "6 US fl oz", "values": ["177,44 ml"] },
+        { "label": "7 US fl oz", "values": ["207,01 ml"] },
+        { "label": "8 US fl oz", "values": ["236,59 ml"], "emphasis": true },
+        { "label": "9 US fl oz", "values": ["266,16 ml"] },
+        { "label": "10 US fl oz", "values": ["295,74 ml"] },
+        { "label": "12 US fl oz", "values": ["354,88 ml"], "emphasis": true },
+        { "label": "14 US fl oz", "values": ["414,03 ml"] },
+        { "label": "16 US fl oz", "values": ["473,18 ml"], "emphasis": true },
+        { "label": "18 US fl oz", "values": ["532,32 ml"] },
+        { "label": "20 US fl oz", "values": ["591,47 ml"] },
+        { "label": "22 US fl oz", "values": ["650,62 ml"] },
+        { "label": "24 US fl oz", "values": ["709,76 ml"] },
+        { "label": "32 US fl oz", "values": ["946,35 ml"], "emphasis": true },
+        { "label": "40 US fl oz", "values": ["1 182,94 ml"] },
+        { "label": "60 US fl oz", "values": ["1 774,41 ml"] },
+        { "label": "64 US fl oz", "values": ["1 892,71 ml"] },
+        { "label": "150 US fl oz", "values": ["4 436,03 ml"] }
+      ],
+      "caption": "Chceš převádět opačným směrem? Použij náš převodník <a href=\"/cs/nastroje/prevodnik-ml-na-unce\">mililitrů na unce</a> s úplnou tabulkou pro množství uváděná v mililitrech."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Americká a britská unce: stejné unce, dva výsledky",
+      "description": "Tentýž počet uncí dává jiný objem podle toho, kterou míru zvolíš. Čím více uncí, tím větší rozdíl. Následující tabulka ukazuje oba výsledky vedle sebe.",
+      "labelHeader": "Tekuté unce",
+      "cols": ["Americká míra", "Britská míra", "Rozdíl"],
+      "rows": [
+        {
+          "label": "1 fl oz",
+          "values": ["29,57 ml", "28,41 ml", "1,16 ml"],
+          "emphasis": true
+        },
+        { "label": "2 fl oz", "values": ["59,15 ml", "56,83 ml", "2,32 ml"] },
+        { "label": "4 fl oz", "values": ["118,29 ml", "113,65 ml", "4,64 ml"] },
+        {
+          "label": "8 fl oz",
+          "values": ["236,59 ml", "227,30 ml", "9,28 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "12 fl oz",
+          "values": ["354,88 ml", "340,96 ml", "13,93 ml"]
+        },
+        {
+          "label": "16 fl oz",
+          "values": ["473,18 ml", "454,61 ml", "18,57 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "20 fl oz",
+          "values": ["591,47 ml", "568,26 ml", "23,21 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "32 fl oz",
+          "values": ["946,35 ml", "909,22 ml", "37,13 ml"]
+        },
+        {
+          "label": "64 fl oz",
+          "values": ["1 892,71 ml", "1 818,44 ml", "74,27 ml"]
+        }
+      ],
+      "caption": "Britská unce je menší, proto tentýž počet uncí dává méně mililitrů. Přepínačem Typ unce v převodníku vybíráš, který z těchto dvou sloupců čteš."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí unce na mililitry?",
+      "description": "Unce se do české kuchyně a koupelny dostávají spolu s produkty ze zahraničí. Každá z těchto situací má svoje specifika.",
+      "items": [
+        {
+          "title": "Americké kuchařské recepty",
+          "description": "To je nejčastější důvod pro převod uncí na mililitry. Americký hrnek je 8 uncí, tedy 236,59 ml, a ne 250 ml jako metrický odměrný hrnek. Pokud recept uvádí hrnky nebo tekuté unce, přepočítej je, než začneš odměřovat."
+        },
+        {
+          "title": "Nápoje a plechovky",
+          "description": "Americká plechovka nápoje má 12 uncí, tedy 354,88 ml, proto na jejím evropském protějšku stojí 355 ml. Velká káva bývá 20 uncí, tedy 591,47 ml. Přepočtem tyhle objemy srovnáš s metrickými."
+        },
+        {
+          "title": "Britská a americká pinta",
+          "description": "Americká pinta je 16 uncí, tedy 473,18 ml. Britská pinta je 20 imperiálních uncí, tedy 568,26 ml. Totéž slovo tedy znamená dva objemy, které se liší o téměř 100 ml, a přesně proto je tu přepínač Typ unce."
+        },
+        {
+          "title": "Kosmetika a cestování",
+          "description": "Produkt s údajem 3,4 fl oz je 100 ml, tedy přesně limit Evropské unie pro jedno balení v příručním zavazadle. V USA se tentýž limit zapisuje jako 3,4 unce, jde tedy o jedno pravidlo ve dvou jednotkách."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu uncí na mililitry",
+      "items": [
+        {
+          "question": "Kolik mililitrů má 1 tekutá unce?",
+          "answer": "Americká unce je 29,57 ml a britská 28,41 ml. Přesné hodnoty jsou 29,5735295625 ml a 28,4130625 ml a obě jsou dané definicí, ne změřené."
+        },
+        {
+          "question": "Je 1 unce 30 ml?",
+          "answer": "Ne, i když je to oblíbené zaokrouhlení. Americká unce je 29,57 ml, tedy o 0,43 ml méně než 30. Britská unce je 28,41 ml, takže je od 30 ještě dál. Hodnota 30 ml pochází z etiket a medicíny, kde se pro pohodlí zaokrouhluje."
+        },
+        {
+          "question": "Kolik ml je 8 uncí?",
+          "answer": "8 amerických uncí je 236,59 ml a 8 britských uncí 227,30 ml. Výpočet pro americkou: 8 × 29,5735 = 236,59 ml. To je přesně jeden americký hrnek."
+        },
+        {
+          "question": "Je 8 uncí 250 ml?",
+          "answer": "Ne. 8 amerických uncí je 236,59 ml, tedy o více než 13 ml méně než 250 ml. Hodnota 250 ml je metrický hrnek z evropských receptů, ne americký hrnek."
+        },
+        {
+          "question": "Kolik ml je 16 uncí?",
+          "answer": "16 amerických uncí je 473,18 ml a 16 britských uncí 454,61 ml. To je objem americké pinty."
+        },
+        {
+          "question": "Je 16 uncí 500 ml?",
+          "answer": "Ne, i když jsou si hodnoty blízké. 16 amerických uncí je 473,18 ml, tedy necelých 27 ml pod půl litrem."
+        },
+        {
+          "question": "Čím se liší americká unce od britské?",
+          "answer": "Americká unce je 29,5735 ml a britská (imperiální) 28,4131 ml, britská je tedy asi o 4 % menší. U jedné unce je rozdíl 1,16 ml, ale u 16 uncí už téměř 19 ml. V převodníku vybíráš tu správnou přepínačem Typ unce."
+        },
+        {
+          "question": "Kolik ml je 12 uncí?",
+          "answer": "12 amerických uncí je 354,88 ml. Proto americká plechovka nápoje o objemu 12 uncí uvádí na evropské etiketě 355 ml."
+        },
+        {
+          "question": "Kolik ml je 2, 4 a 6 uncí?",
+          "answer": "2 americké unce jsou 59,15 ml, 4 unce 118,29 ml a 6 uncí 177,44 ml. Každou z těchto hodnot získáš tak, že unce vynásobíš číslem 29,5735."
+        },
+        {
+          "question": "Kolik ml je 3 unce?",
+          "answer": "3 americké unce jsou 88,72 ml. Tahle hodnota se často objevuje při cestování, protože americký limit tekutin v příručním zavazadle je 3,4 unce, tedy 100 ml."
+        },
+        {
+          "question": "Kolik ml má pinta?",
+          "answer": "Záleží, o kterou pintu jde. Americká pinta je 16 amerických uncí, tedy 473,18 ml. Britská pinta je 20 imperiálních uncí, tedy 568,26 ml. Britská pinta je proto téměř o 100 ml větší než americká."
+        },
+        {
+          "question": "Je tekutá unce totéž co váhová unce?",
+          "answer": "Ne. Tekutá unce (fl oz) měří objem, kdežto váhová unce je 28,35 g. Tenhle nástroj počítá jen objem. Matoucí je, že u vody obě hodnoty vyjdou podobně, protože voda má hustotu asi 1 g/ml, ale u oleje nebo mouky už tahle shoda neplatí."
+        },
+        {
+          "question": "Kolik ml je 32 uncí?",
+          "answer": "32 amerických uncí je 946,35 ml, tedy necelý litr. To je objem americké kvarty."
+        },
+        {
+          "question": "Jaký je vzorec pro převod uncí na mililitry?",
+          "answer": "Pro americkou unci: mililitry = unce × 29,5735. Pro britskou: mililitry = unce × 28,4131. Opačným směrem dělíš stejnou hodnotou."
+        },
+        {
+          "question": "Jak rychle převést unce na mililitry z hlavy?",
+          "answer": "Vynásob počet uncí třiceti. Pro 8 uncí to dává 240 ml, při přesné hodnotě 236,59 ml, výsledek je tedy mírně vyšší, ale k orientaci stačí. Na přesné výpočty použij převodník."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "subject": "Převodník uncí na ml"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "toolKey": "ozToMl",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore da once a ml – converti once in millilitri",
+    "description": "Converti once liquide in millilitri. Passa dall'oncia americana a quella britannica, che differiscono di circa il 4%. Le tabelle a fondo pagina mostrano la tazza da 8 once, la lattina da 12 once e ricette di cucina.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-once-in-ml"
+  },
+  "hero": {
+    "title": "Converti once liquide in millilitri",
+    "description": "Inserisci un valore in once liquide e leggi subito il risultato in millilitri. L'oncia americana e quella britannica sono due misure diverse, perciò con il selettore Tipo di oncia scegli quella che ti serve. È impostata quella americana come predefinita, perché è la misura dietro la maggior parte delle ricette e dei prodotti che indicano once.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-once-in-ml",
+      "label": "once in ml"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore da once liquide a millilitri – oz in ml",
+      "alternateName": [
+        "Convertitore da once a ml",
+        "Calcolatore da oz a ml",
+        "Convertitore da once a millilitri",
+        "oz in ml",
+        "fl oz in ml",
+        "Convertire once in ml",
+        "Quanti ml ha un'oncia",
+        "8 once in ml",
+        "16 once in ml",
+        "Oncia americana e britannica",
+        "Tabella once in ml",
+        "1 oncia in ml",
+        "Oncia liquida",
+        "oz to ml",
+        "Convertitore di volume"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertitore da once liquide a millilitri che funziona nel browser e senza registrazione. Inserisci un valore in once e leggi subito il risultato. Il selettore Tipo di oncia sceglie l'oncia americana o britannica, che differiscono di circa il 4%.",
+      "featureList": [
+        "Il selettore Tipo di oncia converte l'oncia americana (US) o britannica (UK), perché entrambe sono in uso e differiscono di circa il 4%",
+        "È impostata l'oncia americana come predefinita, quella che incontri più spesso",
+        "La conversione funziona in entrambe le direzioni, quindi converti sia once in millilitri sia millilitri in once",
+        "Il risultato compare subito mentre scrivi, senza dover premere alcun pulsante",
+        "Il pulsante Copia risultato porta il valore finito negli appunti",
+        "La tabella di conversione copre i valori da 0,5 a 150 once",
+        "Una tabella a parte mostra l'oncia americana e quella britannica una accanto all'altra",
+        "Tutti i calcoli avvengono nel tuo browser, quindi i dati non escono dal dispositivo",
+        "Per l'oncia americana la formula esatta è: millilitri = once × 29,5735"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire le once liquide in millilitri?",
+      "description": "Una guida breve per usare il convertitore da once liquide a millilitri.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserisci il valore in once",
+          "text": "Nel campo di sinistra, scrivi il numero di once liquide che vuoi convertire in millilitri."
+        },
+        {
+          "name": "Scegli il tipo di oncia",
+          "text": "Sotto il campo in cui scrivi le once trovi il selettore Tipo di oncia. Con esso scegli l'oncia americana o britannica. È impostata quella americana come predefinita, e il risultato si ricalcola appena la cambi."
+        },
+        {
+          "name": "Leggi il risultato in millilitri",
+          "text": "Il risultato compare nel campo a destra. Il pulsante Copia risultato lo porta negli appunti."
+        },
+        {
+          "name": "Inverti la direzione se ti serve",
+          "text": "Fai clic su Cambia ordine per passare alla conversione dei millilitri in once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire le once in millilitri?",
+      "html": "<p class=\"text-mid mb-4\">L'oncia liquida è una misura di volume usata negli Stati Uniti e nel Regno Unito. In Italia vale il millilitro, perciò le once si convertono soprattutto quando una ricetta, un cosmetico o una bevanda arrivano dall'estero. Il più delle volte è la cucina: una ricetta americana chiede 8 once di latte e il misurino nel cassetto è graduato in millilitri.</p><p class=\"text-mid mb-4\">Il guaio è che le once sono due. Quella americana è 29,5735 ml, quella britannica (imperiale) 28,4131 ml. Lo stesso numero di once dà quindi due risultati: 16 once sono 473,18 ml nella misura americana, ma 454,61 ml in quella britannica. Una differenza di quasi 19 ml può cambiare la consistenza di un dolce, perciò scegli la misura giusta con il selettore Tipo di oncia.</p><p class=\"text-mid mb-4\">Abbiamo impostato l'oncia americana come predefinita, perché è la misura dietro la maggior parte delle ricette e dei prodotti che arrivano in una cucina metrica. Se la fonte è britannica, passa all'oncia britannica.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore gratuito da once liquide a millilitri – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione da oz a ml? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">Ognuna delle due once ha il proprio fattore fisso. L'oncia liquida americana misura esattamente 29,5735295625 ml, quella britannica 28,4130625 ml. Entrambi i valori sono definiti, quindi la conversione si riduce a una sola moltiplicazione.</p><p class=\"text-mid mb-4\">Formula per l'oncia americana: <strong>millilitri = once × 29,5735</strong>. Per quella britannica: <strong>millilitri = once × 28,4131</strong>.</p><p class=\"text-mid mb-4\">Esempio: una ricetta chiede 8 once di latte. Sostituisci: 8 × 29,5735 = 236,59 ml, esattamente una tazza americana. Se la ricetta fosse britannica, le stesse 8 once sarebbero 8 × 28,4131 = 227,30 ml, oltre 9 ml in meno.</p><p class=\"text-mid\">Attenzione a un equivoco. L'oncia liquida (fl oz) misura il volume, mentre l'oncia semplice (oz), senza aggiunte, è di solito un'unità di massa pari a 28,35 g. Questo strumento tratta solo il volume. Se una ricetta chiede 8 once di formaggio o di farina, è peso e ti serve un convertitore di massa.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione da once americane a millilitri",
+      "description": "La tabella seguente converte le quantità di once americane più comuni in millilitri, l'impostazione predefinita del convertitore. I valori sono arrotondati a due cifre decimali. Il confronto con l'oncia britannica è nella tabella qui sotto.",
+      "labelHeader": "Once americane",
+      "cols": ["Millilitri"],
+      "rows": [
+        { "label": "0,5 US fl oz", "values": ["14,79 ml"] },
+        { "label": "1 US fl oz", "values": ["29,57 ml"], "emphasis": true },
+        { "label": "2 US fl oz", "values": ["59,15 ml"], "emphasis": true },
+        { "label": "3 US fl oz", "values": ["88,72 ml"], "emphasis": true },
+        { "label": "4 US fl oz", "values": ["118,29 ml"] },
+        { "label": "5 US fl oz", "values": ["147,87 ml"] },
+        { "label": "6 US fl oz", "values": ["177,44 ml"] },
+        { "label": "7 US fl oz", "values": ["207,01 ml"] },
+        { "label": "8 US fl oz", "values": ["236,59 ml"], "emphasis": true },
+        { "label": "9 US fl oz", "values": ["266,16 ml"] },
+        { "label": "10 US fl oz", "values": ["295,74 ml"] },
+        { "label": "12 US fl oz", "values": ["354,88 ml"], "emphasis": true },
+        { "label": "14 US fl oz", "values": ["414,03 ml"] },
+        { "label": "16 US fl oz", "values": ["473,18 ml"], "emphasis": true },
+        { "label": "18 US fl oz", "values": ["532,32 ml"] },
+        { "label": "20 US fl oz", "values": ["591,47 ml"] },
+        { "label": "22 US fl oz", "values": ["650,62 ml"] },
+        { "label": "24 US fl oz", "values": ["709,76 ml"] },
+        { "label": "32 US fl oz", "values": ["946,35 ml"], "emphasis": true },
+        { "label": "40 US fl oz", "values": ["1.182,94 ml"] },
+        { "label": "60 US fl oz", "values": ["1.774,41 ml"] },
+        { "label": "64 US fl oz", "values": ["1.892,71 ml"] },
+        { "label": "150 US fl oz", "values": ["4.436,03 ml"] }
+      ],
+      "caption": "Vuoi convertire nella direzione opposta? Usa il nostro convertitore da <a href=\"/it/strumenti/convertitore-ml-in-once\">millilitri a once</a> con la tabella completa per le quantità indicate in millilitri."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Oncia americana e britannica: le stesse once, due risultati",
+      "description": "Lo stesso numero di once dà un volume diverso, a seconda della misura che adotti. Più once, più ampio è lo scarto. La tabella seguente mostra i due risultati uno accanto all'altro.",
+      "labelHeader": "Once liquide",
+      "cols": ["Misura americana", "Misura britannica", "Differenza"],
+      "rows": [
+        {
+          "label": "1 fl oz",
+          "values": ["29,57 ml", "28,41 ml", "1,16 ml"],
+          "emphasis": true
+        },
+        { "label": "2 fl oz", "values": ["59,15 ml", "56,83 ml", "2,32 ml"] },
+        { "label": "4 fl oz", "values": ["118,29 ml", "113,65 ml", "4,64 ml"] },
+        {
+          "label": "8 fl oz",
+          "values": ["236,59 ml", "227,30 ml", "9,28 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "12 fl oz",
+          "values": ["354,88 ml", "340,96 ml", "13,93 ml"]
+        },
+        {
+          "label": "16 fl oz",
+          "values": ["473,18 ml", "454,61 ml", "18,57 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "20 fl oz",
+          "values": ["591,47 ml", "568,26 ml", "23,21 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "32 fl oz",
+          "values": ["946,35 ml", "909,22 ml", "37,13 ml"]
+        },
+        {
+          "label": "64 fl oz",
+          "values": ["1.892,71 ml", "1.818,44 ml", "74,27 ml"]
+        }
+      ],
+      "caption": "L'oncia britannica è più piccola, perciò lo stesso numero di esse dà meno millilitri. Con il selettore Tipo di oncia nel convertitore scegli quale di queste due colonne leggi."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono le once in millilitri?",
+      "description": "Le once arrivano in cucina e in bagno attraverso prodotti dall'estero. Ognuna di queste situazioni ha la sua particolarità.",
+      "items": [
+        {
+          "title": "Ricette di cucina americane",
+          "description": "È il motivo più comune per convertire le once in millilitri. Una tazza americana è di 8 once, cioè 236,59 ml, e non 250 ml come una tazza metrica. Se una ricetta dà tazze o once liquide, convertile prima di dosare."
+        },
+        {
+          "title": "Bevande e lattine",
+          "description": "Una lattina americana di bevanda ha 12 once, cioè 354,88 ml, ed è per questo che il suo equivalente europeo riporta 355 ml. Un caffè grande è spesso da 20 once, cioè 591,47 ml. Con la conversione allinei queste capacità a quelle metriche."
+        },
+        {
+          "title": "Pinta britannica e americana",
+          "description": "Una pinta americana è di 16 once, cioè 473,18 ml. Una pinta britannica è di 20 once imperiali, cioè 568,26 ml. La stessa parola indica quindi due capacità che differiscono di quasi 100 ml, ed è proprio per questo che il selettore Tipo di oncia è qui."
+        },
+        {
+          "title": "Cosmetici e viaggi",
+          "description": "Un prodotto indicato come 3,4 fl oz sono 100 ml, cioè esattamente il limite dell'Unione Europea per singolo contenitore nel bagaglio a mano. Negli Stati Uniti lo stesso limite si scrive come 3,4 once, quindi è una regola in due unità."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione delle once in millilitri",
+      "items": [
+        {
+          "question": "Quanti millilitri ha 1 oncia liquida?",
+          "answer": "L'oncia americana è 29,57 ml e quella britannica 28,41 ml. I valori esatti sono 29,5735295625 ml e 28,4130625 ml, ed entrambi sono definiti, non misurati."
+        },
+        {
+          "question": "1 oncia è 30 ml?",
+          "answer": "No, anche se è un arrotondamento diffuso. L'oncia americana è 29,57 ml, cioè 0,43 ml in meno di 30. L'oncia britannica è 28,41 ml, quindi è ancora più lontana da 30. Il valore di 30 ml viene dalle etichette e dalla medicina, dove si arrotonda per comodità."
+        },
+        {
+          "question": "Quanti ml sono 8 once?",
+          "answer": "8 once americane sono 236,59 ml e 8 once britanniche 227,30 ml. Calcolo per l'americana: 8 × 29,5735 = 236,59 ml. È esattamente una tazza americana."
+        },
+        {
+          "question": "8 once sono 250 ml?",
+          "answer": "No. 8 once americane sono 236,59 ml, oltre 13 ml in meno di 250 ml. Il valore di 250 ml è una tazza metrica delle ricette europee, non una tazza americana."
+        },
+        {
+          "question": "Quanti ml sono 16 once?",
+          "answer": "16 once americane sono 473,18 ml e 16 once britanniche 454,61 ml. È la capacità di una pinta americana."
+        },
+        {
+          "question": "16 once sono 500 ml?",
+          "answer": "No, anche se i valori sono vicini. 16 once americane sono 473,18 ml, quasi 27 ml in meno di mezzo litro."
+        },
+        {
+          "question": "Qual è la differenza tra l'oncia americana e quella britannica?",
+          "answer": "L'oncia americana è 29,5735 ml e quella britannica (imperiale) 28,4131 ml, quindi la britannica è circa il 4% più piccola. A un'oncia la differenza è di 1,16 ml, ma a 16 once è già di quasi 19 ml. Nel convertitore scegli quella giusta con il selettore Tipo di oncia."
+        },
+        {
+          "question": "Quanti ml sono 12 once?",
+          "answer": "12 once americane sono 354,88 ml. Per questo una lattina americana da 12 once riporta 355 ml sull'etichetta europea."
+        },
+        {
+          "question": "Quanti ml sono 2, 4 e 6 once?",
+          "answer": "2 once americane sono 59,15 ml, 4 once 118,29 ml e 6 once 177,44 ml. Ottieni ognuno di questi valori moltiplicando le once per 29,5735."
+        },
+        {
+          "question": "Quanti ml sono 3 once?",
+          "answer": "3 once americane sono 88,72 ml. Questo valore ricorre spesso in viaggio, perché il limite americano di liquidi nel bagaglio a mano è di 3,4 once, cioè 100 ml."
+        },
+        {
+          "question": "Quanti ml ha una pinta?",
+          "answer": "Dipende da quale pinta si tratta. Una pinta americana è di 16 once americane, cioè 473,18 ml. Una pinta britannica è di 20 once imperiali, cioè 568,26 ml. La pinta britannica è quindi quasi 100 ml più grande di quella americana."
+        },
+        {
+          "question": "Un'oncia liquida è la stessa cosa di un'oncia di peso?",
+          "answer": "No. L'oncia liquida (fl oz) misura il volume, mentre un'oncia di peso è 28,35 g. Questo strumento tratta solo il volume. Trae in inganno il fatto che, per l'acqua, i due valori escono simili, perché l'acqua ha una densità di circa 1 g/ml, ma per l'olio o la farina questa coincidenza non regge più."
+        },
+        {
+          "question": "Quanti ml sono 32 once?",
+          "answer": "32 once americane sono 946,35 ml, quasi un litro. È la capacità di un quarto di gallone americano."
+        },
+        {
+          "question": "Qual è la formula per convertire le once in millilitri?",
+          "answer": "Per l'oncia americana: millilitri = once × 29,5735. Per quella britannica: millilitri = once × 28,4131. Nella direzione opposta dividi per lo stesso valore."
+        },
+        {
+          "question": "Come convertire le once in millilitri a mente?",
+          "answer": "Moltiplica le once per 30. Per 8 once dà 240 ml, contro un valore esatto di 236,59 ml, quindi resta un po' sopra, ma basta per orientarsi. Per calcoli precisi usa il convertitore."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se hai notato un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contatto con Arteon Agency",
+      "subject": "Convertitore da once a ml"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}

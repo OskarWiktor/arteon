@@ -233,7 +233,7 @@
     {
       "type": "sectionDemo",
       "title": "Kształty kadru",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-neutral-200\">Prostokąt</span><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kwadrat</span><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-neutral-200\">Koło</span></div></div>",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center  font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-neutral-200\">Prostokąt</span><span class=\"inline-flex items-center  font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kwadrat</span><span class=\"inline-flex items-center  font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-neutral-200\">Koło</span></div></div>",
       "html": "<p class=\"text-mid\">W zakładce <strong>Kształty kadru</strong> wybierasz kształt wyeksportowanego obrazu: prostokąt (z wybranymi proporcjami), kwadrat (wymusza 1:1) lub koło (z przezroczystym tłem).</p><p class=\"text-mid mt-3\">Kształt koła tworzy okrągły avatar z przezroczystym tłem poza okręgiem. Narzędzie automatycznie przełączy format na PNG lub WebP, ponieważ JPG nie obsługuje przezroczystości.</p>"
     },
     {

@@ -267,7 +267,7 @@ export default function ImageResizeTool() {
   const gridStroke = getGridStroke(state.gridColor);
   const presetList = IMAGE_PRESETS[state.selectedCategory];
   const shapeNeedsAlpha = state.shape === 'circle';
-  const selectionShapeClass = state.shape === 'circle' ? 'rounded-lg' : '';
+  const selectionShapeClass = '';
 
   const handleFileChange = (file: File | null) => {
     if (!file) return;
@@ -520,7 +520,7 @@ export default function ImageResizeTool() {
             )}
           </div>
 
-          <div className='mt-4 rounded-lg border border-neutral-200 bg-white/90 p-4 text-xs! text-light'>
+          <div className='mt-4 border border-neutral-200 bg-white/90 p-4 text-xs! text-light'>
             <h3 className='h6 mb-2'>{t.imageParams}</h3>
             {!state.imageUrl && <p>{t.noData}</p>}
             {state.imageUrl && (
@@ -654,7 +654,7 @@ export default function ImageResizeTool() {
 
             <div
               className={cn(
-                'relative mt-4 aspect-4/5 max-h-85 overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100',
+                'relative mt-4 aspect-4/5 max-h-85 overflow-hidden border border-neutral-300 bg-neutral-100',
                 flexCenterClasses,
               )}
             >
@@ -883,7 +883,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className={cn(
-                          'h-7 w-7 rounded-lg border border-neutral-200 bg-white hover:bg-neutral-100',
+                          'h-7 w-7 border border-neutral-200 bg-white hover:bg-neutral-100',
                           flexCenterClasses,
                         )}
                         title={t.centerHorizontal}
@@ -899,7 +899,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className={cn(
-                          'h-7 w-7 rounded-lg border border-neutral-200 bg-white hover:bg-neutral-100',
+                          'h-7 w-7 border border-neutral-200 bg-white hover:bg-neutral-100',
                           flexCenterClasses,
                         )}
                         title={t.centerVertical}
@@ -916,7 +916,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className={cn(
-                          'h-7 w-7 rounded-lg border border-neutral-200 bg-white hover:bg-neutral-100',
+                          'h-7 w-7 border border-neutral-200 bg-white hover:bg-neutral-100',
                           flexCenterClasses,
                         )}
                         title={t.centerCrop}
@@ -939,7 +939,7 @@ export default function ImageResizeTool() {
                         label={
                           <span className='flex items-center gap-2'>
                             <span
-                              className={cn('rounded-lg', smallIconSizeClasses)}
+                              className={cn('', smallIconSizeClasses)}
                               style={{
                                 backgroundColor: getGridStroke(opt.value),
                               }}

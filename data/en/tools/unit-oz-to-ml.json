@@ -1,0 +1,284 @@
+{
+  "toolKey": "ozToMl",
+  "locale": "en",
+  "metadata": {
+    "title": "oz to ml Converter – Convert Fluid Ounces to Millilitres",
+    "description": "Convert fluid ounces to millilitres. Switch between the US and UK ounce, which differ by about 4%. Ready-made tables lower on the page cover the 8 oz cup, the 12 oz can and common recipe amounts.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/oz-to-ml-converter"
+  },
+  "hero": {
+    "title": "Convert fluid ounces to millilitres",
+    "description": "Enter a value in fluid ounces and read the result in millilitres straight away. The US and UK ounce are two different measures, so the Ounce type switch lets you pick the one you need. It is set to the US ounce by default, since that is the measure behind most recipes and products that quote ounces.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/oz-to-ml-converter",
+      "label": "oz to ml"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Fluid ounces to millilitres converter – oz to ml",
+      "alternateName": [
+        "oz to ml converter",
+        "oz to ml calculator",
+        "ounces to millilitres converter",
+        "oz to ml",
+        "fl oz to ml",
+        "convert oz to ml",
+        "how many ml in an ounce",
+        "8 oz to ml",
+        "16 oz to ml",
+        "US vs UK fluid ounce",
+        "oz to ml table",
+        "1 oz to ml",
+        "fluid ounce",
+        "ounces to ml",
+        "volume converter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "A fluid ounces to millilitres converter that runs in your browser with no sign-up. Enter a value in ounces and read the result instantly. The Ounce type switch picks the US or UK ounce, which differ by about 4%.",
+      "featureList": [
+        "The Ounce type switch converts the US or UK ounce, since both are in use and differ by about 4%",
+        "The US ounce is set by default, as it is the one you meet most often",
+        "The conversion works both ways, so you can convert ounces to millilitres and millilitres to ounces",
+        "The result appears instantly as you type, with no button to click",
+        "The Copy result button places the finished value on the clipboard",
+        "The conversion table covers values from 0.5 to 150 ounces",
+        "A separate table shows the US and UK ounce side by side for the same values",
+        "All calculations run locally in your browser, so your data never leaves your device",
+        "For the US ounce the exact formula is: millilitres = ounces × 29.5735"
+      ]
+    },
+    "howTo": {
+      "name": "How do you convert fluid ounces to millilitres?",
+      "description": "A short guide to using the fluid ounces to millilitres converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter the value in ounces",
+          "text": "In the left field, type the number of fluid ounces you want to convert to millilitres."
+        },
+        {
+          "name": "Pick the ounce type",
+          "text": "Below the field where you type the ounces you will find the Ounce type switch. Use it to pick the US or UK ounce. It is set to US by default, and the result recalculates the moment you change it."
+        },
+        {
+          "name": "Read the result in millilitres",
+          "text": "The result appears in the field on the right. The Copy result button places it on the clipboard."
+        },
+        {
+          "name": "Reverse the direction if you need to",
+          "text": "Click Swap to move over to converting millilitres to ounces."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert fluid ounces to millilitres?",
+      "html": "<p class=\"text-mid mb-4\">The fluid ounce is a volume unit used in the United States and the United Kingdom. Metric millilitres appear whenever a measuring jug, a piece of lab or medical kit, or an imported product is marked in metric, and then you convert. Most often it is the kitchen: a US recipe calls for 8 ounces of milk and the jug in the drawer is marked in millilitres.</p><p class=\"text-mid mb-4\">The snag is that there are two ounces. The US one is 29.5735 ml, while the UK (imperial) one is 28.4131 ml. The same number of ounces therefore gives two results: 16 ounces is 473.18 ml in the US measure, but 454.61 ml in the UK one. A gap of almost 19 ml can change the texture of a cake, so you pick the right measure with the Ounce type switch.</p><p class=\"text-mid mb-4\">We set the US ounce by default, since it is the measure behind most recipes and products that reach a metric kitchen. If the source is British, switch to the UK ounce.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Free fluid ounces to millilitres converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does the oz to ml conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">Each of the two ounces has its own fixed factor. The US fluid ounce is exactly 29.5735295625 ml, and the UK one is exactly 28.4130625 ml. Both values are defined, so the conversion comes down to a single multiplication.</p><p class=\"text-mid mb-4\">Formula for the US ounce: <strong>millilitres = ounces × 29.5735</strong>. For the UK ounce: <strong>millilitres = ounces × 28.4131</strong>.</p><p class=\"text-mid mb-4\">Example: a recipe calls for 8 ounces of milk. You substitute: 8 × 29.5735 = 236.59 ml, exactly one US cup. If the recipe were British, the same 8 ounces would be 8 × 28.4131 = 227.30 ml, more than 9 ml less.</p><p class=\"text-mid\">Watch out for one mix-up. The fluid ounce (fl oz) measures volume, while a plain ounce (oz) with no qualifier is usually a unit of weight equal to 28.35 g. This tool handles volume only. If a recipe lists 8 ounces of cheese or flour, that is weight and you need a mass converter instead.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "US fluid ounces to millilitres conversion table",
+      "description": "The table below converts common US ounce amounts to millilitres, the converter's default setting. Values are rounded to two decimal places. The comparison with the UK ounce is in the table further down.",
+      "labelHeader": "US fluid ounces",
+      "cols": ["Millilitres"],
+      "rows": [
+        { "label": "0.5 US fl oz", "values": ["14.79 ml"] },
+        { "label": "1 US fl oz", "values": ["29.57 ml"], "emphasis": true },
+        { "label": "2 US fl oz", "values": ["59.15 ml"], "emphasis": true },
+        { "label": "3 US fl oz", "values": ["88.72 ml"], "emphasis": true },
+        { "label": "4 US fl oz", "values": ["118.29 ml"] },
+        { "label": "5 US fl oz", "values": ["147.87 ml"] },
+        { "label": "6 US fl oz", "values": ["177.44 ml"] },
+        { "label": "7 US fl oz", "values": ["207.01 ml"] },
+        { "label": "8 US fl oz", "values": ["236.59 ml"], "emphasis": true },
+        { "label": "9 US fl oz", "values": ["266.16 ml"] },
+        { "label": "10 US fl oz", "values": ["295.74 ml"] },
+        { "label": "12 US fl oz", "values": ["354.88 ml"], "emphasis": true },
+        { "label": "14 US fl oz", "values": ["414.03 ml"] },
+        { "label": "16 US fl oz", "values": ["473.18 ml"], "emphasis": true },
+        { "label": "18 US fl oz", "values": ["532.32 ml"] },
+        { "label": "20 US fl oz", "values": ["591.47 ml"] },
+        { "label": "22 US fl oz", "values": ["650.62 ml"] },
+        { "label": "24 US fl oz", "values": ["709.76 ml"] },
+        { "label": "32 US fl oz", "values": ["946.35 ml"], "emphasis": true },
+        { "label": "40 US fl oz", "values": ["1,182.94 ml"] },
+        { "label": "60 US fl oz", "values": ["1,774.41 ml"] },
+        { "label": "64 US fl oz", "values": ["1,892.71 ml"] },
+        { "label": "150 US fl oz", "values": ["4,436.03 ml"] }
+      ],
+      "caption": "Need the other direction? Use our <a href=\"/en/tools/ml-to-oz-converter\">millilitres to ounces converter</a> with a full table for amounts given in millilitres."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "US vs UK ounce: same ounces, two results",
+      "description": "The same number of ounces gives a different volume, depending on which measure you use. The more ounces, the wider the gap. The table below shows both results side by side.",
+      "labelHeader": "Fluid ounces",
+      "cols": ["US measure", "UK measure", "Difference"],
+      "rows": [
+        {
+          "label": "1 fl oz",
+          "values": ["29.57 ml", "28.41 ml", "1.16 ml"],
+          "emphasis": true
+        },
+        { "label": "2 fl oz", "values": ["59.15 ml", "56.83 ml", "2.32 ml"] },
+        { "label": "4 fl oz", "values": ["118.29 ml", "113.65 ml", "4.64 ml"] },
+        {
+          "label": "8 fl oz",
+          "values": ["236.59 ml", "227.30 ml", "9.28 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "12 fl oz",
+          "values": ["354.88 ml", "340.96 ml", "13.93 ml"]
+        },
+        {
+          "label": "16 fl oz",
+          "values": ["473.18 ml", "454.61 ml", "18.57 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "20 fl oz",
+          "values": ["591.47 ml", "568.26 ml", "23.21 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "32 fl oz",
+          "values": ["946.35 ml", "909.22 ml", "37.13 ml"]
+        },
+        {
+          "label": "64 fl oz",
+          "values": ["1,892.71 ml", "1,818.44 ml", "74.27 ml"]
+        }
+      ],
+      "caption": "The UK ounce is smaller, so the same number of them gives fewer millilitres. The Ounce type switch in the converter picks which of these two columns you read."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do people convert fluid ounces to millilitres?",
+      "description": "Ounces reach a metric kitchen and bathroom through products from abroad. Each of these situations has its own quirk.",
+      "items": [
+        {
+          "title": "US kitchen recipes",
+          "description": "This is the most common reason to convert ounces to millilitres. A US cup is 8 ounces, which is 236.59 ml, not the 250 ml of a metric cup. If a recipe gives cups or fluid ounces, convert them before you measure."
+        },
+        {
+          "title": "Drinks and cans",
+          "description": "A US soda can holds 12 ounces, which is 354.88 ml, which is why its European equivalent reads 355 ml. A large coffee is often 20 ounces, which is 591.47 ml. Converting lets you line these volumes up against metric ones."
+        },
+        {
+          "title": "US and UK pints",
+          "description": "A US pint is 16 ounces, which is 473.18 ml. A UK pint is 20 imperial ounces, which is 568.26 ml. The same word therefore means two volumes that differ by nearly 100 ml, and that is exactly why the Ounce type switch is here."
+        },
+        {
+          "title": "Cosmetics and travel",
+          "description": "A product labelled 3.4 fl oz is 100 ml, which is exactly the EU limit for a single container in carry-on luggage. In the United States the same limit is written as 3.4 ounces, so it is one rule in two units."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting ounces to millilitres",
+      "items": [
+        {
+          "question": "How many millilitres are in 1 fluid ounce?",
+          "answer": "The US ounce is 29.57 ml and the UK one is 28.41 ml. The exact values are 29.5735295625 ml and 28.4130625 ml, and both are defined rather than measured."
+        },
+        {
+          "question": "Is 1 ounce 30 ml?",
+          "answer": "No, though it is a common rounding. The US ounce is 29.57 ml, which is 0.43 ml short of 30. The UK ounce is 28.41 ml, so it is further still from 30. The 30 ml figure comes from labels and medicine, where it is rounded for convenience."
+        },
+        {
+          "question": "How many ml are in 8 ounces?",
+          "answer": "8 US ounces are 236.59 ml, and 8 UK ounces are 227.30 ml. The US calculation: 8 × 29.5735 = 236.59 ml. That is exactly one US cup."
+        },
+        {
+          "question": "Is 8 ounces 250 ml?",
+          "answer": "No. 8 US ounces are 236.59 ml, more than 13 ml short of 250 ml. The 250 ml figure is a metric cup from European recipes, not a US cup."
+        },
+        {
+          "question": "How many ml are in 16 ounces?",
+          "answer": "16 US ounces are 473.18 ml, and 16 UK ounces are 454.61 ml. That is the volume of a US pint."
+        },
+        {
+          "question": "Is 16 ounces 500 ml?",
+          "answer": "No, though the values are close. 16 US ounces are 473.18 ml, just under 27 ml short of half a litre."
+        },
+        {
+          "question": "What is the difference between the US and UK ounce?",
+          "answer": "The US ounce is 29.5735 ml and the UK (imperial) one is 28.4131 ml, so the UK ounce is about 4% smaller. At one ounce the gap is 1.16 ml, but at 16 ounces it is already almost 19 ml. You pick the right one with the Ounce type switch."
+        },
+        {
+          "question": "How many ml are in 12 ounces?",
+          "answer": "12 US ounces are 354.88 ml. That is why a US 12-ounce soda can reads 355 ml on its European label."
+        },
+        {
+          "question": "How many ml are in 2, 4 and 6 ounces?",
+          "answer": "2 US ounces are 59.15 ml, 4 ounces are 118.29 ml, and 6 ounces are 177.44 ml. You get each of these by multiplying the ounces by 29.5735."
+        },
+        {
+          "question": "How many ml are in 3 ounces?",
+          "answer": "3 US ounces are 88.72 ml. This figure comes up often in travel, since the US carry-on liquid limit is 3.4 ounces, which is 100 ml."
+        },
+        {
+          "question": "How many ml are in a pint?",
+          "answer": "It depends which pint. A US pint is 16 US ounces, which is 473.18 ml. A UK pint is 20 imperial ounces, which is 568.26 ml. The UK pint is therefore nearly 100 ml larger than the US one."
+        },
+        {
+          "question": "Is a fluid ounce the same as an ounce of weight?",
+          "answer": "No. The fluid ounce (fl oz) measures volume, while an ounce of weight is 28.35 g. This tool handles volume only. The mix-up is easy because for water the two values come out close, since water has a density of about 1 g/ml, but for oil or flour that coincidence no longer holds."
+        },
+        {
+          "question": "How many ml are in 32 ounces?",
+          "answer": "32 US ounces are 946.35 ml, just under a litre. That is the volume of a US quart."
+        },
+        {
+          "question": "What is the formula for converting ounces to millilitres?",
+          "answer": "For the US ounce: millilitres = ounces × 29.5735. For the UK ounce: millilitres = ounces × 28.4131. The other way round, you divide by the same value."
+        },
+        {
+          "question": "How do you convert ounces to millilitres in your head?",
+          "answer": "Multiply the ounces by 30. For 8 ounces that gives 240 ml, against an exact 236.59 ml, so it comes out slightly high but close enough to get your bearings. Use the converter when you need precision."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "title": "Have a question or a suggestion?",
+      "description": "If you have spotted a mistake in the tables or have an idea for improving the converter, write to us. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "oz to ml converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    }
+  ]
+}

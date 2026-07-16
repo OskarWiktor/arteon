@@ -34,6 +34,37 @@ interface ExtraField {
   step?: number;
 }
 
+/** One selectable measurement system, with the factor and unit suffix it implies. */
+export interface UnitVariantOption {
+  value: string;
+  labelKey: string;
+  suffix: string;
+  convert: (value: number, extra?: number) => number;
+  reverseConvert: (value: number, extra?: number) => number;
+}
+
+/**
+ * A choice between alternative conversion factors for the same pair of units.
+ * A US fluid ounce (29.5735 ml) and an Imperial one (28.4131 ml) differ by
+ * about 4%, so a single factor would silently hand one audience a wrong
+ * number. When this is set the converter renders a selector and uses the
+ * active option's `convert`/`reverseConvert` and `suffix` in place of the
+ * config-level ones.
+ */
+export interface UnitVariantField {
+  labelKey: string;
+  /** Which field carries the variant's unit, so its suffix lands on the right input. */
+  appliesTo: 'source' | 'target';
+  options: UnitVariantOption[];
+  defaultValue: string;
+}
+
+/** Exact millilitre definitions of the two fluid ounces still in everyday use. */
+const FLUID_OUNCE_IN_ML = {
+  US: 29.5735295625,
+  IMPERIAL: 28.4130625,
+} as const;
+
 const CSS_CONVERSION_FACTORS = {
   PT_TO_PX: 1.333333,
   PX_TO_PT: 0.75,
@@ -58,6 +89,12 @@ export interface UnitConversionConfig {
   sourceField: UnitField;
   targetField: UnitField;
   extraField?: ExtraField;
+  /**
+   * Optional measurement-system selector. When absent the converter behaves
+   * exactly as before and uses `convert`/`reverseConvert` below, which stay
+   * the source of truth for the default variant.
+   */
+  variantField?: UnitVariantField;
   convert: (value: number, extra?: number) => number;
   reverseConvert: (value: number, extra?: number) => number;
   precision: number;
@@ -301,6 +338,72 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     precision: 4,
     swappable: true,
     reverseToolKey: 'metersToFeet',
+  },
+
+  {
+    toolKey: 'mlToOz',
+    category: 'volume',
+    sourceField: { labelKey: 'milliliters', suffix: 'ml' },
+    targetField: { labelKey: 'fluidOunces', suffix: 'US fl oz' },
+    variantField: {
+      labelKey: 'ounceSystem',
+      appliesTo: 'target',
+      defaultValue: 'us',
+      options: [
+        {
+          value: 'us',
+          labelKey: 'ounceSystemUs',
+          suffix: 'US fl oz',
+          convert: v => v / FLUID_OUNCE_IN_ML.US,
+          reverseConvert: v => v * FLUID_OUNCE_IN_ML.US,
+        },
+        {
+          value: 'uk',
+          labelKey: 'ounceSystemUk',
+          suffix: 'UK fl oz',
+          convert: v => v / FLUID_OUNCE_IN_ML.IMPERIAL,
+          reverseConvert: v => v * FLUID_OUNCE_IN_ML.IMPERIAL,
+        },
+      ],
+    },
+    convert: v => v / FLUID_OUNCE_IN_ML.US,
+    reverseConvert: v => v * FLUID_OUNCE_IN_ML.US,
+    precision: 2,
+    swappable: true,
+    reverseToolKey: 'ozToMl',
+  },
+
+  {
+    toolKey: 'ozToMl',
+    category: 'volume',
+    sourceField: { labelKey: 'fluidOunces', suffix: 'US fl oz' },
+    targetField: { labelKey: 'milliliters', suffix: 'ml' },
+    variantField: {
+      labelKey: 'ounceSystem',
+      appliesTo: 'source',
+      defaultValue: 'us',
+      options: [
+        {
+          value: 'us',
+          labelKey: 'ounceSystemUs',
+          suffix: 'US fl oz',
+          convert: v => v * FLUID_OUNCE_IN_ML.US,
+          reverseConvert: v => v / FLUID_OUNCE_IN_ML.US,
+        },
+        {
+          value: 'uk',
+          labelKey: 'ounceSystemUk',
+          suffix: 'UK fl oz',
+          convert: v => v * FLUID_OUNCE_IN_ML.IMPERIAL,
+          reverseConvert: v => v / FLUID_OUNCE_IN_ML.IMPERIAL,
+        },
+      ],
+    },
+    convert: v => v * FLUID_OUNCE_IN_ML.US,
+    reverseConvert: v => v / FLUID_OUNCE_IN_ML.US,
+    precision: 2,
+    swappable: true,
+    reverseToolKey: 'mlToOz',
   },
 
   {

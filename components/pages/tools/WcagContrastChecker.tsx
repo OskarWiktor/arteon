@@ -441,7 +441,7 @@ export default function WcagContrastChecker() {
               </div>
             </div>
             <div
-              className='rounded-lg border border-neutral-200 px-3 py-2'
+              className='border border-neutral-200 px-3 py-2'
               style={{
                 color: foreground,
                 backgroundColor: background,
@@ -468,7 +468,7 @@ export default function WcagContrastChecker() {
               </div>
             </div>
             <div
-              className='rounded-lg border border-neutral-200 px-3 py-2'
+              className='border border-neutral-200 px-3 py-2'
               style={{
                 color: foreground,
                 backgroundColor: background,

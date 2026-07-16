@@ -1,0 +1,284 @@
+{
+  "toolKey": "ozToMl",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur onces en ml – convertir des onces en millilitres",
+    "description": "Convertissez des onces liquides en millilitres. Basculez entre l'once américaine et britannique, qui diffèrent d'environ 4 %. Les tableaux en bas de page couvrent la tasse de 8 onces, la canette de 12 onces et des recettes de cuisine.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-onces-en-ml"
+  },
+  "hero": {
+    "title": "Convertissez des onces liquides en millilitres",
+    "description": "Saisissez une valeur en onces liquides et lisez aussitôt le résultat en millilitres. L'once américaine et l'once britannique sont deux mesures différentes, alors le sélecteur Type d'once vous laisse choisir celle qu'il vous faut. L'once américaine est réglée par défaut, car c'est la mesure derrière la plupart des recettes et des produits qui indiquent des onces.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-onces-en-ml",
+      "label": "onces en ml"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur d'onces liquides en millilitres – oz en ml",
+      "alternateName": [
+        "Convertisseur onces en ml",
+        "Calculateur oz en ml",
+        "Convertisseur d'onces en millilitres",
+        "oz en ml",
+        "fl oz en ml",
+        "Convertir des onces en ml",
+        "Combien de ml dans une once",
+        "8 onces en ml",
+        "16 onces en ml",
+        "Once américaine et britannique",
+        "Tableau onces en ml",
+        "1 once en ml",
+        "Once liquide",
+        "oz to ml",
+        "Convertisseur de volume"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Un convertisseur d'onces liquides en millilitres qui fonctionne dans le navigateur, sans inscription. Saisissez une valeur en onces et lisez le résultat instantanément. Le sélecteur Type d'once choisit l'once américaine ou britannique, qui diffèrent d'environ 4 %.",
+      "featureList": [
+        "Le sélecteur Type d'once convertit l'once américaine (US) ou britannique (UK), car les deux sont en usage et diffèrent d'environ 4 %",
+        "L'once américaine est réglée par défaut, car c'est celle que vous croisez le plus souvent",
+        "La conversion fonctionne dans les deux sens : vous convertissez aussi bien des onces en millilitres que des millilitres en onces",
+        "Le résultat apparaît instantanément pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Le bouton Copier le résultat place la valeur obtenue dans le presse-papiers",
+        "Le tableau de conversion couvre les valeurs de 0,5 à 150 onces",
+        "Un tableau distinct place l'once américaine et l'once britannique côte à côte pour les mêmes valeurs",
+        "Tous les calculs se font localement dans le navigateur : vos données ne quittent pas votre appareil",
+        "Pour l'once américaine, la formule exacte est : millilitres = onces × 29,5735"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des onces liquides en millilitres ?",
+      "description": "Un guide court pour utiliser le convertisseur d'onces liquides en millilitres.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez la valeur en onces",
+          "text": "Dans le champ de gauche, saisissez le nombre d'onces liquides que vous souhaitez convertir en millilitres."
+        },
+        {
+          "name": "Choisissez le type d'once",
+          "text": "Sous le champ où vous saisissez les onces, vous trouverez le sélecteur Type d'once. Il vous laisse choisir l'once américaine ou britannique. L'américaine est réglée par défaut, et le résultat se recalcule dès que vous en changez."
+        },
+        {
+          "name": "Lisez le résultat en millilitres",
+          "text": "Le résultat apparaît dans le champ de droite. Le bouton Copier le résultat le place dans le presse-papiers."
+        },
+        {
+          "name": "Inversez le sens si nécessaire",
+          "text": "Cliquez sur Changer l'ordre pour passer à la conversion des millilitres en onces."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des onces en millilitres ?",
+      "html": "<p class=\"text-mid mb-4\">L'once liquide est une mesure de volume utilisée aux États-Unis et au Royaume-Uni. En France, en Belgique et en Suisse, c'est le millilitre qui règne, alors on convertit les onces surtout quand une recette, un cosmétique ou une boisson vient de l'étranger. Le plus souvent, c'est la cuisine : une recette américaine demande 8 onces de lait et le verre doseur du tiroir est gradué en millilitres.</p><p class=\"text-mid mb-4\">Le hic, c'est qu'il existe deux onces. L'américaine fait 29,5735 ml, la britannique (impériale) 28,4131 ml. Le même nombre d'onces donne donc deux résultats : 16 onces font 473,18 ml dans la mesure américaine, mais 454,61 ml dans la britannique. Un écart de près de 19 ml peut changer la texture d'un gâteau, alors vous choisissez la bonne mesure avec le sélecteur Type d'once.</p><p class=\"text-mid mb-4\">Nous avons réglé l'once américaine par défaut, car c'est la mesure derrière la plupart des recettes et des produits qui arrivent dans une cuisine métrique. Si la source est britannique, basculez sur l'once britannique.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit d'onces liquides en millilitres – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des oz en ml ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">Chacune des deux onces a son propre facteur fixe. L'once liquide américaine mesure exactement 29,5735295625 ml, la britannique exactement 28,4130625 ml. Les deux valeurs sont définies, la conversion se ramène donc à une seule multiplication.</p><p class=\"text-mid mb-4\">Formule pour l'once américaine : <strong>millilitres = onces × 29,5735</strong>. Pour la britannique : <strong>millilitres = onces × 28,4131</strong>.</p><p class=\"text-mid mb-4\">Exemple : une recette demande 8 onces de lait. Vous remplacez : 8 × 29,5735 = 236,59 ml, soit exactement une tasse américaine. Si la recette était britannique, ces mêmes 8 onces feraient 8 × 28,4131 = 227,30 ml, plus de 9 ml de moins.</p><p class=\"text-mid\">Attention à une confusion. L'once liquide (fl oz) mesure un volume, alors que l'once seule (oz), sans précision, est en général une unité de masse égale à 28,35 g. Cet outil ne traite que le volume. Si une recette demande 8 onces de fromage ou de farine, il s'agit d'un poids et il vous faut un convertisseur de masse.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des onces américaines en millilitres",
+      "description": "Le tableau ci-dessous convertit les quantités d'onces américaines courantes en millilitres, le réglage par défaut du convertisseur. Les valeurs sont arrondies à deux décimales. La comparaison avec l'once britannique figure dans le tableau plus bas.",
+      "labelHeader": "Onces américaines",
+      "cols": ["Millilitres"],
+      "rows": [
+        { "label": "0,5 US fl oz", "values": ["14,79 ml"] },
+        { "label": "1 US fl oz", "values": ["29,57 ml"], "emphasis": true },
+        { "label": "2 US fl oz", "values": ["59,15 ml"], "emphasis": true },
+        { "label": "3 US fl oz", "values": ["88,72 ml"], "emphasis": true },
+        { "label": "4 US fl oz", "values": ["118,29 ml"] },
+        { "label": "5 US fl oz", "values": ["147,87 ml"] },
+        { "label": "6 US fl oz", "values": ["177,44 ml"] },
+        { "label": "7 US fl oz", "values": ["207,01 ml"] },
+        { "label": "8 US fl oz", "values": ["236,59 ml"], "emphasis": true },
+        { "label": "9 US fl oz", "values": ["266,16 ml"] },
+        { "label": "10 US fl oz", "values": ["295,74 ml"] },
+        { "label": "12 US fl oz", "values": ["354,88 ml"], "emphasis": true },
+        { "label": "14 US fl oz", "values": ["414,03 ml"] },
+        { "label": "16 US fl oz", "values": ["473,18 ml"], "emphasis": true },
+        { "label": "18 US fl oz", "values": ["532,32 ml"] },
+        { "label": "20 US fl oz", "values": ["591,47 ml"] },
+        { "label": "22 US fl oz", "values": ["650,62 ml"] },
+        { "label": "24 US fl oz", "values": ["709,76 ml"] },
+        { "label": "32 US fl oz", "values": ["946,35 ml"], "emphasis": true },
+        { "label": "40 US fl oz", "values": ["1 182,94 ml"] },
+        { "label": "60 US fl oz", "values": ["1 774,41 ml"] },
+        { "label": "64 US fl oz", "values": ["1 892,71 ml"] },
+        { "label": "150 US fl oz", "values": ["4 436,03 ml"] }
+      ],
+      "caption": "Vous souhaitez convertir dans l'autre sens ? Utilisez notre convertisseur <a href=\"/fr/outils/convertisseur-ml-en-onces\">millilitres en onces</a> avec un tableau complet pour les quantités données en millilitres."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Once américaine et britannique : les mêmes onces, deux résultats",
+      "description": "Le même nombre d'onces donne un volume différent, selon la mesure retenue. Plus il y a d'onces, plus l'écart se creuse. Le tableau ci-dessous présente les deux résultats côte à côte.",
+      "labelHeader": "Onces liquides",
+      "cols": ["Mesure américaine", "Mesure britannique", "Écart"],
+      "rows": [
+        {
+          "label": "1 fl oz",
+          "values": ["29,57 ml", "28,41 ml", "1,16 ml"],
+          "emphasis": true
+        },
+        { "label": "2 fl oz", "values": ["59,15 ml", "56,83 ml", "2,32 ml"] },
+        { "label": "4 fl oz", "values": ["118,29 ml", "113,65 ml", "4,64 ml"] },
+        {
+          "label": "8 fl oz",
+          "values": ["236,59 ml", "227,30 ml", "9,28 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "12 fl oz",
+          "values": ["354,88 ml", "340,96 ml", "13,93 ml"]
+        },
+        {
+          "label": "16 fl oz",
+          "values": ["473,18 ml", "454,61 ml", "18,57 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "20 fl oz",
+          "values": ["591,47 ml", "568,26 ml", "23,21 ml"],
+          "emphasis": true
+        },
+        {
+          "label": "32 fl oz",
+          "values": ["946,35 ml", "909,22 ml", "37,13 ml"]
+        },
+        {
+          "label": "64 fl oz",
+          "values": ["1 892,71 ml", "1 818,44 ml", "74,27 ml"]
+        }
+      ],
+      "caption": "L'once britannique est plus petite, un même nombre d'entre elles donne donc moins de millilitres. Le sélecteur Type d'once du convertisseur choisit laquelle de ces deux colonnes vous lisez."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on des onces en millilitres ?",
+      "description": "Les onces arrivent dans la cuisine et la salle de bains par des produits venus de l'étranger. Chacune de ces situations a sa particularité.",
+      "items": [
+        {
+          "title": "Recettes de cuisine américaines",
+          "description": "C'est la raison la plus fréquente de convertir des onces en millilitres. Une tasse américaine fait 8 onces, soit 236,59 ml, et non 250 ml comme une tasse métrique. Si une recette donne des tasses ou des onces liquides, convertissez-les avant de doser."
+        },
+        {
+          "title": "Boissons et canettes",
+          "description": "Une canette américaine de boisson contient 12 onces, soit 354,88 ml, c'est pourquoi son équivalent européen affiche 355 ml. Un grand café fait souvent 20 onces, soit 591,47 ml. La conversion vous permet d'aligner ces contenances sur les mesures métriques."
+        },
+        {
+          "title": "Pinte britannique et américaine",
+          "description": "Une pinte américaine fait 16 onces, soit 473,18 ml. Une pinte britannique fait 20 onces impériales, soit 568,26 ml. Le même mot désigne donc deux contenances qui diffèrent de près de 100 ml, et c'est justement pour cela que le sélecteur Type d'once est là."
+        },
+        {
+          "title": "Cosmétiques et voyages",
+          "description": "Un produit indiqué 3,4 fl oz fait 100 ml, soit exactement la limite de l'Union européenne par contenant en cabine. Aux États-Unis, la même limite s'écrit 3,4 onces, c'est donc une seule règle en deux unités."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des onces en millilitres",
+      "items": [
+        {
+          "question": "Combien de millilitres fait 1 once liquide ?",
+          "answer": "L'once américaine fait 29,57 ml et la britannique 28,41 ml. Les valeurs exactes sont 29,5735295625 ml et 28,4130625 ml, et les deux sont définies, non mesurées."
+        },
+        {
+          "question": "Une once fait-elle 30 ml ?",
+          "answer": "Non, même si c'est un arrondi courant. L'once américaine fait 29,57 ml, soit 0,43 ml de moins que 30. L'once britannique fait 28,41 ml, elle est donc encore plus loin de 30. La valeur de 30 ml vient des étiquettes et de la médecine, où l'on arrondit par commodité."
+        },
+        {
+          "question": "Combien de ml font 8 onces ?",
+          "answer": "8 onces américaines font 236,59 ml et 8 onces britanniques 227,30 ml. Calcul pour l'américaine : 8 × 29,5735 = 236,59 ml. C'est exactement une tasse américaine."
+        },
+        {
+          "question": "8 onces font-elles 250 ml ?",
+          "answer": "Non. 8 onces américaines font 236,59 ml, plus de 13 ml de moins que 250 ml. La valeur de 250 ml est une tasse métrique des recettes européennes, pas une tasse américaine."
+        },
+        {
+          "question": "Combien de ml font 16 onces ?",
+          "answer": "16 onces américaines font 473,18 ml et 16 onces britanniques 454,61 ml. C'est la contenance d'une pinte américaine."
+        },
+        {
+          "question": "16 onces font-elles 500 ml ?",
+          "answer": "Non, même si les valeurs sont proches. 16 onces américaines font 473,18 ml, un peu moins de 27 ml de moins qu'un demi-litre."
+        },
+        {
+          "question": "Quelle est la différence entre l'once américaine et l'once britannique ?",
+          "answer": "L'once américaine fait 29,5735 ml et la britannique (impériale) 28,4131 ml, la britannique est donc environ 4 % plus petite. À une once l'écart est de 1,16 ml, mais à 16 onces il atteint déjà près de 19 ml. Dans le convertisseur, vous choisissez la bonne avec le sélecteur Type d'once."
+        },
+        {
+          "question": "Combien de ml font 12 onces ?",
+          "answer": "12 onces américaines font 354,88 ml. C'est pourquoi une canette américaine de 12 onces affiche 355 ml sur son étiquette européenne."
+        },
+        {
+          "question": "Combien de ml font 2, 4 et 6 onces ?",
+          "answer": "2 onces américaines font 59,15 ml, 4 onces 118,29 ml et 6 onces 177,44 ml. Vous obtenez chacune de ces valeurs en multipliant les onces par 29,5735."
+        },
+        {
+          "question": "Combien de ml font 3 onces ?",
+          "answer": "3 onces américaines font 88,72 ml. Cette valeur revient souvent en voyage, car la limite américaine de liquides en cabine est de 3,4 onces, soit 100 ml."
+        },
+        {
+          "question": "Combien de ml fait une pinte ?",
+          "answer": "Cela dépend de la pinte. Une pinte américaine fait 16 onces américaines, soit 473,18 ml. Une pinte britannique fait 20 onces impériales, soit 568,26 ml. La pinte britannique est donc presque 100 ml plus grande que l'américaine."
+        },
+        {
+          "question": "Une once liquide est-elle la même chose qu'une once de poids ?",
+          "answer": "Non. L'once liquide (fl oz) mesure un volume, alors qu'une once de poids fait 28,35 g. Cet outil ne traite que le volume. La confusion vient de ce que, pour l'eau, les deux valeurs sortent proches, car l'eau a une densité d'environ 1 g/ml, mais pour l'huile ou la farine cette coïncidence ne tient plus."
+        },
+        {
+          "question": "Combien de ml font 32 onces ?",
+          "answer": "32 onces américaines font 946,35 ml, un peu moins d'un litre. C'est la contenance d'un quart de gallon américain."
+        },
+        {
+          "question": "Quelle est la formule pour convertir des onces en millilitres ?",
+          "answer": "Pour l'once américaine : millilitres = onces × 29,5735. Pour la britannique : millilitres = onces × 28,4131. Dans l'autre sens, vous divisez par la même valeur."
+        },
+        {
+          "question": "Comment convertir des onces en millilitres de tête ?",
+          "answer": "Multipliez les onces par 30. Pour 8 onces, cela donne 240 ml, contre une valeur exacte de 236,59 ml, le résultat est donc un peu surévalué mais suffit pour se repérer. Pour des calculs précis, utilisez le convertisseur."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "title": "Vous avez une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageAlt": "Contact avec Arteon Agency",
+      "subject": "Convertisseur d'onces en ml"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    }
+  ]
+}

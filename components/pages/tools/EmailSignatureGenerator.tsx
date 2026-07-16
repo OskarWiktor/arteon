@@ -587,7 +587,7 @@ export default function EmailSignatureGenerator() {
                             type='button'
                             onClick={() => removeCustomColor(color)}
                             className={cn(
-                              'absolute -top-1.5 -right-1.5 hidden items-center justify-center rounded-lg bg-error-icon text-white group-hover:flex',
+                              'absolute -top-1.5 -right-1.5 hidden items-center justify-center bg-error-icon text-white group-hover:flex',
                               normalIconSizeClasses,
                             )}
                             aria-label='Usuń kolor'
@@ -774,12 +774,12 @@ export default function EmailSignatureGenerator() {
 
           <div
             className={cn(
-              'rounded-lg border border-neutral-200 p-4',
+              'border border-neutral-200 p-4',
               PREVIEW_BG_CLASSES[previewBg],
             )}
           >
             <div className='mx-auto max-w-full overflow-x-auto'>
-              <div className='inline-block rounded-lg border border-neutral-200 bg-white px-4 py-4 text-sm!'>
+              <div className='inline-block border border-neutral-200 bg-white px-4 py-4 text-sm!'>
                 <div dangerouslySetInnerHTML={{ __html: signatureHtml }} />
               </div>
             </div>
@@ -886,7 +886,7 @@ export default function EmailSignatureGenerator() {
                 role='dialog'
                 aria-modal='true'
                 tabIndex={-1}
-                className='relative w-full max-w-2xl overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5'
+                className='relative w-full max-w-2xl overflow-hidden bg-white p-6 shadow-lg ring-1 ring-black/5'
               >
                 <div className={cn('mb-4', flexCenterBetweenClasses)}>
                   <h3 className='h6'>{t.preview.viewSourceTitle}</h3>

@@ -386,7 +386,7 @@ export default function JpgPngToWebp() {
               ))}
             </div>
 
-            <div className='rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm!'>
+            <div className='border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm!'>
               <p className='tool-meta'>
                 {t.demoSummary} <strong>1.96 MB (~64% {t.less})</strong>
               </p>
@@ -418,7 +418,7 @@ export default function JpgPngToWebp() {
               return (
                 <div
                   key={item.id}
-                  className='flex flex-col gap-2 rounded-lg border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between'
+                  className='flex flex-col gap-2 border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between'
                 >
                   <div className='flex min-w-0 flex-1 items-center gap-3'>
                     <button

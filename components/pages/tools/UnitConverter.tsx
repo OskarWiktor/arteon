@@ -7,6 +7,7 @@ import { TriangleDown, TriangleUp } from '@/components/atoms/icons/Triangle';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import Card from '@/components/organisms/Card';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
+import { cn } from '@/lib/clsx';
 import { getToolHref } from '@/lib/i18n/toolRegistry';
 import { useDictionary, useLocale } from '@/lib/LocaleContext';
 import { getUnitLabel } from '@/lib/tools/unitLabels';
@@ -25,6 +26,7 @@ import {
   unixToDate,
   dateToUnix,
 } from '@/lib/tools/units/specialConverters';
+import { focusRingClasses } from '@/lib/uiClasses';
 import type { ToolItemKey } from '@/types/tools/common';
 import { copyTextToClipboard } from '@/utils/clipboard';
 
@@ -56,8 +58,15 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const [extraValue, setExtraValue] = useState<number>(
     config?.extraField?.defaultValue ?? 0,
   );
+  const [variantValue, setVariantValue] = useState(
+    config?.variantField?.defaultValue ?? '',
+  );
   const [isReversed, setIsReversed] = useState(false);
   const [copied, setCopied] = useState(false);
+
+  const activeVariant = config?.variantField?.options.find(
+    option => option.value === variantValue,
+  );
 
   const isSpecial = [
     'hexToRgb',
@@ -99,14 +108,19 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
       const num = parseLocaleNumber(input, locale);
       if (isNaN(num)) return '';
 
+      // The selected measurement system, when the tool offers one, decides the
+      // factor; otherwise the config-level functions stay in charge.
+      const forward = activeVariant?.convert ?? config.convert;
+      const backward = activeVariant?.reverseConvert ?? config.reverseConvert;
+
       const result = reverse
-        ? config.reverseConvert(num, extraValue ?? undefined)
-        : config.convert(num, extraValue ?? undefined);
+        ? backward(num, extraValue ?? undefined)
+        : forward(num, extraValue ?? undefined);
 
       if (isNaN(result) || !isFinite(result)) return '';
       return formatLocaleNumber(result, config.precision, locale);
     },
-    [config, extraValue, locale],
+    [config, activeVariant, extraValue, locale],
   );
 
   const doConvert = useCallback(
@@ -191,6 +205,49 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const tgtLabel = resolveLabel(tgtFieldConfig);
   const extraLabel = config.extraField ? resolveLabel(config.extraField) : '';
 
+  // The variant's unit belongs to one specific field, so its suffix and its
+  // selector have to follow that field when the pair is flipped in place.
+  const variantBelongsToShownSource =
+    config.variantField?.appliesTo === (isReversed ? 'target' : 'source');
+  const srcSuffix =
+    activeVariant && variantBelongsToShownSource
+      ? activeVariant.suffix
+      : srcFieldConfig.suffix;
+  const tgtSuffix =
+    activeVariant && !variantBelongsToShownSource
+      ? activeVariant.suffix
+      : tgtFieldConfig.suffix;
+
+  const variantSelector = config.variantField && (
+    <fieldset className='flex flex-col gap-2'>
+      <legend className='mb-2 text-sm font-medium text-primary'>
+        {resolveLabel(config.variantField)}
+      </legend>
+      <div className='flex flex-wrap gap-2'>
+        {config.variantField.options.map(option => {
+          const isActive = option.value === variantValue;
+          return (
+            <button
+              key={option.value}
+              type='button'
+              aria-pressed={isActive}
+              onClick={() => setVariantValue(option.value)}
+              className={cn(
+                'cursor-pointer border px-3 py-1.5 text-sm transition',
+                focusRingClasses,
+                isActive
+                  ? 'border-primary bg-primary text-white'
+                  : 'border-neutral-200 bg-white text-primary hover:border-primary',
+              )}
+            >
+              {getUnitLabel(option.labelKey, locale)}
+            </button>
+          );
+        })}
+      </div>
+    </fieldset>
+  );
+
   return (
     <div>
       <div className='grid gap-4 md:grid-cols-2'>
@@ -207,12 +264,14 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
                 t.enterValue.replace('{{label}}', srcLabel.toLowerCase())
               }
             />
-            {srcFieldConfig.suffix && (
+            {srcSuffix && (
               <span className='pointer-events-none absolute top-10 right-8 mt-1.5 font-mono text-sm text-primary-mid'>
-                {srcFieldConfig.suffix}
+                {srcSuffix}
               </span>
             )}
           </div>
+
+          {variantBelongsToShownSource && variantSelector}
 
           {config.extraField && (
             <div className='flex flex-row'>
@@ -263,12 +322,14 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               }
               readOnly={isSpecial}
             />
-            {tgtFieldConfig.suffix && (
+            {tgtSuffix && (
               <span className='pointer-events-none absolute top-10 right-8 mt-1.5 font-mono text-sm text-primary-mid'>
-                {tgtFieldConfig.suffix}
+                {tgtSuffix}
               </span>
             )}
           </div>
+
+          {!variantBelongsToShownSource && variantSelector}
 
           <div className='flex flex-wrap gap-3'>
             <Button

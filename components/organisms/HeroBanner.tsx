@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import type { ReactNode } from 'react';
-import { RiCheckLine } from 'react-icons/ri';
 import ArrowIcon from '../atoms/ArrowIcon';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 import InlineLink from '../atoms/InlineLink';
@@ -23,12 +22,6 @@ interface HeroBannerProps {
   size?: 'default' | 'compact';
   reputation?: boolean;
 }
-
-const TRUST_POINTS = [
-  'Brak zaliczek',
-  'Indywidualny projekt',
-  'Pełna własność',
-];
 
 export default function HeroBanner({
   title,
@@ -146,17 +139,6 @@ export default function HeroBanner({
             {reputation && (
               <div className='mt-6 flex flex-col items-start gap-3'>
                 <RatingBadge />
-                <ul className='mt-2 flex flex-wrap gap-x-5 gap-y-2'>
-                  {TRUST_POINTS.map(point => (
-                    <li
-                      key={point}
-                      className='inline-flex items-center gap-1.5 text-sm text-primary!'
-                    >
-                      <RiCheckLine className='h-4 w-4 shrink-0 text-mid' />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
               </div>
             )}
           </div>
