@@ -72,7 +72,7 @@
         },
         {
           "name": "Swap direction if needed",
-          "text": "Click Swap to switch the converter to inches-to-centimeters mode."
+          "text": "Click Swap order to switch the converter to inches-to-centimeters mode."
         }
       ]
     }

@@ -96,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "Jak działa konwersja funtów na kilogramy? Wzór i przykład",
-      "html": "<p class=\"text-mid mb-4\">Przeliczenie funtów na kilogramy opiera się na stałej definicji: jeden funt to dokładnie 0,45359237 kg. Żeby przeliczyć funty na kilogramy, wystarczy pomnożyć liczbę funtów przez 0,45359237.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>kilogramy = funty × 0,4536</strong>. W drugą stronę: <strong>funty = kilogramy × 2,2046</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz wiedzieć, ile kilogramów to 150 lb (waga podana w amerykańskiej aplikacji). Obliczenie: 150 × 0,4536 = 68,04 kg. Inny przykład: limit bagażu 50 lb to 50 × 0,4536 = 22,68 kg.</p><p class=\"text-mid\">Szybkie przybliżenie bez kalkulatora: funty podziel przez 2,2. Na przykład 150 lb ÷ 2,2 ≈ 68,2 kg — błąd wynosi mniej niż 0,2%. Inny sposób: funty pomnóż przez 0,45, co daje dokładność do 0,1%.</p>"
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie funtów na kilogramy opiera się na stałej definicji: jeden funt to dokładnie 0,45359237 kg. Żeby przeliczyć funty na kilogramy, wystarczy pomnożyć liczbę funtów przez 0,45359237.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>kilogramy = funty × 0,4536</strong>. W drugą stronę: <strong>funty = kilogramy × 2,2046</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz wiedzieć, ile kilogramów to 150 lb (waga podana w amerykańskiej aplikacji). Obliczenie: 150 × 0,4536 = 68,04 kg. Inny przykład: limit bagażu 50 lb to 50 × 0,4536 = 22,68 kg.</p><p class=\"text-mid\">Szybkie przybliżenie bez kalkulatora: funty podziel przez 2,2. Na przykład 150 lb ÷ 2,2 ≈ 68,2 kg — błąd wynosi mniej niż 0,2%. Inny sposób: funty pomnóż przez 0,45 — jest prościej, choć wynik będzie zaniżony o około 0,8%.</p>"
     },
     {
       "type": "gap",
@@ -273,7 +273,7 @@
         },
         {
           "question": "Jak przeliczyć funty na kilogramy bez kalkulatora?",
-          "answer": "Szybka metoda: podziel funty przez 2,2. Na przykład 150 lb ÷ 2,2 ≈ 68,2 kg (dokładna wartość: 68,04 kg). Błąd wynosi mniej niż 0,3%. Inna metoda: pomnóż przez 0,45, co daje błąd mniej niż 0,1%."
+          "answer": "Szybka metoda: podziel funty przez 2,2. Na przykład 150 lb ÷ 2,2 ≈ 68,2 kg (dokładna wartość: 68,04 kg). Błąd wynosi mniej niż 0,3%. Inna metoda: pomnóż przez 0,45 — prościej, ale z błędem około 0,8%."
         },
         {
           "question": "Ile kg to 135 lb (sztanga na ławce)?",

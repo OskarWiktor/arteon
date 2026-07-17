@@ -108,30 +108,110 @@
       "labelHeader": "Libbre (lb)",
       "cols": ["Chilogrammi (kg)"],
       "rows": [
-        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
-        { "label": "5 lb", "values": ["2,27 kg"] },
-        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
-        { "label": "20 lb", "values": ["9,07 kg"] },
-        { "label": "30 lb", "values": ["13,61 kg"] },
-        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
-        { "label": "70 lb", "values": ["31,75 kg"] },
-        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
-        { "label": "115 lb", "values": ["52,16 kg"] },
-        { "label": "120 lb", "values": ["54,43 kg"] },
-        { "label": "125 lb", "values": ["56,70 kg"] },
-        { "label": "130 lb", "values": ["58,97 kg"] },
-        { "label": "135 lb", "values": ["61,24 kg"] },
-        { "label": "140 lb", "values": ["63,50 kg"], "emphasis": true },
-        { "label": "145 lb", "values": ["65,77 kg"] },
-        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
-        { "label": "160 lb", "values": ["72,57 kg"] },
-        { "label": "165 lb", "values": ["74,84 kg"] },
-        { "label": "170 lb", "values": ["77,11 kg"] },
-        { "label": "180 lb", "values": ["81,65 kg"], "emphasis": true },
-        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
-        { "label": "220 lb", "values": ["99,79 kg"] },
-        { "label": "250 lb", "values": ["113,40 kg"] },
-        { "label": "300 lb", "values": ["136,08 kg"] }
+        {
+          "label": "1 lb",
+          "values": ["0,45 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "5 lb",
+          "values": ["2,27 kg"]
+        },
+        {
+          "label": "10 lb",
+          "values": ["4,54 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "20 lb",
+          "values": ["9,07 kg"]
+        },
+        {
+          "label": "30 lb",
+          "values": ["13,61 kg"]
+        },
+        {
+          "label": "50 lb",
+          "values": ["22,68 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "70 lb",
+          "values": ["31,75 kg"]
+        },
+        {
+          "label": "100 lb",
+          "values": ["45,36 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "115 lb",
+          "values": ["52,16 kg"]
+        },
+        {
+          "label": "120 lb",
+          "values": ["54,43 kg"]
+        },
+        {
+          "label": "125 lb",
+          "values": ["56,70 kg"]
+        },
+        {
+          "label": "130 lb",
+          "values": ["58,97 kg"]
+        },
+        {
+          "label": "135 lb",
+          "values": ["61,24 kg"]
+        },
+        {
+          "label": "140 lb",
+          "values": ["63,50 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "145 lb",
+          "values": ["65,77 kg"]
+        },
+        {
+          "label": "150 lb",
+          "values": ["68,04 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "160 lb",
+          "values": ["72,57 kg"]
+        },
+        {
+          "label": "165 lb",
+          "values": ["74,84 kg"]
+        },
+        {
+          "label": "170 lb",
+          "values": ["77,11 kg"]
+        },
+        {
+          "label": "180 lb",
+          "values": ["81,65 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "200 lb",
+          "values": ["90,72 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "220 lb",
+          "values": ["99,79 kg"]
+        },
+        {
+          "label": "250 lb",
+          "values": ["113,40 kg"]
+        },
+        {
+          "label": "300 lb",
+          "values": ["136,08 kg"]
+        }
       ],
       "caption": "Vuoi convertire nel senso inverso? Usa il nostro <a href=\"/it/strumenti/convertitore-kg-in-libbre\">convertitore da kg a libbre</a>, con tabella e contenuto dettagliato."
     },
@@ -146,20 +226,69 @@
       "labelHeader": "Peso corporeo (lb)",
       "cols": ["Chilogrammi (kg)"],
       "rows": [
-        { "label": "88 lb", "values": ["39,92 kg"] },
-        { "label": "99 lb", "values": ["44,91 kg"] },
-        { "label": "110 lb", "values": ["49,90 kg"], "emphasis": true },
-        { "label": "121 lb", "values": ["54,88 kg"] },
-        { "label": "132 lb", "values": ["59,87 kg"] },
-        { "label": "143 lb", "values": ["64,86 kg"] },
-        { "label": "154 lb", "values": ["69,85 kg"], "emphasis": true },
-        { "label": "165 lb", "values": ["74,84 kg"], "emphasis": true },
-        { "label": "176 lb", "values": ["79,83 kg"], "emphasis": true },
-        { "label": "187 lb", "values": ["84,82 kg"], "emphasis": true },
-        { "label": "198 lb", "values": ["89,81 kg"], "emphasis": true },
-        { "label": "220 lb", "values": ["99,79 kg"], "emphasis": true },
-        { "label": "242 lb", "values": ["109,77 kg"] },
-        { "label": "265 lb", "values": ["120,20 kg"] }
+        {
+          "label": "88 lb",
+          "values": ["39,92 kg"]
+        },
+        {
+          "label": "99 lb",
+          "values": ["44,91 kg"]
+        },
+        {
+          "label": "110 lb",
+          "values": ["49,90 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "121 lb",
+          "values": ["54,88 kg"]
+        },
+        {
+          "label": "132 lb",
+          "values": ["59,87 kg"]
+        },
+        {
+          "label": "143 lb",
+          "values": ["64,86 kg"]
+        },
+        {
+          "label": "154 lb",
+          "values": ["69,85 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "165 lb",
+          "values": ["74,84 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "176 lb",
+          "values": ["79,83 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "187 lb",
+          "values": ["84,82 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "198 lb",
+          "values": ["89,81 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "220 lb",
+          "values": ["99,79 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "242 lb",
+          "values": ["109,77 kg"]
+        },
+        {
+          "label": "265 lb",
+          "values": ["120,20 kg"]
+        }
       ]
     },
     {
@@ -173,26 +302,71 @@
       "labelHeader": "Peso (lb)",
       "cols": ["Chilogrammi (kg)"],
       "rows": [
-        { "label": "5 lb", "values": ["2,27 kg"] },
-        { "label": "10 lb", "values": ["4,54 kg"] },
-        { "label": "25 lb", "values": ["11,34 kg"] },
-        { "label": "35 lb", "values": ["15,88 kg"] },
+        {
+          "label": "5 lb",
+          "values": ["2,27 kg"]
+        },
+        {
+          "label": "10 lb",
+          "values": ["4,54 kg"]
+        },
+        {
+          "label": "25 lb",
+          "values": ["11,34 kg"]
+        },
+        {
+          "label": "35 lb",
+          "values": ["15,88 kg"]
+        },
         {
           "label": "45 lb (bilanciere olimpico)",
           "values": ["20,41 kg"],
           "emphasis": true
         },
-        { "label": "95 lb", "values": ["43,09 kg"] },
+        {
+          "label": "95 lb",
+          "values": ["43,09 kg"]
+        },
         {
           "label": "135 lb (panca di riferimento)",
           "values": ["61,23 kg"],
           "emphasis": true
         },
-        { "label": "185 lb", "values": ["83,91 kg"] },
+        {
+          "label": "185 lb",
+          "values": ["83,91 kg"]
+        },
         {
           "label": "225 lb (panca livello avanzato)",
           "values": ["102,06 kg"],
           "emphasis": true
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono le libbre in chilogrammi?",
+      "description": "La conversione da libbre a kg ricorre in alcune situazioni tipiche della vita quotidiana.",
+      "items": [
+        {
+          "title": "Peso corporeo e BMI dalle app anglosassoni",
+          "description": "Le app di allenamento USA, i calcolatori di BMI dei siti medici anglosassoni e i portali dietetici indicano il peso in libbre. Se l'obiettivo di peso è 154 lb, scrivi 154 nel convertitore per vedere che sono 69,85 kg. La tabella del peso corporeo qui sopra contiene conversioni pronte per gli intervalli tipici."
+        },
+        {
+          "title": "Allenamento di forza e programmi da YouTube",
+          "description": "I programmi di allenamento popolari dagli USA — Starting Strength, 5/3/1, StrongLifts — indicano i carichi esclusivamente in libbre. 135 lb sono circa 61 kg e «benching 225», cioè la panca da 225 lb e obiettivo di allenamento di molti, sono circa 102 kg. La tabella dei pesi da palestra più comuni è qui sopra."
+        },
+        {
+          "title": "Limite bagagli e spedizioni",
+          "description": "I limiti di peso dei bagagli di molte compagnie aeree (soprattutto americane) si indicano in libbre. 50 lb sono 22,68 kg — il limite standard della valigia da stiva. Ordinando da Amazon US conviene sapere quanto pesa un prodotto descritto in libbre, per stimare il costo della spedizione."
+        },
+        {
+          "title": "Peso del neonato e documentazione medica",
+          "description": "La documentazione medica di USA e Regno Unito indica il peso del neonato in libbre e once. Un neonato sano pesa circa 7-8 lb (3,2-3,6 kg). Una libbra sono 16 once, quindi 7 lb 11 oz sono 7 + 11/16 = 7,6875 lb × 0,4536 = 3,49 kg. Il convertitore lavora con valori decimali, quindi scrivi 7,69 lb per ottenere il risultato approssimato in kg."
         }
       ]
     },
@@ -229,10 +403,6 @@
           "answer": "La formula è: kg = libbre × 0,45359237. Per calcoli rapidi si usa 0,4536. Al contrario: libbre = kg × 2,2046."
         },
         {
-          "question": "Quante libbre sono 70 kg?",
-          "answer": "70 kg sono 154,32 lb. La conversione in questo senso (kg in libbre) si fa moltiplicando per 2,2046: 70 × 2,2046 = 154,32 lb."
-        },
-        {
           "question": "Quanti kg sono 50 libbre?",
           "answer": "50 lb sono 22,68 kg. È anche il limite bagaglio in stiva più comune nelle compagnie aeree americane in classe economica."
         },
@@ -241,12 +411,28 @@
           "answer": "Stima rapida: dividi le libbre per 2,2. Per esempio: 154 lb ÷ 2,2 = 70 kg. Il valore esatto è 69,85 kg — errore di appena lo 0,2 %."
         },
         {
+          "question": "Quanti kg sono 135 libbre (panca piana)?",
+          "answer": "135 libbre sono 61,24 kg. Nella cultura anglosassone della palestra, «135 on the bench» è una soglia di allenamento popolare: il bilanciere da 45 libbre più due dischi da 45 libbre danno esattamente 135 libbre. L'equivalente metrico più vicino — bilanciere da 20 kg più due dischi da 20 kg — sono 60 kg, cioè 132,3 libbre, un po' meno."
+        },
+        {
+          "question": "Quanti kg sono 225 libbre (la panca leggendaria)?",
+          "answer": "225 libbre sono 102,06 kg. Nella cultura anglosassone della palestra, «225 on the bench» simboleggia la maturità di forza ed è un obiettivo di allenamento popolare: il bilanciere da 45 libbre più quattro dischi da 45 (due per lato) danno esattamente 225 libbre. In chilogrammi sono poco più di 102 kg."
+        },
+        {
+          "question": "La libbra è la stessa cosa dell’oncia?",
+          "answer": "No: la libbra (lb) e l’oncia (oz) sono due unità diverse. 1 libbra = 16 once. Un’oncia sono circa 28,35 g e una libbra circa 453,6 g (0,4536 kg). Il peso dei neonati si indica spesso in libbre e once, per esempio «7 lb 11 oz»."
+        },
+        {
           "question": "Quanti kg sono 130 libbre?",
           "answer": "130 lb sono 58,97 kg — cioè quasi esattamente 59 kg. Calcolo: 130 × 0,4536 = 58,97 kg."
         },
         {
           "question": "Quanti kg sono 180 libbre?",
           "answer": "180 lb sono 81,65 kg. È un peso frequente per uomini di corporatura media o leggermente atletica in Italia."
+        },
+        {
+          "question": "Quante libbre è il limite bagaglio di 23 kg?",
+          "answer": "23 kg sono 23 × 2,2046 = 50,71 libbre, cioè circa 50 libbre. Per questo le compagnie aeree europee indicano spesso il limite come 23 kg e quelle americane come 50 libbre: è quasi lo stesso. La differenza è di 0,71 libbre, circa 320 grammi."
         },
         {
           "question": "Quanti kg sono 60 libbre?",

@@ -584,7 +584,7 @@
         },
         {
           "question": "Jak szybko przeliczać kg na funty bez kalkulatora?",
-          "answer": "Szybkie przybliżenie: kilogramy pomnóż przez 2 i dodaj 10% wyniku. Na przykład 80 kg × 2 = 160, plus 10% z 160 = 16, razem 176 lb. Dokładna wartość to 176,37 lb, błąd wynosi tylko 0,2%. Inny sposób: kilogramy pomnóż przez 2,2 (wychodzi 1 lb = 0,4545 kg, błąd mniej niż 0,04%)."
+          "answer": "Szybkie przybliżenie: kilogramy pomnóż przez 2 i dodaj 10% wyniku. Na przykład 80 kg × 2 = 160, plus 10% z 160 = 16, razem 176 lb. Dokładna wartość to 176,37 lb, błąd wynosi tylko 0,2%."
         },
         {
           "question": "Co to jest stone i jak przeliczać kg na stone?",

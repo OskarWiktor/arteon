@@ -338,6 +338,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Quando si convertono i chilogrammi in libbre?",
+      "description": "La conversione da kg a lb ricorre in alcune situazioni concrete.",
+      "items": [
+        {
+          "title": "Peso corporeo e dieta",
+          "description": "Le app di allenamento, i fitness tracker e i portali medici di USA e Regno Unito indicano il peso in libbre o stone. Se un personal trainer americano fissa il tuo obiettivo a 180 lb, sono 180 × 0,4536 = 81,65 kg. Al contrario, 80 kg × 2,2046 = 176,37 lb. La tabella del peso corporeo qui sopra contiene conversioni pronte per valori da 40 a 120 kg."
+        },
+        {
+          "title": "Allenamento e palestra",
+          "description": "I video e i programmi di allenamento dagli USA indicano i carichi esclusivamente in libbre. Il bilanciere olimpico pesa 20 kg — gli americani lo chiamano bilanciere da 45 libbre, anche se sono esattamente 44,09 lb. I manubri tipici da 25 lb sono poco più di 11 kg. Nelle gare di powerlifting negli USA anche i record si registrano in libbre — le conversioni pronte sono nella tabella dei pesi da palestra qui sopra."
+        },
+        {
+          "title": "Peso del neonato",
+          "description": "Nei paesi anglosassoni il peso del neonato si indica in libbre e once. Un neonato sano di 3,5 kg sono circa 7 lb 11 oz (7,716 lb). La conversione: 3,5 × 2,2046 = 7,72 lb; la parte decimale 0,72 lb × 16 once = 11,5 oz. Il convertitore dà il risultato in libbre decimali — il passaggio alle once è un'ulteriore moltiplicazione del resto per 16."
+        },
+        {
+          "title": "Bagagli e spedizioni",
+          "description": "Molte compagnie aeree, soprattutto americane, indicano i limiti di peso dei bagagli in libbre. Il limite standard di 50 lb sono 22,68 kg e 70 lb sono 31,75 kg. I corrieri USA tariffano per libbra — ordinando attrezzatura da Amazon US conviene sapere quanti kg sono 30 lb (13,61 kg) o 50 lb (22,68 kg)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da kg a libbre",
       "items": [
@@ -366,6 +393,10 @@
           "answer": "32 kg sono 70,55 lb. È il valore che i viaggiatori controllano più spesso: 32 kg è il peso massimo consentito per una singola valigia da stiva nella maggior parte delle compagnie aeree (oltre questo peso il bagaglio viene rifiutato per la sicurezza del personale di terra). Le compagnie americane indicano lo stesso limite come 70 lb, cioè 31,75 kg."
         },
         {
+          "question": "Quante libbre sono 50 kg?",
+          "answer": "50 kg sono 110,23 lb. Approssimazione utile: 50 kg sono poco più di 110 libbre. Nel sistema britannico: 7 stone e 12,2 lb."
+        },
+        {
           "question": "Quante libbre sono 65 kg?",
           "answer": "65 kg sono 143,30 lb, equivalenti a 10 stone 3,3 lb nel sistema britannico. Calcolo: 65 × 2,2046 = 143,30."
         },
@@ -392,6 +423,10 @@
         {
           "question": "Quante libbre sono 23 kg (limite bagaglio)?",
           "answer": "23 kg sono 50,71 lb. È il limite di bagaglio da stiva più diffuso nelle compagnie aeree europee come ITA Airways. Le compagnie americane indicano lo stesso limite come 50 lb, cioè 22,68 kg: la differenza è di soli 320 grammi circa, quindi in pratica i due limiti sono equivalenti."
+        },
+        {
+          "question": "Perché gli USA usano le libbre invece dei chilogrammi?",
+          "answer": "Gli Stati Uniti usano il sistema di misure anglosassone (imperial/customary), eredità delle colonie britanniche. La libbra ha più di mille anni di storia e si è radicata profondamente nella cultura e nella vita quotidiana degli americani. Il Regno Unito è passato al sistema metrico negli anni Sessanta e Settanta, ma la libbra è rimasta di uso comune informale, soprattutto per il peso corporeo. Gli USA sono uno dei tre paesi (insieme a Liberia e Myanmar) a non aver adottato ufficialmente il sistema metrico."
         },
         {
           "question": "Quante libbre sono 10, 20 e 25 kg?",

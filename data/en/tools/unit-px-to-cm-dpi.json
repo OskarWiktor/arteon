@@ -72,7 +72,7 @@
         },
         {
           "name": "Read the result or reverse the direction",
-          "text": "The result in centimeters appears right next to your input. You can copy it or press the Swap button to convert centimeters back into pixels."
+          "text": "The result in centimeters appears right next to your input. You can copy it or press the Swap order button to convert centimeters back into pixels."
         }
       ]
     }

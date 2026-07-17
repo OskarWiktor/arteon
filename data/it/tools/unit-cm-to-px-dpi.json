@@ -73,7 +73,7 @@
         },
         {
           "name": "Leggi il risultato o inverti la direzione",
-          "text": "Il risultato in pixel appare subito nel campo accanto. Puoi copiarlo oppure premere il pulsante Cambia ordine per convertire i pixel in centimetri."
+          "text": "Il risultato in pixel appare subito nel campo accanto. Puoi copiarlo oppure premere il pulsante Inverti ordine per convertire i pixel in centimetri."
         }
       ]
     }

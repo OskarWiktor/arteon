@@ -761,6 +761,10 @@
         {
           "question": "Qual é o tamanho exato de um cartão de pagamento em milímetros?",
           "answer": "O padrão ISO ID-1, que se aplica a cartões de pagamento, cartões SIM e cartões de cidadão, mede exatamente 85,60 × 53,98 mm. Um ficheiro de 1.011 × 638 px corresponde exatamente a essa medida a 300 DPI, um valor mais preciso do que o arredondamento comum de 85 × 55 mm por vezes usado em cartões de visita europeus."
+        },
+        {
+          "question": "Quantos milímetros tem um píxel num ecrã Retina?",
+          "answer": "Os ecrãs Retina da Apple têm o dobro da densidade de píxeis de um monitor clássico, mas o sistema operativo continua a interpretar as dimensões como se o painel tivesse 96 DPI. Na prática, um píxel físico ocupa cerca de 0,132 mm em vez de 0,265 mm, mas nos painéis de design do Photoshop, do Figma ou do Canva os valores permanecem idênticos: prepara o gráfico com o dobro da resolução e exporta-o com o sufixo @2x."
         }
       ]
     },

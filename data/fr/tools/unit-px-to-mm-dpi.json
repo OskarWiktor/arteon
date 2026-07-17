@@ -761,6 +761,10 @@
         {
           "question": "Quelle est la taille exacte d'une carte bancaire en millimètres ?",
           "answer": "La norme ISO ID-1, qui s'applique aux cartes bancaires, cartes SIM et cartes d'identité, mesure exactement 85,60 × 53,98 mm. Un fichier de 1 011 × 638 px correspond exactement à cette taille à 300 DPI, une valeur plus précise que l'arrondi courant de 85 × 55 mm parfois utilisé pour les cartes de visite européennes."
+        },
+        {
+          "question": "Combien de millimètres fait un pixel sur un écran Retina ?",
+          "answer": "Les écrans Retina d'Apple ont une densité de pixels deux fois plus élevée qu'un moniteur classique, mais le système d'exploitation interprète toujours les dimensions comme si la dalle affichait 96 DPI. En pratique, un pixel physique occupe environ 0,132 mm au lieu de 0,265 mm, mais dans les panneaux de conception de Photoshop, Figma ou Canva, les valeurs restent identiques : vous préparez le visuel en double résolution et l'exportez avec le suffixe @2x."
         }
       ]
     },

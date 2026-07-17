@@ -97,7 +97,7 @@
     {
       "type": "sectionInfo",
       "title": "Come funziona la conversione mm in px? Formula ed esempio",
-      "html": "<p class=\"text-mid mb-4\">Tutta la conversione si riduce a un'unica formula, basata sulla relazione fissa tra pollice e millimetro: un pollice equivale esattamente a 25,4 mm. Basta quindi moltiplicare il numero di millimetri per la risoluzione DPI scelta e dividere per 25,4.</p><p class=\"text-mid mb-4\">La formula completa è: <strong>numero di pixel = numero di millimetri × DPI ÷ 25,4</strong>. Il convertitore esegue questo calcolo istantaneamente, quindi non dovrai mai calcolare a mano né cercare una calcolatrice.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti pixel ha un biglietto da visita largo 90 mm a una risoluzione di stampa di 300 DPI. Sostituendo i valori nella formula ottieni 90 × 300 ÷ 25,4, che dà esattamente 1.063 pixel. Lo stesso biglietto visualizzato su uno schermo a 96 DPI occuperebbe solo 340 pixel, perché in un pollice entrano meno punti.</p><p class=\"text-mid\">Nell'altro senso funziona allo stesso modo: numero di millimetri = numero di pixel × 25,4 ÷ DPI. Così puoi verificare quanto sarebbe fisicamente grande un file largo, ad esempio, 1.181 pixel, o se un'immagine trovata online è sufficiente per un determinato formato di stampa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Tutta la conversione si riduce a un'unica formula, basata sulla relazione fissa tra pollice e millimetro: un pollice equivale esattamente a 25,4 mm. Basta quindi moltiplicare il numero di millimetri per la risoluzione DPI scelta e dividere per 25,4.</p><p class=\"text-mid mb-4\">La formula completa è: <strong>numero di pixel = numero di millimetri × DPI ÷ 25,4</strong>. Il convertitore esegue questo calcolo istantaneamente, quindi non dovrai mai calcolare a mano né cercare una calcolatrice.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti pixel ha un biglietto da visita largo 90 mm a una risoluzione di stampa di 300 DPI. Sostituendo i valori nella formula ottieni 90 × 300 ÷ 25,4, che dà esattamente 1.063 pixel. Lo stesso biglietto visualizzato su uno schermo a 96 DPI occuperebbe solo 340 pixel, perché in un pollice entrano meno punti.</p><p class=\"text-mid\">Nell'altro senso funziona allo stesso modo: numero di millimetri = numero di pixel × 25,4 ÷ DPI. Così puoi verificare quanto sarebbe fisicamente grande un file largo, ad esempio, 1.181 pixel, o se un'immagine trovata su internet è sufficiente per un determinato formato di stampa.</p>"
     },
     {
       "type": "gap",
@@ -593,7 +593,7 @@
         },
         {
           "question": "Quale DPI usare per stampare volantini e biglietti da visita?",
-          "answer": "300 DPI è lo standard sia per la stampa offset che digitale: è il valore richiesto dalla maggior parte delle tipografie online. Per i grandi formati come manifesti A1 o A0, spesso bastano 150 DPI, poiché vengono osservati da maggiore distanza. Striscioni di grande formato e cartelloni pubblicitari vengono talvolta stampati anche a soli 30–72 DPI."
+          "answer": "300 DPI è lo standard sia per la stampa offset che digitale: è il valore richiesto dalla maggior parte delle tipografie. Per i grandi formati come manifesti A1 o A0, spesso bastano 150 DPI, poiché vengono osservati da maggiore distanza. Striscioni di grande formato e cartelloni pubblicitari vengono talvolta stampati anche a soli 30–72 DPI."
         },
         {
           "question": "Come imposto mm in px in Illustrator o InDesign?",
@@ -602,6 +602,10 @@
         {
           "question": "Qual è la differenza tra DPI e PPI?",
           "answer": "Il DPI (dots per inch) è il numero di punti di inchiostro per pollice di materiale ed è una caratteristica della stampante. Il PPI (pixels per inch) è il numero di pixel per pollice di schermo e descrive un monitor o un display. Nell'uso quotidiano, i grafici usano spesso i due termini come sinonimi, ma tecnicamente il DPI riguarda la stampa e il PPI gli schermi."
+        },
+        {
+          "question": "Come convertire i millimetri in pixel in CSS o SVG?",
+          "answer": "Nei fogli di stile CSS l'unità mm si converte con una formula fissa: 1mm = 96px ÷ 25,4 ≈ 3,78px, indipendentemente dal dispositivo. La stessa costante vale nei file SVG, dove le dimensioni possono scriversi direttamente in millimetri. In pratica, per le interfacce web si usano le unità px, rem o em, mentre il mm si riserva ai fogli di stile per la stampa (@media print)."
         },
         {
           "question": "Qual è la dimensione esatta di una carta di pagamento in pixel?",

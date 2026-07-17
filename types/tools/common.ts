@@ -101,6 +101,8 @@ export type ToolItemKey =
   | 'feetToMeters'
   | 'inchesToFeet'
   | 'feetToInches'
+  | 'lbsToOz'
+  | 'ozToLbs'
   | 'mlToOz'
   | 'ozToMl'
   | 'kgToLb'

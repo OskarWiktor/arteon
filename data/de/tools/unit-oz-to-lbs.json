@@ -1,0 +1,233 @@
+{
+  "toolKey": "ozToLbs",
+  "locale": "de",
+  "metadata": {
+    "title": "Unzen in Pfund umrechnen – oz in lb Umrechner",
+    "description": "Rechnen Sie Unzen in Pfund um. Fertige Tabellen weiter unten zeigen das Ergebnis als Pfund und Unzen (40 Unzen sind 2 Pfund 8 Unzen) sowie das Säuglingsgewicht. Der Umrechner arbeitet in beide Richtungen und rechnet sofort.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/unzen-in-pfund-umrechner"
+  },
+  "hero": {
+    "title": "Unzen in Pfund umrechnen",
+    "description": "Geben Sie einen Wert in Unzen ein und lesen Sie das Ergebnis in Pfund sofort ab. Pfund und Unze sind Masseeinheiten vor allem in den USA und Großbritannien, daher rechnen wir sie meist beim Säuglingsgewicht, beim Produktgewicht und bei Sendungen um. Der Umrechner gibt das Ergebnis in Dezimalpfund an, eine eigene Tabelle unten zeigt es als Pfund und Unzen. Gemeint ist das anglo-amerikanische Pfund (16 Unzen, rund 454 g), nicht das deutsche Pfund von 500 g.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/unzen-in-pfund-umrechner",
+      "label": "Unzen in Pfund"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Unzen in Pfund umrechnen – oz in lb Umrechner",
+      "alternateName": [
+        "Unzen in Pfund Umrechner",
+        "Unzen in Pfund Rechner",
+        "oz in lb umrechnen",
+        "Unzen in Pfund",
+        "oz in lbs",
+        "Unzen zu Pfund",
+        "Wie viele Pfund sind 16 Unzen",
+        "40 Unzen in Pfund",
+        "32 Unzen in Pfund",
+        "Unzen in Pfund und Unzen",
+        "Unzen in Pfund Tabelle",
+        "Wie viele Pfund hat eine Unze",
+        "oz to lbs",
+        "Masse-Umrechner"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Umrechner von Unzen in Pfund, der ohne Anmeldung im Browser läuft. Geben Sie einen Wert in Unzen ein und lesen Sie das Ergebnis in Pfund sofort ab. Praktisch beim Säuglingsgewicht, beim Produktgewicht und bei Sendungen aus den USA.",
+      "featureList": [
+        "Die Umrechnung funktioniert in beide Richtungen, Sie rechnen also Unzen in Pfund und Pfund in Unzen um",
+        "Das Ergebnis erscheint sofort beim Tippen, ohne dass Sie eine Schaltfläche anklicken müssen",
+        "Mit der Schaltfläche Ergebnis kopieren legen Sie den fertigen Wert in die Zwischenablage",
+        "Die Umrechnungstabelle reicht von 8 bis 96 Unzen",
+        "Eine eigene Tabelle zeigt das Ergebnis als Pfund und Unzen, zum Beispiel sind 40 Unzen 2 Pfund 8 Unzen",
+        "Alle Berechnungen laufen lokal im Browser, Ihre Daten verlassen das Gerät nicht",
+        "Die genaue Formel lautet: Pfund = Unzen ÷ 16",
+        "Das Werkzeug funktioniert ohne Installation auf Handy, Tablet und Computer"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Unzen in Pfund um?",
+      "description": "Eine kurze Anleitung zur Nutzung des Umrechners von Unzen in Pfund.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert in Unzen eingeben",
+          "text": "Geben Sie im linken Feld die Zahl der Unzen ein, die Sie in Pfund umrechnen möchten."
+        },
+        {
+          "name": "Ergebnis in Pfund ablesen",
+          "text": "Das Ergebnis in Pfund erscheint sofort im Feld rechts daneben. Mit der Schaltfläche Ergebnis kopieren legen Sie es in die Zwischenablage."
+        },
+        {
+          "name": "Bei Bedarf die Richtung tauschen",
+          "text": "Klicken Sie auf Reihenfolge tauschen, um zur Umrechnung von Pfund in Unzen zu wechseln."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Wozu Unzen in Pfund umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Unze und Pfund sind Masseeinheiten, die vor allem in den USA und Großbritannien verwendet werden. Im deutschsprachigen Raum wiegen wir in Kilogramm und Gramm, deshalb rechnen wir Unzen in Pfund meist bei amerikanischen Angaben um: wenn das Produktgewicht in Unzen angegeben ist, wenn Sie das Säuglingsgewicht als Pfund und Unzen notieren möchten oder wenn Sie das Gewicht mehrerer in Unzen angegebener Portionen summieren.</p><p class=\"text-mid mb-4\">Der Zusammenhang ist einfach und exakt: Ein Pfund sind genau 16 Unzen. Um Unzen in Pfund umzurechnen, teilen Sie die Zahl der Unzen durch 16. Der Umrechner erledigt das für Sie, sobald Sie einen Wert eingeben. Gemeint ist das anglo-amerikanische Pfund (rund 454 g), nicht das deutsche Pfund von 500 g.</p><p class=\"text-mid mb-4\">Beim Gewicht gibt es einen Haken. Der Umrechner gibt das Ergebnis in Dezimalpfund an, 40 Unzen zeigt er also als 2,5 Pfund. Das bedeutet nicht „2 Pfund und 5 Unzen“, denn 2,5 Pfund sind 2 Pfund und 8 Unzen (0,5 Pfund sind 8 Unzen). Deshalb finden Sie unten eine eigene Tabelle, die das Ergebnis als Pfund und Unzen zeigt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kostenloser Umrechner von Unzen in Pfund – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung von Unzen in Pfund? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Unzen in Pfund beruht auf einem festen Zusammenhang: Ein Pfund sind genau 16 Unzen. Um Unzen in Pfund umzurechnen, teilen Sie die Zahl der Unzen durch 16.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Pfund = Unzen ÷ 16</strong>. Umgekehrt: <strong>Unzen = Pfund × 16</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Pfund 32 Unzen sind. Sie setzen ein: 32 ÷ 16 = 2 Pfund. Das ist eine der Umrechnungen, die glatt aufgeht, weil sich 32 ohne Rest durch 16 teilen lässt.</p><p class=\"text-mid\">Ein weiteres Beispiel: 40 Unzen sind 40 ÷ 16 = 2,5 Pfund. Diese Zahl ist in Dezimalpfund. Um das Ergebnis als Pfund und Unzen zu erhalten, teilen Sie die Unzen mit Rest durch 16: 40 ÷ 16 sind 2 Rest 8, also 2 Pfund 8 Unzen. Fertige Werte finden Sie in der Tabelle unten.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle Unzen in Pfund",
+      "description": "Die folgende Tabelle rechnet gängige Unzenwerte in Dezimalpfund um. Um ein anderes Gewicht umzurechnen, nutzen Sie den Umrechner oben.",
+      "labelHeader": "Unzen",
+      "cols": ["Pfund"],
+      "rows": [
+        { "label": "8 oz", "values": ["0,5 lb"], "emphasis": true },
+        { "label": "12 oz", "values": ["0,75 lb"] },
+        { "label": "16 oz", "values": ["1 lb"], "emphasis": true },
+        { "label": "20 oz", "values": ["1,25 lb"] },
+        { "label": "24 oz", "values": ["1,5 lb"] },
+        { "label": "28 oz", "values": ["1,75 lb"] },
+        { "label": "32 oz", "values": ["2 lb"], "emphasis": true },
+        { "label": "36 oz", "values": ["2,25 lb"] },
+        { "label": "40 oz", "values": ["2,5 lb"], "emphasis": true },
+        { "label": "48 oz", "values": ["3 lb"], "emphasis": true },
+        { "label": "60 oz", "values": ["3,75 lb"] },
+        { "label": "64 oz", "values": ["4 lb"] },
+        { "label": "72 oz", "values": ["4,5 lb"] },
+        { "label": "80 oz", "values": ["5 lb"], "emphasis": true },
+        { "label": "96 oz", "values": ["6 lb"] }
+      ],
+      "caption": "Möchten Sie in die andere Richtung umrechnen? Nutzen Sie unseren Umrechner von <a href=\"/de/werkzeuge/pfund-in-unzen-umrechner\">Pfund in Unzen</a> mit einer Gewichtstabelle in Pfund und Unzen."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabelle: Unzen in Pfund und Unzen",
+      "description": "Ein Gewicht wird oft als Pfund und Unzen geschrieben, zum Beispiel 2 Pfund 8 Unzen. Um von reinen Unzen zu dieser Schreibweise zu kommen, teilen Sie die Unzen mit Rest durch 16: Das Ergebnis der Division sind die Pfund, der Rest sind die Unzen. Die folgende Tabelle zeigt fertige Ergebnisse, sodass Sie sie nicht mit der Dezimalschreibweise verwechseln.",
+      "labelHeader": "Unzen",
+      "cols": ["Pfund und Unzen"],
+      "rows": [
+        { "label": "16 oz", "values": ["1 Pfund 0 Unzen"], "emphasis": true },
+        { "label": "20 oz", "values": ["1 Pfund 4 Unzen"] },
+        { "label": "24 oz", "values": ["1 Pfund 8 Unzen"] },
+        { "label": "28 oz", "values": ["1 Pfund 12 Unzen"] },
+        { "label": "32 oz", "values": ["2 Pfund 0 Unzen"], "emphasis": true },
+        { "label": "36 oz", "values": ["2 Pfund 4 Unzen"] },
+        { "label": "40 oz", "values": ["2 Pfund 8 Unzen"], "emphasis": true },
+        { "label": "44 oz", "values": ["2 Pfund 12 Unzen"] },
+        { "label": "48 oz", "values": ["3 Pfund 0 Unzen"], "emphasis": true },
+        { "label": "56 oz", "values": ["3 Pfund 8 Unzen"] },
+        { "label": "64 oz", "values": ["4 Pfund 0 Unzen"] },
+        { "label": "72 oz", "values": ["4 Pfund 8 Unzen"] },
+        { "label": "80 oz", "values": ["5 Pfund 0 Unzen"] }
+      ],
+      "caption": "Beispiel: 40 ÷ 16 = 2 Rest 8, also 2 Pfund 8 Unzen. Das ist dasselbe Gewicht wie 2,5 Pfund in Dezimalschreibweise."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man am häufigsten Unzen in Pfund um?",
+      "description": "Unzen und Pfund begegnen Ihnen im deutschsprachigen Raum vor allem bei amerikanischen Angaben.",
+      "items": [
+        {
+          "title": "Säuglingsgewicht als Pfund und Unzen",
+          "description": "Das Gewicht eines Neugeborenen ist manchmal insgesamt in Unzen angegeben, und Sie möchten es als Pfund und Unzen notieren. 120 Unzen sind 7 Pfund 8 Unzen, weil 120 ÷ 16 = 7 Rest 8. Fertige Werte finden Sie in der Tabelle mit Pfund und Unzen oben."
+        },
+        {
+          "title": "Gewicht von Lebensmitteln",
+          "description": "Auf amerikanischen Verpackungen ist das Gewicht manchmal in Unzen angegeben, auch wenn es mehr als ein Pfund ist. Eine Tüte mit 48 Unzen sind 3 Pfund, ein Glas mit 24 Unzen sind 1,5 Pfund. Die Umrechnung in Pfund erleichtert den Vergleich mit größeren Verpackungen."
+        },
+        {
+          "title": "Gewicht von Sendungen",
+          "description": "Leichte Pakete werden in Unzen berechnet, die Gewichtsstufen werden aber auch in Pfund angegeben. Ein Paket mit 32 Unzen sind 2 Pfund, 40 Unzen sind 2,5 Pfund. Die Umrechnung hilft zu prüfen, in welche Preisstufe eine Sendung fällt."
+        },
+        {
+          "title": "Portionen summieren",
+          "description": "Wenn Sie mehrere Portionen zu je einigen Unzen haben, lässt sich ihre Summe leichter in Pfund erfassen. Acht Portionen zu je 4 Unzen sind 32 Unzen, also genau 2 Pfund. Die Umrechnung ordnet ein Gewicht, das man sich in reinen Unzen schwer vorstellen kann."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Umrechnung von Unzen in Pfund",
+      "items": [
+        {
+          "question": "Wie viele Pfund sind 16 Unzen?",
+          "answer": "16 Unzen sind genau 1 Pfund. Rechnung: 16 ÷ 16 = 1 Pfund. Dieser Zusammenhang ist fest und ergibt sich aus der Definition des Pfunds, es gibt hier also keine Rundung."
+        },
+        {
+          "question": "Sind 32 Unzen 2 Pfund?",
+          "answer": "Ja. 32 Unzen sind 2 Pfund, weil 32 ÷ 16 = 2. Ebenso sind 48 Unzen 3 Pfund und 64 Unzen 4 Pfund."
+        },
+        {
+          "question": "Sind 12 Unzen 1 Pfund?",
+          "answer": "Nein. 12 Unzen sind 0,75 Pfund, also drei Viertel Pfund. Ein ganzes Pfund ist erst bei 16 Unzen erreicht, es fehlen also noch 4 Unzen bis zum Pfund."
+        },
+        {
+          "question": "Sind 8 Unzen ein halbes Pfund?",
+          "answer": "Ja. 8 Unzen sind 0,5 Pfund, also genau ein halbes Pfund, weil 16 ÷ 2 = 8."
+        },
+        {
+          "question": "Wie viele Pfund sind 40 Unzen?",
+          "answer": "40 Unzen sind 2,5 Pfund, also 2 Pfund 8 Unzen. Rechnung: 40 ÷ 16 = 2 Rest 8. Achtung: 2,5 Pfund sind 2 Pfund 8 Unzen und nicht 2 Pfund 5 Unzen."
+        },
+        {
+          "question": "Wie viele Pfund sind 24 Unzen?",
+          "answer": "24 Unzen sind 1,5 Pfund, also 1 Pfund 8 Unzen. Rechnung: 24 ÷ 16 = 1 Rest 8."
+        },
+        {
+          "question": "Wie schreibt man das Ergebnis als Pfund und Unzen?",
+          "answer": "Sie teilen die Unzen mit Rest durch 16. Das Ergebnis der Division sind die Pfund, der Rest sind die Unzen. Beispiel: 44 ÷ 16 sind 2 Rest 12, also 2 Pfund 12 Unzen. Fertige Werte finden Sie in der Tabelle mit Pfund und Unzen oben."
+        },
+        {
+          "question": "Wie viele Pfund haben 20, 50 und 72 Unzen?",
+          "answer": "20 Unzen sind 1,25 Pfund, 50 Unzen sind 3,125 Pfund und 72 Unzen sind 4,5 Pfund. Jeden dieser Werte erhalten Sie, indem Sie die Zahl der Unzen durch 16 teilen."
+        },
+        {
+          "question": "Wie lautet die Formel zur Umrechnung von Unzen in Pfund?",
+          "answer": "Die Formel lautet: Pfund = Unzen ÷ 16. Zum Beispiel 80 ÷ 16 = 5 Pfund. Umgekehrt: Unzen = Pfund × 16."
+        },
+        {
+          "question": "Ist die Masse-Unze dasselbe wie die Flüssigunze?",
+          "answer": "Nein. Die Masse-Unze (oz) misst Gewicht, und genau das rechnet dieses Werkzeug um. Die Flüssigunze (fl oz) misst das Volumen von Getränken. Sie haben einen ähnlichen Namen, sind aber verschiedene Größen, man darf sie also nicht verwechseln."
+        },
+        {
+          "question": "Worin unterscheidet sich die Unze von der Feinunze?",
+          "answer": "Die gewöhnliche Masse-Unze sind 28,35 g und wird für das Gewicht von Lebensmitteln oder Säuglingen verwendet. Die Feinunze sind 31,10 g und wird für Edelmetalle wie Gold verwendet. Zudem sind ein Troy-Pfund 12 Feinunzen und nicht 16. Dieses Werkzeug rechnet mit der gewöhnlichen Unze, nicht mit der Feinunze."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "title": "Haben Sie eine Frage oder Anregung?",
+      "description": "Wenn Sie einen Fehler in den Tabellen entdeckt haben oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageAlt": "Kontakt zu Arteon Agency",
+      "subject": "Umrechner von Unzen in Pfund"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere nützliche Einheiten-Umrechner"
+    }
+  ]
+}

@@ -365,6 +365,30 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 
   {
+    toolKey: 'lbsToOz',
+    category: 'weight',
+    sourceField: { labelKey: 'pounds', suffix: 'lb' },
+    targetField: { labelKey: 'ounces', suffix: 'oz' },
+    convert: v => v * 16,
+    reverseConvert: v => v / 16,
+    precision: 2,
+    swappable: true,
+    reverseToolKey: 'ozToLbs',
+  },
+
+  {
+    toolKey: 'ozToLbs',
+    category: 'weight',
+    sourceField: { labelKey: 'ounces', suffix: 'oz' },
+    targetField: { labelKey: 'pounds', suffix: 'lb' },
+    convert: v => v / 16,
+    reverseConvert: v => v * 16,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'lbsToOz',
+  },
+
+  {
     toolKey: 'mlToOz',
     category: 'volume',
     sourceField: { labelKey: 'milliliters', suffix: 'ml' },

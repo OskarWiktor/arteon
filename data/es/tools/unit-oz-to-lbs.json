@@ -1,0 +1,233 @@
+{
+  "toolKey": "ozToLbs",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de onzas a libras – convierte oz a lb",
+    "description": "Convierte onzas a libras. Las tablas al final de la página muestran el resultado como libras y onzas (40 onzas son 2 libras 8 onzas) y el peso de los bebés. El convertidor funciona en ambos sentidos y calcula al instante.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-onzas-a-libras"
+  },
+  "hero": {
+    "title": "Convierte onzas a libras",
+    "description": "Escribe un valor en onzas y lee el resultado en libras al instante. La libra y la onza son unidades de masa que se usan sobre todo en Estados Unidos y el Reino Unido, así que las convertimos al mirar el peso de un bebé, el peso de productos y los envíos. El convertidor da el resultado en libras decimales, y una tabla aparte más abajo lo muestra como libras y onzas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-onzas-a-libras",
+      "label": "onzas a libras"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de onzas a libras – calculadora oz a lb",
+      "alternateName": [
+        "Convertidor de onzas a libras",
+        "Calculadora de onzas a libras",
+        "oz a lb",
+        "Onzas a libras",
+        "oz a lbs",
+        "Convierte onzas a libras",
+        "Cuántas libras son 16 onzas",
+        "40 onzas en libras",
+        "32 onzas en libras",
+        "Onzas a libras y onzas",
+        "Tabla de onzas a libras",
+        "Cuántas libras tiene una onza",
+        "oz to lbs",
+        "Convertidor de masa"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertidor de onzas a libras que funciona en el navegador sin registro. Escribe un valor en onzas y lee el resultado en libras al instante. Útil para el peso de bebés, el peso de productos y los envíos desde el mercado estadounidense.",
+      "featureList": [
+        "La conversión funciona en ambos sentidos, así que pasas tanto de onzas a libras como de libras a onzas",
+        "El resultado aparece al instante mientras escribes, sin pulsar ningún botón",
+        "Con el botón Copiar resultado llevas el valor listo al portapapeles",
+        "La tabla de conversión abarca valores de 8 a 96 onzas",
+        "Una tabla aparte muestra el resultado como libras y onzas, por ejemplo 40 onzas son 2 libras 8 onzas",
+        "Todos los cálculos se hacen localmente en el navegador, tus datos no salen del dispositivo",
+        "La fórmula exacta es: libras = onzas ÷ 16",
+        "La herramienta funciona en el móvil, la tableta y el ordenador sin instalar nada"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo convertir onzas a libras?",
+      "description": "Guía breve para usar el convertidor de onzas a libras.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escribe un valor en onzas",
+          "text": "En el campo de la izquierda, escribe el número de onzas que quieres convertir a libras."
+        },
+        {
+          "name": "Lee el resultado en libras",
+          "text": "El resultado en libras aparece enseguida en el campo de al lado, a la derecha. Con el botón Copiar resultado lo llevas al portapapeles."
+        },
+        {
+          "name": "Invierte el sentido si lo necesitas",
+          "text": "Pulsa Cambiar orden para pasar a convertir libras a onzas."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué convertir onzas a libras?",
+      "html": "<p class=\"text-mid mb-4\">La onza y la libra son unidades de masa que se usan sobre todo en Estados Unidos y el Reino Unido. En España y Latinoamérica pesamos en kilogramos y gramos, así que convertimos onzas a libras casi siempre con datos estadounidenses: cuando el peso de un producto viene en onzas, cuando quieres anotar el peso de un bebé como libras y onzas o cuando sumas el peso de varias porciones dadas en onzas.</p><p class=\"text-mid mb-4\">La relación es sencilla y exacta: una libra son exactamente 16 onzas. Para pasar de onzas a libras, divides el número de onzas entre 16. El convertidor lo hace por ti en cuanto escribes un valor.</p><p class=\"text-mid mb-4\">Con el peso hay un detalle. El convertidor da el resultado en libras decimales, así que 40 onzas se muestran como 2,5 libras. Eso no significa «2 libras y 5 onzas», porque 2,5 libras son 2 libras y 8 onzas (0,5 de libra son 8 onzas). Por eso más abajo encontrarás una tabla aparte que muestra el resultado como libras y onzas.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor gratuito de onzas a libras – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión de onzas a libras? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión de onzas a libras se basa en una relación fija: una libra son exactamente 16 onzas. Para pasar de onzas a libras, divides el número de onzas entre 16.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>libras = onzas ÷ 16</strong>. Al revés: <strong>onzas = libras × 16</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántas libras son 32 onzas. Sustituyes: 32 ÷ 16 = 2 libras. Es una de las conversiones que sale exacta, porque 32 se divide entre 16 sin resto.</p><p class=\"text-mid\">Otro ejemplo: 40 onzas son 40 ÷ 16 = 2,5 libras. Esa cifra está en libras decimales. Para obtener el resultado como libras y onzas, divides las onzas entre 16 con resto: 40 ÷ 16 son 2 y resto 8, es decir, 2 libras 8 onzas. Encontrarás valores listos en la tabla de abajo.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión de onzas a libras",
+      "description": "La tabla siguiente convierte valores habituales de onzas a libras decimales. Para convertir otro peso, usa el convertidor de arriba.",
+      "labelHeader": "Onzas",
+      "cols": ["Libras"],
+      "rows": [
+        { "label": "8 oz", "values": ["0,5 lb"], "emphasis": true },
+        { "label": "12 oz", "values": ["0,75 lb"] },
+        { "label": "16 oz", "values": ["1 lb"], "emphasis": true },
+        { "label": "20 oz", "values": ["1,25 lb"] },
+        { "label": "24 oz", "values": ["1,5 lb"] },
+        { "label": "28 oz", "values": ["1,75 lb"] },
+        { "label": "32 oz", "values": ["2 lb"], "emphasis": true },
+        { "label": "36 oz", "values": ["2,25 lb"] },
+        { "label": "40 oz", "values": ["2,5 lb"], "emphasis": true },
+        { "label": "48 oz", "values": ["3 lb"], "emphasis": true },
+        { "label": "60 oz", "values": ["3,75 lb"] },
+        { "label": "64 oz", "values": ["4 lb"] },
+        { "label": "72 oz", "values": ["4,5 lb"] },
+        { "label": "80 oz", "values": ["5 lb"], "emphasis": true },
+        { "label": "96 oz", "values": ["6 lb"] }
+      ],
+      "caption": "¿Quieres convertir al revés? Usa nuestro convertidor de <a href=\"/es/herramientas/convertidor-libras-a-onzas\">libras a onzas</a>, con una tabla de peso en libras y onzas."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla: onzas a libras y onzas",
+      "description": "El peso se escribe a menudo como libras y onzas, por ejemplo 2 libras 8 onzas. Para pasar de onzas puras a esa forma, divides las onzas entre 16 con resto: el cociente son las libras y el resto son las onzas. La tabla siguiente muestra resultados listos, con lo que no los confundes con la forma decimal.",
+      "labelHeader": "Onzas",
+      "cols": ["Libras y onzas"],
+      "rows": [
+        { "label": "16 oz", "values": ["1 libra 0 onzas"], "emphasis": true },
+        { "label": "20 oz", "values": ["1 libra 4 onzas"] },
+        { "label": "24 oz", "values": ["1 libra 8 onzas"] },
+        { "label": "28 oz", "values": ["1 libra 12 onzas"] },
+        { "label": "32 oz", "values": ["2 libras 0 onzas"], "emphasis": true },
+        { "label": "36 oz", "values": ["2 libras 4 onzas"] },
+        { "label": "40 oz", "values": ["2 libras 8 onzas"], "emphasis": true },
+        { "label": "44 oz", "values": ["2 libras 12 onzas"] },
+        { "label": "48 oz", "values": ["3 libras 0 onzas"], "emphasis": true },
+        { "label": "56 oz", "values": ["3 libras 8 onzas"] },
+        { "label": "64 oz", "values": ["4 libras 0 onzas"] },
+        { "label": "72 oz", "values": ["4 libras 8 onzas"] },
+        { "label": "80 oz", "values": ["5 libras 0 onzas"] }
+      ],
+      "caption": "Ejemplo: 40 ÷ 16 = 2 y resto 8, es decir, 2 libras 8 onzas. Es el mismo peso que 2,5 libras escrito en decimal."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierte onzas a libras con más frecuencia?",
+      "description": "La onza y la libra aparecen en nuestro entorno sobre todo con datos estadounidenses.",
+      "items": [
+        {
+          "title": "Peso del bebé como libras y onzas",
+          "description": "El peso de un recién nacido a veces viene en total en onzas y quieres anotarlo como libras y onzas. 120 onzas son 7 libras 8 onzas, porque 120 ÷ 16 = 7 y resto 8. Encontrarás valores listos en la tabla de libras y onzas de arriba."
+        },
+        {
+          "title": "Peso de productos de alimentación",
+          "description": "En los envases estadounidenses el peso a veces viene en onzas, aunque sea mayor que una libra. Una bolsa de 48 onzas son 3 libras y un bote de 24 onzas son 1,5 libras. Convertir a libras facilita la comparación con envases más grandes."
+        },
+        {
+          "title": "Peso de los envíos",
+          "description": "Los paquetes ligeros se tarifan en onzas, pero los tramos de peso también se dan en libras. Un paquete de 32 onzas son 2 libras y 40 onzas son 2,5 libras. Convertir permite comprobar en qué tramo de precio cae un envío."
+        },
+        {
+          "title": "Sumar porciones",
+          "description": "Si tienes varias porciones de unas onzas cada una, es más fácil captar su suma en libras. Ocho porciones de 4 onzas son 32 onzas, es decir, exactamente 2 libras. Convertir ordena un peso que cuesta imaginar solo en onzas."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre la conversión de onzas a libras",
+      "items": [
+        {
+          "question": "¿Cuántas libras son 16 onzas?",
+          "answer": "16 onzas son exactamente 1 libra. Cálculo: 16 ÷ 16 = 1 libra. Esta relación es fija y procede de la definición de la libra, así que aquí no hay ningún redondeo."
+        },
+        {
+          "question": "¿32 onzas son 2 libras?",
+          "answer": "Sí. 32 onzas son 2 libras, porque 32 ÷ 16 = 2. Del mismo modo, 48 onzas son 3 libras y 64 onzas son 4 libras."
+        },
+        {
+          "question": "¿12 onzas son 1 libra?",
+          "answer": "No. 12 onzas son 0,75 de libra, es decir, tres cuartos de libra. La libra entera no llega hasta las 16 onzas, así que aún faltan 4 onzas para la libra."
+        },
+        {
+          "question": "¿8 onzas son media libra?",
+          "answer": "Sí. 8 onzas son 0,5 de libra, es decir, exactamente media libra, porque 16 ÷ 2 = 8."
+        },
+        {
+          "question": "¿Cuántas libras son 40 onzas?",
+          "answer": "40 onzas son 2,5 libras, es decir, 2 libras 8 onzas. Cálculo: 40 ÷ 16 = 2 y resto 8. Atención: 2,5 libras son 2 libras 8 onzas, y no 2 libras 5 onzas."
+        },
+        {
+          "question": "¿Cuántas libras son 24 onzas?",
+          "answer": "24 onzas son 1,5 libras, es decir, 1 libra 8 onzas. Cálculo: 24 ÷ 16 = 1 y resto 8."
+        },
+        {
+          "question": "¿Cómo escribo el resultado como libras y onzas?",
+          "answer": "Divides las onzas entre 16 con resto. El cociente son las libras y el resto son las onzas. Ejemplo: 44 ÷ 16 son 2 y resto 12, es decir, 2 libras 12 onzas. Encontrarás valores listos en la tabla de libras y onzas de arriba."
+        },
+        {
+          "question": "¿Cuántas libras son 20, 50 y 72 onzas?",
+          "answer": "20 onzas son 1,25 libras, 50 onzas son 3,125 libras y 72 onzas son 4,5 libras. Cada uno de estos valores lo obtienes dividiendo el número de onzas entre 16."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir onzas a libras?",
+          "answer": "La fórmula es: libras = onzas ÷ 16. Por ejemplo, 80 ÷ 16 = 5 libras. Al revés: onzas = libras × 16."
+        },
+        {
+          "question": "¿La onza de masa es lo mismo que la onza líquida?",
+          "answer": "No. La onza de masa (oz) mide el peso, y es la que convierte esta herramienta. La onza líquida (fl oz) mide el volumen de las bebidas. Tienen un nombre parecido, pero son magnitudes distintas, así que no se deben confundir."
+        },
+        {
+          "question": "¿En qué se diferencia la onza de la onza troy?",
+          "answer": "La onza de masa habitual son 28,35 g y se usa para el peso de alimentos o bebés. La onza troy son 31,10 g y se usa para los metales preciosos, como el oro. Además, una libra troy son 12 onzas troy, y no 16. Esta herramienta trabaja con la onza habitual, no con la troy."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "title": "¿Tienes una pregunta o sugerencia?",
+      "description": "Si has visto un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
+      "imageAlt": "Contacto con Arteon Agency",
+      "subject": "Convertidor de onzas a libras"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    }
+  ]
+}

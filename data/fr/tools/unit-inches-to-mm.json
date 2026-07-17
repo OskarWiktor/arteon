@@ -71,7 +71,7 @@
         },
         {
           "name": "Inverser la direction si nécessaire",
-          "text": "Cliquez sur Changer l'ordre pour basculer le convertisseur en mode millimètres vers pouces."
+          "text": "Cliquez sur Inverser l'ordre pour basculer le convertisseur en mode millimètres vers pouces."
         }
       ]
     }

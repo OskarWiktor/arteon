@@ -633,7 +633,7 @@
         },
         {
           "question": "What DPI should I use for printing flyers and business cards?",
-          "answer": "300 DPI is the standard for both offset and digital printing — most online print shops require this value. For large formats like A1 or A0 posters, 150 DPI is often enough, since they are viewed from a greater distance. Large-format banners and billboards are sometimes printed at just 30–72 DPI."
+          "answer": "300 DPI is the standard for both offset and digital printing — most print shops require this value. For large formats like A1 or A0 posters, 150 DPI is often enough, since they are viewed from a greater distance. Large-format banners and billboards are sometimes printed at just 30–72 DPI."
         },
         {
           "question": "How do I set mm to px in Illustrator or InDesign?",
@@ -642,6 +642,10 @@
         {
           "question": "What is the difference between DPI and PPI?",
           "answer": "DPI (dots per inch) is the number of ink dots per inch of material and is a printer specification. PPI (pixels per inch) is the number of pixels per inch of screen and describes a monitor or display. In everyday use, designers use both terms interchangeably, but technically DPI applies to print and PPI to screens."
+        },
+        {
+          "question": "How do I convert millimeters to pixels in CSS or SVG?",
+          "answer": "In CSS stylesheets the mm unit is converted with a fixed formula: 1mm = 96px ÷ 25.4 ≈ 3.78px, regardless of the device. The same constant applies in SVG files, where dimensions can be written directly in millimeters. In practice, web interfaces use px, rem or em units, while mm is reserved for print stylesheets (@media print)."
         },
         {
           "question": "What is the exact size of a payment card in pixels?",

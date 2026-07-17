@@ -108,36 +108,134 @@
       "labelHeader": "Libras (lb)",
       "cols": ["Quilogramas (kg)"],
       "rows": [
-        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
-        { "label": "2 lb", "values": ["0,91 kg"] },
-        { "label": "5 lb", "values": ["2,27 kg"] },
-        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
-        { "label": "15 lb", "values": ["6,80 kg"] },
-        { "label": "20 lb", "values": ["9,07 kg"] },
-        { "label": "25 lb", "values": ["11,34 kg"] },
-        { "label": "30 lb", "values": ["13,61 kg"] },
-        { "label": "40 lb", "values": ["18,14 kg"] },
-        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
-        { "label": "60 lb", "values": ["27,22 kg"] },
-        { "label": "70 lb", "values": ["31,75 kg"] },
-        { "label": "80 lb", "values": ["36,29 kg"] },
-        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
-        { "label": "115 lb", "values": ["52,16 kg"] },
-        { "label": "120 lb", "values": ["54,43 kg"] },
-        { "label": "125 lb", "values": ["56,70 kg"] },
-        { "label": "130 lb", "values": ["58,97 kg"] },
-        { "label": "135 lb", "values": ["61,24 kg"] },
-        { "label": "140 lb", "values": ["63,50 kg"], "emphasis": true },
-        { "label": "145 lb", "values": ["65,77 kg"] },
-        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
-        { "label": "160 lb", "values": ["72,57 kg"] },
-        { "label": "165 lb", "values": ["74,84 kg"] },
-        { "label": "170 lb", "values": ["77,11 kg"] },
-        { "label": "180 lb", "values": ["81,65 kg"], "emphasis": true },
-        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
-        { "label": "220 lb", "values": ["99,79 kg"] },
-        { "label": "250 lb", "values": ["113,40 kg"] },
-        { "label": "300 lb", "values": ["136,08 kg"] }
+        {
+          "label": "1 lb",
+          "values": ["0,45 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "2 lb",
+          "values": ["0,91 kg"]
+        },
+        {
+          "label": "5 lb",
+          "values": ["2,27 kg"]
+        },
+        {
+          "label": "10 lb",
+          "values": ["4,54 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "15 lb",
+          "values": ["6,80 kg"]
+        },
+        {
+          "label": "20 lb",
+          "values": ["9,07 kg"]
+        },
+        {
+          "label": "25 lb",
+          "values": ["11,34 kg"]
+        },
+        {
+          "label": "30 lb",
+          "values": ["13,61 kg"]
+        },
+        {
+          "label": "40 lb",
+          "values": ["18,14 kg"]
+        },
+        {
+          "label": "50 lb",
+          "values": ["22,68 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "60 lb",
+          "values": ["27,22 kg"]
+        },
+        {
+          "label": "70 lb",
+          "values": ["31,75 kg"]
+        },
+        {
+          "label": "80 lb",
+          "values": ["36,29 kg"]
+        },
+        {
+          "label": "100 lb",
+          "values": ["45,36 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "115 lb",
+          "values": ["52,16 kg"]
+        },
+        {
+          "label": "120 lb",
+          "values": ["54,43 kg"]
+        },
+        {
+          "label": "125 lb",
+          "values": ["56,70 kg"]
+        },
+        {
+          "label": "130 lb",
+          "values": ["58,97 kg"]
+        },
+        {
+          "label": "135 lb",
+          "values": ["61,24 kg"]
+        },
+        {
+          "label": "140 lb",
+          "values": ["63,50 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "145 lb",
+          "values": ["65,77 kg"]
+        },
+        {
+          "label": "150 lb",
+          "values": ["68,04 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "160 lb",
+          "values": ["72,57 kg"]
+        },
+        {
+          "label": "165 lb",
+          "values": ["74,84 kg"]
+        },
+        {
+          "label": "170 lb",
+          "values": ["77,11 kg"]
+        },
+        {
+          "label": "180 lb",
+          "values": ["81,65 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "200 lb",
+          "values": ["90,72 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "220 lb",
+          "values": ["99,79 kg"]
+        },
+        {
+          "label": "250 lb",
+          "values": ["113,40 kg"]
+        },
+        {
+          "label": "300 lb",
+          "values": ["136,08 kg"]
+        }
       ],
       "caption": "Quer converter no sentido inverso? Use o nosso <a href=\"/pt/ferramentas/conversor-kg-para-libras\">conversor de kg para libras</a>, com tabela e conteúdo detalhado."
     },
@@ -152,20 +250,69 @@
       "labelHeader": "Peso corporal (lb)",
       "cols": ["Quilogramas (kg)"],
       "rows": [
-        { "label": "88 lb", "values": ["39,92 kg"] },
-        { "label": "99 lb", "values": ["44,91 kg"] },
-        { "label": "110 lb", "values": ["49,90 kg"], "emphasis": true },
-        { "label": "121 lb", "values": ["54,88 kg"] },
-        { "label": "132 lb", "values": ["59,87 kg"] },
-        { "label": "143 lb", "values": ["64,86 kg"] },
-        { "label": "154 lb", "values": ["69,85 kg"], "emphasis": true },
-        { "label": "165 lb", "values": ["74,84 kg"], "emphasis": true },
-        { "label": "176 lb", "values": ["79,83 kg"], "emphasis": true },
-        { "label": "187 lb", "values": ["84,82 kg"], "emphasis": true },
-        { "label": "198 lb", "values": ["89,81 kg"], "emphasis": true },
-        { "label": "220 lb", "values": ["99,79 kg"], "emphasis": true },
-        { "label": "242 lb", "values": ["109,77 kg"] },
-        { "label": "265 lb", "values": ["120,20 kg"] }
+        {
+          "label": "88 lb",
+          "values": ["39,92 kg"]
+        },
+        {
+          "label": "99 lb",
+          "values": ["44,91 kg"]
+        },
+        {
+          "label": "110 lb",
+          "values": ["49,90 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "121 lb",
+          "values": ["54,88 kg"]
+        },
+        {
+          "label": "132 lb",
+          "values": ["59,87 kg"]
+        },
+        {
+          "label": "143 lb",
+          "values": ["64,86 kg"]
+        },
+        {
+          "label": "154 lb",
+          "values": ["69,85 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "165 lb",
+          "values": ["74,84 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "176 lb",
+          "values": ["79,83 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "187 lb",
+          "values": ["84,82 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "198 lb",
+          "values": ["89,81 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "220 lb",
+          "values": ["99,79 kg"],
+          "emphasis": true
+        },
+        {
+          "label": "242 lb",
+          "values": ["109,77 kg"]
+        },
+        {
+          "label": "265 lb",
+          "values": ["120,20 kg"]
+        }
       ]
     },
     {
@@ -179,26 +326,71 @@
       "labelHeader": "Peso (lb)",
       "cols": ["Quilogramas (kg)"],
       "rows": [
-        { "label": "5 lb", "values": ["2,27 kg"] },
-        { "label": "10 lb", "values": ["4,54 kg"] },
-        { "label": "25 lb", "values": ["11,34 kg"] },
-        { "label": "35 lb", "values": ["15,88 kg"] },
+        {
+          "label": "5 lb",
+          "values": ["2,27 kg"]
+        },
+        {
+          "label": "10 lb",
+          "values": ["4,54 kg"]
+        },
+        {
+          "label": "25 lb",
+          "values": ["11,34 kg"]
+        },
+        {
+          "label": "35 lb",
+          "values": ["15,88 kg"]
+        },
         {
           "label": "45 lb (barra olímpica)",
           "values": ["20,41 kg"],
           "emphasis": true
         },
-        { "label": "95 lb", "values": ["43,09 kg"] },
+        {
+          "label": "95 lb",
+          "values": ["43,09 kg"]
+        },
         {
           "label": "135 lb (referência supino)",
           "values": ["61,23 kg"],
           "emphasis": true
         },
-        { "label": "185 lb", "values": ["83,91 kg"] },
+        {
+          "label": "185 lb",
+          "values": ["83,91 kg"]
+        },
         {
           "label": "225 lb (supino avançado)",
           "values": ["102,06 kg"],
           "emphasis": true
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando se convertem libras em quilogramas?",
+      "description": "A conversão de libras para kg surge em algumas situações típicas do dia a dia.",
+      "items": [
+        {
+          "title": "Peso corporal e IMC de aplicações anglo-saxónicas",
+          "description": "As aplicações de treino dos EUA, as calculadoras de IMC de sites médicos anglo-saxónicos e os portais de dieta indicam o peso em libras. Se o objetivo de peso é 154 lb, escreva 154 no conversor para ver que são 69,85 kg. A tabela de peso corporal acima traz conversões prontas para os intervalos típicos."
+        },
+        {
+          "title": "Treino de força e programas do YouTube",
+          "description": "Os programas de treino populares dos EUA — Starting Strength, 5/3/1, StrongLifts — indicam as cargas exclusivamente em libras. 135 lb são cerca de 61 kg e «benching 225», ou seja o supino de 225 lb e objetivo de treino de muita gente, são cerca de 102 kg. A tabela dos pesos de ginásio mais comuns está acima."
+        },
+        {
+          "title": "Limite de bagagem e encomendas",
+          "description": "Os limites de peso de bagagem de muitas companhias aéreas (sobretudo americanas) indicam-se em libras. 50 lb são 22,68 kg — o limite padrão da mala despachada. Ao encomendar da Amazon US convém saber quanto pesa um produto descrito em libras, para estimar o custo do envio."
+        },
+        {
+          "title": "Peso do bebé e documentação médica",
+          "description": "A documentação médica dos EUA e do Reino Unido indica o peso do recém-nascido em libras e onças. Um recém-nascido saudável pesa cerca de 7 a 8 lb (3,2 a 3,6 kg). Uma libra são 16 onças, por isso 7 lb 11 oz são 7 + 11/16 = 7,6875 lb × 0,4536 = 3,49 kg. O conversor trabalha com valores decimais, por isso escreva 7,69 lb para obter o resultado aproximado em kg."
         }
       ]
     },
@@ -235,10 +427,6 @@
           "answer": "A fórmula é: kg = libras × 0,45359237. Para cálculos rápidos usa-se 0,4536. Ao contrário: libras = kg × 2,2046."
         },
         {
-          "question": "Quantas libras são 70 kg?",
-          "answer": "70 kg são 154,32 lb. A conversão neste sentido (kg para lb) faz-se multiplicando por 2,2046: 70 × 2,2046 = 154,32 lb."
-        },
-        {
           "question": "Quantos kg são 50 libras?",
           "answer": "50 lb são 22,68 kg. É também o limite de bagagem despachada mais habitual em classe económica nas companhias aéreas americanas."
         },
@@ -247,12 +435,28 @@
           "answer": "Estimativa rápida: divida as libras por 2,2. Por exemplo: 154 lb ÷ 2,2 = 70 kg. O valor exato é 69,85 kg — erro de apenas 0,2 %."
         },
         {
+          "question": "Quantos kg são 135 libras (supino)?",
+          "answer": "135 libras são 61,24 kg. Na cultura de ginásio anglo-saxónica, «135 on the bench» é um marco de treino popular: a barra de 45 libras mais dois discos de 45 libras dão exatamente 135 libras. O equivalente métrico mais próximo — barra de 20 kg mais dois discos de 20 kg — são 60 kg, ou seja 132,3 libras, um pouco menos."
+        },
+        {
+          "question": "Quantos kg são 225 libras (o supino lendário)?",
+          "answer": "225 libras são 102,06 kg. Na cultura de ginásio anglo-saxónica, «225 on the bench» simboliza a maturidade de força e é um objetivo de treino popular: a barra de 45 libras mais quatro discos de 45 (dois por lado) dão exatamente 225 libras. Em quilogramas são pouco mais de 102 kg."
+        },
+        {
+          "question": "A libra é o mesmo que a onça?",
+          "answer": "Não: a libra (lb) e a onça (oz) são duas unidades diferentes. 1 libra = 16 onças. Uma onça são cerca de 28,35 g e uma libra cerca de 453,6 g (0,4536 kg). O peso dos bebés costuma indicar-se em libras e onças, por exemplo «7 lb 11 oz»."
+        },
+        {
           "question": "Quantos kg são 130 libras?",
           "answer": "130 lb são 58,97 kg — ou seja, quase exatamente 59 kg. Cálculo: 130 × 0,4536 = 58,97 kg."
         },
         {
           "question": "Quantos kg são 180 libras?",
           "answer": "180 lb são 81,65 kg. É um peso frequente em homens de constituição média ou ligeiramente atlética em Portugal e no Brasil."
+        },
+        {
+          "question": "Quantas libras é o limite de bagagem de 23 kg?",
+          "answer": "23 kg são 23 × 2,2046 = 50,71 libras, ou seja cerca de 50 libras. É por isso que as companhias aéreas europeias costumam indicar o limite como 23 kg e as americanas como 50 libras: é quase o mesmo. A diferença é de 0,71 libras, uns 320 gramas."
         },
         {
           "question": "Quantos kg são 60 libras?",

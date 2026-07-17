@@ -1,0 +1,234 @@
+{
+  "toolKey": "lbsToOz",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter funtów na uncje – przelicz funty na uncje",
+    "description": "Przelicz funty na uncje. Gotowe tabele na dole strony pokazują wagę niemowląt w funtach i uncjach (7 funtów 4 uncje to 116 uncji) oraz popularne wartości. Konwerter funtów na uncje działa w obu kierunkach i liczy natychmiast.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-funtow-na-uncje"
+  },
+  "hero": {
+    "title": "Przelicz funty na uncje",
+    "description": "Wpisz wartość w funtach i od razu odczytaj wynik w uncjach. Funty i uncje to jednostki masy podawane głównie w USA i Wielkiej Brytanii, więc przeliczamy je zwykle przy wadze niemowląt, wadze produktów w przepisach oraz przy przesyłkach. Uwaga: chodzi o uncję masy, a nie uncję płynu, którą podaje się objętość.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-funtow-na-uncje",
+      "label": "funty na uncje"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik funtów na uncje – konwerter funtów na uncje",
+      "alternateName": [
+        "Konwerter funtów na uncje",
+        "Kalkulator funtów na uncje",
+        "Przelicznik funtów na uncje",
+        "Funty na uncje",
+        "lbs na oz",
+        "Przelicz funty na uncje",
+        "Ile uncji ma funt",
+        "1 funt ile to uncji",
+        "2 funty ile to uncji",
+        "Waga niemowlęcia w funtach i uncjach",
+        "Tabela funtów na uncje",
+        "Ile uncji ma pół funta",
+        "lbs to oz",
+        "Konwerter masy"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik funtów na uncje działający w przeglądarce bez rejestracji. Wpisz wartość w funtach i natychmiast odczytaj wynik w uncjach. Przydatny przy wadze niemowląt, wadze produktów w przepisach oraz przy przesyłkach z rynku amerykańskiego.",
+      "featureList": [
+        "Konwersja działa w obie strony, więc przeliczysz zarówno funty na uncje, jak i uncje na funty",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Tabela przeliczeniowa obejmuje wartości od ćwierci funta do 20 funtów",
+        "Osobna tabela wagi pokazuje, ile uncji łącznie ma waga podana w funtach i uncjach",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: uncje = funty × 16",
+        "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć funty na uncje?",
+      "description": "Krótka instrukcja użycia konwertera funtów na uncje.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość w funtach",
+          "text": "W lewym polu wpisz liczbę funtów, którą chcesz przeliczyć na uncje. Konwerter przyjmuje jedną liczbę, więc wagę typu 7 funtów 4 uncje najpierw zamień na uncje według tabeli poniżej."
+        },
+        {
+          "name": "Odczytaj wynik w uncjach",
+          "text": "Wynik w uncjach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania uncji na funty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać funty na uncje?",
+      "html": "<p class=\"text-mid mb-4\">Funt i uncja to jednostki masy używane głównie w Stanach Zjednoczonych i Wielkiej Brytanii. W Polsce ważymy w kilogramach i gramach, więc funty na uncje przeliczamy zwykle przy amerykańskich danych: gdy czytasz wagę niemowlęcia podaną w funtach i uncjach, gdy przepis podaje wagę składnika w funtach albo gdy sprawdzasz wagę przesyłki.</p><p class=\"text-mid mb-4\">Zależność jest prosta i dokładna: jeden funt to równo 16 uncji. Aby zamienić funty na uncje, mnożysz liczbę funtów przez 16. Konwerter robi to za Ciebie od razu po wpisaniu wartości.</p><p class=\"text-mid mb-4\">Uważaj na dwie różne uncje. To narzędzie liczy uncję masy (oz), używaną do wagi. Istnieje też uncja płynu (fl oz), którą podaje się objętość napojów, oraz uncja troy, stosowana do metali szlachetnych. To trzy różne jednostki i nie wolno ich mylić. Przelicznik funty na uncje dotyczy wyłącznie zwykłej uncji masy.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter funtów na uncje – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja funtów na uncje? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie funtów na uncje opiera się na stałej zależności: jeden funt to dokładnie 16 uncji. Aby zamienić funty na uncje, mnożysz liczbę funtów przez 16.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>uncje = funty × 16</strong>. W drugą stronę: <strong>funty = uncje ÷ 16</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile uncji mają 2 funty. Podstawiasz: 2 × 16 = 32 uncje. Połowa funta to 8 uncji, a ćwierć funta to 4 uncje, bo 16 dzieli się na te części równo.</p><p class=\"text-mid\">Uwaga na zapis wagi. Waga niemowlęcia „7 funtów 4 uncje” to nie to samo co „7,4 funta”. Konwerter przyjmuje jedną liczbę, więc jeśli wpiszesz 7,4, policzy 7,4 × 16 = 118,4 uncji. Tymczasem 7 funtów 4 uncje to 116 uncji. Dlatego wagę w funtach i uncjach liczysz tak: funty mnożysz przez 16 i dodajesz uncje. Gotowe wartości znajdziesz w tabeli wagi poniżej.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa funtów na uncje",
+      "description": "Poniższa tabela zawiera przeliczenie popularnych wartości w funtach na uncje. Wartości dla pełnych funtów są dokładne, bo każdy funt to równo 16 uncji. Aby przeliczyć inną wagę, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Funty",
+      "cols": ["Uncje"],
+      "rows": [
+        { "label": "0,25 lb", "values": ["4 oz"] },
+        { "label": "0,5 lb", "values": ["8 oz"], "emphasis": true },
+        { "label": "0,75 lb", "values": ["12 oz"] },
+        { "label": "1 lb", "values": ["16 oz"], "emphasis": true },
+        { "label": "1,5 lb", "values": ["24 oz"] },
+        { "label": "2 lb", "values": ["32 oz"], "emphasis": true },
+        { "label": "3 lb", "values": ["48 oz"] },
+        { "label": "4 lb", "values": ["64 oz"] },
+        { "label": "5 lb", "values": ["80 oz"], "emphasis": true },
+        { "label": "6 lb", "values": ["96 oz"] },
+        { "label": "7 lb", "values": ["112 oz"] },
+        { "label": "8 lb", "values": ["128 oz"] },
+        { "label": "9 lb", "values": ["144 oz"] },
+        { "label": "10 lb", "values": ["160 oz"], "emphasis": true },
+        { "label": "12 lb", "values": ["192 oz"] },
+        { "label": "15 lb", "values": ["240 oz"] },
+        { "label": "20 lb", "values": ["320 oz"] }
+      ],
+      "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-uncji-na-funty\">uncji na funty</a> z wynikiem podawanym jako funty i uncje."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela wagi niemowląt: funty i uncje na uncje łącznie",
+      "description": "W USA i Wielkiej Brytanii wagę niemowlęcia podaje się w funtach i uncjach, na przykład 7 funtów 4 uncje. Żeby otrzymać uncje łącznie, mnożysz funty przez 16 i dodajesz uncje. Poniższa tabela pokazuje gotowe wyniki dla typowych wag, dzięki czemu unikniesz pomyłki z zapisem dziesiętnym.",
+      "labelHeader": "Waga",
+      "cols": ["Uncje łącznie"],
+      "rows": [
+        { "label": "5 funtów 0 uncji", "values": ["80 oz"] },
+        { "label": "5 funtów 8 uncji", "values": ["88 oz"] },
+        { "label": "6 funtów 0 uncji", "values": ["96 oz"] },
+        { "label": "6 funtów 8 uncji", "values": ["104 oz"] },
+        { "label": "7 funtów 0 uncji", "values": ["112 oz"], "emphasis": true },
+        { "label": "7 funtów 4 uncje", "values": ["116 oz"], "emphasis": true },
+        { "label": "7 funtów 8 uncji", "values": ["120 oz"] },
+        { "label": "8 funtów 0 uncji", "values": ["128 oz"], "emphasis": true },
+        { "label": "8 funtów 8 uncji", "values": ["136 oz"] },
+        { "label": "9 funtów 0 uncji", "values": ["144 oz"] },
+        { "label": "9 funtów 8 uncji", "values": ["152 oz"] },
+        { "label": "10 funtów 0 uncji", "values": ["160 oz"] }
+      ],
+      "caption": "Przykład: 7 funtów 4 uncje to 7 × 16 + 4 = 116 uncji. Nie myl tego z 7,4 funta, które daje 118,4 uncji."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się funty na uncje?",
+      "description": "Funty i uncje spotkasz w Polsce głównie przy amerykańskich danych.",
+      "items": [
+        {
+          "title": "Waga niemowlęcia",
+          "description": "W USA i Wielkiej Brytanii wagę noworodka podaje się w funtach i uncjach, na przykład 7 funtów 8 uncji. Żeby zamienić ją na uncje łącznie, mnożysz funty przez 16 i dodajesz uncje: 7 × 16 + 8 = 120 uncji. Gotowe wartości znajdziesz w tabeli wagi powyżej."
+        },
+        {
+          "title": "Waga składników w przepisach",
+          "description": "Amerykańskie przepisy podają wagę mięsa, mąki czy masła w funtach i uncjach. Pół funta masła to 8 uncji, a funt mięsa to 16 uncji. Przeliczenie na uncje ułatwia odmierzenie mniejszych porcji."
+        },
+        {
+          "title": "Waga przesyłek",
+          "description": "Amerykańskie cenniki wysyłki często dzielą się według wagi w uncjach, zwłaszcza przy lekkich paczkach. List do 1 funta to do 16 uncji, a mała paczka 2 funty to 32 uncje. Przeliczenie pozwala dopasować przesyłkę do progu cenowego."
+        },
+        {
+          "title": "Porcje żywności",
+          "description": "Na amerykańskich opakowaniach porcje podaje się w uncjach, a całą zawartość czasem w funtach. Torba 3 funty to 48 uncji, więc łatwo policzysz, ile porcji po kilka uncji z niej wyjdzie."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie funtów na uncje",
+      "items": [
+        {
+          "question": "Ile uncji ma 1 funt?",
+          "answer": "1 funt to równo 16 uncji. Obliczenie: 1 × 16 = 16 uncji. Ta zależność jest stała i wynika z definicji funta, więc nie ma tu żadnego zaokrąglenia."
+        },
+        {
+          "question": "Czy pół funta to 8 uncji?",
+          "answer": "Tak. Pół funta to 8 uncji, bo 16 ÷ 2 = 8. Ćwierć funta to z kolei 4 uncje."
+        },
+        {
+          "question": "Ile uncji mają 2 funty?",
+          "answer": "2 funty to 32 uncje. Obliczenie: 2 × 16 = 32 uncje. Dlatego 32 uncje to dokładnie 2 funty."
+        },
+        {
+          "question": "Ile uncji ma 7 funtów 4 uncje?",
+          "answer": "7 funtów 4 uncje to 116 uncji. Obliczenie: 7 × 16 + 4 = 116 uncji. To typowa waga noworodka, dlatego często się ją przelicza."
+        },
+        {
+          "question": "Czy 7,4 funta to 7 funtów 4 uncje?",
+          "answer": "Nie. 7,4 funta to zapis dziesiętny i daje 7,4 × 16 = 118,4 uncji. Waga 7 funtów 4 uncje to 116 uncji. Różnica bierze się stąd, że 0,4 funta to 6,4 uncji, a nie 4 uncje. Wagę zawsze zapisuj jako osobne funty i uncje."
+        },
+        {
+          "question": "Ile uncji mają 3, 5 i 10 funtów?",
+          "answer": "3 funty to 48 uncji, 5 funtów to 80 uncji, a 10 funtów to 160 uncji. Każdą z tych wartości otrzymujesz, mnożąc liczbę funtów przez 16."
+        },
+        {
+          "question": "Jak zamienić wagę w funtach i uncjach na uncje łącznie?",
+          "answer": "Funty mnożysz przez 16 i dodajesz uncje. Przykład: 8 funtów 8 uncji to 8 × 16 + 8 = 136 uncji. Gotowe wartości dla typowych wag niemowląt znajdziesz w tabeli powyżej."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie funtów na uncje?",
+          "answer": "Wzór to: uncje = funty × 16. Na przykład 6 × 16 = 96 uncji. W drugą stronę: funty = uncje ÷ 16."
+        },
+        {
+          "question": "Czy uncja masy to to samo co uncja płynu?",
+          "answer": "Nie. Uncja masy (oz) mierzy wagę i to ją przelicza to narzędzie. Uncja płynu (fl oz) mierzy objętość napojów. Mają podobną nazwę, ale to różne wielkości, więc nie wolno ich mylić."
+        },
+        {
+          "question": "Czym różni się uncja od uncji troy?",
+          "answer": "Zwykła uncja masy to 28,35 g i używa się jej do wagi żywności czy niemowląt. Uncja troy to 31,10 g i stosuje się ją do metali szlachetnych, na przykład złota. Co więcej, funt troy to 12 uncji troy, a nie 16. To narzędzie liczy zwykłą uncję, nie troy."
+        },
+        {
+          "question": "Ile gramów ma jedna uncja?",
+          "answer": "Jedna uncja masy to około 28,35 g. To narzędzie przelicza funty na uncje, więc jeśli potrzebujesz wyniku w gramach, uncje pomnóż dodatkowo przez 28,35."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "subject": "Konwerter funtów na uncje"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    }
+  ]
+}

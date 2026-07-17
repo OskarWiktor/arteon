@@ -761,6 +761,10 @@
         {
           "question": "¿Cuál es el tamaño exacto de una tarjeta bancaria en milímetros?",
           "answer": "El estándar ISO ID-1, que aplica a tarjetas bancarias, tarjetas SIM y carnés de identidad, mide exactamente 85,60 × 53,98 mm. Un archivo de 1.011 × 638 px equivale exactamente a esa medida a 300 DPI, un valor más preciso que el redondeo habitual de 85 × 55 mm que a veces se usa para tarjetas de visita europeas."
+        },
+        {
+          "question": "¿Cuántos milímetros tiene un píxel en una pantalla Retina?",
+          "answer": "Las pantallas Retina de Apple empaquetan los píxeles con el doble de densidad que un monitor clásico, pero el sistema operativo sigue interpretando las dimensiones como si el panel tuviera 96 DPI. En la práctica, un píxel físico ocupa unos 0,132 mm en lugar de 0,265 mm, pero en los paneles de diseño de Photoshop, Figma o Canva los valores siguen siendo idénticos: preparas el gráfico a doble resolución y lo exportas con el sufijo @2x."
         }
       ]
     },
