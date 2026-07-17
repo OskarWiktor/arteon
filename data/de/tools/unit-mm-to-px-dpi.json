@@ -73,7 +73,7 @@
         },
         {
           "name": "Ergebnis ablesen oder Richtung umkehren",
-          "text": "Das Ergebnis in Pixeln erscheint sofort im danebenliegenden Feld. Sie können es kopieren oder mit der Schaltfläche Reihenfolge ändern in die andere Richtung umrechnen."
+          "text": "Das Ergebnis in Pixeln erscheint sofort im danebenliegenden Feld. Sie können es kopieren oder mit der Schaltfläche Reihenfolge tauschen in die andere Richtung umrechnen."
         }
       ]
     }
@@ -617,7 +617,7 @@
         },
         {
           "question": "Kann ich Pixel zurück in Millimeter umrechnen?",
-          "answer": "Ja, unser Umrechner funktioniert in beide Richtungen. Geben Sie die Pixelanzahl im rechten Feld ein oder nutzen Sie die Schaltfläche Reihenfolge ändern, um die Umrechnungsrichtung zu tauschen – das Ergebnis in Millimetern erscheint sofort. Die Formel in diese Richtung lautet Millimeterzahl = Pixelanzahl × 25,4 ÷ DPI."
+          "answer": "Ja, unser Umrechner funktioniert in beide Richtungen. Geben Sie die Pixelanzahl im rechten Feld ein oder nutzen Sie die Schaltfläche Reihenfolge tauschen, um die Umrechnungsrichtung umzukehren – das Ergebnis in Millimetern erscheint sofort. Die Formel in diese Richtung lautet Millimeterzahl = Pixelanzahl × 25,4 ÷ DPI."
         },
         {
           "question": "Welche Pixelmaße hat eine Visitenkarte?",
@@ -633,7 +633,7 @@
         },
         {
           "question": "Welche DPI sollte ich für den Druck von Flyern und Visitenkarten einstellen?",
-          "answer": "300 DPI ist der Standard sowohl für den Offset- als auch für den Digitaldruck – diesen Wert verlangen die meisten Online-Druckereien. Für große Formate wie A1- oder A0-Plakate reichen oft 150 DPI, da sie aus größerer Entfernung betrachtet werden. Großformatbanner und Plakatwände werden manchmal sogar mit nur 30–72 DPI gedruckt."
+          "answer": "300 DPI ist der Standard sowohl für den Offset- als auch für den Digitaldruck – diesen Wert verlangen die meisten Druckereien. Für große Formate wie A1- oder A0-Plakate reichen oft 150 DPI, da sie aus größerer Entfernung betrachtet werden. Großformatbanner und Plakatwände werden manchmal sogar mit nur 30–72 DPI gedruckt."
         },
         {
           "question": "Wie stelle ich mm in px in Illustrator oder InDesign ein?",
@@ -642,6 +642,10 @@
         {
           "question": "Was ist der Unterschied zwischen DPI und PPI?",
           "answer": "DPI (dots per inch) ist die Anzahl der Farbpunkte pro Zoll Material und beschreibt eine Druckereigenschaft. PPI (pixels per inch) bezeichnet die Anzahl der Pixel pro Zoll Bildschirm und beschreibt einen Monitor oder ein Display. Im Alltag verwenden Grafiker beide Begriffe oft synonym, technisch betrifft DPI jedoch den Druck und PPI die Bildschirme."
+        },
+        {
+          "question": "Wie rechne ich Millimeter in CSS oder SVG in Pixel um?",
+          "answer": "In CSS-Stylesheets wird die Einheit mm mit einer festen Formel umgerechnet: 1mm = 96px ÷ 25,4 ≈ 3,78px, unabhängig vom Gerät. Dieselbe Konstante gilt in SVG-Dateien, wo sich Maße direkt in Millimetern angeben lassen. In der Praxis verwendet man für Weboberflächen die Einheiten px, rem oder em, während mm den Druck-Stylesheets (@media print) vorbehalten bleibt."
         },
         {
           "question": "Wie groß ist eine Zahlungskarte genau in Pixeln?",

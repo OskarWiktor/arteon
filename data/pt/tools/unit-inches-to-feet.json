@@ -50,7 +50,7 @@
         "O resultado aparece de imediato enquanto escreve, sem ser preciso clicar em nenhum botão",
         "O botão Copiar resultado coloca o valor final na área de transferência",
         "A tabela de conversão abrange valores de 1 a 120 polegadas",
-        "Uma tabela de alturas à parte mostra a quantos pés e polegadas correspondem os valores de 58 a 75 polegadas",
+        "Uma tabela de alturas à parte mostra a quantos pés e polegadas correspondem os valores de 48 a 75 polegadas",
         "Todos os cálculos são feitos no seu navegador, pelo que os dados não saem do dispositivo",
         "A fórmula exata é: pés = polegadas ÷ 12",
         "A ferramenta funciona no telemóvel, no tablet e no computador, sem instalar nada"
@@ -71,13 +71,16 @@
         },
         {
           "name": "Inverta o sentido se precisar",
-          "text": "Clique em Alterar ordem para passar a converter pés em polegadas."
+          "text": "Clique em Trocar ordem para passar a converter pés em polegadas."
         }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Para que serve converter polegadas em pés?",
@@ -85,13 +88,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor gratuito de polegadas para pés – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "Como funciona a conversão de polegadas para pés? Fórmula e exemplo",
       "html": "<p class=\"text-mid mb-4\">A conversão de polegadas para pés assenta numa relação fixa: um pé são exatamente 12 polegadas. Para passar polegadas a pés, divide o número de polegadas por 12.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>pés = polegadas ÷ 12</strong>. No sentido inverso: <strong>polegadas = pés × 12</strong>.</p><p class=\"text-mid mb-4\">Exemplo: quer saber quantos pés são 72 polegadas. Substitui: 72 ÷ 12 = 6 pés. É uma das poucas conversões que dá certa, porque 72 se divide por 12 sem resto.</p><p class=\"text-mid\">Outro exemplo: 70 polegadas são 70 ÷ 12 = 5,83 pés. Esse número está em pés decimais, e não «5 pés e 83 polegadas». Para o ler como altura em pés e polegadas, divide as polegadas por 12 com resto: 70 ÷ 12 dá 5 com resto 10, ou seja, 5 pés 10 polegadas. Os valores já prontos para a altura estão na tabela abaixo.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabela de conversão de polegadas para pés",
@@ -99,32 +108,107 @@
       "labelHeader": "Polegadas",
       "cols": ["Pés"],
       "rows": [
-        { "label": "1 in", "values": ["0,08 ft"] },
-        { "label": "10 in", "values": ["0,83 ft"] },
-        { "label": "12 in", "values": ["1,00 ft"], "emphasis": true },
-        { "label": "24 in", "values": ["2,00 ft"] },
-        { "label": "30 in", "values": ["2,50 ft"] },
-        { "label": "36 in", "values": ["3,00 ft"], "emphasis": true },
-        { "label": "40 in", "values": ["3,33 ft"] },
-        { "label": "42 in", "values": ["3,50 ft"] },
-        { "label": "48 in", "values": ["4,00 ft"], "emphasis": true },
-        { "label": "50 in", "values": ["4,17 ft"] },
-        { "label": "55 in", "values": ["4,58 ft"] },
-        { "label": "60 in", "values": ["5,00 ft"], "emphasis": true },
-        { "label": "63 in", "values": ["5,25 ft"] },
-        { "label": "66 in", "values": ["5,50 ft"] },
-        { "label": "67 in", "values": ["5,58 ft"] },
-        { "label": "68 in", "values": ["5,67 ft"] },
-        { "label": "70 in", "values": ["5,83 ft"], "emphasis": true },
-        { "label": "72 in", "values": ["6,00 ft"], "emphasis": true },
-        { "label": "79 in", "values": ["6,58 ft"] },
-        { "label": "84 in", "values": ["7,00 ft"] },
-        { "label": "96 in", "values": ["8,00 ft"] },
-        { "label": "120 in", "values": ["10,00 ft"] }
+        {
+          "label": "1 in",
+          "values": ["0,08 ft"]
+        },
+        {
+          "label": "10 in",
+          "values": ["0,83 ft"]
+        },
+        {
+          "label": "12 in",
+          "values": ["1,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "24 in",
+          "values": ["2,00 ft"]
+        },
+        {
+          "label": "30 in",
+          "values": ["2,50 ft"]
+        },
+        {
+          "label": "36 in",
+          "values": ["3,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "40 in",
+          "values": ["3,33 ft"]
+        },
+        {
+          "label": "42 in",
+          "values": ["3,50 ft"]
+        },
+        {
+          "label": "48 in",
+          "values": ["4,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "50 in",
+          "values": ["4,17 ft"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4,58 ft"]
+        },
+        {
+          "label": "60 in",
+          "values": ["5,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "63 in",
+          "values": ["5,25 ft"]
+        },
+        {
+          "label": "66 in",
+          "values": ["5,50 ft"]
+        },
+        {
+          "label": "67 in",
+          "values": ["5,58 ft"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5,67 ft"]
+        },
+        {
+          "label": "70 in",
+          "values": ["5,83 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "72 in",
+          "values": ["6,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "79 in",
+          "values": ["6,58 ft"]
+        },
+        {
+          "label": "84 in",
+          "values": ["7,00 ft"]
+        },
+        {
+          "label": "96 in",
+          "values": ["8,00 ft"]
+        },
+        {
+          "label": "120 in",
+          "values": ["10,00 ft"]
+        }
       ],
       "caption": "Quer converter no sentido inverso? Utilize o nosso conversor de <a href=\"/pt/ferramentas/conversor-pes-para-polegadas\">pés para polegadas</a> com a tabela completa para medidas indicadas em pés."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabela de alturas: polegadas para pés e polegadas",
@@ -132,41 +216,129 @@
       "labelHeader": "Altura",
       "cols": ["Pés (decimais)", "Pés e polegadas"],
       "rows": [
-        { "label": "58 in", "values": ["4,83 ft", "4 pés 10 polegadas"] },
-        { "label": "59 in", "values": ["4,92 ft", "4 pés 11 polegadas"] },
+        {
+          "label": "48 in",
+          "values": ["4,00 ft", "4 pés 0 polegadas"]
+        },
+        {
+          "label": "49 in",
+          "values": ["4,08 ft", "4 pés 1 polegada"]
+        },
+        {
+          "label": "50 in",
+          "values": ["4,17 ft", "4 pés 2 polegadas"]
+        },
+        {
+          "label": "51 in",
+          "values": ["4,25 ft", "4 pés 3 polegadas"]
+        },
+        {
+          "label": "52 in",
+          "values": ["4,33 ft", "4 pés 4 polegadas"]
+        },
+        {
+          "label": "53 in",
+          "values": ["4,42 ft", "4 pés 5 polegadas"]
+        },
+        {
+          "label": "54 in",
+          "values": ["4,50 ft", "4 pés 6 polegadas"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4,58 ft", "4 pés 7 polegadas"]
+        },
+        {
+          "label": "56 in",
+          "values": ["4,67 ft", "4 pés 8 polegadas"]
+        },
+        {
+          "label": "57 in",
+          "values": ["4,75 ft", "4 pés 9 polegadas"]
+        },
+        {
+          "label": "58 in",
+          "values": ["4,83 ft", "4 pés 10 polegadas"]
+        },
+        {
+          "label": "59 in",
+          "values": ["4,92 ft", "4 pés 11 polegadas"]
+        },
         {
           "label": "60 in",
           "values": ["5,00 ft", "5 pés 0 polegadas"],
           "emphasis": true
         },
-        { "label": "62 in", "values": ["5,17 ft", "5 pés 2 polegadas"] },
-        { "label": "63 in", "values": ["5,25 ft", "5 pés 3 polegadas"] },
-        { "label": "64 in", "values": ["5,33 ft", "5 pés 4 polegadas"] },
-        { "label": "65 in", "values": ["5,42 ft", "5 pés 5 polegadas"] },
+        {
+          "label": "61 in",
+          "values": ["5,08 ft", "5 pés 1 polegada"]
+        },
+        {
+          "label": "62 in",
+          "values": ["5,17 ft", "5 pés 2 polegadas"]
+        },
+        {
+          "label": "63 in",
+          "values": ["5,25 ft", "5 pés 3 polegadas"]
+        },
+        {
+          "label": "64 in",
+          "values": ["5,33 ft", "5 pés 4 polegadas"]
+        },
+        {
+          "label": "65 in",
+          "values": ["5,42 ft", "5 pés 5 polegadas"]
+        },
         {
           "label": "66 in",
           "values": ["5,50 ft", "5 pés 6 polegadas"],
           "emphasis": true
         },
-        { "label": "67 in", "values": ["5,58 ft", "5 pés 7 polegadas"] },
-        { "label": "68 in", "values": ["5,67 ft", "5 pés 8 polegadas"] },
-        { "label": "69 in", "values": ["5,75 ft", "5 pés 9 polegadas"] },
+        {
+          "label": "67 in",
+          "values": ["5,58 ft", "5 pés 7 polegadas"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5,67 ft", "5 pés 8 polegadas"]
+        },
+        {
+          "label": "69 in",
+          "values": ["5,75 ft", "5 pés 9 polegadas"]
+        },
         {
           "label": "70 in",
           "values": ["5,83 ft", "5 pés 10 polegadas"],
           "emphasis": true
         },
-        { "label": "71 in", "values": ["5,92 ft", "5 pés 11 polegadas"] },
+        {
+          "label": "71 in",
+          "values": ["5,92 ft", "5 pés 11 polegadas"]
+        },
         {
           "label": "72 in",
           "values": ["6,00 ft", "6 pés 0 polegadas"],
           "emphasis": true
         },
-        { "label": "74 in", "values": ["6,17 ft", "6 pés 2 polegadas"] }
+        {
+          "label": "73 in",
+          "values": ["6,08 ft", "6 pés 1 polegada"]
+        },
+        {
+          "label": "74 in",
+          "values": ["6,17 ft", "6 pés 2 polegadas"]
+        },
+        {
+          "label": "75 in",
+          "values": ["6,25 ft", "6 pés 3 polegadas"]
+        }
       ],
       "caption": "As polegadas lê-as diretamente do resto da divisão por 12. Exemplo: 70 ÷ 12 = 5 com resto 10, ou seja, 5 pés 10 polegadas."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Quando se convertem polegadas em pés?",
@@ -190,7 +362,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Perguntas frequentes sobre converter polegadas em pés",
@@ -245,7 +420,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
@@ -254,7 +432,10 @@
       "imageAlt": "Contacto com a Arteon Agency",
       "subject": "Conversor de polegadas para pés"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Outros conversores de unidades úteis"

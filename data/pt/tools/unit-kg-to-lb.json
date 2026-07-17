@@ -375,6 +375,33 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Quando se convertem quilogramas em libras?",
+      "description": "A conversão de kg para lb surge em algumas situações concretas.",
+      "items": [
+        {
+          "title": "Peso corporal e dieta",
+          "description": "As aplicações de treino, as pulseiras de fitness e os portais médicos dos EUA e do Reino Unido indicam o peso em libras ou stone. Se um treinador americano define o seu objetivo como 180 lb, isso são 180 × 0,4536 = 81,65 kg. No sentido inverso, 80 kg × 2,2046 = 176,37 lb. A tabela de peso corporal acima traz conversões prontas para valores de 40 a 120 kg."
+        },
+        {
+          "title": "Treino e ginásio",
+          "description": "Os vídeos e programas de treino dos EUA indicam as cargas exclusivamente em libras. A barra olímpica pesa 20 kg — os americanos chamam-lhe barra de 45 libras, embora sejam exatamente 44,09 lb. Os halteres típicos de 25 lb são pouco mais de 11 kg. Nas competições de powerlifting nos EUA os recordes também se registam em libras — as conversões prontas estão na tabela de pesos de ginásio acima."
+        },
+        {
+          "title": "Peso do bebé",
+          "description": "Nos países anglo-saxónicos o peso do recém-nascido indica-se em libras e onças. Um recém-nascido saudável de 3,5 kg são cerca de 7 lb 11 oz (7,716 lb). A conversão: 3,5 × 2,2046 = 7,72 lb; a parte decimal 0,72 lb × 16 onças = 11,5 oz. O conversor dá o resultado em libras decimais — a passagem a onças é mais uma multiplicação do resto por 16."
+        },
+        {
+          "title": "Bagagem e encomendas",
+          "description": "Muitas companhias aéreas, sobretudo americanas, indicam os limites de bagagem em libras. O limite padrão de 50 lb são 22,68 kg e 70 lb são 31,75 kg. As transportadoras dos EUA cobram por libra — ao encomendar equipamento da Amazon US convém saber quantos kg têm 30 lb (13,61 kg) ou 50 lb (22,68 kg)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de kg para libras",
       "items": [
@@ -403,6 +430,10 @@
           "answer": "32 kg são 70,55 lb. É o valor que os viajantes mais consultam: 32 kg é o peso máximo permitido para uma única mala despachada na maioria das companhias aéreas (acima disso a bagagem é recusada por segurança do pessoal de terra). As companhias americanas indicam o mesmo limite como 70 lb, ou seja, 31,75 kg."
         },
         {
+          "question": "Quantas libras são 50 kg?",
+          "answer": "50 kg são 110,23 lb. Aproximação útil: 50 kg são um pouco mais de 110 libras. No sistema britânico: 7 stone e 12,2 lb."
+        },
+        {
           "question": "Quantas libras são 65 kg?",
           "answer": "65 kg são 143,30 lb, equivalentes a 10 stone 3,3 lb no sistema britânico. Cálculo: 65 × 2,2046 = 143,30."
         },
@@ -425,6 +456,10 @@
         {
           "question": "Quantas libras são 23 kg (limite de bagagem)?",
           "answer": "23 kg são 50,71 lb. É o limite de bagagem despachada mais comum nas companhias aéreas europeias, como a TAP. As companhias americanas indicam o mesmo limite como 50 lb, ou seja, 22,68 kg: a diferença é de apenas cerca de 320 gramas, pelo que na prática os dois limites são equivalentes."
+        },
+        {
+          "question": "Porque é que os EUA usam libras em vez de quilogramas?",
+          "answer": "Os Estados Unidos usam o sistema anglo-saxónico de medidas (imperial/customary), herança das colónias britânicas. A libra tem mais de mil anos de história e enraizou-se profundamente na cultura e no dia a dia dos americanos. O Reino Unido passou ao sistema métrico nas décadas de 1960 e 1970, mas a libra continuou em uso informal, sobretudo para o peso corporal. Os EUA são um dos três países (juntamente com a Libéria e Mianmar) que não adotaram o sistema métrico como oficial."
         },
         {
           "question": "Quantas libras são 85 kg?",

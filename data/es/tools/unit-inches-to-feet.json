@@ -50,7 +50,7 @@
         "El resultado aparece al momento mientras escribes, sin pulsar ningún botón",
         "El botón Copiar resultado pone el valor terminado en el portapapeles",
         "La tabla de conversión abarca valores de 1 a 120 pulgadas",
-        "Una tabla de alturas aparte muestra cuántos pies y pulgadas corresponden a los valores de 58 a 75 pulgadas",
+        "Una tabla de alturas aparte muestra cuántos pies y pulgadas corresponden a los valores de 48 a 75 pulgadas",
         "Todos los cálculos se hacen en tu navegador, así que tus datos no salen del dispositivo",
         "La fórmula exacta es: pies = pulgadas ÷ 12",
         "La herramienta funciona en móvil, tableta y ordenador sin instalar nada"
@@ -77,7 +77,10 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "¿Para qué convertir pulgadas a pies?",
@@ -85,13 +88,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor gratuito de pulgadas a pies – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "¿Cómo funciona la conversión de pulgadas a pies? Fórmula y ejemplo",
       "html": "<p class=\"text-mid mb-4\">La conversión de pulgadas a pies se apoya en una relación fija: un pie son exactamente 12 pulgadas. Para pasar pulgadas a pies, divides el número de pulgadas entre 12.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>pies = pulgadas ÷ 12</strong>. En sentido contrario: <strong>pulgadas = pies × 12</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántos pies son 72 pulgadas. Sustituyes: 72 ÷ 12 = 6 pies. Es una de las pocas conversiones que sale exacta, porque 72 se divide entre 12 sin resto.</p><p class=\"text-mid\">Otro ejemplo: 70 pulgadas son 70 ÷ 12 = 5,83 pies. Esa cifra son pies decimales, no «5 pies y 83 pulgadas». Para leerla como altura en pies y pulgadas, divides las pulgadas entre 12 con resto: 70 ÷ 12 es 5 con resto 10, o sea 5 pies 10 pulgadas. Los valores ya hechos para la altura están en la tabla de abajo.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabla de conversión de pulgadas a pies",
@@ -99,32 +108,107 @@
       "labelHeader": "Pulgadas",
       "cols": ["Pies"],
       "rows": [
-        { "label": "1 in", "values": ["0,08 ft"] },
-        { "label": "10 in", "values": ["0,83 ft"] },
-        { "label": "12 in", "values": ["1,00 ft"], "emphasis": true },
-        { "label": "24 in", "values": ["2,00 ft"] },
-        { "label": "30 in", "values": ["2,50 ft"] },
-        { "label": "36 in", "values": ["3,00 ft"], "emphasis": true },
-        { "label": "40 in", "values": ["3,33 ft"] },
-        { "label": "42 in", "values": ["3,50 ft"] },
-        { "label": "48 in", "values": ["4,00 ft"], "emphasis": true },
-        { "label": "50 in", "values": ["4,17 ft"] },
-        { "label": "55 in", "values": ["4,58 ft"] },
-        { "label": "60 in", "values": ["5,00 ft"], "emphasis": true },
-        { "label": "63 in", "values": ["5,25 ft"] },
-        { "label": "66 in", "values": ["5,50 ft"] },
-        { "label": "67 in", "values": ["5,58 ft"] },
-        { "label": "68 in", "values": ["5,67 ft"] },
-        { "label": "70 in", "values": ["5,83 ft"], "emphasis": true },
-        { "label": "72 in", "values": ["6,00 ft"], "emphasis": true },
-        { "label": "79 in", "values": ["6,58 ft"] },
-        { "label": "84 in", "values": ["7,00 ft"] },
-        { "label": "96 in", "values": ["8,00 ft"] },
-        { "label": "120 in", "values": ["10,00 ft"] }
+        {
+          "label": "1 in",
+          "values": ["0,08 ft"]
+        },
+        {
+          "label": "10 in",
+          "values": ["0,83 ft"]
+        },
+        {
+          "label": "12 in",
+          "values": ["1,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "24 in",
+          "values": ["2,00 ft"]
+        },
+        {
+          "label": "30 in",
+          "values": ["2,50 ft"]
+        },
+        {
+          "label": "36 in",
+          "values": ["3,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "40 in",
+          "values": ["3,33 ft"]
+        },
+        {
+          "label": "42 in",
+          "values": ["3,50 ft"]
+        },
+        {
+          "label": "48 in",
+          "values": ["4,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "50 in",
+          "values": ["4,17 ft"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4,58 ft"]
+        },
+        {
+          "label": "60 in",
+          "values": ["5,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "63 in",
+          "values": ["5,25 ft"]
+        },
+        {
+          "label": "66 in",
+          "values": ["5,50 ft"]
+        },
+        {
+          "label": "67 in",
+          "values": ["5,58 ft"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5,67 ft"]
+        },
+        {
+          "label": "70 in",
+          "values": ["5,83 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "72 in",
+          "values": ["6,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "79 in",
+          "values": ["6,58 ft"]
+        },
+        {
+          "label": "84 in",
+          "values": ["7,00 ft"]
+        },
+        {
+          "label": "96 in",
+          "values": ["8,00 ft"]
+        },
+        {
+          "label": "120 in",
+          "values": ["10,00 ft"]
+        }
       ],
       "caption": "¿Quieres convertir en el otro sentido? Usa nuestro convertidor de <a href=\"/es/herramientas/convertidor-pies-a-pulgadas\">pies a pulgadas</a> con la tabla completa para medidas dadas en pies."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabla de alturas: pulgadas a pies y pulgadas",
@@ -132,41 +216,129 @@
       "labelHeader": "Altura",
       "cols": ["Pies (decimales)", "Pies y pulgadas"],
       "rows": [
-        { "label": "58 in", "values": ["4,83 ft", "4 pies 10 pulgadas"] },
-        { "label": "59 in", "values": ["4,92 ft", "4 pies 11 pulgadas"] },
+        {
+          "label": "48 in",
+          "values": ["4,00 ft", "4 pies 0 pulgadas"]
+        },
+        {
+          "label": "49 in",
+          "values": ["4,08 ft", "4 pies 1 pulgada"]
+        },
+        {
+          "label": "50 in",
+          "values": ["4,17 ft", "4 pies 2 pulgadas"]
+        },
+        {
+          "label": "51 in",
+          "values": ["4,25 ft", "4 pies 3 pulgadas"]
+        },
+        {
+          "label": "52 in",
+          "values": ["4,33 ft", "4 pies 4 pulgadas"]
+        },
+        {
+          "label": "53 in",
+          "values": ["4,42 ft", "4 pies 5 pulgadas"]
+        },
+        {
+          "label": "54 in",
+          "values": ["4,50 ft", "4 pies 6 pulgadas"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4,58 ft", "4 pies 7 pulgadas"]
+        },
+        {
+          "label": "56 in",
+          "values": ["4,67 ft", "4 pies 8 pulgadas"]
+        },
+        {
+          "label": "57 in",
+          "values": ["4,75 ft", "4 pies 9 pulgadas"]
+        },
+        {
+          "label": "58 in",
+          "values": ["4,83 ft", "4 pies 10 pulgadas"]
+        },
+        {
+          "label": "59 in",
+          "values": ["4,92 ft", "4 pies 11 pulgadas"]
+        },
         {
           "label": "60 in",
           "values": ["5,00 ft", "5 pies 0 pulgadas"],
           "emphasis": true
         },
-        { "label": "62 in", "values": ["5,17 ft", "5 pies 2 pulgadas"] },
-        { "label": "63 in", "values": ["5,25 ft", "5 pies 3 pulgadas"] },
-        { "label": "64 in", "values": ["5,33 ft", "5 pies 4 pulgadas"] },
-        { "label": "65 in", "values": ["5,42 ft", "5 pies 5 pulgadas"] },
+        {
+          "label": "61 in",
+          "values": ["5,08 ft", "5 pies 1 pulgada"]
+        },
+        {
+          "label": "62 in",
+          "values": ["5,17 ft", "5 pies 2 pulgadas"]
+        },
+        {
+          "label": "63 in",
+          "values": ["5,25 ft", "5 pies 3 pulgadas"]
+        },
+        {
+          "label": "64 in",
+          "values": ["5,33 ft", "5 pies 4 pulgadas"]
+        },
+        {
+          "label": "65 in",
+          "values": ["5,42 ft", "5 pies 5 pulgadas"]
+        },
         {
           "label": "66 in",
           "values": ["5,50 ft", "5 pies 6 pulgadas"],
           "emphasis": true
         },
-        { "label": "67 in", "values": ["5,58 ft", "5 pies 7 pulgadas"] },
-        { "label": "68 in", "values": ["5,67 ft", "5 pies 8 pulgadas"] },
-        { "label": "69 in", "values": ["5,75 ft", "5 pies 9 pulgadas"] },
+        {
+          "label": "67 in",
+          "values": ["5,58 ft", "5 pies 7 pulgadas"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5,67 ft", "5 pies 8 pulgadas"]
+        },
+        {
+          "label": "69 in",
+          "values": ["5,75 ft", "5 pies 9 pulgadas"]
+        },
         {
           "label": "70 in",
           "values": ["5,83 ft", "5 pies 10 pulgadas"],
           "emphasis": true
         },
-        { "label": "71 in", "values": ["5,92 ft", "5 pies 11 pulgadas"] },
+        {
+          "label": "71 in",
+          "values": ["5,92 ft", "5 pies 11 pulgadas"]
+        },
         {
           "label": "72 in",
           "values": ["6,00 ft", "6 pies 0 pulgadas"],
           "emphasis": true
         },
-        { "label": "74 in", "values": ["6,17 ft", "6 pies 2 pulgadas"] }
+        {
+          "label": "73 in",
+          "values": ["6,08 ft", "6 pies 1 pulgada"]
+        },
+        {
+          "label": "74 in",
+          "values": ["6,17 ft", "6 pies 2 pulgadas"]
+        },
+        {
+          "label": "75 in",
+          "values": ["6,25 ft", "6 pies 3 pulgadas"]
+        }
       ],
       "caption": "Las pulgadas las lees directamente del resto al dividir entre 12. Ejemplo: 70 ÷ 12 = 5 con resto 10, o sea 5 pies 10 pulgadas."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "¿Cuándo se convierten pulgadas a pies?",
@@ -190,7 +362,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Preguntas frecuentes sobre convertir pulgadas a pies",
@@ -245,7 +420,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
@@ -254,7 +432,10 @@
       "imageAlt": "Contacto con Arteon Agency",
       "subject": "Convertidor de pulgadas a pies"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Otros convertidores de unidades útiles"

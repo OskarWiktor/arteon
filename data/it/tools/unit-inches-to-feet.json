@@ -50,7 +50,7 @@
         "Il risultato compare subito mentre scrivi, senza dover premere alcun pulsante",
         "Il pulsante Copia risultato porta il valore finito negli appunti",
         "La tabella di conversione copre i valori da 1 a 120 pollici",
-        "Una tabella delle altezze a parte mostra a quanti piedi e pollici corrispondono i valori da 58 a 75 pollici",
+        "Una tabella delle altezze a parte mostra a quanti piedi e pollici corrispondono i valori da 48 a 75 pollici",
         "Tutti i calcoli avvengono nel tuo browser, quindi i dati non escono dal dispositivo",
         "La formula esatta è: piedi = pollici ÷ 12",
         "Lo strumento funziona su telefono, tablet e computer senza installare nulla"
@@ -71,13 +71,16 @@
         },
         {
           "name": "Inverti la direzione se ti serve",
-          "text": "Fai clic su Cambia ordine per passare alla conversione dei piedi in pollici."
+          "text": "Fai clic su Inverti ordine per passare alla conversione dei piedi in pollici."
         }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Perché convertire i pollici in piedi?",
@@ -85,13 +88,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore gratuito da pollici a piedi – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "Come funziona la conversione da pollici a piedi? Formula ed esempio",
       "html": "<p class=\"text-mid mb-4\">La conversione da pollici a piedi si basa su un rapporto fisso: un piede è esattamente 12 pollici. Per trasformare i pollici in piedi, dividi il numero di pollici per 12.</p><p class=\"text-mid mb-4\">Formula completa: <strong>piedi = pollici ÷ 12</strong>. Nella direzione opposta: <strong>pollici = piedi × 12</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti piedi sono 72 pollici. Sostituisci: 72 ÷ 12 = 6 piedi. È una delle poche conversioni che torna esatta, perché 72 si divide per 12 senza resto.</p><p class=\"text-mid\">Altro esempio: 70 pollici sono 70 ÷ 12 = 5,83 piedi. Quel numero è in piedi decimali, non «5 piedi e 83 pollici». Per leggerlo come altezza in piedi e pollici, dividi i pollici per 12 con il resto: 70 ÷ 12 fa 5 con resto 10, cioè 5 piedi 10 pollici. I valori già pronti per l'altezza sono nella tabella qui sotto.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabella di conversione da pollici a piedi",
@@ -99,32 +108,107 @@
       "labelHeader": "Pollici",
       "cols": ["Piedi"],
       "rows": [
-        { "label": "1 in", "values": ["0,08 ft"] },
-        { "label": "10 in", "values": ["0,83 ft"] },
-        { "label": "12 in", "values": ["1,00 ft"], "emphasis": true },
-        { "label": "24 in", "values": ["2,00 ft"] },
-        { "label": "30 in", "values": ["2,50 ft"] },
-        { "label": "36 in", "values": ["3,00 ft"], "emphasis": true },
-        { "label": "40 in", "values": ["3,33 ft"] },
-        { "label": "42 in", "values": ["3,50 ft"] },
-        { "label": "48 in", "values": ["4,00 ft"], "emphasis": true },
-        { "label": "50 in", "values": ["4,17 ft"] },
-        { "label": "55 in", "values": ["4,58 ft"] },
-        { "label": "60 in", "values": ["5,00 ft"], "emphasis": true },
-        { "label": "63 in", "values": ["5,25 ft"] },
-        { "label": "66 in", "values": ["5,50 ft"] },
-        { "label": "67 in", "values": ["5,58 ft"] },
-        { "label": "68 in", "values": ["5,67 ft"] },
-        { "label": "70 in", "values": ["5,83 ft"], "emphasis": true },
-        { "label": "72 in", "values": ["6,00 ft"], "emphasis": true },
-        { "label": "79 in", "values": ["6,58 ft"] },
-        { "label": "84 in", "values": ["7,00 ft"] },
-        { "label": "96 in", "values": ["8,00 ft"] },
-        { "label": "120 in", "values": ["10,00 ft"] }
+        {
+          "label": "1 in",
+          "values": ["0,08 ft"]
+        },
+        {
+          "label": "10 in",
+          "values": ["0,83 ft"]
+        },
+        {
+          "label": "12 in",
+          "values": ["1,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "24 in",
+          "values": ["2,00 ft"]
+        },
+        {
+          "label": "30 in",
+          "values": ["2,50 ft"]
+        },
+        {
+          "label": "36 in",
+          "values": ["3,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "40 in",
+          "values": ["3,33 ft"]
+        },
+        {
+          "label": "42 in",
+          "values": ["3,50 ft"]
+        },
+        {
+          "label": "48 in",
+          "values": ["4,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "50 in",
+          "values": ["4,17 ft"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4,58 ft"]
+        },
+        {
+          "label": "60 in",
+          "values": ["5,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "63 in",
+          "values": ["5,25 ft"]
+        },
+        {
+          "label": "66 in",
+          "values": ["5,50 ft"]
+        },
+        {
+          "label": "67 in",
+          "values": ["5,58 ft"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5,67 ft"]
+        },
+        {
+          "label": "70 in",
+          "values": ["5,83 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "72 in",
+          "values": ["6,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "79 in",
+          "values": ["6,58 ft"]
+        },
+        {
+          "label": "84 in",
+          "values": ["7,00 ft"]
+        },
+        {
+          "label": "96 in",
+          "values": ["8,00 ft"]
+        },
+        {
+          "label": "120 in",
+          "values": ["10,00 ft"]
+        }
       ],
       "caption": "Vuoi convertire nella direzione opposta? Usa il nostro convertitore da <a href=\"/it/strumenti/convertitore-piedi-in-pollici\">piedi a pollici</a> con la tabella completa per le misure indicate in piedi."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabella delle altezze: pollici in piedi e pollici",
@@ -132,41 +216,129 @@
       "labelHeader": "Altezza",
       "cols": ["Piedi (decimali)", "Piedi e pollici"],
       "rows": [
-        { "label": "58 in", "values": ["4,83 ft", "4 piedi 10 pollici"] },
-        { "label": "59 in", "values": ["4,92 ft", "4 piedi 11 pollici"] },
+        {
+          "label": "48 in",
+          "values": ["4,00 ft", "4 piedi 0 pollici"]
+        },
+        {
+          "label": "49 in",
+          "values": ["4,08 ft", "4 piedi 1 pollice"]
+        },
+        {
+          "label": "50 in",
+          "values": ["4,17 ft", "4 piedi 2 pollici"]
+        },
+        {
+          "label": "51 in",
+          "values": ["4,25 ft", "4 piedi 3 pollici"]
+        },
+        {
+          "label": "52 in",
+          "values": ["4,33 ft", "4 piedi 4 pollici"]
+        },
+        {
+          "label": "53 in",
+          "values": ["4,42 ft", "4 piedi 5 pollici"]
+        },
+        {
+          "label": "54 in",
+          "values": ["4,50 ft", "4 piedi 6 pollici"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4,58 ft", "4 piedi 7 pollici"]
+        },
+        {
+          "label": "56 in",
+          "values": ["4,67 ft", "4 piedi 8 pollici"]
+        },
+        {
+          "label": "57 in",
+          "values": ["4,75 ft", "4 piedi 9 pollici"]
+        },
+        {
+          "label": "58 in",
+          "values": ["4,83 ft", "4 piedi 10 pollici"]
+        },
+        {
+          "label": "59 in",
+          "values": ["4,92 ft", "4 piedi 11 pollici"]
+        },
         {
           "label": "60 in",
           "values": ["5,00 ft", "5 piedi 0 pollici"],
           "emphasis": true
         },
-        { "label": "62 in", "values": ["5,17 ft", "5 piedi 2 pollici"] },
-        { "label": "63 in", "values": ["5,25 ft", "5 piedi 3 pollici"] },
-        { "label": "64 in", "values": ["5,33 ft", "5 piedi 4 pollici"] },
-        { "label": "65 in", "values": ["5,42 ft", "5 piedi 5 pollici"] },
+        {
+          "label": "61 in",
+          "values": ["5,08 ft", "5 piedi 1 pollice"]
+        },
+        {
+          "label": "62 in",
+          "values": ["5,17 ft", "5 piedi 2 pollici"]
+        },
+        {
+          "label": "63 in",
+          "values": ["5,25 ft", "5 piedi 3 pollici"]
+        },
+        {
+          "label": "64 in",
+          "values": ["5,33 ft", "5 piedi 4 pollici"]
+        },
+        {
+          "label": "65 in",
+          "values": ["5,42 ft", "5 piedi 5 pollici"]
+        },
         {
           "label": "66 in",
           "values": ["5,50 ft", "5 piedi 6 pollici"],
           "emphasis": true
         },
-        { "label": "67 in", "values": ["5,58 ft", "5 piedi 7 pollici"] },
-        { "label": "68 in", "values": ["5,67 ft", "5 piedi 8 pollici"] },
-        { "label": "69 in", "values": ["5,75 ft", "5 piedi 9 pollici"] },
+        {
+          "label": "67 in",
+          "values": ["5,58 ft", "5 piedi 7 pollici"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5,67 ft", "5 piedi 8 pollici"]
+        },
+        {
+          "label": "69 in",
+          "values": ["5,75 ft", "5 piedi 9 pollici"]
+        },
         {
           "label": "70 in",
           "values": ["5,83 ft", "5 piedi 10 pollici"],
           "emphasis": true
         },
-        { "label": "71 in", "values": ["5,92 ft", "5 piedi 11 pollici"] },
+        {
+          "label": "71 in",
+          "values": ["5,92 ft", "5 piedi 11 pollici"]
+        },
         {
           "label": "72 in",
           "values": ["6,00 ft", "6 piedi 0 pollici"],
           "emphasis": true
         },
-        { "label": "74 in", "values": ["6,17 ft", "6 piedi 2 pollici"] }
+        {
+          "label": "73 in",
+          "values": ["6,08 ft", "6 piedi 1 pollice"]
+        },
+        {
+          "label": "74 in",
+          "values": ["6,17 ft", "6 piedi 2 pollici"]
+        },
+        {
+          "label": "75 in",
+          "values": ["6,25 ft", "6 piedi 3 pollici"]
+        }
       ],
       "caption": "I pollici si leggono direttamente dal resto della divisione per 12. Esempio: 70 ÷ 12 = 5 con resto 10, cioè 5 piedi 10 pollici."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Quando si convertono i pollici in piedi?",
@@ -190,7 +362,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Domande frequenti sulla conversione dei pollici in piedi",
@@ -245,7 +420,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
@@ -254,7 +432,10 @@
       "imageAlt": "Contatto con Arteon Agency",
       "subject": "Convertitore da pollici a piedi"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Altri convertitori di unità utili"

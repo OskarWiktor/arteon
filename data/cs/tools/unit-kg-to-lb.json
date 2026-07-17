@@ -108,25 +108,93 @@
       "labelHeader": "Kilogramy",
       "cols": ["Libry (lb)"],
       "rows": [
-        { "label": "0,5 kg", "values": ["1,10 lb"] },
-        { "label": "1 kg", "values": ["2,20 lb"], "emphasis": true },
-        { "label": "2 kg", "values": ["4,41 lb"] },
-        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
-        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
-        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
-        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
-        { "label": "30 kg", "values": ["66,14 lb"] },
-        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
-        { "label": "40 kg", "values": ["88,18 lb"] },
-        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
-        { "label": "60 kg", "values": ["132,28 lb"] },
-        { "label": "70 kg", "values": ["154,32 lb"], "emphasis": true },
-        { "label": "80 kg", "values": ["176,37 lb"], "emphasis": true },
-        { "label": "90 kg", "values": ["198,42 lb"] },
-        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true },
-        { "label": "120 kg", "values": ["264,55 lb"] },
-        { "label": "150 kg", "values": ["330,69 lb"], "emphasis": true },
-        { "label": "200 kg", "values": ["440,92 lb"] }
+        {
+          "label": "0,5 kg",
+          "values": ["1,10 lb"]
+        },
+        {
+          "label": "1 kg",
+          "values": ["2,20 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "2 kg",
+          "values": ["4,41 lb"]
+        },
+        {
+          "label": "5 kg",
+          "values": ["11,02 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "10 kg",
+          "values": ["22,05 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "20 kg",
+          "values": ["44,09 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "23 kg",
+          "values": ["50,71 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "30 kg",
+          "values": ["66,14 lb"]
+        },
+        {
+          "label": "32 kg",
+          "values": ["70,55 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "40 kg",
+          "values": ["88,18 lb"]
+        },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "60 kg",
+          "values": ["132,28 lb"]
+        },
+        {
+          "label": "70 kg",
+          "values": ["154,32 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "80 kg",
+          "values": ["176,37 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "90 kg",
+          "values": ["198,42 lb"]
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "120 kg",
+          "values": ["264,55 lb"]
+        },
+        {
+          "label": "150 kg",
+          "values": ["330,69 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "200 kg",
+          "values": ["440,92 lb"]
+        }
       ],
       "caption": "Chceš převádět opačným směrem? Použij náš <a href=\"/cs/nastroje/prevodnik-liber-na-kg\">převodník liber na kg</a> s vlastní tabulkou a podrobným obsahem."
     },
@@ -141,7 +209,10 @@
       "labelHeader": "Tělesná hmotnost",
       "cols": ["Libry (lb)", "Stone a libry (st lb)"],
       "rows": [
-        { "label": "40 kg", "values": ["88,18 lb", "6 st 4,2 lb"] },
+        {
+          "label": "40 kg",
+          "values": ["88,18 lb", "6 st 4,2 lb"]
+        },
         {
           "label": "50 kg",
           "values": ["110,23 lb", "7 st 12,2 lb"],
@@ -182,29 +253,14 @@
           "values": ["220,46 lb", "15 st 10,5 lb"],
           "emphasis": true
         },
-        { "label": "110 kg", "values": ["242,51 lb", "17 st 4,5 lb"] },
-        { "label": "120 kg", "values": ["264,55 lb", "18 st 12,6 lb"] }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionTable",
-      "title": "Zpětná tabulka – libry na kilogramy",
-      "description": "Následující tabulka převádí běžné hodnoty v librách na kilogramy, zaokrouhlené na dvě desetinná místa.",
-      "labelHeader": "Libry (lb)",
-      "cols": ["Kilogramy"],
-      "rows": [
-        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
-        { "label": "5 lb", "values": ["2,27 kg"] },
-        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
-        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
-        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
-        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
-        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
-        { "label": "300 lb", "values": ["136,08 kg"] }
+        {
+          "label": "110 kg",
+          "values": ["242,51 lb", "17 st 4,5 lb"]
+        },
+        {
+          "label": "120 kg",
+          "values": ["264,55 lb", "18 st 12,6 lb"]
+        }
       ]
     },
     {
@@ -218,13 +274,66 @@
       "labelHeader": "Váha (kg)",
       "cols": ["Váha (lb)"],
       "rows": [
-        { "label": "2,5 kg", "values": ["5,51 lb"] },
-        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
-        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
-        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
-        { "label": "25 kg", "values": ["55,12 lb"] },
-        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
-        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true }
+        {
+          "label": "2,5 kg",
+          "values": ["5,51 lb"]
+        },
+        {
+          "label": "5 kg",
+          "values": ["11,02 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "10 kg",
+          "values": ["22,05 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "20 kg",
+          "values": ["44,09 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "25 kg",
+          "values": ["55,12 lb"]
+        },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb"],
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí kilogramy na libry?",
+      "description": "Převod kg na lb se objevuje v několika konkrétních situacích.",
+      "items": [
+        {
+          "title": "Tělesná hmotnost a dieta",
+          "description": "Tréninkové aplikace, fitness náramky a lékařské portály z USA a Velké Británie uvádějí hmotnost v librách nebo stone. Pokud americký trenér stanoví tvůj cíl na 180 lb, je to 180 × 0,4536 = 81,65 kg. Opačně: 80 kg × 2,2046 = 176,37 lb. Tabulka tělesné hmotnosti výše obsahuje hotové převody pro hodnoty od 40 do 120 kg."
+        },
+        {
+          "title": "Trénink a posilovna",
+          "description": "Tréninková videa a programy z USA uvádějí zátěže výhradně v librách. Olympijská osa váží 20 kg — Američané jí říkají 45librová, i když je to přesně 44,09 lb. Typické jednoručky 25 lb jsou o něco více než 11 kg. Na powerliftingových závodech v USA se rekordy zapisují také v librách — hotové převody najdeš v tabulce posilovacích vah výše."
+        },
+        {
+          "title": "Hmotnost novorozence",
+          "description": "V anglosaských zemích se hmotnost novorozence uvádí v librách a uncích. Zdravý novorozenec vážící 3,5 kg je asi 7 lb 11 oz (7,716 lb). Převod: 3,5 × 2,2046 = 7,72 lb; desetinná část 0,72 lb × 16 uncí = 11,5 oz. Převodník dává výsledek v desetinných librách — převod na unce je další násobení zbytku šestnácti."
+        },
+        {
+          "title": "Zavazadla a zásilky",
+          "description": "Mnoho aerolinek, zvlášť amerických, uvádí váhové limity zavazadel v librách. Standardní limit 50 lb je 22,68 kg a 70 lb je 31,75 kg. Kurýrní firmy z USA účtují za libru — při objednávce vybavení z Amazonu US se hodí vědět, kolik kg je 30 lb (13,61 kg) nebo 50 lb (22,68 kg)."
+        }
       ]
     },
     {
@@ -260,6 +369,10 @@
           "answer": "32 kg je 70,55 lb. Tuto hodnotu cestující ověřují nejčastěji: 32 kg je maximální povolená hmotnost jednoho odbaveného zavazadla u většiny leteckých společností (těžší kufr nepřijmou kvůli bezpečnosti pozemního personálu). Americké aerolinky uvádějí stejný limit jako 70 lb, tedy 31,75 kg."
         },
         {
+          "question": "Kolik liber je 50 kg?",
+          "answer": "50 kg je 110,23 lb. Užitečné přiblížení: 50 kg je o něco více než 110 liber. V britském systému: 7 stone a 12,2 lb."
+        },
+        {
           "question": "Kolik liber je 65 kg?",
           "answer": "65 kg je 143,30 lb, v britském systému 10 stone 3,3 lb. Výpočet: 65 × 2,2046 = 143,30."
         },
@@ -286,6 +399,10 @@
         {
           "question": "Kolik liber je 23 kg (limit zavazadla)?",
           "answer": "23 kg je 50,71 lb. Je to nejběžnější limit odbaveného zavazadla u evropských aerolinek. Americké společnosti uvádějí stejný limit jako 50 lb, tedy 22,68 kg — rozdíl je jen asi 320 gramů, takže v praxi jsou oba limity rovnocenné."
+        },
+        {
+          "question": "Proč USA používají libry místo kilogramů?",
+          "answer": "Spojené státy používají anglosaskou soustavu měr (imperial/customary), dědictví britských kolonií. Libra má více než tisíciletou historii a hluboko se zakořenila v kultuře i každodenním životě Američanů. Velká Británie přešla na metrickou soustavu v 60. a 70. letech 20. století, ale libra zůstala v běžném neformálním užívání, zvlášť u tělesné hmotnosti. USA jsou jednou ze tří zemí (vedle Libérie a Myanmaru), které metrickou soustavu nepřijaly jako oficiální."
         },
         {
           "question": "Kolik liber je 10, 20 a 25 kg?",

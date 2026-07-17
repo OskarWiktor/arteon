@@ -1,0 +1,246 @@
+{
+  "toolKey": "lbsToOz",
+  "locale": "en",
+  "metadata": {
+    "title": "Pounds to ounces converter – convert lb to oz",
+    "description": "Convert pounds to ounces. Ready-made tables lower down show baby weight in pounds and ounces (7 lb 4 oz is 116 oz) and common values. The pounds to ounces converter works both ways and calculates instantly.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/lb-to-oz-converter"
+  },
+  "hero": {
+    "title": "Convert pounds to ounces",
+    "description": "Type a value in pounds and read the result in ounces straight away. Pounds and ounces are the everyday weight units in the US and UK, so you meet them on baby scales, in recipes and on postage. Note: this is the ounce of mass, not the fluid ounce used for volume.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/lb-to-oz-converter",
+      "label": "lb to oz"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Pounds to ounces converter – lb to oz calculator",
+      "alternateName": [
+        "Pounds to ounces converter",
+        "lb to oz calculator",
+        "lb to oz converter",
+        "Pounds to ounces",
+        "lbs to oz",
+        "Convert pounds to ounces",
+        "How many ounces in a pound",
+        "1 pound in ounces",
+        "2 pounds in ounces",
+        "Baby weight in pounds and ounces",
+        "Pounds to ounces table",
+        "How many ounces in half a pound",
+        "lbs to oz",
+        "Mass converter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Pounds to ounces converter that runs in your browser with no sign-up. Type a value in pounds and read the result in ounces instantly. Handy for baby weight, recipe amounts and postage.",
+      "featureList": [
+        "The conversion works both ways, so you can turn pounds into ounces and ounces into pounds",
+        "The result appears instantly as you type, with no button to click",
+        "The Copy result button puts the finished value on your clipboard",
+        "The conversion table covers values from a quarter of a pound up to 20 pounds",
+        "A separate weight table shows the total ounces for a weight given in pounds and ounces",
+        "Every calculation runs locally in your browser, so your data never leaves your device",
+        "The exact formula is: ounces = pounds × 16",
+        "The tool works on phone, tablet and computer with no installation"
+      ]
+    },
+    "howTo": {
+      "name": "How do you convert pounds to ounces?",
+      "description": "A short guide to using the pounds to ounces converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Type a value in pounds",
+          "text": "In the left field, type the number of pounds you want to convert to ounces. The converter takes a single number, so turn a weight like 7 lb 4 oz into total ounces using the table below first."
+        },
+        {
+          "name": "Read the result in ounces",
+          "text": "The result in ounces appears immediately in the field on the right. The Copy result button puts it on your clipboard."
+        },
+        {
+          "name": "Swap the direction if you need to",
+          "text": "Click Swap order to move to converting ounces to pounds."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert pounds to ounces?",
+      "html": "<p class=\"text-mid mb-4\">Pounds and ounces are the everyday weight units across the US and UK. You meet them on baby scales, in recipes and on postage labels. Often you do not want the pounds figure itself but the total in ounces: how many ounces a newborn weighs, how many ounces of flour a recipe needs, or which postage band a light parcel falls into.</p><p class=\"text-mid mb-4\">The relationship is simple and exact: one pound is exactly 16 ounces. To turn pounds into ounces, multiply the number of pounds by 16. The converter does this for you the moment you type a value.</p><p class=\"text-mid mb-4\">Watch out for two different ounces. This tool works with the ounce of mass (oz), used for weight. There is also the fluid ounce (fl oz), which measures the volume of drinks, and the troy ounce, used for precious metals. These are three different units and must not be mixed up. The pounds to ounces converter deals only with the ordinary ounce of mass.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Free pounds to ounces converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does the pounds to ounces conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">Converting pounds to ounces rests on a fixed relationship: one pound is exactly 16 ounces. To turn pounds into ounces, multiply the number of pounds by 16.</p><p class=\"text-mid mb-4\">Full formula: <strong>ounces = pounds × 16</strong>. The other way: <strong>pounds = ounces ÷ 16</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many ounces 2 pounds is. You put in 2 × 16 = 32 ounces. Half a pound is 8 ounces and a quarter of a pound is 4 ounces, because 16 splits into those parts evenly.</p><p class=\"text-mid\">Mind how the weight is written. A baby weight of \"7 lb 4 oz\" is not the same as \"7.4 lb\". The converter takes a single number, so if you type 7.4 it works out 7.4 × 16 = 118.4 ounces. But 7 lb 4 oz is 116 ounces. That is why a weight in pounds and ounces is worked out like this: multiply the pounds by 16 and add the ounces. Ready-made values are in the weight table below.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Pounds to ounces conversion table",
+      "description": "The table below converts common pound values into ounces. The values for whole pounds are exact, because each pound is exactly 16 ounces. To convert another weight, use the converter above.",
+      "labelHeader": "Pounds",
+      "cols": ["Ounces"],
+      "rows": [
+        { "label": "0.25 lb", "values": ["4 oz"] },
+        { "label": "0.5 lb", "values": ["8 oz"], "emphasis": true },
+        { "label": "0.75 lb", "values": ["12 oz"] },
+        { "label": "1 lb", "values": ["16 oz"], "emphasis": true },
+        { "label": "1.5 lb", "values": ["24 oz"] },
+        { "label": "2 lb", "values": ["32 oz"], "emphasis": true },
+        { "label": "3 lb", "values": ["48 oz"] },
+        { "label": "4 lb", "values": ["64 oz"] },
+        { "label": "5 lb", "values": ["80 oz"], "emphasis": true },
+        { "label": "6 lb", "values": ["96 oz"] },
+        { "label": "7 lb", "values": ["112 oz"] },
+        { "label": "8 lb", "values": ["128 oz"] },
+        { "label": "9 lb", "values": ["144 oz"] },
+        { "label": "10 lb", "values": ["160 oz"], "emphasis": true },
+        { "label": "12 lb", "values": ["192 oz"] },
+        { "label": "15 lb", "values": ["240 oz"] },
+        { "label": "20 lb", "values": ["320 oz"] }
+      ],
+      "caption": "Want to convert the other way? Use our <a href=\"/en/tools/oz-to-lb-converter\">ounces to pounds</a> converter, which shows the result as pounds and ounces."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Baby weight table: pounds and ounces to total ounces",
+      "description": "In the US and UK a baby's weight is given in pounds and ounces, for example 7 lb 4 oz. To get the total ounces, multiply the pounds by 16 and add the ounces. The table below shows ready-made results for typical weights, so you avoid a slip with the decimal form.",
+      "labelHeader": "Weight",
+      "cols": ["Total ounces"],
+      "rows": [
+        { "label": "5 pounds 0 ounces", "values": ["80 oz"] },
+        { "label": "5 pounds 8 ounces", "values": ["88 oz"] },
+        { "label": "6 pounds 0 ounces", "values": ["96 oz"] },
+        { "label": "6 pounds 8 ounces", "values": ["104 oz"] },
+        {
+          "label": "7 pounds 0 ounces",
+          "values": ["112 oz"],
+          "emphasis": true
+        },
+        {
+          "label": "7 pounds 4 ounces",
+          "values": ["116 oz"],
+          "emphasis": true
+        },
+        { "label": "7 pounds 8 ounces", "values": ["120 oz"] },
+        {
+          "label": "8 pounds 0 ounces",
+          "values": ["128 oz"],
+          "emphasis": true
+        },
+        { "label": "8 pounds 8 ounces", "values": ["136 oz"] },
+        { "label": "9 pounds 0 ounces", "values": ["144 oz"] },
+        { "label": "9 pounds 8 ounces", "values": ["152 oz"] },
+        { "label": "10 pounds 0 ounces", "values": ["160 oz"] }
+      ],
+      "caption": "Example: 7 lb 4 oz is 7 × 16 + 4 = 116 ounces. Do not confuse it with 7.4 lb, which gives 118.4 ounces."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do people most often convert pounds to ounces?",
+      "description": "Pounds and ounces come up most often around weight given in both units.",
+      "items": [
+        {
+          "title": "Baby weight",
+          "description": "In the US and UK a newborn's weight is given in pounds and ounces, for example 7 lb 8 oz. To turn it into total ounces, multiply the pounds by 16 and add the ounces: 7 × 16 + 8 = 120 ounces. Ready-made values are in the weight table above."
+        },
+        {
+          "title": "Recipe ingredient weight",
+          "description": "American and British recipes give the weight of meat, flour or butter in pounds and ounces. Half a pound of butter is 8 ounces and a pound of meat is 16 ounces. Converting to ounces makes it easier to measure out smaller portions."
+        },
+        {
+          "title": "Postage weight",
+          "description": "American postage rates are often split by weight in ounces, especially for light items. A letter up to 1 pound is up to 16 ounces, and a small 2-pound parcel is 32 ounces. Converting lets you match the item to the right price band."
+        },
+        {
+          "title": "Food portions",
+          "description": "On American packaging the serving size is given in ounces, while the whole contents are sometimes in pounds. A 3-pound bag is 48 ounces, so it is easy to work out how many portions of a few ounces it holds."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting pounds to ounces",
+      "items": [
+        {
+          "question": "How many ounces are in 1 pound?",
+          "answer": "1 pound is exactly 16 ounces. Calculation: 1 × 16 = 16 ounces. This relationship is fixed and comes from the definition of the pound, so there is no rounding involved."
+        },
+        {
+          "question": "Is half a pound 8 ounces?",
+          "answer": "Yes. Half a pound is 8 ounces, because 16 ÷ 2 = 8. A quarter of a pound is 4 ounces."
+        },
+        {
+          "question": "How many ounces are in 2 pounds?",
+          "answer": "2 pounds is 32 ounces. Calculation: 2 × 16 = 32 ounces. So 32 ounces is exactly 2 pounds."
+        },
+        {
+          "question": "How many ounces is 7 lb 4 oz?",
+          "answer": "7 lb 4 oz is 116 ounces. Calculation: 7 × 16 + 4 = 116 ounces. This is a typical newborn weight, which is why it gets converted so often."
+        },
+        {
+          "question": "Is 7.4 lb the same as 7 lb 4 oz?",
+          "answer": "No. 7.4 lb is a decimal figure and works out to 7.4 × 16 = 118.4 ounces. A weight of 7 lb 4 oz is 116 ounces. The difference is because 0.4 of a pound is 6.4 ounces, not 4 ounces. Always write a weight as separate pounds and ounces."
+        },
+        {
+          "question": "How many ounces are in 3, 5 and 10 pounds?",
+          "answer": "3 pounds is 48 ounces, 5 pounds is 80 ounces, and 10 pounds is 160 ounces. You get each of these by multiplying the number of pounds by 16."
+        },
+        {
+          "question": "How do you turn a weight in pounds and ounces into total ounces?",
+          "answer": "Multiply the pounds by 16 and add the ounces. Example: 8 lb 8 oz is 8 × 16 + 8 = 136 ounces. Ready-made values for typical baby weights are in the table above."
+        },
+        {
+          "question": "What is the formula to convert pounds to ounces?",
+          "answer": "The formula is: ounces = pounds × 16. For example, 6 × 16 = 96 ounces. The other way: pounds = ounces ÷ 16."
+        },
+        {
+          "question": "Is the ounce of mass the same as the fluid ounce?",
+          "answer": "No. The ounce of mass (oz) measures weight, and that is what this tool converts. The fluid ounce (fl oz) measures the volume of drinks. They have a similar name but are different quantities, so they must not be mixed up."
+        },
+        {
+          "question": "How does an ounce differ from a troy ounce?",
+          "answer": "The ordinary ounce of mass is 28.35 g and is used for the weight of food or babies. The troy ounce is 31.10 g and is used for precious metals such as gold. What is more, a troy pound is 12 troy ounces, not 16. This tool works with the ordinary ounce, not the troy ounce."
+        },
+        {
+          "question": "How many grams are in one ounce?",
+          "answer": "One ounce of mass is about 28.35 g. This tool converts pounds to ounces, so if you need the result in grams, multiply the ounces by 28.35 as well."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "title": "Have a question or suggestion?",
+      "description": "If you have spotted an error in the tables or have an idea to improve the converter, write to us. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "Pounds to ounces converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    }
+  ]
+}

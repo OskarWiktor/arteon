@@ -73,7 +73,7 @@
         },
         {
           "name": "Přečti si výsledek nebo otoč směr",
-          "text": "Výsledek v pixelech se hned zobrazí v sousedním poli. Můžeš ho zkopírovat nebo tlačítkem Změnit pořadí převádět pixely na milimetry."
+          "text": "Výsledek v pixelech se hned zobrazí v sousedním poli. Můžeš ho zkopírovat nebo tlačítkem Prohodit pořadí převádět pixely na milimetry."
         }
       ]
     }
@@ -617,7 +617,7 @@
         },
         {
           "question": "Můžu pixely převést zpět na milimetry?",
-          "answer": "Ano, náš převodník funguje oběma směry. Zadej počet pixelů do pravého pole nebo použij tlačítko Změnit pořadí k otočení směru převodu – výsledek v milimetrech se zobrazí okamžitě. Vzorec tímto směrem je počet milimetrů = počet pixelů × 25,4 ÷ DPI."
+          "answer": "Ano, náš převodník funguje oběma směry. Zadej počet pixelů do pravého pole nebo použij tlačítko Prohodit pořadí k obrácení směru převodu – výsledek v milimetrech se zobrazí okamžitě. Vzorec tímto směrem je počet milimetrů = počet pixelů × 25,4 ÷ DPI."
         },
         {
           "question": "Jaké rozměry v pixelech má vizitka?",
@@ -633,7 +633,7 @@
         },
         {
           "question": "Jaké DPI nastavit pro tisk letáků a vizitek?",
-          "answer": "300 DPI je standard jak pro ofsetový, tak pro digitální tisk – tuto hodnotu vyžaduje většina online tiskáren. Pro velké formáty, jako jsou plakáty A1 nebo A0, často stačí 150 DPI, protože se sledují z větší vzdálenosti. Velkoformátové bannery a billboardy se někdy tisknou i jen při 30–72 DPI."
+          "answer": "300 DPI je standard jak pro ofsetový, tak pro digitální tisk – tuto hodnotu vyžaduje většina tiskáren. Pro velké formáty, jako jsou plakáty A1 nebo A0, často stačí 150 DPI, protože se sledují z větší vzdálenosti. Velkoformátové bannery a billboardy se někdy tisknou i jen při 30–72 DPI."
         },
         {
           "question": "Jak nastavím mm na px v Illustratoru nebo InDesignu?",
@@ -642,6 +642,10 @@
         {
           "question": "Jaký je rozdíl mezi DPI a PPI?",
           "answer": "DPI (dots per inch) je počet bodů barvy na palec materiálu a jde o vlastnost tiskárny. PPI (pixels per inch) je počet pixelů na palec obrazovky a popisuje monitor nebo displej. V běžné praxi grafici oba pojmy často zaměňují, technicky se ale DPI týká tisku a PPI obrazovek."
+        },
+        {
+          "question": "Jak převést milimetry na pixely v CSS nebo SVG?",
+          "answer": "V kaskádových stylech CSS se jednotka mm převádí pevným vzorcem: 1mm = 96px ÷ 25,4 ≈ 3,78px, nezávisle na zařízení. Stejná konstanta platí v souborech SVG, kde lze rozměry zapsat přímo v milimetrech. V praxi se pro webová rozhraní používají jednotky px, rem nebo em a mm se vyhrazuje pro tiskové styly (@media print)."
         },
         {
           "question": "Jaká je přesná velikost platební karty v pixelech?",

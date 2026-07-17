@@ -49,7 +49,7 @@
         "Die Umrechnung funktioniert in beide Richtungen, Sie rechnen also Meter in Fuß und Fuß in Meter um",
         "Das Ergebnis erscheint sofort während der Eingabe, ganz ohne Klick auf eine Schaltfläche",
         "Das fertige Ergebnis lässt sich mit einem Klick in die Zwischenablage kopieren",
-        "Die Umrechnungstabelle umfasst Werte von 1 bis 500 Metern",
+        "Die Umrechnungstabelle umfasst Werte von 1 bis 3000 Metern",
         "Eine eigene Größentabelle zeigt, wie viele Fuß und Zoll den Werten von 1,50 m bis 2,00 m entsprechen",
         "Alle Berechnungen laufen lokal im Browser, Ihre Daten verlassen das Gerät nicht",
         "Die genaue Umrechnungsformel lautet Fuß = Meter ÷ 0,3048",
@@ -71,13 +71,16 @@
         },
         {
           "name": "Richtung bei Bedarf umkehren",
-          "text": "Klicken Sie auf Reihenfolge ändern, um den Umrechner auf Fuß in Meter umzustellen."
+          "text": "Klicken Sie auf Reihenfolge tauschen, um den Umrechner auf Fuß in Meter umzustellen."
         }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Wozu Meter in Fuß umrechnen?",
@@ -85,13 +88,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Umrechner von Meter in Fuß – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "Wie funktioniert die Umrechnung von Meter in Fuß? Formel und Beispiel",
       "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Meter in Fuß beruht auf einem festen Verhältnis: Ein Fuß sind genau 0,3048 Meter. Um Meter in Fuß umzuwandeln, teilen Sie die Anzahl der Meter durch 0,3048 – das entspricht einer Multiplikation mit 3,280839895.</p><p class=\"text-mid mb-4\">Die vollständige Formel: <strong>Fuß = Meter ÷ 0,3048</strong>. In die andere Richtung: <strong>Meter = Fuß × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Fuß 1,80 m sind. Sie setzen ein: 1,80 ÷ 0,3048 = 5,91 Fuß. Das bedeutet nicht „5 Fuß und 91 Zoll\" – der Nachkommateil ist ein Bruchteil eines Fußes. Für die Zoll multiplizieren Sie ihn mit 12: 0,91 × 12 = 11 Zoll. 1,80 m sind also 5 Fuß 11 Zoll.</p><p class=\"text-mid\">Ein weiteres Beispiel: Die Sprintstrecke von 100 m ergibt 100 ÷ 0,3048 = 328,08 Fuß. Der Umrechner rechnet beide Richtungen sofort nach der Eingabe.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Umrechnungstabelle Meter in Fuß",
@@ -99,36 +108,140 @@
       "labelHeader": "Meter",
       "cols": ["Fuß"],
       "rows": [
-        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
-        { "label": "1,6 m", "values": ["5,25 ft"] },
-        { "label": "1,7 m", "values": ["5,58 ft"] },
-        { "label": "1,75 m", "values": ["5,74 ft"] },
-        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
-        { "label": "1,9 m", "values": ["6,23 ft"] },
-        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
-        { "label": "2,5 m", "values": ["8,20 ft"] },
-        { "label": "3 m", "values": ["9,84 ft"] },
-        { "label": "4 m", "values": ["13,12 ft"] },
-        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
-        { "label": "6 m", "values": ["19,69 ft"] },
-        { "label": "7 m", "values": ["22,97 ft"] },
-        { "label": "8 m", "values": ["26,25 ft"] },
-        { "label": "9 m", "values": ["29,53 ft"] },
-        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
-        { "label": "15 m", "values": ["49,21 ft"] },
-        { "label": "20 m", "values": ["65,62 ft"] },
-        { "label": "25 m", "values": ["82,02 ft"] },
-        { "label": "30 m", "values": ["98,43 ft"] },
-        { "label": "40 m", "values": ["131,23 ft"] },
-        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
-        { "label": "60 m", "values": ["196,85 ft"] },
-        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
-        { "label": "200 m", "values": ["656,17 ft"] },
-        { "label": "500 m", "values": ["1.640,42 ft"] }
+        {
+          "label": "1 m",
+          "values": ["3,28 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "2 m",
+          "values": ["6,56 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "3 m",
+          "values": ["9,84 ft"]
+        },
+        {
+          "label": "4 m",
+          "values": ["13,12 ft"]
+        },
+        {
+          "label": "5 m",
+          "values": ["16,40 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "6 m",
+          "values": ["19,69 ft"]
+        },
+        {
+          "label": "7 m",
+          "values": ["22,97 ft"]
+        },
+        {
+          "label": "8 m",
+          "values": ["26,25 ft"]
+        },
+        {
+          "label": "9 m",
+          "values": ["29,53 ft"]
+        },
+        {
+          "label": "10 m",
+          "values": ["32,81 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "15 m",
+          "values": ["49,21 ft"]
+        },
+        {
+          "label": "1,6 m",
+          "values": ["5,25 ft"]
+        },
+        {
+          "label": "1,7 m",
+          "values": ["5,58 ft"]
+        },
+        {
+          "label": "1,8 m",
+          "values": ["5,91 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "1,9 m",
+          "values": ["6,23 ft"]
+        },
+        {
+          "label": "20 m",
+          "values": ["65,62 ft"]
+        },
+        {
+          "label": "2,5 m",
+          "values": ["8,20 ft"]
+        },
+        {
+          "label": "25 m",
+          "values": ["82,02 ft"]
+        },
+        {
+          "label": "30 m",
+          "values": ["98,43 ft"]
+        },
+        {
+          "label": "40 m",
+          "values": ["131,23 ft"]
+        },
+        {
+          "label": "50 m",
+          "values": ["164,04 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "60 m",
+          "values": ["196,85 ft"]
+        },
+        {
+          "label": "100 m",
+          "values": ["328,08 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft"]
+        },
+        {
+          "label": "200 m",
+          "values": ["656,17 ft"]
+        },
+        {
+          "label": "400 m",
+          "values": ["1.312,34 ft"]
+        },
+        {
+          "label": "500 m",
+          "values": ["1.640,42 ft"]
+        },
+        {
+          "label": "800 m",
+          "values": ["2.624,67 ft"]
+        },
+        {
+          "label": "1.500 m",
+          "values": ["4.921,26 ft"]
+        },
+        {
+          "label": "3.000 m",
+          "values": ["9.842,52 ft"]
+        }
       ],
       "caption": "Sie möchten in die andere Richtung rechnen? Nutzen Sie unseren Umrechner <a href=\"/de/werkzeuge/fuss-in-meter-umrechner\">Fuß in Meter</a> mit vollständiger Tabelle für Maße in Fuß."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Größentabelle: Meter in Fuß und Zoll",
@@ -136,14 +249,23 @@
       "labelHeader": "Körpergröße",
       "cols": ["Fuß (dezimal)", "Fuß und Zoll"],
       "rows": [
-        { "label": "1,50 m", "values": ["4,92 ft", "4 Fuß 11 Zoll"] },
-        { "label": "1,55 m", "values": ["5,09 ft", "5 Fuß 1 Zoll"] },
+        {
+          "label": "1,50 m",
+          "values": ["4,92 ft", "4 Fuß 11 Zoll"]
+        },
+        {
+          "label": "1,55 m",
+          "values": ["5,09 ft", "5 Fuß 1 Zoll"]
+        },
         {
           "label": "1,60 m",
           "values": ["5,25 ft", "5 Fuß 3 Zoll"],
           "emphasis": true
         },
-        { "label": "1,65 m", "values": ["5,41 ft", "5 Fuß 5 Zoll"] },
+        {
+          "label": "1,65 m",
+          "values": ["5,41 ft", "5 Fuß 5 Zoll"]
+        },
         {
           "label": "1,70 m",
           "values": ["5,58 ft", "5 Fuß 7 Zoll"],
@@ -154,19 +276,28 @@
           "values": ["5,74 ft", "5 Fuß 9 Zoll"],
           "emphasis": true
         },
-        { "label": "1,78 m", "values": ["5,84 ft", "5 Fuß 10 Zoll"] },
+        {
+          "label": "1,78 m",
+          "values": ["5,84 ft", "5 Fuß 10 Zoll"]
+        },
         {
           "label": "1,80 m",
           "values": ["5,91 ft", "5 Fuß 11 Zoll"],
           "emphasis": true
         },
-        { "label": "1,85 m", "values": ["6,07 ft", "6 Fuß 1 Zoll"] },
+        {
+          "label": "1,85 m",
+          "values": ["6,07 ft", "6 Fuß 1 Zoll"]
+        },
         {
           "label": "1,90 m",
           "values": ["6,23 ft", "6 Fuß 3 Zoll"],
           "emphasis": true
         },
-        { "label": "1,95 m", "values": ["6,40 ft", "6 Fuß 5 Zoll"] },
+        {
+          "label": "1,95 m",
+          "values": ["6,40 ft", "6 Fuß 5 Zoll"]
+        },
         {
           "label": "2,00 m",
           "values": ["6,56 ft", "6 Fuß 7 Zoll"],
@@ -175,7 +306,10 @@
       ],
       "caption": "Die Zoll erhalten Sie, indem Sie den Nachkommateil des Fußes mit 12 multiplizieren. Beispiel: 5,91 ft, also 0,91 × 12 = 11 Zoll."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Wann rechnet man Meter in Fuß um?",
@@ -199,7 +333,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Häufige Fragen zur Umrechnung von Meter in Fuß",
@@ -266,7 +403,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
@@ -275,7 +415,10 @@
       "imageAlt": "Kontakt zu Arteon Agency",
       "subject": "Umrechner Meter in Fuß"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Weitere nützliche Einheitenumrechner"

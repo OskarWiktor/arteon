@@ -5282,6 +5282,118 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'lbsToOz',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-funtow-na-uncje',
+        title: 'funty na uncje',
+        description:
+          'Przelicz funty na uncje. Waga niemowląt w funtach i uncjach, tabela przeliczeniowa, dokładny wzór.',
+      },
+      en: {
+        slug: 'lb-to-oz-converter',
+        title: 'lb to oz',
+        description:
+          'Convert pounds to ounces. Baby weight in pounds and ounces, conversion table and the exact formula.',
+      },
+      de: {
+        slug: 'pfund-in-unzen-umrechner',
+        title: 'Pfund in Unzen',
+        description:
+          'Pfund in Unzen umrechnen. Säuglingsgewicht in Pfund und Unzen, Umrechnungstabelle und exakte Formel.',
+      },
+      fr: {
+        slug: 'convertisseur-livres-en-onces',
+        title: 'livres en onces',
+        description:
+          'Convertissez des livres en onces. Poids des bébés en livres et onces, tableau et formule exacte.',
+      },
+      es: {
+        slug: 'convertidor-libras-a-onzas',
+        title: 'libras a onzas',
+        description:
+          'Convierte libras a onzas. Peso de bebés en libras y onzas, tabla de conversión y fórmula exacta.',
+      },
+      pt: {
+        slug: 'conversor-libras-para-oncas',
+        title: 'libras para onças',
+        description:
+          'Converta libras para onças. Peso de bebés em libras e onças, tabela de conversão e fórmula exata.',
+      },
+      it: {
+        slug: 'convertitore-libbre-in-once',
+        title: 'libbre in once',
+        description:
+          'Converti libbre in once. Peso dei neonati in libbre e once, tabella di conversione e formula esatta.',
+      },
+      cs: {
+        slug: 'prevodnik-liber-na-unce',
+        title: 'libry na unce',
+        description:
+          'Převeď libry na unce. Hmotnost kojenců v librách a uncích, převodní tabulka a přesný vzorec.',
+      },
+    },
+  },
+  {
+    key: 'ozToLbs',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-uncji-na-funty',
+        title: 'uncje na funty',
+        description:
+          'Przelicz uncje na funty. Wynik jako funty i uncje, waga niemowląt, tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'oz-to-lb-converter',
+        title: 'oz to lb',
+        description:
+          'Convert ounces to pounds. Result as pounds and ounces, baby weight and a conversion table.',
+      },
+      de: {
+        slug: 'unzen-in-pfund-umrechner',
+        title: 'Unzen in Pfund',
+        description:
+          'Unzen in Pfund umrechnen. Ergebnis als Pfund und Unzen, Säuglingsgewicht und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-onces-en-livres',
+        title: 'onces en livres',
+        description:
+          'Convertissez des onces en livres. Résultat en livres et onces, poids des bébés et un tableau.',
+      },
+      es: {
+        slug: 'convertidor-onzas-a-libras',
+        title: 'onzas a libras',
+        description:
+          'Convierte onzas a libras. Resultado como libras y onzas, peso de bebés y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-oncas-para-libras',
+        title: 'onças para libras',
+        description:
+          'Converta onças para libras. Resultado como libras e onças, peso de bebés e tabela de conversão.',
+      },
+      it: {
+        slug: 'convertitore-once-in-libbre',
+        title: 'once in libbre',
+        description:
+          'Converti once in libbre. Risultato come libbre e once, peso dei neonati e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-unci-na-libry',
+        title: 'unce na libry',
+        description:
+          'Převeď unce na libry. Výsledek jako libry a unce, hmotnost kojenců a převodní tabulka.',
+      },
+    },
+  },
+  {
     key: 'mlToOz',
     section: 'jednostki',
     icon: RiRulerLine,

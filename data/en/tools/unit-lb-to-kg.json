@@ -72,7 +72,7 @@
         },
         {
           "name": "Reverse the direction if needed",
-          "text": "Click Swap to switch the converter to kilograms to pounds."
+          "text": "Click Swap order to switch the converter to kilograms to pounds."
         }
       ]
     }
@@ -96,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "How does the lb to kg conversion work? Formula and example",
-      "html": "<p class=\"text-mid mb-4\">Converting pounds to kilograms is based on a fixed definition: one pound equals exactly 0.45359237 kg. To convert pounds to kilograms, multiply the number of pounds by 0.45359237.</p><p class=\"text-mid mb-4\">Full formula: <strong>kilograms = pounds × 0.4536</strong>. The other way: <strong>pounds = kilograms × 2.2046</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many kilograms 150 lb is (a weight shown in a US app). Calculation: 150 × 0.4536 = 68.04 kg. Another example: a 50 lb baggage limit is 50 × 0.4536 = 22.68 kg.</p><p class=\"text-mid\">Quick estimate without a calculator: divide pounds by 2.2. For example: 150 lb ÷ 2.2 ≈ 68.2 kg — the error is less than 0.2%. Another method: multiply by 0.45, which gives an error of less than 0.1%.</p>"
+      "html": "<p class=\"text-mid mb-4\">Converting pounds to kilograms is based on a fixed definition: one pound equals exactly 0.45359237 kg. To convert pounds to kilograms, multiply the number of pounds by 0.45359237.</p><p class=\"text-mid mb-4\">Full formula: <strong>kilograms = pounds × 0.4536</strong>. The other way: <strong>pounds = kilograms × 2.2046</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many kilograms 150 lb is (a weight shown in a US app). Calculation: 150 × 0.4536 = 68.04 kg. Another example: a 50 lb baggage limit is 50 × 0.4536 = 22.68 kg.</p><p class=\"text-mid\">Quick estimate without a calculator: divide pounds by 2.2. For example: 150 lb ÷ 2.2 ≈ 68.2 kg — the error is less than 0.2%. Another method: multiply by 0.45 — simpler, though the result comes out about 0.8% low.</p>"
     },
     {
       "type": "gap",
@@ -273,7 +273,7 @@
         },
         {
           "question": "How can I convert pounds to kilograms without a calculator?",
-          "answer": "Quick method: divide pounds by 2.2. For example: 150 lb ÷ 2.2 ≈ 68.2 kg (exact value: 68.04 kg). The error is less than 0.3%. Another method: multiply by 0.45, giving an error of less than 0.1%."
+          "answer": "Quick method: divide pounds by 2.2. For example: 150 lb ÷ 2.2 ≈ 68.2 kg (exact value: 68.04 kg). The error is less than 0.3%. Another method: multiply by 0.45 — simpler, but about 0.8% low."
         },
         {
           "question": "How many kg is 135 lb (a bench press benchmark)?",

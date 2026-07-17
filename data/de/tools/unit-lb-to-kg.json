@@ -96,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "Wie funktioniert die Pfund-in-kg-Umrechnung? Formel und Beispiel",
-      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Pfund in Kilogramm basiert auf einer festen Definition: Ein Pfund entspricht genau 0,45359237 kg. Um Pfund in Kilogramm umzurechnen, multiplizieren Sie die Pfundzahl mit 0,45359237.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Kilogramm = Pfund × 0,4536</strong>. Umgekehrt: <strong>Pfund = Kilogramm × 2,2046</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Kilogramm 150 lb sind (ein Gewicht aus einer US-App). Rechnung: 150 × 0,4536 = 68,04 kg. Ein weiteres Beispiel: Ein Freigepäcklimit von 50 lb ergibt 50 × 0,4536 = 22,68 kg.</p><p class=\"text-mid\">Schnelle Schätzung ohne Taschenrechner: Pfund durch 2,2 dividieren. Beispiel: 150 lb ÷ 2,2 ≈ 68,2 kg – Fehler weniger als 0,2 %. Andere Methode: mit 0,45 multiplizieren, Fehler unter 0,1 %.</p>"
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Pfund in Kilogramm basiert auf einer festen Definition: Ein Pfund entspricht genau 0,45359237 kg. Um Pfund in Kilogramm umzurechnen, multiplizieren Sie die Pfundzahl mit 0,45359237.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Kilogramm = Pfund × 0,4536</strong>. Umgekehrt: <strong>Pfund = Kilogramm × 2,2046</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Kilogramm 150 lb sind (ein Gewicht aus einer US-App). Rechnung: 150 × 0,4536 = 68,04 kg. Ein weiteres Beispiel: Ein Freigepäcklimit von 50 lb ergibt 50 × 0,4536 = 22,68 kg.</p><p class=\"text-mid\">Schnelle Schätzung ohne Taschenrechner: Pfund durch 2,2 dividieren. Beispiel: 150 lb ÷ 2,2 ≈ 68,2 kg – Fehler weniger als 0,2 %. Andere Methode: mit 0,45 multiplizieren – einfacher, das Ergebnis fällt aber rund 0,8 % zu niedrig aus.</p>"
     },
     {
       "type": "gap",
@@ -264,7 +264,7 @@
         },
         {
           "question": "Wie rechne ich Pfund ohne Taschenrechner in kg um?",
-          "answer": "Schnelle Methode: Pfund durch 2,2 dividieren. Beispiel: 150 lb ÷ 2,2 ≈ 68,2 kg (genauer Wert: 68,04 kg). Fehler unter 0,3 %. Andere Methode: mit 0,45 multiplizieren, Fehler unter 0,1 %."
+          "answer": "Schnelle Methode: Pfund durch 2,2 dividieren. Beispiel: 150 lb ÷ 2,2 ≈ 68,2 kg (genauer Wert: 68,04 kg). Fehler unter 0,3 %. Andere Methode: mit 0,45 multiplizieren – einfacher, aber rund 0,8 % zu niedrig."
         },
         {
           "question": "Wie viele kg sind 135 lb (Bankdrücken-Benchmark)?",

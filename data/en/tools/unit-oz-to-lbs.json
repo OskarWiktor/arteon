@@ -1,0 +1,233 @@
+{
+  "toolKey": "ozToLbs",
+  "locale": "en",
+  "metadata": {
+    "title": "Ounces to pounds converter – convert oz to lb",
+    "description": "Convert ounces to pounds. Ready-made tables lower down show the result as pounds and ounces (40 oz is 2 lb 8 oz) and baby weight. The ounces to pounds converter works both ways and calculates instantly.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/oz-to-lb-converter"
+  },
+  "hero": {
+    "title": "Convert ounces to pounds",
+    "description": "Type a value in ounces and read the result in pounds straight away. Pounds and ounces are the everyday weight units in the US and UK, so you meet them with baby weight, product weight and postage. The converter gives the result in decimal pounds, and a separate table below shows it as pounds and ounces.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/oz-to-lb-converter",
+      "label": "oz to lb"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ounces to pounds converter – oz to lb calculator",
+      "alternateName": [
+        "Ounces to pounds converter",
+        "oz to lb calculator",
+        "oz to lb converter",
+        "Ounces to pounds",
+        "oz to lbs",
+        "Convert ounces to pounds",
+        "How many pounds is 16 ounces",
+        "40 ounces in pounds",
+        "32 ounces in pounds",
+        "Ounces to pounds and ounces",
+        "Ounces to pounds table",
+        "How many pounds in an ounce",
+        "oz to lbs",
+        "Mass converter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Ounces to pounds converter that runs in your browser with no sign-up. Type a value in ounces and read the result in pounds instantly. Handy for baby weight, product weight and postage.",
+      "featureList": [
+        "The conversion works both ways, so you can turn ounces into pounds and pounds into ounces",
+        "The result appears instantly as you type, with no button to click",
+        "The Copy result button puts the finished value on your clipboard",
+        "The conversion table covers values from 8 to 96 ounces",
+        "A separate table shows the result as pounds and ounces, for example 40 oz is 2 lb 8 oz",
+        "Every calculation runs locally in your browser, so your data never leaves your device",
+        "The exact formula is: pounds = ounces ÷ 16",
+        "The tool works on phone, tablet and computer with no installation"
+      ]
+    },
+    "howTo": {
+      "name": "How do you convert ounces to pounds?",
+      "description": "A short guide to using the ounces to pounds converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Type a value in ounces",
+          "text": "In the left field, type the number of ounces you want to convert to pounds."
+        },
+        {
+          "name": "Read the result in pounds",
+          "text": "The result in pounds appears immediately in the field on the right. The Copy result button puts it on your clipboard."
+        },
+        {
+          "name": "Swap the direction if you need to",
+          "text": "Click Swap order to move to converting pounds to ounces."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert ounces to pounds?",
+      "html": "<p class=\"text-mid mb-4\">Ounces and pounds are the everyday weight units across the US and UK. You meet ounces on food packaging, on postage for light items and in recipes, and often you want to gather that weight up into pounds: to write a baby's weight as pounds and ounces, or to add up several portions given in ounces.</p><p class=\"text-mid mb-4\">The relationship is simple and exact: one pound is exactly 16 ounces. To turn ounces into pounds, divide the number of ounces by 16. The converter does this for you the moment you type a value.</p><p class=\"text-mid mb-4\">There is one catch with weight. The converter gives the result in decimal pounds, so 40 ounces shows as 2.5 pounds. That does not mean \"2 pounds and 5 ounces\", because 2.5 pounds is 2 pounds and 8 ounces (0.5 of a pound is 8 ounces). That is why below you will find a separate table that shows the result as pounds and ounces.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Free ounces to pounds converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does the ounces to pounds conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">Converting ounces to pounds rests on a fixed relationship: one pound is exactly 16 ounces. To turn ounces into pounds, divide the number of ounces by 16.</p><p class=\"text-mid mb-4\">Full formula: <strong>pounds = ounces ÷ 16</strong>. The other way: <strong>ounces = pounds × 16</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many pounds 32 ounces is. You put in 32 ÷ 16 = 2 pounds. This is one of the conversions that comes out even, because 32 divides by 16 with nothing left over.</p><p class=\"text-mid\">Another example: 40 ounces is 40 ÷ 16 = 2.5 pounds. That figure is in decimal pounds. To get the result as pounds and ounces, divide the ounces by 16 with a remainder: 40 ÷ 16 is 2 remainder 8, so 2 pounds 8 ounces. Ready-made values are in the table below.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Ounces to pounds conversion table",
+      "description": "The table below converts common ounce values into decimal pounds. To convert another weight, use the converter above.",
+      "labelHeader": "Ounces",
+      "cols": ["Pounds"],
+      "rows": [
+        { "label": "8 oz", "values": ["0.5 lb"], "emphasis": true },
+        { "label": "12 oz", "values": ["0.75 lb"] },
+        { "label": "16 oz", "values": ["1 lb"], "emphasis": true },
+        { "label": "20 oz", "values": ["1.25 lb"] },
+        { "label": "24 oz", "values": ["1.5 lb"] },
+        { "label": "28 oz", "values": ["1.75 lb"] },
+        { "label": "32 oz", "values": ["2 lb"], "emphasis": true },
+        { "label": "36 oz", "values": ["2.25 lb"] },
+        { "label": "40 oz", "values": ["2.5 lb"], "emphasis": true },
+        { "label": "48 oz", "values": ["3 lb"], "emphasis": true },
+        { "label": "60 oz", "values": ["3.75 lb"] },
+        { "label": "64 oz", "values": ["4 lb"] },
+        { "label": "72 oz", "values": ["4.5 lb"] },
+        { "label": "80 oz", "values": ["5 lb"], "emphasis": true },
+        { "label": "96 oz", "values": ["6 lb"] }
+      ],
+      "caption": "Want to convert the other way? Use our <a href=\"/en/tools/lb-to-oz-converter\">pounds to ounces</a> converter, with a weight table in pounds and ounces."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Table: ounces to pounds and ounces",
+      "description": "Weight is often written as pounds and ounces, for example 2 lb 8 oz. To move from plain ounces to that form, divide the ounces by 16 with a remainder: the quotient is the pounds and the remainder is the ounces. The table below shows ready-made results, so you will not confuse them with the decimal form.",
+      "labelHeader": "Ounces",
+      "cols": ["Pounds and ounces"],
+      "rows": [
+        { "label": "16 oz", "values": ["1 pound 0 ounces"], "emphasis": true },
+        { "label": "20 oz", "values": ["1 pound 4 ounces"] },
+        { "label": "24 oz", "values": ["1 pound 8 ounces"] },
+        { "label": "28 oz", "values": ["1 pound 12 ounces"] },
+        { "label": "32 oz", "values": ["2 pounds 0 ounces"], "emphasis": true },
+        { "label": "36 oz", "values": ["2 pounds 4 ounces"] },
+        { "label": "40 oz", "values": ["2 pounds 8 ounces"], "emphasis": true },
+        { "label": "44 oz", "values": ["2 pounds 12 ounces"] },
+        { "label": "48 oz", "values": ["3 pounds 0 ounces"], "emphasis": true },
+        { "label": "56 oz", "values": ["3 pounds 8 ounces"] },
+        { "label": "64 oz", "values": ["4 pounds 0 ounces"] },
+        { "label": "72 oz", "values": ["4 pounds 8 ounces"] },
+        { "label": "80 oz", "values": ["5 pounds 0 ounces"] }
+      ],
+      "caption": "Example: 40 ÷ 16 = 2 remainder 8, so 2 pounds 8 ounces. That is the same weight as 2.5 pounds written as a decimal."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do people most often convert ounces to pounds?",
+      "description": "Ounces and pounds come up most often around American weight data.",
+      "items": [
+        {
+          "title": "Baby weight as pounds and ounces",
+          "description": "A newborn's weight is sometimes given as a total in ounces, and you want to write it as pounds and ounces. 120 ounces is 7 pounds 8 ounces, because 120 ÷ 16 = 7 remainder 8. Ready-made values are in the pounds and ounces table above."
+        },
+        {
+          "title": "Food product weight",
+          "description": "On American packaging the weight is sometimes given in ounces, even when it is more than a pound. A 48-ounce bag is 3 pounds and a 24-ounce jar is 1.5 pounds. Converting to pounds makes it easier to compare with larger packs."
+        },
+        {
+          "title": "Postage weight",
+          "description": "Light parcels are priced in ounces, but the weight bands are also given in pounds. A 32-ounce parcel is 2 pounds and 40 ounces is 2.5 pounds. Converting lets you check which price band a shipment falls into."
+        },
+        {
+          "title": "Adding up portions",
+          "description": "If you have several portions of a few ounces each, it is easier to grasp the total in pounds. Eight portions of 4 ounces is 32 ounces, which is exactly 2 pounds. Converting tidies up a weight that is hard to picture in ounces alone."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting ounces to pounds",
+      "items": [
+        {
+          "question": "How many pounds is 16 ounces?",
+          "answer": "16 ounces is exactly 1 pound. Calculation: 16 ÷ 16 = 1 pound. This relationship is fixed and comes from the definition of the pound, so there is no rounding involved."
+        },
+        {
+          "question": "Is 32 ounces 2 pounds?",
+          "answer": "Yes. 32 ounces is 2 pounds, because 32 ÷ 16 = 2. In the same way, 48 ounces is 3 pounds and 64 ounces is 4 pounds."
+        },
+        {
+          "question": "Is 12 ounces 1 pound?",
+          "answer": "No. 12 ounces is 0.75 of a pound, that is three quarters of a pound. A full pound is only reached at 16 ounces, so it is still 4 ounces short of a pound."
+        },
+        {
+          "question": "Is 8 ounces half a pound?",
+          "answer": "Yes. 8 ounces is 0.5 of a pound, that is exactly half a pound, because 16 ÷ 2 = 8."
+        },
+        {
+          "question": "How many pounds is 40 ounces?",
+          "answer": "40 ounces is 2.5 pounds, that is 2 pounds 8 ounces. Calculation: 40 ÷ 16 = 2 remainder 8. Note: 2.5 pounds is 2 pounds 8 ounces, not 2 pounds 5 ounces."
+        },
+        {
+          "question": "How many pounds is 24 ounces?",
+          "answer": "24 ounces is 1.5 pounds, that is 1 pound 8 ounces. Calculation: 24 ÷ 16 = 1 remainder 8."
+        },
+        {
+          "question": "How do you write the result as pounds and ounces?",
+          "answer": "Divide the ounces by 16 with a remainder. The quotient is the pounds and the remainder is the ounces. Example: 44 ÷ 16 is 2 remainder 12, so 2 pounds 12 ounces. Ready-made values are in the pounds and ounces table above."
+        },
+        {
+          "question": "How many pounds are 20, 50 and 72 ounces?",
+          "answer": "20 ounces is 1.25 pounds, 50 ounces is 3.125 pounds, and 72 ounces is 4.5 pounds. You get each of these by dividing the number of ounces by 16."
+        },
+        {
+          "question": "What is the formula to convert ounces to pounds?",
+          "answer": "The formula is: pounds = ounces ÷ 16. For example, 80 ÷ 16 = 5 pounds. The other way: ounces = pounds × 16."
+        },
+        {
+          "question": "Is the ounce of mass the same as the fluid ounce?",
+          "answer": "No. The ounce of mass (oz) measures weight, and that is what this tool converts. The fluid ounce (fl oz) measures the volume of drinks. They have a similar name but are different quantities, so they must not be mixed up."
+        },
+        {
+          "question": "How does an ounce differ from a troy ounce?",
+          "answer": "The ordinary ounce of mass is 28.35 g and is used for the weight of food or babies. The troy ounce is 31.10 g and is used for precious metals such as gold. In addition, a troy pound is 12 troy ounces, not 16. This tool works with the ordinary ounce, not the troy ounce."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "title": "Have a question or suggestion?",
+      "description": "If you have spotted an error in the tables or have an idea to improve the converter, write to us. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "Ounces to pounds converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    }
+  ]
+}

@@ -49,7 +49,7 @@
         "La conversione funziona in entrambe le direzioni, quindi converti sia metri in piedi sia piedi in metri",
         "Il risultato compare subito mentre scrivi, senza dover premere alcun pulsante",
         "Il risultato si copia negli appunti con un solo clic",
-        "La tabella di conversione copre i valori da 1 a 500 metri",
+        "La tabella di conversione copre i valori da 1 a 3000 metri",
         "Una tabella delle altezze a parte mostra a quanti piedi e pollici corrispondono i valori da 1,50 m a 2,00 m",
         "Tutti i calcoli avvengono nel tuo browser, quindi i dati non escono dal dispositivo",
         "La formula esatta di conversione è piedi = metri ÷ 0,3048",
@@ -71,13 +71,16 @@
         },
         {
           "name": "Inverti la direzione se ti serve",
-          "text": "Fai clic su Cambia ordine per passare il convertitore a piedi in metri."
+          "text": "Fai clic su Inverti ordine per passare il convertitore a piedi in metri."
         }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Perché convertire i metri in piedi?",
@@ -85,13 +88,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore gratuito da metri a piedi – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "Come funziona la conversione da metri a piedi? Formula ed esempio",
       "html": "<p class=\"text-mid mb-4\">La conversione da metri a piedi si basa su un rapporto fisso: un piede è esattamente 0,3048 metri. Per trasformare i metri in piedi, dividi il numero di metri per 0,3048, che equivale a moltiplicare per 3,280839895.</p><p class=\"text-mid mb-4\">La formula completa: <strong>piedi = metri ÷ 0,3048</strong>. Nella direzione opposta: <strong>metri = piedi × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti piedi sono 1,80 m. Sostituisci: 1,80 ÷ 0,3048 = 5,91 piedi. Non significa «5 piedi e 91 pollici»: la parte decimale è una frazione di piede. Per ottenere i pollici la moltiplichi per 12: 0,91 × 12 = 11 pollici, quindi 1,80 m sono 5 piedi 11 pollici.</p><p class=\"text-mid\">Altro esempio: la distanza dei 100 m dello sprint dà 100 ÷ 0,3048 = 328,08 piedi. Il convertitore esegue entrambe le direzioni appena inserisci un valore.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabella di conversione da metri a piedi",
@@ -99,36 +108,140 @@
       "labelHeader": "Metri",
       "cols": ["Piedi"],
       "rows": [
-        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
-        { "label": "1,6 m", "values": ["5,25 ft"] },
-        { "label": "1,7 m", "values": ["5,58 ft"] },
-        { "label": "1,75 m", "values": ["5,74 ft"] },
-        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
-        { "label": "1,9 m", "values": ["6,23 ft"] },
-        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
-        { "label": "2,5 m", "values": ["8,20 ft"] },
-        { "label": "3 m", "values": ["9,84 ft"] },
-        { "label": "4 m", "values": ["13,12 ft"] },
-        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
-        { "label": "6 m", "values": ["19,69 ft"] },
-        { "label": "7 m", "values": ["22,97 ft"] },
-        { "label": "8 m", "values": ["26,25 ft"] },
-        { "label": "9 m", "values": ["29,53 ft"] },
-        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
-        { "label": "15 m", "values": ["49,21 ft"] },
-        { "label": "20 m", "values": ["65,62 ft"] },
-        { "label": "25 m", "values": ["82,02 ft"] },
-        { "label": "30 m", "values": ["98,43 ft"] },
-        { "label": "40 m", "values": ["131,23 ft"] },
-        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
-        { "label": "60 m", "values": ["196,85 ft"] },
-        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
-        { "label": "200 m", "values": ["656,17 ft"] },
-        { "label": "500 m", "values": ["1.640,42 ft"] }
+        {
+          "label": "1 m",
+          "values": ["3,28 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "2 m",
+          "values": ["6,56 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "3 m",
+          "values": ["9,84 ft"]
+        },
+        {
+          "label": "4 m",
+          "values": ["13,12 ft"]
+        },
+        {
+          "label": "5 m",
+          "values": ["16,40 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "6 m",
+          "values": ["19,69 ft"]
+        },
+        {
+          "label": "7 m",
+          "values": ["22,97 ft"]
+        },
+        {
+          "label": "8 m",
+          "values": ["26,25 ft"]
+        },
+        {
+          "label": "9 m",
+          "values": ["29,53 ft"]
+        },
+        {
+          "label": "10 m",
+          "values": ["32,81 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "15 m",
+          "values": ["49,21 ft"]
+        },
+        {
+          "label": "1,6 m",
+          "values": ["5,25 ft"]
+        },
+        {
+          "label": "1,7 m",
+          "values": ["5,58 ft"]
+        },
+        {
+          "label": "1,8 m",
+          "values": ["5,91 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "1,9 m",
+          "values": ["6,23 ft"]
+        },
+        {
+          "label": "20 m",
+          "values": ["65,62 ft"]
+        },
+        {
+          "label": "2,5 m",
+          "values": ["8,20 ft"]
+        },
+        {
+          "label": "25 m",
+          "values": ["82,02 ft"]
+        },
+        {
+          "label": "30 m",
+          "values": ["98,43 ft"]
+        },
+        {
+          "label": "40 m",
+          "values": ["131,23 ft"]
+        },
+        {
+          "label": "50 m",
+          "values": ["164,04 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "60 m",
+          "values": ["196,85 ft"]
+        },
+        {
+          "label": "100 m",
+          "values": ["328,08 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft"]
+        },
+        {
+          "label": "200 m",
+          "values": ["656,17 ft"]
+        },
+        {
+          "label": "400 m",
+          "values": ["1.312,34 ft"]
+        },
+        {
+          "label": "500 m",
+          "values": ["1.640,42 ft"]
+        },
+        {
+          "label": "800 m",
+          "values": ["2.624,67 ft"]
+        },
+        {
+          "label": "1.500 m",
+          "values": ["4.921,26 ft"]
+        },
+        {
+          "label": "3.000 m",
+          "values": ["9.842,52 ft"]
+        }
       ],
       "caption": "Vuoi convertire nella direzione opposta? Usa il nostro convertitore da <a href=\"/it/strumenti/convertitore-piedi-in-metri\">piedi a metri</a> con la tabella completa per le misure indicate in piedi."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabella delle altezze: metri in piedi e pollici",
@@ -136,14 +249,23 @@
       "labelHeader": "Altezza",
       "cols": ["Piedi (decimali)", "Piedi e pollici"],
       "rows": [
-        { "label": "1,50 m", "values": ["4,92 ft", "4 piedi 11 pollici"] },
-        { "label": "1,55 m", "values": ["5,09 ft", "5 piedi 1 pollice"] },
+        {
+          "label": "1,50 m",
+          "values": ["4,92 ft", "4 piedi 11 pollici"]
+        },
+        {
+          "label": "1,55 m",
+          "values": ["5,09 ft", "5 piedi 1 pollice"]
+        },
         {
           "label": "1,60 m",
           "values": ["5,25 ft", "5 piedi 3 pollici"],
           "emphasis": true
         },
-        { "label": "1,65 m", "values": ["5,41 ft", "5 piedi 5 pollici"] },
+        {
+          "label": "1,65 m",
+          "values": ["5,41 ft", "5 piedi 5 pollici"]
+        },
         {
           "label": "1,70 m",
           "values": ["5,58 ft", "5 piedi 7 pollici"],
@@ -154,19 +276,28 @@
           "values": ["5,74 ft", "5 piedi 9 pollici"],
           "emphasis": true
         },
-        { "label": "1,78 m", "values": ["5,84 ft", "5 piedi 10 pollici"] },
+        {
+          "label": "1,78 m",
+          "values": ["5,84 ft", "5 piedi 10 pollici"]
+        },
         {
           "label": "1,80 m",
           "values": ["5,91 ft", "5 piedi 11 pollici"],
           "emphasis": true
         },
-        { "label": "1,85 m", "values": ["6,07 ft", "6 piedi 1 pollice"] },
+        {
+          "label": "1,85 m",
+          "values": ["6,07 ft", "6 piedi 1 pollice"]
+        },
         {
           "label": "1,90 m",
           "values": ["6,23 ft", "6 piedi 3 pollici"],
           "emphasis": true
         },
-        { "label": "1,95 m", "values": ["6,40 ft", "6 piedi 5 pollici"] },
+        {
+          "label": "1,95 m",
+          "values": ["6,40 ft", "6 piedi 5 pollici"]
+        },
         {
           "label": "2,00 m",
           "values": ["6,56 ft", "6 piedi 7 pollici"],
@@ -175,7 +306,10 @@
       ],
       "caption": "I pollici li ottieni moltiplicando per 12 la parte decimale del piede. Esempio: 5,91 ft, cioè 0,91 × 12 = 11 pollici."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Quando si convertono i metri in piedi?",
@@ -199,7 +333,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da metri a piedi",
@@ -266,7 +403,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
@@ -275,7 +415,10 @@
       "imageAlt": "Contatto con Arteon Agency",
       "subject": "Convertitore da metri a piedi"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Altri convertitori di unità utili"

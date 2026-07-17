@@ -50,7 +50,7 @@
         "Výsledek se objeví okamžitě při psaní, aniž bys musel klikat na jakékoli tlačítko",
         "Tlačítko Kopírovat výsledek přenese hotovou hodnotu do schránky",
         "Převodní tabulka zahrnuje hodnoty od 1 do 120 palců",
-        "Samostatná tabulka výšek ukazuje, kolik stop a palců odpovídá hodnotám od 58 do 75 palců",
+        "Samostatná tabulka výšek ukazuje, kolik stop a palců odpovídá hodnotám od 48 do 75 palců",
         "Všechny výpočty probíhají lokálně v prohlížeči, tvoje data zařízení neopustí",
         "Přesný vzorec je: stopy = palce ÷ 12",
         "Nástroj funguje na telefonu, tabletu i počítači bez instalace"
@@ -71,13 +71,16 @@
         },
         {
           "name": "V případě potřeby otoč směr",
-          "text": "Klikni na Změnit pořadí a přejdeš k převodu stop na palce."
+          "text": "Klikni na Prohodit pořadí a přejdeš k převodu stop na palce."
         }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "K čemu je převod palců na stopy?",
@@ -85,13 +88,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník palců na stopy – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "Jak funguje převod palců na stopy? Vzorec a příklad",
       "html": "<p class=\"text-mid mb-4\">Převod palců na stopy stojí na stálém vztahu: jedna stopa je přesně 12 palců. Když chceš změnit palce na stopy, vydělíš počet palců dvanácti.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>stopy = palce ÷ 12</strong>. Opačným směrem: <strong>palce = stopy × 12</strong>.</p><p class=\"text-mid mb-4\">Příklad: chceš zjistit, kolik stop je 72 palců. Dosadíš: 72 ÷ 12 = 6 stop. Je to jeden z mála převodů, který vyjde přesně, protože 72 se dělí dvanácti beze zbytku.</p><p class=\"text-mid\">Jiný příklad: 70 palců je 70 ÷ 12 = 5,83 stopy. To číslo jsou desetinné stopy, ne „5 stop a 83 palců“. Abys ho přečetl jako výšku ve stopách a palcích, vydělíš palce dvanácti se zbytkem: 70 ÷ 12 je 5 se zbytkem 10, tedy 5 stop 10 palců. Hotové hodnoty pro výšku najdeš v tabulce níže.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Převodní tabulka palců na stopy",
@@ -99,32 +108,107 @@
       "labelHeader": "Palce",
       "cols": ["Stopy"],
       "rows": [
-        { "label": "1 in", "values": ["0,08 ft"] },
-        { "label": "10 in", "values": ["0,83 ft"] },
-        { "label": "12 in", "values": ["1,00 ft"], "emphasis": true },
-        { "label": "24 in", "values": ["2,00 ft"] },
-        { "label": "30 in", "values": ["2,50 ft"] },
-        { "label": "36 in", "values": ["3,00 ft"], "emphasis": true },
-        { "label": "40 in", "values": ["3,33 ft"] },
-        { "label": "42 in", "values": ["3,50 ft"] },
-        { "label": "48 in", "values": ["4,00 ft"], "emphasis": true },
-        { "label": "50 in", "values": ["4,17 ft"] },
-        { "label": "55 in", "values": ["4,58 ft"] },
-        { "label": "60 in", "values": ["5,00 ft"], "emphasis": true },
-        { "label": "63 in", "values": ["5,25 ft"] },
-        { "label": "66 in", "values": ["5,50 ft"] },
-        { "label": "67 in", "values": ["5,58 ft"] },
-        { "label": "68 in", "values": ["5,67 ft"] },
-        { "label": "70 in", "values": ["5,83 ft"], "emphasis": true },
-        { "label": "72 in", "values": ["6,00 ft"], "emphasis": true },
-        { "label": "79 in", "values": ["6,58 ft"] },
-        { "label": "84 in", "values": ["7,00 ft"] },
-        { "label": "96 in", "values": ["8,00 ft"] },
-        { "label": "120 in", "values": ["10,00 ft"] }
+        {
+          "label": "1 in",
+          "values": ["0,08 ft"]
+        },
+        {
+          "label": "10 in",
+          "values": ["0,83 ft"]
+        },
+        {
+          "label": "12 in",
+          "values": ["1,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "24 in",
+          "values": ["2,00 ft"]
+        },
+        {
+          "label": "30 in",
+          "values": ["2,50 ft"]
+        },
+        {
+          "label": "36 in",
+          "values": ["3,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "40 in",
+          "values": ["3,33 ft"]
+        },
+        {
+          "label": "42 in",
+          "values": ["3,50 ft"]
+        },
+        {
+          "label": "48 in",
+          "values": ["4,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "50 in",
+          "values": ["4,17 ft"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4,58 ft"]
+        },
+        {
+          "label": "60 in",
+          "values": ["5,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "63 in",
+          "values": ["5,25 ft"]
+        },
+        {
+          "label": "66 in",
+          "values": ["5,50 ft"]
+        },
+        {
+          "label": "67 in",
+          "values": ["5,58 ft"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5,67 ft"]
+        },
+        {
+          "label": "70 in",
+          "values": ["5,83 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "72 in",
+          "values": ["6,00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "79 in",
+          "values": ["6,58 ft"]
+        },
+        {
+          "label": "84 in",
+          "values": ["7,00 ft"]
+        },
+        {
+          "label": "96 in",
+          "values": ["8,00 ft"]
+        },
+        {
+          "label": "120 in",
+          "values": ["10,00 ft"]
+        }
       ],
       "caption": "Chceš převádět opačným směrem? Použij náš převodník <a href=\"/cs/nastroje/prevodnik-stop-na-palce\">stop na palce</a> s úplnou tabulkou pro rozměry uváděné ve stopách."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabulka výšek: palce na stopy a palce",
@@ -132,41 +216,129 @@
       "labelHeader": "Výška",
       "cols": ["Stopy (desetinné)", "Stopy a palce"],
       "rows": [
-        { "label": "58 in", "values": ["4,83 ft", "4 stopy 10 palců"] },
-        { "label": "59 in", "values": ["4,92 ft", "4 stopy 11 palců"] },
+        {
+          "label": "48 in",
+          "values": ["4,00 ft", "4 stopy 0 palců"]
+        },
+        {
+          "label": "49 in",
+          "values": ["4,08 ft", "4 stopy 1 palec"]
+        },
+        {
+          "label": "50 in",
+          "values": ["4,17 ft", "4 stopy 2 palce"]
+        },
+        {
+          "label": "51 in",
+          "values": ["4,25 ft", "4 stopy 3 palce"]
+        },
+        {
+          "label": "52 in",
+          "values": ["4,33 ft", "4 stopy 4 palce"]
+        },
+        {
+          "label": "53 in",
+          "values": ["4,42 ft", "4 stopy 5 palců"]
+        },
+        {
+          "label": "54 in",
+          "values": ["4,50 ft", "4 stopy 6 palců"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4,58 ft", "4 stopy 7 palců"]
+        },
+        {
+          "label": "56 in",
+          "values": ["4,67 ft", "4 stopy 8 palců"]
+        },
+        {
+          "label": "57 in",
+          "values": ["4,75 ft", "4 stopy 9 palců"]
+        },
+        {
+          "label": "58 in",
+          "values": ["4,83 ft", "4 stopy 10 palců"]
+        },
+        {
+          "label": "59 in",
+          "values": ["4,92 ft", "4 stopy 11 palců"]
+        },
         {
           "label": "60 in",
           "values": ["5,00 ft", "5 stop 0 palců"],
           "emphasis": true
         },
-        { "label": "62 in", "values": ["5,17 ft", "5 stop 2 palce"] },
-        { "label": "63 in", "values": ["5,25 ft", "5 stop 3 palce"] },
-        { "label": "64 in", "values": ["5,33 ft", "5 stop 4 palce"] },
-        { "label": "65 in", "values": ["5,42 ft", "5 stop 5 palců"] },
+        {
+          "label": "61 in",
+          "values": ["5,08 ft", "5 stop 1 palec"]
+        },
+        {
+          "label": "62 in",
+          "values": ["5,17 ft", "5 stop 2 palce"]
+        },
+        {
+          "label": "63 in",
+          "values": ["5,25 ft", "5 stop 3 palce"]
+        },
+        {
+          "label": "64 in",
+          "values": ["5,33 ft", "5 stop 4 palce"]
+        },
+        {
+          "label": "65 in",
+          "values": ["5,42 ft", "5 stop 5 palců"]
+        },
         {
           "label": "66 in",
           "values": ["5,50 ft", "5 stop 6 palců"],
           "emphasis": true
         },
-        { "label": "67 in", "values": ["5,58 ft", "5 stop 7 palců"] },
-        { "label": "68 in", "values": ["5,67 ft", "5 stop 8 palců"] },
-        { "label": "69 in", "values": ["5,75 ft", "5 stop 9 palců"] },
+        {
+          "label": "67 in",
+          "values": ["5,58 ft", "5 stop 7 palců"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5,67 ft", "5 stop 8 palců"]
+        },
+        {
+          "label": "69 in",
+          "values": ["5,75 ft", "5 stop 9 palců"]
+        },
         {
           "label": "70 in",
           "values": ["5,83 ft", "5 stop 10 palců"],
           "emphasis": true
         },
-        { "label": "71 in", "values": ["5,92 ft", "5 stop 11 palců"] },
+        {
+          "label": "71 in",
+          "values": ["5,92 ft", "5 stop 11 palců"]
+        },
         {
           "label": "72 in",
           "values": ["6,00 ft", "6 stop 0 palců"],
           "emphasis": true
         },
-        { "label": "74 in", "values": ["6,17 ft", "6 stop 2 palce"] }
+        {
+          "label": "73 in",
+          "values": ["6,08 ft", "6 stop 1 palec"]
+        },
+        {
+          "label": "74 in",
+          "values": ["6,17 ft", "6 stop 2 palce"]
+        },
+        {
+          "label": "75 in",
+          "values": ["6,25 ft", "6 stop 3 palce"]
+        }
       ],
       "caption": "Palce přečteš přímo ze zbytku po dělení dvanácti. Příklad: 70 ÷ 12 = 5 se zbytkem 10, tedy 5 stop 10 palců."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kdy se nejčastěji převádějí palce na stopy?",
@@ -190,7 +362,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Nejčastější dotazy k převodu palců na stopy",
@@ -245,7 +420,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
@@ -254,7 +432,10 @@
       "imageAlt": "Kontakt s Arteon Agency",
       "subject": "Převodník palců na stopy"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Další užitečné převodníky jednotek"

@@ -597,7 +597,7 @@
         },
         {
           "question": "¿Qué DPI debería usar para imprimir folletos y tarjetas de visita?",
-          "answer": "300 DPI es el estándar tanto para impresión offset como digital: es el valor que exige la mayoría de imprentas online. Para grandes formatos como carteles A1 o A0, suele bastar con 150 DPI, ya que se ven desde más lejos. Las lonas de gran formato y vallas publicitarias a veces se imprimen con solo 30–72 DPI."
+          "answer": "300 DPI es el estándar tanto para impresión offset como digital: es el valor que exige la mayoría de imprentas. Para grandes formatos como carteles A1 o A0, suele bastar con 150 DPI, ya que se ven desde más lejos. Las lonas de gran formato y vallas publicitarias a veces se imprimen con solo 30–72 DPI."
         },
         {
           "question": "¿Cómo configuro mm a px en Illustrator o InDesign?",
@@ -606,6 +606,10 @@
         {
           "question": "¿Cuál es la diferencia entre DPI y PPI?",
           "answer": "El DPI (dots per inch) es el número de puntos de tinta por pulgada de material y es una característica de la impresora. El PPI (pixels per inch) es el número de píxeles por pulgada de pantalla y describe un monitor o display. En el uso diario, los diseñadores usan ambos términos de forma intercambiable, pero técnicamente el DPI se refiere a la impresión y el PPI a las pantallas."
+        },
+        {
+          "question": "¿Cómo convertir milímetros a píxeles en CSS o SVG?",
+          "answer": "En las hojas de estilo CSS la unidad mm se convierte con una fórmula fija: 1mm = 96px ÷ 25,4 ≈ 3,78px, independientemente del dispositivo. La misma constante rige en los archivos SVG, donde las dimensiones pueden escribirse directamente en milímetros. En la práctica, para las interfaces web se usan las unidades px, rem o em, y mm se reserva para las hojas de estilo de impresión (@media print)."
         },
         {
           "question": "¿Cuál es el tamaño exacto de una tarjeta bancaria en píxeles?",

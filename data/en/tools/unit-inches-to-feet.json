@@ -50,7 +50,7 @@
         "The result appears instantly as you type, with no button to click",
         "The Copy result button places the finished value on the clipboard",
         "The conversion table covers values from 1 to 120 inches",
-        "A separate height table shows how many feet and inches match values from 58 to 75 inches",
+        "A separate height table shows how many feet and inches match values from 48 to 75 inches",
         "All calculations run locally in your browser, so your data never leaves your device",
         "The exact formula is: feet = inches ÷ 12",
         "The tool works on phones, tablets and computers with nothing to install"
@@ -71,13 +71,16 @@
         },
         {
           "name": "Reverse the direction if you need to",
-          "text": "Click Swap to move over to converting feet to inches."
+          "text": "Click Swap order to move over to converting feet to inches."
         }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Why convert inches to feet?",
@@ -85,13 +88,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free inches to feet converter – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "How does the inches to feet conversion work? Formula and example",
       "html": "<p class=\"text-mid mb-4\">Converting inches to feet rests on one fixed relationship: one foot is exactly 12 inches. To turn inches into feet, you divide the number of inches by 12.</p><p class=\"text-mid mb-4\">Full formula: <strong>feet = inches ÷ 12</strong>. The other way round: <strong>inches = feet × 12</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many feet 72 inches is. You substitute: 72 ÷ 12 = 6 feet. It is one of the few conversions that comes out even, because 72 divides by 12 with no remainder.</p><p class=\"text-mid\">Another example: 70 inches is 70 ÷ 12 = 5.83 feet. That figure is decimal feet, not \"5 feet and 83 inches\". To read it as height in feet and inches, divide the inches by 12 with a remainder: 70 ÷ 12 is 5 remainder 10, so 5 feet 10 inches. Ready values for height are in the table below.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Inches to feet conversion table",
@@ -99,32 +108,107 @@
       "labelHeader": "Inches",
       "cols": ["Feet"],
       "rows": [
-        { "label": "1 in", "values": ["0.08 ft"] },
-        { "label": "10 in", "values": ["0.83 ft"] },
-        { "label": "12 in", "values": ["1.00 ft"], "emphasis": true },
-        { "label": "24 in", "values": ["2.00 ft"] },
-        { "label": "30 in", "values": ["2.50 ft"] },
-        { "label": "36 in", "values": ["3.00 ft"], "emphasis": true },
-        { "label": "40 in", "values": ["3.33 ft"] },
-        { "label": "42 in", "values": ["3.50 ft"] },
-        { "label": "48 in", "values": ["4.00 ft"], "emphasis": true },
-        { "label": "50 in", "values": ["4.17 ft"] },
-        { "label": "55 in", "values": ["4.58 ft"] },
-        { "label": "60 in", "values": ["5.00 ft"], "emphasis": true },
-        { "label": "63 in", "values": ["5.25 ft"] },
-        { "label": "66 in", "values": ["5.50 ft"] },
-        { "label": "67 in", "values": ["5.58 ft"] },
-        { "label": "68 in", "values": ["5.67 ft"] },
-        { "label": "70 in", "values": ["5.83 ft"], "emphasis": true },
-        { "label": "72 in", "values": ["6.00 ft"], "emphasis": true },
-        { "label": "79 in", "values": ["6.58 ft"] },
-        { "label": "84 in", "values": ["7.00 ft"] },
-        { "label": "96 in", "values": ["8.00 ft"] },
-        { "label": "120 in", "values": ["10.00 ft"] }
+        {
+          "label": "1 in",
+          "values": ["0.08 ft"]
+        },
+        {
+          "label": "10 in",
+          "values": ["0.83 ft"]
+        },
+        {
+          "label": "12 in",
+          "values": ["1.00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "24 in",
+          "values": ["2.00 ft"]
+        },
+        {
+          "label": "30 in",
+          "values": ["2.50 ft"]
+        },
+        {
+          "label": "36 in",
+          "values": ["3.00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "40 in",
+          "values": ["3.33 ft"]
+        },
+        {
+          "label": "42 in",
+          "values": ["3.50 ft"]
+        },
+        {
+          "label": "48 in",
+          "values": ["4.00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "50 in",
+          "values": ["4.17 ft"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4.58 ft"]
+        },
+        {
+          "label": "60 in",
+          "values": ["5.00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "63 in",
+          "values": ["5.25 ft"]
+        },
+        {
+          "label": "66 in",
+          "values": ["5.50 ft"]
+        },
+        {
+          "label": "67 in",
+          "values": ["5.58 ft"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5.67 ft"]
+        },
+        {
+          "label": "70 in",
+          "values": ["5.83 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "72 in",
+          "values": ["6.00 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "79 in",
+          "values": ["6.58 ft"]
+        },
+        {
+          "label": "84 in",
+          "values": ["7.00 ft"]
+        },
+        {
+          "label": "96 in",
+          "values": ["8.00 ft"]
+        },
+        {
+          "label": "120 in",
+          "values": ["10.00 ft"]
+        }
       ],
       "caption": "Need the other direction? Use our <a href=\"/en/tools/feet-to-inches-converter\">feet to inches converter</a> with a full table for measurements given in feet."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Height table: inches to feet and inches",
@@ -132,41 +216,129 @@
       "labelHeader": "Height",
       "cols": ["Feet (decimal)", "Feet and inches"],
       "rows": [
-        { "label": "58 in", "values": ["4.83 ft", "4 ft 10 in"] },
-        { "label": "59 in", "values": ["4.92 ft", "4 ft 11 in"] },
+        {
+          "label": "48 in",
+          "values": ["4.00 ft", "4 ft 0 in"]
+        },
+        {
+          "label": "49 in",
+          "values": ["4.08 ft", "4 ft 1 in"]
+        },
+        {
+          "label": "50 in",
+          "values": ["4.17 ft", "4 ft 2 in"]
+        },
+        {
+          "label": "51 in",
+          "values": ["4.25 ft", "4 ft 3 in"]
+        },
+        {
+          "label": "52 in",
+          "values": ["4.33 ft", "4 ft 4 in"]
+        },
+        {
+          "label": "53 in",
+          "values": ["4.42 ft", "4 ft 5 in"]
+        },
+        {
+          "label": "54 in",
+          "values": ["4.50 ft", "4 ft 6 in"]
+        },
+        {
+          "label": "55 in",
+          "values": ["4.58 ft", "4 ft 7 in"]
+        },
+        {
+          "label": "56 in",
+          "values": ["4.67 ft", "4 ft 8 in"]
+        },
+        {
+          "label": "57 in",
+          "values": ["4.75 ft", "4 ft 9 in"]
+        },
+        {
+          "label": "58 in",
+          "values": ["4.83 ft", "4 ft 10 in"]
+        },
+        {
+          "label": "59 in",
+          "values": ["4.92 ft", "4 ft 11 in"]
+        },
         {
           "label": "60 in",
           "values": ["5.00 ft", "5 ft 0 in"],
           "emphasis": true
         },
-        { "label": "62 in", "values": ["5.17 ft", "5 ft 2 in"] },
-        { "label": "63 in", "values": ["5.25 ft", "5 ft 3 in"] },
-        { "label": "64 in", "values": ["5.33 ft", "5 ft 4 in"] },
-        { "label": "65 in", "values": ["5.42 ft", "5 ft 5 in"] },
+        {
+          "label": "61 in",
+          "values": ["5.08 ft", "5 ft 1 in"]
+        },
+        {
+          "label": "62 in",
+          "values": ["5.17 ft", "5 ft 2 in"]
+        },
+        {
+          "label": "63 in",
+          "values": ["5.25 ft", "5 ft 3 in"]
+        },
+        {
+          "label": "64 in",
+          "values": ["5.33 ft", "5 ft 4 in"]
+        },
+        {
+          "label": "65 in",
+          "values": ["5.42 ft", "5 ft 5 in"]
+        },
         {
           "label": "66 in",
           "values": ["5.50 ft", "5 ft 6 in"],
           "emphasis": true
         },
-        { "label": "67 in", "values": ["5.58 ft", "5 ft 7 in"] },
-        { "label": "68 in", "values": ["5.67 ft", "5 ft 8 in"] },
-        { "label": "69 in", "values": ["5.75 ft", "5 ft 9 in"] },
+        {
+          "label": "67 in",
+          "values": ["5.58 ft", "5 ft 7 in"]
+        },
+        {
+          "label": "68 in",
+          "values": ["5.67 ft", "5 ft 8 in"]
+        },
+        {
+          "label": "69 in",
+          "values": ["5.75 ft", "5 ft 9 in"]
+        },
         {
           "label": "70 in",
           "values": ["5.83 ft", "5 ft 10 in"],
           "emphasis": true
         },
-        { "label": "71 in", "values": ["5.92 ft", "5 ft 11 in"] },
+        {
+          "label": "71 in",
+          "values": ["5.92 ft", "5 ft 11 in"]
+        },
         {
           "label": "72 in",
           "values": ["6.00 ft", "6 ft 0 in"],
           "emphasis": true
         },
-        { "label": "74 in", "values": ["6.17 ft", "6 ft 2 in"] }
+        {
+          "label": "73 in",
+          "values": ["6.08 ft", "6 ft 1 in"]
+        },
+        {
+          "label": "74 in",
+          "values": ["6.17 ft", "6 ft 2 in"]
+        },
+        {
+          "label": "75 in",
+          "values": ["6.25 ft", "6 ft 3 in"]
+        }
       ],
       "caption": "You read the inches straight from the remainder after dividing by 12. Example: 70 ÷ 12 = 5 remainder 10, so 5 feet 10 inches."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "When do people convert inches to feet?",
@@ -190,7 +362,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Frequently asked questions about converting inches to feet",
@@ -245,7 +420,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
@@ -254,7 +432,10 @@
       "imageAlt": "Contact Arteon Agency",
       "subject": "inches to feet converter"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Other useful unit converters"

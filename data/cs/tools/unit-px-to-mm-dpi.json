@@ -73,7 +73,7 @@
         },
         {
           "name": "Přečti si výsledek nebo otoč směr",
-          "text": "Výsledek v milimetrech se hned zobrazí v sousedním poli. Můžeš ho zkopírovat nebo tlačítkem Změnit pořadí převádět milimetry na pixely."
+          "text": "Výsledek v milimetrech se hned zobrazí v sousedním poli. Můžeš ho zkopírovat nebo tlačítkem Prohodit pořadí převádět milimetry na pixely."
         }
       ]
     }
@@ -761,6 +761,10 @@
         {
           "question": "Jaká je přesná velikost platební karty v milimetrech?",
           "answer": "Standard ISO ID-1, který platí pro platební karty, SIM karty a občanské průkazy, má přesně 85,60 × 53,98 mm. Soubor 1 011 × 638 px odpovídá při 300 DPI přesně tomuto rozměru – přesnější hodnotu než běžné zaokrouhlení 85 × 55 mm, které se někdy používá u evropských vizitek."
+        },
+        {
+          "question": "Kolik milimetrů má pixel na displeji Retina?",
+          "answer": "Displeje Retina od Applu mají dvakrát hustší rozmístění pixelů než klasický monitor, ale operační systém stále interpretuje rozměry, jako by panel měl 96 DPI. V praxi to znamená, že jeden fyzický pixel zabírá asi 0,132 mm místo 0,265 mm, ale v návrhových panelech Photoshopu, Figmy nebo Canvy zůstávají hodnoty stejné – grafiku připravíš ve dvojnásobném rozlišení a exportuješ s příponou @2x."
         }
       ]
     },

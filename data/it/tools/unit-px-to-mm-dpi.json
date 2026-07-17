@@ -757,6 +757,10 @@
         {
           "question": "Qual è la dimensione esatta di una carta di pagamento in millimetri?",
           "answer": "Lo standard ISO ID-1, che si applica a carte di pagamento, carte SIM e carte d'identità, misura esattamente 85,60 × 53,98 mm. Un file di 1.011 × 638 px corrisponde esattamente a questa misura a 300 DPI, un valore più preciso dell'arrotondamento comune di 85 × 55 mm a volte usato per i biglietti da visita europei."
+        },
+        {
+          "question": "Quanti millimetri ha un pixel su uno schermo Retina?",
+          "answer": "Gli schermi Retina di Apple hanno una densità di pixel doppia rispetto a un monitor classico, ma il sistema operativo continua a interpretare le dimensioni come se il pannello avesse 96 DPI. In pratica un pixel fisico occupa circa 0,132 mm invece di 0,265 mm, ma nei pannelli di progettazione di Photoshop, Figma o Canva i valori restano identici: prepari la grafica a risoluzione doppia e la esporti con il suffisso @2x."
         }
       ]
     },

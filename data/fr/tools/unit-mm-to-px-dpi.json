@@ -644,6 +644,10 @@
           "answer": "Le DPI (dots per inch) est le nombre de points d'encre par pouce de matériau : c'est une caractéristique d'imprimante. Le PPI (pixels per inch) est le nombre de pixels par pouce d'écran et décrit un moniteur ou un affichage. Dans la pratique quotidienne, les graphistes utilisent les deux termes de façon interchangeable, mais techniquement le DPI concerne l'impression et le PPI les écrans."
         },
         {
+          "question": "Comment convertir des millimètres en pixels en CSS ou SVG ?",
+          "answer": "Dans les feuilles de style CSS, l'unité mm est convertie selon une formule fixe : 1mm = 96px ÷ 25,4 ≈ 3,78px, quel que soit l'appareil. La même constante s'applique dans les fichiers SVG, où les dimensions peuvent s'écrire directement en millimètres. En pratique, les interfaces web utilisent les unités px, rem ou em, et le mm est réservé aux feuilles de style d'impression (@media print)."
+        },
+        {
           "question": "Quelle est la taille exacte d'une carte bancaire en pixels ?",
           "answer": "La norme ISO ID-1, qui s'applique aux cartes bancaires, cartes SIM et cartes d'identité, mesure exactement 85,60 × 53,98 mm. À 300 DPI, cela donne 1 011 × 638 pixels, une valeur plus précise que l'arrondi courant de 85 × 55 mm parfois utilisé pour les cartes de visite européennes."
         }

@@ -72,7 +72,7 @@
         },
         {
           "name": "Lisez le résultat ou inversez le sens",
-          "text": "Le résultat en centimètres apparaît immédiatement dans le champ voisin. Vous pouvez le copier ou utiliser le bouton Changer l'ordre pour convertir les centimètres en pixels."
+          "text": "Le résultat en centimètres apparaît immédiatement dans le champ voisin. Vous pouvez le copier ou utiliser le bouton Inverser l'ordre pour convertir les centimètres en pixels."
         }
       ]
     }

@@ -761,6 +761,10 @@
         {
           "question": "What is the exact size of a payment card in millimeters?",
           "answer": "The ISO ID-1 standard, which applies to payment cards, SIM cards, and ID cards, is exactly 85.60 × 53.98 mm. A 1,011 × 638 px file at 300 DPI matches that exact size. This is a more precise figure than the common 85 × 55 mm rounding sometimes used for European business cards."
+        },
+        {
+          "question": "How many millimeters is a pixel on a Retina screen?",
+          "answer": "Apple Retina screens pack pixels twice as densely as a classic monitor, but the operating system still interprets dimensions as if the panel had 96 DPI. In practice this means one physical pixel takes up about 0.132 mm instead of 0.265 mm, yet in the design panels of Photoshop, Figma or Canva the values stay identical — you prepare the artwork at double resolution and export it with the @2x suffix."
         }
       ]
     },

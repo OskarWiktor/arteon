@@ -295,6 +295,8 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'feetToMeters',
   'inchesToFeet',
   'feetToInches',
+  'lbsToOz',
+  'ozToLbs',
   'mlToOz',
   'ozToMl',
   'kgToLb',

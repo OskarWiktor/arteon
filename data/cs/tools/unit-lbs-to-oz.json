@@ -1,0 +1,234 @@
+{
+  "toolKey": "lbsToOz",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník liber na unce – převeď lb na oz",
+    "description": "Převeď libry na unce. Hotové tabulky ve spodní části stránky ukazují hmotnost kojenců v librách a uncích (7 liber 4 unce je 116 uncí) i běžné hodnoty. Převodník funguje v obou směrech a počítá okamžitě.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-liber-na-unce"
+  },
+  "hero": {
+    "title": "Převeď libry na unce",
+    "description": "Zadej hodnotu v librách a rovnou si přečti výsledek v uncích. Libra a unce jsou jednotky hmotnosti používané hlavně v USA a Velké Británii, proto je převádíme obvykle u hmotnosti kojenců, hmotnosti surovin v receptech a u zásilek. Pozor: jde o hmotnostní unci, ne o tekutou unci, kterou se udává objem.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-liber-na-unce",
+      "label": "libry na unce"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník liber na unce – kalkulačka lb na oz",
+      "alternateName": [
+        "Převodník liber na unce",
+        "Kalkulačka liber na unce",
+        "lb na oz",
+        "Libry na unce",
+        "lbs na oz",
+        "Převeď libry na unce",
+        "Kolik uncí má libra",
+        "1 libra na unce",
+        "2 libry na unce",
+        "Hmotnost kojence v librách a uncích",
+        "Tabulka liber na unce",
+        "Kolik uncí má půl libry",
+        "lbs to oz",
+        "Převodník hmotnosti"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník liber na unce, který běží v prohlížeči bez registrace. Zadej hodnotu v librách a rovnou si přečti výsledek v uncích. Hodí se u hmotnosti kojenců, hmotnosti surovin v receptech a u zásilek z amerického trhu.",
+      "featureList": [
+        "Převod funguje v obou směrech, takže převedeš libry na unce i unce na libry",
+        "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
+        "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
+        "Převodní tabulka pokrývá hodnoty od čtvrt libry do 20 liber",
+        "Samostatná tabulka hmotnosti ukazuje, kolik uncí má celkem hmotnost zadaná v librách a uncích",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
+        "Přesný vzorec je: unce = libry × 16",
+        "Nástroj funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést libry na unce?",
+      "description": "Krátký návod k použití převodníku liber na unce.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu v librách",
+          "text": "Do levého pole zadej počet liber, které chceš převést na unce. Převodník přijímá jedno číslo, proto hmotnost typu 7 liber 4 unce nejdřív převeď na unce podle tabulky níže."
+        },
+        {
+          "name": "Přečti výsledek v uncích",
+          "text": "Výsledek v uncích se objeví hned v poli vedle, vpravo. Tlačítkem Kopírovat výsledek jej přeneseš do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Prohodit pořadí a přejdeš k převodu uncí na libry."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět libry na unce?",
+      "html": "<p class=\"text-mid mb-4\">Libra a unce jsou jednotky hmotnosti používané hlavně v USA a Velké Británii. V Česku a na Slovensku vážíme v kilogramech a gramech, proto libry na unce převádíme obvykle u amerických údajů: když čteš hmotnost kojence uvedenou v librách a uncích, když recept udává hmotnost suroviny v librách nebo když kontroluješ hmotnost zásilky.</p><p class=\"text-mid mb-4\">Vztah je jednoduchý a přesný: jedna libra je přesně 16 uncí. Pro převod liber na unce vynásobíš počet liber šestnácti. Převodník to za tebe udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid mb-4\">Pozor na dvě různé unce. Tento nástroj počítá s hmotnostní uncí (oz), která se používá pro hmotnost. Existuje také tekutá unce (fl oz), kterou se udává objem nápojů, a trojská unce, která se používá pro drahé kovy. Jsou to tři různé jednotky a nesmí se zaměňovat. Převodník liber na unce se týká pouze běžné hmotnostní unce.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník liber na unce – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod liber na unce? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod liber na unce se opírá o stálý vztah: jedna libra je přesně 16 uncí. Pro převod liber na unce vynásobíš počet liber šestnácti.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>unce = libry × 16</strong>. Opačně: <strong>libry = unce ÷ 16</strong>.</p><p class=\"text-mid mb-4\">Příklad: chceš zjistit, kolik uncí jsou 2 libry. Dosadíš: 2 × 16 = 32 uncí. Půl libry je 8 uncí a čtvrt libry jsou 4 unce, protože 16 se na tyto části dělí beze zbytku.</p><p class=\"text-mid\">Pozor na zápis hmotnosti. Hmotnost kojence „7 liber 4 unce“ není totéž co „7,4 libry“. Převodník přijímá jedno číslo, takže když zadáš 7,4, spočítá 7,4 × 16 = 118,4 uncí. Zatímco 7 liber 4 unce je 116 uncí. Proto se hmotnost v librách a uncích počítá takto: libry vynásobíš šestnácti a přičteš unce. Hotové hodnoty najdeš v tabulce hmotnosti níže.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka liber na unce",
+      "description": "Následující tabulka převádí běžné hodnoty liber na unce. Hodnoty pro celé libry jsou přesné, protože každá libra je přesně 16 uncí. Pro převod jiné hmotnosti použij převodník výše.",
+      "labelHeader": "Libry",
+      "cols": ["Unce"],
+      "rows": [
+        { "label": "0,25 lb", "values": ["4 oz"] },
+        { "label": "0,5 lb", "values": ["8 oz"], "emphasis": true },
+        { "label": "0,75 lb", "values": ["12 oz"] },
+        { "label": "1 lb", "values": ["16 oz"], "emphasis": true },
+        { "label": "1,5 lb", "values": ["24 oz"] },
+        { "label": "2 lb", "values": ["32 oz"], "emphasis": true },
+        { "label": "3 lb", "values": ["48 oz"] },
+        { "label": "4 lb", "values": ["64 oz"] },
+        { "label": "5 lb", "values": ["80 oz"], "emphasis": true },
+        { "label": "6 lb", "values": ["96 oz"] },
+        { "label": "7 lb", "values": ["112 oz"] },
+        { "label": "8 lb", "values": ["128 oz"] },
+        { "label": "9 lb", "values": ["144 oz"] },
+        { "label": "10 lb", "values": ["160 oz"], "emphasis": true },
+        { "label": "12 lb", "values": ["192 oz"] },
+        { "label": "15 lb", "values": ["240 oz"] },
+        { "label": "20 lb", "values": ["320 oz"] }
+      ],
+      "caption": "Chceš převádět opačným směrem? Použij náš převodník <a href=\"/cs/nastroje/prevodnik-unci-na-libry\">uncí na libry</a> s výsledkem uváděným jako libry a unce."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabulka hmotnosti kojenců: libry a unce na unce celkem",
+      "description": "V USA a Velké Británii se hmotnost kojence udává v librách a uncích, například 7 liber 4 unce. Pro získání uncí celkem vynásobíš libry šestnácti a přičteš unce. Následující tabulka ukazuje hotové výsledky pro typické hmotnosti, díky čemuž se vyhneš záměně s desetinným zápisem.",
+      "labelHeader": "Hmotnost",
+      "cols": ["Unce celkem"],
+      "rows": [
+        { "label": "5 liber 0 uncí", "values": ["80 oz"] },
+        { "label": "5 liber 8 uncí", "values": ["88 oz"] },
+        { "label": "6 liber 0 uncí", "values": ["96 oz"] },
+        { "label": "6 liber 8 uncí", "values": ["104 oz"] },
+        { "label": "7 liber 0 uncí", "values": ["112 oz"], "emphasis": true },
+        { "label": "7 liber 4 unce", "values": ["116 oz"], "emphasis": true },
+        { "label": "7 liber 8 uncí", "values": ["120 oz"] },
+        { "label": "8 liber 0 uncí", "values": ["128 oz"], "emphasis": true },
+        { "label": "8 liber 8 uncí", "values": ["136 oz"] },
+        { "label": "9 liber 0 uncí", "values": ["144 oz"] },
+        { "label": "9 liber 8 uncí", "values": ["152 oz"] },
+        { "label": "10 liber 0 uncí", "values": ["160 oz"] }
+      ],
+      "caption": "Příklad: 7 liber 4 unce je 7 × 16 + 4 = 116 uncí. Nezaměňuj to s 7,4 libry, což dává 118,4 uncí."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí libry na unce?",
+      "description": "Libra a unce se u nás objeví hlavně u amerických údajů.",
+      "items": [
+        {
+          "title": "Hmotnost kojence",
+          "description": "V USA a Velké Británii se hmotnost novorozence udává v librách a uncích, například 7 liber 8 uncí. Pro převod na unce celkem vynásobíš libry šestnácti a přičteš unce: 7 × 16 + 8 = 120 uncí. Hotové hodnoty najdeš v tabulce hmotnosti výše."
+        },
+        {
+          "title": "Hmotnost surovin v receptech",
+          "description": "Americké recepty udávají hmotnost masa, mouky nebo másla v librách a uncích. Půl libry másla je 8 uncí a libra masa je 16 uncí. Převod na unce usnadní odměření menších porcí."
+        },
+        {
+          "title": "Hmotnost zásilek",
+          "description": "Americké ceníky zásilek se často dělí podle hmotnosti v uncích, hlavně u lehkých balíků. Dopis do 1 libry je do 16 uncí a malý balík 2 libry je 32 uncí. Převod umožní zařadit zásilku do správného cenového pásma."
+        },
+        {
+          "title": "Porce jídla",
+          "description": "Na amerických obalech se porce udávají v uncích a celý obsah někdy v librách. Sáček 3 libry je 48 uncí, takže snadno spočítáš, kolik porcí po několika uncích z něj vyjde."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu liber na unce",
+      "items": [
+        {
+          "question": "Kolik uncí má 1 libra?",
+          "answer": "1 libra je přesně 16 uncí. Výpočet: 1 × 16 = 16 uncí. Tento vztah je stálý a plyne z definice libry, takže tu není žádné zaokrouhlení."
+        },
+        {
+          "question": "Je půl libry 8 uncí?",
+          "answer": "Ano. Půl libry je 8 uncí, protože 16 ÷ 2 = 8. Čtvrt libry jsou 4 unce."
+        },
+        {
+          "question": "Kolik uncí jsou 2 libry?",
+          "answer": "2 libry jsou 32 uncí. Výpočet: 2 × 16 = 32 uncí. Proto je 32 uncí přesně 2 libry."
+        },
+        {
+          "question": "Kolik uncí je 7 liber 4 unce?",
+          "answer": "7 liber 4 unce je 116 uncí. Výpočet: 7 × 16 + 4 = 116 uncí. Je to typická hmotnost novorozence, proto se často převádí."
+        },
+        {
+          "question": "Je 7,4 libry totéž co 7 liber 4 unce?",
+          "answer": "Ne. 7,4 libry je desetinný zápis a dává 7,4 × 16 = 118,4 uncí. Hmotnost 7 liber 4 unce je 116 uncí. Rozdíl je v tom, že 0,4 libry je 6,4 unce, a ne 4 unce. Hmotnost vždy zapisuj jako oddělené libry a unce."
+        },
+        {
+          "question": "Kolik uncí jsou 3, 5 a 10 liber?",
+          "answer": "3 libry jsou 48 uncí, 5 liber je 80 uncí a 10 liber je 160 uncí. Každou z těchto hodnot získáš vynásobením počtu liber šestnácti."
+        },
+        {
+          "question": "Jak převést hmotnost v librách a uncích na unce celkem?",
+          "answer": "Libry vynásobíš šestnácti a přičteš unce. Příklad: 8 liber 8 uncí je 8 × 16 + 8 = 136 uncí. Hotové hodnoty pro běžné hmotnosti kojenců najdeš v tabulce výše."
+        },
+        {
+          "question": "Jaký je vzorec pro převod liber na unce?",
+          "answer": "Vzorec je: unce = libry × 16. Například 6 × 16 = 96 uncí. Opačně: libry = unce ÷ 16."
+        },
+        {
+          "question": "Je hmotnostní unce totéž co tekutá unce?",
+          "answer": "Ne. Hmotnostní unce (oz) měří hmotnost a právě tu tento nástroj převádí. Tekutá unce (fl oz) měří objem nápojů. Mají podobný název, ale jsou to různé veličiny, takže se nesmí zaměňovat."
+        },
+        {
+          "question": "Čím se liší unce od trojské unce?",
+          "answer": "Běžná hmotnostní unce je 28,35 g a používá se pro hmotnost potravin nebo kojenců. Trojská unce je 31,10 g a používá se pro drahé kovy, například zlato. Navíc trojská libra je 12 trojských uncí, a ne 16. Tento nástroj počítá s běžnou uncí, ne s trojskou."
+        },
+        {
+          "question": "Kolik gramů má jedna unce?",
+          "answer": "Jedna hmotnostní unce je přibližně 28,35 g. Tento nástroj převádí libry na unce, takže pokud potřebuješ výsledek v gramech, vynásob unce navíc číslem 28,35."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "subject": "Převodník liber na unce"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

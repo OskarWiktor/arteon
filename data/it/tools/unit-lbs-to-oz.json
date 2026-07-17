@@ -1,0 +1,234 @@
+{
+  "toolKey": "lbsToOz",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore da libbre a once – converti lb in oz",
+    "description": "Converti libbre in once. Le tabelle in fondo alla pagina mostrano il peso dei neonati in libbre e once (7 libbre 4 once sono 116 once) e valori comuni. Il convertitore funziona in entrambi i sensi e calcola subito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-libbre-in-once"
+  },
+  "hero": {
+    "title": "Converti libbre in once",
+    "description": "Scrivi un valore in libbre e leggi subito il risultato in once. La libbra e l'oncia sono unità di massa usate soprattutto negli Stati Uniti e nel Regno Unito, perciò le convertiamo di solito per il peso di un neonato, il peso degli ingredienti nelle ricette e le spedizioni. Attenzione: si tratta dell'oncia di massa, non dell'oncia liquida che misura il volume.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-libbre-in-once",
+      "label": "libbre in once"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore da libbre a once – calcolatore lb in oz",
+      "alternateName": [
+        "Convertitore da libbre a once",
+        "Calcolatore da libbre a once",
+        "lb in oz",
+        "Libbre in once",
+        "lbs in oz",
+        "Converti libbre in once",
+        "Quante once ha una libbra",
+        "1 libbra in once",
+        "2 libbre in once",
+        "Peso del neonato in libbre e once",
+        "Tabella libbre in once",
+        "Quante once ha mezza libbra",
+        "lbs to oz",
+        "Convertitore di massa"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertitore da libbre a once che funziona nel browser senza registrazione. Scrivi un valore in libbre e leggi subito il risultato in once. Utile per il peso dei neonati, il peso degli ingredienti nelle ricette e le spedizioni dal mercato americano.",
+      "featureList": [
+        "La conversione funziona in entrambi i sensi, così passi sia da libbre a once sia da once a libbre",
+        "Il risultato compare subito mentre scrivi, senza premere alcun pulsante",
+        "Con il pulsante Copia risultato porti il valore pronto negli appunti",
+        "La tabella di conversione copre valori da un quarto di libbra fino a 20 libbre",
+        "Una tabella di peso separata mostra quante once somma in totale un peso dato in libbre e once",
+        "Tutti i calcoli avvengono localmente nel browser, i tuoi dati non lasciano il dispositivo",
+        "La formula esatta è: once = libbre × 16",
+        "Lo strumento funziona su telefono, tablet e computer senza installazione"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire le libbre in once?",
+      "description": "Breve guida all'uso del convertitore da libbre a once.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Scrivi un valore in libbre",
+          "text": "Nel campo a sinistra, scrivi il numero di libbre che vuoi convertire in once. Il convertitore accetta un solo numero, perciò un peso come 7 libbre 4 once convertilo prima in once con la tabella qui sotto."
+        },
+        {
+          "name": "Leggi il risultato in once",
+          "text": "Il risultato in once compare subito nel campo accanto, a destra. Con il pulsante Copia risultato lo porti negli appunti."
+        },
+        {
+          "name": "Inverti il senso se serve",
+          "text": "Clicca su Inverti ordine per passare a convertire le once in libbre."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire le libbre in once?",
+      "html": "<p class=\"text-mid mb-4\">La libbra e l'oncia sono unità di massa usate soprattutto negli Stati Uniti e nel Regno Unito. In Italia pesiamo in chilogrammi e grammi, perciò convertiamo le libbre in once quasi sempre con dati americani: quando leggi il peso di un neonato dato in libbre e once, quando una ricetta indica il peso di un ingrediente in libbre o quando controlli il peso di una spedizione.</p><p class=\"text-mid mb-4\">Il rapporto è semplice ed esatto: una libbra è esattamente 16 once. Per passare da libbre a once, moltiplichi il numero di libbre per 16. Il convertitore lo fa per te appena scrivi un valore.</p><p class=\"text-mid mb-4\">Attenzione a due once diverse. Questo strumento lavora con l'oncia di massa (oz), usata per il peso. Esiste anche l'oncia liquida (fl oz), con cui si indica il volume delle bevande, e l'oncia troy, usata per i metalli preziosi. Sono tre unità diverse e non vanno confuse. Il convertitore da libbre a once riguarda solo l'oncia di massa comune.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore gratuito da libbre a once – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione da libbre a once? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione da libbre a once si basa su un rapporto fisso: una libbra è esattamente 16 once. Per passare da libbre a once, moltiplichi il numero di libbre per 16.</p><p class=\"text-mid mb-4\">Formula completa: <strong>once = libbre × 16</strong>. Al contrario: <strong>libbre = once ÷ 16</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quante once sono 2 libbre. Sostituisci: 2 × 16 = 32 once. Mezza libbra è 8 once e un quarto di libbra è 4 once, perché il 16 si divide in queste parti in modo esatto.</p><p class=\"text-mid\">Fai attenzione a come si scrive il peso. Un peso di neonato di «7 libbre 4 once» non è lo stesso di «7,4 libbre». Il convertitore accetta un solo numero, quindi se scrivi 7,4 calcola 7,4 × 16 = 118,4 once. Invece 7 libbre 4 once sono 116 once. Per questo un peso in libbre e once si calcola così: moltiplichi le libbre per 16 e aggiungi le once. Trovi valori pronti nella tabella di peso qui sotto.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione da libbre a once",
+      "description": "La tabella seguente converte i valori comuni di libbre in once. I valori per le libbre intere sono esatti, perché ogni libbra è esattamente 16 once. Per convertire un altro peso, usa il convertitore qui sopra.",
+      "labelHeader": "Libbre",
+      "cols": ["Once"],
+      "rows": [
+        { "label": "0,25 lb", "values": ["4 oz"] },
+        { "label": "0,5 lb", "values": ["8 oz"], "emphasis": true },
+        { "label": "0,75 lb", "values": ["12 oz"] },
+        { "label": "1 lb", "values": ["16 oz"], "emphasis": true },
+        { "label": "1,5 lb", "values": ["24 oz"] },
+        { "label": "2 lb", "values": ["32 oz"], "emphasis": true },
+        { "label": "3 lb", "values": ["48 oz"] },
+        { "label": "4 lb", "values": ["64 oz"] },
+        { "label": "5 lb", "values": ["80 oz"], "emphasis": true },
+        { "label": "6 lb", "values": ["96 oz"] },
+        { "label": "7 lb", "values": ["112 oz"] },
+        { "label": "8 lb", "values": ["128 oz"] },
+        { "label": "9 lb", "values": ["144 oz"] },
+        { "label": "10 lb", "values": ["160 oz"], "emphasis": true },
+        { "label": "12 lb", "values": ["192 oz"] },
+        { "label": "15 lb", "values": ["240 oz"] },
+        { "label": "20 lb", "values": ["320 oz"] }
+      ],
+      "caption": "Vuoi convertire nell'altro senso? Usa il nostro convertitore da <a href=\"/it/strumenti/convertitore-once-in-libbre\">once a libbre</a>, con il risultato dato come libbre e once."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella del peso dei neonati: libbre e once in once totali",
+      "description": "Negli Stati Uniti e nel Regno Unito il peso di un neonato si dà in libbre e once, per esempio 7 libbre 4 once. Per ottenere le once totali, moltiplichi le libbre per 16 e aggiungi le once. La tabella seguente mostra risultati pronti per pesi comuni, così eviti un errore con la forma decimale.",
+      "labelHeader": "Peso",
+      "cols": ["Once totali"],
+      "rows": [
+        { "label": "5 libbre 0 once", "values": ["80 oz"] },
+        { "label": "5 libbre 8 once", "values": ["88 oz"] },
+        { "label": "6 libbre 0 once", "values": ["96 oz"] },
+        { "label": "6 libbre 8 once", "values": ["104 oz"] },
+        { "label": "7 libbre 0 once", "values": ["112 oz"], "emphasis": true },
+        { "label": "7 libbre 4 once", "values": ["116 oz"], "emphasis": true },
+        { "label": "7 libbre 8 once", "values": ["120 oz"] },
+        { "label": "8 libbre 0 once", "values": ["128 oz"], "emphasis": true },
+        { "label": "8 libbre 8 once", "values": ["136 oz"] },
+        { "label": "9 libbre 0 once", "values": ["144 oz"] },
+        { "label": "9 libbre 8 once", "values": ["152 oz"] },
+        { "label": "10 libbre 0 once", "values": ["160 oz"] }
+      ],
+      "caption": "Esempio: 7 libbre 4 once sono 7 × 16 + 4 = 116 once. Non confonderlo con 7,4 libbre, che dà 118,4 once."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono più spesso le libbre in once?",
+      "description": "La libbra e l'oncia si incontrano soprattutto con dati americani.",
+      "items": [
+        {
+          "title": "Peso del neonato",
+          "description": "Negli Stati Uniti e nel Regno Unito il peso di un neonato si dà in libbre e once, per esempio 7 libbre 8 once. Per trasformarlo in once totali, moltiplichi le libbre per 16 e aggiungi le once: 7 × 16 + 8 = 120 once. Trovi valori pronti nella tabella di peso qui sopra."
+        },
+        {
+          "title": "Peso degli ingredienti nelle ricette",
+          "description": "Le ricette americane danno il peso di carne, farina o burro in libbre e once. Mezza libbra di burro è 8 once e una libbra di carne è 16 once. Convertire in once facilita il dosaggio di porzioni più piccole."
+        },
+        {
+          "title": "Peso delle spedizioni",
+          "description": "Le tariffe di spedizione americane si dividono spesso per peso in once, soprattutto per i pacchi leggeri. Una lettera fino a 1 libbra è fino a 16 once, e un pacchetto piccolo di 2 libbre è 32 once. Convertire permette di adattare la spedizione alla fascia di prezzo giusta."
+        },
+        {
+          "title": "Porzioni di cibo",
+          "description": "Sulle confezioni americane le porzioni si danno in once, e il contenuto totale a volte in libbre. Un sacchetto di 3 libbre è 48 once, così calcoli facilmente quante porzioni da qualche oncia ne escono."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da libbre a once",
+      "items": [
+        {
+          "question": "Quante once ha 1 libbra?",
+          "answer": "1 libbra è esattamente 16 once. Calcolo: 1 × 16 = 16 once. Questo rapporto è fisso e deriva dalla definizione della libbra, quindi qui non c'è alcun arrotondamento."
+        },
+        {
+          "question": "Mezza libbra è 8 once?",
+          "answer": "Sì. Mezza libbra è 8 once, perché 16 ÷ 2 = 8. Un quarto di libbra è 4 once."
+        },
+        {
+          "question": "Quante once sono 2 libbre?",
+          "answer": "2 libbre sono 32 once. Calcolo: 2 × 16 = 32 once. Per questo 32 once sono esattamente 2 libbre."
+        },
+        {
+          "question": "Quante once sono 7 libbre 4 once?",
+          "answer": "7 libbre 4 once sono 116 once. Calcolo: 7 × 16 + 4 = 116 once. È un peso tipico di un neonato, per questo si converte spesso."
+        },
+        {
+          "question": "7,4 libbre è lo stesso di 7 libbre 4 once?",
+          "answer": "No. 7,4 libbre è una notazione decimale e dà 7,4 × 16 = 118,4 once. Un peso di 7 libbre 4 once è 116 once. La differenza nasce dal fatto che 0,4 di libbra sono 6,4 once, e non 4 once. Scrivi sempre il peso come libbre e once separate."
+        },
+        {
+          "question": "Quante once sono 3, 5 e 10 libbre?",
+          "answer": "3 libbre sono 48 once, 5 libbre sono 80 once e 10 libbre sono 160 once. Ognuno di questi valori si ottiene moltiplicando il numero di libbre per 16."
+        },
+        {
+          "question": "Come trasformo un peso in libbre e once in once totali?",
+          "answer": "Moltiplichi le libbre per 16 e aggiungi le once. Esempio: 8 libbre 8 once sono 8 × 16 + 8 = 136 once. Trovi valori pronti per pesi comuni di neonati nella tabella qui sopra."
+        },
+        {
+          "question": "Qual è la formula per convertire le libbre in once?",
+          "answer": "La formula è: once = libbre × 16. Per esempio, 6 × 16 = 96 once. Al contrario: libbre = once ÷ 16."
+        },
+        {
+          "question": "L'oncia di massa è lo stesso dell'oncia liquida?",
+          "answer": "No. L'oncia di massa (oz) misura il peso, ed è quella che converte questo strumento. L'oncia liquida (fl oz) misura il volume delle bevande. Hanno un nome simile, ma sono grandezze diverse, quindi non vanno confuse."
+        },
+        {
+          "question": "In cosa differisce l'oncia dall'oncia troy?",
+          "answer": "L'oncia di massa comune è 28,35 g e si usa per il peso di alimenti o neonati. L'oncia troy è 31,10 g e si usa per i metalli preziosi, come l'oro. Inoltre, una libbra troy è 12 once troy, e non 16. Questo strumento lavora con l'oncia comune, non con la troy."
+        },
+        {
+          "question": "Quanti grammi ha un'oncia?",
+          "answer": "Un'oncia di massa è circa 28,35 g. Questo strumento converte le libbre in once, quindi se ti serve il risultato in grammi, moltiplica le once anche per 28,35."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se hai notato un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contatto con Arteon Agency",
+      "subject": "Convertitore da libbre a once"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}

@@ -235,6 +235,16 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     it: 'Libbre (lb)',
     cs: 'Libry (lb)',
   },
+  ounces: {
+    pl: 'Uncje (oz)',
+    en: 'Ounces (oz)',
+    de: 'Unzen (oz)',
+    es: 'Onzas (oz)',
+    fr: 'Onces (oz)',
+    pt: 'Onças (oz)',
+    it: 'Once (oz)',
+    cs: 'Unce (oz)',
+  },
   bytes: {
     pl: 'Bajty',
     en: 'Bytes',

@@ -495,6 +495,10 @@
           "answer": "65 kg correspondent à 143,30 lb, soit 10 stone 3,3 lb dans le système britannique. Calcul : 65 × 2,2046 = 143,30."
         },
         {
+          "question": "Comment convertir des kg en livres sans calculatrice ?",
+          "answer": "Approximation rapide : multipliez les kilogrammes par 2 et ajoutez 10 % du résultat. Par exemple 80 kg × 2 = 160, plus 10 % de 160 = 16, soit 176 lb. La valeur exacte est de 176,37 lb, l'erreur n'est que de 0,2 %."
+        },
+        {
           "question": "Qu'est-ce qu'un stone et comment convertir des kg en stone ?",
           "answer": "Le stone est une unité de masse britannique : 1 stone = 14 livres = 6,3503 kg. Au Royaume-Uni, le poids corporel est souvent donné en stone et livres (ex. '11 stone 4 lb'). Pour convertir des kg en stone : diviser la valeur en kg par 6,3503. Exemple : 70 kg ÷ 6,3503 = 11,02 stone = 11 stone 0,3 lb."
         },
@@ -505,6 +509,10 @@
         {
           "question": "Combien de livres font 23 kg (limite de bagage) ?",
           "answer": "23 kg correspondent à 50,71 lb. C'est la limite de bagage enregistré la plus répandue chez les compagnies européennes comme Air France ou Transavia. Les compagnies américaines indiquent la même limite sous la forme 50 lb, soit 22,68 kg — la différence n'est que d'environ 320 grammes, les deux limites sont donc équivalentes en pratique."
+        },
+        {
+          "question": "Pourquoi les États-Unis utilisent-ils la livre plutôt que le kilogramme ?",
+          "answer": "Les États-Unis utilisent le système de mesures anglo-saxon (imperial/customary), hérité des colonies britanniques. La livre a plus de mille ans d'histoire et s'est profondément enracinée dans la culture et le quotidien des Américains. Le Royaume-Uni est passé au système métrique dans les années 1960-1970, mais la livre est restée d'usage courant informel, surtout pour le poids corporel. Les États-Unis sont l'un des trois pays (avec le Liberia et le Myanmar) à ne pas avoir adopté officiellement le système métrique."
         },
         {
           "question": "Combien de livres font 55 kg ?",

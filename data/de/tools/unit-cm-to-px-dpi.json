@@ -73,7 +73,7 @@
         },
         {
           "name": "Ergebnis ablesen oder Richtung umkehren",
-          "text": "Das Ergebnis in Pixeln erscheint sofort im Feld daneben. Sie können es kopieren oder die Schaltfläche Reihenfolge ändern drücken, um Pixel in Zentimeter umzurechnen."
+          "text": "Das Ergebnis in Pixeln erscheint sofort im Feld daneben. Sie können es kopieren oder die Schaltfläche Reihenfolge tauschen drücken, um Pixel in Zentimeter umzurechnen."
         }
       ]
     }

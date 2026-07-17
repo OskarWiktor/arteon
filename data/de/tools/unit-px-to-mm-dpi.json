@@ -73,7 +73,7 @@
         },
         {
           "name": "Ergebnis ablesen oder Richtung umkehren",
-          "text": "Das Ergebnis in Millimetern erscheint sofort im danebenliegenden Feld. Sie können es kopieren oder mit der Schaltfläche Reihenfolge ändern in die andere Richtung umrechnen."
+          "text": "Das Ergebnis in Millimetern erscheint sofort im danebenliegenden Feld. Sie können es kopieren oder mit der Schaltfläche Reihenfolge tauschen in die andere Richtung umrechnen."
         }
       ]
     }
@@ -761,6 +761,10 @@
         {
           "question": "Wie groß ist eine Zahlungskarte genau in Millimetern?",
           "answer": "Der Standard ISO ID-1, der für Zahlungskarten, SIM-Karten und Ausweise gilt, beträgt genau 85,60 × 53,98 mm. Eine Datei mit 1.011 × 638 px entspricht bei 300 DPI genau diesem Maß. Das ist ein genauerer Wert als die bei europäischen Visitenkarten manchmal verwendete Rundung 85 × 55 mm."
+        },
+        {
+          "question": "Wie viele Millimeter hat ein Pixel auf einem Retina-Display?",
+          "answer": "Apple-Retina-Displays packen die Pixel doppelt so dicht wie ein klassischer Monitor, doch das Betriebssystem interpretiert die Maße weiterhin so, als hätte das Panel 96 DPI. In der Praxis bedeutet das, dass ein physisches Pixel etwa 0,132 mm statt 0,265 mm einnimmt, in den Design-Panels von Photoshop, Figma oder Canva bleiben die Werte jedoch identisch – die Grafik bereiten Sie in doppelter Auflösung vor und exportieren sie mit dem Suffix @2x."
         }
       ]
     },

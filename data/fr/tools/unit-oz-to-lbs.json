@@ -1,0 +1,233 @@
+{
+  "toolKey": "ozToLbs",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur d'onces en livres – convertir oz en lb",
+    "description": "Convertissez des onces en livres. Les tableaux en bas de page montrent le résultat en livres et onces (40 onces font 2 livres 8 onces) et le poids des bébés. Le convertisseur fonctionne dans les deux sens et calcule aussitôt.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-onces-en-livres"
+  },
+  "hero": {
+    "title": "Convertissez des onces en livres",
+    "description": "Saisissez une valeur en onces et lisez le résultat en livres tout de suite. La livre et l'once sont des unités de masse utilisées surtout aux États-Unis et au Royaume-Uni, on les convertit donc au sujet du poids d'un bébé, du poids de produits et des envois. Le convertisseur donne le résultat en livres décimales, et un tableau séparé plus bas le montre en livres et onces.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-onces-en-livres",
+      "label": "onces en livres"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur d'onces en livres – calculateur oz en lb",
+      "alternateName": [
+        "Convertisseur d'onces en livres",
+        "Calculateur d'onces en livres",
+        "oz en lb",
+        "Onces en livres",
+        "oz en lbs",
+        "Convertir des onces en livres",
+        "Combien de livres font 16 onces",
+        "40 onces en livres",
+        "32 onces en livres",
+        "Onces en livres et onces",
+        "Tableau onces en livres",
+        "Combien de livres dans une once",
+        "oz to lbs",
+        "Convertisseur de masse"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur d'onces en livres qui fonctionne dans le navigateur sans inscription. Saisissez une valeur en onces et lisez le résultat en livres aussitôt. Utile pour le poids des bébés, le poids des produits et les envois depuis le marché américain.",
+      "featureList": [
+        "La conversion fonctionne dans les deux sens, vous passez donc des onces aux livres comme des livres aux onces",
+        "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
+        "Le tableau de conversion couvre les valeurs de 8 à 96 onces",
+        "Un tableau séparé montre le résultat en livres et onces, par exemple 40 onces font 2 livres 8 onces",
+        "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
+        "La formule exacte est : livres = onces ÷ 16",
+        "L'outil fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des onces en livres ?",
+      "description": "Court guide d'utilisation du convertisseur d'onces en livres.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez une valeur en onces",
+          "text": "Dans le champ de gauche, saisissez le nombre d'onces que vous voulez convertir en livres."
+        },
+        {
+          "name": "Lisez le résultat en livres",
+          "text": "Le résultat en livres apparaît aussitôt dans le champ voisin, à droite. Avec le bouton Copier le résultat, vous le placez dans le presse-papiers."
+        },
+        {
+          "name": "Inversez le sens au besoin",
+          "text": "Cliquez sur Inverser l'ordre pour passer à la conversion des livres en onces."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des onces en livres ?",
+      "html": "<p class=\"text-mid mb-4\">L'once et la livre sont des unités de masse utilisées surtout aux États-Unis et au Royaume-Uni. En France et dans les pays francophones, on pèse en kilogrammes et en grammes, on convertit donc des onces en livres surtout avec des données américaines : quand le poids d'un produit est donné en onces, quand vous voulez noter le poids d'un bébé en livres et onces ou quand vous additionnez le poids de plusieurs portions données en onces.</p><p class=\"text-mid mb-4\">Le rapport est simple et exact : une livre fait exactement 16 onces. Pour passer des onces aux livres, vous divisez le nombre d'onces par 16. Le convertisseur le fait pour vous dès que vous saisissez une valeur.</p><p class=\"text-mid mb-4\">Avec le poids, il y a un piège. Le convertisseur donne le résultat en livres décimales, donc 40 onces s'affichent comme 2,5 livres. Cela ne veut pas dire « 2 livres et 5 onces », car 2,5 livres font 2 livres et 8 onces (0,5 livre fait 8 onces). C'est pourquoi vous trouverez plus bas un tableau séparé qui montre le résultat en livres et onces.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit d'onces en livres – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des onces en livres ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion des onces en livres repose sur un rapport fixe : une livre fait exactement 16 onces. Pour passer des onces aux livres, vous divisez le nombre d'onces par 16.</p><p class=\"text-mid mb-4\">Formule complète : <strong>livres = onces ÷ 16</strong>. Dans l'autre sens : <strong>onces = livres × 16</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous voulez savoir combien de livres font 32 onces. Vous posez : 32 ÷ 16 = 2 livres. C'est une des conversions qui tombe juste, car 32 se divise par 16 sans reste.</p><p class=\"text-mid\">Autre exemple : 40 onces font 40 ÷ 16 = 2,5 livres. Ce nombre est en livres décimales. Pour obtenir le résultat en livres et onces, vous divisez les onces par 16 avec reste : 40 ÷ 16 font 2 reste 8, soit 2 livres 8 onces. Vous trouverez des valeurs prêtes dans le tableau ci-dessous.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des onces en livres",
+      "description": "Le tableau ci-dessous convertit des valeurs courantes d'onces en livres décimales. Pour convertir un autre poids, utilisez le convertisseur ci-dessus.",
+      "labelHeader": "Onces",
+      "cols": ["Livres"],
+      "rows": [
+        { "label": "8 oz", "values": ["0,5 lb"], "emphasis": true },
+        { "label": "12 oz", "values": ["0,75 lb"] },
+        { "label": "16 oz", "values": ["1 lb"], "emphasis": true },
+        { "label": "20 oz", "values": ["1,25 lb"] },
+        { "label": "24 oz", "values": ["1,5 lb"] },
+        { "label": "28 oz", "values": ["1,75 lb"] },
+        { "label": "32 oz", "values": ["2 lb"], "emphasis": true },
+        { "label": "36 oz", "values": ["2,25 lb"] },
+        { "label": "40 oz", "values": ["2,5 lb"], "emphasis": true },
+        { "label": "48 oz", "values": ["3 lb"], "emphasis": true },
+        { "label": "60 oz", "values": ["3,75 lb"] },
+        { "label": "64 oz", "values": ["4 lb"] },
+        { "label": "72 oz", "values": ["4,5 lb"] },
+        { "label": "80 oz", "values": ["5 lb"], "emphasis": true },
+        { "label": "96 oz", "values": ["6 lb"] }
+      ],
+      "caption": "Vous voulez convertir dans l'autre sens ? Utilisez notre convertisseur de <a href=\"/fr/outils/convertisseur-livres-en-onces\">livres en onces</a>, avec un tableau de poids en livres et onces."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau : onces en livres et onces",
+      "description": "Un poids s'écrit souvent en livres et onces, par exemple 2 livres 8 onces. Pour passer des onces seules à cette forme, vous divisez les onces par 16 avec reste : le quotient donne les livres et le reste donne les onces. Le tableau ci-dessous montre des résultats prêts, ainsi vous ne les confondez pas avec la forme décimale.",
+      "labelHeader": "Onces",
+      "cols": ["Livres et onces"],
+      "rows": [
+        { "label": "16 oz", "values": ["1 livre 0 once"], "emphasis": true },
+        { "label": "20 oz", "values": ["1 livre 4 onces"] },
+        { "label": "24 oz", "values": ["1 livre 8 onces"] },
+        { "label": "28 oz", "values": ["1 livre 12 onces"] },
+        { "label": "32 oz", "values": ["2 livres 0 once"], "emphasis": true },
+        { "label": "36 oz", "values": ["2 livres 4 onces"] },
+        { "label": "40 oz", "values": ["2 livres 8 onces"], "emphasis": true },
+        { "label": "44 oz", "values": ["2 livres 12 onces"] },
+        { "label": "48 oz", "values": ["3 livres 0 once"], "emphasis": true },
+        { "label": "56 oz", "values": ["3 livres 8 onces"] },
+        { "label": "64 oz", "values": ["4 livres 0 once"] },
+        { "label": "72 oz", "values": ["4 livres 8 onces"] },
+        { "label": "80 oz", "values": ["5 livres 0 once"] }
+      ],
+      "caption": "Exemple : 40 ÷ 16 = 2 reste 8, soit 2 livres 8 onces. C'est le même poids que 2,5 livres écrit en décimal."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent des onces en livres ?",
+      "description": "L'once et la livre se rencontrent surtout avec des données américaines.",
+      "items": [
+        {
+          "title": "Poids du bébé en livres et onces",
+          "description": "Le poids d'un nouveau-né est parfois donné en total en onces, et vous voulez le noter en livres et onces. 120 onces font 7 livres 8 onces, car 120 ÷ 16 = 7 reste 8. Vous trouverez des valeurs prêtes dans le tableau livres et onces ci-dessus."
+        },
+        {
+          "title": "Poids des produits alimentaires",
+          "description": "Sur les emballages américains, le poids est parfois donné en onces, même s'il dépasse une livre. Un sac de 48 onces fait 3 livres et un pot de 24 onces fait 1,5 livre. Convertir en livres facilite la comparaison avec des emballages plus grands."
+        },
+        {
+          "title": "Poids des envois",
+          "description": "Les colis légers sont tarifés en onces, mais les tranches de poids se donnent aussi en livres. Un colis de 32 onces fait 2 livres et 40 onces font 2,5 livres. Convertir permet de vérifier dans quelle tranche de prix tombe un envoi."
+        },
+        {
+          "title": "Additionner des portions",
+          "description": "Si vous avez plusieurs portions de quelques onces chacune, il est plus simple de saisir leur somme en livres. Huit portions de 4 onces font 32 onces, soit exactement 2 livres. Convertir met de l'ordre dans un poids difficile à se représenter en onces seules."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des onces en livres",
+      "items": [
+        {
+          "question": "Combien de livres font 16 onces ?",
+          "answer": "16 onces font exactement 1 livre. Calcul : 16 ÷ 16 = 1 livre. Ce rapport est fixe et découle de la définition de la livre, il n'y a donc aucun arrondi ici."
+        },
+        {
+          "question": "32 onces font-elles 2 livres ?",
+          "answer": "Oui. 32 onces font 2 livres, car 32 ÷ 16 = 2. De même, 48 onces font 3 livres et 64 onces font 4 livres."
+        },
+        {
+          "question": "12 onces font-elles 1 livre ?",
+          "answer": "Non. 12 onces font 0,75 livre, soit trois quarts de livre. La livre entière n'est atteinte qu'à 16 onces, il manque donc encore 4 onces pour la livre."
+        },
+        {
+          "question": "8 onces font-elles une demi-livre ?",
+          "answer": "Oui. 8 onces font 0,5 livre, soit exactement une demi-livre, car 16 ÷ 2 = 8."
+        },
+        {
+          "question": "Combien de livres font 40 onces ?",
+          "answer": "40 onces font 2,5 livres, soit 2 livres 8 onces. Calcul : 40 ÷ 16 = 2 reste 8. Attention : 2,5 livres font 2 livres 8 onces, et non 2 livres 5 onces."
+        },
+        {
+          "question": "Combien de livres font 24 onces ?",
+          "answer": "24 onces font 1,5 livre, soit 1 livre 8 onces. Calcul : 24 ÷ 16 = 1 reste 8."
+        },
+        {
+          "question": "Comment écrire le résultat en livres et onces ?",
+          "answer": "Vous divisez les onces par 16 avec reste. Le quotient donne les livres et le reste donne les onces. Exemple : 44 ÷ 16 font 2 reste 12, soit 2 livres 12 onces. Vous trouverez des valeurs prêtes dans le tableau livres et onces ci-dessus."
+        },
+        {
+          "question": "Combien de livres font 20, 50 et 72 onces ?",
+          "answer": "20 onces font 1,25 livre, 50 onces font 3,125 livres et 72 onces font 4,5 livres. Vous obtenez chacune de ces valeurs en divisant le nombre d'onces par 16."
+        },
+        {
+          "question": "Quelle est la formule pour convertir des onces en livres ?",
+          "answer": "La formule est : livres = onces ÷ 16. Par exemple, 80 ÷ 16 = 5 livres. Dans l'autre sens : onces = livres × 16."
+        },
+        {
+          "question": "L'once de masse est-elle la même chose que l'once liquide ?",
+          "answer": "Non. L'once de masse (oz) mesure le poids, et c'est elle que cet outil convertit. L'once liquide (fl oz) mesure le volume des boissons. Elles ont un nom voisin, mais ce sont des grandeurs différentes, il ne faut donc pas les confondre."
+        },
+        {
+          "question": "Quelle différence entre l'once et l'once troy ?",
+          "answer": "L'once de masse ordinaire fait 28,35 g et sert au poids des aliments ou des bébés. L'once troy fait 31,10 g et sert aux métaux précieux, comme l'or. De plus, une livre troy fait 12 onces troy, et non 16. Cet outil travaille avec l'once ordinaire, pas avec l'once troy."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "title": "Une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageAlt": "Contact avec Arteon Agency",
+      "subject": "Convertisseur d'onces en livres"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    }
+  ]
+}

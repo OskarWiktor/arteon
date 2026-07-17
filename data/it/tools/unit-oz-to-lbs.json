@@ -1,0 +1,233 @@
+{
+  "toolKey": "ozToLbs",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore da once a libbre – converti oz in lb",
+    "description": "Converti once in libbre. Le tabelle in fondo alla pagina mostrano il risultato come libbre e once (40 once sono 2 libbre 8 once) e il peso dei neonati. Il convertitore funziona in entrambi i sensi e calcola subito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-once-in-libbre"
+  },
+  "hero": {
+    "title": "Converti once in libbre",
+    "description": "Scrivi un valore in once e leggi subito il risultato in libbre. La libbra e l'oncia sono unità di massa usate soprattutto negli Stati Uniti e nel Regno Unito, perciò le convertiamo di solito per il peso di un neonato, il peso dei prodotti e le spedizioni. Il convertitore dà il risultato in libbre decimali, e una tabella separata più in basso lo mostra come libbre e once.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-once-in-libbre",
+      "label": "once in libbre"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore da once a libbre – calcolatore oz in lb",
+      "alternateName": [
+        "Convertitore da once a libbre",
+        "Calcolatore da once a libbre",
+        "oz in lb",
+        "Once in libbre",
+        "oz in lbs",
+        "Converti once in libbre",
+        "Quante libbre sono 16 once",
+        "40 once in libbre",
+        "32 once in libbre",
+        "Once in libbre e once",
+        "Tabella once in libbre",
+        "Quante libbre ha un'oncia",
+        "oz to lbs",
+        "Convertitore di massa"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertitore da once a libbre che funziona nel browser senza registrazione. Scrivi un valore in once e leggi subito il risultato in libbre. Utile per il peso dei neonati, il peso dei prodotti e le spedizioni dal mercato americano.",
+      "featureList": [
+        "La conversione funziona in entrambi i sensi, così passi sia da once a libbre sia da libbre a once",
+        "Il risultato compare subito mentre scrivi, senza premere alcun pulsante",
+        "Con il pulsante Copia risultato porti il valore pronto negli appunti",
+        "La tabella di conversione copre valori da 8 a 96 once",
+        "Una tabella separata mostra il risultato come libbre e once, per esempio 40 once sono 2 libbre 8 once",
+        "Tutti i calcoli avvengono localmente nel browser, i tuoi dati non lasciano il dispositivo",
+        "La formula esatta è: libbre = once ÷ 16",
+        "Lo strumento funziona su telefono, tablet e computer senza installazione"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire le once in libbre?",
+      "description": "Breve guida all'uso del convertitore da once a libbre.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Scrivi un valore in once",
+          "text": "Nel campo a sinistra, scrivi il numero di once che vuoi convertire in libbre."
+        },
+        {
+          "name": "Leggi il risultato in libbre",
+          "text": "Il risultato in libbre compare subito nel campo accanto, a destra. Con il pulsante Copia risultato lo porti negli appunti."
+        },
+        {
+          "name": "Inverti il senso se serve",
+          "text": "Clicca su Inverti ordine per passare a convertire le libbre in once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire le once in libbre?",
+      "html": "<p class=\"text-mid mb-4\">L'oncia e la libbra sono unità di massa usate soprattutto negli Stati Uniti e nel Regno Unito. In Italia pesiamo in chilogrammi e grammi, perciò convertiamo le once in libbre quasi sempre con dati americani: quando il peso di un prodotto è dato in once, quando vuoi annotare il peso di un neonato come libbre e once o quando sommi il peso di più porzioni date in once.</p><p class=\"text-mid mb-4\">Il rapporto è semplice ed esatto: una libbra è esattamente 16 once. Per passare da once a libbre, dividi il numero di once per 16. Il convertitore lo fa per te appena scrivi un valore.</p><p class=\"text-mid mb-4\">Con il peso c'è un dettaglio. Il convertitore dà il risultato in libbre decimali, quindi 40 once compaiono come 2,5 libbre. Questo non significa «2 libbre e 5 once», perché 2,5 libbre sono 2 libbre e 8 once (0,5 di libbra sono 8 once). Per questo più in basso trovi una tabella separata che mostra il risultato come libbre e once.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore gratuito da once a libbre – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione da once a libbre? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione da once a libbre si basa su un rapporto fisso: una libbra è esattamente 16 once. Per passare da once a libbre, dividi il numero di once per 16.</p><p class=\"text-mid mb-4\">Formula completa: <strong>libbre = once ÷ 16</strong>. Al contrario: <strong>once = libbre × 16</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quante libbre sono 32 once. Sostituisci: 32 ÷ 16 = 2 libbre. È una delle conversioni che viene esatta, perché 32 si divide per 16 senza resto.</p><p class=\"text-mid\">Altro esempio: 40 once sono 40 ÷ 16 = 2,5 libbre. Questo numero è in libbre decimali. Per ottenere il risultato come libbre e once, dividi le once per 16 con il resto: 40 ÷ 16 sono 2 con resto 8, cioè 2 libbre 8 once. Trovi valori pronti nella tabella qui sotto.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione da once a libbre",
+      "description": "La tabella seguente converte i valori comuni di once in libbre decimali. Per convertire un altro peso, usa il convertitore qui sopra.",
+      "labelHeader": "Once",
+      "cols": ["Libbre"],
+      "rows": [
+        { "label": "8 oz", "values": ["0,5 lb"], "emphasis": true },
+        { "label": "12 oz", "values": ["0,75 lb"] },
+        { "label": "16 oz", "values": ["1 lb"], "emphasis": true },
+        { "label": "20 oz", "values": ["1,25 lb"] },
+        { "label": "24 oz", "values": ["1,5 lb"] },
+        { "label": "28 oz", "values": ["1,75 lb"] },
+        { "label": "32 oz", "values": ["2 lb"], "emphasis": true },
+        { "label": "36 oz", "values": ["2,25 lb"] },
+        { "label": "40 oz", "values": ["2,5 lb"], "emphasis": true },
+        { "label": "48 oz", "values": ["3 lb"], "emphasis": true },
+        { "label": "60 oz", "values": ["3,75 lb"] },
+        { "label": "64 oz", "values": ["4 lb"] },
+        { "label": "72 oz", "values": ["4,5 lb"] },
+        { "label": "80 oz", "values": ["5 lb"], "emphasis": true },
+        { "label": "96 oz", "values": ["6 lb"] }
+      ],
+      "caption": "Vuoi convertire nell'altro senso? Usa il nostro convertitore da <a href=\"/it/strumenti/convertitore-libbre-in-once\">libbre a once</a>, con una tabella di peso in libbre e once."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella: once in libbre e once",
+      "description": "Un peso si scrive spesso come libbre e once, per esempio 2 libbre 8 once. Per passare dalle sole once a questa forma, dividi le once per 16 con il resto: il quoziente dà le libbre e il resto dà le once. La tabella seguente mostra risultati pronti, così non li confondi con la forma decimale.",
+      "labelHeader": "Once",
+      "cols": ["Libbre e once"],
+      "rows": [
+        { "label": "16 oz", "values": ["1 libbra 0 once"], "emphasis": true },
+        { "label": "20 oz", "values": ["1 libbra 4 once"] },
+        { "label": "24 oz", "values": ["1 libbra 8 once"] },
+        { "label": "28 oz", "values": ["1 libbra 12 once"] },
+        { "label": "32 oz", "values": ["2 libbre 0 once"], "emphasis": true },
+        { "label": "36 oz", "values": ["2 libbre 4 once"] },
+        { "label": "40 oz", "values": ["2 libbre 8 once"], "emphasis": true },
+        { "label": "44 oz", "values": ["2 libbre 12 once"] },
+        { "label": "48 oz", "values": ["3 libbre 0 once"], "emphasis": true },
+        { "label": "56 oz", "values": ["3 libbre 8 once"] },
+        { "label": "64 oz", "values": ["4 libbre 0 once"] },
+        { "label": "72 oz", "values": ["4 libbre 8 once"] },
+        { "label": "80 oz", "values": ["5 libbre 0 once"] }
+      ],
+      "caption": "Esempio: 40 ÷ 16 = 2 con resto 8, cioè 2 libbre 8 once. È lo stesso peso di 2,5 libbre scritto in decimale."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono più spesso le once in libbre?",
+      "description": "L'oncia e la libbra si incontrano soprattutto con dati americani.",
+      "items": [
+        {
+          "title": "Peso del neonato come libbre e once",
+          "description": "Il peso di un neonato a volte è dato in totale in once, e vuoi annotarlo come libbre e once. 120 once sono 7 libbre 8 once, perché 120 ÷ 16 = 7 con resto 8. Trovi valori pronti nella tabella libbre e once qui sopra."
+        },
+        {
+          "title": "Peso dei prodotti alimentari",
+          "description": "Sulle confezioni americane il peso a volte è dato in once, anche quando è più di una libbra. Un sacchetto di 48 once è 3 libbre e un barattolo di 24 once è 1,5 libbre. Convertire in libbre facilita il confronto con confezioni più grandi."
+        },
+        {
+          "title": "Peso delle spedizioni",
+          "description": "I pacchi leggeri si tariffano in once, ma le fasce di peso si danno anche in libbre. Un pacco di 32 once è 2 libbre e 40 once sono 2,5 libbre. Convertire permette di verificare in quale fascia di prezzo rientra una spedizione."
+        },
+        {
+          "title": "Sommare le porzioni",
+          "description": "Se hai più porzioni da qualche oncia ciascuna, è più facile cogliere la loro somma in libbre. Otto porzioni da 4 once sono 32 once, cioè esattamente 2 libbre. Convertire mette ordine in un peso difficile da immaginare in sole once."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da once a libbre",
+      "items": [
+        {
+          "question": "Quante libbre sono 16 once?",
+          "answer": "16 once sono esattamente 1 libbra. Calcolo: 16 ÷ 16 = 1 libbra. Questo rapporto è fisso e deriva dalla definizione della libbra, quindi qui non c'è alcun arrotondamento."
+        },
+        {
+          "question": "32 once sono 2 libbre?",
+          "answer": "Sì. 32 once sono 2 libbre, perché 32 ÷ 16 = 2. Allo stesso modo, 48 once sono 3 libbre e 64 once sono 4 libbre."
+        },
+        {
+          "question": "12 once sono 1 libbra?",
+          "answer": "No. 12 once sono 0,75 di libbra, cioè tre quarti di libbra. La libbra intera si raggiunge solo a 16 once, quindi mancano ancora 4 once alla libbra."
+        },
+        {
+          "question": "8 once sono mezza libbra?",
+          "answer": "Sì. 8 once sono 0,5 di libbra, cioè esattamente mezza libbra, perché 16 ÷ 2 = 8."
+        },
+        {
+          "question": "Quante libbre sono 40 once?",
+          "answer": "40 once sono 2,5 libbre, cioè 2 libbre 8 once. Calcolo: 40 ÷ 16 = 2 con resto 8. Attenzione: 2,5 libbre sono 2 libbre 8 once, e non 2 libbre 5 once."
+        },
+        {
+          "question": "Quante libbre sono 24 once?",
+          "answer": "24 once sono 1,5 libbre, cioè 1 libbra 8 once. Calcolo: 24 ÷ 16 = 1 con resto 8."
+        },
+        {
+          "question": "Come scrivo il risultato come libbre e once?",
+          "answer": "Dividi le once per 16 con il resto. Il quoziente dà le libbre e il resto dà le once. Esempio: 44 ÷ 16 sono 2 con resto 12, cioè 2 libbre 12 once. Trovi valori pronti nella tabella libbre e once qui sopra."
+        },
+        {
+          "question": "Quante libbre sono 20, 50 e 72 once?",
+          "answer": "20 once sono 1,25 libbre, 50 once sono 3,125 libbre e 72 once sono 4,5 libbre. Ognuno di questi valori si ottiene dividendo il numero di once per 16."
+        },
+        {
+          "question": "Qual è la formula per convertire le once in libbre?",
+          "answer": "La formula è: libbre = once ÷ 16. Per esempio, 80 ÷ 16 = 5 libbre. Al contrario: once = libbre × 16."
+        },
+        {
+          "question": "L'oncia di massa è lo stesso dell'oncia liquida?",
+          "answer": "No. L'oncia di massa (oz) misura il peso, ed è quella che converte questo strumento. L'oncia liquida (fl oz) misura il volume delle bevande. Hanno un nome simile, ma sono grandezze diverse, quindi non vanno confuse."
+        },
+        {
+          "question": "In cosa differisce l'oncia dall'oncia troy?",
+          "answer": "L'oncia di massa comune è 28,35 g e si usa per il peso di alimenti o neonati. L'oncia troy è 31,10 g e si usa per i metalli preziosi, come l'oro. Inoltre, una libbra troy è 12 once troy, e non 16. Questo strumento lavora con l'oncia comune, non con la troy."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se hai notato un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contatto con Arteon Agency",
+      "subject": "Convertitore da once a libbre"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}

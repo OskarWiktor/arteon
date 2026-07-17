@@ -200,6 +200,8 @@ const UNIT_KEYS = new Set([
   'feetToMeters',
   'inchesToFeet',
   'feetToInches',
+  'lbsToOz',
+  'ozToLbs',
   'mlToOz',
   'ozToMl',
   'kgToLb',

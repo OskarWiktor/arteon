@@ -49,7 +49,7 @@
         "Převod funguje v obou směrech, převedeš tedy metry na stopy i stopy na metry",
         "Výsledek se objeví okamžitě při psaní, aniž bys musel klikat na jakékoli tlačítko",
         "Hotový výsledek zkopíruješ do schránky jedním kliknutím",
-        "Převodní tabulka zahrnuje hodnoty od 1 do 500 metrů",
+        "Převodní tabulka zahrnuje hodnoty od 1 do 3000 metrů",
         "Samostatná tabulka výšek ukazuje, kolik stop a palců odpovídá hodnotám od 1,50 m do 2,00 m",
         "Všechny výpočty probíhají lokálně v prohlížeči, tvoje data zařízení neopustí",
         "Přesný vzorec převodu je stopy = metry ÷ 0,3048",
@@ -71,13 +71,16 @@
         },
         {
           "name": "V případě potřeby otoč směr",
-          "text": "Klikni na Změnit pořadí a převodník přepneš na převod stop na metry."
+          "text": "Klikni na Prohodit pořadí a převodník přepneš na převod stop na metry."
         }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "K čemu je převod metrů na stopy?",
@@ -85,13 +88,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník metrů na stopy – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "Jak funguje převod metrů na stopy? Vzorec a příklad",
       "html": "<p class=\"text-mid mb-4\">Převod metrů na stopy stojí na stálém vztahu: jedna stopa je přesně 0,3048 metru. Když chceš změnit metry na stopy, vydělíš počet metrů číslem 0,3048 (což je totéž jako násobení číslem 3,280839895).</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>stopy = metry ÷ 0,3048</strong>. Opačným směrem: <strong>metry = stopy × 0,3048</strong>.</p><p class=\"text-mid mb-4\">Příklad: chceš zjistit, kolik stop je 1,80 m. Dosadíš: 1,80 ÷ 0,3048 = 5,91 stopy. Neznamená to „5 stop a 91 palců\" – desetinná část je zlomek stopy. Palce získáš tak, že ji vynásobíš dvanácti: 0,91 × 12 = 11 palců, takže 1,80 m je 5 stop 11 palců.</p><p class=\"text-mid\">Jiný příklad: sprinterská trať 100 m má 100 ÷ 0,3048 = 328,08 stopy. Převodník počítá oba směry okamžitě po zadání hodnoty.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Převodní tabulka metrů na stopy",
@@ -99,36 +108,140 @@
       "labelHeader": "Metry",
       "cols": ["Stopy"],
       "rows": [
-        { "label": "1 m", "values": ["3,28 ft"], "emphasis": true },
-        { "label": "1,6 m", "values": ["5,25 ft"] },
-        { "label": "1,7 m", "values": ["5,58 ft"] },
-        { "label": "1,75 m", "values": ["5,74 ft"] },
-        { "label": "1,8 m", "values": ["5,91 ft"], "emphasis": true },
-        { "label": "1,9 m", "values": ["6,23 ft"] },
-        { "label": "2 m", "values": ["6,56 ft"], "emphasis": true },
-        { "label": "2,5 m", "values": ["8,20 ft"] },
-        { "label": "3 m", "values": ["9,84 ft"] },
-        { "label": "4 m", "values": ["13,12 ft"] },
-        { "label": "5 m", "values": ["16,40 ft"], "emphasis": true },
-        { "label": "6 m", "values": ["19,69 ft"] },
-        { "label": "7 m", "values": ["22,97 ft"] },
-        { "label": "8 m", "values": ["26,25 ft"] },
-        { "label": "9 m", "values": ["29,53 ft"] },
-        { "label": "10 m", "values": ["32,81 ft"], "emphasis": true },
-        { "label": "15 m", "values": ["49,21 ft"] },
-        { "label": "20 m", "values": ["65,62 ft"] },
-        { "label": "25 m", "values": ["82,02 ft"] },
-        { "label": "30 m", "values": ["98,43 ft"] },
-        { "label": "40 m", "values": ["131,23 ft"] },
-        { "label": "50 m", "values": ["164,04 ft"], "emphasis": true },
-        { "label": "60 m", "values": ["196,85 ft"] },
-        { "label": "100 m", "values": ["328,08 ft"], "emphasis": true },
-        { "label": "200 m", "values": ["656,17 ft"] },
-        { "label": "500 m", "values": ["1 640,42 ft"] }
+        {
+          "label": "1 m",
+          "values": ["3,28 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "2 m",
+          "values": ["6,56 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "3 m",
+          "values": ["9,84 ft"]
+        },
+        {
+          "label": "4 m",
+          "values": ["13,12 ft"]
+        },
+        {
+          "label": "5 m",
+          "values": ["16,40 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "6 m",
+          "values": ["19,69 ft"]
+        },
+        {
+          "label": "7 m",
+          "values": ["22,97 ft"]
+        },
+        {
+          "label": "8 m",
+          "values": ["26,25 ft"]
+        },
+        {
+          "label": "9 m",
+          "values": ["29,53 ft"]
+        },
+        {
+          "label": "10 m",
+          "values": ["32,81 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "15 m",
+          "values": ["49,21 ft"]
+        },
+        {
+          "label": "1,6 m",
+          "values": ["5,25 ft"]
+        },
+        {
+          "label": "1,7 m",
+          "values": ["5,58 ft"]
+        },
+        {
+          "label": "1,8 m",
+          "values": ["5,91 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "1,9 m",
+          "values": ["6,23 ft"]
+        },
+        {
+          "label": "20 m",
+          "values": ["65,62 ft"]
+        },
+        {
+          "label": "2,5 m",
+          "values": ["8,20 ft"]
+        },
+        {
+          "label": "25 m",
+          "values": ["82,02 ft"]
+        },
+        {
+          "label": "30 m",
+          "values": ["98,43 ft"]
+        },
+        {
+          "label": "40 m",
+          "values": ["131,23 ft"]
+        },
+        {
+          "label": "50 m",
+          "values": ["164,04 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "60 m",
+          "values": ["196,85 ft"]
+        },
+        {
+          "label": "100 m",
+          "values": ["328,08 ft"],
+          "emphasis": true
+        },
+        {
+          "label": "1,75 m",
+          "values": ["5,74 ft"]
+        },
+        {
+          "label": "200 m",
+          "values": ["656,17 ft"]
+        },
+        {
+          "label": "400 m",
+          "values": ["1 312,34 ft"]
+        },
+        {
+          "label": "500 m",
+          "values": ["1 640,42 ft"]
+        },
+        {
+          "label": "800 m",
+          "values": ["2 624,67 ft"]
+        },
+        {
+          "label": "1 500 m",
+          "values": ["4 921,26 ft"]
+        },
+        {
+          "label": "3 000 m",
+          "values": ["9 842,52 ft"]
+        }
       ],
       "caption": "Chceš převádět opačným směrem? Použij náš převodník <a href=\"/cs/nastroje/prevodnik-stop-na-metry\">stop na metry</a> s úplnou tabulkou pro rozměry uváděné ve stopách."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Tabulka výšek: metry na stopy a palce",
@@ -136,14 +249,23 @@
       "labelHeader": "Výška",
       "cols": ["Stopy (desetinné)", "Stopy a palce"],
       "rows": [
-        { "label": "1,50 m", "values": ["4,92 ft", "4 stopy 11 palců"] },
-        { "label": "1,55 m", "values": ["5,09 ft", "5 stop 1 palec"] },
+        {
+          "label": "1,50 m",
+          "values": ["4,92 ft", "4 stopy 11 palců"]
+        },
+        {
+          "label": "1,55 m",
+          "values": ["5,09 ft", "5 stop 1 palec"]
+        },
         {
           "label": "1,60 m",
           "values": ["5,25 ft", "5 stop 3 palce"],
           "emphasis": true
         },
-        { "label": "1,65 m", "values": ["5,41 ft", "5 stop 5 palců"] },
+        {
+          "label": "1,65 m",
+          "values": ["5,41 ft", "5 stop 5 palců"]
+        },
         {
           "label": "1,70 m",
           "values": ["5,58 ft", "5 stop 7 palců"],
@@ -154,19 +276,28 @@
           "values": ["5,74 ft", "5 stop 9 palců"],
           "emphasis": true
         },
-        { "label": "1,78 m", "values": ["5,84 ft", "5 stop 10 palců"] },
+        {
+          "label": "1,78 m",
+          "values": ["5,84 ft", "5 stop 10 palců"]
+        },
         {
           "label": "1,80 m",
           "values": ["5,91 ft", "5 stop 11 palců"],
           "emphasis": true
         },
-        { "label": "1,85 m", "values": ["6,07 ft", "6 stop 1 palec"] },
+        {
+          "label": "1,85 m",
+          "values": ["6,07 ft", "6 stop 1 palec"]
+        },
         {
           "label": "1,90 m",
           "values": ["6,23 ft", "6 stop 3 palce"],
           "emphasis": true
         },
-        { "label": "1,95 m", "values": ["6,40 ft", "6 stop 5 palců"] },
+        {
+          "label": "1,95 m",
+          "values": ["6,40 ft", "6 stop 5 palců"]
+        },
         {
           "label": "2,00 m",
           "values": ["6,56 ft", "6 stop 7 palců"],
@@ -175,7 +306,10 @@
       ],
       "caption": "Palce získáš tak, že desetinnou část stopy vynásobíš dvanácti. Příklad: 5,91 ft, tedy 0,91 × 12 = 11 palců."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kdy se nejčastěji převádějí metry na stopy?",
@@ -199,7 +333,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Nejčastější dotazy k převodu metrů na stopy",
@@ -266,7 +403,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
@@ -275,7 +415,10 @@
       "imageAlt": "Kontakt s Arteon Agency",
       "subject": "Převodník metrů na stopy"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Další užitečné převodníky jednotek"

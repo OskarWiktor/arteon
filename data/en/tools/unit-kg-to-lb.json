@@ -72,7 +72,7 @@
         },
         {
           "name": "Reverse the direction if needed",
-          "text": "Click Swap to switch the converter to pounds to kilograms."
+          "text": "Click Swap order to switch the converter to pounds to kilograms."
         }
       ]
     }
@@ -584,7 +584,7 @@
         },
         {
           "question": "How can I convert kg to pounds without a calculator?",
-          "answer": "Quick approximation: multiply kilograms by 2 and add 10% of the result. For example: 80 kg × 2 = 160, plus 10% of 160 = 16, total 176 lb. The exact value is 176.37 lb — an error of just 0.2%. Another method: multiply by 2.2 (equivalent to 1 lb = 0.4545 kg, error less than 0.04%)."
+          "answer": "Quick approximation: multiply kilograms by 2 and add 10% of the result. For example: 80 kg × 2 = 160, plus 10% of 160 = 16, total 176 lb. The exact value is 176.37 lb — an error of just 0.2%."
         },
         {
           "question": "What is a stone and how do I convert kg to stone?",
