@@ -1,0 +1,193 @@
+{
+  "toolKey": "kbToB",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur de Ko en octets – convertir KB en B",
+    "description": "Convertissez des kilo-octets en octets et inversement. Un kilo-octet fait 1 024 octets dans le système binaire. Saisissez une valeur et le résultat apparaît aussitôt. Fonctionne dans le navigateur, sans inscription.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-ko-en-octets"
+  },
+  "hero": {
+    "title": "Convertissez des kilo-octets en octets",
+    "description": "Saisissez un nombre de kilo-octets et lisez le résultat en octets tout de suite. Un kilo-octet fait 1 024 octets dans le système binaire, donc le convertisseur multiplie votre valeur par 1 024. Utilisez Inverser l'ordre pour convertir des octets en kilo-octets. Dans l'outil, ces unités sont notées KB (kilo-octets) et B (octets).",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-ko-en-octets",
+      "label": "Ko en octets"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur de kilo-octets en octets – calculateur KB en B",
+      "alternateName": [
+        "Convertisseur de Ko en octets",
+        "Convertisseur de kilo-octets en octets",
+        "Calculateur Ko en octets",
+        "Ko en octets",
+        "kb to bytes",
+        "Convertir des Ko en octets",
+        "Combien d'octets dans un kilo-octet",
+        "1 Ko en octets",
+        "Octets en kilo-octets",
+        "B en KB",
+        "Convertisseur KB en B",
+        "kb to b"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur de kilo-octets en octets qui fonctionne dans le navigateur sans inscription. Saisissez un nombre de kilo-octets et lisez le résultat en octets aussitôt. Il utilise le système binaire, dans lequel 1 Ko fait 1 024 octets.",
+      "featureList": [
+        "Convertit des kilo-octets en octets et des octets en kilo-octets dans le système binaire (1 Ko = 1 024 octets)",
+        "La conversion fonctionne dans les deux sens : le bouton Inverser l'ordre change de direction",
+        "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
+        "Accepte le point comme la virgule comme séparateur décimal",
+        "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
+        "La formule exacte est : octets = kilo-octets × 1 024",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des kilo-octets en octets ?",
+      "description": "Court guide d'utilisation du convertisseur de kilo-octets en octets.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez un nombre de kilo-octets",
+          "text": "Dans le champ de gauche, saisissez le nombre de kilo-octets que vous voulez convertir en octets. Vous pouvez utiliser le point ou la virgule comme séparateur décimal."
+        },
+        {
+          "name": "Lisez le résultat en octets",
+          "text": "Le résultat en octets apparaît aussitôt dans le champ voisin, à droite. Avec le bouton Copier le résultat, vous le placez dans le presse-papiers."
+        },
+        {
+          "name": "Inversez le sens au besoin",
+          "text": "Cliquez sur Inverser l'ordre pour passer à la conversion des octets en kilo-octets."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des kilo-octets en octets ?",
+      "html": "<p class=\"text-mid mb-4\">Un kilo-octet fait 1 024 octets, et l'octet est l'unité de base de la taille des données. Une taille en kilo-octets se lit facilement, mais dans le code, la configuration ou une spécification vous avez souvent besoin du nombre exact d'octets — et c'est là que vous convertissez les Ko en octets.</p><p class=\"text-mid mb-4\">Le rapport est fixe : 1 Ko fait 1 024 octets dans le système binaire, celui qu'utilisent les systèmes d'exploitation et ce convertisseur. Pour passer des kilo-octets aux octets, vous multipliez leur nombre par 1 024. Le convertisseur le fait dès que vous saisissez une valeur.</p><p class=\"text-mid\">Attention à deux systèmes. Dans le système décimal (SI), 1 Ko fait 1 000 octets — c'est ainsi que comptent par exemple les fabricants de stockage. Ce convertisseur utilise le système binaire (1 024 octets), comme ce qu'affichent Windows et macOS. Ne confondez pas non plus les octets avec les bits : 1 octet fait 8 bits.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit de kilo-octets en octets – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des kilo-octets en octets ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion repose sur un rapport fixe : un kilo-octet fait 1 024 octets. Pour passer des kilo-octets aux octets, vous multipliez leur nombre par 1 024.</p><p class=\"text-mid mb-4\">Formule complète : <strong>octets = kilo-octets × 1 024</strong>. Dans l'autre sens : <strong>kilo-octets = octets ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous avez une limite de 50 Ko et la voulez en octets. Calcul : 50 × 1 024 = 51 200 octets. Le multiplicateur 1 024 vient de ce que les ordinateurs comptent en binaire, et deux à la puissance dix fait exactement 1 024.</p><p class=\"text-mid\">Pourquoi 1 024 et non 1 000 ? Dans le système décimal (SI), 1 Ko fait 1 000 octets, et c'est ainsi que les fabricants de stockage indiquent la capacité. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Ko fait 1 024 octets — formellement appelé kibioctet (Kio).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des kilo-octets en octets",
+      "description": "Le tableau ci-dessous convertit des valeurs courantes de kilo-octets en octets dans le système binaire (×1 024). Pour convertir une autre valeur, utilisez le convertisseur ci-dessus. Les unités sont notées KB et B, comme dans l'outil.",
+      "labelHeader": "Kilo-octets",
+      "cols": ["Octets"],
+      "rows": [
+        { "label": "0,5 KB", "values": ["512 B"] },
+        { "label": "1 KB", "values": ["1 024 B"], "emphasis": true },
+        { "label": "2 KB", "values": ["2 048 B"], "emphasis": true },
+        { "label": "5 KB", "values": ["5 120 B"] },
+        { "label": "10 KB", "values": ["10 240 B"], "emphasis": true },
+        { "label": "20 KB", "values": ["20 480 B"] },
+        { "label": "50 KB", "values": ["51 200 B"] },
+        { "label": "100 KB", "values": ["102 400 B"], "emphasis": true },
+        { "label": "250 KB", "values": ["256 000 B"] },
+        { "label": "500 KB", "values": ["512 000 B"] },
+        { "label": "1 024 KB", "values": ["1 048 576 B"], "emphasis": true }
+      ],
+      "caption": "Exemple : 1 KB × 1 024 = 1 024 B. Vous voulez convertir des octets en kilo-octets ? Cliquez sur Inverser l'ordre dans le convertisseur ci-dessus."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent des kilo-octets en octets ?",
+      "description": "Le nombre exact d'octets sert surtout dans des contextes techniques.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limites dans le code et la configuration",
+          "description": "De nombreuses bibliothèques et fichiers de configuration acceptent une limite de taille en octets. Si vous voulez fixer un seuil de 50 Ko, vous saisissez 51 200 octets — le convertisseur donne le nombre exact sans calcul manuel."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Tampons et structures de données",
+          "description": "Les tailles de tampon, de paquet et d'enregistrement se donnent en octets. En connaissant la taille en kilo-octets, vous la convertissez en octets exacts, par exemple 10 Ko font 10 240 octets."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Validation de la taille des fichiers",
+          "description": "Un validateur d'envoi compare en général la taille en octets. À partir d'une limite donnée en kilo-octets, vous calculez le seuil en octets, pour que la règle se comporte exactement comme prévu."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Apprendre l'informatique",
+          "description": "Le rapport entre l'octet et le kilo-octet est la base de nombreux exercices d'informatique. Le convertisseur montre clairement que 1 Ko fait 1 024 octets et vous laisse vérifier vos propres calculs rapidement."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des kilo-octets en octets",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien d'octets dans 1 kilo-octet ?",
+          "answer": "1 kilo-octet fait 1 024 octets dans le système binaire, celui qu'utilisent ce convertisseur et les systèmes d'exploitation. Dans le système décimal (SI), utilisé entre autres par les fabricants de stockage, 1 Ko fait 1 000 octets."
+        },
+        {
+          "question": "Combien fait 1 Ko en octets ?",
+          "answer": "1 Ko fait exactement 1 024 octets. Calcul : 1 × 1 024 = 1 024 octets. C'est le rapport de base entre le kilo-octet et l'octet, c'est pourquoi il est le plus souvent recherché."
+        },
+        {
+          "question": "Comment convertir des kilo-octets en octets ?",
+          "answer": "Multipliez le nombre de kilo-octets par 1 024. Par exemple, 50 Ko × 1 024 = 51 200 octets. Le convertisseur le fait dès que vous saisissez une valeur, sans cliquer sur un bouton."
+        },
+        {
+          "question": "Comment convertir des octets en kilo-octets ?",
+          "answer": "Divisez le nombre d'octets par 1 024. Par exemple, 51 200 octets ÷ 1 024 = 50 Ko. Cliquez sur Inverser l'ordre pour que le convertisseur travaille dans ce sens."
+        },
+        {
+          "question": "1 Ko fait-il 1 000 ou 1 024 octets ?",
+          "answer": "Cela dépend du système. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Ko fait 1 024 octets. Les fabricants de stockage utilisent le système décimal, dans lequel 1 Ko fait 1 000 octets. C'est pourquoi le même nombre de kilo-octets peut donner un résultat un peu différent en octets."
+        },
+        {
+          "question": "Combien d'octets font 5, 10 et 100 Ko ?",
+          "answer": "5 Ko font 5 120 octets, 10 Ko font 10 240 octets et 100 Ko font 102 400 octets. Vous obtenez chacune de ces valeurs en multipliant le nombre de kilo-octets par 1 024."
+        },
+        {
+          "question": "Quelle différence entre Ko et Kio ?",
+          "answer": "Le Kio (kibioctet, la norme IEC) fait toujours exactement 1 024 octets. Le Ko dans le système SI fait 1 000 octets. Au quotidien, la plupart écrivent Ko en pensant 1 024 octets, ce qui est techniquement un Kio. Ce convertisseur utilise 1 024 octets."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans le tableau ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Contact avec Arteon Agency",
+      "defaultSubject": "Convertisseur de kilo-octets en octets"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

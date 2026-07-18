@@ -533,6 +533,43 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     reverseConvert: v => v * 1024,
     precision: 4,
     swappable: true,
+    reverseToolKey: 'kbToB',
+  },
+
+  {
+    toolKey: 'kbToB',
+    category: 'data',
+    sourceField: { labelKey: 'kilobytes', suffix: 'KB' },
+    targetField: { labelKey: 'bytes', suffix: 'B' },
+    convert: v => v * 1024,
+    reverseConvert: v => v / 1024,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'bytesConverter',
+  },
+
+  {
+    toolKey: 'kbToMb',
+    category: 'data',
+    sourceField: { labelKey: 'kilobytes', suffix: 'KB' },
+    targetField: { labelKey: 'megabytes', suffix: 'MB' },
+    convert: v => v / 1024,
+    reverseConvert: v => v * 1024,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'mbToKb',
+  },
+
+  {
+    toolKey: 'mbToKb',
+    category: 'data',
+    sourceField: { labelKey: 'megabytes', suffix: 'MB' },
+    targetField: { labelKey: 'kilobytes', suffix: 'KB' },
+    convert: v => v * 1024,
+    reverseConvert: v => v / 1024,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'kbToMb',
   },
 
   {

@@ -111,6 +111,9 @@ export type ToolItemKey =
   | 'rgbToCmyk'
   // Unit converters - programming/technical
   | 'bytesConverter'
+  | 'kbToB'
+  | 'kbToMb'
+  | 'mbToKb'
   | 'unixTimestamp'
   | 'decToBin'
   | 'decToHex'

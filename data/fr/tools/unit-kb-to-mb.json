@@ -1,0 +1,193 @@
+{
+  "toolKey": "kbToMb",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur de Ko en Mo – convertir KB en MB",
+    "description": "Convertissez des kilo-octets en méga-octets et inversement. Un méga-octet fait 1 024 Ko dans le système binaire. Saisissez une valeur et le résultat apparaît aussitôt. Fonctionne dans le navigateur, sans inscription.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-ko-en-mo"
+  },
+  "hero": {
+    "title": "Convertissez des kilo-octets en méga-octets",
+    "description": "Saisissez un nombre de kilo-octets et lisez le résultat en méga-octets tout de suite. Un méga-octet fait 1 024 kilo-octets dans le système binaire, donc le convertisseur divise votre valeur par 1 024. Utilisez Inverser l'ordre pour convertir des méga-octets en kilo-octets. Dans l'outil, ces unités sont notées KB (kilo-octets) et MB (méga-octets).",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-ko-en-mo",
+      "label": "Ko en Mo"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur de kilo-octets en méga-octets – calculateur KB en MB",
+      "alternateName": [
+        "Convertisseur de Ko en Mo",
+        "Convertisseur de kilo-octets en méga-octets",
+        "Calculateur Ko en Mo",
+        "Ko en Mo",
+        "kb to mb",
+        "Convertir des Ko en Mo",
+        "Combien de Ko dans un Mo",
+        "1024 Ko en Mo",
+        "1000 Ko en Mo",
+        "Méga-octets en kilo-octets",
+        "Mo en Ko",
+        "kb to mb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur de kilo-octets en méga-octets qui fonctionne dans le navigateur sans inscription. Saisissez un nombre de kilo-octets et lisez le résultat en méga-octets aussitôt. Il utilise le système binaire, dans lequel 1 Mo fait 1 024 Ko.",
+      "featureList": [
+        "Convertit des kilo-octets en méga-octets et des méga-octets en kilo-octets dans le système binaire (1 Mo = 1 024 Ko)",
+        "La conversion fonctionne dans les deux sens : le bouton Inverser l'ordre change de direction",
+        "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
+        "Accepte le point comme la virgule comme séparateur décimal",
+        "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
+        "La formule exacte est : méga-octets = kilo-octets ÷ 1 024",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des kilo-octets en méga-octets ?",
+      "description": "Court guide d'utilisation du convertisseur de kilo-octets en méga-octets.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez un nombre de kilo-octets",
+          "text": "Dans le champ de gauche, saisissez le nombre de kilo-octets que vous voulez convertir en méga-octets. Vous pouvez utiliser le point ou la virgule comme séparateur décimal."
+        },
+        {
+          "name": "Lisez le résultat en méga-octets",
+          "text": "Le résultat en méga-octets apparaît aussitôt dans le champ voisin, à droite. Avec le bouton Copier le résultat, vous le placez dans le presse-papiers."
+        },
+        {
+          "name": "Inversez le sens au besoin",
+          "text": "Cliquez sur Inverser l'ordre pour passer à la conversion des méga-octets en kilo-octets."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des kilo-octets en méga-octets ?",
+      "html": "<p class=\"text-mid mb-4\">Le kilo-octet et le méga-octet sont des unités voisines de la taille des données : 1 Mo fait 1 024 Ko. Un gestionnaire de fichiers ou un outil d'optimisation d'images indique souvent la taille en kilo-octets, tandis qu'une limite de pièce jointe ou un budget de page se compte en méga-octets — d'où la conversion des Ko en Mo.</p><p class=\"text-mid mb-4\">Le rapport est fixe : 1 Mo fait 1 024 Ko dans le système binaire, celui qu'utilisent les systèmes d'exploitation et ce convertisseur. Pour passer des kilo-octets aux méga-octets, vous divisez leur nombre par 1 024. Le convertisseur le fait dès que vous saisissez une valeur.</p><p class=\"text-mid\">Attention à deux systèmes. Dans le système décimal (SI), 1 Mo fait 1 000 Ko, c'est pourquoi 1 000 Ko sont souvent pris pour un méga-octet entier. En réalité 1 000 Ko font environ 0,98 Mo, et vous atteignez 1 Mo exact avec 1 024 Ko. Ce convertisseur utilise le système binaire (1 024).</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit de kilo-octets en méga-octets – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des kilo-octets en méga-octets ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion repose sur un rapport fixe : un méga-octet fait 1 024 kilo-octets. Pour passer des kilo-octets aux méga-octets, vous divisez leur nombre par 1 024.</p><p class=\"text-mid mb-4\">Formule complète : <strong>méga-octets = kilo-octets ÷ 1 024</strong>. Dans l'autre sens : <strong>kilo-octets = méga-octets × 1 024</strong>.</p><p class=\"text-mid mb-4\">Exemple : un fichier fait 5 120 Ko. Calcul : 5 120 ÷ 1 024 = 5 Mo. De même, 10 240 Ko font 10 Mo, car chaque tranche de 1 024 Ko compose un méga-octet.</p><p class=\"text-mid\">Attention aux valeurs rondes. 1 000 Ko ne font pas 1 Mo, mais environ 0,98 Mo, car un méga-octet complet a 1 024 Ko. De même, 100 Ko font environ 0,10 Mo. Les méga-octets exacts viennent des multiples de 1 024 : 1 024 Ko, 2 048 Ko, 5 120 Ko et ainsi de suite.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des kilo-octets en méga-octets",
+      "description": "Le tableau ci-dessous convertit des valeurs courantes de kilo-octets en méga-octets dans le système binaire (÷1 024). Les valeurs qui ne sont pas un multiple de 1 024 sont arrondies. Pour convertir une autre valeur, utilisez le convertisseur ci-dessus. Les unités sont notées KB et MB, comme dans l'outil.",
+      "labelHeader": "Kilo-octets",
+      "cols": ["Méga-octets"],
+      "rows": [
+        { "label": "100 KB", "values": ["0,10 MB"] },
+        { "label": "500 KB", "values": ["0,49 MB"] },
+        { "label": "1 000 KB", "values": ["0,98 MB"] },
+        { "label": "1 024 KB", "values": ["1 MB"], "emphasis": true },
+        { "label": "2 048 KB", "values": ["2 MB"] },
+        { "label": "5 120 KB", "values": ["5 MB"], "emphasis": true },
+        { "label": "10 000 KB", "values": ["9,77 MB"] },
+        { "label": "10 240 KB", "values": ["10 MB"], "emphasis": true },
+        { "label": "25 600 KB", "values": ["25 MB"] },
+        { "label": "51 200 KB", "values": ["50 MB"] },
+        { "label": "102 400 KB", "values": ["100 MB"], "emphasis": true }
+      ],
+      "caption": "Exemple : 1 024 KB ÷ 1 024 = 1 MB, tandis que 1 000 KB ne font que 0,98 MB. Vous voulez convertir des méga-octets en kilo-octets ? Cliquez sur Inverser l'ordre dans le convertisseur ci-dessus."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent des kilo-octets en méga-octets ?",
+      "description": "Les tailles en kilo-octets se convertissent en méga-octets surtout avec les fichiers et les limites.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Optimiser des images pour un site",
+          "description": "Les outils de compression indiquent le poids des images en kilo-octets, mais un budget de performance de page se planifie en méga-octets. La conversion permet de vérifier si un lot de graphiques de 5 120 Ko tient dans une limite de 5 Mo."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Limites des pièces jointes",
+          "description": "Gmail autorise une pièce jointe jusqu'à 25 Mo. Si un fichier s'affiche en kilo-octets, vous le convertissez en méga-octets et savez aussitôt s'il passera — 25 600 Ko font exactement 25 Mo."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Comparer des tailles de fichiers",
+          "description": "Un gestionnaire de fichiers affiche certains fichiers en Ko et d'autres en Mo. Les ramener à la même unité facilite la comparaison, par exemple un fichier de 500 Ko fait environ 0,49 Mo."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Distinguer 1000 et 1024",
+          "description": "Le convertisseur montre clairement que 1 000 Ko ne font pas un méga-octet entier, mais 0,98 Mo, et que vous atteignez 1 Mo seulement avec 1 024 Ko. C'est la confusion la plus fréquente avec les tailles de données."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des kilo-octets en méga-octets",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de Ko dans 1 Mo ?",
+          "answer": "1 Mo fait 1 024 Ko dans le système binaire, celui qu'utilisent ce convertisseur et les systèmes d'exploitation. Dans le système décimal (SI), utilisé entre autres par les fabricants de stockage, 1 Mo fait 1 000 Ko."
+        },
+        {
+          "question": "1000 Ko font-ils 1 Mo ?",
+          "answer": "Pas tout à fait. Dans le système binaire, 1 000 Ko font environ 0,98 Mo, car un méga-octet complet a 1 024 Ko. Vous atteignez 1 Mo exact avec 1 024 Ko. L'arrondi à 1 Mo ne s'applique que dans le système décimal."
+        },
+        {
+          "question": "Combien font 1024 Ko en Mo ?",
+          "answer": "1 024 Ko font exactement 1 Mo. Calcul : 1 024 ÷ 1 024 = 1 Mo. C'est le rapport de base entre le kilo-octet et le méga-octet, c'est pourquoi il est le plus souvent recherché."
+        },
+        {
+          "question": "Comment convertir des kilo-octets en méga-octets ?",
+          "answer": "Divisez le nombre de kilo-octets par 1 024. Par exemple, 51 200 Ko ÷ 1 024 = 50 Mo. Le convertisseur le fait dès que vous saisissez une valeur, sans cliquer sur un bouton."
+        },
+        {
+          "question": "Combien de Mo font 100, 1000 et 10000 Ko ?",
+          "answer": "100 Ko font environ 0,10 Mo, 1 000 Ko environ 0,98 Mo et 10 000 Ko environ 9,77 Mo. Les valeurs ne tombent pas rond car un méga-octet complet a 1 024 Ko, et non 1 000 Ko."
+        },
+        {
+          "question": "Comment convertir des méga-octets en kilo-octets ?",
+          "answer": "Multipliez le nombre de méga-octets par 1 024. Par exemple, 5 Mo × 1 024 = 5 120 Ko. Cliquez sur Inverser l'ordre pour que le convertisseur travaille dans ce sens."
+        },
+        {
+          "question": "1 Mo fait-il 1 000 ou 1 024 Ko ?",
+          "answer": "Cela dépend du système. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Mo fait 1 024 Ko. Les fabricants de stockage utilisent le système décimal, dans lequel 1 Mo fait 1 000 Ko. C'est pourquoi le même nombre de kilo-octets peut donner un résultat un peu différent en méga-octets."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans le tableau ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Contact avec Arteon Agency",
+      "defaultSubject": "Convertisseur de kilo-octets en méga-octets"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

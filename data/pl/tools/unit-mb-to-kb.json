@@ -1,0 +1,194 @@
+{
+  "toolKey": "mbToKb",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter megabajtów na kilobajty – przelicz MB na KB",
+    "description": "Przelicz megabajty na kilobajty i odwrotnie. 1 MB to 1 024 KB w systemie binarnym. Wpisz wartość, a wynik pojawi się natychmiast. Działa w przeglądarce, bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-mb-na-kb"
+  },
+  "hero": {
+    "title": "Przelicz megabajty na kilobajty",
+    "description": "Wpisz liczbę megabajtów i od razu odczytaj wynik w kilobajtach. Megabajt to 1 024 kilobajty w systemie binarnym, więc konwerter mnoży podaną liczbę przez 1 024. Przyciskiem Zmień kolejność przeliczysz też kilobajty na megabajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-mb-na-kb",
+      "label": "megabajty na kilobajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter megabajtów na kilobajty – przelicznik MB na KB",
+      "alternateName": [
+        "Konwerter megabajtów na kilobajty",
+        "Przelicznik megabajtów na kilobajty",
+        "Kalkulator MB na KB",
+        "Megabajty na kilobajty",
+        "MB na KB",
+        "Przelicz MB na KB",
+        "Ile KB to MB",
+        "Co jest większe MB czy KB",
+        "1 MB ile to KB",
+        "Kilobajty na megabajty",
+        "KB na MB",
+        "mb to kb"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konwerter megabajtów na kilobajty działający w przeglądarce bez rejestracji. Wpisz liczbę megabajtów i natychmiast odczytaj wynik w kilobajtach. Przelicza w systemie binarnym, w którym 1 MB to 1 024 KB.",
+      "featureList": [
+        "Przelicza megabajty na kilobajty i kilobajty na megabajty w systemie binarnym (1 MB = 1 024 KB)",
+        "Konwersja działa w obie strony — przyciskiem Zmień kolejność przełączasz kierunek",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: kilobajty = megabajty × 1 024",
+        "Działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć megabajty na kilobajty?",
+      "description": "Krótka instrukcja użycia konwertera megabajtów na kilobajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz liczbę megabajtów",
+          "text": "W lewym polu wpisz liczbę megabajtów, którą chcesz przeliczyć na kilobajty. Możesz użyć kropki lub przecinka jako separatora dziesiętnego."
+        },
+        {
+          "name": "Odczytaj wynik w kilobajtach",
+          "text": "Wynik w kilobajtach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania kilobajtów na megabajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać megabajty na kilobajty?",
+      "html": "<p class=\"text-mid mb-4\">Megabajt jest większy od kilobajta: 1 MB to 1 024 KB. Rozmiary plików podaje się zwykle w megabajtach, ale część systemów, formularzy czy limitów oczekuje wartości w kilobajtach — wtedy przeliczasz MB na KB.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 MB to 1 024 KB w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić megabajty na kilobajty, mnożysz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 MB to 1 000 KB — tak liczą między innymi producenci nośników. Ten konwerter używa systemu binarnego (1 024 KB), zgodnego z tym, co pokazują Windows i macOS.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter megabajtów na kilobajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja megabajtów na kilobajty? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden megabajt to 1 024 kilobajty. Aby zamienić megabajty na kilobajty, mnożysz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>kilobajty = megabajty × 1 024</strong>. W drugą stronę: <strong>megabajty = kilobajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: plik ma 5 MB. Obliczenie: 5 × 1 024 = 5 120 KB. Z kolei 25 MB to 25 600 KB, bo każdy megabajt składa się z 1 024 kilobajtów.</p><p class=\"text-mid\">Który jest większy? Megabajt. 1 MB to 1 024 KB, więc plik 2 MB jest ponad dwa tysiące razy większy niż plik 1 KB. To częste źródło pomyłek, gdy porównuje się rozmiary podane w różnych jednostkach.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa megabajtów na kilobajty",
+      "description": "Poniższa tabela pokazuje przeliczenie popularnych wartości w megabajtach na kilobajty w systemie binarnym (×1 024). Aby przeliczyć inną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Megabajty",
+      "cols": ["Kilobajty"],
+      "rows": [
+        { "label": "0,5 MB", "values": ["512 KB"] },
+        { "label": "1 MB", "values": ["1 024 KB"], "emphasis": true },
+        { "label": "2 MB", "values": ["2 048 KB"] },
+        { "label": "5 MB", "values": ["5 120 KB"], "emphasis": true },
+        { "label": "10 MB", "values": ["10 240 KB"] },
+        { "label": "15 MB", "values": ["15 360 KB"] },
+        { "label": "20 MB", "values": ["20 480 KB"] },
+        { "label": "25 MB", "values": ["25 600 KB"], "emphasis": true },
+        { "label": "50 MB", "values": ["51 200 KB"] },
+        { "label": "100 MB", "values": ["102 400 KB"], "emphasis": true },
+        { "label": "500 MB", "values": ["512 000 KB"] },
+        { "label": "1 024 MB", "values": ["1 048 576 KB"], "emphasis": true }
+      ],
+      "caption": "Przykład: 1 MB × 1 024 = 1 024 KB. Chcesz przeliczyć kilobajty na megabajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się megabajty na kilobajty?",
+      "description": "Rozmiary w megabajtach przeliczasz na kilobajty głównie przy limitach i porównaniach.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limity podawane w KB",
+          "description": "Część systemów CMS, formularzy uploadu czy konfiguracji podaje limit rozmiaru w kilobajtach. Gdy znasz rozmiar w megabajtach, przeliczasz go na KB, na przykład 2 MB to 2 048 KB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Porównywanie z małymi plikami",
+          "description": "Ikony, pliki CSS czy JSON liczy się w kilobajtach, a zdjęcia i dokumenty w megabajtach. Sprowadzenie ich do kilobajtów ułatwia porównanie, na przykład 1 MB to 1 024 KB obok pliku 50 KB."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Precyzyjny rozmiar w KB",
+          "description": "Czasem specyfikacja zasobu wymaga wartości w kilobajtach. Z rozmiaru 10 MB liczysz dokładnie 10 240 KB, bez ręcznego mnożenia."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Co jest większe: MB czy KB",
+          "description": "Konwerter pokazuje wprost, że megabajt jest większy: 1 MB to 1 024 KB. To najczęstsze pytanie, gdy zestawia się rozmiary w różnych jednostkach."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie megabajtów na kilobajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile KB to 1 MB?",
+          "answer": "1 MB to 1 024 KB w systemie binarnym, którego używa ten konwerter i systemy operacyjne. W systemie dziesiętnym (SI), stosowanym między innymi przez producentów nośników, 1 MB to 1 000 KB."
+        },
+        {
+          "question": "Co jest większe: MB czy KB?",
+          "answer": "Megabajt. 1 MB to 1 024 KB, więc megabajt jest ponad tysiąc razy większy od kilobajta. Plik 2 MB jest większy niż plik 500 KB, mimo że liczba przy KB wydaje się większa."
+        },
+        {
+          "question": "Ile to 1 MB w KB?",
+          "answer": "1 MB to dokładnie 1 024 KB. Obliczenie: 1 × 1 024 = 1 024 KB. To bazowa relacja między megabajtem a kilobajtem, dlatego sprawdza się ją najczęściej."
+        },
+        {
+          "question": "Jak przeliczyć megabajty na kilobajty?",
+          "answer": "Pomnóż liczbę megabajtów przez 1 024. Na przykład 50 MB × 1 024 = 51 200 KB. Konwerter robi to od razu po wpisaniu wartości, bez klikania jakiegokolwiek przycisku."
+        },
+        {
+          "question": "Ile KB to 5, 25 i 100 MB?",
+          "answer": "5 MB to 5 120 KB, 25 MB to 25 600 KB, a 100 MB to 102 400 KB. Każdą z tych wartości otrzymujesz, mnożąc liczbę megabajtów przez 1 024."
+        },
+        {
+          "question": "Jak przeliczyć kilobajty na megabajty?",
+          "answer": "Podziel liczbę kilobajtów przez 1 024. Na przykład 5 120 KB ÷ 1 024 = 5 MB. Kliknij Zmień kolejność, aby konwerter przeliczał w tę stronę."
+        },
+        {
+          "question": "Czy 1 MB to 1000 czy 1024 KB?",
+          "answer": "Zależy od systemu. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 MB to 1 024 KB. Producenci nośników używają systemu dziesiętnego, w którym 1 MB to 1 000 KB. Dlatego ta sama liczba megabajtów może dać nieco inny wynik w kilobajtach."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabeli lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "defaultSubject": "Konwerter megabajtów na kilobajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}
