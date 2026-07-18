@@ -222,7 +222,7 @@
       "title": "Have a question or suggestion?",
       "description": "If you have spotted an error in the tables or have an idea to improve the converter, write to us. We reply to every message.",
       "imageAlt": "Contact Arteon Agency",
-      "subject": "Ounces to pounds converter"
+      "defaultSubject": "Ounces to pounds converter"
     },
     { "type": "gap", "variant": "line" },
     {

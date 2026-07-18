@@ -630,7 +630,7 @@
       "title": "Got a question or suggestion?",
       "description": "If you notice an error in the tables or have an idea for improving the converter, write to us. We reply to every message.",
       "imageAlt": "Contact Arteon Agency",
-      "subject": "Kg to lb converter"
+      "defaultSubject": "Kg to lb converter"
     },
     {
       "type": "gap",

@@ -454,7 +454,7 @@
       "title": "Máš otázku nebo nápad na zlepšení?",
       "description": "Pokud najdeš chybu v tabulkách nebo máš nápad, jak převodník vylepšit, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontaktovat Arteon Agency",
-      "subject": "Převodník liber na kg"
+      "defaultSubject": "Převodník liber na kg"
     },
     {
       "type": "gap",

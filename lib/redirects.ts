@@ -830,6 +830,23 @@ export const EL_REMOVAL_REDIRECTS: Record<string, string> = {
 };
 
 /**
+ * Redirecty po zmianie nazwy konwertera bajtów na dokładne „bajty na KB" (2026-07-18)
+ * Narzędzie realnie przelicza tylko B↔KB, dawny ogólny slug wprowadzał w błąd.
+ */
+export const BYTES_CONVERTER_REDIRECTS: Record<string, string> = {
+  '/narzedzia/konwerter-bajtow': '/narzedzia/konwerter-bajtow-na-kb',
+  '/en/tools/bytes-converter': '/en/tools/bytes-to-kb-converter',
+  '/de/werkzeuge/bytes-umrechner': '/de/werkzeuge/bytes-in-kb-umrechner',
+  '/de/tools/bytes-umrechner': '/de/werkzeuge/bytes-in-kb-umrechner',
+  '/fr/outils/convertisseur-octets': '/fr/outils/convertisseur-octets-en-ko',
+  '/es/herramientas/convertidor-bytes':
+    '/es/herramientas/convertidor-bytes-a-kb',
+  '/pt/ferramentas/conversor-bytes': '/pt/ferramentas/conversor-bytes-para-kb',
+  '/it/strumenti/convertitore-bytes': '/it/strumenti/convertitore-byte-in-kb',
+  '/cs/nastroje/prevodnik-bajtu': '/cs/nastroje/prevodnik-bajtu-na-kb',
+};
+
+/**
  * Wszystkie statyczne redirecty (bez wzorców)
  * Używane przez middleware do szybkiego lookup
  */
@@ -842,6 +859,7 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...TOOLS_REDIRECTS,
   ...CONVERTER_REDIRECTS,
   ...DE_TOOLS_REDIRECTS,
+  ...BYTES_CONVERTER_REDIRECTS,
   ...SERVICES_REDIRECTS,
   ...ABOUT_REDIRECTS,
   ...REMOVED_LOCALE_REDIRECTS_EU,

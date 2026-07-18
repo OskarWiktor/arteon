@@ -430,7 +430,7 @@
       "title": "Hai una domanda o un suggerimento?",
       "description": "Se hai notato un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
       "imageAlt": "Contatto con Arteon Agency",
-      "subject": "Convertitore da pollici a piedi"
+      "defaultSubject": "Convertitore da pollici a piedi"
     },
     {
       "type": "gap",

@@ -248,7 +248,7 @@
       "title": "Máš dotaz nebo návrh?",
       "description": "Pokud jsi našel chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontakt s Arteon Agency",
-      "subject": "Převodník kilometrů na míle"
+      "defaultSubject": "Převodník kilometrů na míle"
     },
     { "type": "gap", "variant": "line" },
     {

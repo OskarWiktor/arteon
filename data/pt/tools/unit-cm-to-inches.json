@@ -581,7 +581,7 @@
       "title": "Tem alguma pergunta ou sugestão?",
       "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, contacte-nos. Respondemos a todas as mensagens.",
       "imageAlt": "Contacto com Arteon Agency",
-      "subject": "Conversor cm para polegadas"
+      "defaultSubject": "Conversor cm para polegadas"
     },
     {
       "type": "gap",

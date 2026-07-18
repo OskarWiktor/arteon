@@ -630,7 +630,7 @@
       "title": "Masz pytanie lub sugestię?",
       "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
       "imageAlt": "Kontakt z Arteon Agency",
-      "subject": "Konwerter kg na funty"
+      "defaultSubject": "Konwerter kg na funty"
     },
     {
       "type": "gap",

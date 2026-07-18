@@ -305,7 +305,7 @@
       "title": "Hai una domanda o un suggerimento?",
       "description": "Se noti un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
       "imageAlt": "Contatta Arteon Agency",
-      "subject": "Convertitore pollici in mm"
+      "defaultSubject": "Convertitore pollici in mm"
     },
     { "type": "gap", "variant": "line" },
     {

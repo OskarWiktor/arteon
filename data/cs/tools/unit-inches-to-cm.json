@@ -347,7 +347,7 @@
       "title": "Máš otázku nebo návrh?",
       "description": "Pokud najdeš chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontakt s Arteon Agency",
-      "subject": "Převodník palců na cm"
+      "defaultSubject": "Převodník palců na cm"
     },
     {
       "type": "gap",

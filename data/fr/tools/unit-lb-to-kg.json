@@ -481,7 +481,7 @@
       "title": "Vous avez une question ou une suggestion ?",
       "description": "Si vous constatez une erreur dans les tableaux ou avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
       "imageAlt": "Contacter Arteon Agency",
-      "subject": "Convertisseur livres en kg"
+      "defaultSubject": "Convertisseur livres en kg"
     },
     {
       "type": "gap",

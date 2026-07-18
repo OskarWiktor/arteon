@@ -273,7 +273,7 @@
       "title": "¿Tienes alguna pregunta o sugerencia?",
       "description": "Si has visto un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a todos los mensajes.",
       "imageAlt": "Contacto con Arteon Agency",
-      "subject": "Convertidor de onzas a ml"
+      "defaultSubject": "Convertidor de onzas a ml"
     },
     { "type": "gap", "variant": "line" },
     {

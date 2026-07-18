@@ -283,7 +283,7 @@
       "title": "Haben Sie eine Frage oder einen Verbesserungsvorschlag?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt mit Arteon Agency",
-      "subject": "mm-in-Zoll-Umrechner"
+      "defaultSubject": "mm-in-Zoll-Umrechner"
     },
     { "type": "gap", "variant": "line" },
     {

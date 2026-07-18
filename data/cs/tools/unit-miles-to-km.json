@@ -262,7 +262,7 @@
       "title": "Máš dotaz nebo návrh?",
       "description": "Pokud jsi našel chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontakt s Arteon Agency",
-      "subject": "Převodník mil na kilometry"
+      "defaultSubject": "Převodník mil na kilometry"
     },
     { "type": "gap", "variant": "line" },
     {

@@ -283,7 +283,7 @@
       "title": "¿Tienes una pregunta o sugerencia?",
       "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contacto con Arteon Agency",
-      "subject": "Convertidor mm a pulgadas"
+      "defaultSubject": "Convertidor mm a pulgadas"
     },
     { "type": "gap", "variant": "line" },
     {

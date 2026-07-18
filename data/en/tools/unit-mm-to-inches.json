@@ -283,7 +283,7 @@
       "title": "Have a question or suggestion?",
       "description": "If you spot an error in the tables or have an idea for improving the converter, get in touch. We reply to every message.",
       "imageAlt": "Contact Arteon Agency",
-      "subject": "MM to inches converter"
+      "defaultSubject": "MM to inches converter"
     },
     { "type": "gap", "variant": "line" },
     {

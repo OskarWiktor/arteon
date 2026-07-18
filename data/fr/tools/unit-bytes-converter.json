@@ -2,14 +2,14 @@
   "toolKey": "bytesConverter",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur d'octets – Ko, Mo, Go, To",
-    "description": "Convertissez entre octets, kilo-octets, méga-octets, giga-octets et téra-octets.",
+    "title": "Convertisseur d'octets en Ko – convertir B en KB",
+    "description": "Convertissez des octets en kilo-octets et inversement. Un kilo-octet fait 1 024 octets dans le système binaire. Saisissez une valeur et le résultat apparaît aussitôt. Fonctionne dans le navigateur, sans inscription.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
-    "path": "/fr/outils/convertisseur-octets"
+    "path": "/fr/outils/convertisseur-octets-en-ko"
   },
   "hero": {
-    "title": "Convertir octets, Ko, Mo, Go, To",
-    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "title": "Convertissez des octets en kilo-octets",
+    "description": "Saisissez un nombre d'octets et lisez le résultat en kilo-octets tout de suite. Un kilo-octet fait 1 024 octets dans le système binaire, donc le convertisseur divise votre valeur par 1 024. Utilisez Inverser l'ordre pour convertir des kilo-octets en octets. Dans l'outil, ces unités sont notées B (octets) et KB (kilo-octets).",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -18,240 +18,176 @@
       "label": "Outils"
     },
     "third": {
-      "href": "/fr/outils/convertisseur-octets",
-      "label": "Convertisseur d'octets"
+      "href": "/fr/outils/convertisseur-octets-en-ko",
+      "label": "octets en Ko"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertisseur d'octets – Ko, Mo, Go, To",
-      "alternateName": ["Convertir octets, Ko, Mo, Go, To"],
+      "name": "Convertisseur d'octets en kilo-octets – calculateur B en KB",
+      "alternateName": [
+        "Convertisseur d'octets en Ko",
+        "Convertisseur d'octets en kilo-octets",
+        "Calculateur octets en Ko",
+        "Octets en Ko",
+        "b to kb",
+        "Convertir des octets en Ko",
+        "Combien d'octets dans un kilo-octet",
+        "1024 octets en Ko",
+        "Kilo-octets en octets",
+        "Ko en B",
+        "Convertisseur B en KB",
+        "bytes to kb"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Convertissez entre octets, kilo-octets, méga-octets, giga-octets et téra-octets.",
+      "description": "Convertisseur d'octets en kilo-octets qui fonctionne dans le navigateur sans inscription. Saisissez un nombre d'octets et lisez le résultat en kilo-octets aussitôt. Il utilise le système binaire, dans lequel 1 Ko fait 1 024 octets.",
       "featureList": [
-        "Conversion bidirectionnelle en temps réel",
-        "Tous les convertisseurs au même endroit",
-        "Copier le résultat dans le presse-papiers",
-        "Calcul local dans le navigateur"
+        "Convertit des octets en kilo-octets et des kilo-octets en octets dans le système binaire (1 Ko = 1 024 octets)",
+        "La conversion fonctionne dans les deux sens : le bouton Inverser l'ordre change de direction",
+        "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
+        "Accepte le point comme la virgule comme séparateur décimal",
+        "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
+        "La formule exacte est : kilo-octets = octets ÷ 1 024",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
       ]
     },
     "howTo": {
-      "name": "Comment utiliser le convertisseur",
-      "description": "Guide rapide pour utiliser le convertisseur.",
+      "name": "Comment convertir des octets en kilo-octets ?",
+      "description": "Court guide d'utilisation du convertisseur d'octets en kilo-octets.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Saisir une valeur",
-          "text": "Entrez un nombre dans le champ de saisie à gauche."
+          "name": "Saisissez un nombre d'octets",
+          "text": "Dans le champ de gauche, saisissez le nombre d'octets que vous voulez convertir en kilo-octets. Vous pouvez utiliser le point ou la virgule comme séparateur décimal."
         },
         {
-          "name": "Lire le résultat",
-          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+          "name": "Lisez le résultat en kilo-octets",
+          "text": "Le résultat en kilo-octets apparaît aussitôt dans le champ voisin, à droite. Avec le bouton Copier le résultat, vous le placez dans le presse-papiers."
         },
         {
-          "name": "Copier ou inverser",
-          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+          "name": "Inversez le sens au besoin",
+          "text": "Cliquez sur Inverser l'ordre pour passer à la conversion des kilo-octets en octets."
         }
       ]
     }
   },
   "contentBlocks": [
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionBasic",
-      "title": "Quand faut-il convertir des octets ?",
-      "html": "<p class=\"text-mid mb-4\">Le stockage numérique se mesure en octets et leurs multiples : kilo-octet (Ko), mégaoctet (Mo), gigaoctet (Go) et téraoctet (To). Deux systèmes existent : décimal (1 Ko = 1 000 octets) et binaire (1 Kio = 1 024 octets).</p><p class=\"text-mid mb-4\">Les fabricants utilisent le décimal (un disque de « 500 Go » = 500 000 000 000 octets), tandis que les systèmes d’exploitation utilisent le binaire (affichant ~465 Gio pour le même disque).</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "title": "Pourquoi convertir des octets en kilo-octets ?",
+      "html": "<p class=\"text-mid mb-4\">L'octet est l'unité de base de la taille des données, et un kilo-octet fait 1 024 octets. Les tailles brutes en octets apparaissent dans les propriétés d'un fichier, dans la sortie de commandes système et dans les réponses d'une API — une fois converties en kilo-octets, elles se lisent et se comparent plus facilement.</p><p class=\"text-mid mb-4\">Le rapport est fixe : 1 Ko fait 1 024 octets dans le système binaire, celui qu'utilisent les systèmes d'exploitation et ce convertisseur. Pour passer des octets aux kilo-octets, vous divisez leur nombre par 1 024. Le convertisseur le fait dès que vous saisissez une valeur.</p><p class=\"text-mid\">Attention à deux systèmes. Dans le système décimal (SI), 1 Ko fait 1 000 octets — c'est ainsi que comptent par exemple les fabricants de stockage. Ce convertisseur utilise le système binaire (1 024 octets), comme ce qu'affichent Windows et macOS. Ne confondez pas non plus les octets avec les bits : 1 octet fait 8 bits.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
-      "imageAlt": "Convertisseur d'octets – Ko, Mo, Go, To – Arteon"
+      "imageAlt": "Convertisseur gratuit d'octets en kilo-octets – Arteon"
     },
-    {
-      "type": "gap",
-      "size": "xs"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Comment utiliser le convertisseur ?",
-      "grid": "three",
-      "items": [
-        {
-          "title": "1. Saisissez une valeur",
-          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
-          "icon": "RiInputMethodLine"
-        },
-        {
-          "title": "2. Lisez le résultat",
-          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
-          "icon": "RiLoopLeftLine"
-        },
-        {
-          "title": "3. Copiez ou inversez",
-          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
-          "icon": "RiClipboardLine"
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Quand ce convertisseur est-il utile ?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiHardDriveLine",
-          "title": "Capacité de stockage",
-          "description": "Comparez stockage annoncé vs réel : un disque de « 1 To » affiche 931 Gio sous Windows."
-        },
-        {
-          "icon": "RiUploadCloudLine",
-          "title": "Transfert de fichiers",
-          "description": "Calculez les temps de transfert : le réseau utilise des bits (Mbps), les fichiers des octets."
-        },
-        {
-          "icon": "RiServerLine",
-          "title": "Stockage cloud",
-          "description": "Planifiez les coûts cloud en comprenant les Go consommés."
-        },
-        {
-          "icon": "RiSmartphoneLine",
-          "title": "Programmation",
-          "description": "Tampons, allocation mémoire et structures de données nécessitent des calculs précis."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Qu’est-ce qui différencie ce convertisseur ?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Confidentialité totale",
-          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
-        },
-        {
-          "icon": "RiTimeLine",
-          "title": "Résultats en temps réel",
-          "description": "Le résultat se met à jour instantanément pendant la saisie."
-        },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Conversion bidirectionnelle",
-          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tableau de référence",
-          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "size": "xs" },
     {
       "type": "sectionInfo",
-      "title": "Comment fonctionne la conversion ?",
-      "html": "<p class=\"text-mid mb-4\">Décimal (SI) : 1 Ko = 1 000 octets, 1 Mo = 1 000 Ko, 1 Go = 1 000 Mo. Chaque niveau multiplie par 1 000.</p><p class=\"text-mid mb-4\">Binaire (IEC) : 1 Kio = 1 024 octets, 1 Mio = 1 024 Kio. Chaque niveau multiplie par 1 024.</p><p class=\"text-mid\">La différence croît : 1 To (décimal) = 0,909 Tio (binaire).</p>"
+      "title": "Comment fonctionne la conversion des octets en kilo-octets ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion repose sur un rapport fixe : un kilo-octet fait 1 024 octets. Pour passer des octets aux kilo-octets, vous divisez leur nombre par 1 024.</p><p class=\"text-mid mb-4\">Formule complète : <strong>kilo-octets = octets ÷ 1 024</strong>. Dans l'autre sens : <strong>octets = kilo-octets × 1 024</strong>.</p><p class=\"text-mid mb-4\">Exemple : un fichier fait 51 200 octets. Calcul : 51 200 ÷ 1 024 = 50 Ko. Le multiplicateur 1 024 vient de ce que les ordinateurs comptent en binaire, et deux à la puissance dix fait exactement 1 024.</p><p class=\"text-mid\">Pourquoi 1 024 et non 1 000 ? Dans le système décimal (SI), 1 Ko fait 1 000 octets, et c'est ainsi que les fabricants de stockage indiquent la capacité. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Ko fait 1 024 octets — formellement appelé kibioctet (Kio).</p>"
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Comment fonctionne la conversion ?",
-      "html": "<p class=\"text-mid mb-4\">Décimal (SI) : 1 Ko = 1 000 octets, 1 Mo = 1 000 Ko, 1 Go = 1 000 Mo. Chaque niveau multiplie par 1 000.</p><p class=\"text-mid mb-4\">Binaire (IEC) : 1 Kio = 1 024 octets, 1 Mio = 1 024 Kio. Chaque niveau multiplie par 1 024.</p><p class=\"text-mid\">La différence croît : 1 To (décimal) = 0,909 Tio (binaire).</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionTable",
-      "title": "Décimal vs Binaire – comparaison",
-      "labelHeader": "Caractéristique",
-      "cols": ["Décimal (SI)", "Binaire (IEC)"],
+      "title": "Tableau de conversion des octets en kilo-octets",
+      "description": "Le tableau ci-dessous convertit des valeurs courantes d'octets en kilo-octets dans le système binaire (÷1 024). Pour convertir une autre valeur, utilisez le convertisseur ci-dessus. Les unités sont notées B et KB, comme dans l'outil.",
+      "labelHeader": "Octets",
+      "cols": ["Kilo-octets"],
       "rows": [
+        { "label": "512 B", "values": ["0,5 KB"] },
+        { "label": "1 024 B", "values": ["1 KB"], "emphasis": true },
+        { "label": "2 048 B", "values": ["2 KB"], "emphasis": true },
+        { "label": "5 120 B", "values": ["5 KB"] },
+        { "label": "10 240 B", "values": ["10 KB"], "emphasis": true },
+        { "label": "20 480 B", "values": ["20 KB"] },
+        { "label": "51 200 B", "values": ["50 KB"] },
+        { "label": "102 400 B", "values": ["100 KB"], "emphasis": true },
+        { "label": "256 000 B", "values": ["250 KB"] },
+        { "label": "512 000 B", "values": ["500 KB"] },
+        { "label": "1 048 576 B", "values": ["1 024 KB"], "emphasis": true }
+      ],
+      "caption": "Exemple : 1 024 B ÷ 1 024 = 1 KB. Vous voulez convertir des kilo-octets en octets ? Cliquez sur Inverser l'ordre dans le convertisseur ci-dessus."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent des octets en kilo-octets ?",
+      "description": "Les tailles en octets se rencontrent surtout dans des contextes techniques.",
+      "items": [
         {
-          "label": "Multiplicateur",
-          "values": ["1 000", "1 024"]
+          "icon": "RiFileTextLine",
+          "title": "Lire la taille d'un fichier",
+          "description": "Les propriétés d'un fichier, les commandes système (comme ls -l) et les gestionnaires de fichiers indiquent souvent la taille en octets bruts. Un fichier de 51 200 octets fait 50 Ko — une fois converti, vous savez d'un coup d'œil sa taille réelle."
         },
         {
-          "label": "Unités",
-          "values": ["Ko, Mo, Go, To", "Kio, Mio, Gio, Tio"]
+          "icon": "RiFileCodeLine",
+          "title": "Programmation et API",
+          "description": "Les réponses d'une API, l'en-tête Content-Length et les limites d'envoi sont donnés en octets. Convertir en kilo-octets aide à juger si une réponse de 20 480 octets (20 Ko) tient dans votre budget de données."
         },
         {
-          "label": "Utilisé par",
-          "values": ["Fabricants de stockage", "Systèmes d’exploitation, RAM"]
+          "icon": "RiFileImageLine",
+          "title": "Petits fichiers d'un site",
+          "description": "Les favicons, les icônes SVG, les fichiers JSON et CSS se mesurent en kilo-octets, mais les outils les indiquent en octets. Convertir aide à surveiller le poids des ressources, qui influe sur la vitesse de chargement du site."
         },
         {
-          "label": "1 To équivaut à",
-          "values": ["1 000 000 000 000 octets", "1 099 511 627 776 octets"]
-        },
-        {
-          "label": "Différence pour 1 To",
-          "values": ["1 To", "0,909 Tio"]
+          "icon": "RiGraduationCapLine",
+          "title": "Apprendre l'informatique",
+          "description": "Le rapport entre l'octet et le kilo-octet est la base de nombreux exercices d'informatique. Le convertisseur montre clairement que 1 Ko fait 1 024 octets et vous laisse vérifier vos propres calculs rapidement."
         }
       ]
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Questions fréquentes",
+      "title": "Questions fréquentes sur la conversion des octets en kilo-octets",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Combien de Mo fait 1 Go ?",
-          "answer": "1 Go = 1 000 Mo (décimal) ou 1 Gio = 1 024 Mio (binaire)."
+          "question": "Combien d'octets dans 1 kilo-octet ?",
+          "answer": "1 kilo-octet fait 1 024 octets dans le système binaire, celui qu'utilisent ce convertisseur et les systèmes d'exploitation. Dans le système décimal (SI), utilisé entre autres par les fabricants de stockage, 1 Ko fait 1 000 octets."
         },
         {
-          "question": "Pourquoi mon disque affiche-t-il moins ?",
-          "answer": "Les fabricants utilisent le décimal (1 To = 1 000 000 000 000 octets), votre OS le binaire. Un disque de « 1 To » affiche ~931 Gio."
+          "question": "Combien font 1024 octets en Ko ?",
+          "answer": "1 024 octets font exactement 1 Ko. Calcul : 1 024 ÷ 1 024 = 1 Ko. C'est le rapport de base entre l'octet et le kilo-octet, c'est pourquoi il est le plus souvent recherché."
         },
         {
-          "question": "Les calculs sont-ils effectués localement ?",
-          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+          "question": "Comment convertir des octets en kilo-octets ?",
+          "answer": "Divisez le nombre d'octets par 1 024. Par exemple, 51 200 octets ÷ 1 024 = 50 Ko. Le convertisseur le fait dès que vous saisissez une valeur, sans cliquer sur un bouton."
+        },
+        {
+          "question": "Comment convertir des kilo-octets en octets ?",
+          "answer": "Multipliez le nombre de kilo-octets par 1 024. Par exemple, 10 Ko × 1 024 = 10 240 octets. Cliquez sur Inverser l'ordre pour que le convertisseur travaille dans ce sens."
+        },
+        {
+          "question": "1 Ko fait-il 1 000 ou 1 024 octets ?",
+          "answer": "Cela dépend du système. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Ko fait 1 024 octets. Les fabricants de stockage utilisent le système décimal, dans lequel 1 Ko fait 1 000 octets. C'est pourquoi le même nombre d'octets peut donner un résultat un peu différent en Ko."
+        },
+        {
+          "question": "Quelle différence entre Ko et Kio ?",
+          "answer": "Le Kio (kibioctet, la norme IEC) fait toujours exactement 1 024 octets. Le Ko dans le système SI fait 1 000 octets. Au quotidien, la plupart écrivent Ko en pensant 1 024 octets, ce qui est techniquement un Kio. Ce convertisseur utilise 1 024 octets."
+        },
+        {
+          "question": "Combien de bits dans un octet ?",
+          "answer": "1 octet fait 8 bits. Attention à la notation : Ko désigne les kilo-octets (taille de fichier), tandis que Kb désigne les kilobits (souvent la vitesse de transmission). Cet outil travaille avec des octets et des kilo-octets, pas avec des bits."
         }
       ]
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
-      "title": "Aidez-nous à améliorer nos outils",
-      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "title": "Une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans le tableau ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
-      "imageAlt": "bajty na KB/MB/GB – Arteon",
-      "defaultSubject": "Feedback : bytes-converter"
+      "imageAlt": "Contact avec Arteon Agency",
+      "defaultSubject": "Convertisseur d'octets en kilo-octets"
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "toolsCarousel",
-      "title": "Plus d'outils gratuits"
+      "title": "Autres convertisseurs d'unités utiles"
     },
-    {
-      "type": "gap",
-      "size": "sm"
-    }
+    { "type": "gap", "size": "sm" }
   ]
 }

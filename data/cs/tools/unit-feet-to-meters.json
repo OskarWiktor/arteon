@@ -265,7 +265,7 @@
       "title": "Máš dotaz nebo návrh?",
       "description": "Pokud jsi našel chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontakt s Arteon Agency",
-      "subject": "Převodník stop na metry"
+      "defaultSubject": "Převodník stop na metry"
     },
     { "type": "gap", "variant": "line" },
     {

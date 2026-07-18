@@ -5733,46 +5733,52 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     desktopOnly: false,
     locales: {
       pl: {
-        slug: 'konwerter-bajtow',
-        title: 'bajty na KB/MB/GB',
+        slug: 'konwerter-bajtow-na-kb',
+        title: 'bajty na kilobajty',
         description:
-          'Przelicz bajty na KB, MB, GB i odwrotnie. Szybka konwersja jednostek danych.',
+          'Przelicz bajty na kilobajty i odwrotnie. 1 KB to 1 024 bajty, wzór i tabela przeliczeniowa.',
       },
       en: {
-        slug: 'bytes-converter',
-        title: 'bytes to KB/MB/GB',
+        slug: 'bytes-to-kb-converter',
+        title: 'bytes to KB',
         description:
-          'Convert bytes to KB, MB, GB and vice versa. Instant data unit conversion.',
+          'Convert bytes to kilobytes and back. 1 KB is 1,024 bytes, with a formula and a conversion table.',
       },
       de: {
-        slug: 'bytes-umrechner',
-        title: 'Bytes in KB/MB/GB',
-        description: 'Bytes in KB, MB, GB umrechnen und umgekehrt.',
+        slug: 'bytes-in-kb-umrechner',
+        title: 'Bytes in KB',
+        description:
+          'Bytes in Kilobytes umrechnen und zurück. 1 KB sind 1.024 Byte, mit Formel und Umrechnungstabelle.',
       },
       fr: {
-        slug: 'convertisseur-octets',
-        title: 'octets en Ko/Mo/Go',
-        description: 'Convertissez octets en Ko, Mo, Go et inversement.',
+        slug: 'convertisseur-octets-en-ko',
+        title: 'octets en Ko',
+        description:
+          'Convertissez des octets en kilo-octets et inversement. 1 Ko = 1 024 octets, formule et tableau.',
       },
       es: {
-        slug: 'convertidor-bytes',
-        title: 'bytes a KB/MB/GB',
-        description: 'Convierte bytes a KB, MB, GB y viceversa.',
+        slug: 'convertidor-bytes-a-kb',
+        title: 'bytes a KB',
+        description:
+          'Convierte bytes a kilobytes y al revés. 1 KB son 1.024 bytes, con fórmula y tabla de conversión.',
       },
       pt: {
-        slug: 'conversor-bytes',
-        title: 'bytes para KB/MB/GB',
-        description: 'Converta bytes em KB, MB, GB e vice-versa.',
+        slug: 'conversor-bytes-para-kb',
+        title: 'bytes para KB',
+        description:
+          'Converta bytes para kilobytes e ao contrário. 1 KB são 1.024 bytes, com fórmula e tabela.',
       },
       it: {
-        slug: 'convertitore-bytes',
-        title: 'bytes in KB/MB/GB',
-        description: 'Converti bytes in KB, MB, GB e viceversa.',
+        slug: 'convertitore-byte-in-kb',
+        title: 'byte in KB',
+        description:
+          'Converti byte in kilobyte e viceversa. 1 KB è 1.024 byte, con formula e tabella di conversione.',
       },
       cs: {
-        slug: 'prevodnik-bajtu',
-        title: 'bajty na KB/MB/GB',
-        description: 'Převeďte bajty na KB, MB, GB a naopak.',
+        slug: 'prevodnik-bajtu-na-kb',
+        title: 'bajty na kilobajty',
+        description:
+          'Převeď bajty na kilobajty a naopak. 1 KB je 1 024 bajtů, se vzorcem a převodní tabulkou.',
       },
     },
   },

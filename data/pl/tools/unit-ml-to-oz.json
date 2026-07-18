@@ -286,7 +286,7 @@
       "title": "Masz pytanie lub sugestię?",
       "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
       "imageAlt": "Kontakt z Arteon Agency",
-      "subject": "Konwerter ml na uncje"
+      "defaultSubject": "Konwerter ml na uncje"
     },
     { "type": "gap", "variant": "line" },
     {

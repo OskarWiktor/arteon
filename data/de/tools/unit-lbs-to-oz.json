@@ -223,7 +223,7 @@
       "title": "Haben Sie eine Frage oder Anregung?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdeckt haben oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt zu Arteon Agency",
-      "subject": "Umrechner von Pfund in Unzen"
+      "defaultSubject": "Umrechner von Pfund in Unzen"
     },
     { "type": "gap", "variant": "line" },
     {

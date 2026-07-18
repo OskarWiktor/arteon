@@ -2,14 +2,14 @@
   "toolKey": "bytesConverter",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy konwerter bajtów na kilobajty - B na Kb",
-    "description": "Przelicz bajty na KB, MB, GB i TB w systemie binarnym (1024). Sprawdź, dlaczego dysk 500 GB pokazuje tylko 465 GB. Działa w przeglądarce, bez rejestracji.",
+    "title": "Konwerter bajtów na kilobajty – przelicz B na KB",
+    "description": "Przelicz bajty na kilobajty i odwrotnie. 1 kilobajt to 1 024 bajty w systemie binarnym. Wpisz wartość, a wynik pojawi się natychmiast. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-    "path": "/narzedzia/konwerter-bajtow"
+    "path": "/narzedzia/konwerter-bajtow-na-kb"
   },
   "hero": {
-    "title": "Przelicz bajty na KB, MB, GB i TB – konwerter jednostek danych",
-    "description": "Sprawdź pojemność dysku, limit załącznika lub rozmiar zdjęć RAW – wynik pojawia się natychmiast, bez instalacji i bez rejestracji.",
+    "title": "Przelicz bajty na kilobajty",
+    "description": "Wpisz liczbę bajtów i od razu odczytaj wynik w kilobajtach. Kilobajt to 1 024 bajty w systemie binarnym, więc konwerter dzieli podaną liczbę przez 1 024. Przyciskiem Zmień kolejność przeliczysz też kilobajty na bajty.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -18,270 +18,176 @@
       "label": "Narzędzia"
     },
     "third": {
-      "href": "/narzedzia/konwerter-bajtow",
-      "label": "bajty na KB/MB/GB"
+      "href": "/narzedzia/konwerter-bajtow-na-kb",
+      "label": "bajty na kilobajty"
     }
   },
   "schemas": {
     "software": {
-      "name": "Konwerter bajtów – B, KB, MB, GB, TB",
+      "name": "Konwerter bajtów na kilobajty – przelicznik B na KB",
       "alternateName": [
-        "Przelicznik bajtów",
-        "Kalkulator KB MB GB",
-        "Konwerter wielkości plików"
+        "Konwerter bajtów na kilobajty",
+        "Przelicznik bajtów na kilobajty",
+        "Kalkulator bajtów na kilobajty",
+        "Bajty na kilobajty",
+        "B na KB",
+        "Przelicz bajty na KB",
+        "Ile bajtów ma kilobajt",
+        "1024 bajty ile to KB",
+        "Kilobajty na bajty",
+        "KB na B",
+        "Konwerter B na KB",
+        "b to kb"
       ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz bajty na KB, MB, GB i TB w systemie binarnym (1024). Sprawdź, dlaczego dysk 500 GB pokazuje tylko 465 GB. Działa w przeglądarce, bez rejestracji.",
+      "description": "Konwerter bajtów na kilobajty działający w przeglądarce bez rejestracji. Wpisz liczbę bajtów i natychmiast odczytaj wynik w kilobajtach. Przelicza w systemie binarnym, w którym 1 KB to 1 024 bajty.",
       "featureList": [
-        "Przeliczanie B, KB, MB, GB, TB w systemie binarnym (1024)",
-        "Obustronna konwersja – wpisz wartość w dowolnej jednostce",
-        "Wynik aktualizuje się natychmiast podczas wpisywania",
-        "Kopiowanie wyniku do schowka jednym kliknięciem",
-        "Obliczenia lokalne w przeglądarce – bez wysyłania danych na serwer",
-        "Wyjaśnienie różnicy między systemem 1024 (IEC) a 1000 (SI)",
-        "Tabela typowych rozmiarów: zdjęcia RAW, filmy 4K, dokumenty",
-        "Pomocne przy planowaniu przestrzeni Dropbox, OneDrive, Google Drive",
-        "Obsługa separatora dziesiętnego: kropka i przecinek",
-        "Bez rejestracji i bez instalacji – działa w każdej przeglądarce"
+        "Przelicza bajty na kilobajty i kilobajty na bajty w systemie binarnym (1 KB = 1 024 B)",
+        "Konwersja działa w obie strony — przyciskiem Zmień kolejność przełączasz kierunek",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: kilobajty = bajty ÷ 1 024",
+        "Działa na telefonie, tablecie i komputerze bez instalacji"
       ]
     },
     "howTo": {
-      "name": "Jak korzystać z konwertera bajty na KB/MB/GB",
-      "description": "Instrukcja użycia: bajty na kb/mb/gb.",
+      "name": "Jak przeliczyć bajty na kilobajty?",
+      "description": "Krótka instrukcja użycia konwertera bajtów na kilobajty.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Wpisz wartość",
-          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+          "name": "Wpisz liczbę bajtów",
+          "text": "W lewym polu wpisz liczbę bajtów, którą chcesz przeliczyć na kilobajty. Możesz użyć kropki lub przecinka jako separatora dziesiętnego."
         },
         {
-          "name": "Odczytaj wynik",
-          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+          "name": "Odczytaj wynik w kilobajtach",
+          "text": "Wynik w kilobajtach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
         },
         {
-          "name": "Skopiuj lub zmień kierunek",
-          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania kilobajtów na bajty."
         }
       ]
     }
   },
   "contentBlocks": [
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionBasic",
-      "title": "Jak przeliczać bajty na kilobajty i megabajty?",
-      "html": "<p class=\"text-mid mb-4\">W informatyce 1 KB = 1 024 B (system binarny, IEC: 1 KiB). Producenci dysków używają systemu dziesiętnego: 1 KB = 1 000 B. Ten konwerter używa systemu binarnego (1 024).</p><p class=\"text-mid mb-4\">Hierarchia: 1 KB = 1 024 B, 1 MB = 1 024 KB = 1 048 576 B, 1 GB = 1 024 MB, 1 TB = 1 024 GB.</p><p class=\"text-mid mb-4\">Dlatego dysk “500 GB” (producent, system 1000) ma w systemie 1024 około 465 GB. Różnica rośnie z wielkością – dysk 1 TB “traci” 7,4%.</p><p class=\"text-mid\">Przeliczanie bajtów przydaje się przy szacowaniu przestrzeni dyskowej, limitów przesyłania plików i planowaniu pojemności serwerów.</p>",
+      "title": "Po co przeliczać bajty na kilobajty?",
+      "html": "<p class=\"text-mid mb-4\">Bajt to podstawowa jednostka rozmiaru danych, a kilobajt to 1 024 bajty. Surowe rozmiary w bajtach widzisz we właściwościach pliku, w wynikach poleceń systemowych czy w odpowiedziach API — po przeliczeniu na kilobajty łatwiej je ocenić i porównać.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 KB to 1 024 B w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić bajty na kilobajty, dzielisz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 KB to 1 000 B — tak liczą między innymi producenci nośników. Ten konwerter używa systemu binarnego (1 024 B), zgodnego z tym, co pokazują Windows i macOS. Nie myl też bajtów z bitami: 1 bajt to 8 bitów.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "bajty na KB/MB/GB – Arteon"
+      "imageAlt": "Darmowy konwerter bajtów na kilobajty – Arteon"
     },
-    {
-      "type": "gap",
-      "size": "xs"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Jak korzystać z konwertera?",
-      "grid": "three",
-      "items": [
-        {
-          "title": "1. Wpisz wartość",
-          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
-          "icon": "RiInputMethodLine"
-        },
-        {
-          "title": "2. Odczytaj wynik",
-          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
-          "icon": "RiLoopLeftLine"
-        },
-        {
-          "title": "3. Skopiuj lub zmień kierunek",
-          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
-          "icon": "RiClipboardLine"
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Kiedy przydaje się ten konwerter?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiHardDriveLine",
-          "title": "Pojemność dysków i chmura",
-          "description": "Dysk 500 GB u producenta (system 1000) to tylko 465 GB widoczne w Windows lub macOS – różnica wynosi ponad 35 GB. Konwerter pomaga zrozumieć tę rozbieżność przed zakupem dysku, planowaniem archiwizacji lub porównywaniem ofert chmurowych Dropbox, OneDrive i Google Drive."
-        },
-        {
-          "icon": "RiUploadCloudLine",
-          "title": "Limity przesyłania plików",
-          "description": "Gmail dopuszcza 25 MB na załącznik, a Google Drive daje 15 GB bezpłatnej przestrzeni. Jeśli chcesz oszacować, ile zdjęć RAW (25–80 MB każde) zmieści się w przydzielonym limicie lub ile waży projekt przed wysłaniem klientowi, przelicz rozmiary i zaplanuj kompresję lub podział plików."
-        },
-        {
-          "icon": "RiServerLine",
-          "title": "Serwery i hosting",
-          "description": "Planowanie pojemności serwera wymaga przeliczania RAM, miejsca na dysku i miesięcznego transferu danych. Przelicznik pozwala sprawdzić, czy 2 GB RAM wystarczy na cache aplikacji lub ile kosztowałby ruch 10 TB miesięcznie u polskich dostawców hostingu – wartości podawane zarówno w GB, jak i TB."
-        },
-        {
-          "icon": "RiSmartphoneLine",
-          "title": "Pamięć urządzeń mobilnych",
-          "description": "Smartfon z 128 GB pamięci (dziesiętnie) ma faktycznie dostępne ok. 119 GB w systemie binarnym. Po odjęciu systemu operacyjnego i preinstalowanych aplikacji użytkownik często dysponuje zaledwie 100–110 GB. Konwerter pomaga ocenić, ile zdjęć, filmów lub plików muzycznych naprawdę zmieścisz na urządzeniu."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Co wyróżnia nasz konwerter?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Pełna prywatność",
-          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
-        },
-        {
-          "icon": "RiTimeLine",
-          "title": "Wynik w czasie rzeczywistym",
-          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
-        },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Obustronna konwersja",
-          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabela popularnych wartości",
-          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "size": "xs" },
     {
       "type": "sectionInfo",
-      "title": "Jak działa przeliczanie jednostek danych?",
-      "html": "<p class=\"text-mid mb-4\">W informatyce istnieją dwa systemy przeliczania jednostek danych: binarny i dziesiętny. W systemie binarnym (używanym przez systemy operacyjne) każda kolejna jednostka jest 1 024 razy większa od poprzedniej — jeden kilobajt to 1 024 bajtów, jeden megabajt to 1 024 kilobajtów (czyli 1 048 576 bajtów), a jeden gigabajt to 1 024 megabajtów.</p><p class=\"text-mid mb-4\">W systemie dziesiętnym (stosowanym przez producentów dysków) każda jednostka jest 1 000 razy większa — dlatego dysk o pojemności 500 GB (dziesiętnie) wyświetla się w systemie jako około 465 GB (binarnie). Ta różnica wyjaśnia, dlaczego nowy dysk zawsze wydaje się mieć mniej miejsca niż deklarowana pojemność.</p><p class=\"text-mid\">Konwerter obsługuje oba systemy i pozwala przeliczać między bajtami, kilobajtami, megabajtami, gigabajtami i terabajtami. Mnożnik 1 024 wynika z tego, że komputery operują w systemie dwójkowym, gdzie 2 do potęgi 10 wynosi dokładnie 1 024.</p>"
+      "title": "Jak działa konwersja bajtów na kilobajty? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden kilobajt to 1 024 bajty. Aby zamienić bajty na kilobajty, dzielisz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>kilobajty = bajty ÷ 1 024</strong>. W drugą stronę: <strong>bajty = kilobajty × 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: plik ma 51 200 bajtów. Obliczenie: 51 200 ÷ 1 024 = 50 KB. Mnożnik 1 024 bierze się stąd, że komputery liczą dwójkowo, a dwa do potęgi dziesiątej to dokładnie 1 024.</p><p class=\"text-mid\">Skąd 1 024, a nie 1 000? W systemie dziesiętnym (SI) 1 KB to 1 000 B i tak podają pojemność producenci nośników. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 KB to 1 024 B — formalnie nazywanego kibibajtem (KiB).</p>"
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Praktyczne wskazówki",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Dysk 1 TB (1 000 000 000 000 B) = 931,32 GiB w systemie 1024.</li><li>Załącznik Gmail: max 25 MB. Google Drive: 15 GB darmowej przestrzeni.</li><li>Zdjęcie RAW: 25–80 MB. Film 4K (1 min): ~375 MB.</li><li>1 bit = 1/8 bajta. 1 bajt = 8 bitów.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionTable",
-      "title": "System binarny (1024) vs System dziesiętny (1000) – porównanie",
-      "labelHeader": "Cecha",
-      "cols": ["System binarny (1024)", "System dziesiętny (1000)"],
+      "title": "Tabela przeliczeniowa bajtów na kilobajty",
+      "description": "Poniższa tabela pokazuje przeliczenie popularnych wartości w bajtach na kilobajty w systemie binarnym (÷1 024). Aby przeliczyć inną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Bajty",
+      "cols": ["Kilobajty"],
       "rows": [
+        { "label": "512 B", "values": ["0,5 KB"] },
+        { "label": "1 024 B", "values": ["1 KB"], "emphasis": true },
+        { "label": "2 048 B", "values": ["2 KB"], "emphasis": true },
+        { "label": "5 120 B", "values": ["5 KB"] },
+        { "label": "10 240 B", "values": ["10 KB"], "emphasis": true },
+        { "label": "20 480 B", "values": ["20 KB"] },
+        { "label": "51 200 B", "values": ["50 KB"] },
+        { "label": "102 400 B", "values": ["100 KB"], "emphasis": true },
+        { "label": "256 000 B", "values": ["250 KB"] },
+        { "label": "512 000 B", "values": ["500 KB"] },
+        { "label": "1 048 576 B", "values": ["1 024 KB"], "emphasis": true }
+      ],
+      "caption": "Przykład: 1 024 B ÷ 1 024 = 1 KB. Chcesz przeliczyć kilobajty na bajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się bajty na kilobajty?",
+      "description": "Rozmiary w bajtach spotkasz głównie w kontekstach technicznych.",
+      "items": [
         {
-          "label": "Mnożnik",
-          "values": ["1 024", "1 000"]
+          "icon": "RiFileTextLine",
+          "title": "Odczyt rozmiaru pliku",
+          "description": "Właściwości pliku, polecenia systemowe (na przykład ls -l) czy menedżery plików często podają rozmiar w surowych bajtach. Plik 51 200 B to 50 KB — po przeliczeniu od razu wiesz, jak duży naprawdę jest."
         },
         {
-          "label": "Standard",
-          "values": ["IEC (KiB, MiB, GiB)", "SI (KB, MB, GB)"]
+          "icon": "RiFileCodeLine",
+          "title": "Programowanie i API",
+          "description": "Odpowiedzi API, nagłówek Content-Length czy limity uploadu podaje się w bajtach. Przeliczenie na kilobajty ułatwia ocenę, czy odpowiedź 20 480 B (20 KB) mieści się w założonym budżecie danych."
         },
         {
-          "label": "Użycie",
-          "values": ["Systemy operacyjne", "Producenci dysków"]
+          "icon": "RiFileImageLine",
+          "title": "Małe pliki na stronie",
+          "description": "Favicon, ikony SVG, pliki JSON czy CSS liczą się w kilobajtach, ale narzędzia raportują je w bajtach. Przeliczenie pomaga pilnować wagi zasobów, które wpływają na szybkość ładowania witryny."
         },
         {
-          "label": "1 TB =",
-          "values": ["1 099 511 627 776 B", "1 000 000 000 000 B"]
-        },
-        {
-          "label": "Różnica",
-          "values": ["Większe jednostki", "Mniejsze jednostki"]
+          "icon": "RiGraduationCapLine",
+          "title": "Nauka informatyki",
+          "description": "Relacja bajt–kilobajt to podstawa zadań z informatyki. Konwerter pokazuje wprost, że 1 KB to 1 024 B, i pozwala szybko sprawdzić własne obliczenia."
         }
       ]
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Najczęściej zadawane pytania",
+      "title": "Najczęściej zadawane pytania o przeliczanie bajtów na kilobajty",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ile KB to 1 MB?",
-          "answer": "1 MB = 1 024 KB w systemie binarnym (IEC) lub 1 000 KB w systemie dziesiętnym (SI). Systemy operacyjne używają systemu binarnego, producenci dysków – dziesiętnego."
+          "question": "Ile bajtów ma 1 kilobajt?",
+          "answer": "1 kilobajt to 1 024 bajty w systemie binarnym, którego używa ten konwerter i systemy operacyjne. W systemie dziesiętnym (SI), stosowanym między innymi przez producentów nośników, 1 KB to 1 000 bajtów."
         },
         {
-          "question": "Dlaczego dysk 1 TB pokazuje 931 GB w Windows?",
-          "answer": "Producent liczy 1 TB = 1 000 000 000 000 B. System Windows liczy 1 GB = 1 073 741 824 B (system binarny), więc wynik to ok. 931 GB. Ta różnica rośnie z wielkością dysku i sięga 7,4% dla 1 TB."
+          "question": "Ile to 1024 bajty w KB?",
+          "answer": "1 024 bajty to dokładnie 1 KB. Obliczenie: 1 024 ÷ 1 024 = 1 KB. To bazowa relacja między bajtem a kilobajtem, dlatego sprawdza się ją najczęściej."
         },
         {
-          "question": "Ile miejsca zajmuje zdjęcie RAW?",
-          "answer": "JPG ze smartfona: 3–10 MB. RAW z aparatu (np. Canon, Nikon): 25–80 MB. PNG bez kompresji: zależy od rozdzielczości, ale 4K PNG to typowo 50–100 MB."
+          "question": "Jak przeliczyć bajty na kilobajty?",
+          "answer": "Podziel liczbę bajtów przez 1 024. Na przykład 51 200 B ÷ 1 024 = 50 KB. Konwerter robi to od razu po wpisaniu wartości, bez klikania jakiegokolwiek przycisku."
         },
         {
-          "question": "Jaka jest różnica między KB a KiB?",
-          "answer": "KB w systemie dziesiętnym = 1 000 B. KiB (kibibajt, standard IEC) = 1 024 B. W codziennym użyciu większość osób używa KB mając na myśli 1 024 B, choć technicznie oznacza to KiB."
+          "question": "Jak przeliczyć kilobajty na bajty?",
+          "answer": "Pomnóż liczbę kilobajtów przez 1 024. Na przykład 10 KB × 1 024 = 10 240 B. Kliknij Zmień kolejność, aby konwerter przeliczał w tę stronę."
         },
         {
-          "question": "Ile GB to 1 TB?",
-          "answer": "1 TB = 1 024 GB w systemie binarnym. W systemie dziesiętnym stosowanym przez producentów: 1 TB = 1 000 GB. Stąd bierze się różnica między deklarowaną a widoczną pojemnością dysku."
+          "question": "Czy 1 KB to 1000 czy 1024 bajty?",
+          "answer": "Zależy od systemu. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 KB to 1 024 B. Producenci nośników używają systemu dziesiętnego, w którym 1 KB to 1 000 B. Dlatego ta sama liczba bajtów może dać nieco inny wynik w KB."
         },
         {
-          "question": "Czy bit i bajt to to samo?",
-          "answer": "Nie. 1 bajt = 8 bitów. Prędkość internetu podają operatorzy w bitach (Mbps), a rozmiar plików mierzymy w bajtach (MB). Dlatego łącze 100 Mbps pozwala pobierać pliki z prędkością tylko 12,5 MB/s."
+          "question": "Czym różni się KB od KiB?",
+          "answer": "KiB (kibibajt, standard IEC) to zawsze dokładnie 1 024 B. KB w systemie SI to 1 000 B. W codziennym użyciu większość osób pisze KB, mając na myśli 1 024 B, czyli technicznie KiB. Ten konwerter liczy 1 024 B."
         },
         {
-          "question": "Ile miejsca zajmują dokumenty biurowe na Google Drive?",
-          "answer": "Dokument tekstowy Word: 20–100 KB. Prezentacja PowerPoint: 1–20 MB. Arkusz Excel: 50 KB–5 MB. Pliki edytowane bezpośrednio w Google Docs nie wliczają się do limitu 15 GB."
-        },
-        {
-          "question": "Jak polskie przepisy archiwizacyjne odnoszą się do rozmiaru plików?",
-          "answer": "Polskie przepisy o archiwizacji (m.in. ustawa o rachunkowości) nie określają limitów rozmiaru plików, ale wymagają czytelności i możliwości odtworzenia dokumentów. Zalecany format to PDF/A – jego rozmiar zależy od liczby stron i grafik."
+          "question": "Ile bitów ma bajt?",
+          "answer": "1 bajt to 8 bitów. Uważaj na zapis: KB oznacza kilobajty (rozmiar plików), a Kb — kilobity (często prędkość transmisji). To narzędzie liczy bajty i kilobajty, nie bity."
         }
       ]
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
-      "title": "Pomóż nam ulepszyć narzędzia",
-      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabeli lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "bajty na KB/MB/GB – Arteon",
-      "defaultSubject": "Feedback: bajty na KB/MB/GB"
+      "imageAlt": "Kontakt z Arteon Agency",
+      "defaultSubject": "Konwerter bajtów na kilobajty"
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "toolsCarousel",
-      "title": "Sprawdź inne narzędzia"
+      "title": "Inne przydatne konwertery jednostek"
     },
-    {
-      "type": "gap",
-      "size": "sm"
-    }
+    { "type": "gap", "size": "sm" }
   ]
 }
