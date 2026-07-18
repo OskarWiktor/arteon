@@ -5783,6 +5783,174 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'kbToB',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-kb-na-bajty',
+        title: 'kilobajty na bajty',
+        description:
+          'Przelicz kilobajty na bajty i odwrotnie. 1 KB to 1 024 bajty, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'kb-to-bytes-converter',
+        title: 'KB to bytes',
+        description:
+          'Convert kilobytes to bytes and back. 1 KB is 1,024 bytes, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'kb-in-bytes-umrechner',
+        title: 'KB in Bytes',
+        description:
+          'Kilobytes in Bytes umrechnen und zurück. 1 KB sind 1.024 Byte, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-ko-en-octets',
+        title: 'Ko en octets',
+        description:
+          'Convertissez des kilo-octets en octets et inversement. 1 Ko = 1 024 octets, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-kb-a-bytes',
+        title: 'KB a bytes',
+        description:
+          'Convierte kilobytes a bytes y al revés. 1 KB son 1.024 bytes, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-kb-para-bytes',
+        title: 'KB para bytes',
+        description:
+          'Converta kilobytes para bytes e ao contrário. 1 KB são 1.024 bytes, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-kb-in-byte',
+        title: 'KB in byte',
+        description:
+          'Converti kilobyte in byte e viceversa. 1 KB è 1.024 byte, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-kb-na-bajty',
+        title: 'kilobajty na bajty',
+        description:
+          'Převeď kilobajty na bajty a naopak. 1 KB je 1 024 bajtů, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'kbToMb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-kb-na-mb',
+        title: 'kilobajty na megabajty',
+        description:
+          'Przelicz kilobajty na megabajty i odwrotnie. 1 MB to 1 024 KB, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'kb-to-mb-converter',
+        title: 'KB to MB',
+        description:
+          'Convert kilobytes to megabytes and back. 1 MB is 1,024 KB, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'kb-in-mb-umrechner',
+        title: 'KB in MB',
+        description:
+          'Kilobytes in Megabytes umrechnen und zurück. 1 MB sind 1.024 KB, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-ko-en-mo',
+        title: 'Ko en Mo',
+        description:
+          'Convertissez des kilo-octets en méga-octets et inversement. 1 Mo = 1 024 Ko, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-kb-a-mb',
+        title: 'KB a MB',
+        description:
+          'Convierte kilobytes a megabytes y al revés. 1 MB son 1.024 KB, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-kb-para-mb',
+        title: 'KB para MB',
+        description:
+          'Converta kilobytes para megabytes e ao contrário. 1 MB são 1.024 KB, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-kb-in-mb',
+        title: 'KB in MB',
+        description:
+          'Converti kilobyte in megabyte e viceversa. 1 MB è 1.024 KB, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-kb-na-mb',
+        title: 'kilobajty na megabajty',
+        description:
+          'Převeď kilobajty na megabajty a naopak. 1 MB je 1 024 KB, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'mbToKb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-mb-na-kb',
+        title: 'megabajty na kilobajty',
+        description:
+          'Przelicz megabajty na kilobajty i odwrotnie. 1 MB to 1 024 KB, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'mb-to-kb-converter',
+        title: 'MB to KB',
+        description:
+          'Convert megabytes to kilobytes and back. 1 MB is 1,024 KB, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'mb-in-kb-umrechner',
+        title: 'MB in KB',
+        description:
+          'Megabytes in Kilobytes umrechnen und zurück. 1 MB sind 1.024 KB, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-mo-en-ko',
+        title: 'Mo en Ko',
+        description:
+          'Convertissez des méga-octets en kilo-octets et inversement. 1 Mo = 1 024 Ko, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-mb-a-kb',
+        title: 'MB a KB',
+        description:
+          'Convierte megabytes a kilobytes y al revés. 1 MB son 1.024 KB, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-mb-para-kb',
+        title: 'MB para KB',
+        description:
+          'Converta megabytes para kilobytes e ao contrário. 1 MB são 1.024 KB, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-mb-in-kb',
+        title: 'MB in KB',
+        description:
+          'Converti megabyte in kilobyte e viceversa. 1 MB è 1.024 KB, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-mb-na-kb',
+        title: 'megabajty na kilobajty',
+        description:
+          'Převeď megabajty na kilobajty a naopak. 1 MB je 1 024 KB, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
     key: 'unixTimestamp',
     section: 'jednostki',
     icon: RiRulerLine,

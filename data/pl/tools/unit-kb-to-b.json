@@ -1,0 +1,193 @@
+{
+  "toolKey": "kbToB",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter kilobajtów na bajty – przelicz KB na B",
+    "description": "Przelicz kilobajty na bajty i odwrotnie. 1 kilobajt to 1 024 bajty w systemie binarnym. Wpisz wartość, a wynik pojawi się natychmiast. Działa w przeglądarce, bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-kb-na-bajty"
+  },
+  "hero": {
+    "title": "Przelicz kilobajty na bajty",
+    "description": "Wpisz liczbę kilobajtów i od razu odczytaj wynik w bajtach. Kilobajt to 1 024 bajty w systemie binarnym, więc konwerter mnoży podaną liczbę przez 1 024. Przyciskiem Zmień kolejność przeliczysz też bajty na kilobajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-kb-na-bajty",
+      "label": "kilobajty na bajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter kilobajtów na bajty – przelicznik KB na B",
+      "alternateName": [
+        "Konwerter kilobajtów na bajty",
+        "Przelicznik kilobajtów na bajty",
+        "Kalkulator kilobajtów na bajty",
+        "Kilobajty na bajty",
+        "KB na B",
+        "Przelicz KB na bajty",
+        "Ile bajtów ma kilobajt",
+        "1 KB ile to bajtów",
+        "Bajty na kilobajty",
+        "B na KB",
+        "Konwerter KB na B",
+        "kb to bytes"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konwerter kilobajtów na bajty działający w przeglądarce bez rejestracji. Wpisz liczbę kilobajtów i natychmiast odczytaj wynik w bajtach. Przelicza w systemie binarnym, w którym 1 KB to 1 024 bajty.",
+      "featureList": [
+        "Przelicza kilobajty na bajty i bajty na kilobajty w systemie binarnym (1 KB = 1 024 B)",
+        "Konwersja działa w obie strony — przyciskiem Zmień kolejność przełączasz kierunek",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: bajty = kilobajty × 1 024",
+        "Działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć kilobajty na bajty?",
+      "description": "Krótka instrukcja użycia konwertera kilobajtów na bajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz liczbę kilobajtów",
+          "text": "W lewym polu wpisz liczbę kilobajtów, którą chcesz przeliczyć na bajty. Możesz użyć kropki lub przecinka jako separatora dziesiętnego."
+        },
+        {
+          "name": "Odczytaj wynik w bajtach",
+          "text": "Wynik w bajtach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania bajtów na kilobajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać kilobajty na bajty?",
+      "html": "<p class=\"text-mid mb-4\">Kilobajt to 1 024 bajty, a bajt to podstawowa jednostka rozmiaru danych. Rozmiar w kilobajtach jest wygodny do czytania, ale w kodzie, konfiguracji czy specyfikacji często potrzebujesz dokładnej liczby bajtów — i wtedy przeliczasz KB na B.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 KB to 1 024 B w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić kilobajty na bajty, mnożysz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 KB to 1 000 B — tak liczą między innymi producenci nośników. Ten konwerter używa systemu binarnego (1 024 B), zgodnego z tym, co pokazują Windows i macOS. Nie myl też bajtów z bitami: 1 bajt to 8 bitów.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter kilobajtów na bajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja kilobajtów na bajty? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden kilobajt to 1 024 bajty. Aby zamienić kilobajty na bajty, mnożysz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>bajty = kilobajty × 1 024</strong>. W drugą stronę: <strong>kilobajty = bajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: masz limit 50 KB i chcesz zapisać go w bajtach. Obliczenie: 50 × 1 024 = 51 200 B. Mnożnik 1 024 bierze się stąd, że komputery liczą dwójkowo, a dwa do potęgi dziesiątej to dokładnie 1 024.</p><p class=\"text-mid\">Skąd 1 024, a nie 1 000? W systemie dziesiętnym (SI) 1 KB to 1 000 B i tak podają pojemność producenci nośników. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 KB to 1 024 B — formalnie nazywanego kibibajtem (KiB).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa kilobajtów na bajty",
+      "description": "Poniższa tabela pokazuje przeliczenie popularnych wartości w kilobajtach na bajty w systemie binarnym (×1 024). Aby przeliczyć inną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Kilobajty",
+      "cols": ["Bajty"],
+      "rows": [
+        { "label": "0,5 KB", "values": ["512 B"] },
+        { "label": "1 KB", "values": ["1 024 B"], "emphasis": true },
+        { "label": "2 KB", "values": ["2 048 B"], "emphasis": true },
+        { "label": "5 KB", "values": ["5 120 B"] },
+        { "label": "10 KB", "values": ["10 240 B"], "emphasis": true },
+        { "label": "20 KB", "values": ["20 480 B"] },
+        { "label": "50 KB", "values": ["51 200 B"] },
+        { "label": "100 KB", "values": ["102 400 B"], "emphasis": true },
+        { "label": "250 KB", "values": ["256 000 B"] },
+        { "label": "500 KB", "values": ["512 000 B"] },
+        { "label": "1 024 KB", "values": ["1 048 576 B"], "emphasis": true }
+      ],
+      "caption": "Przykład: 1 KB × 1 024 = 1 024 B. Chcesz przeliczyć bajty na kilobajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się kilobajty na bajty?",
+      "description": "Dokładna liczba bajtów przydaje się głównie w kontekstach technicznych.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limity w kodzie i konfiguracji",
+          "description": "Wiele bibliotek i plików konfiguracyjnych przyjmuje limit rozmiaru w bajtach. Jeśli chcesz ustawić próg 50 KB, wpisujesz 51 200 B — konwerter podaje dokładną liczbę bez ręcznego liczenia."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Bufory i struktury danych",
+          "description": "Rozmiary buforów, pakietów czy rekordów podaje się w bajtach. Znając rozmiar w kilobajtach, przeliczasz go na dokładne bajty, na przykład 10 KB to 10 240 B."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Walidacja rozmiaru plików",
+          "description": "Walidator uploadu zwykle porównuje rozmiar w bajtach. Z limitu podanego w kilobajtach liczysz próg w bajtach, żeby reguła działała dokładnie tak, jak zakładasz."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Nauka informatyki",
+          "description": "Relacja bajt–kilobajt to podstawa zadań z informatyki. Konwerter pokazuje wprost, że 1 KB to 1 024 B, i pozwala szybko sprawdzić własne obliczenia."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie kilobajtów na bajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile bajtów ma 1 kilobajt?",
+          "answer": "1 kilobajt to 1 024 bajty w systemie binarnym, którego używa ten konwerter i systemy operacyjne. W systemie dziesiętnym (SI), stosowanym między innymi przez producentów nośników, 1 KB to 1 000 bajtów."
+        },
+        {
+          "question": "Ile to 1 KB w bajtach?",
+          "answer": "1 KB to dokładnie 1 024 bajty. Obliczenie: 1 × 1 024 = 1 024 B. To bazowa relacja między kilobajtem a bajtem, dlatego sprawdza się ją najczęściej."
+        },
+        {
+          "question": "Jak przeliczyć kilobajty na bajty?",
+          "answer": "Pomnóż liczbę kilobajtów przez 1 024. Na przykład 50 KB × 1 024 = 51 200 B. Konwerter robi to od razu po wpisaniu wartości, bez klikania jakiegokolwiek przycisku."
+        },
+        {
+          "question": "Jak przeliczyć bajty na kilobajty?",
+          "answer": "Podziel liczbę bajtów przez 1 024. Na przykład 51 200 B ÷ 1 024 = 50 KB. Kliknij Zmień kolejność, aby konwerter przeliczał w tę stronę."
+        },
+        {
+          "question": "Czy 1 KB to 1000 czy 1024 bajty?",
+          "answer": "Zależy od systemu. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 KB to 1 024 B. Producenci nośników używają systemu dziesiętnego, w którym 1 KB to 1 000 B. Dlatego ta sama liczba kilobajtów może dać nieco inny wynik w bajtach."
+        },
+        {
+          "question": "Ile bajtów mają 5, 10 i 100 KB?",
+          "answer": "5 KB to 5 120 B, 10 KB to 10 240 B, a 100 KB to 102 400 B. Każdą z tych wartości otrzymujesz, mnożąc liczbę kilobajtów przez 1 024."
+        },
+        {
+          "question": "Czym różni się KB od KiB?",
+          "answer": "KiB (kibibajt, standard IEC) to zawsze dokładnie 1 024 B. KB w systemie SI to 1 000 B. W codziennym użyciu większość osób pisze KB, mając na myśli 1 024 B, czyli technicznie KiB. Ten konwerter liczy 1 024 B."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabeli lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "defaultSubject": "Konwerter kilobajtów na bajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

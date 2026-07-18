@@ -1,0 +1,194 @@
+{
+  "toolKey": "mbToKb",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník megabajtů na kilobajty – převeď MB na KB",
+    "description": "Převeď megabajty na kilobajty a naopak. 1 MB je 1 024 KB v binárním systému. Zadej hodnotu a výsledek se objeví okamžitě. Běží v prohlížeči, bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-mb-na-kb"
+  },
+  "hero": {
+    "title": "Převeď megabajty na kilobajty",
+    "description": "Zadej počet megabajtů a rovnou si přečti výsledek v kilobajtech. Megabajt je 1 024 kilobajtů v binárním systému, proto převodník násobí zadanou hodnotu číslem 1 024. Tlačítkem Prohodit pořadí převedeš i kilobajty na megabajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-mb-na-kb",
+      "label": "megabajty na kilobajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník megabajtů na kilobajty – kalkulačka MB na KB",
+      "alternateName": [
+        "Převodník megabajtů na kilobajty",
+        "Kalkulačka megabajtů na kilobajty",
+        "MB na KB",
+        "Megabajty na kilobajty",
+        "mb to kb",
+        "Převeď MB na KB",
+        "Kolik KB má MB",
+        "Co je větší MB nebo KB",
+        "1 MB kolik je KB",
+        "Kilobajty na megabajty",
+        "KB na MB",
+        "mb to kb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník megabajtů na kilobajty, který běží v prohlížeči bez registrace. Zadej počet megabajtů a rovnou si přečti výsledek v kilobajtech. Používá binární systém, ve kterém je 1 MB rovno 1 024 KB.",
+      "featureList": [
+        "Převádí megabajty na kilobajty i kilobajty na megabajty v binárním systému (1 MB = 1 024 KB)",
+        "Převod funguje v obou směrech — tlačítko Prohodit pořadí přepíná směr",
+        "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
+        "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
+        "Přijímá tečku i čárku jako desetinný oddělovač",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
+        "Přesný vzorec je: kilobajty = megabajty × 1 024",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést megabajty na kilobajty?",
+      "description": "Krátký návod k použití převodníku megabajtů na kilobajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej počet megabajtů",
+          "text": "Do levého pole zadej počet megabajtů, které chceš převést na kilobajty. Můžeš použít tečku nebo čárku jako desetinný oddělovač."
+        },
+        {
+          "name": "Přečti výsledek v kilobajtech",
+          "text": "Výsledek v kilobajtech se objeví hned v poli vedle, vpravo. Tlačítkem Kopírovat výsledek jej přeneseš do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Prohodit pořadí a přejdeš k převodu kilobajtů na megabajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět megabajty na kilobajty?",
+      "html": "<p class=\"text-mid mb-4\">Megabajt je větší než kilobajt: 1 MB je 1 024 KB. Velikosti souborů se obvykle udávají v megabajtech, ale některé systémy, formuláře a limity očekávají hodnotu v kilobajtech — tehdy převádíš MB na KB.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 MB je 1 024 KB v binárním systému, který používají operační systémy i tento převodník. Pro převod megabajtů na kilobajty jejich počet vynásob číslem 1 024. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na dva systémy. V desítkovém systému (SI) je 1 MB rovno 1 000 KB — tak počítají například výrobci úložišť. Tento převodník používá binární systém (1 024 KB), stejně jako to, co ukazují Windows a macOS.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník megabajtů na kilobajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod megabajtů na kilobajty? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden megabajt je 1 024 kilobajtů. Pro převod megabajtů na kilobajty jejich počet vynásob číslem 1 024.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>kilobajty = megabajty × 1 024</strong>. Opačně: <strong>megabajty = kilobajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Příklad: soubor má 5 MB. Výpočet: 5 × 1 024 = 5 120 KB. Stejně tak 25 MB je 25 600 KB, protože každý megabajt se skládá z 1 024 kilobajtů.</p><p class=\"text-mid\">Který je větší? Megabajt. 1 MB je 1 024 KB, takže soubor 2 MB je přes dva tisíce krát větší než soubor 1 KB. To je častý zdroj záměn při porovnávání velikostí uvedených v různých jednotkách.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka megabajtů na kilobajty",
+      "description": "Následující tabulka převádí běžné hodnoty megabajtů na kilobajty v binárním systému (×1 024). Pro převod jiné hodnoty použij převodník výše.",
+      "labelHeader": "Megabajty",
+      "cols": ["Kilobajty"],
+      "rows": [
+        { "label": "0,5 MB", "values": ["512 KB"] },
+        { "label": "1 MB", "values": ["1 024 KB"], "emphasis": true },
+        { "label": "2 MB", "values": ["2 048 KB"] },
+        { "label": "5 MB", "values": ["5 120 KB"], "emphasis": true },
+        { "label": "10 MB", "values": ["10 240 KB"] },
+        { "label": "15 MB", "values": ["15 360 KB"] },
+        { "label": "20 MB", "values": ["20 480 KB"] },
+        { "label": "25 MB", "values": ["25 600 KB"], "emphasis": true },
+        { "label": "50 MB", "values": ["51 200 KB"] },
+        { "label": "100 MB", "values": ["102 400 KB"], "emphasis": true },
+        { "label": "500 MB", "values": ["512 000 KB"] },
+        { "label": "1 024 MB", "values": ["1 048 576 KB"], "emphasis": true }
+      ],
+      "caption": "Příklad: 1 MB × 1 024 = 1 024 KB. Chceš převést kilobajty na megabajty? Klikni na Prohodit pořadí v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí megabajty na kilobajty?",
+      "description": "Velikosti v megabajtech se převádějí na kilobajty hlavně u limitů a porovnání.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limity uváděné v KB",
+          "description": "Některé redakční systémy, nahrávací formuláře a konfigurační soubory uvádějí limit velikosti v kilobajtech. Když znáš velikost v megabajtech, převedeš ji na KB, například 2 MB je 2 048 KB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Porovnání s malými soubory",
+          "description": "Ikony, soubory CSS a JSON se počítají v kilobajtech, zatímco fotky a dokumenty v megabajtech. Převedení na kilobajty usnadní porovnání, například 1 MB je 1 024 KB vedle souboru 50 KB."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Přesná velikost v KB",
+          "description": "Někdy specifikace zdroje vyžaduje hodnotu v kilobajtech. Z velikosti 10 MB získáš přesně 10 240 KB, bez ručního násobení."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Co je větší: MB nebo KB",
+          "description": "Převodník jasně ukazuje, že megabajt je větší: 1 MB je 1 024 KB. To je nejčastější otázka, když jsou velikosti uvedeny v různých jednotkách."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu megabajtů na kilobajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik KB má 1 MB?",
+          "answer": "1 MB je 1 024 KB v binárním systému, který používá tento převodník a operační systémy. V desítkovém systému (SI), který používají mimo jiné výrobci úložišť, je 1 MB rovno 1 000 KB."
+        },
+        {
+          "question": "Co je větší, MB nebo KB?",
+          "answer": "Megabajt. 1 MB je 1 024 KB, takže megabajt je přes tisíc krát větší než kilobajt. Soubor 2 MB je větší než soubor 500 KB, i když číslo u KB vypadá větší."
+        },
+        {
+          "question": "Kolik je 1 MB v KB?",
+          "answer": "1 MB je přesně 1 024 KB. Výpočet: 1 × 1 024 = 1 024 KB. Je to základní vztah mezi megabajtem a kilobajtem, proto se hledá nejčastěji."
+        },
+        {
+          "question": "Jak převést megabajty na kilobajty?",
+          "answer": "Vynásob počet megabajtů číslem 1 024. Například 50 MB × 1 024 = 51 200 KB. Převodník to udělá hned, jakmile zadáš hodnotu, bez klikání na jakékoli tlačítko."
+        },
+        {
+          "question": "Kolik KB je 5, 25 a 100 MB?",
+          "answer": "5 MB je 5 120 KB, 25 MB je 25 600 KB a 100 MB je 102 400 KB. Každou z těchto hodnot získáš vynásobením počtu megabajtů číslem 1 024."
+        },
+        {
+          "question": "Jak převést kilobajty na megabajty?",
+          "answer": "Vyděl počet kilobajtů číslem 1 024. Například 5 120 KB ÷ 1 024 = 5 MB. Klikni na Prohodit pořadí, aby převodník počítal tímto směrem."
+        },
+        {
+          "question": "Je 1 MB rovno 1 000, nebo 1 024 KB?",
+          "answer": "Záleží na systému. Operační systémy a tento převodník používají binární systém, ve kterém je 1 MB rovno 1 024 KB. Výrobci úložišť používají desítkový systém, ve kterém je 1 MB rovno 1 000 KB. Proto stejný počet megabajtů může dát v kilobajtech mírně odlišný výsledek."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulce nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "defaultSubject": "Převodník megabajtů na kilobajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

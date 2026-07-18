@@ -1,0 +1,193 @@
+{
+  "toolKey": "kbToB",
+  "locale": "en",
+  "metadata": {
+    "title": "KB to bytes converter – convert KB to B",
+    "description": "Convert kilobytes to bytes and back. 1 kilobyte is 1,024 bytes in the binary system. Type a value and the result appears instantly. Runs in your browser with no sign-up.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/kb-to-bytes-converter"
+  },
+  "hero": {
+    "title": "Convert kilobytes to bytes",
+    "description": "Type a number of kilobytes and read the result in bytes straight away. A kilobyte is 1,024 bytes in the binary system, so the converter multiplies your value by 1,024. Use Swap order to convert bytes to kilobytes instead.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/kb-to-bytes-converter",
+      "label": "KB to bytes"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kilobytes to bytes converter – KB to B calculator",
+      "alternateName": [
+        "KB to bytes converter",
+        "Kilobytes to bytes converter",
+        "KB to B calculator",
+        "KB to bytes",
+        "kb to bytes",
+        "Convert KB to bytes",
+        "How many bytes in a kilobyte",
+        "1 KB in bytes",
+        "Bytes to kilobytes",
+        "B to KB",
+        "KB to B converter",
+        "kb to bytes conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Kilobytes to bytes converter that runs in your browser with no sign-up. Type a number of kilobytes and read the result in bytes instantly. It uses the binary system, where 1 KB is 1,024 bytes.",
+      "featureList": [
+        "Converts kilobytes to bytes and bytes to kilobytes in the binary system (1 KB = 1,024 B)",
+        "The conversion works both ways — the Swap order button switches the direction",
+        "The result appears instantly as you type, with no button to click",
+        "The Copy result button puts the finished value on your clipboard",
+        "Accepts both a dot and a comma as the decimal separator",
+        "Every calculation runs locally in your browser, so your data never leaves your device",
+        "The exact formula is: bytes = kilobytes × 1,024",
+        "Works on phone, tablet and computer with no installation"
+      ]
+    },
+    "howTo": {
+      "name": "How do you convert kilobytes to bytes?",
+      "description": "A short guide to using the kilobytes to bytes converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Type a number of kilobytes",
+          "text": "In the left field, type the number of kilobytes you want to convert to bytes. You can use a dot or a comma as the decimal separator."
+        },
+        {
+          "name": "Read the result in bytes",
+          "text": "The result in bytes appears immediately in the field on the right. The Copy result button puts it on your clipboard."
+        },
+        {
+          "name": "Swap the direction if you need to",
+          "text": "Click Swap order to move to converting bytes to kilobytes."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert kilobytes to bytes?",
+      "html": "<p class=\"text-mid mb-4\">A kilobyte is 1,024 bytes, and a byte is the basic unit of data size. A size in kilobytes is easy to read, but in code, configuration or a spec you often need the exact number of bytes — and that is when you convert KB to B.</p><p class=\"text-mid mb-4\">The relationship is fixed: 1 KB is 1,024 B in the binary system, which operating systems and this converter use. To turn kilobytes into bytes, multiply their number by 1,024. The converter does this the moment you type a value.</p><p class=\"text-mid\">Watch out for two systems. In the decimal system (SI), 1 KB is 1,000 B — that is how storage makers count, for example. This converter uses the binary system (1,024 B), matching what Windows and macOS show. Do not mix bytes up with bits either: 1 byte is 8 bits.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Free kilobytes to bytes converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does the kilobytes to bytes conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">The conversion rests on a fixed relationship: one kilobyte is 1,024 bytes. To turn kilobytes into bytes, multiply their number by 1,024.</p><p class=\"text-mid mb-4\">Full formula: <strong>bytes = kilobytes × 1,024</strong>. The other way: <strong>kilobytes = bytes ÷ 1,024</strong>.</p><p class=\"text-mid mb-4\">Example: you have a 50 KB limit and want it in bytes. Calculation: 50 × 1,024 = 51,200 B. The multiplier 1,024 comes from the fact that computers count in binary, and two to the power of ten is exactly 1,024.</p><p class=\"text-mid\">Why 1,024 and not 1,000? In the decimal system (SI), 1 KB is 1,000 B, and that is how storage makers state capacity. Operating systems and this converter use the binary system, where 1 KB is 1,024 B — formally called a kibibyte (KiB).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Kilobytes to bytes conversion table",
+      "description": "The table below converts common kilobyte values into bytes in the binary system (×1,024). To convert another value, use the converter above.",
+      "labelHeader": "Kilobytes",
+      "cols": ["Bytes"],
+      "rows": [
+        { "label": "0.5 KB", "values": ["512 B"] },
+        { "label": "1 KB", "values": ["1,024 B"], "emphasis": true },
+        { "label": "2 KB", "values": ["2,048 B"], "emphasis": true },
+        { "label": "5 KB", "values": ["5,120 B"] },
+        { "label": "10 KB", "values": ["10,240 B"], "emphasis": true },
+        { "label": "20 KB", "values": ["20,480 B"] },
+        { "label": "50 KB", "values": ["51,200 B"] },
+        { "label": "100 KB", "values": ["102,400 B"], "emphasis": true },
+        { "label": "250 KB", "values": ["256,000 B"] },
+        { "label": "500 KB", "values": ["512,000 B"] },
+        { "label": "1,024 KB", "values": ["1,048,576 B"], "emphasis": true }
+      ],
+      "caption": "Example: 1 KB × 1,024 = 1,024 B. Want to convert bytes to kilobytes? Click Swap order in the converter above."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do people most often convert kilobytes to bytes?",
+      "description": "An exact number of bytes is needed mostly in technical contexts.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limits in code and config",
+          "description": "Many libraries and config files take a size limit in bytes. If you want to set a 50 KB threshold, you enter 51,200 B — the converter gives the exact number without manual math."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Buffers and data structures",
+          "description": "Buffer, packet and record sizes are given in bytes. Knowing the size in kilobytes, you convert it to exact bytes, for example 10 KB is 10,240 B."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "File size validation",
+          "description": "An upload validator usually compares the size in bytes. From a limit given in kilobytes you work out the threshold in bytes, so the rule behaves exactly as you intend."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Learning computing",
+          "description": "The byte–kilobyte relationship is the basis of many computing exercises. The converter shows plainly that 1 KB is 1,024 B and lets you check your own calculations quickly."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting kilobytes to bytes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many bytes are in 1 kilobyte?",
+          "answer": "1 kilobyte is 1,024 bytes in the binary system, which this converter and operating systems use. In the decimal system (SI), used by storage makers among others, 1 KB is 1,000 bytes."
+        },
+        {
+          "question": "How much is 1 KB in bytes?",
+          "answer": "1 KB is exactly 1,024 bytes. Calculation: 1 × 1,024 = 1,024 B. This is the base relationship between the kilobyte and the byte, which is why it is looked up most often."
+        },
+        {
+          "question": "How do you convert kilobytes to bytes?",
+          "answer": "Multiply the number of kilobytes by 1,024. For example, 50 KB × 1,024 = 51,200 B. The converter does this the moment you type a value, with no button to click."
+        },
+        {
+          "question": "How do you convert bytes to kilobytes?",
+          "answer": "Divide the number of bytes by 1,024. For example, 51,200 B ÷ 1,024 = 50 KB. Click Swap order to have the converter work in this direction."
+        },
+        {
+          "question": "Is 1 KB 1,000 or 1,024 bytes?",
+          "answer": "It depends on the system. Operating systems and this converter use the binary system, where 1 KB is 1,024 B. Storage makers use the decimal system, where 1 KB is 1,000 B. That is why the same number of kilobytes can give a slightly different result in bytes."
+        },
+        {
+          "question": "How many bytes are in 5, 10 and 100 KB?",
+          "answer": "5 KB is 5,120 B, 10 KB is 10,240 B, and 100 KB is 102,400 B. You get each of these by multiplying the number of kilobytes by 1,024."
+        },
+        {
+          "question": "What is the difference between KB and KiB?",
+          "answer": "KiB (kibibyte, the IEC standard) is always exactly 1,024 B. KB in the SI system is 1,000 B. In everyday use most people write KB while meaning 1,024 B, which is technically KiB. This converter uses 1,024 B."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Have a question or suggestion?",
+      "description": "If you have spotted an error in the table or have an idea to improve the converter, write to us. We reply to every message.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Contact Arteon Agency",
+      "defaultSubject": "Kilobytes to bytes converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

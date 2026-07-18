@@ -265,6 +265,16 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     it: 'Kilobyte',
     cs: 'Kilobajty',
   },
+  megabytes: {
+    pl: 'Megabajty',
+    en: 'Megabytes',
+    de: 'Megabytes',
+    es: 'Megabytes',
+    fr: 'Mégaoctets',
+    pt: 'Megabytes',
+    it: 'Megabyte',
+    cs: 'Megabajty',
+  },
   dateTime: {
     pl: 'Data i czas',
     en: 'Date and time',
