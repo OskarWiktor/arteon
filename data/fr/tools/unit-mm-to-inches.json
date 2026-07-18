@@ -283,7 +283,7 @@
       "title": "Vous avez une question ou une suggestion ?",
       "description": "Si vous constatez une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, contactez-nous. Nous répondons à chaque message.",
       "imageAlt": "Contacter Arteon Agency",
-      "subject": "Convertisseur mm en pouces"
+      "defaultSubject": "Convertisseur mm en pouces"
     },
     { "type": "gap", "variant": "line" },
     {

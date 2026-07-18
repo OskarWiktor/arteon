@@ -283,7 +283,7 @@
       "title": "Masz pytanie lub sugestię?",
       "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
       "imageAlt": "Kontakt z Arteon Agency",
-      "subject": "Konwerter mm na cale"
+      "defaultSubject": "Konwerter mm na cale"
     },
     { "type": "gap", "variant": "line" },
     {

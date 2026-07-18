@@ -538,7 +538,7 @@
       "title": "¿Tienes alguna pregunta o sugerencia?",
       "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contactar con Arteon Agency",
-      "subject": "Convertidor kg a libras"
+      "defaultSubject": "Convertidor kg a libras"
     },
     {
       "type": "gap",

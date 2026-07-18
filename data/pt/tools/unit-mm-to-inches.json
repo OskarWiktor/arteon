@@ -283,7 +283,7 @@
       "title": "Tem alguma pergunta ou sugestão?",
       "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, contacte-nos. Respondemos a todas as mensagens.",
       "imageAlt": "Contacto com Arteon Agency",
-      "subject": "Conversor mm para polegadas"
+      "defaultSubject": "Conversor mm para polegadas"
     },
     { "type": "gap", "variant": "line" },
     {

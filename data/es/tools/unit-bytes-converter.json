@@ -2,14 +2,14 @@
   "toolKey": "bytesConverter",
   "locale": "es",
   "metadata": {
-    "title": "Convertidor de bytes – KB, MB, GB, TB",
-    "description": "Convierte entre bytes, kilobytes, megabytes, gigabytes y terabytes. Soporta unidades binarias y decimales.",
+    "title": "Convertidor de bytes a KB – convierte B a KB",
+    "description": "Convierte bytes a kilobytes y al revés. 1 kilobyte son 1.024 bytes en el sistema binario. Escribe un valor y el resultado aparece al instante. Funciona en el navegador, sin registro.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
-    "path": "/es/herramientas/convertidor-bytes"
+    "path": "/es/herramientas/convertidor-bytes-a-kb"
   },
   "hero": {
-    "title": "Convertir bytes, KB, MB, GB, TB",
-    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "title": "Convierte bytes a kilobytes",
+    "description": "Escribe un número de bytes y lee el resultado en kilobytes al instante. Un kilobyte son 1.024 bytes en el sistema binario, así que el convertidor divide tu valor entre 1.024. Usa Cambiar orden para convertir kilobytes a bytes.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
@@ -18,247 +18,176 @@
       "label": "Herramientas"
     },
     "third": {
-      "href": "/es/herramientas/convertidor-bytes",
-      "label": "Convertidor de bytes"
+      "href": "/es/herramientas/convertidor-bytes-a-kb",
+      "label": "bytes a KB"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertidor de bytes – KB, MB, GB, TB",
-      "alternateName": ["Convertir bytes, KB, MB, GB, TB"],
+      "name": "Convertidor de bytes a kilobytes – calculadora B a KB",
+      "alternateName": [
+        "Convertidor de bytes a KB",
+        "Convertidor de bytes a kilobytes",
+        "Calculadora de bytes a KB",
+        "Bytes a KB",
+        "b to kb",
+        "Convierte bytes a KB",
+        "Cuántos bytes tiene un kilobyte",
+        "1024 bytes en KB",
+        "Kilobytes a bytes",
+        "KB a B",
+        "Convertidor B a KB",
+        "bytes to kb"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Convierte entre bytes, kilobytes, megabytes, gigabytes y terabytes. Soporta unidades binarias y decimales.",
+      "description": "Convertidor de bytes a kilobytes que funciona en el navegador sin registro. Escribe un número de bytes y lee el resultado en kilobytes al instante. Usa el sistema binario, en el que 1 KB son 1.024 bytes.",
       "featureList": [
-        "Conversión bidireccional en tiempo real",
-        "Todos los convertidores en un solo lugar",
-        "Copiar resultado al portapapeles",
-        "Cálculo local en el navegador"
+        "Convierte bytes a kilobytes y kilobytes a bytes en el sistema binario (1 KB = 1.024 B)",
+        "La conversión funciona en ambos sentidos: el botón Cambiar orden invierte la dirección",
+        "El resultado aparece al instante mientras escribes, sin pulsar ningún botón",
+        "Con el botón Copiar resultado llevas el valor listo al portapapeles",
+        "Admite tanto el punto como la coma como separador decimal",
+        "Todos los cálculos se hacen localmente en el navegador, tus datos no salen del dispositivo",
+        "La fórmula exacta es: kilobytes = bytes ÷ 1.024",
+        "Funciona en el móvil, la tableta y el ordenador sin instalar nada"
       ]
     },
     "howTo": {
-      "name": "Cómo usar el convertidor",
-      "description": "Guía rápida para usar el convertidor.",
+      "name": "¿Cómo convertir bytes a kilobytes?",
+      "description": "Guía breve para usar el convertidor de bytes a kilobytes.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Introducir valor",
-          "text": "Escriba un número en el campo de entrada de la izquierda."
+          "name": "Escribe un número de bytes",
+          "text": "En el campo de la izquierda, escribe el número de bytes que quieres convertir a kilobytes. Puedes usar el punto o la coma como separador decimal."
         },
         {
-          "name": "Leer el resultado",
-          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+          "name": "Lee el resultado en kilobytes",
+          "text": "El resultado en kilobytes aparece enseguida en el campo de al lado, a la derecha. Con el botón Copiar resultado lo llevas al portapapeles."
         },
         {
-          "name": "Copiar o invertir",
-          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+          "name": "Invierte el sentido si lo necesitas",
+          "text": "Pulsa Cambiar orden para pasar a convertir kilobytes a bytes."
         }
       ]
     }
   },
   "contentBlocks": [
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionBasic",
-      "title": "¿Cuándo necesitas convertir bytes?",
-      "html": "<p class=\"text-mid mb-4\">El almacenamiento digital se mide en bytes y sus múltiplos: kilobyte (KB), megabyte (MB), gigabyte (GB) y terabyte (TB). Hay dos sistemas: decimal (1 KB = 1.000 bytes) y binario (1 KiB = 1.024 bytes).</p><p class=\"text-mid mb-4\">Los fabricantes de almacenamiento usan unidades decimales (un disco de “500 GB” = 500.000.000.000 bytes), mientras que los sistemas operativos usan unidades binarias (muestran ~465 GiB para el mismo disco).</p><p class=\"text-mid mb-4\">Tamaños de archivo, RAM, velocidades de red y capacidad de almacenamiento usan diferentes convenciones. Este convertidor maneja ambos sistemas.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "title": "¿Para qué convertir bytes a kilobytes?",
+      "html": "<p class=\"text-mid mb-4\">El byte es la unidad básica del tamaño de datos, y un kilobyte son 1.024 bytes. Los tamaños en bytes aparecen en las propiedades de un archivo, en la salida de comandos del sistema y en las respuestas de una API — al convertirlos a kilobytes se leen y comparan con más facilidad.</p><p class=\"text-mid mb-4\">La relación es fija: 1 KB son 1.024 B en el sistema binario, que usan los sistemas operativos y este convertidor. Para pasar de bytes a kilobytes, divides su número entre 1.024. El convertidor lo hace en cuanto escribes un valor.</p><p class=\"text-mid\">Cuidado con dos sistemas. En el sistema decimal (SI), 1 KB son 1.000 B — así cuentan, por ejemplo, los fabricantes de almacenamiento. Este convertidor usa el sistema binario (1.024 B), igual que lo que muestran Windows y macOS. No confundas tampoco los bytes con los bits: 1 byte son 8 bits.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
-      "imageAlt": "Convertidor de bytes – KB, MB, GB, TB – Arteon"
+      "imageAlt": "Convertidor gratuito de bytes a kilobytes – Arteon"
     },
-    {
-      "type": "gap",
-      "size": "xs"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "¿Cómo usar el convertidor?",
-      "grid": "three",
-      "items": [
-        {
-          "title": "1. Introduce un valor",
-          "description": "Escribe un número en el campo de entrada. Puedes usar punto o coma como separador decimal.",
-          "icon": "RiInputMethodLine"
-        },
-        {
-          "title": "2. Lee el resultado",
-          "description": "El resultado de la conversión aparece instantáneamente en el campo contiguo.",
-          "icon": "RiLoopLeftLine"
-        },
-        {
-          "title": "3. Copia o invierte",
-          "description": "Haz clic en Copiar resultado o usa el botón Invertir para convertir en dirección opuesta.",
-          "icon": "RiClipboardLine"
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "¿Cuándo es útil este convertidor?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiHardDriveLine",
-          "title": "Capacidad de almacenamiento",
-          "description": "Compara almacenamiento anunciado vs real: un disco de “1 TB” muestra 931 GiB en Windows."
-        },
-        {
-          "icon": "RiUploadCloudLine",
-          "title": "Transferencia de archivos",
-          "description": "Calcula tiempos de transferencia: velocidades de red usan bits (Mbps), archivos usan bytes."
-        },
-        {
-          "icon": "RiServerLine",
-          "title": "Almacenamiento en la nube",
-          "description": "Planifica costes de almacenamiento en la nube entendiendo cuántos GB consumen tus archivos."
-        },
-        {
-          "icon": "RiSmartphoneLine",
-          "title": "Programación",
-          "description": "Búferes, asignación de memoria y estructuras de datos requieren cálculos precisos de bytes."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "¿Qué hace diferente a este convertidor?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Privacidad total",
-          "description": "Todos los cálculos se ejecutan localmente en tu navegador. Ningún dato se envía a ningún servidor."
-        },
-        {
-          "icon": "RiTimeLine",
-          "title": "Resultados en tiempo real",
-          "description": "El resultado se actualiza instantáneamente mientras escribes, sin necesidad de pulsar ningún botón."
-        },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Conversión bidireccional",
-          "description": "El botón Invertir te permite convertir en ambas direcciones con un solo clic."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabla de referencia",
-          "description": "Una tabla con valores de conversión comunes y descripciones contextuales."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "size": "xs" },
     {
       "type": "sectionInfo",
-      "title": "¿Cómo funciona la conversión de bytes?",
-      "html": "<p class=\"text-mid mb-4\">En el sistema decimal (SI): 1 KB = 1.000 bytes, 1 MB = 1.000 KB, 1 GB = 1.000 MB, 1 TB = 1.000 GB. Cada nivel multiplica por 1.000.</p><p class=\"text-mid mb-4\">En el sistema binario (IEC): 1 KiB = 1.024 bytes, 1 MiB = 1.024 KiB, 1 GiB = 1.024 MiB. Cada nivel multiplica por 1.024.</p><p class=\"text-mid\">La diferencia crece con el tamaño: 1 TB (decimal) = 0,909 TiB (binario).</p>"
+      "title": "¿Cómo funciona la conversión de bytes a kilobytes? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión se basa en una relación fija: un kilobyte son 1.024 bytes. Para pasar de bytes a kilobytes, divides su número entre 1.024.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>kilobytes = bytes ÷ 1.024</strong>. Al revés: <strong>bytes = kilobytes × 1.024</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: un archivo tiene 51.200 bytes. Cálculo: 51.200 ÷ 1.024 = 50 KB. El multiplicador 1.024 procede de que los ordenadores cuentan en binario, y dos elevado a diez es exactamente 1.024.</p><p class=\"text-mid\">¿Por qué 1.024 y no 1.000? En el sistema decimal (SI), 1 KB son 1.000 B, y así indican la capacidad los fabricantes de almacenamiento. Los sistemas operativos y este convertidor usan el sistema binario, en el que 1 KB son 1.024 B — formalmente llamado kibibyte (KiB).</p>"
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "¿Cómo funciona la conversión de bytes?",
-      "html": "<p class=\"text-mid mb-4\">En el sistema decimal (SI): 1 KB = 1.000 bytes, 1 MB = 1.000 KB, 1 GB = 1.000 MB, 1 TB = 1.000 GB. Cada nivel multiplica por 1.000.</p><p class=\"text-mid mb-4\">En el sistema binario (IEC): 1 KiB = 1.024 bytes, 1 MiB = 1.024 KiB, 1 GiB = 1.024 MiB. Cada nivel multiplica por 1.024.</p><p class=\"text-mid\">La diferencia crece con el tamaño: 1 TB (decimal) = 0,909 TiB (binario).</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionTable",
-      "title": "Decimal vs Binario – comparación",
-      "labelHeader": "Característica",
-      "cols": ["Decimal (SI)", "Binario (IEC)"],
+      "title": "Tabla de conversión de bytes a kilobytes",
+      "description": "La tabla siguiente convierte valores habituales de bytes a kilobytes en el sistema binario (÷1.024). Para convertir otro valor, usa el convertidor de arriba.",
+      "labelHeader": "Bytes",
+      "cols": ["Kilobytes"],
       "rows": [
+        { "label": "512 B", "values": ["0,5 KB"] },
+        { "label": "1.024 B", "values": ["1 KB"], "emphasis": true },
+        { "label": "2.048 B", "values": ["2 KB"], "emphasis": true },
+        { "label": "5.120 B", "values": ["5 KB"] },
+        { "label": "10.240 B", "values": ["10 KB"], "emphasis": true },
+        { "label": "20.480 B", "values": ["20 KB"] },
+        { "label": "51.200 B", "values": ["50 KB"] },
+        { "label": "102.400 B", "values": ["100 KB"], "emphasis": true },
+        { "label": "256.000 B", "values": ["250 KB"] },
+        { "label": "512.000 B", "values": ["500 KB"] },
+        { "label": "1.048.576 B", "values": ["1.024 KB"], "emphasis": true }
+      ],
+      "caption": "Ejemplo: 1.024 B ÷ 1.024 = 1 KB. ¿Quieres convertir kilobytes a bytes? Pulsa Cambiar orden en el convertidor de arriba."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierte bytes a kilobytes con más frecuencia?",
+      "description": "Los tamaños en bytes aparecen sobre todo en contextos técnicos.",
+      "items": [
         {
-          "label": "Multiplicador",
-          "values": ["1.000", "1.024"]
+          "icon": "RiFileTextLine",
+          "title": "Leer el tamaño de un archivo",
+          "description": "Las propiedades de un archivo, los comandos del sistema (como ls -l) y los gestores de archivos suelen indicar el tamaño en bytes en bruto. Un archivo de 51.200 B son 50 KB — tras la conversión sabes de un vistazo lo grande que es de verdad."
         },
         {
-          "label": "Unidades",
-          "values": ["KB, MB, GB, TB", "KiB, MiB, GiB, TiB"]
+          "icon": "RiFileCodeLine",
+          "title": "Programación y API",
+          "description": "Las respuestas de una API, la cabecera Content-Length y los límites de subida se dan en bytes. Convertir a kilobytes facilita valorar si una respuesta de 20.480 B (20 KB) cabe en tu presupuesto de datos."
         },
         {
-          "label": "Usado por",
-          "values": [
-            "Fabricantes de almacenamiento",
-            "Sistemas operativos, RAM"
-          ]
+          "icon": "RiFileImageLine",
+          "title": "Archivos pequeños en una web",
+          "description": "Los favicon, los iconos SVG y los archivos JSON y CSS se miden en kilobytes, pero las herramientas los indican en bytes. Convertir ayuda a vigilar el peso de los recursos, que influye en la velocidad de carga del sitio."
         },
         {
-          "label": "1 TB equivale a",
-          "values": ["1.000.000.000.000 bytes", "1.099.511.627.776 bytes"]
-        },
-        {
-          "label": "Diferencia en 1 TB",
-          "values": ["1 TB", "0,909 TiB"]
+          "icon": "RiGraduationCapLine",
+          "title": "Aprender informática",
+          "description": "La relación entre byte y kilobyte es la base de muchos ejercicios de informática. El convertidor muestra con claridad que 1 KB son 1.024 B y te deja comprobar tus propios cálculos rápido."
         }
       ]
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Preguntas frecuentes",
+      "title": "Preguntas frecuentes sobre la conversión de bytes a kilobytes",
       "openByDefault": 1,
       "items": [
         {
-          "question": "¿Cuántos MB es 1 GB?",
-          "answer": "1 GB = 1.000 MB (decimal) o 1 GiB = 1.024 MiB (binario)."
+          "question": "¿Cuántos bytes tiene 1 kilobyte?",
+          "answer": "1 kilobyte son 1.024 bytes en el sistema binario, que usan este convertidor y los sistemas operativos. En el sistema decimal (SI), usado entre otros por los fabricantes de almacenamiento, 1 KB son 1.000 bytes."
         },
         {
-          "question": "¿Por qué mi disco muestra menos espacio?",
-          "answer": "Los fabricantes usan unidades decimales (1 TB = 1.000.000.000.000 bytes), pero tu SO usa binarias (1 TiB = 1.099.511.627.776 bytes). Un disco de “1 TB” muestra ~931 GiB."
+          "question": "¿Cuánto son 1024 bytes en KB?",
+          "answer": "1.024 bytes son exactamente 1 KB. Cálculo: 1.024 ÷ 1.024 = 1 KB. Es la relación base entre el byte y el kilobyte, por eso es la más consultada."
         },
         {
-          "question": "¿Cuántas fotos caben en 1 GB?",
-          "answer": "Aprox. 200–300 fotos de 3–5 MB (smartphone 12 MP). Fotos RAW (25–50 MB) caben 20–40 por GB."
+          "question": "¿Cómo convertir bytes a kilobytes?",
+          "answer": "Divide el número de bytes entre 1.024. Por ejemplo, 51.200 B ÷ 1.024 = 50 KB. El convertidor lo hace en cuanto escribes un valor, sin pulsar ningún botón."
         },
         {
-          "question": "¿Los cálculos se realizan localmente?",
-          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+          "question": "¿Cómo convertir kilobytes a bytes?",
+          "answer": "Multiplica el número de kilobytes por 1.024. Por ejemplo, 10 KB × 1.024 = 10.240 B. Pulsa Cambiar orden para que el convertidor trabaje en este sentido."
+        },
+        {
+          "question": "¿1 KB son 1.000 o 1.024 bytes?",
+          "answer": "Depende del sistema. Los sistemas operativos y este convertidor usan el sistema binario, en el que 1 KB son 1.024 B. Los fabricantes de almacenamiento usan el sistema decimal, en el que 1 KB son 1.000 B. Por eso el mismo número de bytes puede dar un resultado algo distinto en KB."
+        },
+        {
+          "question": "¿En qué se diferencian KB y KiB?",
+          "answer": "KiB (kibibyte, el estándar IEC) son siempre exactamente 1.024 B. KB en el sistema SI son 1.000 B. En el uso diario la mayoría escribe KB queriendo decir 1.024 B, que técnicamente es KiB. Este convertidor usa 1.024 B."
+        },
+        {
+          "question": "¿Cuántos bits tiene un byte?",
+          "answer": "1 byte son 8 bits. Fíjate en la notación: KB significa kilobytes (tamaño de archivo), mientras que Kb significa kilobits (a menudo velocidad de transmisión). Esta herramienta trabaja con bytes y kilobytes, no con bits."
         }
       ]
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
-      "title": "Ayúdanos a mejorar nuestras herramientas",
-      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "title": "¿Tienes una pregunta o sugerencia?",
+      "description": "Si has visto un error en la tabla o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
-      "imageAlt": "bajty na KB/MB/GB – Arteon",
-      "defaultSubject": "Feedback: bytes-converter"
+      "imageAlt": "Contacto con Arteon Agency",
+      "defaultSubject": "Convertidor de bytes a kilobytes"
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "toolsCarousel",
-      "title": "Más herramientas gratuitas"
+      "title": "Otros convertidores de unidades útiles"
     },
-    {
-      "type": "gap",
-      "size": "sm"
-    }
+    { "type": "gap", "size": "sm" }
   ]
 }

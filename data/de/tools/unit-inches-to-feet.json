@@ -430,7 +430,7 @@
       "title": "Haben Sie eine Frage oder einen Vorschlag?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdeckt haben oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt zu Arteon Agency",
-      "subject": "Umrechner Zoll in Fuß"
+      "defaultSubject": "Umrechner Zoll in Fuß"
     },
     {
       "type": "gap",

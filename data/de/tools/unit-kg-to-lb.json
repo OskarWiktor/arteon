@@ -546,7 +546,7 @@
       "title": "Haben Sie eine Frage oder einen Vorschlag?",
       "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
       "imageAlt": "Kontakt mit Arteon Agency",
-      "subject": "Kg-in-Pfund-Umrechner"
+      "defaultSubject": "Kg-in-Pfund-Umrechner"
     },
     {
       "type": "gap",

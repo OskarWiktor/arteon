@@ -265,7 +265,7 @@
       "title": "¿Tienes alguna pregunta o sugerencia?",
       "description": "Si has visto un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a todos los mensajes.",
       "imageAlt": "Contacto con Arteon Agency",
-      "subject": "Convertidor de pies a metros"
+      "defaultSubject": "Convertidor de pies a metros"
     },
     { "type": "gap", "variant": "line" },
     {

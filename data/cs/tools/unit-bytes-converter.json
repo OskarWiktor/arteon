@@ -2,14 +2,14 @@
   "toolKey": "bytesConverter",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník bytes na KB, MB, GB, TB",
-    "description": "Převést bytes na KB, MB, GB, TB a naopak. Užitečné pro výpočetní techniku a správu dat. Bez registrace.",
+    "title": "Převodník bajtů na kilobajty – převeď B na KB",
+    "description": "Převeď bajty na kilobajty a naopak. 1 kilobajt je 1 024 bajtů v binárním systému. Zadej hodnotu a výsledek se objeví okamžitě. Běží v prohlížeči, bez registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
-    "path": "/cs/nastroje/prevodnik-bajtu"
+    "path": "/cs/nastroje/prevodnik-bajtu-na-kb"
   },
   "hero": {
-    "title": "Převést bytes na KB, MB, GB, TB",
-    "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
+    "title": "Převeď bajty na kilobajty",
+    "description": "Zadej počet bajtů a rovnou si přečti výsledek v kilobajtech. Kilobajt je 1 024 bajtů v binárním systému, proto převodník dělí zadanou hodnotu číslem 1 024. Tlačítkem Prohodit pořadí převedeš i kilobajty na bajty.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -18,240 +18,176 @@
       "label": "Nástroje"
     },
     "third": {
-      "href": "/cs/nastroje/prevodnik-bajtu",
-      "label": "Převodník bytů"
+      "href": "/cs/nastroje/prevodnik-bajtu-na-kb",
+      "label": "bajty na kilobajty"
     }
   },
   "schemas": {
     "software": {
-      "name": "Převodník bytes na KB, MB, GB, TB",
-      "alternateName": ["Převést bytes na KB, MB, GB, TB"],
+      "name": "Převodník bajtů na kilobajty – kalkulačka B na KB",
+      "alternateName": [
+        "Převodník bajtů na kilobajty",
+        "Kalkulačka bajtů na kilobajty",
+        "B na KB",
+        "Bajty na kilobajty",
+        "b to kb",
+        "Převeď bajty na KB",
+        "Kolik bajtů má kilobajt",
+        "1024 bajtů kolik je KB",
+        "Kilobajty na bajty",
+        "KB na B",
+        "Převodník B na KB",
+        "bytes to kb"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Převést bytes na KB, MB, GB, TB a naopak. Užitečné pro výpočetní techniku a správu dat. Bez registrace.",
+      "description": "Převodník bajtů na kilobajty, který běží v prohlížeči bez registrace. Zadej počet bajtů a rovnou si přečti výsledek v kilobajtech. Používá binární systém, ve kterém je 1 KB rovno 1 024 bajtům.",
       "featureList": [
-        "Obousměrná konverze v reálném čase",
-        "Všechny převodníky na jednom místě",
-        "Kopírování výsledku do schránky",
-        "Lokální výpočet v prohlížeči"
+        "Převádí bajty na kilobajty i kilobajty na bajty v binárním systému (1 KB = 1 024 B)",
+        "Převod funguje v obou směrech — tlačítko Prohodit pořadí přepíná směr",
+        "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
+        "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
+        "Přijímá tečku i čárku jako desetinný oddělovač",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
+        "Přesný vzorec je: kilobajty = bajty ÷ 1 024",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
       ]
     },
     "howTo": {
-      "name": "Jak používat převodník",
-      "description": "Rychlý průvodce použitím převodníku.",
+      "name": "Jak převést bajty na kilobajty?",
+      "description": "Krátký návod k použití převodníku bajtů na kilobajty.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Zadat hodnotu",
-          "text": "Zadejte číslo do vstupního pole vlevo."
+          "name": "Zadej počet bajtů",
+          "text": "Do levého pole zadej počet bajtů, které chceš převést na kilobajty. Můžeš použít tečku nebo čárku jako desetinný oddělovač."
         },
         {
-          "name": "Přečíst výsledek",
-          "text": "Výsledek konverze se okamžitě zobrazí v sousedním poli."
+          "name": "Přečti výsledek v kilobajtech",
+          "text": "Výsledek v kilobajtech se objeví hned v poli vedle, vpravo. Tlačítkem Kopírovat výsledek jej přeneseš do schránky."
         },
         {
-          "name": "Kopírovat nebo obrátit",
-          "text": "Klikněte na Kopírovat výsledek nebo na Obrátit pro konverzi v opačném směru."
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Prohodit pořadí a přejdeš k převodu kilobajtů na bajty."
         }
       ]
     }
   },
   "contentBlocks": [
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionBasic",
-      "title": "Kdy je potřeba převádět bajty?",
-      "html": "<p class=\"text-mid mb-4\">Digitální úložiště se měří v bajtech: KB, MB, GB, TB. Desítkový systém (1 KB = 1 000 B) vs binární (1 KiB = 1 024 B).</p><p class=\"text-mid mb-4\">Výrobci používají desítkový (disk „1 TB“ = 1 000 000 000 000 B), OS používá binární (~931 GiB).</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
+      "title": "Proč převádět bajty na kilobajty?",
+      "html": "<p class=\"text-mid mb-4\">Bajt je základní jednotka velikosti dat a kilobajt je 1 024 bajtů. Surové velikosti v bajtech vidíš ve vlastnostech souboru, ve výstupu systémových příkazů nebo v odpovědích API — po převodu na kilobajty se snáz čtou a porovnávají.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 KB je 1 024 B v binárním systému, který používají operační systémy i tento převodník. Pro převod bajtů na kilobajty jejich počet vyděl číslem 1 024. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na dva systémy. V desítkovém systému (SI) je 1 KB rovno 1 000 B — tak počítají například výrobci úložišť. Tento převodník používá binární systém (1 024 B), stejně jako to, co ukazují Windows a macOS. Nezaměňuj také bajty s bity: 1 bajt je 8 bitů.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
-      "imageAlt": "Převodník bytes na KB, MB, GB, TB – Arteon"
+      "imageAlt": "Bezplatný převodník bajtů na kilobajty – Arteon"
     },
-    {
-      "type": "gap",
-      "size": "xs"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Jak použít převodník?",
-      "grid": "three",
-      "items": [
-        {
-          "title": "1. Zadejte hodnotu",
-          "description": "Zadejte číslo do vstupního pole.",
-          "icon": "RiInputMethodLine"
-        },
-        {
-          "title": "2. Přečtěte výsledek",
-          "description": "Výsledek se zobrazí okamžitě.",
-          "icon": "RiLoopLeftLine"
-        },
-        {
-          "title": "3. Zkopírujte nebo obraťte",
-          "description": "Zkopírujte výsledek nebo obraťte směr převodu.",
-          "icon": "RiClipboardLine"
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Kdy je tento převodník užitečný?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiHardDriveLine",
-          "title": "Úložiště",
-          "description": "Disk „1 TB“ zobrazuje 931 GiB na Windows."
-        },
-        {
-          "icon": "RiUploadCloudLine",
-          "title": "Přenos souborů",
-          "description": "Síť v bitech (Mbps), soubory v bajtech."
-        },
-        {
-          "icon": "RiServerLine",
-          "title": "Cloud",
-          "description": "Kolik GB vaše soubory zabírají."
-        },
-        {
-          "icon": "RiSmartphoneLine",
-          "title": "Programování",
-          "description": "Buffery a alokace paměti."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Čím se tento převodník liší?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Plné soukromí",
-          "description": "Všechny výpočty probíhají lokálně ve vašem prohlížeči."
-        },
-        {
-          "icon": "RiTimeLine",
-          "title": "Výsledky v reálném čase",
-          "description": "Výsledek se aktualizuje během zadávání."
-        },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Obousměrný převod",
-          "description": "Převádějte oběma směry jedním kliknutím."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Referenční tabulka",
-          "description": "Tabulka s běžnými hodnotami a kontextovými popisy."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "size": "xs" },
     {
       "type": "sectionInfo",
-      "title": "Jak funguje převod bajtů?",
-      "html": "<p class=\"text-mid mb-4\">Desítkový: 1 KB = 1 000 B. Každá úroveň × 1 000.</p><p class=\"text-mid mb-4\">Binární: 1 KiB = 1 024 B. Každá úroveň × 1 024.</p><p class=\"text-mid\">Rozdíl roste: 1 TB (des.) = 0,909 TiB (bin.).</p>"
+      "title": "Jak funguje převod bajtů na kilobajty? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden kilobajt je 1 024 bajtů. Pro převod bajtů na kilobajty jejich počet vyděl číslem 1 024.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>kilobajty = bajty ÷ 1 024</strong>. Opačně: <strong>bajty = kilobajty × 1 024</strong>.</p><p class=\"text-mid mb-4\">Příklad: soubor má 51 200 bajtů. Výpočet: 51 200 ÷ 1 024 = 50 KB. Násobek 1 024 pochází z toho, že počítače počítají dvojkově a dvě na desátou je přesně 1 024.</p><p class=\"text-mid\">Proč 1 024, a ne 1 000? V desítkovém systému (SI) je 1 KB rovno 1 000 B a tak udávají kapacitu výrobci úložišť. Operační systémy a tento převodník používají binární systém, ve kterém je 1 KB rovno 1 024 B — formálně se nazývá kibibajt (KiB).</p>"
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Jak funguje převod bajtů?",
-      "html": "<p class=\"text-mid mb-4\">Desítkový: 1 KB = 1 000 B. Každá úroveň × 1 000.</p><p class=\"text-mid mb-4\">Binární: 1 KiB = 1 024 B. Každá úroveň × 1 024.</p><p class=\"text-mid\">Rozdíl roste: 1 TB (des.) = 0,909 TiB (bin.).</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "sectionTable",
-      "title": "Desítkový vs Binární",
-      "labelHeader": "Vlastnost",
-      "cols": ["Desítkový (SI)", "Binární (IEC)"],
+      "title": "Převodní tabulka bajtů na kilobajty",
+      "description": "Následující tabulka převádí běžné hodnoty bajtů na kilobajty v binárním systému (÷1 024). Pro převod jiné hodnoty použij převodník výše.",
+      "labelHeader": "Bajty",
+      "cols": ["Kilobajty"],
       "rows": [
+        { "label": "512 B", "values": ["0,5 KB"] },
+        { "label": "1 024 B", "values": ["1 KB"], "emphasis": true },
+        { "label": "2 048 B", "values": ["2 KB"], "emphasis": true },
+        { "label": "5 120 B", "values": ["5 KB"] },
+        { "label": "10 240 B", "values": ["10 KB"], "emphasis": true },
+        { "label": "20 480 B", "values": ["20 KB"] },
+        { "label": "51 200 B", "values": ["50 KB"] },
+        { "label": "102 400 B", "values": ["100 KB"], "emphasis": true },
+        { "label": "256 000 B", "values": ["250 KB"] },
+        { "label": "512 000 B", "values": ["500 KB"] },
+        { "label": "1 048 576 B", "values": ["1 024 KB"], "emphasis": true }
+      ],
+      "caption": "Příklad: 1 024 B ÷ 1 024 = 1 KB. Chceš převést kilobajty na bajty? Klikni na Prohodit pořadí v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí bajty na kilobajty?",
+      "description": "Velikosti v bajtech potkáš hlavně v technických souvislostech.",
+      "items": [
         {
-          "label": "Násobitel",
-          "values": ["1 000", "1 024"]
+          "icon": "RiFileTextLine",
+          "title": "Čtení velikosti souboru",
+          "description": "Vlastnosti souboru, systémové příkazy (například ls -l) a správci souborů často uvádějí velikost v surových bajtech. Soubor o 51 200 B je 50 KB — po převodu hned víš, jak velký doopravdy je."
         },
         {
-          "label": "Jednotky",
-          "values": ["KB, MB, GB", "KiB, MiB, GiB"]
+          "icon": "RiFileCodeLine",
+          "title": "Programování a API",
+          "description": "Odpovědi API, hlavička Content-Length nebo limity nahrávání se udávají v bajtech. Převod na kilobajty usnadní posouzení, zda se odpověď 20 480 B (20 KB) vejde do tvého datového rozpočtu."
         },
         {
-          "label": "Používá",
-          "values": ["Výrobci disků", "OS, RAM"]
+          "icon": "RiFileImageLine",
+          "title": "Malé soubory na webu",
+          "description": "Favicon, ikony SVG, soubory JSON a CSS se počítají v kilobajtech, ale nástroje je hlásí v bajtech. Převod pomáhá hlídat velikost zdrojů, která ovlivňuje rychlost načítání webu."
         },
         {
-          "label": "1 TB",
-          "values": ["1 000 000 000 000 B", "1 099 511 627 776 B"]
-        },
-        {
-          "label": "Rozdíl",
-          "values": ["1 TB", "0,909 TiB"]
+          "icon": "RiGraduationCapLine",
+          "title": "Výuka informatiky",
+          "description": "Vztah mezi bajtem a kilobajtem je základ mnoha úloh z informatiky. Převodník jasně ukazuje, že 1 KB je 1 024 B, a umožní ti rychle ověřit vlastní výpočty."
         }
       ]
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "faq",
-      "title": "Často kladené otázky",
+      "title": "Nejčastější dotazy k převodu bajtů na kilobajty",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Kolik MB je 1 GB?",
-          "answer": "1 GB = 1 000 MB (des.) nebo 1 GiB = 1 024 MiB (bin.)."
+          "question": "Kolik bajtů má 1 kilobajt?",
+          "answer": "1 kilobajt je 1 024 bajtů v binárním systému, který používá tento převodník a operační systémy. V desítkovém systému (SI), který používají mimo jiné výrobci úložišť, je 1 KB rovno 1 000 bajtům."
         },
         {
-          "question": "Proč disk zobrazuje méně místa?",
-          "answer": "Výrobci používají desítkový, OS binární systém."
+          "question": "Kolik je 1024 bajtů v KB?",
+          "answer": "1 024 bajtů je přesně 1 KB. Výpočet: 1 024 ÷ 1 024 = 1 KB. Je to základní vztah mezi bajtem a kilobajtem, proto se hledá nejčastěji."
         },
         {
-          "question": "Probíhají výpočty lokálně?",
-          "answer": "Ano. Veškeré výpočty probíhají ve vašem prohlížeči."
+          "question": "Jak převést bajty na kilobajty?",
+          "answer": "Vyděl počet bajtů číslem 1 024. Například 51 200 B ÷ 1 024 = 50 KB. Převodník to udělá hned, jakmile zadáš hodnotu, bez klikání na jakékoli tlačítko."
+        },
+        {
+          "question": "Jak převést kilobajty na bajty?",
+          "answer": "Vynásob počet kilobajtů číslem 1 024. Například 10 KB × 1 024 = 10 240 B. Klikni na Prohodit pořadí, aby převodník počítal tímto směrem."
+        },
+        {
+          "question": "Je 1 KB rovno 1 000, nebo 1 024 bajtům?",
+          "answer": "Záleží na systému. Operační systémy a tento převodník používají binární systém, ve kterém je 1 KB rovno 1 024 B. Výrobci úložišť používají desítkový systém, ve kterém je 1 KB rovno 1 000 B. Proto stejný počet bajtů může dát v KB mírně odlišný výsledek."
+        },
+        {
+          "question": "Čím se liší KB a KiB?",
+          "answer": "KiB (kibibajt, standard IEC) je vždy přesně 1 024 B. KB v systému SI je 1 000 B. V běžném užití většina lidí píše KB a myslí tím 1 024 B, což je technicky KiB. Tento převodník počítá s 1 024 B."
+        },
+        {
+          "question": "Kolik bitů má bajt?",
+          "answer": "1 bajt je 8 bitů. Pozor na zápis: KB znamená kilobajty (velikost souborů), zatímco Kb znamená kilobity (často rychlost přenosu). Tento nástroj počítá s bajty a kilobajty, ne s bity."
         }
       ]
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "contactForm",
-      "title": "Pomozte nám vylepšit naše nástroje",
-      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulce nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
-      "imageAlt": "bajty na KB/MB/GB – Arteon",
-      "defaultSubject": "Feedback: bytes-converter"
+      "imageAlt": "Kontakt s Arteon Agency",
+      "defaultSubject": "Převodník bajtů na kilobajty"
     },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
+    { "type": "gap", "variant": "line" },
     {
       "type": "toolsCarousel",
-      "title": "Další bezplatné nástroje"
+      "title": "Další užitečné převodníky jednotek"
     },
-    {
-      "type": "gap",
-      "size": "sm"
-    }
+    { "type": "gap", "size": "sm" }
   ]
 }

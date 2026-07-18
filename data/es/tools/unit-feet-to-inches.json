@@ -235,7 +235,7 @@
       "title": "¿Tienes alguna pregunta o sugerencia?",
       "description": "Si has visto un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a todos los mensajes.",
       "imageAlt": "Contacto con Arteon Agency",
-      "subject": "Convertidor de pies a pulgadas"
+      "defaultSubject": "Convertidor de pies a pulgadas"
     },
     { "type": "gap", "variant": "line" },
     {

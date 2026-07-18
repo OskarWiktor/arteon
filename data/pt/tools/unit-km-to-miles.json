@@ -248,7 +248,7 @@
       "title": "Tem uma pergunta ou sugestão?",
       "description": "Se detetou um erro nas tabelas ou tem uma ideia para melhorar o conversor, escreva-nos. Respondemos a cada mensagem.",
       "imageAlt": "Contacto com a Arteon Agency",
-      "subject": "Conversor de quilómetros para milhas"
+      "defaultSubject": "Conversor de quilómetros para milhas"
     },
     { "type": "gap", "variant": "line" },
     {

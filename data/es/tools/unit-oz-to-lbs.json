@@ -222,7 +222,7 @@
       "title": "¿Tienes una pregunta o sugerencia?",
       "description": "Si has visto un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
       "imageAlt": "Contacto con Arteon Agency",
-      "subject": "Convertidor de onzas a libras"
+      "defaultSubject": "Convertidor de onzas a libras"
     },
     { "type": "gap", "variant": "line" },
     {
