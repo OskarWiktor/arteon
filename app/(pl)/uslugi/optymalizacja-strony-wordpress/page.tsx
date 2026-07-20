@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import {
   RiPencilRuler2Line,
   RiSecurePaymentLine,
@@ -6,6 +5,7 @@ import {
   RiKey2Line,
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -66,14 +66,7 @@ function ServiceSchema() {
     includeServiceChannel: true,
   });
 
-  return (
-    <Script
-      id='schema-service-optymalizacja-wordpress'
-      type='application/ld+json'
-    >
-      {JSON.stringify(json)}
-    </Script>
-  );
+  return <JsonLd id='schema-service-optymalizacja-wordpress' schema={json} />;
 }
 
 /**

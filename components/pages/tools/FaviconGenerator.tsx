@@ -186,7 +186,7 @@ export default function FaviconGenerator() {
             </div>
 
             <div>
-              <h3 className='h6 mt-8 mb-2'>{t.setSizesAndBackground}</h3>
+              <h2 className='h6 mt-8 mb-2'>{t.setSizesAndBackground}</h2>
 
               <ToolInfo className='gap-2'>
                 <InputCheckboxWithLabel
@@ -209,7 +209,7 @@ export default function FaviconGenerator() {
             </div>
 
             <div>
-              <h3 className='h6 mt-8 mb-2'>{t.generateAndDownload}</h3>
+              <h2 className='h6 mt-8 mb-2'>{t.generateAndDownload}</h2>
 
               <div className='flex flex-wrap gap-3'>
                 <Button

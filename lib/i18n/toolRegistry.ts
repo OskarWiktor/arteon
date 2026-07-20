@@ -249,7 +249,7 @@ export function getMobileToolsSections(locale: Locale): ToolsSection[] {
 // Curated subsets for desktop navigation submenu (max 8 rows per section)
 // ---------------------------------------------------------------------------
 
-/** Top 48 image converters for desktop nav (8 rows × 6 cols) */
+/** All 56 image converters for desktop nav (8 rows × 7 cols) */
 const NAV_IMAGE_CONVERTER_KEYS: ToolItemKey[] = [
   'pngToJpg',
   'jpgToPng',
@@ -269,9 +269,12 @@ const NAV_IMAGE_CONVERTER_KEYS: ToolItemKey[] = [
   'avifToJpg',
   'avifToPng',
   'avifToWebp',
+  'avifToTiff',
   'heicToJpg',
   'heicToPng',
   'heicToWebp',
+  'heicToAvif',
+  'heicToTiff',
   'tiffToJpg',
   'tiffToPng',
   'tiffToWebp',
@@ -280,20 +283,25 @@ const NAV_IMAGE_CONVERTER_KEYS: ToolItemKey[] = [
   'webpToAvif',
   'svgToAvif',
   'tiffToAvif',
+  'bmpToAvif',
+  'gifToAvif',
   'jpgToGif',
   'pngToGif',
   'webpToGif',
   'svgToGif',
+  'bmpToGif',
   'jpgToTiff',
   'pngToTiff',
   'webpToTiff',
   'svgToTiff',
+  'bmpToTiff',
   'heicToPdf',
   'jpgToPdf',
   'pngToPdf',
   'webpToPdf',
   'tiffToPdf',
   'svgToPdf',
+  'bmpToPdf',
   'pdfToJpg',
   'pdfToPng',
   'pdfToWebp',
@@ -347,7 +355,7 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'mbpsToMBs',
 ];
 
-/** Desktop nav tool sections: limits konwertery to 48 and jednostki to 21 */
+/** Desktop nav tool sections: konwertery and jednostki use an explicit order list */
 export function getDesktopToolsSections(locale: Locale): ToolsSection[] {
   return TOOL_SECTIONS.filter(section => section.locales[locale]).map(
     section => {

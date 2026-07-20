@@ -1,4 +1,3 @@
-﻿import Script from 'next/script';
 import {
   RiLightbulbFlashLine,
   RiSearchLine,
@@ -11,6 +10,7 @@ import {
 } from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -67,11 +67,7 @@ function ServiceSchema() {
     includeServiceChannel: true,
   });
 
-  return (
-    <Script id='schema-service-audyt-seo' type='application/ld+json'>
-      {JSON.stringify(json)}
-    </Script>
-  );
+  return <JsonLd id='schema-service-audyt-seo' schema={json} />;
 }
 
 export default function OfferMarketingPage() {

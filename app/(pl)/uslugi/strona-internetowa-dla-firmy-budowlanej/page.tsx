@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import {
   RiBuilding2Line,
   RiTruckLine,
@@ -20,6 +19,7 @@ import {
   RiKey2Line,
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -133,12 +133,10 @@ function ServiceSchema() {
   };
 
   return (
-    <Script
+    <JsonLd
       id='schema-service-strona-dla-firmy-budowlanej'
-      type='application/ld+json'
-    >
-      {JSON.stringify(extendedJson)}
-    </Script>
+      schema={extendedJson}
+    />
   );
 }
 

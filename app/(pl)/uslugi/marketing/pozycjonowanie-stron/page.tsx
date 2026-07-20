@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import {
   RiBarChart2Fill,
   RiLightbulbFlashLine,
@@ -10,6 +9,7 @@ import {
   RiSecurePaymentLine,
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -65,11 +65,7 @@ function ServiceSchema() {
     includeServiceChannel: true,
   });
 
-  return (
-    <Script id='schema-service-pozycjonowanie' type='application/ld+json'>
-      {JSON.stringify(json)}
-    </Script>
-  );
+  return <JsonLd id='schema-service-pozycjonowanie' schema={json} />;
 }
 
 export default function OfferSeoSubscription() {

@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import { IoAccessibilityOutline, IoColorPalette } from 'react-icons/io5';
 import {
   RiBrushLine,
@@ -21,6 +20,7 @@ import {
 } from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -107,11 +107,7 @@ function ItemListSchema() {
     })),
   };
 
-  return (
-    <Script id='schema-itemlist-projekty-graficzne' type='application/ld+json'>
-      {JSON.stringify(json)}
-    </Script>
-  );
+  return <JsonLd id='schema-itemlist-projekty-graficzne' schema={json} />;
 }
 
 export const metadata = {

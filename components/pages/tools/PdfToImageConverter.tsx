@@ -258,9 +258,9 @@ export default function PdfToImageConverter({
 
             {showQuality && (
               <div>
-                <h3 className='h6 mt-8 mb-2'>
+                <h2 className='h6 mt-8 mb-2'>
                   {t.setQuality.replace('{{format}}', targetLabel)}
-                </h3>
+                </h2>
                 <InputRangeWithLabel
                   value={quality}
                   min={60}
@@ -273,7 +273,7 @@ export default function PdfToImageConverter({
             )}
 
             <div>
-              <h3 className='h6 mt-8 mb-2'>{t.convertAndDownload}</h3>
+              <h2 className='h6 mt-8 mb-2'>{t.convertAndDownload}</h2>
               {total > 0 && (
                 <div className='mb-3 space-y-2'>
                   <div className={flexCenterBetweenClasses}>

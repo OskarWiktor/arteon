@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import { IoSparkles } from 'react-icons/io5';
 import {
   RiBookOpenLine,
@@ -15,6 +14,7 @@ import {
 } from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -45,11 +45,7 @@ function ServiceSchema() {
     includeServiceChannel: true,
   });
 
-  return (
-    <Script id='schema-service-tworzenie-tresci' type='application/ld+json'>
-      {JSON.stringify(json)}
-    </Script>
-  );
+  return <JsonLd id='schema-service-tworzenie-tresci' schema={json} />;
 }
 
 export const metadata = {

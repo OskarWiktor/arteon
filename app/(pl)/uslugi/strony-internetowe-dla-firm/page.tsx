@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import { GoLaw } from 'react-icons/go';
 import {
   RiSpeedUpLine,
@@ -20,6 +19,7 @@ import {
 } from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -149,12 +149,10 @@ function ServiceSchema() {
   };
 
   return (
-    <Script
+    <JsonLd
       id='schema-service-strony-internetowe-dla-firm'
-      type='application/ld+json'
-    >
-      {JSON.stringify(extendedJson)}
-    </Script>
+      schema={extendedJson}
+    />
   );
 }
 
