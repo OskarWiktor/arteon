@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import {
   RiCropLine,
   RiAppsLine,
@@ -16,6 +15,7 @@ import {
   RiLoopLeftLine,
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import ToolCardFooter from '@/components/molecules/ToolCardFooter';
 import HeroBanner from '@/components/organisms/HeroBanner';
@@ -1190,13 +1190,7 @@ export default function ToolsIndexPage() {
         <Divider size='sm' />
       </Wrapper>
 
-      <Script
-        id='ld-json-tools-cs'
-        type='application/ld+json'
-        strategy='afterInteractive'
-      >
-        {JSON.stringify(schema)}
-      </Script>
+      <JsonLd id='ld-json-tools-cs' schema={schema} />
     </>
   );
 }

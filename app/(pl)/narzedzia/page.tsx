@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import {
   RiShieldCheckLine,
   RiInfinityFill,
@@ -7,6 +6,7 @@ import {
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import InlineLink from '@/components/atoms/InlineLink';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import ToolCardFooter from '@/components/molecules/ToolCardFooter';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -1252,13 +1252,7 @@ export default function ToolsIndexPage() {
         overlay='black'
       />
 
-      <Script
-        id='ld-json-tools'
-        type='application/ld+json'
-        strategy='afterInteractive'
-      >
-        {JSON.stringify(schema)}
-      </Script>
+      <JsonLd id='ld-json-tools' schema={schema} />
     </>
   );
 }

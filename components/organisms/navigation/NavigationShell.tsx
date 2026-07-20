@@ -21,11 +21,10 @@ import {
 } from '@/lib/uiClasses';
 import InlineLink from '../../atoms/InlineLink';
 
-const MobileNavigation = dynamic(() => import('./MobileNavigation'), {
-  ssr: false,
-});
+// Obie nawigacje renderują się po stronie serwera, więc ich linki trafiają do
+// statycznego HTML-a i są widoczne dla robotów bez uruchamiania JavaScriptu.
+const MobileNavigation = dynamic(() => import('./MobileNavigation'));
 const DesktopNavigation = dynamic(() => import('./DesktopNavigation'), {
-  ssr: false,
   loading: () => <DesktopNavSkeleton />,
 });
 

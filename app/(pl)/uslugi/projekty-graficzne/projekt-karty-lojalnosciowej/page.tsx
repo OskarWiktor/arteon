@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import { IoColorPalette } from 'react-icons/io5';
 import {
   RiFileTextLine,
@@ -11,6 +10,7 @@ import {
   RiSecurePaymentLine,
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
@@ -68,12 +68,7 @@ function ServiceSchema() {
   });
 
   return (
-    <Script
-      id='schema-service-projekt-karty-lojalnosciowej'
-      type='application/ld+json'
-    >
-      {JSON.stringify(json)}
-    </Script>
+    <JsonLd id='schema-service-projekt-karty-lojalnosciowej' schema={json} />
   );
 }
 
