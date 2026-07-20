@@ -1,0 +1,237 @@
+{
+  "toolKey": "mbToGb",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur de Mo en Go – convertir MB en GB",
+    "description": "Convertissez des méga-octets en giga-octets et inversement. Un giga-octet fait 1 024 Mo dans le système binaire. Saisissez une valeur et le résultat apparaît aussitôt. Fonctionne dans le navigateur, sans inscription.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-mo-en-go"
+  },
+  "hero": {
+    "title": "Convertissez des méga-octets en giga-octets",
+    "description": "Saisissez un nombre de méga-octets et lisez le résultat en giga-octets tout de suite. Un giga-octet fait 1 024 méga-octets dans le système binaire, donc le convertisseur divise votre valeur par 1 024. Utilisez Inverser l'ordre pour convertir des giga-octets en méga-octets. Dans l'outil, ces unités sont notées MB (méga-octets) et GB (giga-octets).",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-mo-en-go",
+      "label": "Mo en Go"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur de méga-octets en giga-octets – calculateur MB en GB",
+      "alternateName": [
+        "Convertisseur de Mo en Go",
+        "Convertisseur de méga-octets en giga-octets",
+        "Calculateur Mo en Go",
+        "Mo en Go",
+        "mb to gb",
+        "Convertir des Mo en Go",
+        "Combien de Mo dans un Go",
+        "4096 Mo en Go",
+        "1000 Mo en Go",
+        "Giga-octets en méga-octets",
+        "Go en Mo",
+        "mb to gb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur de méga-octets en giga-octets qui fonctionne dans le navigateur sans inscription. Saisissez un nombre de méga-octets et lisez le résultat en giga-octets aussitôt. Il utilise le système binaire, dans lequel 1 Go fait 1 024 Mo.",
+      "featureList": [
+        "Convertit des méga-octets en giga-octets et des giga-octets en méga-octets dans le système binaire (1 Go = 1 024 Mo)",
+        "La conversion fonctionne dans les deux sens : le bouton Inverser l'ordre change de direction",
+        "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
+        "Accepte le point comme la virgule comme séparateur décimal",
+        "Sélecteur de standard : calculez en binaire (1 024, comme Windows et la RAM) ou décimal (1 000, comme disques, macOS et moteurs de recherche)",
+        "Donne une formule prête pour Excel et les tableurs",
+        "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
+        "La formule exacte est : giga-octets = méga-octets ÷ 1 024",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des méga-octets en giga-octets ?",
+      "description": "Court guide d'utilisation du convertisseur de méga-octets en giga-octets.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez un nombre de méga-octets",
+          "text": "Dans le champ de gauche, saisissez le nombre de méga-octets que vous voulez convertir en giga-octets. Vous pouvez utiliser le point ou la virgule comme séparateur décimal."
+        },
+        {
+          "name": "Lisez le résultat en giga-octets",
+          "text": "Le résultat en giga-octets apparaît aussitôt dans le champ voisin, à droite. Avec le bouton Copier le résultat, vous le placez dans le presse-papiers."
+        },
+        {
+          "name": "Inversez le sens au besoin",
+          "text": "Cliquez sur Inverser l'ordre pour passer à la conversion des giga-octets en méga-octets."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des méga-octets en giga-octets ?",
+      "html": "<p class=\"text-mid mb-4\">Le méga-octet et le giga-octet sont des unités voisines de la taille des données : 1 Go fait 1 024 Mo. Les tailles de téléchargement, la mémoire vive et les fichiers vidéo sont parfois donnés en méga-octets, tandis que la capacité de stockage et les forfaits de données se comptent en giga-octets — d'où la conversion des Mo en Go.</p><p class=\"text-mid mb-4\">Le rapport est fixe : 1 Go fait 1 024 Mo dans le système binaire, celui qu'utilisent les systèmes d'exploitation et ce convertisseur. Pour passer des méga-octets aux giga-octets, vous divisez leur nombre par 1 024. Le convertisseur le fait dès que vous saisissez une valeur.</p><p class=\"text-mid\">Attention à deux systèmes. Dans le système décimal (SI), 1 Go fait 1 000 Mo, c'est pourquoi 1 000 Mo sont souvent pris pour un giga-octet entier. En réalité 1 000 Mo font environ 0,98 Go, et vous atteignez 1 Go exact avec 1 024 Mo. Ce convertisseur utilise le système binaire (1 024).</p><p class=\"text-mid\">Cet outil calcule dans les deux standards : binaire (1 024) par défaut, et avec le bouton Standard d'unités vous passez au décimal (1 000). Windows et la RAM comptent en binaire, tandis que les fabricants de disques, macOS et les moteurs de recherche comptent en décimal — c'est pourquoi la même capacité est indiquée de deux façons.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit de méga-octets en giga-octets – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des méga-octets en giga-octets ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion repose sur un rapport fixe : un giga-octet fait 1 024 méga-octets. Pour passer des méga-octets aux giga-octets, vous divisez leur nombre par 1 024.</p><p class=\"text-mid mb-4\">Formule complète : <strong>giga-octets = méga-octets ÷ 1 024</strong>. Dans l'autre sens : <strong>méga-octets = giga-octets × 1 024</strong>.</p><p class=\"text-mid mb-4\">Exemple : un module de mémoire vive fait 4 096 Mo. Calcul : 4 096 ÷ 1 024 = 4 Go. De même, 8 192 Mo font 8 Go — c'est justement pour cela que les tailles de mémoire sont des puissances de deux et non des milliers ronds.</p><p class=\"text-mid mb-4\">Attention aux valeurs rondes. 1 000 Mo ne font pas 1 Go, mais environ 0,98 Go, car un giga-octet complet a 1 024 Mo. Les giga-octets exacts viennent des multiples de 1 024 : 1 024 Mo, 2 048 Mo, 4 096 Mo et ainsi de suite.</p><p class=\"text-mid\">Dans Excel, saisissez la formule <strong>=A1/1024</strong> dans une cellule, où A1 contient la valeur en Mo. Dans l'autre sens, giga-octets en méga-octets, utilisez <strong>=A1*1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des méga-octets en giga-octets",
+      "description": "Le tableau ci-dessous convertit des valeurs courantes de méga-octets en giga-octets dans le système binaire (÷1 024). Les valeurs qui ne sont pas un multiple de 1 024 sont arrondies. Pour convertir une autre valeur, utilisez le convertisseur ci-dessus. Les unités sont notées MB et GB, comme dans l'outil.",
+      "labelHeader": "Méga-octets",
+      "cols": ["Giga-octets"],
+      "rows": [
+        { "label": "100 MB", "values": ["0,10 GB"] },
+        { "label": "500 MB", "values": ["0,49 GB"] },
+        { "label": "1 000 MB", "values": ["0,98 GB"] },
+        { "label": "1 024 MB", "values": ["1 GB"], "emphasis": true },
+        { "label": "2 048 MB", "values": ["2 GB"] },
+        { "label": "4 096 MB", "values": ["4 GB"], "emphasis": true },
+        { "label": "5 000 MB", "values": ["4,88 GB"] },
+        { "label": "8 192 MB", "values": ["8 GB"], "emphasis": true },
+        { "label": "10 000 MB", "values": ["9,77 GB"] },
+        { "label": "16 384 MB", "values": ["16 GB"] },
+        { "label": "51 200 MB", "values": ["50 GB"], "emphasis": true }
+      ],
+      "caption": "Exemple : 4 096 MB ÷ 1 024 = 4 GB, tandis que 1 000 MB ne font que 0,98 GB. Vous voulez convertir des giga-octets en méga-octets ? Cliquez sur Inverser l'ordre dans le convertisseur ci-dessus."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "L'échelle complète des unités de données : de la plus petite à la plus grande",
+      "description": "Toutes les unités de taille de données grandissent du même multiplicateur : chacune est 1 024 fois plus grande que la précédente. Le tableau ci-dessous montre l'ordre de l'octet au péta-octet, avec un exemple typique de ce que décrit chaque unité.",
+      "labelHeader": "Unité",
+      "cols": ["Rapport", "Exemple typique"],
+      "rows": [
+        {
+          "label": "Octet (o)",
+          "values": ["unité de base", "un caractère de texte"]
+        },
+        {
+          "label": "Kilo-octet (Ko)",
+          "values": ["1 024 o", "un court e-mail ou une icône"]
+        },
+        {
+          "label": "Méga-octet (Mo)",
+          "values": ["1 024 Ko", "une photo ou une chanson MP3"],
+          "emphasis": true
+        },
+        {
+          "label": "Giga-octet (Go)",
+          "values": ["1 024 Mo", "un film ou une barrette de RAM"],
+          "emphasis": true
+        },
+        { "label": "Téra-octet (To)", "values": ["1 024 Go", "un disque dur"] },
+        {
+          "label": "Péta-octet (Po)",
+          "values": ["1 024 To", "un grand centre de données"]
+        }
+      ],
+      "caption": "Ordre de la plus petite à la plus grande : octet, kilo-octet, méga-octet, giga-octet, téra-octet, péta-octet. Chaque palier est une multiplication par 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent des méga-octets en giga-octets ?",
+      "description": "Les tailles en méga-octets se convertissent en giga-octets surtout pour la mémoire et les fichiers plus gros.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Mémoire vive et stockage",
+          "description": "Les modules de mémoire vive et la mémoire des appareils sont parfois donnés en méga-octets. 4 096 Mo font 4 Go et 8 192 Mo font 8 Go — la conversion montre aussitôt combien de giga-octets vous avez réellement."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Taille des téléchargements et vidéos",
+          "description": "Les fichiers vidéo, les mises à jour et les paquets de jeux sont souvent donnés en méga-octets. Une valeur élevée comme 5 000 Mo devient lisible une fois convertie en giga-octets (environ 4,88 Go)."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Consommation et forfaits de données",
+          "description": "Les forfaits de données et les plafonds de transfert sont donnés en giga-octets, tandis que la consommation des applications est en méga-octets. La conversion montre quelle part d'un plafond de 1 Go 500 Mo ont déjà utilisée."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Distinguer 1000 et 1024",
+          "description": "Le convertisseur montre clairement que 1 000 Mo ne font pas un giga-octet entier, mais 0,98 Go, et que vous atteignez 1 Go seulement avec 1 024 Mo. C'est la confusion la plus fréquente avec les tailles de données."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des méga-octets en giga-octets",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de Mo dans 1 Go ?",
+          "answer": "1 Go fait 1 024 Mo dans le système binaire, celui qu'utilisent ce convertisseur et les systèmes d'exploitation. Dans le système décimal (SI), utilisé entre autres par les fabricants de stockage, 1 Go fait 1 000 Mo."
+        },
+        {
+          "question": "1000 Mo font-ils 1 Go ?",
+          "answer": "Pas tout à fait. Dans le système binaire, 1 000 Mo font environ 0,98 Go, car un giga-octet complet a 1 024 Mo. Vous atteignez 1 Go exact avec 1 024 Mo. L'arrondi à 1 Go ne s'applique que dans le système décimal."
+        },
+        {
+          "question": "Combien de Go font 4096 Mo ?",
+          "answer": "4 096 Mo font exactement 4 Go. Calcul : 4 096 ÷ 1 024 = 4 Go. C'est pourquoi les modules de mémoire vive ont des tailles comme 4 096 Mo ou 8 192 Mo — ce sont des puissances de deux qui donnent des giga-octets entiers."
+        },
+        {
+          "question": "Comment convertir des méga-octets en giga-octets ?",
+          "answer": "Divisez le nombre de méga-octets par 1 024. Par exemple, 51 200 Mo ÷ 1 024 = 50 Go. Le convertisseur le fait dès que vous saisissez une valeur, sans cliquer sur un bouton."
+        },
+        {
+          "question": "Combien de Go font 2048 et 8192 Mo ?",
+          "answer": "2 048 Mo font 2 Go, et 8 192 Mo font 8 Go. Les deux tombent juste car ce sont des multiples de 1 024, le nombre de méga-octets dans un giga-octet."
+        },
+        {
+          "question": "Comment convertir des giga-octets en méga-octets ?",
+          "answer": "Multipliez le nombre de giga-octets par 1 024. Par exemple, 4 Go × 1 024 = 4 096 Mo. Cliquez sur Inverser l'ordre pour que le convertisseur travaille dans ce sens."
+        },
+        {
+          "question": "1 Go fait-il 1 000 ou 1 024 Mo ?",
+          "answer": "Cela dépend du système. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Go fait 1 024 Mo. Les fabricants de stockage utilisent le système décimal, dans lequel 1 Go fait 1 000 Mo. C'est pourquoi le même nombre de méga-octets peut donner un résultat un peu différent en giga-octets."
+        },
+        {
+          "question": "Comment convertir des Mo en Go dans Excel ?",
+          "answer": "Saisissez la formule =A1/1024 dans une cellule, où A1 contient la valeur en méga-octets. Dans l'autre sens, giga-octets en méga-octets, utilisez =A1*1024. La même formule fonctionne dans Google Sheets."
+        },
+        {
+          "question": "Quel est l'ordre des unités de la plus petite à la plus grande ?",
+          "answer": "De la plus petite : octet (o), kilo-octet (Ko), méga-octet (Mo), giga-octet (Go), téra-octet (To), péta-octet (Po). Chaque unité est 1 024 fois plus grande que la précédente. Un octet décrit un seul caractère, tandis qu'un téra-octet décrit la capacité d'un disque."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans le tableau ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Contact avec Arteon Agency",
+      "defaultSubject": "Convertisseur de méga-octets en giga-octets"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

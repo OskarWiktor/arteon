@@ -1,0 +1,223 @@
+{
+  "toolKey": "kbToTb",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur de Ko en To – convertir KB en TB",
+    "description": "Convertissez des kilo-octets en téra-octets et inversement. Un téra-octet fait 1 073 741 824 Ko dans le système binaire. Formule, astuce Excel et tableau. Fonctionne dans le navigateur, sans inscription.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-ko-en-to"
+  },
+  "hero": {
+    "title": "Convertissez des kilo-octets en téra-octets",
+    "description": "Saisissez un nombre de kilo-octets et lisez le résultat en téra-octets tout de suite. Un téra-octet fait 1 073 741 824 kilo-octets dans le système binaire (1 024 × 1 024 × 1 024), donc le convertisseur divise votre valeur par 1 073 741 824. Utilisez Inverser l'ordre pour convertir des téra-octets en kilo-octets. Dans l'outil, ces unités sont notées KB (kilo-octets) et TB (téra-octets).",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-ko-en-to",
+      "label": "Ko en To"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur de kilo-octets en téra-octets – calculateur KB en TB",
+      "alternateName": [
+        "Convertisseur de Ko en To",
+        "Convertisseur de kilo-octets en téra-octets",
+        "Calculateur Ko en To",
+        "Ko en To",
+        "kb to tb",
+        "Convertir des Ko en To",
+        "Combien de Ko dans un To",
+        "Ko en To formule",
+        "Ko en To dans Excel",
+        "Téra-octets en kilo-octets",
+        "To en Ko",
+        "kb to tb chart"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur de kilo-octets en téra-octets qui fonctionne dans le navigateur sans inscription. Saisissez un nombre de kilo-octets et lisez le résultat en téra-octets aussitôt. Il utilise le système binaire, dans lequel 1 To fait 1 073 741 824 Ko.",
+      "featureList": [
+        "Convertit des kilo-octets en téra-octets et des téra-octets en kilo-octets dans le système binaire (1 To = 1 073 741 824 Ko)",
+        "La conversion fonctionne dans les deux sens : le bouton Inverser l'ordre change de direction",
+        "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
+        "Sélecteur de standard : calculez en binaire (1 024, comme Windows et la RAM) ou décimal (1 000, comme disques, macOS et moteurs de recherche)",
+        "Donne une formule prête pour Excel et les tableurs",
+        "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
+        "La formule exacte est : téra-octets = kilo-octets ÷ 1 073 741 824",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des kilo-octets en téra-octets ?",
+      "description": "Court guide d'utilisation du convertisseur de kilo-octets en téra-octets.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez un nombre de kilo-octets",
+          "text": "Dans le champ de gauche, saisissez le nombre de kilo-octets que vous voulez convertir en téra-octets. Vous pouvez utiliser le point ou la virgule comme séparateur décimal."
+        },
+        {
+          "name": "Lisez le résultat en téra-octets",
+          "text": "Le résultat en téra-octets apparaît aussitôt dans le champ voisin, à droite. Avec le bouton Copier le résultat, vous le placez dans le presse-papiers."
+        },
+        {
+          "name": "Inversez le sens au besoin",
+          "text": "Cliquez sur Inverser l'ordre pour passer à la conversion des téra-octets en kilo-octets."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des kilo-octets en téra-octets ?",
+      "html": "<p class=\"text-mid mb-4\">Le kilo-octet et le téra-octet sont à trois niveaux d'écart : 1 To fait 1 073 741 824 Ko. Vous avez rarement besoin de cette conversion, mais elle survient quand vous additionnez d'énormes quantités de petits fichiers donnés en kilo-octets — comme des millions d'enregistrements, de journaux ou de sauvegardes — et voulez le résultat en téra-octets.</p><p class=\"text-mid mb-4\">Le rapport est fixe : 1 To fait 1 073 741 824 Ko dans le système binaire, celui qu'utilisent les systèmes d'exploitation et ce convertisseur. Pour passer des kilo-octets aux téra-octets, vous divisez leur nombre par 1 073 741 824. Le convertisseur le fait dès que vous saisissez une valeur.</p><p class=\"text-mid\">D'où vient ce nombre ? Parce qu'il y a trois paliers de 1 024 entre le kilo-octet et le téra-octet : Ko → Mo → Go → To. 1 024 × 1 024 × 1 024 fait exactement 1 073 741 824. Plus bas, vous trouverez une formule prête pour Excel et un tableau de toute l'échelle des unités.</p><p class=\"text-mid\">Cet outil calcule dans les deux standards : binaire (1 024) par défaut, et avec le bouton Standard d'unités vous passez au décimal (1 000). Windows et la RAM comptent en binaire, tandis que les fabricants de disques, macOS et les moteurs de recherche comptent en décimal — c'est pourquoi la même capacité est indiquée de deux façons.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit de kilo-octets en téra-octets – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des kilo-octets en téra-octets ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion repose sur un rapport fixe : un téra-octet fait 1 073 741 824 kilo-octets. Pour passer des kilo-octets aux téra-octets, vous divisez leur nombre par 1 073 741 824. Vous pouvez aussi diviser trois fois par 1 024 — de Ko en Mo, puis en Go, puis en To.</p><p class=\"text-mid mb-4\">Formule complète : <strong>téra-octets = kilo-octets ÷ 1 073 741 824</strong>. Dans l'autre sens : <strong>kilo-octets = téra-octets × 1 073 741 824</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous avez 2 147 483 648 Ko. Calcul : 2 147 483 648 ÷ 1 073 741 824 = 2 To. La valeur tombe juste car c'est le double de 1 073 741 824.</p><p class=\"text-mid\">Dans Excel, saisissez dans une cellule la formule <strong>=A1/1073741824</strong>, où A1 contient la valeur en Ko. Dans l'autre sens, téra-octets en kilo-octets, utilisez <strong>=A1*1073741824</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des kilo-octets en téra-octets",
+      "description": "Le tableau ci-dessous convertit des kilo-octets en téra-octets dans le système binaire (÷1 073 741 824). Les valeurs qui ne sont pas un multiple de 1 073 741 824 sont arrondies. Pour convertir une autre valeur, utilisez le convertisseur ci-dessus. Les unités sont notées KB et TB, comme dans l'outil.",
+      "labelHeader": "Kilo-octets",
+      "cols": ["Téra-octets"],
+      "rows": [
+        { "label": "100 000 000 KB", "values": ["0,09 TB"] },
+        { "label": "500 000 000 KB", "values": ["0,47 TB"] },
+        { "label": "1 000 000 000 KB", "values": ["0,93 TB"] },
+        { "label": "1 073 741 824 KB", "values": ["1 TB"], "emphasis": true },
+        { "label": "2 147 483 648 KB", "values": ["2 TB"], "emphasis": true },
+        { "label": "5 368 709 120 KB", "values": ["5 TB"] },
+        { "label": "10 737 418 240 KB", "values": ["10 TB"], "emphasis": true }
+      ],
+      "caption": "Exemple : 1 073 741 824 KB ÷ 1 073 741 824 = 1 TB. Vous voulez convertir des téra-octets en kilo-octets ? Cliquez sur Inverser l'ordre dans le convertisseur ci-dessus."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "L'échelle complète des unités de données : de la plus petite à la plus grande",
+      "description": "Toutes les unités de taille de données grandissent du même multiplicateur : chacune est 1 024 fois plus grande que la précédente. Le tableau ci-dessous montre l'ordre de l'octet au péta-octet, avec un exemple typique de ce que décrit chaque unité.",
+      "labelHeader": "Unité",
+      "cols": ["Rapport", "Exemple typique"],
+      "rows": [
+        {
+          "label": "Octet (o)",
+          "values": ["unité de base", "un caractère de texte"]
+        },
+        {
+          "label": "Kilo-octet (Ko)",
+          "values": ["1 024 o", "un court e-mail ou une icône"]
+        },
+        {
+          "label": "Méga-octet (Mo)",
+          "values": ["1 024 Ko", "une photo ou une chanson MP3"]
+        },
+        {
+          "label": "Giga-octet (Go)",
+          "values": ["1 024 Mo", "un film ou une barrette de RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Téra-octet (To)",
+          "values": ["1 024 Go", "un disque dur"],
+          "emphasis": true
+        },
+        {
+          "label": "Péta-octet (Po)",
+          "values": ["1 024 To", "un grand centre de données"]
+        }
+      ],
+      "caption": "Ordre de la plus petite à la plus grande : octet, kilo-octet, méga-octet, giga-octet, téra-octet, péta-octet. Chaque palier est une multiplication par 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent des kilo-octets en téra-octets ?",
+      "description": "Le saut des kilo-octets aux téra-octets est utile pour de très grands totaux de données.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Totaux de millions de petits fichiers",
+          "description": "Les bases de données, les journaux et les exports peuvent s'additionner en milliards de kilo-octets. Seule la conversion en téra-octets montre l'échelle réelle — 1 000 000 000 Ko (un milliard) font environ 0,93 To."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Planification de capacité",
+          "description": "Quand un rapport donne l'occupation en kilo-octets alors que vous mesurez un disque ou une baie en téra-octets, le convertisseur montre aussitôt combien de To occupent par exemple 1 073 741 824 Ko (exactement 1 To)."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Formule dans Excel",
+          "description": "Dans un tableur, vous convertissez toute une colonne de tailles avec =A1/1073741824. Le convertisseur donne la formule prête, vous n'avez pas à la chercher ni à la retenir."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "L'ordre des unités",
+          "description": "Le convertisseur et le tableau de l'échelle montrent l'ordre clairement, de la plus petite à la plus grande : o, Ko, Mo, Go, To, Po, chacune 1 024 fois plus grande que la précédente."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des kilo-octets en téra-octets",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de Ko dans 1 To ?",
+          "answer": "1 To fait 1 073 741 824 Ko dans le système binaire, celui qu'utilisent ce convertisseur et les systèmes d'exploitation. C'est 1 024 × 1 024 × 1 024. Dans le système décimal (SI), 1 To fait 1 000 000 000 Ko."
+        },
+        {
+          "question": "Comment convertir des kilo-octets en téra-octets ?",
+          "answer": "Divisez le nombre de kilo-octets par 1 073 741 824. Vous pouvez aussi diviser trois fois par 1 024 : de Ko en Mo, puis en Go, puis en To. Le convertisseur le fait dès que vous saisissez une valeur."
+        },
+        {
+          "question": "Comment convertir des Ko en To dans Excel ?",
+          "answer": "Saisissez dans une cellule la formule =A1/1073741824, où A1 contient la valeur en kilo-octets. Dans l'autre sens, téra-octets en kilo-octets, utilisez =A1*1073741824. La même formule fonctionne dans Google Sheets."
+        },
+        {
+          "question": "Quel est l'ordre des unités de la plus petite à la plus grande ?",
+          "answer": "De la plus petite : octet (o), kilo-octet (Ko), méga-octet (Mo), giga-octet (Go), téra-octet (To), péta-octet (Po). Chaque unité est 1 024 fois plus grande que la précédente. Un octet décrit un seul caractère, un téra-octet une capacité de disque."
+        },
+        {
+          "question": "Comment convertir des téra-octets en kilo-octets ?",
+          "answer": "Multipliez le nombre de téra-octets par 1 073 741 824. Par exemple, 2 To × 1 073 741 824 = 2 147 483 648 Ko. Cliquez sur Inverser l'ordre pour que le convertisseur travaille dans ce sens."
+        },
+        {
+          "question": "Pourquoi 1 024 et non 1 000 ?",
+          "answer": "Parce que les ordinateurs comptent en binaire. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, où chaque palier fait 1 024. Les fabricants de stockage utilisent le système décimal (1 000), c'est pourquoi la capacité d'un disque affichée dans le système est plus petite que le nombre sur l'étiquette."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans le tableau ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Contact avec Arteon Agency",
+      "defaultSubject": "Convertisseur de kilo-octets en téra-octets"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

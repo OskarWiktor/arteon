@@ -1,0 +1,239 @@
+{
+  "toolKey": "gbToTb",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter gigabajtów na terabajty – przelicz GB na TB",
+    "description": "Przelicz gigabajty na terabajty i odwrotnie. 1 TB to 1 024 GB w systemie binarnym. Wpisz wartość, a wynik pojawi się natychmiast. Działa w przeglądarce, bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-gb-na-tb"
+  },
+  "hero": {
+    "title": "Przelicz gigabajty na terabajty",
+    "description": "Wpisz liczbę gigabajtów i od razu odczytaj wynik w terabajtach. Terabajt to 1 024 gigabajty w systemie binarnym, więc konwerter dzieli podaną liczbę przez 1 024. Przyciskiem Zmień kolejność przeliczysz też terabajty na gigabajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-gb-na-tb",
+      "label": "gigabajty na terabajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter gigabajtów na terabajty – przelicznik GB na TB",
+      "alternateName": [
+        "Konwerter gigabajtów na terabajty",
+        "Przelicznik gigabajtów na terabajty",
+        "Kalkulator GB na TB",
+        "Gigabajty na terabajty",
+        "GB na TB",
+        "Przelicz GB na TB",
+        "Ile GB to TB",
+        "1000 GB ile to TB",
+        "1024 GB ile to TB",
+        "Terabajty na gigabajty",
+        "TB na GB",
+        "gb to tb"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konwerter gigabajtów na terabajty działający w przeglądarce bez rejestracji. Wpisz liczbę gigabajtów i natychmiast odczytaj wynik w terabajtach. Przelicza w systemie binarnym, w którym 1 TB to 1 024 GB.",
+      "featureList": [
+        "Przelicza gigabajty na terabajty i terabajty na gigabajty w systemie binarnym (1 TB = 1 024 GB)",
+        "Konwersja działa w obie strony — przyciskiem Zmień kolejność przełączasz kierunek",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Przełącznik standardu: policz binarnie (1 024, jak Windows i pamięć RAM) lub dziesiętnie (1 000, jak dyski, macOS i wyszukiwarki)",
+        "Podaje gotowy wzór do Excela i arkuszy kalkulacyjnych",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: terabajty = gigabajty ÷ 1 024",
+        "Działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć gigabajty na terabajty?",
+      "description": "Krótka instrukcja użycia konwertera gigabajtów na terabajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz liczbę gigabajtów",
+          "text": "W lewym polu wpisz liczbę gigabajtów, którą chcesz przeliczyć na terabajty. Możesz użyć kropki lub przecinka jako separatora dziesiętnego."
+        },
+        {
+          "name": "Odczytaj wynik w terabajtach",
+          "text": "Wynik w terabajtach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania terabajtów na gigabajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać gigabajty na terabajty?",
+      "html": "<p class=\"text-mid mb-4\">Gigabajt i terabajt to sąsiednie jednostki rozmiaru danych: 1 TB to 1 024 GB. Pojemności dysków, macierzy NAS i planów kopii zapasowych podaje się dziś w gigabajtach lub terabajtach, więc przeliczasz GB na TB, gdy chcesz porównać dysk 1 000 GB z ofertą liczoną w terabajtach.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 TB to 1 024 GB w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić gigabajty na terabajty, dzielisz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na okrągłe wartości. Dysk „1 000 GB” to nie pełny terabajt, tylko około 0,98 TB, bo pełny terabajt ma 1 024 GB. Dokładnie 1 TB otrzymasz z 1 024 GB. To ten sam efekt co przy 1 000 i 1 024 na niższych poziomach.</p><p class=\"text-mid\">W tym narzędziu policzysz oba standardy: domyślnie binarny (1 024), a przyciskiem Standard jednostek przełączysz na dziesiętny (1 000). Binarnie liczą Windows i pamięć RAM, dziesiętnie producenci dysków, macOS i wyszukiwarki — dlatego ta sama pojemność bywa podawana na dwa sposoby.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter gigabajtów na terabajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja gigabajtów na terabajty? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden terabajt to 1 024 gigabajty. Aby zamienić gigabajty na terabajty, dzielisz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>terabajty = gigabajty ÷ 1 024</strong>. W drugą stronę: <strong>gigabajty = terabajty × 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: macierz ma 2 048 GB. Obliczenie: 2 048 ÷ 1 024 = 2 TB. Podobnie 4 096 GB to 4 TB — równe terabajty wychodzą z wielokrotności 1 024.</p><p class=\"text-mid mb-4\">Uwaga na okrągłe wartości. 1 000 GB to około 0,98 TB, a nie 1 TB — dokładnie 1 TB otrzymasz z 1 024 GB. Mnożnik 1 024 wynika z tego, że komputery liczą dwójkowo, a 2 do potęgi 10 to właśnie 1 024.</p><p class=\"text-mid\">W Excelu wpisz w komórce wzór <strong>=A1/1024</strong>, gdzie A1 zawiera wartość w GB. W drugą stronę, terabajty na gigabajty, użyj <strong>=A1*1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa gigabajtów na terabajty",
+      "description": "Poniższa tabela pokazuje przeliczenie popularnych wartości w gigabajtach na terabajty w systemie binarnym (÷1 024). Wartości niebędące wielokrotnością 1 024 podano w zaokrągleniu. Aby przeliczyć inną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Gigabajty",
+      "cols": ["Terabajty"],
+      "rows": [
+        { "label": "100 GB", "values": ["0,10 TB"] },
+        { "label": "500 GB", "values": ["0,49 TB"] },
+        { "label": "1 000 GB", "values": ["0,98 TB"] },
+        { "label": "1 024 GB", "values": ["1 TB"], "emphasis": true },
+        { "label": "2 000 GB", "values": ["1,95 TB"] },
+        { "label": "2 048 GB", "values": ["2 TB"], "emphasis": true },
+        { "label": "4 096 GB", "values": ["4 TB"], "emphasis": true },
+        { "label": "5 000 GB", "values": ["4,88 TB"] },
+        { "label": "8 192 GB", "values": ["8 TB"] },
+        { "label": "10 240 GB", "values": ["10 TB"], "emphasis": true }
+      ],
+      "caption": "Przykład: 1 024 GB ÷ 1 024 = 1 TB, a 1 000 GB to tylko 0,98 TB. Chcesz przeliczyć terabajty na gigabajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Cała drabina jednostek danych: od najmniejszej do największej",
+      "description": "Wszystkie jednostki rozmiaru danych rosną o ten sam mnożnik: każda kolejna jest 1 024 razy większa od poprzedniej. Poniższa tabela pokazuje kolejność od bajta do petabajta wraz z typowym przykładem, co dana jednostka opisuje.",
+      "labelHeader": "Jednostka",
+      "cols": ["Zależność", "Typowy przykład"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["jednostka podstawowa", "jeden znak tekstu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krótki e-mail lub ikona"]
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "zdjęcie lub utwór MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film lub kość pamięci RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabajt (TB)",
+          "values": ["1 024 GB", "dysk twardy"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "duże centrum danych"]
+        }
+      ],
+      "caption": "Kolejność od najmniejszej do największej: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Każdy krok to mnożenie przez 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się gigabajty na terabajty?",
+      "description": "Gigabajty przeliczasz na terabajty głównie przy dużych pojemnościach.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Pojemność dysków i NAS",
+          "description": "Dyski i macierze NAS bywają opisane w gigabajtach, a Ty myślisz w terabajtach. 2 048 GB to 2 TB, a dysk 1 000 GB to około 0,98 TB — przeliczenie od razu pokazuje realną pojemność."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Kopie zapasowe i archiwa",
+          "description": "Plan backupu albo archiwum sumuje się do tysięcy gigabajtów. Zamiana na terabajty porządkuje skalę, na przykład 5 000 GB to około 4,88 TB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Oferty chmurowe",
+          "description": "Usługi chmurowe podają pojemność raz w GB, raz w TB. Przeliczenie pozwala porównać oferty w tej samej jednostce, gdy jedna mówi o 1 000 GB, a druga o 1 TB."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Rozróżnienie 1000 i 1024",
+          "description": "Konwerter pokazuje wprost, że 1 000 GB to nie pełny terabajt, tylko 0,98 TB, a 1 TB otrzymasz dopiero z 1 024 GB. To najczęstsze źródło pomyłek przy pojemności dysków."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie gigabajtów na terabajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile GB to 1 TB?",
+          "answer": "1 TB to 1 024 GB w systemie binarnym, którego używa ten konwerter i systemy operacyjne. W systemie dziesiętnym (SI), stosowanym między innymi przez producentów dysków, 1 TB to 1 000 GB."
+        },
+        {
+          "question": "Czy 1000 GB to 1 TB?",
+          "answer": "Nie do końca. W systemie binarnym 1 000 GB to około 0,98 TB, bo pełny terabajt ma 1 024 GB. Dokładnie 1 TB otrzymasz z 1 024 GB. Zaokrąglenie do 1 TB stosuje się tylko w systemie dziesiętnym, którego używają producenci dysków."
+        },
+        {
+          "question": "Ile TB to 1024 i 2048 GB?",
+          "answer": "1 024 GB to dokładnie 1 TB, a 2 048 GB to 2 TB. Obie wartości wychodzą równo, bo są wielokrotnościami 1 024, czyli liczby gigabajtów w jednym terabajcie."
+        },
+        {
+          "question": "Jak przeliczyć gigabajty na terabajty?",
+          "answer": "Podziel liczbę gigabajtów przez 1 024. Na przykład 4 096 GB ÷ 1 024 = 4 TB. Konwerter robi to od razu po wpisaniu wartości, bez klikania jakiegokolwiek przycisku."
+        },
+        {
+          "question": "Ile TB to 500 i 2000 GB?",
+          "answer": "500 GB to około 0,49 TB, a 2 000 GB to około 1,95 TB. Wartości nie wychodzą okrągło, bo pełny terabajt ma 1 024 GB, a nie 1 000 GB."
+        },
+        {
+          "question": "Jak przeliczyć terabajty na gigabajty?",
+          "answer": "Pomnóż liczbę terabajtów przez 1 024. Na przykład 2 TB × 1 024 = 2 048 GB. Kliknij Zmień kolejność, aby konwerter przeliczał w tę stronę."
+        },
+        {
+          "question": "Czy 1 TB to 1000 czy 1024 GB?",
+          "answer": "Zależy od systemu. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 TB to 1 024 GB. Producenci dysków używają systemu dziesiętnego, w którym 1 TB to 1 000 GB. Dlatego dysk „1 TB” pokazuje w systemie mniejszą pojemność."
+        },
+        {
+          "question": "Jak przeliczyć GB na TB w Excelu?",
+          "answer": "Wpisz w komórce wzór =A1/1024, gdzie A1 zawiera wartość w gigabajtach. W drugą stronę, terabajty na gigabajty, użyj =A1*1024. Ten sam wzór działa w Arkuszach Google."
+        },
+        {
+          "question": "Jaka jest kolejność jednostek od najmniejszej do największej?",
+          "answer": "Od najmniejszej: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Każda jednostka jest 1 024 razy większa od poprzedniej. Bajt opisuje pojedynczy znak, a terabajt pojemność dysku."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabeli lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "defaultSubject": "Konwerter gigabajtów na terabajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

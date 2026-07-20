@@ -48,6 +48,8 @@
         "Das Ergebnis erscheint sofort beim Tippen, ohne dass Sie eine Schaltfläche anklicken müssen",
         "Mit der Schaltfläche Ergebnis kopieren legen Sie den fertigen Wert in die Zwischenablage",
         "Akzeptiert sowohl Punkt als auch Komma als Dezimaltrennzeichen",
+        "Standard-Umschalter: rechnen Sie binär (1.024, wie Windows und RAM) oder dezimal (1.000, wie Datenträger, macOS und Suchmaschinen)",
+        "Gibt eine fertige Formel für Excel und Tabellenkalkulationen an",
         "Alle Berechnungen laufen lokal im Browser, Ihre Daten verlassen das Gerät nicht",
         "Die genaue Formel lautet: Kilobytes = Bytes ÷ 1.024",
         "Funktioniert ohne Installation auf Handy, Tablet und Computer"
@@ -78,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Wozu Bytes in Kilobytes umrechnen?",
-      "html": "<p class=\"text-mid mb-4\">Ein Byte ist die grundlegende Einheit der Datengröße, und ein Kilobyte sind 1.024 Byte. Rohe Größen in Byte sehen Sie in den Dateieigenschaften, in der Ausgabe von Systembefehlen oder in API-Antworten — nach der Umrechnung in Kilobytes lassen sie sich leichter lesen und vergleichen.</p><p class=\"text-mid mb-4\">Der Zusammenhang ist fest: 1 KB sind 1.024 B im Binärsystem, das Betriebssysteme und dieser Umrechner nutzen. Um Bytes in Kilobytes umzurechnen, teilen Sie ihre Anzahl durch 1.024. Der Umrechner erledigt das, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Achten Sie auf zwei Systeme. Im Dezimalsystem (SI) sind 1 KB 1.000 B — so zählen zum Beispiel Speicherhersteller. Dieser Umrechner nutzt das Binärsystem (1.024 B), passend zu dem, was Windows und macOS anzeigen. Verwechseln Sie Byte auch nicht mit Bit: 1 Byte sind 8 Bit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Ein Byte ist die grundlegende Einheit der Datengröße, und ein Kilobyte sind 1.024 Byte. Rohe Größen in Byte sehen Sie in den Dateieigenschaften, in der Ausgabe von Systembefehlen oder in API-Antworten — nach der Umrechnung in Kilobytes lassen sie sich leichter lesen und vergleichen.</p><p class=\"text-mid mb-4\">Der Zusammenhang ist fest: 1 KB sind 1.024 B im Binärsystem, das Betriebssysteme und dieser Umrechner nutzen. Um Bytes in Kilobytes umzurechnen, teilen Sie ihre Anzahl durch 1.024. Der Umrechner erledigt das, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Achten Sie auf zwei Systeme. Im Dezimalsystem (SI) sind 1 KB 1.000 B — so zählen zum Beispiel Speicherhersteller. Dieser Umrechner nutzt das Binärsystem (1.024 B), passend zu dem, was Windows und macOS anzeigen. Verwechseln Sie Byte auch nicht mit Bit: 1 Byte sind 8 Bit.</p><p class=\"text-mid\">Dieses Werkzeug rechnet in beiden Standards: standardmäßig binär (1.024), und mit der Schaltfläche Einheitenstandard wechseln Sie zu dezimal (1.000). Windows und der Arbeitsspeicher zählen binär, Datenträgerhersteller, macOS und Suchmaschinen dezimal — deshalb wird dieselbe Kapazität auf zwei Arten angegeben.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kostenloser Umrechner von Bytes in Kilobytes – Arteon"
     },
@@ -86,7 +88,7 @@
     {
       "type": "sectionInfo",
       "title": "Wie funktioniert die Umrechnung von Bytes in Kilobytes? Formel und Beispiel",
-      "html": "<p class=\"text-mid mb-4\">Die Umrechnung beruht auf einem festen Zusammenhang: Ein Kilobyte sind 1.024 Byte. Um Bytes in Kilobytes umzurechnen, teilen Sie ihre Anzahl durch 1.024.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Kilobytes = Bytes ÷ 1.024</strong>. Umgekehrt: <strong>Bytes = Kilobytes × 1.024</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Eine Datei hat 51.200 Byte. Rechnung: 51.200 ÷ 1.024 = 50 KB. Der Faktor 1.024 kommt daher, dass Computer binär rechnen und zwei hoch zehn genau 1.024 ergibt.</p><p class=\"text-mid\">Warum 1.024 und nicht 1.000? Im Dezimalsystem (SI) sind 1 KB 1.000 B, und so geben Speicherhersteller die Kapazität an. Betriebssysteme und dieser Umrechner nutzen das Binärsystem, in dem 1 KB 1.024 B sind — formal Kibibyte (KiB) genannt.</p>"
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung beruht auf einem festen Zusammenhang: Ein Kilobyte sind 1.024 Byte. Um Bytes in Kilobytes umzurechnen, teilen Sie ihre Anzahl durch 1.024.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Kilobytes = Bytes ÷ 1.024</strong>. Umgekehrt: <strong>Bytes = Kilobytes × 1.024</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Eine Datei hat 51.200 Byte. Rechnung: 51.200 ÷ 1.024 = 50 KB. Der Faktor 1.024 kommt daher, dass Computer binär rechnen und zwei hoch zehn genau 1.024 ergibt.</p><p class=\"text-mid mb-4\">Warum 1.024 und nicht 1.000? Im Dezimalsystem (SI) sind 1 KB 1.000 B, und so geben Speicherhersteller die Kapazität an. Betriebssysteme und dieser Umrechner nutzen das Binärsystem, in dem 1 KB 1.024 B sind — formal Kibibyte (KiB) genannt.</p><p class=\"text-mid\">In Excel geben Sie in einer Zelle die Formel <strong>=A1/1024</strong> ein, wobei A1 den Wert in Byte enthält. Umgekehrt, Kilobytes in Bytes, nutzen Sie <strong>=A1*1024</strong>.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -109,6 +111,40 @@
         { "label": "1.048.576 B", "values": ["1.024 KB"], "emphasis": true }
       ],
       "caption": "Beispiel: 1.024 B ÷ 1.024 = 1 KB. Möchten Sie Kilobytes in Bytes umrechnen? Klicken Sie im Umrechner oben auf Reihenfolge tauschen."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Die gesamte Einheitenleiter: von der kleinsten zur größten",
+      "description": "Alle Einheiten der Datengröße wachsen um denselben Faktor: jede ist 1.024 Mal größer als die vorherige. Die folgende Tabelle zeigt die Reihenfolge vom Byte bis zum Petabyte, mit einem typischen Beispiel, was jede Einheit beschreibt.",
+      "labelHeader": "Einheit",
+      "cols": ["Zusammenhang", "Typisches Beispiel"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["Grundeinheit", "ein Textzeichen"],
+          "emphasis": true
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1.024 B", "eine kurze E-Mail oder ein Icon"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1.024 KB", "ein Foto oder ein MP3-Song"]
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1.024 MB", "ein Film oder ein RAM-Riegel"]
+        },
+        { "label": "Terabyte (TB)", "values": ["1.024 GB", "eine Festplatte"] },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1.024 TB", "ein großes Rechenzentrum"]
+        }
+      ],
+      "caption": "Reihenfolge von der kleinsten zur größten: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte, Petabyte. Jeder Schritt ist eine Multiplikation mit 1.024."
     },
     { "type": "gap", "variant": "line" },
     {
@@ -171,6 +207,14 @@
         {
           "question": "Wie viele Bit hat ein Byte?",
           "answer": "1 Byte sind 8 Bit. Achten Sie auf die Schreibweise: KB steht für Kilobytes (Dateigröße), Kb für Kilobit (oft Übertragungsgeschwindigkeit). Dieses Werkzeug rechnet mit Byte und Kilobytes, nicht mit Bit."
+        },
+        {
+          "question": "Wie rechnet man B in KB in Excel um?",
+          "answer": "Geben Sie in einer Zelle die Formel =A1/1024 ein, wobei A1 den Wert in Byte enthält. Umgekehrt, Kilobytes in Bytes, nutzen Sie =A1*1024. Dieselbe Formel funktioniert in Google Sheets."
+        },
+        {
+          "question": "Wie ist die Reihenfolge der Einheiten von der kleinsten zur größten?",
+          "answer": "Von der kleinsten: Byte (B), Kilobyte (KB), Megabyte (MB), Gigabyte (GB), Terabyte (TB), Petabyte (PB). Jede Einheit ist 1.024 Mal größer als die vorherige. Ein Byte beschreibt ein einzelnes Zeichen, ein Terabyte eine Festplattenkapazität."
         }
       ]
     },

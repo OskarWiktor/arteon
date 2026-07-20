@@ -1,0 +1,235 @@
+{
+  "toolKey": "kbToGb",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore da KB a GB – converti KB in GB",
+    "description": "Converti kilobyte in gigabyte e viceversa. 1 GB è 1.048.576 KB nel sistema binario. Scrivi un valore e il risultato compare subito. Funziona nel browser, senza registrazione.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-kb-in-gb"
+  },
+  "hero": {
+    "title": "Converti kilobyte in gigabyte",
+    "description": "Scrivi un numero di kilobyte e leggi subito il risultato in gigabyte. Un gigabyte è 1.048.576 kilobyte nel sistema binario (cioè 1.024 × 1.024), quindi il convertitore divide il tuo valore per 1.048.576. Usa Inverti ordine per convertire i gigabyte in kilobyte.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-kb-in-gb",
+      "label": "KB in GB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore da kilobyte a gigabyte – calcolatore KB in GB",
+      "alternateName": [
+        "Convertitore da KB a GB",
+        "Convertitore da kilobyte a gigabyte",
+        "Calcolatore da KB a GB",
+        "KB in GB",
+        "kb to gb",
+        "Converti KB in GB",
+        "Quanti KB ha un GB",
+        "1 milione di KB in GB",
+        "1048576 KB in GB",
+        "Gigabyte in kilobyte",
+        "GB in KB",
+        "kb to gb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertitore da kilobyte a gigabyte che funziona nel browser senza registrazione. Scrivi un numero di kilobyte e leggi subito il risultato in gigabyte. Usa il sistema binario, in cui 1 GB è 1.048.576 KB.",
+      "featureList": [
+        "Converte kilobyte in gigabyte e gigabyte in kilobyte nel sistema binario (1 GB = 1.048.576 KB)",
+        "La conversione funziona in entrambi i sensi: il pulsante Inverti ordine cambia la direzione",
+        "Il risultato compare subito mentre scrivi, senza premere alcun pulsante",
+        "Con il pulsante Copia risultato porti il valore pronto negli appunti",
+        "Accetta sia il punto sia la virgola come separatore decimale",
+        "Selettore di standard: calcola in binario (1.024, come Windows e RAM) o decimale (1.000, come dischi, macOS e motori di ricerca)",
+        "Fornisce una formula pronta per Excel e i fogli di calcolo",
+        "Tutti i calcoli avvengono localmente nel browser, i tuoi dati non lasciano il dispositivo",
+        "La formula esatta è: gigabyte = kilobyte ÷ 1.048.576",
+        "Funziona su telefono, tablet e computer senza installazione"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire i kilobyte in gigabyte?",
+      "description": "Breve guida all'uso del convertitore da kilobyte a gigabyte.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Scrivi un numero di kilobyte",
+          "text": "Nel campo a sinistra, scrivi il numero di kilobyte che vuoi convertire in gigabyte. Puoi usare il punto o la virgola come separatore decimale."
+        },
+        {
+          "name": "Leggi il risultato in gigabyte",
+          "text": "Il risultato in gigabyte compare subito nel campo accanto, a destra. Con il pulsante Copia risultato lo porti negli appunti."
+        },
+        {
+          "name": "Inverti il senso se serve",
+          "text": "Clicca su Inverti ordine per passare a convertire i gigabyte in kilobyte."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire i kilobyte in gigabyte?",
+      "html": "<p class=\"text-mid mb-4\">Il kilobyte e il gigabyte distano due ordini di grandezza: 1 GB è 1.048.576 KB, cioè 1.024 megabyte, ciascuno di 1.024 kilobyte. Convertire i KB in GB è utile quando sommi grandi quantità di file dati in kilobyte — come backup, esportazioni o log — e vuoi il risultato in gigabyte, più maneggevoli.</p><p class=\"text-mid mb-4\">Il rapporto è fisso: 1 GB è 1.048.576 KB nel sistema binario, quello che usano i sistemi operativi e questo convertitore. Per passare da kilobyte a gigabyte, dividi il loro numero per 1.048.576. Il convertitore lo fa appena scrivi un valore.</p><p class=\"text-mid\">Attenzione ai valori tondi. 1.000.000 KB (un milione) non sono 1 GB, ma circa 0,95 GB, perché un gigabyte completo ha 1.048.576 KB. È lo stesso effetto di 1.000 rispetto a 1.024, due livelli più in alto.</p><p class=\"text-mid\">Questo strumento calcola in entrambi gli standard: binario (1.024) come impostazione predefinita e, con il pulsante Standard delle unità, passi al decimale (1.000). Windows e la RAM contano in binario, mentre i produttori di dischi, macOS e i motori di ricerca contano in decimale — per questo la stessa capacità viene indicata in due modi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore gratuito da kilobyte a gigabyte – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione da kilobyte a gigabyte? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione si basa su un rapporto fisso: un gigabyte è 1.048.576 kilobyte. Per passare da kilobyte a gigabyte, dividi il loro numero per 1.048.576. Puoi anche dividere due volte per 1.024 — prima da KB a MB, poi da MB a GB.</p><p class=\"text-mid mb-4\">Formula completa: <strong>gigabyte = kilobyte ÷ 1.048.576</strong>. Al contrario: <strong>kilobyte = gigabyte × 1.048.576</strong>.</p><p class=\"text-mid mb-4\">Esempio: un'esportazione di dati è di 5.242.880 KB. Calcolo: 5.242.880 ÷ 1.048.576 = 5 GB. Il valore viene intero perché è un multiplo di 1.048.576.</p><p class=\"text-mid mb-4\">Attenzione al milione. 1.000.000 KB sono circa 0,95 GB, non 1 GB — raggiungi 1 GB esatto solo con 1.048.576 KB. Il moltiplicatore 1.048.576 deriva dal calcolo binario: due elevato a venti è esattamente 1.048.576.</p><p class=\"text-mid\">In Excel, scrivi la formula <strong>=A1/1048576</strong> in una cella, dove A1 contiene il valore in KB. Al contrario, gigabyte in kilobyte, usa <strong>=A1*1048576</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione da kilobyte a gigabyte",
+      "description": "La tabella seguente converte i valori comuni di kilobyte in gigabyte nel sistema binario (÷1.048.576). I valori che non sono multipli di 1.048.576 sono mostrati arrotondati. Per convertire un altro valore, usa il convertitore qui sopra.",
+      "labelHeader": "Kilobyte",
+      "cols": ["Gigabyte"],
+      "rows": [
+        { "label": "100.000 KB", "values": ["0,10 GB"] },
+        { "label": "500.000 KB", "values": ["0,48 GB"] },
+        { "label": "1.000.000 KB", "values": ["0,95 GB"] },
+        { "label": "1.048.576 KB", "values": ["1 GB"], "emphasis": true },
+        { "label": "2.000.000 KB", "values": ["1,91 GB"] },
+        { "label": "2.097.152 KB", "values": ["2 GB"], "emphasis": true },
+        { "label": "5.242.880 KB", "values": ["5 GB"], "emphasis": true },
+        { "label": "10.485.760 KB", "values": ["10 GB"], "emphasis": true },
+        { "label": "52.428.800 KB", "values": ["50 GB"] }
+      ],
+      "caption": "Esempio: 1.048.576 KB ÷ 1.048.576 = 1 GB, mentre 1.000.000 KB sono solo 0,95 GB. Vuoi convertire i gigabyte in kilobyte? Clicca su Inverti ordine nel convertitore qui sopra."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "La scala completa delle unità: dalla più piccola alla più grande",
+      "description": "Tutte le unità di dimensione dei dati crescono con lo stesso moltiplicatore: ognuna è 1.024 volte più grande della precedente. La tabella qui sotto mostra l'ordine dal byte al petabyte, con un esempio tipico di ciò che descrive ogni unità.",
+      "labelHeader": "Unità",
+      "cols": ["Rapporto", "Esempio tipico"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["unità base", "un carattere di testo"]
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1.024 B", "una breve e-mail o un'icona"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1.024 KB", "una foto o una canzone MP3"]
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1.024 MB", "un film o un banco di RAM"],
+          "emphasis": true
+        },
+        { "label": "Terabyte (TB)", "values": ["1.024 GB", "un disco rigido"] },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1.024 TB", "un grande data center"]
+        }
+      ],
+      "caption": "Ordine dalla più piccola alla più grande: byte, kilobyte, megabyte, gigabyte, terabyte, petabyte. Ogni salto è una moltiplicazione per 1.024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono più spesso i kilobyte in gigabyte?",
+      "description": "Le grandi quantità di kilobyte si convertono in gigabyte soprattutto per totali e copie di dati.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Totali di dimensioni in KB",
+          "description": "Esportazioni, backup e log a volte sono riportati in kilobyte. Quando arrivano a un milione e oltre, solo la conversione in gigabyte mostra la scala reale — 1.000.000 KB sono circa 0,95 GB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Capire un numero grande in KB",
+          "description": "Un valore a sette cifre in kilobyte è difficile da valutare a colpo d'occhio. Convertire in gigabyte sistema subito la scala, per esempio 5.242.880 KB sono esattamente 5 GB."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Specifiche e limiti",
+          "description": "Se un sistema o un report lavora in kilobyte mentre pensi un limite in gigabyte, il convertitore mostra quanti GB occupano per esempio 52.428.800 KB (50 GB)."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Un milione di KB non è un gigabyte",
+          "description": "Il convertitore mostra chiaramente che 1.000.000 KB sono circa 0,95 GB, e che un gigabyte completo ha 1.048.576 KB. È la stessa regola di 1.000 rispetto a 1.024, due livelli più in alto."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da kilobyte a gigabyte",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanti KB ha 1 GB?",
+          "answer": "1 GB è 1.048.576 KB nel sistema binario, che questo convertitore e i sistemi operativi usano. È 1.024 × 1.024. Nel sistema decimale (SI), 1 GB è 1.000.000 KB."
+        },
+        {
+          "question": "Un milione di KB è 1 GB?",
+          "answer": "Non proprio. 1.000.000 KB sono circa 0,95 GB, perché un gigabyte completo nel sistema binario ha 1.048.576 KB. Raggiungi 1 GB esatto con 1.048.576 KB. L'arrotondamento a 1 GB vale solo nel sistema decimale."
+        },
+        {
+          "question": "Quanti GB sono 1000000 KB?",
+          "answer": "1.000.000 KB sono circa 0,95 GB. Calcolo: 1.000.000 ÷ 1.048.576 = 0,95 GB. Un milione di kilobyte non forma un gigabyte completo, perché servono 1.048.576 KB."
+        },
+        {
+          "question": "Come convertire i kilobyte in gigabyte?",
+          "answer": "Dividi il numero di kilobyte per 1.048.576. Puoi anche dividere due volte per 1.024: prima da KB a MB, poi da MB a GB. Il convertitore lo fa appena scrivi un valore."
+        },
+        {
+          "question": "Quanti GB sono 100.000 e 500.000 KB?",
+          "answer": "100.000 KB sono circa 0,10 GB e 500.000 KB circa 0,48 GB. I valori non vengono tondi perché un gigabyte completo ha 1.048.576 KB, non un milione."
+        },
+        {
+          "question": "Come convertire i gigabyte in kilobyte?",
+          "answer": "Moltiplica il numero di gigabyte per 1.048.576. Per esempio, 2 GB × 1.048.576 = 2.097.152 KB. Clicca su Inverti ordine per far lavorare il convertitore in questo senso."
+        },
+        {
+          "question": "1 GB è 1.000.000 o 1.048.576 KB?",
+          "answer": "Dipende dal sistema. I sistemi operativi e questo convertitore usano il sistema binario, in cui 1 GB è 1.048.576 KB. I produttori di memorie usano il sistema decimale, in cui 1 GB è 1.000.000 KB. Da qui la differenza sui valori grandi."
+        },
+        {
+          "question": "Come si convertono i KB in GB in Excel?",
+          "answer": "Scrivi la formula =A1/1048576 in una cella, dove A1 contiene il valore in kilobyte. Al contrario, gigabyte in kilobyte, usa =A1*1048576. La stessa formula funziona in Google Sheets."
+        },
+        {
+          "question": "Qual è l'ordine delle unità dalla più piccola alla più grande?",
+          "answer": "Dalla più piccola: byte (B), kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB), petabyte (PB). Ogni unità è 1.024 volte più grande della precedente. Un byte descrive un singolo carattere, mentre un terabyte descrive la capacità di un disco."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se hai notato un errore nella tabella o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Contatto con Arteon Agency",
+      "defaultSubject": "Convertitore da kilobyte a gigabyte"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "toolKey": "gbToTb",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de GB para TB – converta GB para TB",
+    "description": "Converta gigabytes para terabytes e ao contrário. 1 TB são 1.024 GB no sistema binário. Escreva um valor e o resultado aparece ao instante. Funciona no navegador, sem registo.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-gb-para-tb"
+  },
+  "hero": {
+    "title": "Converta gigabytes para terabytes",
+    "description": "Escreva um número de gigabytes e leia o resultado em terabytes de imediato. Um terabyte são 1.024 gigabytes no sistema binário, por isso o conversor divide o seu valor por 1.024. Use Trocar ordem para converter terabytes para gigabytes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-gb-para-tb",
+      "label": "GB para TB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de gigabytes para terabytes – calculadora GB para TB",
+      "alternateName": [
+        "Conversor de GB para TB",
+        "Conversor de gigabytes para terabytes",
+        "Calculadora de GB para TB",
+        "GB para TB",
+        "gb to tb",
+        "Converter GB para TB",
+        "Quantos GB tem um TB",
+        "1000 GB em TB",
+        "1024 GB em TB",
+        "Terabytes para gigabytes",
+        "TB para GB",
+        "gb to tb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Conversor de gigabytes para terabytes que funciona no navegador sem registo. Escreva um número de gigabytes e leia o resultado em terabytes ao instante. Usa o sistema binário, no qual 1 TB são 1.024 GB.",
+      "featureList": [
+        "Converte gigabytes para terabytes e terabytes para gigabytes no sistema binário (1 TB = 1.024 GB)",
+        "A conversão funciona nos dois sentidos: o botão Trocar ordem inverte a direção",
+        "O resultado aparece ao instante enquanto escreve, sem clicar em qualquer botão",
+        "Com o botão Copiar resultado leva o valor pronto para a área de transferência",
+        "Aceita o ponto e a vírgula como separador decimal",
+        "Seletor de padrão: calcule em binário (1.024, como Windows e RAM) ou decimal (1.000, como discos, macOS e motores de busca)",
+        "Dá uma fórmula pronta para o Excel e folhas de cálculo",
+        "Todos os cálculos são feitos localmente no navegador, os seus dados não saem do dispositivo",
+        "A fórmula exata é: terabytes = gigabytes ÷ 1.024",
+        "Funciona no telemóvel, no tablet e no computador sem instalar nada"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter gigabytes para terabytes?",
+      "description": "Guia breve para usar o conversor de gigabytes para terabytes.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escreva um número de gigabytes",
+          "text": "No campo da esquerda, escreva o número de gigabytes que quer converter para terabytes. Pode usar o ponto ou a vírgula como separador decimal."
+        },
+        {
+          "name": "Leia o resultado em terabytes",
+          "text": "O resultado em terabytes aparece logo no campo ao lado, à direita. Com o botão Copiar resultado leva-o para a área de transferência."
+        },
+        {
+          "name": "Inverta o sentido se precisar",
+          "text": "Clique em Trocar ordem para passar a converter terabytes para gigabytes."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Para que converter gigabytes para terabytes?",
+      "html": "<p class=\"text-mid mb-4\">O gigabyte e o terabyte são unidades vizinhas do tamanho de dados: 1 TB são 1.024 GB. As capacidades de discos, NAS e planos de cópia de segurança dão-se em gigabytes ou terabytes, por isso converte GB para TB quando quer comparar um disco de 1.000 GB com uma oferta indicada em terabytes.</p><p class=\"text-mid mb-4\">A relação é fixa: 1 TB são 1.024 GB no sistema binário, o que os sistemas operativos e este conversor usam. Para passar de gigabytes para terabytes, divide o seu número por 1.024. O conversor faz isso assim que escreve um valor.</p><p class=\"text-mid\">Cuidado com os valores redondos. Um disco de «1.000 GB» não é um terabyte completo, mas cerca de 0,98 TB, porque um terabyte completo tem 1.024 GB. Chega a 1 TB exato com 1.024 GB. É o mesmo efeito que com 1.000 face a 1.024 em níveis mais baixos.</p><p class=\"text-mid\">Esta ferramenta calcula nos dois padrões: binário (1.024) por predefinição e, com o botão Padrão de unidades, pode mudar para decimal (1.000). O Windows e a RAM contam em binário, enquanto os fabricantes de discos, o macOS e os motores de busca contam em decimal — por isso a mesma capacidade é indicada de duas formas.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor gratuito de gigabytes para terabytes – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão de gigabytes para terabytes? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">A conversão assenta numa relação fixa: um terabyte são 1.024 gigabytes. Para passar de gigabytes para terabytes, divide o seu número por 1.024.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>terabytes = gigabytes ÷ 1.024</strong>. Ao contrário: <strong>gigabytes = terabytes × 1.024</strong>.</p><p class=\"text-mid mb-4\">Exemplo: um array tem 2.048 GB. Cálculo: 2.048 ÷ 1.024 = 2 TB. Do mesmo modo, 4.096 GB são 4 TB — os terabytes inteiros saem de múltiplos de 1.024.</p><p class=\"text-mid mb-4\">Cuidado com os valores redondos. 1.000 GB são cerca de 0,98 TB, não 1 TB — chega a 1 TB exato com 1.024 GB. O multiplicador 1.024 vem de os computadores contarem em binário, e dois elevado a dez ser exatamente 1.024.</p><p class=\"text-mid\">No Excel, escreva a fórmula <strong>=A1/1024</strong> numa célula, onde A1 contém o valor em GB. Ao contrário, terabytes para gigabytes, use <strong>=A1*1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão de gigabytes para terabytes",
+      "description": "A tabela abaixo converte valores comuns de gigabytes para terabytes no sistema binário (÷1.024). Os valores que não são múltiplo de 1.024 são mostrados arredondados. Para converter outro valor, use o conversor acima.",
+      "labelHeader": "Gigabytes",
+      "cols": ["Terabytes"],
+      "rows": [
+        { "label": "100 GB", "values": ["0,10 TB"] },
+        { "label": "500 GB", "values": ["0,49 TB"] },
+        { "label": "1.000 GB", "values": ["0,98 TB"] },
+        { "label": "1.024 GB", "values": ["1 TB"], "emphasis": true },
+        { "label": "2.000 GB", "values": ["1,95 TB"] },
+        { "label": "2.048 GB", "values": ["2 TB"], "emphasis": true },
+        { "label": "4.096 GB", "values": ["4 TB"], "emphasis": true },
+        { "label": "5.000 GB", "values": ["4,88 TB"] },
+        { "label": "8.192 GB", "values": ["8 TB"] },
+        { "label": "10.240 GB", "values": ["10 TB"], "emphasis": true }
+      ],
+      "caption": "Exemplo: 1.024 GB ÷ 1.024 = 1 TB, enquanto 1.000 GB são apenas 0,98 TB. Quer converter terabytes para gigabytes? Clique em Trocar ordem no conversor acima."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "A escala completa das unidades: da mais pequena à maior",
+      "description": "Todas as unidades de tamanho de dados crescem com o mesmo multiplicador: cada uma é 1.024 vezes maior do que a anterior. A tabela abaixo mostra a ordem do byte ao petabyte, com um exemplo típico do que cada unidade mede.",
+      "labelHeader": "Unidade",
+      "cols": ["Relação", "Exemplo típico"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["unidade base", "um caráter de texto"]
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1.024 B", "um e-mail curto ou um ícone"]
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1.024 KB", "uma foto ou uma música MP3"]
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1.024 MB", "um filme ou um módulo de RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabyte (TB)",
+          "values": ["1.024 GB", "um disco rígido"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1.024 TB", "um grande centro de dados"]
+        }
+      ],
+      "caption": "Ordem da mais pequena à maior: byte, kilobyte, megabyte, gigabyte, terabyte, petabyte. Cada salto é uma multiplicação por 1.024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando se converte gigabytes para terabytes com mais frequência?",
+      "description": "Os gigabytes convertem-se para terabytes sobretudo para grandes capacidades.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Capacidade de discos e NAS",
+          "description": "Os discos e os arrays NAS às vezes são rotulados em gigabytes enquanto pensa em terabytes. 2.048 GB são 2 TB, e um disco de 1.000 GB são cerca de 0,98 TB — converter mostra a capacidade real de imediato."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Cópias de segurança e arquivos",
+          "description": "Um plano de cópias ou um arquivo soma milhares de gigabytes. Passá-lo para terabytes organiza a escala, por exemplo 5.000 GB são cerca de 4,88 TB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Ofertas na nuvem",
+          "description": "Os serviços na nuvem indicam a capacidade ora em GB, ora em TB. Converter permite comparar ofertas na mesma unidade quando uma diz 1.000 GB e outra 1 TB."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Distinguir 1000 e 1024",
+          "description": "O conversor mostra com clareza que 1.000 GB não são um terabyte inteiro, mas 0,98 TB, e que chega a 1 TB apenas com 1.024 GB. É a confusão mais comum com a capacidade dos discos."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre a conversão de gigabytes para terabytes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quantos GB tem 1 TB?",
+          "answer": "1 TB são 1.024 GB no sistema binário, que este conversor e os sistemas operativos usam. No sistema decimal (SI), usado entre outros pelos fabricantes de discos, 1 TB são 1.000 GB."
+        },
+        {
+          "question": "1000 GB são 1 TB?",
+          "answer": "Não exatamente. No sistema binário, 1.000 GB são cerca de 0,98 TB, porque um terabyte completo tem 1.024 GB. Chega a 1 TB exato com 1.024 GB. O arredondamento para 1 TB só se aplica no sistema decimal que os fabricantes de discos usam."
+        },
+        {
+          "question": "Quantos TB são 1024 e 2048 GB?",
+          "answer": "1.024 GB são exatamente 1 TB e 2.048 GB são 2 TB. Ambos saem inteiros porque são múltiplos de 1.024, o número de gigabytes num terabyte."
+        },
+        {
+          "question": "Como converter gigabytes para terabytes?",
+          "answer": "Divide o número de gigabytes por 1.024. Por exemplo, 4.096 GB ÷ 1.024 = 4 TB. O conversor faz isso assim que escreve um valor, sem clicar em qualquer botão."
+        },
+        {
+          "question": "Quantos TB são 500 e 2000 GB?",
+          "answer": "500 GB são cerca de 0,49 TB e 2.000 GB cerca de 1,95 TB. Os valores não saem redondos porque um terabyte completo tem 1.024 GB, e não 1.000 GB."
+        },
+        {
+          "question": "Como converter terabytes para gigabytes?",
+          "answer": "Multiplique o número de terabytes por 1.024. Por exemplo, 2 TB × 1.024 = 2.048 GB. Clique em Trocar ordem para o conversor trabalhar neste sentido."
+        },
+        {
+          "question": "1 TB são 1.000 ou 1.024 GB?",
+          "answer": "Depende do sistema. Os sistemas operativos e este conversor usam o sistema binário, no qual 1 TB são 1.024 GB. Os fabricantes de discos usam o sistema decimal, no qual 1 TB são 1.000 GB. Por isso um disco de «1 TB» mostra menos capacidade no sistema operativo."
+        },
+        {
+          "question": "Como converter GB em TB no Excel?",
+          "answer": "Escreva a fórmula =A1/1024 numa célula, onde A1 contém o valor em gigabytes. Ao contrário, terabytes para gigabytes, use =A1*1024. A mesma fórmula funciona no Google Sheets."
+        },
+        {
+          "question": "Qual é a ordem das unidades da mais pequena à maior?",
+          "answer": "Da mais pequena: byte (B), kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB), petabyte (PB). Cada unidade é 1.024 vezes maior do que a anterior. Um byte descreve um único caráter, enquanto um terabyte descreve a capacidade de um disco."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Tem uma pergunta ou sugestão?",
+      "description": "Se encontrou um erro na tabela ou tem uma ideia para melhorar o conversor, escreva-nos. Respondemos a cada mensagem.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Contacto com a Arteon Agency",
+      "defaultSubject": "Conversor de gigabytes para terabytes"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "toolKey": "kbToTb",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník kilobajtů na terabajty – převeď KB na TB",
+    "description": "Převeď kilobajty na terabajty a naopak. 1 TB je 1 073 741 824 KB v binárním systému. Vzorec, tip pro Excel a tabulka. Běží v prohlížeči, bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-kb-na-tb"
+  },
+  "hero": {
+    "title": "Převeď kilobajty na terabajty",
+    "description": "Zadej počet kilobajtů a rovnou si přečti výsledek v terabajtech. Terabajt je 1 073 741 824 kilobajtů v binárním systému (1024 × 1024 × 1024), proto převodník dělí zadanou hodnotu číslem 1 073 741 824. Tlačítkem Prohodit pořadí převedeš i terabajty na kilobajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-kb-na-tb",
+      "label": "kilobajty na terabajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník kilobajtů na terabajty – kalkulačka KB na TB",
+      "alternateName": [
+        "Převodník kilobajtů na terabajty",
+        "Kalkulačka kilobajtů na terabajty",
+        "KB na TB",
+        "Kilobajty na terabajty",
+        "kb to tb",
+        "Převeď KB na TB",
+        "Kolik KB má TB",
+        "KB na TB vzorec",
+        "KB na TB v Excelu",
+        "Terabajty na kilobajty",
+        "TB na KB",
+        "kb to tb chart"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník kilobajtů na terabajty, který běží v prohlížeči bez registrace. Zadej počet kilobajtů a rovnou si přečti výsledek v terabajtech. Používá binární systém, ve kterém je 1 TB rovno 1 073 741 824 KB.",
+      "featureList": [
+        "Převádí kilobajty na terabajty i terabajty na kilobajty v binárním systému (1 TB = 1 073 741 824 KB)",
+        "Převod funguje v obou směrech — tlačítko Prohodit pořadí přepíná směr",
+        "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
+        "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
+        "Přepínač standardu: počítej binárně (1 024, jako Windows a RAM) nebo desítkově (1 000, jako disky, macOS a vyhledávače)",
+        "Uvádí hotový vzorec pro Excel a tabulkové procesory",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
+        "Přesný vzorec je: terabajty = kilobajty ÷ 1 073 741 824",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést kilobajty na terabajty?",
+      "description": "Krátký návod k použití převodníku kilobajtů na terabajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej počet kilobajtů",
+          "text": "Do levého pole zadej počet kilobajtů, které chceš převést na terabajty. Můžeš použít tečku nebo čárku jako desetinný oddělovač."
+        },
+        {
+          "name": "Přečti výsledek v terabajtech",
+          "text": "Výsledek v terabajtech se objeví hned v poli vedle, vpravo. Tlačítkem Kopírovat výsledek jej přeneseš do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Prohodit pořadí a přejdeš k převodu terabajtů na kilobajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět kilobajty na terabajty?",
+      "html": "<p class=\"text-mid mb-4\">Kilobajt a terabajt dělí tři úrovně: 1 TB je 1 073 741 824 KB. Tento převod potřebuješ zřídka, ale nastane, když sčítáš obrovské množství malých souborů uvedených v kilobajtech — třeba miliony záznamů, logů nebo záloh — a chceš výsledek v terabajtech.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 TB je 1 073 741 824 KB v binárním systému, který používají operační systémy i tento převodník. Pro převod kilobajtů na terabajty jejich počet vyděl číslem 1 073 741 824. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Odkud se to číslo bere? Protože mezi kilobajtem a terabajtem jsou tři stupně po 1 024: KB → MB → GB → TB. 1024 × 1024 × 1024 dává právě 1 073 741 824. Níže najdeš hotový vzorec pro Excel a tabulku celého žebříčku jednotek.</p><p class=\"text-mid\">Tento nástroj počítá v obou standardech: výchozí je binární (1 024) a tlačítkem Standard jednotek přepneš na desítkový (1 000). Windows a paměť RAM počítají binárně, zatímco výrobci disků, macOS a vyhledávače desítkově — proto se stejná kapacita uvádí dvěma způsoby.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník kilobajtů na terabajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod kilobajtů na terabajty? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden terabajt je 1 073 741 824 kilobajtů. Pro převod kilobajtů na terabajty jejich počet vyděl číslem 1 073 741 824. Můžeš také dělit třikrát číslem 1024 — z KB na MB, pak na GB a nakonec na TB.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>terabajty = kilobajty ÷ 1 073 741 824</strong>. Opačně: <strong>kilobajty = terabajty × 1 073 741 824</strong>.</p><p class=\"text-mid mb-4\">Příklad: máš 2 147 483 648 KB. Výpočet: 2 147 483 648 ÷ 1 073 741 824 = 2 TB. Hodnota vyjde celá, protože je dvojnásobkem 1 073 741 824.</p><p class=\"text-mid\">V Excelu zadej do buňky vzorec <strong>=A1/1073741824</strong>, kde A1 je buňka s hodnotou v KB. Opačně, terabajty na kilobajty, použij <strong>=A1*1073741824</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka kilobajtů na terabajty",
+      "description": "Následující tabulka převádí kilobajty na terabajty v binárním systému (÷1 073 741 824). Hodnoty, které nejsou násobkem 1 073 741 824, jsou uvedeny zaokrouhleně. Pro převod jiné hodnoty použij převodník výše.",
+      "labelHeader": "Kilobajty",
+      "cols": ["Terabajty"],
+      "rows": [
+        { "label": "100 000 000 KB", "values": ["0,09 TB"] },
+        { "label": "500 000 000 KB", "values": ["0,47 TB"] },
+        { "label": "1 000 000 000 KB", "values": ["0,93 TB"] },
+        { "label": "1 073 741 824 KB", "values": ["1 TB"], "emphasis": true },
+        { "label": "2 147 483 648 KB", "values": ["2 TB"], "emphasis": true },
+        { "label": "5 368 709 120 KB", "values": ["5 TB"] },
+        { "label": "10 737 418 240 KB", "values": ["10 TB"], "emphasis": true }
+      ],
+      "caption": "Příklad: 1 073 741 824 KB ÷ 1 073 741 824 = 1 TB. Chceš převést terabajty na kilobajty? Klikni na Prohodit pořadí v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Celý žebříček datových jednotek: od nejmenší po největší",
+      "description": "Všechny jednotky velikosti dat rostou stejným násobkem: každá je 1 024 krát větší než předchozí. Následující tabulka ukazuje pořadí od bajtu po petabajt s typickým příkladem, co která jednotka popisuje.",
+      "labelHeader": "Jednotka",
+      "cols": ["Vztah", "Typický příklad"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["základní jednotka", "jeden znak textu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krátký e-mail nebo ikona"]
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "fotka nebo skladba MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film nebo modul RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabajt (TB)",
+          "values": ["1 024 GB", "pevný disk"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "velké datové centrum"]
+        }
+      ],
+      "caption": "Pořadí od nejmenší po největší: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Každý krok je násobení číslem 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí kilobajty na terabajty?",
+      "description": "Skok z kilobajtů na terabajty se hodí u velmi velkých součtů dat.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Součty milionů malých souborů",
+          "description": "Databáze, logy a exporty se mohou nasčítat na miliardy kilobajtů. Teprve převod na terabajty ukáže skutečný rozsah — 1 000 000 000 KB (miliarda) je asi 0,93 TB."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Plánování kapacity",
+          "description": "Když report uvádí zaplnění v kilobajtech, zatímco disk nebo pole měříš v terabajtech, převodník hned ukáže, kolik TB zabírá například 1 073 741 824 KB (přesně 1 TB)."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Vzorec v Excelu",
+          "description": "V tabulce převedeš celý sloupec velikostí vzorcem =A1/1073741824. Převodník uvádí hotový vzorec, takže ho nemusíš hledat ani si ho pamatovat."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Pořadí jednotek",
+          "description": "Převodník a tabulka žebříčku ukazují pořadí jasně, od nejmenší po největší: B, KB, MB, GB, TB, PB, každá 1 024 krát větší než předchozí."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu kilobajtů na terabajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik KB má 1 TB?",
+          "answer": "1 TB je 1 073 741 824 KB v binárním systému, který používá tento převodník a operační systémy. Je to 1024 × 1024 × 1024. V desítkovém systému (SI) je 1 TB rovno 1 000 000 000 KB."
+        },
+        {
+          "question": "Jak převést kilobajty na terabajty?",
+          "answer": "Vyděl počet kilobajtů číslem 1 073 741 824. Můžeš také dělit třikrát číslem 1024: z KB na MB, pak na GB a nakonec na TB. Převodník to udělá hned, jakmile zadáš hodnotu."
+        },
+        {
+          "question": "Jak převést KB na TB v Excelu?",
+          "answer": "Zadej do buňky vzorec =A1/1073741824, kde A1 je buňka s hodnotou v kilobajtech. Opačně, terabajty na kilobajty, použij =A1*1073741824. Stejný vzorec funguje i v Tabulkách Google."
+        },
+        {
+          "question": "Jaké je pořadí jednotek od nejmenší po největší?",
+          "answer": "Od nejmenší: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Každá jednotka je 1 024 krát větší než předchozí. Bajt popisuje jeden znak, terabajt kapacitu disku."
+        },
+        {
+          "question": "Jak převést terabajty na kilobajty?",
+          "answer": "Vynásob počet terabajtů číslem 1 073 741 824. Například 2 TB × 1 073 741 824 = 2 147 483 648 KB. Klikni na Prohodit pořadí, aby převodník počítal tímto směrem."
+        },
+        {
+          "question": "Proč 1 024, a ne 1 000?",
+          "answer": "Protože počítače počítají dvojkově. Operační systémy a tento převodník používají binární systém, ve kterém je každý stupeň 1 024. Výrobci úložišť používají desítkový systém (1 000), proto je kapacita disku zobrazená v systému menší než číslo na etiketě."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulce nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "defaultSubject": "Převodník kilobajtů na terabajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "toolKey": "tbToGb",
+  "locale": "en",
+  "metadata": {
+    "title": "TB to GB converter – convert TB to GB",
+    "description": "Convert terabytes to gigabytes and back. 1 TB is 1,024 GB in the binary system. Type a value and the result appears instantly. Runs in your browser with no sign-up.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/tb-to-gb-converter"
+  },
+  "hero": {
+    "title": "Convert terabytes to gigabytes",
+    "description": "Type a number of terabytes and read the result in gigabytes straight away. A terabyte is 1,024 gigabytes in the binary system, so the converter multiplies your value by 1,024. Use Swap order to convert gigabytes to terabytes instead.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/tb-to-gb-converter",
+      "label": "TB to GB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Terabytes to gigabytes converter – TB to GB calculator",
+      "alternateName": [
+        "TB to GB converter",
+        "Terabytes to gigabytes converter",
+        "TB to GB calculator",
+        "TB to GB",
+        "tb to gb",
+        "Convert TB to GB",
+        "How many GB in a TB",
+        "1 TB in GB",
+        "Why does 1 TB drive show 931 GB",
+        "Gigabytes to terabytes",
+        "GB to TB",
+        "tb to gb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Terabytes to gigabytes converter that runs in your browser with no sign-up. Type a number of terabytes and read the result in gigabytes instantly. It uses the binary system, where 1 TB is 1,024 GB.",
+      "featureList": [
+        "Converts terabytes to gigabytes and gigabytes to terabytes in the binary system (1 TB = 1,024 GB)",
+        "The conversion works both ways — the Swap order button switches the direction",
+        "The result appears instantly as you type, with no button to click",
+        "The Copy result button puts the finished value on your clipboard",
+        "Accepts both a dot and a comma as the decimal separator",
+        "Standard toggle: compute in binary (1,024, like Windows and RAM) or decimal (1,000, like drives, macOS and search engines)",
+        "Gives a ready-made formula for Excel and spreadsheets",
+        "Every calculation runs locally in your browser, so your data never leaves your device",
+        "The exact formula is: gigabytes = terabytes × 1,024",
+        "Works on phone, tablet and computer with no installation"
+      ]
+    },
+    "howTo": {
+      "name": "How do you convert terabytes to gigabytes?",
+      "description": "A short guide to using the terabytes to gigabytes converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Type a number of terabytes",
+          "text": "In the left field, type the number of terabytes you want to convert to gigabytes. You can use a dot or a comma as the decimal separator."
+        },
+        {
+          "name": "Read the result in gigabytes",
+          "text": "The result in gigabytes appears immediately in the field on the right. The Copy result button puts it on your clipboard."
+        },
+        {
+          "name": "Swap the direction if you need to",
+          "text": "Click Swap order to move to converting gigabytes to terabytes."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert terabytes to gigabytes?",
+      "html": "<p class=\"text-mid mb-4\">A terabyte is larger than a gigabyte: 1 TB is 1,024 GB. Drive, NAS and server capacities are given in terabytes, but plans, limits and individual volumes are often described in gigabytes — so you convert TB to GB.</p><p class=\"text-mid mb-4\">The relationship is fixed: 1 TB is 1,024 GB in the binary system, which operating systems and this converter use. To turn terabytes into gigabytes, multiply their number by 1,024. The converter does this the moment you type a value.</p><p class=\"text-mid\">Watch out for two systems. In the decimal system (SI), 1 TB is 1,000 GB — that is how drive makers count. This is why a drive labelled 1 TB shows about 931 GB in the operating system. This converter uses the binary system, where 1 TB is 1,024 GB.</p><p class=\"text-mid\">This tool computes both standards: binary (1,024) by default, and the Unit standard button switches it to decimal (1,000). Windows and RAM count in binary, while drive makers, macOS and search engines count in decimal — which is why the same capacity is quoted two different ways.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Free terabytes to gigabytes converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does the terabytes to gigabytes conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">The conversion rests on a fixed relationship: one terabyte is 1,024 gigabytes. To turn terabytes into gigabytes, multiply their number by 1,024.</p><p class=\"text-mid mb-4\">Full formula: <strong>gigabytes = terabytes × 1,024</strong>. The other way: <strong>terabytes = gigabytes ÷ 1,024</strong>.</p><p class=\"text-mid mb-4\">Example: a drive is 2 TB. Calculation: 2 × 1,024 = 2,048 GB. Likewise 4 TB is 4,096 GB — that is how many gigabytes sit behind a drive capacity given in terabytes.</p><p class=\"text-mid mb-4\">Which is bigger? The terabyte. 1 TB is 1,024 GB, so a 10 TB array is 10,240 GB. Fractional capacities are just as simple: 1.5 TB is 1,536 GB.</p><p class=\"text-mid\">In Excel, type the formula <strong>=A1*1024</strong> in a cell, where A1 holds the value in TB. The other way, gigabytes to terabytes, use <strong>=A1/1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Terabytes to gigabytes conversion table",
+      "description": "The table below converts common terabyte values into gigabytes in the binary system (×1,024). To convert another value, use the converter above.",
+      "labelHeader": "Terabytes",
+      "cols": ["Gigabytes"],
+      "rows": [
+        { "label": "0.5 TB", "values": ["512 GB"] },
+        { "label": "1 TB", "values": ["1,024 GB"], "emphasis": true },
+        { "label": "1.5 TB", "values": ["1,536 GB"] },
+        { "label": "2 TB", "values": ["2,048 GB"], "emphasis": true },
+        { "label": "3 TB", "values": ["3,072 GB"] },
+        { "label": "4 TB", "values": ["4,096 GB"], "emphasis": true },
+        { "label": "5 TB", "values": ["5,120 GB"] },
+        { "label": "6 TB", "values": ["6,144 GB"] },
+        { "label": "10 TB", "values": ["10,240 GB"], "emphasis": true },
+        { "label": "20 TB", "values": ["20,480 GB"] },
+        { "label": "50 TB", "values": ["51,200 GB"] }
+      ],
+      "caption": "Example: 1 TB × 1,024 = 1,024 GB. Want to convert gigabytes to terabytes? Click Swap order in the converter above."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "The full data unit ladder: from smallest to largest",
+      "description": "Every data size unit grows by the same multiplier: each one is 1,024 times larger than the previous. The table below shows the order from byte to petabyte, with a typical example of what each unit describes.",
+      "labelHeader": "Unit",
+      "cols": ["Relationship", "Typical example"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["base unit", "one character of text"]
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1,024 B", "a short email or icon"]
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1,024 KB", "a photo or an MP3 song"]
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1,024 MB", "a movie or a RAM stick"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabyte (TB)",
+          "values": ["1,024 GB", "a hard drive"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1,024 TB", "a large data centre"]
+        }
+      ],
+      "caption": "Order from smallest to largest: byte, kilobyte, megabyte, gigabyte, terabyte, petabyte. Each step is a multiplication by 1,024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do people most often convert terabytes to gigabytes?",
+      "description": "You convert terabytes to gigabytes mostly for drive and server capacity.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Drive and NAS capacity",
+          "description": "Drives and arrays are given in terabytes, while individual volumes or limits are in gigabytes. A 2 TB drive is 2,048 GB, and 4 TB is 4,096 GB — converting shows the capacity in GB at once."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Servers and hosting",
+          "description": "Server plans and transfer limits are sometimes counted in gigabytes, even though the drive capacity is in terabytes. 1 TB is 1,024 GB, so it is easy to split the space into smaller volumes."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Fractional capacities",
+          "description": "Drives are sometimes labelled 1.5 TB or 1.2 TB. Converting shows the exact number of gigabytes: 1.5 TB is 1,536 GB, so you can compare them with offers in GB."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "A drive's real capacity",
+          "description": "The converter helps you understand why a 1 TB drive shows less space in the system. The maker counts in decimal while the system counts in binary — more in the questions below."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting terabytes to gigabytes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many GB are in 1 TB?",
+          "answer": "1 TB is 1,024 GB in the binary system, which this converter and operating systems use. In the decimal system (SI), used by drive makers, 1 TB is 1,000 GB."
+        },
+        {
+          "question": "How many GB are 2 TB and a 4 TB drive?",
+          "answer": "2 TB is 2,048 GB, and 4 TB is 4,096 GB. You get each value by multiplying the number of terabytes by 1,024, the number of gigabytes in one terabyte."
+        },
+        {
+          "question": "How much is 1 TB in GB?",
+          "answer": "1 TB is exactly 1,024 GB. Calculation: 1 × 1,024 = 1,024 GB. This is the base relationship between the terabyte and the gigabyte."
+        },
+        {
+          "question": "How do you convert terabytes to gigabytes?",
+          "answer": "Multiply the number of terabytes by 1,024. For example, 10 TB × 1,024 = 10,240 GB. The converter does this the moment you type a value, with no button to click."
+        },
+        {
+          "question": "How many GB is 1.5 TB?",
+          "answer": "1.5 TB is 1,536 GB. Calculation: 1.5 × 1,024 = 1,536 GB. Fractional drive capacities convert the same way as whole ones, by multiplying by 1,024."
+        },
+        {
+          "question": "Why does a 1 TB drive show about 931 GB?",
+          "answer": "Because the maker labels the drive in the decimal system: 1 TB is 1,000,000,000,000 bytes. The operating system counts in binary and divides that by 1,073,741,824 (1 GB in binary), which gives about 931 GB. This converter shows the pure binary relationship, where 1 TB is 1,024 GB."
+        },
+        {
+          "question": "How do you convert gigabytes to terabytes?",
+          "answer": "Divide the number of gigabytes by 1,024. For example, 2,048 GB ÷ 1,024 = 2 TB. Click Swap order to have the converter work in this direction."
+        },
+        {
+          "question": "How do you convert TB to GB in Excel?",
+          "answer": "Type the formula =A1*1024 in a cell, where A1 holds the value in terabytes. The other way, gigabytes to terabytes, use =A1/1024. The same formula works in Google Sheets."
+        },
+        {
+          "question": "What is the order of the units from smallest to largest?",
+          "answer": "From smallest: byte (B), kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB), petabyte (PB). Each unit is 1,024 times larger than the previous one. A byte describes a single character, while a terabyte describes a drive capacity."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Have a question or suggestion?",
+      "description": "If you have spotted an error in the table or have an idea to improve the converter, write to us. We reply to every message.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Contact Arteon Agency",
+      "defaultSubject": "Terabytes to gigabytes converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

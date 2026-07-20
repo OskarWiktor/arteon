@@ -1,0 +1,237 @@
+{
+  "toolKey": "gbToKb",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur de Go en Ko – convertir GB en KB",
+    "description": "Convertissez des giga-octets en kilo-octets et inversement. Un giga-octet fait 1 048 576 Ko dans le système binaire. Saisissez une valeur et le résultat apparaît aussitôt. Fonctionne dans le navigateur, sans inscription.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-go-en-ko"
+  },
+  "hero": {
+    "title": "Convertissez des giga-octets en kilo-octets",
+    "description": "Saisissez un nombre de giga-octets et lisez le résultat en kilo-octets tout de suite. Un giga-octet fait 1 048 576 kilo-octets dans le système binaire (soit 1 024 × 1 024), donc le convertisseur multiplie votre valeur par 1 048 576. Utilisez Inverser l'ordre pour convertir des kilo-octets en giga-octets. Dans l'outil, ces unités sont notées GB (giga-octets) et KB (kilo-octets).",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-go-en-ko",
+      "label": "Go en Ko"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur de giga-octets en kilo-octets – calculateur GB en KB",
+      "alternateName": [
+        "Convertisseur de Go en Ko",
+        "Convertisseur de giga-octets en kilo-octets",
+        "Calculateur Go en Ko",
+        "Go en Ko",
+        "gb to kb",
+        "Convertir des Go en Ko",
+        "Combien de Ko dans un Go",
+        "1 Go en Ko",
+        "Qu'est-ce qui est plus grand Go ou Ko",
+        "Kilo-octets en giga-octets",
+        "Ko en Go",
+        "gb to kb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur de giga-octets en kilo-octets qui fonctionne dans le navigateur sans inscription. Saisissez un nombre de giga-octets et lisez le résultat en kilo-octets aussitôt. Il utilise le système binaire, dans lequel 1 Go fait 1 048 576 Ko.",
+      "featureList": [
+        "Convertit des giga-octets en kilo-octets et des kilo-octets en giga-octets dans le système binaire (1 Go = 1 048 576 Ko)",
+        "La conversion fonctionne dans les deux sens : le bouton Inverser l'ordre change de direction",
+        "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
+        "Accepte le point comme la virgule comme séparateur décimal",
+        "Sélecteur de standard : calculez en binaire (1 024, comme Windows et la RAM) ou décimal (1 000, comme disques, macOS et moteurs de recherche)",
+        "Donne une formule prête pour Excel et les tableurs",
+        "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
+        "La formule exacte est : kilo-octets = giga-octets × 1 048 576",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des giga-octets en kilo-octets ?",
+      "description": "Court guide d'utilisation du convertisseur de giga-octets en kilo-octets.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez un nombre de giga-octets",
+          "text": "Dans le champ de gauche, saisissez le nombre de giga-octets que vous voulez convertir en kilo-octets. Vous pouvez utiliser le point ou la virgule comme séparateur décimal."
+        },
+        {
+          "name": "Lisez le résultat en kilo-octets",
+          "text": "Le résultat en kilo-octets apparaît aussitôt dans le champ voisin, à droite. Avec le bouton Copier le résultat, vous le placez dans le presse-papiers."
+        },
+        {
+          "name": "Inversez le sens au besoin",
+          "text": "Cliquez sur Inverser l'ordre pour passer à la conversion des kilo-octets en giga-octets."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir des giga-octets en kilo-octets ?",
+      "html": "<p class=\"text-mid mb-4\">Un giga-octet est bien plus grand qu'un kilo-octet : 1 Go fait 1 048 576 Ko. Convertir des Go en kilo-octets est moins fréquent qu'en méga-octets, mais cela arrive quand un système, un script ou une spécification attend une valeur en kilo-octets alors que vous connaissez la capacité en giga-octets.</p><p class=\"text-mid mb-4\">Le rapport est fixe : 1 Go fait 1 048 576 Ko dans le système binaire, celui qu'utilisent les systèmes d'exploitation et ce convertisseur. Pour passer des giga-octets aux kilo-octets, vous multipliez leur nombre par 1 048 576. Le convertisseur le fait dès que vous saisissez une valeur.</p><p class=\"text-mid\">Attention à deux systèmes. Dans le système décimal (SI), 1 Go fait 1 000 000 Ko — c'est ainsi que comptent par exemple les fabricants de stockage. Ce convertisseur utilise le système binaire (1 048 576 Ko), comme ce qu'affichent Windows et macOS.</p><p class=\"text-mid\">Cet outil calcule dans les deux standards : binaire (1 024) par défaut, et avec le bouton Standard d'unités vous passez au décimal (1 000). Windows et la RAM comptent en binaire, tandis que les fabricants de disques, macOS et les moteurs de recherche comptent en décimal — c'est pourquoi la même capacité est indiquée de deux façons.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit de giga-octets en kilo-octets – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion des giga-octets en kilo-octets ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion repose sur un rapport fixe : un giga-octet fait 1 048 576 kilo-octets. Pour passer des giga-octets aux kilo-octets, vous multipliez leur nombre par 1 048 576. Vous pouvez aussi multiplier deux fois par 1 024 — d'abord de Go en Mo, puis de Mo en Ko.</p><p class=\"text-mid mb-4\">Formule complète : <strong>kilo-octets = giga-octets × 1 048 576</strong>. Dans l'autre sens : <strong>giga-octets = kilo-octets ÷ 1 048 576</strong>.</p><p class=\"text-mid mb-4\">Exemple : un disque fait 16 Go. Calcul : 16 × 1 048 576 = 16 777 216 Ko. Les nombres grandissent vite, car chaque giga-octet fait plus d'un million de kilo-octets.</p><p class=\"text-mid mb-4\">Lequel est le plus grand ? Le giga-octet. 1 Go fait 1 048 576 Ko, donc plus d'un million de fois plus grand qu'un kilo-octet. Cela montre l'ampleur de l'écart d'échelle entre les deux unités.</p><p class=\"text-mid\">Dans Excel, saisissez la formule <strong>=A1*1048576</strong> dans une cellule, où A1 contient la valeur en Go. Dans l'autre sens, kilo-octets en giga-octets, utilisez <strong>=A1/1048576</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion des giga-octets en kilo-octets",
+      "description": "Le tableau ci-dessous convertit des valeurs courantes de giga-octets en kilo-octets dans le système binaire (×1 048 576). Pour convertir une autre valeur, utilisez le convertisseur ci-dessus. Les unités sont notées GB et KB, comme dans l'outil.",
+      "labelHeader": "Giga-octets",
+      "cols": ["Kilo-octets"],
+      "rows": [
+        { "label": "0,5 GB", "values": ["524 288 KB"] },
+        { "label": "1 GB", "values": ["1 048 576 KB"], "emphasis": true },
+        { "label": "2 GB", "values": ["2 097 152 KB"] },
+        { "label": "4 GB", "values": ["4 194 304 KB"], "emphasis": true },
+        { "label": "5 GB", "values": ["5 242 880 KB"] },
+        { "label": "8 GB", "values": ["8 388 608 KB"] },
+        { "label": "10 GB", "values": ["10 485 760 KB"] },
+        { "label": "16 GB", "values": ["16 777 216 KB"], "emphasis": true },
+        { "label": "32 GB", "values": ["33 554 432 KB"] },
+        { "label": "64 GB", "values": ["67 108 864 KB"], "emphasis": true },
+        { "label": "128 GB", "values": ["134 217 728 KB"] }
+      ],
+      "caption": "Exemple : 1 GB × 1 048 576 = 1 048 576 KB. Vous voulez convertir des kilo-octets en giga-octets ? Cliquez sur Inverser l'ordre dans le convertisseur ci-dessus."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "L'échelle complète des unités de données : de la plus petite à la plus grande",
+      "description": "Toutes les unités de taille de données grandissent du même multiplicateur : chacune est 1 024 fois plus grande que la précédente. Le tableau ci-dessous montre l'ordre de l'octet au péta-octet, avec un exemple typique de ce que décrit chaque unité.",
+      "labelHeader": "Unité",
+      "cols": ["Rapport", "Exemple typique"],
+      "rows": [
+        {
+          "label": "Octet (o)",
+          "values": ["unité de base", "un caractère de texte"]
+        },
+        {
+          "label": "Kilo-octet (Ko)",
+          "values": ["1 024 o", "un court e-mail ou une icône"],
+          "emphasis": true
+        },
+        {
+          "label": "Méga-octet (Mo)",
+          "values": ["1 024 Ko", "une photo ou une chanson MP3"]
+        },
+        {
+          "label": "Giga-octet (Go)",
+          "values": ["1 024 Mo", "un film ou une barrette de RAM"],
+          "emphasis": true
+        },
+        { "label": "Téra-octet (To)", "values": ["1 024 Go", "un disque dur"] },
+        {
+          "label": "Péta-octet (Po)",
+          "values": ["1 024 To", "un grand centre de données"]
+        }
+      ],
+      "caption": "Ordre de la plus petite à la plus grande : octet, kilo-octet, méga-octet, giga-octet, téra-octet, péta-octet. Chaque palier est une multiplication par 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent des giga-octets en kilo-octets ?",
+      "description": "On convertit les giga-octets en kilo-octets moins souvent qu'en méga-octets, surtout dans des situations techniques.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Valeurs en Ko dans les systèmes et scripts",
+          "description": "Certains scripts, API ou champs de configuration attendent une taille en kilo-octets. Quand vous connaissez la capacité en giga-octets, vous la convertissez en Ko — par exemple 2 Go font 2 097 152 Ko."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Saisir l'échelle",
+          "description": "La conversion montre l'énorme nombre de kilo-octets derrière un giga-octet. 16 Go font 16 777 216 Ko, ce qui rend l'écart entre les unités évident."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Capacité en Ko",
+          "description": "Si vous voulez exprimer la capacité d'une carte ou d'un disque en kilo-octets, par exemple pour la comparer à de petits fichiers, le convertisseur donne le nombre exact sans multiplication manuelle."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Lequel est le plus grand : Go ou Ko",
+          "description": "Le convertisseur montre clairement que le giga-octet est plus grand : 1 Go fait 1 048 576 Ko, plus d'un million de fois plus. Cela aide à situer l'échelle des unités de données."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion des giga-octets en kilo-octets",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de Ko dans 1 Go ?",
+          "answer": "1 Go fait 1 048 576 Ko dans le système binaire, celui qu'utilisent ce convertisseur et les systèmes d'exploitation. C'est 1 024 × 1 024. Dans le système décimal (SI), 1 Go fait 1 000 000 Ko."
+        },
+        {
+          "question": "Qu'est-ce qui est plus grand, Go ou Ko ?",
+          "answer": "Le giga-octet. 1 Go fait 1 048 576 Ko, donc plus d'un million de fois plus grand qu'un kilo-octet. C'est le plus grand écart d'échelle parmi les unités de données voisines qu'on compare d'habitude."
+        },
+        {
+          "question": "Combien fait 1 Go en Ko ?",
+          "answer": "1 Go fait exactement 1 048 576 Ko. Calcul : 1 × 1 048 576 = 1 048 576 Ko. C'est le rapport de base entre le giga-octet et le kilo-octet."
+        },
+        {
+          "question": "Comment convertir des giga-octets en kilo-octets ?",
+          "answer": "Multipliez le nombre de giga-octets par 1 048 576. Vous pouvez aussi multiplier deux fois par 1 024 : d'abord de Go en Mo, puis de Mo en Ko. Le convertisseur le fait dès que vous saisissez une valeur."
+        },
+        {
+          "question": "Combien de Ko font 2, 4 et 16 Go ?",
+          "answer": "2 Go font 2 097 152 Ko, 4 Go font 4 194 304 Ko et 16 Go font 16 777 216 Ko. Vous obtenez chacune de ces valeurs en multipliant le nombre de giga-octets par 1 048 576."
+        },
+        {
+          "question": "Comment convertir des kilo-octets en giga-octets ?",
+          "answer": "Divisez le nombre de kilo-octets par 1 048 576. Par exemple, 1 048 576 Ko ÷ 1 048 576 = 1 Go. Cliquez sur Inverser l'ordre pour que le convertisseur travaille dans ce sens."
+        },
+        {
+          "question": "1 Go fait-il 1 000 000 ou 1 048 576 Ko ?",
+          "answer": "Cela dépend du système. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Go fait 1 048 576 Ko. Les fabricants de stockage utilisent le système décimal, dans lequel 1 Go fait 1 000 000 Ko. De là vient la différence sur les grandes valeurs."
+        },
+        {
+          "question": "Comment convertir des GB en KB dans Excel ?",
+          "answer": "Saisissez la formule =A1*1048576 dans une cellule, où A1 contient la valeur en giga-octets. Dans l'autre sens, kilo-octets en giga-octets, utilisez =A1/1048576. La même formule fonctionne dans Google Sheets."
+        },
+        {
+          "question": "Quel est l'ordre des unités de la plus petite à la plus grande ?",
+          "answer": "De la plus petite : octet (o), kilo-octet (Ko), méga-octet (Mo), giga-octet (Go), téra-octet (To), péta-octet (Po). Chaque unité est 1 024 fois plus grande que la précédente. Un octet décrit un seul caractère, tandis qu'un téra-octet décrit la capacité d'un disque."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans le tableau ou si vous avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Contact avec Arteon Agency",
+      "defaultSubject": "Convertisseur de giga-octets en kilo-octets"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

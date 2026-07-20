@@ -1,0 +1,223 @@
+{
+  "toolKey": "kbToTb",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter kilobajtów na terabajty – przelicz KB na TB",
+    "description": "Przelicz kilobajty na terabajty i odwrotnie. 1 TB to 1 073 741 824 KB w systemie binarnym. Wzór, formuła do Excela i tabela. Działa w przeglądarce, bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-kb-na-tb"
+  },
+  "hero": {
+    "title": "Przelicz kilobajty na terabajty",
+    "description": "Wpisz liczbę kilobajtów i od razu odczytaj wynik w terabajtach. Terabajt to 1 073 741 824 kilobajty w systemie binarnym (1024 × 1024 × 1024), więc konwerter dzieli podaną liczbę przez 1 073 741 824. Przyciskiem Zmień kolejność przeliczysz też terabajty na kilobajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-kb-na-tb",
+      "label": "kilobajty na terabajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter kilobajtów na terabajty – przelicznik KB na TB",
+      "alternateName": [
+        "Konwerter kilobajtów na terabajty",
+        "Przelicznik kilobajtów na terabajty",
+        "Kalkulator KB na TB",
+        "Kilobajty na terabajty",
+        "KB na TB",
+        "Przelicz KB na TB",
+        "Ile KB to TB",
+        "KB na TB wzór",
+        "KB na TB w Excelu",
+        "Terabajty na kilobajty",
+        "TB na KB",
+        "kb to tb"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konwerter kilobajtów na terabajty działający w przeglądarce bez rejestracji. Wpisz liczbę kilobajtów i natychmiast odczytaj wynik w terabajtach. Przelicza w systemie binarnym, w którym 1 TB to 1 073 741 824 KB.",
+      "featureList": [
+        "Przelicza kilobajty na terabajty i terabajty na kilobajty w systemie binarnym (1 TB = 1 073 741 824 KB)",
+        "Konwersja działa w obie strony — przyciskiem Zmień kolejność przełączasz kierunek",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Przełącznik standardu: policz binarnie (1 024, jak Windows i pamięć RAM) lub dziesiętnie (1 000, jak dyski, macOS i wyszukiwarki)",
+        "Podaje gotową formułę do Excela i arkuszy kalkulacyjnych",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: terabajty = kilobajty ÷ 1 073 741 824",
+        "Działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć kilobajty na terabajty?",
+      "description": "Krótka instrukcja użycia konwertera kilobajtów na terabajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz liczbę kilobajtów",
+          "text": "W lewym polu wpisz liczbę kilobajtów, którą chcesz przeliczyć na terabajty. Możesz użyć kropki lub przecinka jako separatora dziesiętnego."
+        },
+        {
+          "name": "Odczytaj wynik w terabajtach",
+          "text": "Wynik w terabajtach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania terabajtów na kilobajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać kilobajty na terabajty?",
+      "html": "<p class=\"text-mid mb-4\">Kilobajt i terabajt dzielą aż trzy poziomy: 1 TB to 1 073 741 824 KB. Takie przeliczenie robisz rzadko, ale pojawia się, gdy sumujesz ogromne ilości małych plików podanych w kilobajtach — na przykład miliony rekordów, logów czy kopii — i chcesz zobaczyć wynik w terabajtach.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 TB to 1 073 741 824 KB w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić kilobajty na terabajty, dzielisz ich liczbę przez 1 073 741 824. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Skąd taka liczba? Bo między kilobajtem a terabajtem są trzy stopnie po 1 024: KB → MB → GB → TB. 1024 × 1024 × 1024 daje właśnie 1 073 741 824. W dalszej części znajdziesz gotową formułę do Excela oraz tabelę całej drabiny jednostek.</p><p class=\"text-mid\">W tym narzędziu policzysz oba standardy: domyślnie binarny (1 024), a przyciskiem Standard jednostek przełączysz na dziesiętny (1 000). Binarnie liczą Windows i pamięć RAM, dziesiętnie producenci dysków, macOS i wyszukiwarki — dlatego ta sama pojemność bywa podawana na dwa sposoby.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter kilobajtów na terabajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja kilobajtów na terabajty? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden terabajt to 1 073 741 824 kilobajty. Aby zamienić kilobajty na terabajty, dzielisz ich liczbę przez 1 073 741 824. Możesz też podzielić trzykrotnie przez 1 024 — kolejno z KB na MB, MB na GB i GB na TB.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>terabajty = kilobajty ÷ 1 073 741 824</strong>. W drugą stronę: <strong>kilobajty = terabajty × 1 073 741 824</strong>.</p><p class=\"text-mid mb-4\">Przykład: masz 2 147 483 648 KB. Obliczenie: 2 147 483 648 ÷ 1 073 741 824 = 2 TB. Wartość wychodzi równo, bo jest dwukrotnością 1 073 741 824.</p><p class=\"text-mid\">W Excelu wpisz w komórce formułę <strong>=A1/1073741824</strong>, gdzie A1 to komórka z wartością w KB. W drugą stronę, terabajty na kilobajty, użyj <strong>=A1*1073741824</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa kilobajtów na terabajty",
+      "description": "Poniższa tabela pokazuje przeliczenie kilobajtów na terabajty w systemie binarnym (÷1 073 741 824). Wartości niebędące wielokrotnością 1 073 741 824 podano w zaokrągleniu. Aby przeliczyć inną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Kilobajty",
+      "cols": ["Terabajty"],
+      "rows": [
+        { "label": "100 000 000 KB", "values": ["0,09 TB"] },
+        { "label": "500 000 000 KB", "values": ["0,47 TB"] },
+        { "label": "1 000 000 000 KB", "values": ["0,93 TB"] },
+        { "label": "1 073 741 824 KB", "values": ["1 TB"], "emphasis": true },
+        { "label": "2 147 483 648 KB", "values": ["2 TB"], "emphasis": true },
+        { "label": "5 368 709 120 KB", "values": ["5 TB"] },
+        { "label": "10 737 418 240 KB", "values": ["10 TB"], "emphasis": true }
+      ],
+      "caption": "Przykład: 1 073 741 824 KB ÷ 1 073 741 824 = 1 TB. Chcesz przeliczyć terabajty na kilobajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Cała drabina jednostek danych: od najmniejszej do największej",
+      "description": "Wszystkie jednostki rozmiaru danych rosną o ten sam mnożnik: każda kolejna jest 1 024 razy większa od poprzedniej. Poniższa tabela pokazuje kolejność od bajta do petabajta wraz z typowym przykładem, co dana jednostka opisuje.",
+      "labelHeader": "Jednostka",
+      "cols": ["Zależność", "Typowy przykład"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["jednostka podstawowa", "jeden znak tekstu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krótki e-mail lub ikona"]
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "zdjęcie lub utwór MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film lub kość pamięci RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabajt (TB)",
+          "values": ["1 024 GB", "dysk twardy"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "duże centrum danych"]
+        }
+      ],
+      "caption": "Kolejność od najmniejszej do największej: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Każdy krok to mnożenie przez 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się kilobajty na terabajty?",
+      "description": "Skok z kilobajtów na terabajty przydaje się przy bardzo dużych sumach danych.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Sumy milionów małych plików",
+          "description": "Bazy danych, logi czy eksporty potrafią zsumować się do miliardów kilobajtów. Dopiero przeliczenie na terabajty pokazuje realną skalę — 1 000 000 000 KB (miliard) to około 0,93 TB."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Planowanie pojemności",
+          "description": "Gdy raport podaje zajętość w kilobajtach, a dysk lub macierz mierzysz w terabajtach, konwerter od razu pokazuje, ile TB zajmuje na przykład 1 073 741 824 KB (dokładnie 1 TB)."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Formuła w Excelu",
+          "description": "W arkuszu przeliczasz całą kolumnę rozmiarów formułą =A1/1073741824. Konwerter podaje gotowy wzór, więc nie musisz go szukać ani pamiętać."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Kolejność jednostek",
+          "description": "Konwerter i tabela drabiny pokazują wprost kolejność od najmniejszej do największej: B, KB, MB, GB, TB, PB, z których każda jest 1 024 razy większa od poprzedniej."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie kilobajtów na terabajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile KB to 1 TB?",
+          "answer": "1 TB to 1 073 741 824 KB w systemie binarnym, którego używa ten konwerter i systemy operacyjne. To wynik mnożenia 1024 × 1024 × 1024. W systemie dziesiętnym (SI) 1 TB to 1 000 000 000 KB."
+        },
+        {
+          "question": "Jak przeliczyć kilobajty na terabajty?",
+          "answer": "Podziel liczbę kilobajtów przez 1 073 741 824. Możesz też podzielić trzykrotnie przez 1 024: z KB na MB, potem na GB, a na końcu na TB. Konwerter robi to od razu po wpisaniu wartości."
+        },
+        {
+          "question": "Jak przeliczyć KB na TB w Excelu?",
+          "answer": "Wpisz w komórce formułę =A1/1073741824, gdzie A1 to komórka z wartością w kilobajtach. W drugą stronę, terabajty na kilobajty, użyj =A1*1073741824. Ta sama formuła zadziała w Arkuszach Google."
+        },
+        {
+          "question": "Jaka jest kolejność jednostek od najmniejszej do największej?",
+          "answer": "Od najmniejszej: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Każda kolejna jednostka jest 1 024 razy większa od poprzedniej. Bajt opisuje pojedynczy znak, a terabajt pojemność dysku."
+        },
+        {
+          "question": "Jak przeliczyć terabajty na kilobajty?",
+          "answer": "Pomnóż liczbę terabajtów przez 1 073 741 824. Na przykład 2 TB × 1 073 741 824 = 2 147 483 648 KB. Kliknij Zmień kolejność, aby konwerter przeliczał w tę stronę."
+        },
+        {
+          "question": "Dlaczego 1 024, a nie 1 000?",
+          "answer": "Bo komputery liczą dwójkowo. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym każdy stopień to 1 024. Producenci nośników używają systemu dziesiętnego (1 000), dlatego pojemność dysku widoczna w systemie jest mniejsza od tej z etykiety."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabeli lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "defaultSubject": "Konwerter kilobajtów na terabajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

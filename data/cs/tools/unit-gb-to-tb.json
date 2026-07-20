@@ -1,0 +1,239 @@
+{
+  "toolKey": "gbToTb",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník gigabajtů na terabajty – převeď GB na TB",
+    "description": "Převeď gigabajty na terabajty a naopak. 1 TB je 1 024 GB v binárním systému. Zadej hodnotu a výsledek se objeví okamžitě. Běží v prohlížeči, bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-gb-na-tb"
+  },
+  "hero": {
+    "title": "Převeď gigabajty na terabajty",
+    "description": "Zadej počet gigabajtů a rovnou si přečti výsledek v terabajtech. Terabajt je 1 024 gigabajtů v binárním systému, proto převodník dělí zadanou hodnotu číslem 1 024. Tlačítkem Prohodit pořadí převedeš i terabajty na gigabajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-gb-na-tb",
+      "label": "gigabajty na terabajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník gigabajtů na terabajty – kalkulačka GB na TB",
+      "alternateName": [
+        "Převodník gigabajtů na terabajty",
+        "Kalkulačka gigabajtů na terabajty",
+        "GB na TB",
+        "Gigabajty na terabajty",
+        "gb to tb",
+        "Převeď GB na TB",
+        "Kolik GB má TB",
+        "1000 GB kolik je TB",
+        "1024 GB kolik je TB",
+        "Terabajty na gigabajty",
+        "TB na GB",
+        "gb to tb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník gigabajtů na terabajty, který běží v prohlížeči bez registrace. Zadej počet gigabajtů a rovnou si přečti výsledek v terabajtech. Používá binární systém, ve kterém je 1 TB rovno 1 024 GB.",
+      "featureList": [
+        "Převádí gigabajty na terabajty i terabajty na gigabajty v binárním systému (1 TB = 1 024 GB)",
+        "Převod funguje v obou směrech — tlačítko Prohodit pořadí přepíná směr",
+        "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
+        "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
+        "Přijímá tečku i čárku jako desetinný oddělovač",
+        "Přepínač standardu: počítej binárně (1 024, jako Windows a RAM) nebo desítkově (1 000, jako disky, macOS a vyhledávače)",
+        "Nabízí hotový vzorec pro Excel a tabulkové procesory",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
+        "Přesný vzorec je: terabajty = gigabajty ÷ 1 024",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést gigabajty na terabajty?",
+      "description": "Krátký návod k použití převodníku gigabajtů na terabajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej počet gigabajtů",
+          "text": "Do levého pole zadej počet gigabajtů, které chceš převést na terabajty. Můžeš použít tečku nebo čárku jako desetinný oddělovač."
+        },
+        {
+          "name": "Přečti výsledek v terabajtech",
+          "text": "Výsledek v terabajtech se objeví hned v poli vedle, vpravo. Tlačítkem Kopírovat výsledek jej přeneseš do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Prohodit pořadí a přejdeš k převodu terabajtů na gigabajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět gigabajty na terabajty?",
+      "html": "<p class=\"text-mid mb-4\">Gigabajt a terabajt jsou sousední jednotky velikosti dat: 1 TB je 1 024 GB. Kapacity disků, NAS a záložních plánů se udávají v gigabajtech nebo terabajtech, proto převádíš GB na TB, když chceš porovnat disk 1 000 GB s nabídkou uváděnou v terabajtech.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 TB je 1 024 GB v binárním systému, který používají operační systémy i tento převodník. Pro převod gigabajtů na terabajty jejich počet vyděl číslem 1 024. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na kulaté hodnoty. Disk „1 000 GB“ není celý terabajt, ale asi 0,98 TB, protože celý terabajt má 1 024 GB. Přesně 1 TB získáš z 1 024 GB. Je to stejný efekt jako u 1000 oproti 1024 na nižších úrovních.</p><p class=\"text-mid\">Tento nástroj počítá v obou standardech: výchozí je binární (1 024) a tlačítkem Standard jednotek přepneš na desítkový (1 000). Windows a paměť RAM počítají binárně, zatímco výrobci disků, macOS a vyhledávače desítkově — proto se stejná kapacita uvádí dvěma způsoby.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník gigabajtů na terabajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod gigabajtů na terabajty? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden terabajt je 1 024 gigabajtů. Pro převod gigabajtů na terabajty jejich počet vyděl číslem 1 024.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>terabajty = gigabajty ÷ 1 024</strong>. Opačně: <strong>gigabajty = terabajty × 1 024</strong>.</p><p class=\"text-mid mb-4\">Příklad: pole má 2 048 GB. Výpočet: 2 048 ÷ 1 024 = 2 TB. Stejně tak 4 096 GB je 4 TB — celé terabajty vycházejí z násobků 1 024.</p><p class=\"text-mid mb-4\">Pozor na kulaté hodnoty. 1 000 GB je asi 0,98 TB, ne 1 TB — přesně 1 TB získáš z 1 024 GB. Násobek 1 024 pochází z toho, že počítače počítají dvojkově a dvě na desátou je právě 1 024.</p><p class=\"text-mid\">V Excelu zadej do buňky vzorec <strong>=A1/1024</strong>, kde A1 obsahuje hodnotu v GB. Opačně, terabajty na gigabajty, použij <strong>=A1*1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka gigabajtů na terabajty",
+      "description": "Následující tabulka převádí běžné hodnoty gigabajtů na terabajty v binárním systému (÷1 024). Hodnoty, které nejsou násobkem 1 024, jsou uvedeny zaokrouhleně. Pro převod jiné hodnoty použij převodník výše.",
+      "labelHeader": "Gigabajty",
+      "cols": ["Terabajty"],
+      "rows": [
+        { "label": "100 GB", "values": ["0,10 TB"] },
+        { "label": "500 GB", "values": ["0,49 TB"] },
+        { "label": "1 000 GB", "values": ["0,98 TB"] },
+        { "label": "1 024 GB", "values": ["1 TB"], "emphasis": true },
+        { "label": "2 000 GB", "values": ["1,95 TB"] },
+        { "label": "2 048 GB", "values": ["2 TB"], "emphasis": true },
+        { "label": "4 096 GB", "values": ["4 TB"], "emphasis": true },
+        { "label": "5 000 GB", "values": ["4,88 TB"] },
+        { "label": "8 192 GB", "values": ["8 TB"] },
+        { "label": "10 240 GB", "values": ["10 TB"], "emphasis": true }
+      ],
+      "caption": "Příklad: 1 024 GB ÷ 1 024 = 1 TB, zatímco 1 000 GB je jen 0,98 TB. Chceš převést terabajty na gigabajty? Klikni na Prohodit pořadí v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Celý žebříček jednotek: od nejmenší po největší",
+      "description": "Všechny jednotky velikosti dat rostou stejným násobkem: každá je 1 024krát větší než předchozí. Tabulka níže ukazuje pořadí od bajtu po petabajt s typickým příkladem toho, co každá jednotka popisuje.",
+      "labelHeader": "Jednotka",
+      "cols": ["Vztah", "Typický příklad"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["základní jednotka", "jeden znak textu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krátký e-mail nebo ikona"]
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "fotka nebo skladba MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film nebo modul RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabajt (TB)",
+          "values": ["1 024 GB", "pevný disk"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "velké datové centrum"]
+        }
+      ],
+      "caption": "Pořadí od nejmenší po největší: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Každý krok je násobení 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí gigabajty na terabajty?",
+      "description": "Gigabajty se převádějí na terabajty hlavně u velkých kapacit.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Kapacita disků a NAS",
+          "description": "Disky a pole NAS bývají popsané v gigabajtech, zatímco ty myslíš v terabajtech. 2 048 GB je 2 TB a disk 1 000 GB je asi 0,98 TB — převod hned ukáže skutečnou kapacitu."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Zálohy a archivy",
+          "description": "Záložní plán nebo archiv se nasčítá na tisíce gigabajtů. Převod na terabajty uspořádá měřítko, například 5 000 GB je asi 4,88 TB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Cloudové nabídky",
+          "description": "Cloudové služby udávají kapacitu jednou v GB, jindy v TB. Převod umožní porovnat nabídky ve stejné jednotce, když jedna uvádí 1 000 GB a druhá 1 TB."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Rozlišení 1000 a 1024",
+          "description": "Převodník jasně ukazuje, že 1 000 GB není celý terabajt, ale 0,98 TB, a že 1 TB získáš teprve z 1 024 GB. To je nejčastější zdroj záměn u kapacity disků."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu gigabajtů na terabajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik GB má 1 TB?",
+          "answer": "1 TB je 1 024 GB v binárním systému, který používá tento převodník a operační systémy. V desítkovém systému (SI), který používají mimo jiné výrobci disků, je 1 TB rovno 1 000 GB."
+        },
+        {
+          "question": "Je 1000 GB rovno 1 TB?",
+          "answer": "Ne úplně. V binárním systému je 1 000 GB asi 0,98 TB, protože celý terabajt má 1 024 GB. Přesně 1 TB získáš z 1 024 GB. Zaokrouhlení na 1 TB platí jen v desítkovém systému, který používají výrobci disků."
+        },
+        {
+          "question": "Kolik TB je 1024 a 2048 GB?",
+          "answer": "1 024 GB je přesně 1 TB a 2 048 GB je 2 TB. Obě hodnoty vyjdou celé, protože jsou násobky 1 024, tedy počtu gigabajtů v jednom terabajtu."
+        },
+        {
+          "question": "Jak převést gigabajty na terabajty?",
+          "answer": "Vyděl počet gigabajtů číslem 1 024. Například 4 096 GB ÷ 1 024 = 4 TB. Převodník to udělá hned, jakmile zadáš hodnotu, bez klikání na jakékoli tlačítko."
+        },
+        {
+          "question": "Kolik TB je 500 a 2000 GB?",
+          "answer": "500 GB je asi 0,49 TB a 2 000 GB asi 1,95 TB. Hodnoty nevycházejí kulatě, protože celý terabajt má 1 024 GB, a ne 1 000 GB."
+        },
+        {
+          "question": "Jak převést terabajty na gigabajty?",
+          "answer": "Vynásob počet terabajtů číslem 1 024. Například 2 TB × 1 024 = 2 048 GB. Klikni na Prohodit pořadí, aby převodník počítal tímto směrem."
+        },
+        {
+          "question": "Je 1 TB rovno 1 000, nebo 1 024 GB?",
+          "answer": "Záleží na systému. Operační systémy a tento převodník používají binární systém, ve kterém je 1 TB rovno 1 024 GB. Výrobci disků používají desítkový systém, ve kterém je 1 TB rovno 1 000 GB. Proto disk „1 TB“ ukazuje v systému menší kapacitu."
+        },
+        {
+          "question": "Jak převést GB na TB v Excelu?",
+          "answer": "Zadej do buňky vzorec =A1/1024, kde A1 obsahuje hodnotu v gigabajtech. Opačně, terabajty na gigabajty, použij =A1*1024. Stejný vzorec funguje v Google Sheets."
+        },
+        {
+          "question": "Jaké je pořadí jednotek od nejmenší po největší?",
+          "answer": "Od nejmenší: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Každá jednotka je 1 024krát větší než předchozí. Bajt popisuje jeden znak, zatímco terabajt popisuje kapacitu disku."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulce nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "defaultSubject": "Převodník gigabajtů na terabajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}
