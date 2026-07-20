@@ -1,0 +1,237 @@
+{
+  "toolKey": "gbToKb",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník gigabajtů na kilobajty – převeď GB na KB",
+    "description": "Převeď gigabajty na kilobajty a naopak. 1 GB je 1 048 576 KB v binárním systému. Zadej hodnotu a výsledek se objeví okamžitě. Běží v prohlížeči, bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-gb-na-kb"
+  },
+  "hero": {
+    "title": "Převeď gigabajty na kilobajty",
+    "description": "Zadej počet gigabajtů a rovnou si přečti výsledek v kilobajtech. Gigabajt je 1 048 576 kilobajtů v binárním systému (tedy 1024 × 1024), proto převodník násobí zadanou hodnotu číslem 1 048 576. Tlačítkem Prohodit pořadí převedeš i kilobajty na gigabajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-gb-na-kb",
+      "label": "gigabajty na kilobajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník gigabajtů na kilobajty – kalkulačka GB na KB",
+      "alternateName": [
+        "Převodník gigabajtů na kilobajty",
+        "Kalkulačka gigabajtů na kilobajty",
+        "GB na KB",
+        "Gigabajty na kilobajty",
+        "gb to kb",
+        "Převeď GB na KB",
+        "Kolik KB má GB",
+        "1 GB kolik je KB",
+        "Co je větší GB nebo KB",
+        "Kilobajty na gigabajty",
+        "KB na GB",
+        "gb to kb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník gigabajtů na kilobajty, který běží v prohlížeči bez registrace. Zadej počet gigabajtů a rovnou si přečti výsledek v kilobajtech. Používá binární systém, ve kterém je 1 GB rovno 1 048 576 KB.",
+      "featureList": [
+        "Převádí gigabajty na kilobajty i kilobajty na gigabajty v binárním systému (1 GB = 1 048 576 KB)",
+        "Převod funguje v obou směrech — tlačítko Prohodit pořadí přepíná směr",
+        "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
+        "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
+        "Přijímá tečku i čárku jako desetinný oddělovač",
+        "Přepínač standardu: počítej binárně (1 024, jako Windows a RAM) nebo desítkově (1 000, jako disky, macOS a vyhledávače)",
+        "Nabízí hotový vzorec pro Excel a tabulkové procesory",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
+        "Přesný vzorec je: kilobajty = gigabajty × 1 048 576",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést gigabajty na kilobajty?",
+      "description": "Krátký návod k použití převodníku gigabajtů na kilobajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej počet gigabajtů",
+          "text": "Do levého pole zadej počet gigabajtů, které chceš převést na kilobajty. Můžeš použít tečku nebo čárku jako desetinný oddělovač."
+        },
+        {
+          "name": "Přečti výsledek v kilobajtech",
+          "text": "Výsledek v kilobajtech se objeví hned v poli vedle, vpravo. Tlačítkem Kopírovat výsledek jej přeneseš do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Prohodit pořadí a přejdeš k převodu kilobajtů na gigabajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět gigabajty na kilobajty?",
+      "html": "<p class=\"text-mid mb-4\">Gigabajt je mnohem větší než kilobajt: 1 GB je 1 048 576 KB. Převod GB na kilobajty je potřeba méně často než na megabajty, ale nastane, když nějaký systém, skript nebo specifikace očekává hodnotu v kilobajtech, zatímco znáš kapacitu v gigabajtech.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 GB je 1 048 576 KB v binárním systému, který používají operační systémy i tento převodník. Pro převod gigabajtů na kilobajty jejich počet vynásob číslem 1 048 576. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na dva systémy. V desítkovém systému (SI) je 1 GB rovno 1 000 000 KB — tak počítají například výrobci úložišť. Tento převodník používá binární systém (1 048 576 KB), stejně jako to, co ukazují Windows a macOS.</p><p class=\"text-mid\">Tento nástroj počítá v obou standardech: výchozí je binární (1 024) a tlačítkem Standard jednotek přepneš na desítkový (1 000). Windows a paměť RAM počítají binárně, zatímco výrobci disků, macOS a vyhledávače desítkově — proto se stejná kapacita uvádí dvěma způsoby.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník gigabajtů na kilobajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod gigabajtů na kilobajty? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden gigabajt je 1 048 576 kilobajtů. Pro převod gigabajtů na kilobajty jejich počet vynásob číslem 1 048 576. Můžeš také násobit dvakrát číslem 1024 — nejdřív z GB na MB, potom z MB na KB.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>kilobajty = gigabajty × 1 048 576</strong>. Opačně: <strong>gigabajty = kilobajty ÷ 1 048 576</strong>.</p><p class=\"text-mid mb-4\">Příklad: disk má 16 GB. Výpočet: 16 × 1 048 576 = 16 777 216 KB. Čísla rychle rostou, protože každý gigabajt je přes milion kilobajtů.</p><p class=\"text-mid mb-4\">Který je větší? Gigabajt. 1 GB je 1 048 576 KB, tedy přes milion krát větší než kilobajt. To ukazuje, jak obrovský je rozdíl měřítka mezi oběma jednotkami.</p><p class=\"text-mid\">V Excelu zadej do buňky vzorec <strong>=A1*1048576</strong>, kde A1 obsahuje hodnotu v GB. Opačně, kilobajty na gigabajty, použij <strong>=A1/1048576</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka gigabajtů na kilobajty",
+      "description": "Následující tabulka převádí běžné hodnoty gigabajtů na kilobajty v binárním systému (×1 048 576). Pro převod jiné hodnoty použij převodník výše.",
+      "labelHeader": "Gigabajty",
+      "cols": ["Kilobajty"],
+      "rows": [
+        { "label": "0,5 GB", "values": ["524 288 KB"] },
+        { "label": "1 GB", "values": ["1 048 576 KB"], "emphasis": true },
+        { "label": "2 GB", "values": ["2 097 152 KB"] },
+        { "label": "4 GB", "values": ["4 194 304 KB"], "emphasis": true },
+        { "label": "5 GB", "values": ["5 242 880 KB"] },
+        { "label": "8 GB", "values": ["8 388 608 KB"] },
+        { "label": "10 GB", "values": ["10 485 760 KB"] },
+        { "label": "16 GB", "values": ["16 777 216 KB"], "emphasis": true },
+        { "label": "32 GB", "values": ["33 554 432 KB"] },
+        { "label": "64 GB", "values": ["67 108 864 KB"], "emphasis": true },
+        { "label": "128 GB", "values": ["134 217 728 KB"] }
+      ],
+      "caption": "Příklad: 1 GB × 1 048 576 = 1 048 576 KB. Chceš převést kilobajty na gigabajty? Klikni na Prohodit pořadí v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Celý žebříček jednotek: od nejmenší po největší",
+      "description": "Všechny jednotky velikosti dat rostou stejným násobkem: každá je 1 024krát větší než předchozí. Tabulka níže ukazuje pořadí od bajtu po petabajt s typickým příkladem toho, co každá jednotka popisuje.",
+      "labelHeader": "Jednotka",
+      "cols": ["Vztah", "Typický příklad"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["základní jednotka", "jeden znak textu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krátký e-mail nebo ikona"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "fotka nebo skladba MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film nebo modul RAM"],
+          "emphasis": true
+        },
+        { "label": "Terabajt (TB)", "values": ["1 024 GB", "pevný disk"] },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "velké datové centrum"]
+        }
+      ],
+      "caption": "Pořadí od nejmenší po největší: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Každý krok je násobení 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí gigabajty na kilobajty?",
+      "description": "Gigabajty se převádějí na kilobajty méně často než na megabajty, hlavně v technických situacích.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Hodnoty v KB v systémech a skriptech",
+          "description": "Některé skripty, API nebo konfigurační pole očekávají velikost v kilobajtech. Když znáš kapacitu v gigabajtech, převedeš ji na KB — například 2 GB je 2 097 152 KB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Pochopení měřítka",
+          "description": "Převod ukáže, jak obrovský počet kilobajtů se skrývá za gigabajtem. 16 GB je 16 777 216 KB, což zřetelně ukazuje rozdíl mezi jednotkami."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Kapacita v KB",
+          "description": "Pokud chceš vyjádřit kapacitu karty nebo disku v kilobajtech, třeba pro srovnání s malými soubory, převodník dá přesné číslo bez ručního násobení."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Co je větší: GB nebo KB",
+          "description": "Převodník jasně ukazuje, že gigabajt je větší: 1 GB je 1 048 576 KB, přes milion krát více. To pomáhá uspořádat měřítko datových jednotek."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu gigabajtů na kilobajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik KB má 1 GB?",
+          "answer": "1 GB je 1 048 576 KB v binárním systému, který používá tento převodník a operační systémy. Je to 1024 × 1024. V desítkovém systému (SI) je 1 GB rovno 1 000 000 KB."
+        },
+        {
+          "question": "Co je větší, GB nebo KB?",
+          "answer": "Gigabajt. 1 GB je 1 048 576 KB, tedy přes milion krát větší než kilobajt. Je to největší rozdíl měřítka mezi sousedními datovými jednotkami, které se obvykle porovnávají."
+        },
+        {
+          "question": "Kolik je 1 GB v KB?",
+          "answer": "1 GB je přesně 1 048 576 KB. Výpočet: 1 × 1 048 576 = 1 048 576 KB. Je to základní vztah mezi gigabajtem a kilobajtem."
+        },
+        {
+          "question": "Jak převést gigabajty na kilobajty?",
+          "answer": "Vynásob počet gigabajtů číslem 1 048 576. Můžeš také násobit dvakrát číslem 1024: nejdřív z GB na MB, potom z MB na KB. Převodník to udělá hned, jakmile zadáš hodnotu."
+        },
+        {
+          "question": "Kolik KB je 2, 4 a 16 GB?",
+          "answer": "2 GB je 2 097 152 KB, 4 GB je 4 194 304 KB a 16 GB je 16 777 216 KB. Každou z těchto hodnot získáš vynásobením počtu gigabajtů číslem 1 048 576."
+        },
+        {
+          "question": "Jak převést kilobajty na gigabajty?",
+          "answer": "Vyděl počet kilobajtů číslem 1 048 576. Například 1 048 576 KB ÷ 1 048 576 = 1 GB. Klikni na Prohodit pořadí, aby převodník počítal tímto směrem."
+        },
+        {
+          "question": "Je 1 GB rovno 1 000 000, nebo 1 048 576 KB?",
+          "answer": "Záleží na systému. Operační systémy a tento převodník používají binární systém, ve kterém je 1 GB rovno 1 048 576 KB. Výrobci úložišť používají desítkový systém, ve kterém je 1 GB rovno 1 000 000 KB. Odtud rozdíl u velkých hodnot."
+        },
+        {
+          "question": "Jak převést GB na KB v Excelu?",
+          "answer": "Zadej do buňky vzorec =A1*1048576, kde A1 obsahuje hodnotu v gigabajtech. Opačně, kilobajty na gigabajty, použij =A1/1048576. Stejný vzorec funguje v Google Sheets."
+        },
+        {
+          "question": "Jaké je pořadí jednotek od nejmenší po největší?",
+          "answer": "Od nejmenší: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Každá jednotka je 1 024krát větší než předchozí. Bajt popisuje jeden znak, zatímco terabajt popisuje kapacitu disku."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulce nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "defaultSubject": "Převodník gigabajtů na kilobajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

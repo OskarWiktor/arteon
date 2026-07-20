@@ -176,13 +176,25 @@ describe('labels', () => {
 });
 
 describe('no regression for converters without a variant', () => {
-  it('leaves every other converter free of a variantField', () => {
+  it('gives a variantField to exactly the ml/oz pair and the data-size group', () => {
     const withVariant = UNIT_CONVERSIONS.filter(c => c.variantField).map(
       c => c.toolKey,
     );
     expect([...withVariant].sort((a, b) => a.localeCompare(b))).toEqual([
+      'bytesConverter',
+      'gbToKb',
+      'gbToMb',
+      'gbToTb',
+      'kbToB',
+      'kbToGb',
+      'kbToMb',
+      'kbToTb',
+      'mbToGb',
+      'mbToKb',
       'mlToOz',
       'ozToMl',
+      'tbToGb',
+      'tbToKb',
     ]);
   });
 
@@ -190,5 +202,97 @@ describe('no regression for converters without a variant', () => {
     const m2f = getUnitConversion('metersToFeet')!;
     expect(m2f.variantField).toBeUndefined();
     expect(m2f.convert(1)).toBeCloseTo(3.280839895, 8);
+  });
+});
+
+const DATA_TOOL_KEYS = [
+  'bytesConverter',
+  'kbToB',
+  'kbToMb',
+  'mbToKb',
+  'mbToGb',
+  'gbToMb',
+  'kbToGb',
+  'gbToKb',
+  'gbToTb',
+  'tbToGb',
+  'kbToTb',
+  'tbToKb',
+] as const;
+
+const dataVariantOf = (
+  toolKey: (typeof DATA_TOOL_KEYS)[number],
+  value: 'binary' | 'decimal',
+) =>
+  getUnitConversion(toolKey)!.variantField!.options.find(
+    o => o.value === value,
+  )!;
+
+describe('data-size standard toggle (binary vs decimal)', () => {
+  it('defaults every data converter to binary', () => {
+    for (const key of DATA_TOOL_KEYS) {
+      expect(getUnitConversion(key)!.variantField!.defaultValue).toBe('binary');
+    }
+  });
+
+  it('keeps the config-level factor in sync with the binary variant', () => {
+    for (const key of DATA_TOOL_KEYS) {
+      const config = getUnitConversion(key)!;
+      expect(dataVariantOf(key, 'binary').convert(1234)).toBeCloseTo(
+        config.convert(1234),
+        6,
+      );
+    }
+  });
+
+  it('uses 1024 for binary and 1000 for decimal, one step up (KB→MB)', () => {
+    expect(dataVariantOf('kbToMb', 'binary').convert(1024)).toBeCloseTo(1, 10);
+    expect(dataVariantOf('kbToMb', 'decimal').convert(1000)).toBeCloseTo(1, 10);
+  });
+
+  it('uses 1024² / 1000², two steps up (KB→GB)', () => {
+    expect(dataVariantOf('kbToGb', 'binary').convert(1048576)).toBeCloseTo(
+      1,
+      10,
+    );
+    expect(dataVariantOf('kbToGb', 'decimal').convert(1000000)).toBeCloseTo(
+      1,
+      10,
+    );
+  });
+
+  it('uses 1024³ / 1000³, three steps up (KB→TB)', () => {
+    expect(dataVariantOf('kbToTb', 'binary').convert(1073741824)).toBeCloseTo(
+      1,
+      8,
+    );
+    expect(dataVariantOf('kbToTb', 'decimal').convert(1000000000)).toBeCloseTo(
+      1,
+      8,
+    );
+  });
+
+  it('multiply direction gives 1024 (binary) vs 1000 (decimal) — GB→MB', () => {
+    expect(dataVariantOf('gbToMb', 'binary').convert(1)).toBeCloseTo(1024, 10);
+    expect(dataVariantOf('gbToMb', 'decimal').convert(1)).toBeCloseTo(1000, 10);
+  });
+
+  it('reverseConvert undoes convert for both standards', () => {
+    for (const key of ['kbToMb', 'gbToKb', 'tbToKb'] as const) {
+      for (const std of ['binary', 'decimal'] as const) {
+        const variant = dataVariantOf(key, std);
+        expect(variant.reverseConvert(variant.convert(500))).toBeCloseTo(
+          500,
+          6,
+        );
+      }
+    }
+  });
+
+  it('keeps the recognisable KB/MB suffix in both standards (no KiB relabel)', () => {
+    expect(dataVariantOf('kbToMb', 'binary').suffix).toBe('MB');
+    expect(dataVariantOf('kbToMb', 'decimal').suffix).toBe('MB');
+    expect(dataVariantOf('gbToKb', 'binary').suffix).toBe('KB');
+    expect(dataVariantOf('gbToKb', 'decimal').suffix).toBe('KB');
   });
 });

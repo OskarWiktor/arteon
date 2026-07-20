@@ -1,0 +1,224 @@
+{
+  "toolKey": "tbToKb",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de TB para KB – converter TB em KB",
+    "description": "Converte terabytes em kilobytes e vice-versa. Um terabyte tem 1.073.741.824 KB no sistema binário. Fórmula, dica de Excel e tabela. Funciona no navegador, sem registo.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-tb-para-kb"
+  },
+  "hero": {
+    "title": "Converter terabytes em kilobytes",
+    "description": "Escreva um número de terabytes e leia o resultado em kilobytes de imediato. Um terabyte tem 1.073.741.824 kilobytes no sistema binário (1.024 × 1.024 × 1.024), por isso o conversor multiplica o seu valor por 1.073.741.824. Use Trocar a ordem para converter kilobytes em terabytes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-tb-para-kb",
+      "label": "TB para KB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de terabytes para kilobytes – calculadora TB para KB",
+      "alternateName": [
+        "Conversor de TB para KB",
+        "Conversor de terabytes para kilobytes",
+        "Calculadora TB para KB",
+        "TB para KB",
+        "tb to kb",
+        "Converter TB em KB",
+        "Quantos KB tem um TB",
+        "Fórmula TB para KB",
+        "TB para KB no Excel",
+        "Kilobytes para terabytes",
+        "KB para TB",
+        "tabela tb para kb"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Conversor de terabytes para kilobytes que funciona no navegador, sem registo. Escreva um número de terabytes e leia o resultado em kilobytes de imediato. Usa o sistema binário, no qual 1 TB tem 1.073.741.824 KB.",
+      "featureList": [
+        "Converte terabytes em kilobytes e kilobytes em terabytes no sistema binário (1 TB = 1.073.741.824 KB)",
+        "A conversão funciona nos dois sentidos: o botão Trocar a ordem inverte a direção",
+        "O resultado aparece de imediato enquanto escreve, sem carregar em nenhum botão",
+        "O botão Copiar resultado coloca o valor pronto na área de transferência",
+        "Seletor de padrão: calcule em binário (1.024, como Windows e RAM) ou decimal (1.000, como discos, macOS e motores de busca)",
+        "Dá uma fórmula pronta para o Excel e folhas de cálculo",
+        "Todos os cálculos são feitos no navegador, os seus dados não saem do dispositivo",
+        "A fórmula exata é: kilobytes = terabytes × 1.073.741.824",
+        "Funciona no telemóvel, tablet e computador sem instalação"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter terabytes em kilobytes?",
+      "description": "Um guia breve para usar o conversor de terabytes para kilobytes.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escreva um número de terabytes",
+          "text": "No campo da esquerda, escreva o número de terabytes que quer converter em kilobytes. Pode usar ponto ou vírgula como separador decimal."
+        },
+        {
+          "name": "Leia o resultado em kilobytes",
+          "text": "O resultado em kilobytes aparece de imediato no campo à direita. O botão Copiar resultado coloca-o na área de transferência."
+        },
+        {
+          "name": "Troque o sentido se precisar",
+          "text": "Carregue em Trocar a ordem para passar a converter kilobytes em terabytes."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Para que serve converter terabytes em kilobytes?",
+      "html": "<p class=\"text-mid mb-4\">Um terabyte é enorme ao lado de um kilobyte: 1 TB tem 1.073.741.824 KB. Raramente precisa desta conversão, mas ela surge quando um script, relatório ou especificação espera um valor em kilobytes enquanto conhece a capacidade em terabytes.</p><p class=\"text-mid mb-4\">A relação é fixa: 1 TB tem 1.073.741.824 KB no sistema binário, o que os sistemas operativos e este conversor usam. Para passar terabytes a kilobytes, multiplique o seu número por 1.073.741.824. O conversor faz isto assim que escreve um valor.</p><p class=\"text-mid\">De onde vem este número? Porque há três saltos de 1.024 entre o terabyte e o kilobyte: TB → GB → MB → KB. 1.024 × 1.024 × 1.024 dá 1.073.741.824. Mais abaixo encontra uma fórmula pronta para o Excel e uma tabela com toda a escala de unidades.</p><p class=\"text-mid\">Esta ferramenta calcula nos dois padrões: binário (1.024) por predefinição e, com o botão Padrão de unidades, pode mudar para decimal (1.000). O Windows e a RAM contam em binário, enquanto os fabricantes de discos, o macOS e os motores de busca contam em decimal — por isso a mesma capacidade é indicada de duas formas.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor gratuito de terabytes para kilobytes – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão de terabytes para kilobytes? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">A conversão assenta numa relação fixa: um terabyte tem 1.073.741.824 kilobytes. Para passar terabytes a kilobytes, multiplique o seu número por 1.073.741.824. Também pode multiplicar por 1.024 três vezes: de TB para GB, depois para MB, depois para KB.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>kilobytes = terabytes × 1.073.741.824</strong>. Ao contrário: <strong>terabytes = kilobytes ÷ 1.073.741.824</strong>.</p><p class=\"text-mid mb-4\">Exemplo: tem 2 TB. Cálculo: 2 × 1.073.741.824 = 2.147.483.648 KB. Os números crescem depressa, porque cada terabyte tem mais de mil milhões de kilobytes.</p><p class=\"text-mid\">No Excel, escreva a fórmula <strong>=A1*1073741824</strong> numa célula, onde A1 contém o valor em TB. Ao contrário, kilobytes para terabytes, use <strong>=A1/1073741824</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão de terabytes para kilobytes",
+      "description": "A tabela abaixo converte terabytes em kilobytes no sistema binário (×1.073.741.824). Para converter outro valor, use o conversor acima.",
+      "labelHeader": "Terabytes",
+      "cols": ["Kilobytes"],
+      "rows": [
+        { "label": "0,5 TB", "values": ["536.870.912 KB"] },
+        { "label": "1 TB", "values": ["1.073.741.824 KB"], "emphasis": true },
+        { "label": "1,5 TB", "values": ["1.610.612.736 KB"] },
+        { "label": "2 TB", "values": ["2.147.483.648 KB"], "emphasis": true },
+        { "label": "3 TB", "values": ["3.221.225.472 KB"] },
+        { "label": "4 TB", "values": ["4.294.967.296 KB"], "emphasis": true },
+        { "label": "5 TB", "values": ["5.368.709.120 KB"] },
+        { "label": "10 TB", "values": ["10.737.418.240 KB"], "emphasis": true }
+      ],
+      "caption": "Exemplo: 1 TB × 1.073.741.824 = 1.073.741.824 KB. Quer converter kilobytes em terabytes? Carregue em Trocar a ordem no conversor acima."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "A escala completa das unidades: da mais pequena à maior",
+      "description": "Todas as unidades de tamanho de dados crescem com o mesmo multiplicador: cada uma é 1.024 vezes maior do que a anterior. A tabela abaixo mostra a ordem do byte ao petabyte, com um exemplo típico do que cada unidade mede.",
+      "labelHeader": "Unidade",
+      "cols": ["Relação", "Exemplo típico"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["unidade base", "um caráter de texto"]
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1.024 B", "um e-mail curto ou um ícone"]
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1.024 KB", "uma foto ou uma música MP3"]
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1.024 MB", "um filme ou um módulo de RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabyte (TB)",
+          "values": ["1.024 GB", "um disco rígido"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1.024 TB", "um grande centro de dados"]
+        }
+      ],
+      "caption": "Ordem da mais pequena à maior: byte, kilobyte, megabyte, gigabyte, terabyte, petabyte. Cada salto é uma multiplicação por 1.024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando é que se converte terabytes em kilobytes com mais frequência?",
+      "description": "O salto de terabytes para kilobytes surge sobretudo em situações técnicas.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Valores em KB em sistemas e scripts",
+          "description": "Alguns scripts, APIs ou campos de configuração esperam um tamanho em kilobytes. Quando conhece a capacidade em terabytes, converte-a para KB: 1 TB tem 1.073.741.824 KB."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Perceber a escala",
+          "description": "Converter mostra quantos kilobytes se escondem atrás de um terabyte. 2 TB têm 2.147.483.648 KB, o que deixa clara a diferença entre as unidades."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Uma fórmula no Excel",
+          "description": "Numa folha de cálculo converte uma coluna inteira de capacidades com =A1*1073741824. O conversor dá a fórmula pronta, por isso não tem de a procurar nem de a decorar."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "A ordem das unidades",
+          "description": "O conversor e a tabela da escala mostram a ordem com clareza, da mais pequena à maior: B, KB, MB, GB, TB, PB, cada uma 1.024 vezes maior do que a anterior."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre converter terabytes em kilobytes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quantos KB tem 1 TB?",
+          "answer": "1 TB tem 1.073.741.824 KB no sistema binário, o que este conversor e os sistemas operativos usam. Isso é 1.024 × 1.024 × 1.024. No sistema decimal (SI), 1 TB tem 1.000.000.000 KB."
+        },
+        {
+          "question": "Como converter terabytes em kilobytes?",
+          "answer": "Multiplique o número de terabytes por 1.073.741.824. Também pode multiplicar por 1.024 três vezes: de TB para GB, depois para MB, depois para KB. O conversor faz isto assim que escreve um valor."
+        },
+        {
+          "question": "Como converter TB em KB no Excel?",
+          "answer": "Escreva a fórmula =A1*1073741824 numa célula, onde A1 contém o valor em terabytes. Ao contrário, kilobytes para terabytes, use =A1/1073741824. A mesma fórmula funciona no Google Sheets."
+        },
+        {
+          "question": "Qual é a ordem das unidades da mais pequena à maior?",
+          "answer": "Da mais pequena: byte (B), kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB), petabyte (PB). Cada unidade é 1.024 vezes maior do que a anterior. Um byte descreve um único caráter, enquanto um terabyte descreve a capacidade de um disco."
+        },
+        {
+          "question": "Como converter kilobytes em terabytes?",
+          "answer": "Divida o número de kilobytes por 1.073.741.824. Por exemplo, 1.073.741.824 KB ÷ 1.073.741.824 = 1 TB. Carregue em Trocar a ordem para o conversor trabalhar neste sentido."
+        },
+        {
+          "question": "Porquê 1.024 e não 1.000?",
+          "answer": "Porque os computadores contam em binário. Os sistemas operativos e este conversor usam o sistema binário, no qual cada salto é 1.024. Os fabricantes de armazenamento usam o sistema decimal (1.000), por isso a capacidade de um disco mostrada pelo sistema é menor do que o número no rótulo."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Tem uma questão ou sugestão?",
+      "description": "Se detetou um erro na tabela ou tem uma ideia para melhorar o conversor, escreva-nos. Respondemos a cada mensagem.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Contacto com a Arteon Agency",
+      "defaultSubject": "Conversor de terabytes para kilobytes"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "toolKey": "gbToMb",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de GB a MB – convierte GB a MB",
+    "description": "Convierte gigabytes a megabytes y al revés. 1 GB son 1.024 MB en el sistema binario. Escribe un valor y el resultado aparece al instante. Funciona en el navegador, sin registro.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-gb-a-mb"
+  },
+  "hero": {
+    "title": "Convierte gigabytes a megabytes",
+    "description": "Escribe un número de gigabytes y lee el resultado en megabytes al instante. Un gigabyte son 1.024 megabytes en el sistema binario, así que el convertidor multiplica tu valor por 1.024. Usa Cambiar orden para convertir megabytes a gigabytes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-gb-a-mb",
+      "label": "GB a MB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de gigabytes a megabytes – calculadora GB a MB",
+      "alternateName": [
+        "Convertidor de GB a MB",
+        "Convertidor de gigabytes a megabytes",
+        "Calculadora de GB a MB",
+        "GB a MB",
+        "gb to mb",
+        "Convierte GB a MB",
+        "Cuántos MB tiene un GB",
+        "1 GB en MB",
+        "8 GB en MB",
+        "Megabytes a gigabytes",
+        "MB a GB",
+        "gb to mb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertidor de gigabytes a megabytes que funciona en el navegador sin registro. Escribe un número de gigabytes y lee el resultado en megabytes al instante. Usa el sistema binario, en el que 1 GB son 1.024 MB.",
+      "featureList": [
+        "Convierte gigabytes a megabytes y megabytes a gigabytes en el sistema binario (1 GB = 1.024 MB)",
+        "La conversión funciona en ambos sentidos: el botón Cambiar orden invierte la dirección",
+        "El resultado aparece al instante mientras escribes, sin pulsar ningún botón",
+        "Con el botón Copiar resultado llevas el valor listo al portapapeles",
+        "Admite tanto el punto como la coma como separador decimal",
+        "Selector de estándar: calcula en binario (1.024, como Windows y la RAM) o decimal (1.000, como discos, macOS y buscadores)",
+        "Ofrece una fórmula lista para Excel y hojas de cálculo",
+        "Todos los cálculos se hacen localmente en el navegador, tus datos no salen del dispositivo",
+        "La fórmula exacta es: megabytes = gigabytes × 1.024",
+        "Funciona en el móvil, la tableta y el ordenador sin instalar nada"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo convertir gigabytes a megabytes?",
+      "description": "Guía breve para usar el convertidor de gigabytes a megabytes.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escribe un número de gigabytes",
+          "text": "En el campo de la izquierda, escribe el número de gigabytes que quieres convertir a megabytes. Puedes usar el punto o la coma como separador decimal."
+        },
+        {
+          "name": "Lee el resultado en megabytes",
+          "text": "El resultado en megabytes aparece enseguida en el campo de al lado, a la derecha. Con el botón Copiar resultado lo llevas al portapapeles."
+        },
+        {
+          "name": "Invierte el sentido si lo necesitas",
+          "text": "Pulsa Cambiar orden para pasar a convertir megabytes a gigabytes."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué convertir gigabytes a megabytes?",
+      "html": "<p class=\"text-mid mb-4\">Un gigabyte es más grande que un megabyte: 1 GB son 1.024 MB. La memoria RAM, el almacenamiento del móvil y los planes de datos se dan en gigabytes, pero el consumo de las apps y los límites se cuentan a veces en megabytes — ahí es cuando conviertes GB a MB.</p><p class=\"text-mid mb-4\">La relación es fija: 1 GB son 1.024 MB en el sistema binario, que usan los sistemas operativos y este convertidor. Para pasar de gigabytes a megabytes, multiplicas su número por 1.024. El convertidor lo hace en cuanto escribes un valor.</p><p class=\"text-mid\">Cuidado con dos sistemas. En el sistema decimal (SI), 1 GB son 1.000 MB — así cuentan, por ejemplo, los fabricantes de almacenamiento. Este convertidor usa el sistema binario (1.024 MB), igual que lo que muestran Windows y macOS.</p><p class=\"text-mid\">Esta herramienta calcula en ambos estándares: binario (1.024) por defecto, y con el botón Estándar de unidades cambias a decimal (1.000). Windows y la RAM cuentan en binario, mientras que los fabricantes de discos, macOS y los buscadores cuentan en decimal — por eso la misma capacidad se indica de dos formas.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor gratuito de gigabytes a megabytes – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión de gigabytes a megabytes? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión se basa en una relación fija: un gigabyte son 1.024 megabytes. Para pasar de gigabytes a megabytes, multiplicas su número por 1.024.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>megabytes = gigabytes × 1.024</strong>. Al revés: <strong>gigabytes = megabytes ÷ 1.024</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: un teléfono tiene 8 GB de RAM. Cálculo: 8 × 1.024 = 8.192 MB. Del mismo modo, 16 GB son 16.384 MB — por eso los tamaños de memoria en megabytes son siempre múltiplos de 1.024.</p><p class=\"text-mid mb-4\">¿Cuál es más grande? El gigabyte. 1 GB son 1.024 MB, así que una tarjeta de 64 GB contiene más de sesenta mil megabytes. Esto ayuda a estimar cuántos archivos pequeños caben en una capacidad.</p><p class=\"text-mid\">En Excel, escribe la fórmula <strong>=A1*1024</strong> en una celda, donde A1 contiene el valor en GB. Al revés, megabytes a gigabytes, usa <strong>=A1/1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión de gigabytes a megabytes",
+      "description": "La tabla siguiente convierte valores habituales de gigabytes a megabytes en el sistema binario (×1.024). Para convertir otro valor, usa el convertidor de arriba.",
+      "labelHeader": "Gigabytes",
+      "cols": ["Megabytes"],
+      "rows": [
+        { "label": "0,5 GB", "values": ["512 MB"] },
+        { "label": "1 GB", "values": ["1.024 MB"], "emphasis": true },
+        { "label": "2 GB", "values": ["2.048 MB"] },
+        { "label": "4 GB", "values": ["4.096 MB"], "emphasis": true },
+        { "label": "8 GB", "values": ["8.192 MB"], "emphasis": true },
+        { "label": "16 GB", "values": ["16.384 MB"], "emphasis": true },
+        { "label": "32 GB", "values": ["32.768 MB"] },
+        { "label": "50 GB", "values": ["51.200 MB"] },
+        { "label": "64 GB", "values": ["65.536 MB"] },
+        { "label": "100 GB", "values": ["102.400 MB"], "emphasis": true },
+        { "label": "128 GB", "values": ["131.072 MB"] },
+        { "label": "1.024 GB", "values": ["1.048.576 MB"], "emphasis": true }
+      ],
+      "caption": "Ejemplo: 1 GB × 1.024 = 1.024 MB. ¿Quieres convertir megabytes a gigabytes? Pulsa Cambiar orden en el convertidor de arriba."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "La escala completa de unidades: de la más pequeña a la más grande",
+      "description": "Todas las unidades de tamaño de datos crecen con el mismo multiplicador: cada una es 1.024 veces mayor que la anterior. La tabla siguiente muestra el orden del byte al petabyte, con un ejemplo típico de lo que mide cada unidad.",
+      "labelHeader": "Unidad",
+      "cols": ["Relación", "Ejemplo típico"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["unidad base", "un carácter de texto"]
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1.024 B", "un correo corto o un icono"]
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1.024 KB", "una foto o una canción MP3"],
+          "emphasis": true
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1.024 MB", "una película o un módulo de RAM"],
+          "emphasis": true
+        },
+        { "label": "Terabyte (TB)", "values": ["1.024 GB", "un disco duro"] },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1.024 TB", "un gran centro de datos"]
+        }
+      ],
+      "caption": "Orden de la más pequeña a la más grande: byte, kilobyte, megabyte, gigabyte, terabyte, petabyte. Cada salto es una multiplicación por 1.024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierte gigabytes a megabytes con más frecuencia?",
+      "description": "Los tamaños en gigabytes se convierten a megabytes sobre todo para la memoria y los límites.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Memoria RAM y del móvil",
+          "description": "La capacidad de la RAM y del almacenamiento del móvil se da en gigabytes. 8 GB son 8.192 MB, y 16 GB son 16.384 MB — convertir es útil cuando un programa o una especificación trabaja en megabytes."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Límites y consumo de datos",
+          "description": "Un plan de datos se da en gigabytes, mientras que el consumo de cada app va en megabytes. 1 GB de cuota son 1.024 MB, así que ves fácilmente cuánto queda."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Cuántos archivos caben en una capacidad",
+          "description": "Conociendo una capacidad en gigabytes, la conviertes a megabytes para estimar cuántas fotos o canciones caben. Una tarjeta de 64 GB son 65.536 MB, que contiene cientos de archivos de unas decenas de MB."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Qué es más grande: GB o MB",
+          "description": "El convertidor muestra con claridad que el gigabyte es mayor: 1 GB son 1.024 MB. Esto ayuda a comparar capacidades y tamaños dados en unidades distintas."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre la conversión de gigabytes a megabytes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos MB tiene 1 GB?",
+          "answer": "1 GB son 1.024 MB en el sistema binario, que usan este convertidor y los sistemas operativos. En el sistema decimal (SI), usado entre otros por los fabricantes de almacenamiento, 1 GB son 1.000 MB."
+        },
+        {
+          "question": "¿Cuántos MB son 8 GB y 16 GB?",
+          "answer": "8 GB son 8.192 MB, y 16 GB son 16.384 MB. Son tamaños típicos de RAM, por eso se convierten tan a menudo. Cada valor lo obtienes multiplicando el número de gigabytes por 1.024."
+        },
+        {
+          "question": "¿Cuánto es 1 GB en MB?",
+          "answer": "1 GB son exactamente 1.024 MB. Cálculo: 1 × 1.024 = 1.024 MB. Es la relación base entre el gigabyte y el megabyte, por eso es la más consultada."
+        },
+        {
+          "question": "¿Cómo convertir gigabytes a megabytes?",
+          "answer": "Multiplica el número de gigabytes por 1.024. Por ejemplo, 50 GB × 1.024 = 51.200 MB. El convertidor lo hace en cuanto escribes un valor, sin pulsar ningún botón."
+        },
+        {
+          "question": "¿Cuántos MB son 4, 32 y 64 GB?",
+          "answer": "4 GB son 4.096 MB, 32 GB son 32.768 MB y 64 GB son 65.536 MB. Cada uno de estos valores lo obtienes multiplicando el número de gigabytes por 1.024."
+        },
+        {
+          "question": "¿Cómo convertir megabytes a gigabytes?",
+          "answer": "Divide el número de megabytes entre 1.024. Por ejemplo, 8.192 MB ÷ 1.024 = 8 GB. Pulsa Cambiar orden para que el convertidor trabaje en este sentido."
+        },
+        {
+          "question": "¿1 GB son 1.000 o 1.024 MB?",
+          "answer": "Depende del sistema. Los sistemas operativos y este convertidor usan el sistema binario, en el que 1 GB son 1.024 MB. Los fabricantes de almacenamiento usan el sistema decimal, en el que 1 GB son 1.000 MB. Por eso el mismo número de gigabytes puede dar un resultado algo distinto en megabytes."
+        },
+        {
+          "question": "¿Cómo convertir GB a MB en Excel?",
+          "answer": "Escribe la fórmula =A1*1024 en una celda, donde A1 contiene el valor en gigabytes. Al revés, megabytes a gigabytes, usa =A1/1024. La misma fórmula funciona en Google Sheets."
+        },
+        {
+          "question": "¿Cuál es el orden de las unidades de la más pequeña a la más grande?",
+          "answer": "De la más pequeña: byte (B), kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB), petabyte (PB). Cada unidad es 1.024 veces mayor que la anterior. Un byte describe un solo carácter, mientras que un terabyte describe la capacidad de un disco."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "¿Tienes una pregunta o sugerencia?",
+      "description": "Si has visto un error en la tabla o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Contacto con Arteon Agency",
+      "defaultSubject": "Convertidor de gigabytes a megabytes"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

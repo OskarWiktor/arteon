@@ -48,6 +48,8 @@
         "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
         "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
         "Přijímá tečku i čárku jako desetinný oddělovač",
+        "Přepínač standardu: počítej binárně (1 024, jako Windows a RAM) nebo desítkově (1 000, jako disky, macOS a vyhledávače)",
+        "Nabízí hotový vzorec pro Excel a tabulkové procesory",
         "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
         "Přesný vzorec je: kilobajty = bajty ÷ 1 024",
         "Funguje na telefonu, tabletu i počítači bez instalace"
@@ -78,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět bajty na kilobajty?",
-      "html": "<p class=\"text-mid mb-4\">Bajt je základní jednotka velikosti dat a kilobajt je 1 024 bajtů. Surové velikosti v bajtech vidíš ve vlastnostech souboru, ve výstupu systémových příkazů nebo v odpovědích API — po převodu na kilobajty se snáz čtou a porovnávají.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 KB je 1 024 B v binárním systému, který používají operační systémy i tento převodník. Pro převod bajtů na kilobajty jejich počet vyděl číslem 1 024. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na dva systémy. V desítkovém systému (SI) je 1 KB rovno 1 000 B — tak počítají například výrobci úložišť. Tento převodník používá binární systém (1 024 B), stejně jako to, co ukazují Windows a macOS. Nezaměňuj také bajty s bity: 1 bajt je 8 bitů.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bajt je základní jednotka velikosti dat a kilobajt je 1 024 bajtů. Surové velikosti v bajtech vidíš ve vlastnostech souboru, ve výstupu systémových příkazů nebo v odpovědích API — po převodu na kilobajty se snáz čtou a porovnávají.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 KB je 1 024 B v binárním systému, který používají operační systémy i tento převodník. Pro převod bajtů na kilobajty jejich počet vyděl číslem 1 024. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na dva systémy. V desítkovém systému (SI) je 1 KB rovno 1 000 B — tak počítají například výrobci úložišť. Tento převodník používá binární systém (1 024 B), stejně jako to, co ukazují Windows a macOS. Nezaměňuj také bajty s bity: 1 bajt je 8 bitů.</p><p class=\"text-mid\">Tento nástroj počítá v obou standardech: výchozí je binární (1 024) a tlačítkem Standard jednotek přepneš na desítkový (1 000). Windows a paměť RAM počítají binárně, zatímco výrobci disků, macOS a vyhledávače desítkově — proto se stejná kapacita uvádí dvěma způsoby.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník bajtů na kilobajty – Arteon"
     },
@@ -86,7 +88,7 @@
     {
       "type": "sectionInfo",
       "title": "Jak funguje převod bajtů na kilobajty? Vzorec a příklad",
-      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden kilobajt je 1 024 bajtů. Pro převod bajtů na kilobajty jejich počet vyděl číslem 1 024.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>kilobajty = bajty ÷ 1 024</strong>. Opačně: <strong>bajty = kilobajty × 1 024</strong>.</p><p class=\"text-mid mb-4\">Příklad: soubor má 51 200 bajtů. Výpočet: 51 200 ÷ 1 024 = 50 KB. Násobek 1 024 pochází z toho, že počítače počítají dvojkově a dvě na desátou je přesně 1 024.</p><p class=\"text-mid\">Proč 1 024, a ne 1 000? V desítkovém systému (SI) je 1 KB rovno 1 000 B a tak udávají kapacitu výrobci úložišť. Operační systémy a tento převodník používají binární systém, ve kterém je 1 KB rovno 1 024 B — formálně se nazývá kibibajt (KiB).</p>"
+      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden kilobajt je 1 024 bajtů. Pro převod bajtů na kilobajty jejich počet vyděl číslem 1 024.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>kilobajty = bajty ÷ 1 024</strong>. Opačně: <strong>bajty = kilobajty × 1 024</strong>.</p><p class=\"text-mid mb-4\">Příklad: soubor má 51 200 bajtů. Výpočet: 51 200 ÷ 1 024 = 50 KB. Násobek 1 024 pochází z toho, že počítače počítají dvojkově a dvě na desátou je přesně 1 024.</p><p class=\"text-mid mb-4\">Proč 1 024, a ne 1 000? V desítkovém systému (SI) je 1 KB rovno 1 000 B a tak udávají kapacitu výrobci úložišť. Operační systémy a tento převodník používají binární systém, ve kterém je 1 KB rovno 1 024 B — formálně se nazývá kibibajt (KiB).</p><p class=\"text-mid\">V Excelu zadej do buňky vzorec <strong>=A1/1024</strong>, kde A1 obsahuje hodnotu v bajtech. Opačně, kilobajty na bajty, použij <strong>=A1*1024</strong>.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -109,6 +111,40 @@
         { "label": "1 048 576 B", "values": ["1 024 KB"], "emphasis": true }
       ],
       "caption": "Příklad: 1 024 B ÷ 1 024 = 1 KB. Chceš převést kilobajty na bajty? Klikni na Prohodit pořadí v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Celý žebříček jednotek: od nejmenší po největší",
+      "description": "Všechny jednotky velikosti dat rostou stejným násobkem: každá je 1 024krát větší než předchozí. Tabulka níže ukazuje pořadí od bajtu po petabajt s typickým příkladem toho, co každá jednotka popisuje.",
+      "labelHeader": "Jednotka",
+      "cols": ["Vztah", "Typický příklad"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["základní jednotka", "jeden znak textu"],
+          "emphasis": true
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krátký e-mail nebo ikona"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "fotka nebo skladba MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film nebo modul RAM"]
+        },
+        { "label": "Terabajt (TB)", "values": ["1 024 GB", "pevný disk"] },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "velké datové centrum"]
+        }
+      ],
+      "caption": "Pořadí od nejmenší po největší: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Každý krok je násobení 1 024."
     },
     { "type": "gap", "variant": "line" },
     {
@@ -171,6 +207,14 @@
         {
           "question": "Kolik bitů má bajt?",
           "answer": "1 bajt je 8 bitů. Pozor na zápis: KB znamená kilobajty (velikost souborů), zatímco Kb znamená kilobity (často rychlost přenosu). Tento nástroj počítá s bajty a kilobajty, ne s bity."
+        },
+        {
+          "question": "Jak převést B na KB v Excelu?",
+          "answer": "Zadej do buňky vzorec =A1/1024, kde A1 obsahuje hodnotu v bajtech. Opačně, kilobajty na bajty, použij =A1*1024. Stejný vzorec funguje v Google Sheets."
+        },
+        {
+          "question": "Jaké je pořadí jednotek od nejmenší po největší?",
+          "answer": "Od nejmenší: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Každá jednotka je 1 024krát větší než předchozí. Bajt popisuje jeden znak, zatímco terabajt popisuje kapacitu disku."
         }
       ]
     },

@@ -48,6 +48,8 @@
         "The result appears instantly as you type, with no button to click",
         "The Copy result button puts the finished value on your clipboard",
         "Accepts both a dot and a comma as the decimal separator",
+        "Standard toggle: compute in binary (1,024, like Windows and RAM) or decimal (1,000, like drives, macOS and search engines)",
+        "Gives a ready-made formula for Excel and spreadsheets",
         "Every calculation runs locally in your browser, so your data never leaves your device",
         "The exact formula is: kilobytes = bytes ÷ 1,024",
         "Works on phone, tablet and computer with no installation"
@@ -78,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert bytes to kilobytes?",
-      "html": "<p class=\"text-mid mb-4\">A byte is the basic unit of data size, and a kilobyte is 1,024 bytes. Raw sizes in bytes show up in file properties, in the output of system commands and in API responses — converting them to kilobytes makes them easier to read and compare.</p><p class=\"text-mid mb-4\">The relationship is fixed: 1 KB is 1,024 B in the binary system, which operating systems and this converter use. To turn bytes into kilobytes, divide their number by 1,024. The converter does this the moment you type a value.</p><p class=\"text-mid\">Watch out for two systems. In the decimal system (SI), 1 KB is 1,000 B — that is how storage makers count, for example. This converter uses the binary system (1,024 B), matching what Windows and macOS show. Do not mix bytes up with bits either: 1 byte is 8 bits.</p>",
+      "html": "<p class=\"text-mid mb-4\">A byte is the basic unit of data size, and a kilobyte is 1,024 bytes. Raw sizes in bytes show up in file properties, in the output of system commands and in API responses — converting them to kilobytes makes them easier to read and compare.</p><p class=\"text-mid mb-4\">The relationship is fixed: 1 KB is 1,024 B in the binary system, which operating systems and this converter use. To turn bytes into kilobytes, divide their number by 1,024. The converter does this the moment you type a value.</p><p class=\"text-mid\">Watch out for two systems. In the decimal system (SI), 1 KB is 1,000 B — that is how storage makers count, for example. This converter uses the binary system (1,024 B), matching what Windows and macOS show. Do not mix bytes up with bits either: 1 byte is 8 bits.</p><p class=\"text-mid\">This tool computes both standards: binary (1,024) by default, and the Unit standard button switches it to decimal (1,000). Windows and RAM count in binary, while drive makers, macOS and search engines count in decimal — which is why the same capacity is quoted two different ways.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free bytes to kilobytes converter – Arteon"
     },
@@ -86,7 +88,7 @@
     {
       "type": "sectionInfo",
       "title": "How does the bytes to kilobytes conversion work? Formula and example",
-      "html": "<p class=\"text-mid mb-4\">The conversion rests on a fixed relationship: one kilobyte is 1,024 bytes. To turn bytes into kilobytes, divide their number by 1,024.</p><p class=\"text-mid mb-4\">Full formula: <strong>kilobytes = bytes ÷ 1,024</strong>. The other way: <strong>bytes = kilobytes × 1,024</strong>.</p><p class=\"text-mid mb-4\">Example: a file is 51,200 bytes. Calculation: 51,200 ÷ 1,024 = 50 KB. The multiplier 1,024 comes from the fact that computers count in binary, and two to the power of ten is exactly 1,024.</p><p class=\"text-mid\">Why 1,024 and not 1,000? In the decimal system (SI), 1 KB is 1,000 B, and that is how storage makers state capacity. Operating systems and this converter use the binary system, where 1 KB is 1,024 B — formally called a kibibyte (KiB).</p>"
+      "html": "<p class=\"text-mid mb-4\">The conversion rests on a fixed relationship: one kilobyte is 1,024 bytes. To turn bytes into kilobytes, divide their number by 1,024.</p><p class=\"text-mid mb-4\">Full formula: <strong>kilobytes = bytes ÷ 1,024</strong>. The other way: <strong>bytes = kilobytes × 1,024</strong>.</p><p class=\"text-mid mb-4\">Example: a file is 51,200 bytes. Calculation: 51,200 ÷ 1,024 = 50 KB. The multiplier 1,024 comes from the fact that computers count in binary, and two to the power of ten is exactly 1,024.</p><p class=\"text-mid mb-4\">Why 1,024 and not 1,000? In the decimal system (SI), 1 KB is 1,000 B, and that is how storage makers state capacity. Operating systems and this converter use the binary system, where 1 KB is 1,024 B — formally called a kibibyte (KiB).</p><p class=\"text-mid\">In Excel, type the formula <strong>=A1/1024</strong> in a cell, where A1 holds the value in bytes. The other way, kilobytes to bytes, use <strong>=A1*1024</strong>.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -109,6 +111,40 @@
         { "label": "1,048,576 B", "values": ["1,024 KB"], "emphasis": true }
       ],
       "caption": "Example: 1,024 B ÷ 1,024 = 1 KB. Want to convert kilobytes to bytes? Click Swap order in the converter above."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "The full data unit ladder: from smallest to largest",
+      "description": "Every data size unit grows by the same multiplier: each one is 1,024 times larger than the previous. The table below shows the order from byte to petabyte, with a typical example of what each unit describes.",
+      "labelHeader": "Unit",
+      "cols": ["Relationship", "Typical example"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["base unit", "one character of text"],
+          "emphasis": true
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1,024 B", "a short email or icon"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1,024 KB", "a photo or an MP3 song"]
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1,024 MB", "a movie or a RAM stick"]
+        },
+        { "label": "Terabyte (TB)", "values": ["1,024 GB", "a hard drive"] },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1,024 TB", "a large data centre"]
+        }
+      ],
+      "caption": "Order from smallest to largest: byte, kilobyte, megabyte, gigabyte, terabyte, petabyte. Each step is a multiplication by 1,024."
     },
     { "type": "gap", "variant": "line" },
     {
@@ -171,6 +207,14 @@
         {
           "question": "How many bits are in a byte?",
           "answer": "1 byte is 8 bits. Mind the notation: KB means kilobytes (file size), while Kb means kilobits (often transfer speed). This tool works with bytes and kilobytes, not bits."
+        },
+        {
+          "question": "How do you convert B to KB in Excel?",
+          "answer": "Type the formula =A1/1024 in a cell, where A1 holds the value in bytes. The other way, kilobytes to bytes, use =A1*1024. The same formula works in Google Sheets."
+        },
+        {
+          "question": "What is the order of the units from smallest to largest?",
+          "answer": "From smallest: byte (B), kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB), petabyte (PB). Each unit is 1,024 times larger than the previous one. A byte describes a single character, while a terabyte describes a drive capacity."
         }
       ]
     },

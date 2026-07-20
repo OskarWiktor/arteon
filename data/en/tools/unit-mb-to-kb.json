@@ -48,6 +48,8 @@
         "The result appears instantly as you type, with no button to click",
         "The Copy result button puts the finished value on your clipboard",
         "Accepts both a dot and a comma as the decimal separator",
+        "Standard toggle: compute in binary (1,024, like Windows and RAM) or decimal (1,000, like drives, macOS and search engines)",
+        "Gives a ready-made formula for Excel and spreadsheets",
         "Every calculation runs locally in your browser, so your data never leaves your device",
         "The exact formula is: kilobytes = megabytes × 1,024",
         "Works on phone, tablet and computer with no installation"
@@ -78,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert megabytes to kilobytes?",
-      "html": "<p class=\"text-mid mb-4\">A megabyte is larger than a kilobyte: 1 MB is 1,024 KB. File sizes are usually given in megabytes, but some systems, forms and limits expect a value in kilobytes — that is when you convert MB to KB.</p><p class=\"text-mid mb-4\">The relationship is fixed: 1 MB is 1,024 KB in the binary system, which operating systems and this converter use. To turn megabytes into kilobytes, multiply their number by 1,024. The converter does this the moment you type a value.</p><p class=\"text-mid\">Watch out for two systems. In the decimal system (SI), 1 MB is 1,000 KB — that is how storage makers count, for example. This converter uses the binary system (1,024 KB), matching what Windows and macOS show.</p>",
+      "html": "<p class=\"text-mid mb-4\">A megabyte is larger than a kilobyte: 1 MB is 1,024 KB. File sizes are usually given in megabytes, but some systems, forms and limits expect a value in kilobytes — that is when you convert MB to KB.</p><p class=\"text-mid mb-4\">The relationship is fixed: 1 MB is 1,024 KB in the binary system, which operating systems and this converter use. To turn megabytes into kilobytes, multiply their number by 1,024. The converter does this the moment you type a value.</p><p class=\"text-mid\">Watch out for two systems. In the decimal system (SI), 1 MB is 1,000 KB — that is how storage makers count, for example. This converter uses the binary system (1,024 KB), matching what Windows and macOS show.</p><p class=\"text-mid\">This tool computes both standards: binary (1,024) by default, and the Unit standard button switches it to decimal (1,000). Windows and RAM count in binary, while drive makers, macOS and search engines count in decimal — which is why the same capacity is quoted two different ways.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free megabytes to kilobytes converter – Arteon"
     },
@@ -86,7 +88,7 @@
     {
       "type": "sectionInfo",
       "title": "How does the megabytes to kilobytes conversion work? Formula and example",
-      "html": "<p class=\"text-mid mb-4\">The conversion rests on a fixed relationship: one megabyte is 1,024 kilobytes. To turn megabytes into kilobytes, multiply their number by 1,024.</p><p class=\"text-mid mb-4\">Full formula: <strong>kilobytes = megabytes × 1,024</strong>. The other way: <strong>megabytes = kilobytes ÷ 1,024</strong>.</p><p class=\"text-mid mb-4\">Example: a file is 5 MB. Calculation: 5 × 1,024 = 5,120 KB. Likewise 25 MB is 25,600 KB, because each megabyte is made up of 1,024 kilobytes.</p><p class=\"text-mid\">Which is bigger? The megabyte. 1 MB is 1,024 KB, so a 2 MB file is over two thousand times bigger than a 1 KB file. This is a common source of confusion when comparing sizes given in different units.</p>"
+      "html": "<p class=\"text-mid mb-4\">The conversion rests on a fixed relationship: one megabyte is 1,024 kilobytes. To turn megabytes into kilobytes, multiply their number by 1,024.</p><p class=\"text-mid mb-4\">Full formula: <strong>kilobytes = megabytes × 1,024</strong>. The other way: <strong>megabytes = kilobytes ÷ 1,024</strong>.</p><p class=\"text-mid mb-4\">Example: a file is 5 MB. Calculation: 5 × 1,024 = 5,120 KB. Likewise 25 MB is 25,600 KB, because each megabyte is made up of 1,024 kilobytes.</p><p class=\"text-mid mb-4\">Which is bigger? The megabyte. 1 MB is 1,024 KB, so a 2 MB file is over two thousand times bigger than a 1 KB file. This is a common source of confusion when comparing sizes given in different units.</p><p class=\"text-mid\">In Excel, type the formula <strong>=A1*1024</strong> in a cell, where A1 holds the value in MB. The other way, kilobytes to megabytes, use <strong>=A1/1024</strong>.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -110,6 +112,40 @@
         { "label": "1,024 MB", "values": ["1,048,576 KB"], "emphasis": true }
       ],
       "caption": "Example: 1 MB × 1,024 = 1,024 KB. Want to convert kilobytes to megabytes? Click Swap order in the converter above."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "The full data unit ladder: from smallest to largest",
+      "description": "Every data size unit grows by the same multiplier: each one is 1,024 times larger than the previous. The table below shows the order from byte to petabyte, with a typical example of what each unit describes.",
+      "labelHeader": "Unit",
+      "cols": ["Relationship", "Typical example"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["base unit", "one character of text"]
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1,024 B", "a short email or icon"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1,024 KB", "a photo or an MP3 song"],
+          "emphasis": true
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1,024 MB", "a movie or a RAM stick"]
+        },
+        { "label": "Terabyte (TB)", "values": ["1,024 GB", "a hard drive"] },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1,024 TB", "a large data centre"]
+        }
+      ],
+      "caption": "Order from smallest to largest: byte, kilobyte, megabyte, gigabyte, terabyte, petabyte. Each step is a multiplication by 1,024."
     },
     { "type": "gap", "variant": "line" },
     {
@@ -172,6 +208,14 @@
         {
           "question": "Is 1 MB 1,000 or 1,024 KB?",
           "answer": "It depends on the system. Operating systems and this converter use the binary system, where 1 MB is 1,024 KB. Storage makers use the decimal system, where 1 MB is 1,000 KB. That is why the same number of megabytes can give a slightly different result in kilobytes."
+        },
+        {
+          "question": "How do you convert MB to KB in Excel?",
+          "answer": "Type the formula =A1*1024 in a cell, where A1 holds the value in megabytes. The other way, kilobytes to megabytes, use =A1/1024. The same formula works in Google Sheets."
+        },
+        {
+          "question": "What is the order of the units from smallest to largest?",
+          "answer": "From smallest: byte (B), kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB), petabyte (PB). Each unit is 1,024 times larger than the previous one. A byte describes a single character, while a terabyte describes a drive capacity."
         }
       ]
     },

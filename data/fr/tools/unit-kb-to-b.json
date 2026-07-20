@@ -48,6 +48,8 @@
         "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
         "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
         "Accepte le point comme la virgule comme séparateur décimal",
+        "Sélecteur de standard : calculez en binaire (1 024, comme Windows et la RAM) ou décimal (1 000, comme disques, macOS et moteurs de recherche)",
+        "Donne une formule prête pour Excel et les tableurs",
         "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
         "La formule exacte est : octets = kilo-octets × 1 024",
         "Fonctionne sur téléphone, tablette et ordinateur sans installation"
@@ -78,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir des kilo-octets en octets ?",
-      "html": "<p class=\"text-mid mb-4\">Un kilo-octet fait 1 024 octets, et l'octet est l'unité de base de la taille des données. Une taille en kilo-octets se lit facilement, mais dans le code, la configuration ou une spécification vous avez souvent besoin du nombre exact d'octets — et c'est là que vous convertissez les Ko en octets.</p><p class=\"text-mid mb-4\">Le rapport est fixe : 1 Ko fait 1 024 octets dans le système binaire, celui qu'utilisent les systèmes d'exploitation et ce convertisseur. Pour passer des kilo-octets aux octets, vous multipliez leur nombre par 1 024. Le convertisseur le fait dès que vous saisissez une valeur.</p><p class=\"text-mid\">Attention à deux systèmes. Dans le système décimal (SI), 1 Ko fait 1 000 octets — c'est ainsi que comptent par exemple les fabricants de stockage. Ce convertisseur utilise le système binaire (1 024 octets), comme ce qu'affichent Windows et macOS. Ne confondez pas non plus les octets avec les bits : 1 octet fait 8 bits.</p>",
+      "html": "<p class=\"text-mid mb-4\">Un kilo-octet fait 1 024 octets, et l'octet est l'unité de base de la taille des données. Une taille en kilo-octets se lit facilement, mais dans le code, la configuration ou une spécification vous avez souvent besoin du nombre exact d'octets — et c'est là que vous convertissez les Ko en octets.</p><p class=\"text-mid mb-4\">Le rapport est fixe : 1 Ko fait 1 024 octets dans le système binaire, celui qu'utilisent les systèmes d'exploitation et ce convertisseur. Pour passer des kilo-octets aux octets, vous multipliez leur nombre par 1 024. Le convertisseur le fait dès que vous saisissez une valeur.</p><p class=\"text-mid\">Attention à deux systèmes. Dans le système décimal (SI), 1 Ko fait 1 000 octets — c'est ainsi que comptent par exemple les fabricants de stockage. Ce convertisseur utilise le système binaire (1 024 octets), comme ce qu'affichent Windows et macOS. Ne confondez pas non plus les octets avec les bits : 1 octet fait 8 bits.</p><p class=\"text-mid\">Cet outil calcule dans les deux standards : binaire (1 024) par défaut, et avec le bouton Standard d'unités vous passez au décimal (1 000). Windows et la RAM comptent en binaire, tandis que les fabricants de disques, macOS et les moteurs de recherche comptent en décimal — c'est pourquoi la même capacité est indiquée de deux façons.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur gratuit de kilo-octets en octets – Arteon"
     },
@@ -86,7 +88,7 @@
     {
       "type": "sectionInfo",
       "title": "Comment fonctionne la conversion des kilo-octets en octets ? Formule et exemple",
-      "html": "<p class=\"text-mid mb-4\">La conversion repose sur un rapport fixe : un kilo-octet fait 1 024 octets. Pour passer des kilo-octets aux octets, vous multipliez leur nombre par 1 024.</p><p class=\"text-mid mb-4\">Formule complète : <strong>octets = kilo-octets × 1 024</strong>. Dans l'autre sens : <strong>kilo-octets = octets ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous avez une limite de 50 Ko et la voulez en octets. Calcul : 50 × 1 024 = 51 200 octets. Le multiplicateur 1 024 vient de ce que les ordinateurs comptent en binaire, et deux à la puissance dix fait exactement 1 024.</p><p class=\"text-mid\">Pourquoi 1 024 et non 1 000 ? Dans le système décimal (SI), 1 Ko fait 1 000 octets, et c'est ainsi que les fabricants de stockage indiquent la capacité. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Ko fait 1 024 octets — formellement appelé kibioctet (Kio).</p>"
+      "html": "<p class=\"text-mid mb-4\">La conversion repose sur un rapport fixe : un kilo-octet fait 1 024 octets. Pour passer des kilo-octets aux octets, vous multipliez leur nombre par 1 024.</p><p class=\"text-mid mb-4\">Formule complète : <strong>octets = kilo-octets × 1 024</strong>. Dans l'autre sens : <strong>kilo-octets = octets ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous avez une limite de 50 Ko et la voulez en octets. Calcul : 50 × 1 024 = 51 200 octets. Le multiplicateur 1 024 vient de ce que les ordinateurs comptent en binaire, et deux à la puissance dix fait exactement 1 024.</p><p class=\"text-mid mb-4\">Pourquoi 1 024 et non 1 000 ? Dans le système décimal (SI), 1 Ko fait 1 000 octets, et c'est ainsi que les fabricants de stockage indiquent la capacité. Les systèmes d'exploitation et ce convertisseur utilisent le système binaire, dans lequel 1 Ko fait 1 024 octets — formellement appelé kibioctet (Kio).</p><p class=\"text-mid\">Dans Excel, saisissez la formule <strong>=A1*1024</strong> dans une cellule, où A1 contient la valeur en Ko. Dans l'autre sens, octets en kilo-octets, utilisez <strong>=A1/1024</strong>.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -109,6 +111,40 @@
         { "label": "1 024 KB", "values": ["1 048 576 B"], "emphasis": true }
       ],
       "caption": "Exemple : 1 KB × 1 024 = 1 024 B. Vous voulez convertir des octets en kilo-octets ? Cliquez sur Inverser l'ordre dans le convertisseur ci-dessus."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "L'échelle complète des unités de données : de la plus petite à la plus grande",
+      "description": "Toutes les unités de taille de données grandissent du même multiplicateur : chacune est 1 024 fois plus grande que la précédente. Le tableau ci-dessous montre l'ordre de l'octet au péta-octet, avec un exemple typique de ce que décrit chaque unité.",
+      "labelHeader": "Unité",
+      "cols": ["Rapport", "Exemple typique"],
+      "rows": [
+        {
+          "label": "Octet (o)",
+          "values": ["unité de base", "un caractère de texte"],
+          "emphasis": true
+        },
+        {
+          "label": "Kilo-octet (Ko)",
+          "values": ["1 024 o", "un court e-mail ou une icône"],
+          "emphasis": true
+        },
+        {
+          "label": "Méga-octet (Mo)",
+          "values": ["1 024 Ko", "une photo ou une chanson MP3"]
+        },
+        {
+          "label": "Giga-octet (Go)",
+          "values": ["1 024 Mo", "un film ou une barrette de RAM"]
+        },
+        { "label": "Téra-octet (To)", "values": ["1 024 Go", "un disque dur"] },
+        {
+          "label": "Péta-octet (Po)",
+          "values": ["1 024 To", "un grand centre de données"]
+        }
+      ],
+      "caption": "Ordre de la plus petite à la plus grande : octet, kilo-octet, méga-octet, giga-octet, téra-octet, péta-octet. Chaque palier est une multiplication par 1 024."
     },
     { "type": "gap", "variant": "line" },
     {
@@ -171,6 +207,14 @@
         {
           "question": "Quelle différence entre Ko et Kio ?",
           "answer": "Le Kio (kibioctet, la norme IEC) fait toujours exactement 1 024 octets. Le Ko dans le système SI fait 1 000 octets. Au quotidien, la plupart écrivent Ko en pensant 1 024 octets, ce qui est techniquement un Kio. Ce convertisseur utilise 1 024 octets."
+        },
+        {
+          "question": "Comment convertir des KB en B dans Excel ?",
+          "answer": "Saisissez la formule =A1*1024 dans une cellule, où A1 contient la valeur en kilo-octets. Dans l'autre sens, octets en kilo-octets, utilisez =A1/1024. La même formule fonctionne dans Google Sheets."
+        },
+        {
+          "question": "Quel est l'ordre des unités de la plus petite à la plus grande ?",
+          "answer": "De la plus petite : octet (o), kilo-octet (Ko), méga-octet (Mo), giga-octet (Go), téra-octet (To), péta-octet (Po). Chaque unité est 1 024 fois plus grande que la précédente. Un octet décrit un seul caractère, tandis qu'un téra-octet décrit la capacité d'un disque."
         }
       ]
     },

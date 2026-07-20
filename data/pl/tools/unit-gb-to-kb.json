@@ -1,0 +1,237 @@
+{
+  "toolKey": "gbToKb",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter gigabajtów na kilobajty – przelicz GB na KB",
+    "description": "Przelicz gigabajty na kilobajty i odwrotnie. 1 GB to 1 048 576 KB w systemie binarnym. Wpisz wartość, a wynik pojawi się natychmiast. Działa w przeglądarce, bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-gb-na-kb"
+  },
+  "hero": {
+    "title": "Przelicz gigabajty na kilobajty",
+    "description": "Wpisz liczbę gigabajtów i od razu odczytaj wynik w kilobajtach. Gigabajt to 1 048 576 kilobajtów w systemie binarnym (czyli 1024 × 1024), więc konwerter mnoży podaną liczbę przez 1 048 576. Przyciskiem Zmień kolejność przeliczysz też kilobajty na gigabajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-gb-na-kb",
+      "label": "gigabajty na kilobajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter gigabajtów na kilobajty – przelicznik GB na KB",
+      "alternateName": [
+        "Konwerter gigabajtów na kilobajty",
+        "Przelicznik gigabajtów na kilobajty",
+        "Kalkulator GB na KB",
+        "Gigabajty na kilobajty",
+        "GB na KB",
+        "Przelicz GB na KB",
+        "Ile KB to GB",
+        "1 GB ile to KB",
+        "Co jest większe GB czy KB",
+        "Kilobajty na gigabajty",
+        "KB na GB",
+        "gb to kb"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konwerter gigabajtów na kilobajty działający w przeglądarce bez rejestracji. Wpisz liczbę gigabajtów i natychmiast odczytaj wynik w kilobajtach. Przelicza w systemie binarnym, w którym 1 GB to 1 048 576 KB.",
+      "featureList": [
+        "Przelicza gigabajty na kilobajty i kilobajty na gigabajty w systemie binarnym (1 GB = 1 048 576 KB)",
+        "Konwersja działa w obie strony — przyciskiem Zmień kolejność przełączasz kierunek",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Przełącznik standardu: policz binarnie (1 024, jak Windows i pamięć RAM) lub dziesiętnie (1 000, jak dyski, macOS i wyszukiwarki)",
+        "Podaje gotowy wzór do Excela i arkuszy kalkulacyjnych",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: kilobajty = gigabajty × 1 048 576",
+        "Działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć gigabajty na kilobajty?",
+      "description": "Krótka instrukcja użycia konwertera gigabajtów na kilobajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz liczbę gigabajtów",
+          "text": "W lewym polu wpisz liczbę gigabajtów, którą chcesz przeliczyć na kilobajty. Możesz użyć kropki lub przecinka jako separatora dziesiętnego."
+        },
+        {
+          "name": "Odczytaj wynik w kilobajtach",
+          "text": "Wynik w kilobajtach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania kilobajtów na gigabajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać gigabajty na kilobajty?",
+      "html": "<p class=\"text-mid mb-4\">Gigabajt jest znacznie większy od kilobajta: 1 GB to 1 048 576 KB. Przeliczenie GB na kilobajty przydaje się rzadziej niż na megabajty, ale bywa potrzebne, gdy jakiś system, skrypt albo specyfikacja oczekuje wartości w kilobajtach, a Ty znasz pojemność w gigabajtach.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 GB to 1 048 576 KB w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić gigabajty na kilobajty, mnożysz ich liczbę przez 1 048 576. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 GB to 1 000 000 KB — tak liczą między innymi producenci nośników. Ten konwerter używa systemu binarnego (1 048 576 KB), zgodnego z tym, co pokazują Windows i macOS.</p><p class=\"text-mid\">W tym narzędziu policzysz oba standardy: domyślnie binarny (1 024), a przyciskiem Standard jednostek przełączysz na dziesiętny (1 000). Binarnie liczą Windows i pamięć RAM, dziesiętnie producenci dysków, macOS i wyszukiwarki — dlatego ta sama pojemność bywa podawana na dwa sposoby.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter gigabajtów na kilobajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja gigabajtów na kilobajty? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden gigabajt to 1 048 576 kilobajtów. Aby zamienić gigabajty na kilobajty, mnożysz ich liczbę przez 1 048 576. Możesz też pomnożyć dwukrotnie przez 1 024 — najpierw z GB na MB, potem z MB na KB.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>kilobajty = gigabajty × 1 048 576</strong>. W drugą stronę: <strong>gigabajty = kilobajty ÷ 1 048 576</strong>.</p><p class=\"text-mid mb-4\">Przykład: dysk ma 16 GB. Obliczenie: 16 × 1 048 576 = 16 777 216 KB. Liczby szybko rosną, bo każdy gigabajt to ponad milion kilobajtów.</p><p class=\"text-mid mb-4\">Który jest większy? Gigabajt. 1 GB to 1 048 576 KB, więc jest ponad milion razy większy od kilobajta. To pokazuje, jak ogromna jest różnica skali między tymi dwiema jednostkami.</p><p class=\"text-mid\">W Excelu wpisz w komórce wzór <strong>=A1*1048576</strong>, gdzie A1 zawiera wartość w GB. W drugą stronę, kilobajty na gigabajty, użyj <strong>=A1/1048576</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa gigabajtów na kilobajty",
+      "description": "Poniższa tabela pokazuje przeliczenie popularnych wartości w gigabajtach na kilobajty w systemie binarnym (×1 048 576). Aby przeliczyć inną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Gigabajty",
+      "cols": ["Kilobajty"],
+      "rows": [
+        { "label": "0,5 GB", "values": ["524 288 KB"] },
+        { "label": "1 GB", "values": ["1 048 576 KB"], "emphasis": true },
+        { "label": "2 GB", "values": ["2 097 152 KB"] },
+        { "label": "4 GB", "values": ["4 194 304 KB"], "emphasis": true },
+        { "label": "5 GB", "values": ["5 242 880 KB"] },
+        { "label": "8 GB", "values": ["8 388 608 KB"] },
+        { "label": "10 GB", "values": ["10 485 760 KB"] },
+        { "label": "16 GB", "values": ["16 777 216 KB"], "emphasis": true },
+        { "label": "32 GB", "values": ["33 554 432 KB"] },
+        { "label": "64 GB", "values": ["67 108 864 KB"], "emphasis": true },
+        { "label": "128 GB", "values": ["134 217 728 KB"] }
+      ],
+      "caption": "Przykład: 1 GB × 1 048 576 = 1 048 576 KB. Chcesz przeliczyć kilobajty na gigabajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Cała drabina jednostek danych: od najmniejszej do największej",
+      "description": "Wszystkie jednostki rozmiaru danych rosną o ten sam mnożnik: każda kolejna jest 1 024 razy większa od poprzedniej. Poniższa tabela pokazuje kolejność od bajta do petabajta wraz z typowym przykładem, co dana jednostka opisuje.",
+      "labelHeader": "Jednostka",
+      "cols": ["Zależność", "Typowy przykład"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["jednostka podstawowa", "jeden znak tekstu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krótki e-mail lub ikona"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "zdjęcie lub utwór MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film lub kość pamięci RAM"],
+          "emphasis": true
+        },
+        { "label": "Terabajt (TB)", "values": ["1 024 GB", "dysk twardy"] },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "duże centrum danych"]
+        }
+      ],
+      "caption": "Kolejność od najmniejszej do największej: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Każdy krok to mnożenie przez 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się gigabajty na kilobajty?",
+      "description": "Gigabajty przeliczasz na kilobajty rzadziej niż na megabajty, głównie w sytuacjach technicznych.",
+      "items": [
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Wartości w KB w systemach i skryptach",
+          "description": "Niektóre skrypty, API lub pola konfiguracji oczekują rozmiaru w kilobajtach. Gdy znasz pojemność w gigabajtach, przeliczasz ją na KB — na przykład 2 GB to 2 097 152 KB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Zrozumienie skali",
+          "description": "Przeliczenie pokazuje, jak ogromna liczba kilobajtów kryje się za gigabajtem. 16 GB to 16 777 216 KB, co unaocznia różnicę między tymi jednostkami."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Pojemność nośników w KB",
+          "description": "Jeśli chcesz wyrazić pojemność karty czy dysku w kilobajtach, na przykład dla porównania z małymi plikami, konwerter podaje dokładną liczbę bez ręcznego mnożenia."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Co jest większe: GB czy KB",
+          "description": "Konwerter pokazuje wprost, że gigabajt jest większy: 1 GB to 1 048 576 KB, czyli ponad milion razy więcej. To pomaga uporządkować skalę jednostek danych."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie gigabajtów na kilobajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile KB to 1 GB?",
+          "answer": "1 GB to 1 048 576 KB w systemie binarnym, którego używa ten konwerter i systemy operacyjne. To wynik mnożenia 1024 × 1024. W systemie dziesiętnym (SI) 1 GB to 1 000 000 KB."
+        },
+        {
+          "question": "Co jest większe: GB czy KB?",
+          "answer": "Gigabajt. 1 GB to 1 048 576 KB, więc gigabajt jest ponad milion razy większy od kilobajta. To największa różnica skali spośród sąsiadujących jednostek danych, jakie zwykle się porównuje."
+        },
+        {
+          "question": "Ile to 1 GB w KB?",
+          "answer": "1 GB to dokładnie 1 048 576 KB. Obliczenie: 1 × 1 048 576 = 1 048 576 KB. To bazowa relacja między gigabajtem a kilobajtem."
+        },
+        {
+          "question": "Jak przeliczyć gigabajty na kilobajty?",
+          "answer": "Pomnóż liczbę gigabajtów przez 1 048 576. Możesz też pomnożyć dwukrotnie przez 1 024: najpierw z GB na MB, potem z MB na KB. Konwerter robi to od razu po wpisaniu wartości."
+        },
+        {
+          "question": "Ile KB to 2, 4 i 16 GB?",
+          "answer": "2 GB to 2 097 152 KB, 4 GB to 4 194 304 KB, a 16 GB to 16 777 216 KB. Każdą z tych wartości otrzymujesz, mnożąc liczbę gigabajtów przez 1 048 576."
+        },
+        {
+          "question": "Jak przeliczyć kilobajty na gigabajty?",
+          "answer": "Podziel liczbę kilobajtów przez 1 048 576. Na przykład 1 048 576 KB ÷ 1 048 576 = 1 GB. Kliknij Zmień kolejność, aby konwerter przeliczał w tę stronę."
+        },
+        {
+          "question": "Czy 1 GB to 1000000 czy 1048576 KB?",
+          "answer": "Zależy od systemu. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 GB to 1 048 576 KB. Producenci nośników używają systemu dziesiętnego, w którym 1 GB to 1 000 000 KB. Stąd różnica przy dużych wartościach."
+        },
+        {
+          "question": "Jak przeliczyć GB na KB w Excelu?",
+          "answer": "Wpisz w komórce wzór =A1*1048576, gdzie A1 zawiera wartość w gigabajtach. W drugą stronę, kilobajty na gigabajty, użyj =A1/1048576. Ten sam wzór działa w Arkuszach Google."
+        },
+        {
+          "question": "Jaka jest kolejność jednostek od najmniejszej do największej?",
+          "answer": "Od najmniejszej: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Każda jednostka jest 1 024 razy większa od poprzedniej. Bajt opisuje pojedynczy znak, a terabajt pojemność dysku."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabeli lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "defaultSubject": "Konwerter gigabajtów na kilobajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

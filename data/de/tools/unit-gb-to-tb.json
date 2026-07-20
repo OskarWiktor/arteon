@@ -1,0 +1,236 @@
+{
+  "toolKey": "gbToTb",
+  "locale": "de",
+  "metadata": {
+    "title": "GB in TB umrechnen – GB in TB Umrechner",
+    "description": "Rechnen Sie Gigabytes in Terabytes um und zurück. Ein Terabyte sind 1.024 GB im Binärsystem. Geben Sie einen Wert ein und das Ergebnis erscheint sofort. Läuft im Browser, ohne Anmeldung.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/gb-in-tb-umrechner"
+  },
+  "hero": {
+    "title": "Gigabytes in Terabytes umrechnen",
+    "description": "Geben Sie eine Anzahl Gigabytes ein und lesen Sie das Ergebnis in Terabytes sofort ab. Ein Terabyte sind 1.024 Gigabytes im Binärsystem, daher teilt der Umrechner Ihren Wert durch 1.024. Mit Reihenfolge tauschen rechnen Sie stattdessen Terabytes in Gigabytes um.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/gb-in-tb-umrechner",
+      "label": "GB in TB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Gigabytes in Terabytes umrechnen – GB in TB Umrechner",
+      "alternateName": [
+        "GB in TB Umrechner",
+        "Gigabytes in Terabytes Umrechner",
+        "GB in TB Rechner",
+        "GB in TB",
+        "gb to tb",
+        "GB zu TB",
+        "Wie viele GB hat ein TB",
+        "1000 GB in TB",
+        "1024 GB in TB",
+        "Terabytes in Gigabytes",
+        "TB in GB",
+        "gb to tb umrechnen"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Umrechner von Gigabytes in Terabytes, der ohne Anmeldung im Browser läuft. Geben Sie eine Anzahl Gigabytes ein und lesen Sie das Ergebnis in Terabytes sofort ab. Er nutzt das Binärsystem, in dem 1 TB 1.024 GB sind.",
+      "featureList": [
+        "Rechnet Gigabytes in Terabytes und Terabytes in Gigabytes im Binärsystem um (1 TB = 1.024 GB)",
+        "Die Umrechnung funktioniert in beide Richtungen — die Schaltfläche Reihenfolge tauschen wechselt die Richtung",
+        "Das Ergebnis erscheint sofort beim Tippen, ohne dass Sie eine Schaltfläche anklicken müssen",
+        "Mit der Schaltfläche Ergebnis kopieren legen Sie den fertigen Wert in die Zwischenablage",
+        "Akzeptiert sowohl Punkt als auch Komma als Dezimaltrennzeichen",
+        "Standard-Umschalter: rechnen Sie binär (1.024, wie Windows und RAM) oder dezimal (1.000, wie Datenträger, macOS und Suchmaschinen)",
+        "Gibt eine fertige Formel für Excel und Tabellenkalkulationen an",
+        "Alle Berechnungen laufen lokal im Browser, Ihre Daten verlassen das Gerät nicht",
+        "Die genaue Formel lautet: Terabytes = Gigabytes ÷ 1.024",
+        "Funktioniert ohne Installation auf Handy, Tablet und Computer"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Gigabytes in Terabytes um?",
+      "description": "Eine kurze Anleitung zur Nutzung des Umrechners von Gigabytes in Terabytes.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Anzahl Gigabytes eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl Gigabytes ein, die Sie in Terabytes umrechnen möchten. Sie können Punkt oder Komma als Dezimaltrennzeichen verwenden."
+        },
+        {
+          "name": "Ergebnis in Terabytes ablesen",
+          "text": "Das Ergebnis in Terabytes erscheint sofort im Feld rechts daneben. Mit der Schaltfläche Ergebnis kopieren legen Sie es in die Zwischenablage."
+        },
+        {
+          "name": "Bei Bedarf die Richtung tauschen",
+          "text": "Klicken Sie auf Reihenfolge tauschen, um zur Umrechnung von Terabytes in Gigabytes zu wechseln."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Wozu Gigabytes in Terabytes umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Gigabyte und Terabyte sind benachbarte Einheiten der Datengröße: 1 TB sind 1.024 GB. Kapazitäten von Festplatten, NAS-Systemen und Backup-Plänen werden in Gigabytes oder Terabytes angegeben, deshalb rechnen Sie GB in TB um, wenn Sie eine 1.000-GB-Festplatte mit einem in Terabytes angegebenen Angebot vergleichen wollen.</p><p class=\"text-mid mb-4\">Der Zusammenhang ist fest: 1 TB sind 1.024 GB im Binärsystem, das Betriebssysteme und dieser Umrechner nutzen. Um Gigabytes in Terabytes umzurechnen, teilen Sie ihre Anzahl durch 1.024. Der Umrechner erledigt das, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Achten Sie auf runde Werte. Eine „1.000-GB“-Festplatte ist kein volles Terabyte, sondern etwa 0,98 TB, denn ein volles Terabyte hat 1.024 GB. Genau 1 TB erreichen Sie mit 1.024 GB. Es ist derselbe Effekt wie bei 1.000 gegenüber 1.024 auf niedrigeren Ebenen.</p><p class=\"text-mid\">Dieses Werkzeug rechnet in beiden Standards: standardmäßig binär (1.024), und mit der Schaltfläche Einheitenstandard wechseln Sie zu dezimal (1.000). Windows und der Arbeitsspeicher zählen binär, Datenträgerhersteller, macOS und Suchmaschinen dezimal — deshalb wird dieselbe Kapazität auf zwei Arten angegeben.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kostenloser Umrechner von Gigabytes in Terabytes – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung von Gigabytes in Terabytes? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung beruht auf einem festen Zusammenhang: Ein Terabyte sind 1.024 Gigabytes. Um Gigabytes in Terabytes umzurechnen, teilen Sie ihre Anzahl durch 1.024.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Terabytes = Gigabytes ÷ 1.024</strong>. Umgekehrt: <strong>Gigabytes = Terabytes × 1.024</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Ein Array hat 2.048 GB. Rechnung: 2.048 ÷ 1.024 = 2 TB. Ebenso sind 4.096 GB 4 TB — ganze Terabytes ergeben sich aus Vielfachen von 1.024.</p><p class=\"text-mid mb-4\">Achten Sie auf runde Werte. 1.000 GB sind etwa 0,98 TB, nicht 1 TB — genau 1 TB erreichen Sie mit 1.024 GB. Der Faktor 1.024 kommt daher, dass Computer binär rechnen und zwei hoch zehn genau 1.024 ergibt.</p><p class=\"text-mid\">In Excel geben Sie in einer Zelle die Formel <strong>=A1/1024</strong> ein, wobei A1 den Wert in GB enthält. Umgekehrt, Terabytes in Gigabytes, nutzen Sie <strong>=A1*1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle Gigabytes in Terabytes",
+      "description": "Die folgende Tabelle rechnet gängige Gigabyte-Werte in Terabytes im Binärsystem um (÷1.024). Werte, die kein Vielfaches von 1.024 sind, werden gerundet angegeben. Um einen anderen Wert umzurechnen, nutzen Sie den Umrechner oben.",
+      "labelHeader": "Gigabytes",
+      "cols": ["Terabytes"],
+      "rows": [
+        { "label": "100 GB", "values": ["0,10 TB"] },
+        { "label": "500 GB", "values": ["0,49 TB"] },
+        { "label": "1.000 GB", "values": ["0,98 TB"] },
+        { "label": "1.024 GB", "values": ["1 TB"], "emphasis": true },
+        { "label": "2.000 GB", "values": ["1,95 TB"] },
+        { "label": "2.048 GB", "values": ["2 TB"], "emphasis": true },
+        { "label": "4.096 GB", "values": ["4 TB"], "emphasis": true },
+        { "label": "5.000 GB", "values": ["4,88 TB"] },
+        { "label": "8.192 GB", "values": ["8 TB"] },
+        { "label": "10.240 GB", "values": ["10 TB"], "emphasis": true }
+      ],
+      "caption": "Beispiel: 1.024 GB ÷ 1.024 = 1 TB, während 1.000 GB nur 0,98 TB sind. Möchten Sie Terabytes in Gigabytes umrechnen? Klicken Sie im Umrechner oben auf Reihenfolge tauschen."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Die gesamte Einheitenleiter: von der kleinsten zur größten",
+      "description": "Alle Einheiten der Datengröße wachsen um denselben Faktor: jede ist 1.024 Mal größer als die vorherige. Die folgende Tabelle zeigt die Reihenfolge vom Byte bis zum Petabyte, mit einem typischen Beispiel, was jede Einheit beschreibt.",
+      "labelHeader": "Einheit",
+      "cols": ["Zusammenhang", "Typisches Beispiel"],
+      "rows": [
+        { "label": "Byte (B)", "values": ["Grundeinheit", "ein Textzeichen"] },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1.024 B", "eine kurze E-Mail oder ein Icon"]
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1.024 KB", "ein Foto oder ein MP3-Song"]
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1.024 MB", "ein Film oder ein RAM-Riegel"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabyte (TB)",
+          "values": ["1.024 GB", "eine Festplatte"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1.024 TB", "ein großes Rechenzentrum"]
+        }
+      ],
+      "caption": "Reihenfolge von der kleinsten zur größten: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte, Petabyte. Jeder Schritt ist eine Multiplikation mit 1.024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man am häufigsten Gigabytes in Terabytes um?",
+      "description": "Gigabytes rechnen Sie vor allem bei großen Kapazitäten in Terabytes um.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Festplatten- und NAS-Kapazität",
+          "description": "Festplatten und NAS-Arrays sind manchmal in Gigabytes beschriftet, während Sie in Terabytes denken. 2.048 GB sind 2 TB, und eine 1.000-GB-Platte ist etwa 0,98 TB — die Umrechnung zeigt die echte Kapazität sofort."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Backups und Archive",
+          "description": "Ein Backup-Plan oder Archiv summiert sich auf Tausende Gigabytes. Die Umrechnung in Terabytes ordnet die Größenordnung, zum Beispiel sind 5.000 GB etwa 4,88 TB."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Cloud-Angebote",
+          "description": "Cloud-Dienste geben die Kapazität mal in GB, mal in TB an. Die Umrechnung erlaubt den Vergleich in derselben Einheit, wenn eines von 1.000 GB und ein anderes von 1 TB spricht."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "1000 und 1024 unterscheiden",
+          "description": "Der Umrechner zeigt klar, dass 1.000 GB kein volles Terabyte sind, sondern 0,98 TB, und dass Sie 1 TB erst mit 1.024 GB erreichen. Das ist die häufigste Verwechslung bei der Festplattenkapazität."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufige Fragen zur Umrechnung von Gigabytes in Terabytes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele GB hat 1 TB?",
+          "answer": "1 TB sind 1.024 GB im Binärsystem, das dieser Umrechner und Betriebssysteme nutzen. Im Dezimalsystem (SI), das unter anderem Festplattenhersteller verwenden, sind 1 TB 1.000 GB."
+        },
+        {
+          "question": "Sind 1000 GB 1 TB?",
+          "answer": "Nicht ganz. Im Binärsystem sind 1.000 GB etwa 0,98 TB, denn ein volles Terabyte hat 1.024 GB. Genau 1 TB erreichen Sie mit 1.024 GB. Die Rundung auf 1 TB gilt nur im Dezimalsystem, das Festplattenhersteller verwenden."
+        },
+        {
+          "question": "Wie viele TB sind 1024 und 2048 GB?",
+          "answer": "1.024 GB sind genau 1 TB und 2.048 GB sind 2 TB. Beide gehen glatt auf, weil sie Vielfache von 1.024 sind, also der Anzahl Gigabytes in einem Terabyte."
+        },
+        {
+          "question": "Wie rechnet man Gigabytes in Terabytes um?",
+          "answer": "Teilen Sie die Anzahl Gigabytes durch 1.024. Zum Beispiel 4.096 GB ÷ 1.024 = 4 TB. Der Umrechner erledigt das, sobald Sie einen Wert eingeben, ohne Klick auf eine Schaltfläche."
+        },
+        {
+          "question": "Wie viele TB sind 500 und 2000 GB?",
+          "answer": "500 GB sind etwa 0,49 TB und 2.000 GB etwa 1,95 TB. Die Werte gehen nicht glatt auf, weil ein volles Terabyte 1.024 GB hat und nicht 1.000 GB."
+        },
+        {
+          "question": "Wie rechnet man Terabytes in Gigabytes um?",
+          "answer": "Multiplizieren Sie die Anzahl Terabytes mit 1.024. Zum Beispiel 2 TB × 1.024 = 2.048 GB. Klicken Sie auf Reihenfolge tauschen, damit der Umrechner in diese Richtung rechnet."
+        },
+        {
+          "question": "Sind 1 TB 1.000 oder 1.024 GB?",
+          "answer": "Das hängt vom System ab. Betriebssysteme und dieser Umrechner nutzen das Binärsystem, in dem 1 TB 1.024 GB sind. Festplattenhersteller nutzen das Dezimalsystem, in dem 1 TB 1.000 GB sind. Deshalb zeigt eine „1-TB“-Platte im Betriebssystem weniger Kapazität."
+        },
+        {
+          "question": "Wie rechnet man GB in TB in Excel um?",
+          "answer": "Geben Sie in einer Zelle die Formel =A1/1024 ein, wobei A1 den Wert in Gigabytes enthält. Umgekehrt, Terabytes in Gigabytes, nutzen Sie =A1*1024. Dieselbe Formel funktioniert in Google Sheets."
+        },
+        {
+          "question": "Wie ist die Reihenfolge der Einheiten von der kleinsten zur größten?",
+          "answer": "Von der kleinsten: Byte (B), Kilobyte (KB), Megabyte (MB), Gigabyte (GB), Terabyte (TB), Petabyte (PB). Jede Einheit ist 1.024 Mal größer als die vorherige. Ein Byte beschreibt ein einzelnes Zeichen, ein Terabyte eine Festplattenkapazität."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Haben Sie eine Frage oder Anregung?",
+      "description": "Wenn Sie einen Fehler in der Tabelle entdeckt haben oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kontakt zu Arteon Agency",
+      "defaultSubject": "Umrechner von Gigabytes in Terabytes"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere nützliche Einheiten-Umrechner"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

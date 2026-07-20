@@ -1,0 +1,238 @@
+{
+  "toolKey": "gbToMb",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník gigabajtů na megabajty – převeď GB na MB",
+    "description": "Převeď gigabajty na megabajty a naopak. 1 GB je 1 024 MB v binárním systému. Zadej hodnotu a výsledek se objeví okamžitě. Běží v prohlížeči, bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-gb-na-mb"
+  },
+  "hero": {
+    "title": "Převeď gigabajty na megabajty",
+    "description": "Zadej počet gigabajtů a rovnou si přečti výsledek v megabajtech. Gigabajt je 1 024 megabajtů v binárním systému, proto převodník násobí zadanou hodnotu číslem 1 024. Tlačítkem Prohodit pořadí převedeš i megabajty na gigabajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-gb-na-mb",
+      "label": "gigabajty na megabajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník gigabajtů na megabajty – kalkulačka GB na MB",
+      "alternateName": [
+        "Převodník gigabajtů na megabajty",
+        "Kalkulačka gigabajtů na megabajty",
+        "GB na MB",
+        "Gigabajty na megabajty",
+        "gb to mb",
+        "Převeď GB na MB",
+        "Kolik MB má GB",
+        "1 GB kolik je MB",
+        "8 GB kolik je MB",
+        "Megabajty na gigabajty",
+        "MB na GB",
+        "gb to mb conversion"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník gigabajtů na megabajty, který běží v prohlížeči bez registrace. Zadej počet gigabajtů a rovnou si přečti výsledek v megabajtech. Používá binární systém, ve kterém je 1 GB rovno 1 024 MB.",
+      "featureList": [
+        "Převádí gigabajty na megabajty i megabajty na gigabajty v binárním systému (1 GB = 1 024 MB)",
+        "Převod funguje v obou směrech — tlačítko Prohodit pořadí přepíná směr",
+        "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
+        "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
+        "Přijímá tečku i čárku jako desetinný oddělovač",
+        "Přepínač standardu: počítej binárně (1 024, jako Windows a RAM) nebo desítkově (1 000, jako disky, macOS a vyhledávače)",
+        "Nabízí hotový vzorec pro Excel a tabulkové procesory",
+        "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
+        "Přesný vzorec je: megabajty = gigabajty × 1 024",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést gigabajty na megabajty?",
+      "description": "Krátký návod k použití převodníku gigabajtů na megabajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej počet gigabajtů",
+          "text": "Do levého pole zadej počet gigabajtů, které chceš převést na megabajty. Můžeš použít tečku nebo čárku jako desetinný oddělovač."
+        },
+        {
+          "name": "Přečti výsledek v megabajtech",
+          "text": "Výsledek v megabajtech se objeví hned v poli vedle, vpravo. Tlačítkem Kopírovat výsledek jej přeneseš do schránky."
+        },
+        {
+          "name": "V případě potřeby otoč směr",
+          "text": "Klikni na Prohodit pořadí a přejdeš k převodu megabajtů na gigabajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět gigabajty na megabajty?",
+      "html": "<p class=\"text-mid mb-4\">Gigabajt je větší než megabajt: 1 GB je 1 024 MB. Kapacita operační paměti, telefonu nebo datového balíčku se udává v gigabajtech, ale spotřeba aplikací a limity se občas počítají v megabajtech — proto převádíš GB na MB.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 GB je 1 024 MB v binárním systému, který používají operační systémy i tento převodník. Pro převod gigabajtů na megabajty jejich počet vynásob číslem 1 024. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na dva systémy. V desítkovém systému (SI) je 1 GB rovno 1 000 MB — tak počítají například výrobci úložišť. Tento převodník používá binární systém (1 024 MB), stejně jako to, co ukazují Windows a macOS.</p><p class=\"text-mid\">Tento nástroj počítá v obou standardech: výchozí je binární (1 024) a tlačítkem Standard jednotek přepneš na desítkový (1 000). Windows a paměť RAM počítají binárně, zatímco výrobci disků, macOS a vyhledávače desítkově — proto se stejná kapacita uvádí dvěma způsoby.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník gigabajtů na megabajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod gigabajtů na megabajty? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden gigabajt je 1 024 megabajtů. Pro převod gigabajtů na megabajty jejich počet vynásob číslem 1 024.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>megabajty = gigabajty × 1 024</strong>. Opačně: <strong>gigabajty = megabajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Příklad: telefon má 8 GB operační paměti. Výpočet: 8 × 1 024 = 8 192 MB. Stejně tak 16 GB je 16 384 MB — proto jsou kapacity paměti v megabajtech vždy násobky 1 024.</p><p class=\"text-mid mb-4\">Který je větší? Gigabajt. 1 GB je 1 024 MB, takže karta 64 GB pojme přes šedesát tisíc megabajtů. To pomáhá odhadnout, kolik menších souborů se vejde do dané kapacity.</p><p class=\"text-mid\">V Excelu zadej do buňky vzorec <strong>=A1*1024</strong>, kde A1 obsahuje hodnotu v GB. Opačně, megabajty na gigabajty, použij <strong>=A1/1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka gigabajtů na megabajty",
+      "description": "Následující tabulka převádí běžné hodnoty gigabajtů na megabajty v binárním systému (×1 024). Pro převod jiné hodnoty použij převodník výše.",
+      "labelHeader": "Gigabajty",
+      "cols": ["Megabajty"],
+      "rows": [
+        { "label": "0,5 GB", "values": ["512 MB"] },
+        { "label": "1 GB", "values": ["1 024 MB"], "emphasis": true },
+        { "label": "2 GB", "values": ["2 048 MB"] },
+        { "label": "4 GB", "values": ["4 096 MB"], "emphasis": true },
+        { "label": "8 GB", "values": ["8 192 MB"], "emphasis": true },
+        { "label": "16 GB", "values": ["16 384 MB"], "emphasis": true },
+        { "label": "32 GB", "values": ["32 768 MB"] },
+        { "label": "50 GB", "values": ["51 200 MB"] },
+        { "label": "64 GB", "values": ["65 536 MB"] },
+        { "label": "100 GB", "values": ["102 400 MB"], "emphasis": true },
+        { "label": "128 GB", "values": ["131 072 MB"] },
+        { "label": "1 024 GB", "values": ["1 048 576 MB"], "emphasis": true }
+      ],
+      "caption": "Příklad: 1 GB × 1 024 = 1 024 MB. Chceš převést megabajty na gigabajty? Klikni na Prohodit pořadí v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Celý žebříček jednotek: od nejmenší po největší",
+      "description": "Všechny jednotky velikosti dat rostou stejným násobkem: každá je 1 024krát větší než předchozí. Tabulka níže ukazuje pořadí od bajtu po petabajt s typickým příkladem toho, co každá jednotka popisuje.",
+      "labelHeader": "Jednotka",
+      "cols": ["Vztah", "Typický příklad"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["základní jednotka", "jeden znak textu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krátký e-mail nebo ikona"]
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "fotka nebo skladba MP3"],
+          "emphasis": true
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film nebo modul RAM"],
+          "emphasis": true
+        },
+        { "label": "Terabajt (TB)", "values": ["1 024 GB", "pevný disk"] },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "velké datové centrum"]
+        }
+      ],
+      "caption": "Pořadí od nejmenší po největší: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Každý krok je násobení 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se nejčastěji převádějí gigabajty na megabajty?",
+      "description": "Velikosti v gigabajtech se převádějí na megabajty hlavně u paměti a limitů.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Operační paměť a paměť telefonu",
+          "description": "Kapacita RAM a paměti telefonu se udává v gigabajtech. 8 GB je 8 192 MB a 16 GB je 16 384 MB — převod se hodí, když nějaký program nebo specifikace pracuje v megabajtech."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Datové limity a spotřeba",
+          "description": "Datový balíček se udává v gigabajtech, zatímco spotřeba jednotlivých aplikací v megabajtech. 1 GB limitu je 1 024 MB, takže snadno zjistíš, kolik ještě zbývá."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Kolik souborů se vejde do kapacity",
+          "description": "Když znáš kapacitu v gigabajtech, převedeš ji na megabajty, abys odhadl počet fotek nebo skladeb. Karta 64 GB je 65 536 MB a pojme stovky souborů o několika desítkách MB."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Co je větší: GB nebo MB",
+          "description": "Převodník jasně ukazuje, že gigabajt je větší: 1 GB je 1 024 MB. To pomáhá porovnat kapacity a velikosti uvedené v různých jednotkách."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu gigabajtů na megabajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik MB má 1 GB?",
+          "answer": "1 GB je 1 024 MB v binárním systému, který používá tento převodník a operační systémy. V desítkovém systému (SI), který používají mimo jiné výrobci úložišť, je 1 GB rovno 1 000 MB."
+        },
+        {
+          "question": "Kolik MB je 8 GB a 16 GB?",
+          "answer": "8 GB je 8 192 MB a 16 GB je 16 384 MB. Jsou to typické kapacity operační paměti, proto se často převádějí. Každou hodnotu získáš vynásobením počtu gigabajtů číslem 1 024."
+        },
+        {
+          "question": "Kolik je 1 GB v MB?",
+          "answer": "1 GB je přesně 1 024 MB. Výpočet: 1 × 1 024 = 1 024 MB. Je to základní vztah mezi gigabajtem a megabajtem, proto se hledá nejčastěji."
+        },
+        {
+          "question": "Jak převést gigabajty na megabajty?",
+          "answer": "Vynásob počet gigabajtů číslem 1 024. Například 50 GB × 1 024 = 51 200 MB. Převodník to udělá hned, jakmile zadáš hodnotu, bez klikání na jakékoli tlačítko."
+        },
+        {
+          "question": "Kolik MB je 4, 32 a 64 GB?",
+          "answer": "4 GB je 4 096 MB, 32 GB je 32 768 MB a 64 GB je 65 536 MB. Každou z těchto hodnot získáš vynásobením počtu gigabajtů číslem 1 024."
+        },
+        {
+          "question": "Jak převést megabajty na gigabajty?",
+          "answer": "Vyděl počet megabajtů číslem 1 024. Například 8 192 MB ÷ 1 024 = 8 GB. Klikni na Prohodit pořadí, aby převodník počítal tímto směrem."
+        },
+        {
+          "question": "Je 1 GB rovno 1 000, nebo 1 024 MB?",
+          "answer": "Záleží na systému. Operační systémy a tento převodník používají binární systém, ve kterém je 1 GB rovno 1 024 MB. Výrobci úložišť používají desítkový systém, ve kterém je 1 GB rovno 1 000 MB. Proto stejný počet gigabajtů může dát v megabajtech mírně odlišný výsledek."
+        },
+        {
+          "question": "Jak převést GB na MB v Excelu?",
+          "answer": "Zadej do buňky vzorec =A1*1024, kde A1 obsahuje hodnotu v gigabajtech. Opačně, megabajty na gigabajty, použij =A1/1024. Stejný vzorec funguje v Google Sheets."
+        },
+        {
+          "question": "Jaké je pořadí jednotek od nejmenší po největší?",
+          "answer": "Od nejmenší: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Každá jednotka je 1 024krát větší než předchozí. Bajt popisuje jeden znak, zatímco terabajt popisuje kapacitu disku."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Máš dotaz nebo návrh?",
+      "description": "Pokud jsi našel chybu v tabulce nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "defaultSubject": "Převodník gigabajtů na megabajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

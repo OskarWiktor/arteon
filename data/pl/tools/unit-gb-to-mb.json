@@ -1,0 +1,238 @@
+{
+  "toolKey": "gbToMb",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter gigabajtów na megabajty – przelicz GB na MB",
+    "description": "Przelicz gigabajty na megabajty i odwrotnie. 1 GB to 1 024 MB w systemie binarnym. Wpisz wartość, a wynik pojawi się natychmiast. Działa w przeglądarce, bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-gb-na-mb"
+  },
+  "hero": {
+    "title": "Przelicz gigabajty na megabajty",
+    "description": "Wpisz liczbę gigabajtów i od razu odczytaj wynik w megabajtach. Gigabajt to 1 024 megabajty w systemie binarnym, więc konwerter mnoży podaną liczbę przez 1 024. Przyciskiem Zmień kolejność przeliczysz też megabajty na gigabajty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-gb-na-mb",
+      "label": "gigabajty na megabajty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter gigabajtów na megabajty – przelicznik GB na MB",
+      "alternateName": [
+        "Konwerter gigabajtów na megabajty",
+        "Przelicznik gigabajtów na megabajty",
+        "Kalkulator GB na MB",
+        "Gigabajty na megabajty",
+        "GB na MB",
+        "Przelicz GB na MB",
+        "Ile MB to GB",
+        "1 GB ile to MB",
+        "8 GB ile to MB",
+        "Megabajty na gigabajty",
+        "MB na GB",
+        "gb to mb"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konwerter gigabajtów na megabajty działający w przeglądarce bez rejestracji. Wpisz liczbę gigabajtów i natychmiast odczytaj wynik w megabajtach. Przelicza w systemie binarnym, w którym 1 GB to 1 024 MB.",
+      "featureList": [
+        "Przelicza gigabajty na megabajty i megabajty na gigabajty w systemie binarnym (1 GB = 1 024 MB)",
+        "Konwersja działa w obie strony — przyciskiem Zmień kolejność przełączasz kierunek",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Przełącznik standardu: policz binarnie (1 024, jak Windows i pamięć RAM) lub dziesiętnie (1 000, jak dyski, macOS i wyszukiwarki)",
+        "Podaje gotowy wzór do Excela i arkuszy kalkulacyjnych",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór to: megabajty = gigabajty × 1 024",
+        "Działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć gigabajty na megabajty?",
+      "description": "Krótka instrukcja użycia konwertera gigabajtów na megabajty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz liczbę gigabajtów",
+          "text": "W lewym polu wpisz liczbę gigabajtów, którą chcesz przeliczyć na megabajty. Możesz użyć kropki lub przecinka jako separatora dziesiętnego."
+        },
+        {
+          "name": "Odczytaj wynik w megabajtach",
+          "text": "Wynik w megabajtach pojawi się od razu w polu obok, po prawej stronie. Przyciskiem Kopiuj wynik przeniesiesz go do schowka."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przejść do przeliczania megabajtów na gigabajty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać gigabajty na megabajty?",
+      "html": "<p class=\"text-mid mb-4\">Gigabajt jest większy od megabajta: 1 GB to 1 024 MB. Pojemność pamięci RAM, telefonu czy pakietu danych podaje się w gigabajtach, ale zużycie aplikacji i limity bywają liczone w megabajtach — dlatego przeliczasz GB na MB.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 GB to 1 024 MB w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić gigabajty na megabajty, mnożysz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 GB to 1 000 MB — tak liczą między innymi producenci nośników. Ten konwerter używa systemu binarnego (1 024 MB), zgodnego z tym, co pokazują Windows i macOS.</p><p class=\"text-mid\">W tym narzędziu policzysz oba standardy: domyślnie binarny (1 024), a przyciskiem Standard jednostek przełączysz na dziesiętny (1 000). Binarnie liczą Windows i pamięć RAM, dziesiętnie producenci dysków, macOS i wyszukiwarki — dlatego ta sama pojemność bywa podawana na dwa sposoby.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter gigabajtów na megabajty – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja gigabajtów na megabajty? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden gigabajt to 1 024 megabajty. Aby zamienić gigabajty na megabajty, mnożysz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>megabajty = gigabajty × 1 024</strong>. W drugą stronę: <strong>gigabajty = megabajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: telefon ma 8 GB pamięci RAM. Obliczenie: 8 × 1 024 = 8 192 MB. Podobnie 16 GB to 16 384 MB — dlatego pojemności pamięci wyrażone w megabajtach zawsze są wielokrotnościami 1 024.</p><p class=\"text-mid mb-4\">Który jest większy? Gigabajt. 1 GB to 1 024 MB, więc karta 64 GB pomieści ponad sześćdziesiąt tysięcy megabajtów. To pomaga ocenić, ile mniejszych plików zmieści się w danej pojemności.</p><p class=\"text-mid\">W Excelu wpisz w komórce wzór <strong>=A1*1024</strong>, gdzie A1 zawiera wartość w GB. W drugą stronę, megabajty na gigabajty, użyj <strong>=A1/1024</strong>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa gigabajtów na megabajty",
+      "description": "Poniższa tabela pokazuje przeliczenie popularnych wartości w gigabajtach na megabajty w systemie binarnym (×1 024). Aby przeliczyć inną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Gigabajty",
+      "cols": ["Megabajty"],
+      "rows": [
+        { "label": "0,5 GB", "values": ["512 MB"] },
+        { "label": "1 GB", "values": ["1 024 MB"], "emphasis": true },
+        { "label": "2 GB", "values": ["2 048 MB"] },
+        { "label": "4 GB", "values": ["4 096 MB"], "emphasis": true },
+        { "label": "8 GB", "values": ["8 192 MB"], "emphasis": true },
+        { "label": "16 GB", "values": ["16 384 MB"], "emphasis": true },
+        { "label": "32 GB", "values": ["32 768 MB"] },
+        { "label": "50 GB", "values": ["51 200 MB"] },
+        { "label": "64 GB", "values": ["65 536 MB"] },
+        { "label": "100 GB", "values": ["102 400 MB"], "emphasis": true },
+        { "label": "128 GB", "values": ["131 072 MB"] },
+        { "label": "1 024 GB", "values": ["1 048 576 MB"], "emphasis": true }
+      ],
+      "caption": "Przykład: 1 GB × 1 024 = 1 024 MB. Chcesz przeliczyć megabajty na gigabajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Cała drabina jednostek danych: od najmniejszej do największej",
+      "description": "Wszystkie jednostki rozmiaru danych rosną o ten sam mnożnik: każda kolejna jest 1 024 razy większa od poprzedniej. Poniższa tabela pokazuje kolejność od bajta do petabajta wraz z typowym przykładem, co dana jednostka opisuje.",
+      "labelHeader": "Jednostka",
+      "cols": ["Zależność", "Typowy przykład"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["jednostka podstawowa", "jeden znak tekstu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krótki e-mail lub ikona"]
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "zdjęcie lub utwór MP3"],
+          "emphasis": true
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film lub kość pamięci RAM"],
+          "emphasis": true
+        },
+        { "label": "Terabajt (TB)", "values": ["1 024 GB", "dysk twardy"] },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "duże centrum danych"]
+        }
+      ],
+      "caption": "Kolejność od najmniejszej do największej: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Każdy krok to mnożenie przez 1 024."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się gigabajty na megabajty?",
+      "description": "Rozmiary w gigabajtach przeliczasz na megabajty głównie przy pamięci i limitach.",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Pamięć RAM i telefonu",
+          "description": "Pojemność RAM i pamięci telefonu podaje się w gigabajtach. 8 GB to 8 192 MB, a 16 GB to 16 384 MB — przeliczenie przydaje się, gdy jakiś program lub specyfikacja operuje w megabajtach."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limity i zużycie danych",
+          "description": "Pakiet danych podaje się w gigabajtach, a zużycie poszczególnych aplikacji w megabajtach. 1 GB limitu to 1 024 MB, więc łatwo sprawdzisz, ile już zostało."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Ile plików zmieści się w pojemności",
+          "description": "Znając pojemność w gigabajtach, przeliczasz ją na megabajty, żeby oszacować liczbę zdjęć czy utworów. Karta 64 GB to 65 536 MB, czyli mieści setki plików po kilkadziesiąt MB."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Co jest większe: GB czy MB",
+          "description": "Konwerter pokazuje wprost, że gigabajt jest większy: 1 GB to 1 024 MB. To pomaga porównać pojemności i rozmiary podane w różnych jednostkach."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie gigabajtów na megabajty",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile MB to 1 GB?",
+          "answer": "1 GB to 1 024 MB w systemie binarnym, którego używa ten konwerter i systemy operacyjne. W systemie dziesiętnym (SI), stosowanym między innymi przez producentów nośników, 1 GB to 1 000 MB."
+        },
+        {
+          "question": "Ile MB to 8 GB i 16 GB?",
+          "answer": "8 GB to 8 192 MB, a 16 GB to 16 384 MB. To typowe pojemności pamięci RAM, dlatego często się je przelicza. Każdą wartość otrzymujesz, mnożąc liczbę gigabajtów przez 1 024."
+        },
+        {
+          "question": "Ile to 1 GB w MB?",
+          "answer": "1 GB to dokładnie 1 024 MB. Obliczenie: 1 × 1 024 = 1 024 MB. To bazowa relacja między gigabajtem a megabajtem, dlatego sprawdza się ją najczęściej."
+        },
+        {
+          "question": "Jak przeliczyć gigabajty na megabajty?",
+          "answer": "Pomnóż liczbę gigabajtów przez 1 024. Na przykład 50 GB × 1 024 = 51 200 MB. Konwerter robi to od razu po wpisaniu wartości, bez klikania jakiegokolwiek przycisku."
+        },
+        {
+          "question": "Ile MB to 4, 32 i 64 GB?",
+          "answer": "4 GB to 4 096 MB, 32 GB to 32 768 MB, a 64 GB to 65 536 MB. Każdą z tych wartości otrzymujesz, mnożąc liczbę gigabajtów przez 1 024."
+        },
+        {
+          "question": "Jak przeliczyć megabajty na gigabajty?",
+          "answer": "Podziel liczbę megabajtów przez 1 024. Na przykład 8 192 MB ÷ 1 024 = 8 GB. Kliknij Zmień kolejność, aby konwerter przeliczał w tę stronę."
+        },
+        {
+          "question": "Czy 1 GB to 1000 czy 1024 MB?",
+          "answer": "Zależy od systemu. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 GB to 1 024 MB. Producenci nośników używają systemu dziesiętnego, w którym 1 GB to 1 000 MB. Dlatego ta sama liczba gigabajtów może dać nieco inny wynik w megabajtach."
+        },
+        {
+          "question": "Jak przeliczyć GB na MB w Excelu?",
+          "answer": "Wpisz w komórce wzór =A1*1024, gdzie A1 zawiera wartość w gigabajtach. W drugą stronę, megabajty na gigabajty, użyj =A1/1024. Ten sam wzór działa w Arkuszach Google."
+        },
+        {
+          "question": "Jaka jest kolejność jednostek od najmniejszej do największej?",
+          "answer": "Od najmniejszej: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Każda jednostka jest 1 024 razy większa od poprzedniej. Bajt opisuje pojedynczy znak, a terabajt pojemność dysku."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabeli lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "defaultSubject": "Konwerter gigabajtów na megabajty"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -48,6 +48,8 @@
         "Výsledek se zobrazí okamžitě při psaní, bez klikání na jakékoli tlačítko",
         "Tlačítkem Kopírovat výsledek přeneseš hotovou hodnotu do schránky",
         "Přijímá tečku i čárku jako desetinný oddělovač",
+        "Přepínač standardu: počítej binárně (1 024, jako Windows a RAM) nebo desítkově (1 000, jako disky, macOS a vyhledávače)",
+        "Nabízí hotový vzorec pro Excel a tabulkové procesory",
         "Všechny výpočty probíhají lokálně v prohlížeči, tvá data neopouštějí zařízení",
         "Přesný vzorec je: kilobajty = megabajty × 1 024",
         "Funguje na telefonu, tabletu i počítači bez instalace"
@@ -78,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět megabajty na kilobajty?",
-      "html": "<p class=\"text-mid mb-4\">Megabajt je větší než kilobajt: 1 MB je 1 024 KB. Velikosti souborů se obvykle udávají v megabajtech, ale některé systémy, formuláře a limity očekávají hodnotu v kilobajtech — tehdy převádíš MB na KB.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 MB je 1 024 KB v binárním systému, který používají operační systémy i tento převodník. Pro převod megabajtů na kilobajty jejich počet vynásob číslem 1 024. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na dva systémy. V desítkovém systému (SI) je 1 MB rovno 1 000 KB — tak počítají například výrobci úložišť. Tento převodník používá binární systém (1 024 KB), stejně jako to, co ukazují Windows a macOS.</p>",
+      "html": "<p class=\"text-mid mb-4\">Megabajt je větší než kilobajt: 1 MB je 1 024 KB. Velikosti souborů se obvykle udávají v megabajtech, ale některé systémy, formuláře a limity očekávají hodnotu v kilobajtech — tehdy převádíš MB na KB.</p><p class=\"text-mid mb-4\">Vztah je stálý: 1 MB je 1 024 KB v binárním systému, který používají operační systémy i tento převodník. Pro převod megabajtů na kilobajty jejich počet vynásob číslem 1 024. Převodník to udělá hned, jakmile zadáš hodnotu.</p><p class=\"text-mid\">Pozor na dva systémy. V desítkovém systému (SI) je 1 MB rovno 1 000 KB — tak počítají například výrobci úložišť. Tento převodník používá binární systém (1 024 KB), stejně jako to, co ukazují Windows a macOS.</p><p class=\"text-mid\">Tento nástroj počítá v obou standardech: výchozí je binární (1 024) a tlačítkem Standard jednotek přepneš na desítkový (1 000). Windows a paměť RAM počítají binárně, zatímco výrobci disků, macOS a vyhledávače desítkově — proto se stejná kapacita uvádí dvěma způsoby.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Bezplatný převodník megabajtů na kilobajty – Arteon"
     },
@@ -86,7 +88,7 @@
     {
       "type": "sectionInfo",
       "title": "Jak funguje převod megabajtů na kilobajty? Vzorec a příklad",
-      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden megabajt je 1 024 kilobajtů. Pro převod megabajtů na kilobajty jejich počet vynásob číslem 1 024.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>kilobajty = megabajty × 1 024</strong>. Opačně: <strong>megabajty = kilobajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Příklad: soubor má 5 MB. Výpočet: 5 × 1 024 = 5 120 KB. Stejně tak 25 MB je 25 600 KB, protože každý megabajt se skládá z 1 024 kilobajtů.</p><p class=\"text-mid\">Který je větší? Megabajt. 1 MB je 1 024 KB, takže soubor 2 MB je přes dva tisíce krát větší než soubor 1 KB. To je častý zdroj záměn při porovnávání velikostí uvedených v různých jednotkách.</p>"
+      "html": "<p class=\"text-mid mb-4\">Převod se opírá o stálý vztah: jeden megabajt je 1 024 kilobajtů. Pro převod megabajtů na kilobajty jejich počet vynásob číslem 1 024.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>kilobajty = megabajty × 1 024</strong>. Opačně: <strong>megabajty = kilobajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Příklad: soubor má 5 MB. Výpočet: 5 × 1 024 = 5 120 KB. Stejně tak 25 MB je 25 600 KB, protože každý megabajt se skládá z 1 024 kilobajtů.</p><p class=\"text-mid mb-4\">Který je větší? Megabajt. 1 MB je 1 024 KB, takže soubor 2 MB je přes dva tisíce krát větší než soubor 1 KB. To je častý zdroj záměn při porovnávání velikostí uvedených v různých jednotkách.</p><p class=\"text-mid\">V Excelu zadej do buňky vzorec <strong>=A1*1024</strong>, kde A1 obsahuje hodnotu v MB. Opačně, kilobajty na megabajty, použij <strong>=A1/1024</strong>.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -110,6 +112,40 @@
         { "label": "1 024 MB", "values": ["1 048 576 KB"], "emphasis": true }
       ],
       "caption": "Příklad: 1 MB × 1 024 = 1 024 KB. Chceš převést kilobajty na megabajty? Klikni na Prohodit pořadí v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Celý žebříček jednotek: od nejmenší po největší",
+      "description": "Všechny jednotky velikosti dat rostou stejným násobkem: každá je 1 024krát větší než předchozí. Tabulka níže ukazuje pořadí od bajtu po petabajt s typickým příkladem toho, co každá jednotka popisuje.",
+      "labelHeader": "Jednotka",
+      "cols": ["Vztah", "Typický příklad"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["základní jednotka", "jeden znak textu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krátký e-mail nebo ikona"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "fotka nebo skladba MP3"],
+          "emphasis": true
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film nebo modul RAM"]
+        },
+        { "label": "Terabajt (TB)", "values": ["1 024 GB", "pevný disk"] },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "velké datové centrum"]
+        }
+      ],
+      "caption": "Pořadí od nejmenší po největší: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Každý krok je násobení 1 024."
     },
     { "type": "gap", "variant": "line" },
     {
@@ -172,6 +208,14 @@
         {
           "question": "Je 1 MB rovno 1 000, nebo 1 024 KB?",
           "answer": "Záleží na systému. Operační systémy a tento převodník používají binární systém, ve kterém je 1 MB rovno 1 024 KB. Výrobci úložišť používají desítkový systém, ve kterém je 1 MB rovno 1 000 KB. Proto stejný počet megabajtů může dát v kilobajtech mírně odlišný výsledek."
+        },
+        {
+          "question": "Jak převést MB na KB v Excelu?",
+          "answer": "Zadej do buňky vzorec =A1*1024, kde A1 obsahuje hodnotu v megabajtech. Opačně, kilobajty na megabajty, použij =A1/1024. Stejný vzorec funguje v Google Sheets."
+        },
+        {
+          "question": "Jaké je pořadí jednotek od nejmenší po největší?",
+          "answer": "Od nejmenší: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Každá jednotka je 1 024krát větší než předchozí. Bajt popisuje jeden znak, zatímco terabajt popisuje kapacitu disku."
         }
       ]
     },

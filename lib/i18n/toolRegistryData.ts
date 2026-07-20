@@ -5951,6 +5951,454 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'mbToGb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-mb-na-gb',
+        title: 'megabajty na gigabajty',
+        description:
+          'Przelicz megabajty na gigabajty i odwrotnie. 1 GB to 1 024 MB, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'mb-to-gb-converter',
+        title: 'MB to GB',
+        description:
+          'Convert megabytes to gigabytes and back. 1 GB is 1,024 MB, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'mb-in-gb-umrechner',
+        title: 'MB in GB',
+        description:
+          'Megabytes in Gigabytes umrechnen und zurück. 1 GB sind 1.024 MB, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-mo-en-go',
+        title: 'Mo en Go',
+        description:
+          'Convertissez des méga-octets en giga-octets et inversement. 1 Go = 1 024 Mo, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-mb-a-gb',
+        title: 'MB a GB',
+        description:
+          'Convierte megabytes a gigabytes y al revés. 1 GB son 1.024 MB, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-mb-para-gb',
+        title: 'MB para GB',
+        description:
+          'Converta megabytes para gigabytes e ao contrário. 1 GB são 1.024 MB, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-mb-in-gb',
+        title: 'MB in GB',
+        description:
+          'Converti megabyte in gigabyte e viceversa. 1 GB è 1.024 MB, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-mb-na-gb',
+        title: 'megabajty na gigabajty',
+        description:
+          'Převeď megabajty na gigabajty a naopak. 1 GB je 1 024 MB, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'gbToMb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-gb-na-mb',
+        title: 'gigabajty na megabajty',
+        description:
+          'Przelicz gigabajty na megabajty i odwrotnie. 1 GB to 1 024 MB, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'gb-to-mb-converter',
+        title: 'GB to MB',
+        description:
+          'Convert gigabytes to megabytes and back. 1 GB is 1,024 MB, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'gb-in-mb-umrechner',
+        title: 'GB in MB',
+        description:
+          'Gigabytes in Megabytes umrechnen und zurück. 1 GB sind 1.024 MB, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-go-en-mo',
+        title: 'Go en Mo',
+        description:
+          'Convertissez des giga-octets en méga-octets et inversement. 1 Go = 1 024 Mo, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-gb-a-mb',
+        title: 'GB a MB',
+        description:
+          'Convierte gigabytes a megabytes y al revés. 1 GB son 1.024 MB, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-gb-para-mb',
+        title: 'GB para MB',
+        description:
+          'Converta gigabytes para megabytes e ao contrário. 1 GB são 1.024 MB, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-gb-in-mb',
+        title: 'GB in MB',
+        description:
+          'Converti gigabyte in megabyte e viceversa. 1 GB è 1.024 MB, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-gb-na-mb',
+        title: 'gigabajty na megabajty',
+        description:
+          'Převeď gigabajty na megabajty a naopak. 1 GB je 1 024 MB, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'kbToGb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-kb-na-gb',
+        title: 'kilobajty na gigabajty',
+        description:
+          'Przelicz kilobajty na gigabajty i odwrotnie. 1 GB to 1 048 576 KB, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'kb-to-gb-converter',
+        title: 'KB to GB',
+        description:
+          'Convert kilobytes to gigabytes and back. 1 GB is 1,048,576 KB, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'kb-in-gb-umrechner',
+        title: 'KB in GB',
+        description:
+          'Kilobytes in Gigabytes umrechnen und zurück. 1 GB sind 1.048.576 KB, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-ko-en-go',
+        title: 'Ko en Go',
+        description:
+          'Convertissez des kilo-octets en giga-octets et inversement. 1 Go = 1 048 576 Ko, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-kb-a-gb',
+        title: 'KB a GB',
+        description:
+          'Convierte kilobytes a gigabytes y al revés. 1 GB son 1.048.576 KB, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-kb-para-gb',
+        title: 'KB para GB',
+        description:
+          'Converta kilobytes para gigabytes e ao contrário. 1 GB são 1.048.576 KB, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-kb-in-gb',
+        title: 'KB in GB',
+        description:
+          'Converti kilobyte in gigabyte e viceversa. 1 GB è 1.048.576 KB, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-kb-na-gb',
+        title: 'kilobajty na gigabajty',
+        description:
+          'Převeď kilobajty na gigabajty a naopak. 1 GB je 1 048 576 KB, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'gbToKb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-gb-na-kb',
+        title: 'gigabajty na kilobajty',
+        description:
+          'Przelicz gigabajty na kilobajty i odwrotnie. 1 GB to 1 048 576 KB, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'gb-to-kb-converter',
+        title: 'GB to KB',
+        description:
+          'Convert gigabytes to kilobytes and back. 1 GB is 1,048,576 KB, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'gb-in-kb-umrechner',
+        title: 'GB in KB',
+        description:
+          'Gigabytes in Kilobytes umrechnen und zurück. 1 GB sind 1.048.576 KB, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-go-en-ko',
+        title: 'Go en Ko',
+        description:
+          'Convertissez des giga-octets en kilo-octets et inversement. 1 Go = 1 048 576 Ko, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-gb-a-kb',
+        title: 'GB a KB',
+        description:
+          'Convierte gigabytes a kilobytes y al revés. 1 GB son 1.048.576 KB, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-gb-para-kb',
+        title: 'GB para KB',
+        description:
+          'Converta gigabytes para kilobytes e ao contrário. 1 GB são 1.048.576 KB, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-gb-in-kb',
+        title: 'GB in KB',
+        description:
+          'Converti gigabyte in kilobyte e viceversa. 1 GB è 1.048.576 KB, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-gb-na-kb',
+        title: 'gigabajty na kilobajty',
+        description:
+          'Převeď gigabajty na kilobajty a naopak. 1 GB je 1 048 576 KB, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'gbToTb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-gb-na-tb',
+        title: 'gigabajty na terabajty',
+        description:
+          'Przelicz gigabajty na terabajty i odwrotnie. 1 TB to 1 024 GB, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'gb-to-tb-converter',
+        title: 'GB to TB',
+        description:
+          'Convert gigabytes to terabytes and back. 1 TB is 1,024 GB, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'gb-in-tb-umrechner',
+        title: 'GB in TB',
+        description:
+          'Gigabytes in Terabytes umrechnen und zurück. 1 TB sind 1.024 GB, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-go-en-to',
+        title: 'Go en To',
+        description:
+          'Convertissez des giga-octets en téra-octets et inversement. 1 To = 1 024 Go, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-gb-a-tb',
+        title: 'GB a TB',
+        description:
+          'Convierte gigabytes a terabytes y al revés. 1 TB son 1.024 GB, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-gb-para-tb',
+        title: 'GB para TB',
+        description:
+          'Converta gigabytes para terabytes e ao contrário. 1 TB são 1.024 GB, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-gb-in-tb',
+        title: 'GB in TB',
+        description:
+          'Converti gigabyte in terabyte e viceversa. 1 TB è 1.024 GB, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-gb-na-tb',
+        title: 'gigabajty na terabajty',
+        description:
+          'Převeď gigabajty na terabajty a naopak. 1 TB je 1 024 GB, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'tbToGb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-tb-na-gb',
+        title: 'terabajty na gigabajty',
+        description:
+          'Przelicz terabajty na gigabajty i odwrotnie. 1 TB to 1 024 GB, wzór i tabela przeliczeniowa.',
+      },
+      en: {
+        slug: 'tb-to-gb-converter',
+        title: 'TB to GB',
+        description:
+          'Convert terabytes to gigabytes and back. 1 TB is 1,024 GB, with a formula and a conversion table.',
+      },
+      de: {
+        slug: 'tb-in-gb-umrechner',
+        title: 'TB in GB',
+        description:
+          'Terabytes in Gigabytes umrechnen und zurück. 1 TB sind 1.024 GB, mit Formel und Umrechnungstabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-to-en-go',
+        title: 'To en Go',
+        description:
+          'Convertissez des téra-octets en giga-octets et inversement. 1 To = 1 024 Go, formule et tableau.',
+      },
+      es: {
+        slug: 'convertidor-tb-a-gb',
+        title: 'TB a GB',
+        description:
+          'Convierte terabytes a gigabytes y al revés. 1 TB son 1.024 GB, con fórmula y tabla de conversión.',
+      },
+      pt: {
+        slug: 'conversor-tb-para-gb',
+        title: 'TB para GB',
+        description:
+          'Converta terabytes para gigabytes e ao contrário. 1 TB são 1.024 GB, com fórmula e tabela.',
+      },
+      it: {
+        slug: 'convertitore-tb-in-gb',
+        title: 'TB in GB',
+        description:
+          'Converti terabyte in gigabyte e viceversa. 1 TB è 1.024 GB, con formula e tabella di conversione.',
+      },
+      cs: {
+        slug: 'prevodnik-tb-na-gb',
+        title: 'terabajty na gigabajty',
+        description:
+          'Převeď terabajty na gigabajty a naopak. 1 TB je 1 024 GB, se vzorcem a převodní tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'kbToTb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-kb-na-tb',
+        title: 'kilobajty na terabajty',
+        description:
+          'Przelicz kilobajty na terabajty i odwrotnie. 1 TB to 1 073 741 824 KB, wzór, formuła Excel i tabela.',
+      },
+      en: {
+        slug: 'kb-to-tb-converter',
+        title: 'KB to TB',
+        description:
+          'Convert kilobytes to terabytes and back. 1 TB is 1,073,741,824 KB, with a formula, Excel tip and table.',
+      },
+      de: {
+        slug: 'kb-in-tb-umrechner',
+        title: 'KB in TB',
+        description:
+          'Kilobytes in Terabytes umrechnen und zurück. 1 TB sind 1.073.741.824 KB, mit Formel, Excel-Tipp und Tabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-ko-en-to',
+        title: 'Ko en To',
+        description:
+          'Convertissez des kilo-octets en téra-octets et inversement. 1 To = 1 073 741 824 Ko, formule, astuce Excel et tableau.',
+      },
+      es: {
+        slug: 'convertidor-kb-a-tb',
+        title: 'KB a TB',
+        description:
+          'Convierte kilobytes a terabytes y al revés. 1 TB son 1.073.741.824 KB, con fórmula, truco de Excel y tabla.',
+      },
+      pt: {
+        slug: 'conversor-kb-para-tb',
+        title: 'KB para TB',
+        description:
+          'Converta kilobytes para terabytes e ao contrário. 1 TB são 1.073.741.824 KB, com fórmula, dica de Excel e tabela.',
+      },
+      it: {
+        slug: 'convertitore-kb-in-tb',
+        title: 'KB in TB',
+        description:
+          'Converti kilobyte in terabyte e viceversa. 1 TB è 1.073.741.824 KB, con formula, consiglio Excel e tabella.',
+      },
+      cs: {
+        slug: 'prevodnik-kb-na-tb',
+        title: 'kilobajty na terabajty',
+        description:
+          'Převeď kilobajty na terabajty a naopak. 1 TB je 1 073 741 824 KB, se vzorcem, tipem pro Excel a tabulkou.',
+      },
+    },
+  },
+  {
+    key: 'tbToKb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-tb-na-kb',
+        title: 'terabajty na kilobajty',
+        description:
+          'Przelicz terabajty na kilobajty i odwrotnie. 1 TB to 1 073 741 824 KB, wzór, formuła Excel i tabela.',
+      },
+      en: {
+        slug: 'tb-to-kb-converter',
+        title: 'TB to KB',
+        description:
+          'Convert terabytes to kilobytes and back. 1 TB is 1,073,741,824 KB, with a formula, Excel tip and table.',
+      },
+      de: {
+        slug: 'tb-in-kb-umrechner',
+        title: 'TB in KB',
+        description:
+          'Terabytes in Kilobytes umrechnen und zurück. 1 TB sind 1.073.741.824 KB, mit Formel, Excel-Tipp und Tabelle.',
+      },
+      fr: {
+        slug: 'convertisseur-to-en-ko',
+        title: 'To en Ko',
+        description:
+          'Convertissez des téra-octets en kilo-octets et inversement. 1 To = 1 073 741 824 Ko, formule, astuce Excel et tableau.',
+      },
+      es: {
+        slug: 'convertidor-tb-a-kb',
+        title: 'TB a KB',
+        description:
+          'Convierte terabytes a kilobytes y al revés. 1 TB son 1.073.741.824 KB, con fórmula, truco de Excel y tabla.',
+      },
+      pt: {
+        slug: 'conversor-tb-para-kb',
+        title: 'TB para KB',
+        description:
+          'Converta terabytes para kilobytes e ao contrário. 1 TB são 1.073.741.824 KB, com fórmula, dica de Excel e tabela.',
+      },
+      it: {
+        slug: 'convertitore-tb-in-kb',
+        title: 'TB in KB',
+        description:
+          'Converti terabyte in kilobyte e viceversa. 1 TB è 1.073.741.824 KB, con formula, consiglio Excel e tabella.',
+      },
+      cs: {
+        slug: 'prevodnik-tb-na-kb',
+        title: 'terabajty na kilobajty',
+        description:
+          'Převeď terabajty na kilobajty a naopak. 1 TB je 1 073 741 824 KB, se vzorcem, tipem pro Excel a tabulkou.',
+      },
+    },
+  },
+  {
     key: 'unixTimestamp',
     section: 'jednostki',
     icon: RiRulerLine,

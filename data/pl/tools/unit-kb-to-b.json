@@ -48,6 +48,8 @@
         "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
         "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
         "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Przełącznik standardu: policz binarnie (1 024, jak Windows i pamięć RAM) lub dziesiętnie (1 000, jak dyski, macOS i wyszukiwarki)",
+        "Podaje gotowy wzór do Excela i arkuszy kalkulacyjnych",
         "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
         "Dokładny wzór to: bajty = kilobajty × 1 024",
         "Działa na telefonie, tablecie i komputerze bez instalacji"
@@ -78,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Po co przeliczać kilobajty na bajty?",
-      "html": "<p class=\"text-mid mb-4\">Kilobajt to 1 024 bajty, a bajt to podstawowa jednostka rozmiaru danych. Rozmiar w kilobajtach jest wygodny do czytania, ale w kodzie, konfiguracji czy specyfikacji często potrzebujesz dokładnej liczby bajtów — i wtedy przeliczasz KB na B.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 KB to 1 024 B w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić kilobajty na bajty, mnożysz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 KB to 1 000 B — tak liczą między innymi producenci nośników. Ten konwerter używa systemu binarnego (1 024 B), zgodnego z tym, co pokazują Windows i macOS. Nie myl też bajtów z bitami: 1 bajt to 8 bitów.</p>",
+      "html": "<p class=\"text-mid mb-4\">Kilobajt to 1 024 bajty, a bajt to podstawowa jednostka rozmiaru danych. Rozmiar w kilobajtach jest wygodny do czytania, ale w kodzie, konfiguracji czy specyfikacji często potrzebujesz dokładnej liczby bajtów — i wtedy przeliczasz KB na B.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 KB to 1 024 B w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić kilobajty na bajty, mnożysz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 KB to 1 000 B — tak liczą między innymi producenci nośników. Ten konwerter używa systemu binarnego (1 024 B), zgodnego z tym, co pokazują Windows i macOS. Nie myl też bajtów z bitami: 1 bajt to 8 bitów.</p><p class=\"text-mid\">W tym narzędziu policzysz oba standardy: domyślnie binarny (1 024), a przyciskiem Standard jednostek przełączysz na dziesiętny (1 000). Binarnie liczą Windows i pamięć RAM, dziesiętnie producenci dysków, macOS i wyszukiwarki — dlatego ta sama pojemność bywa podawana na dwa sposoby.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Darmowy konwerter kilobajtów na bajty – Arteon"
     },
@@ -86,7 +88,7 @@
     {
       "type": "sectionInfo",
       "title": "Jak działa konwersja kilobajtów na bajty? Wzór i przykład",
-      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden kilobajt to 1 024 bajty. Aby zamienić kilobajty na bajty, mnożysz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>bajty = kilobajty × 1 024</strong>. W drugą stronę: <strong>kilobajty = bajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: masz limit 50 KB i chcesz zapisać go w bajtach. Obliczenie: 50 × 1 024 = 51 200 B. Mnożnik 1 024 bierze się stąd, że komputery liczą dwójkowo, a dwa do potęgi dziesiątej to dokładnie 1 024.</p><p class=\"text-mid\">Skąd 1 024, a nie 1 000? W systemie dziesiętnym (SI) 1 KB to 1 000 B i tak podają pojemność producenci nośników. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 KB to 1 024 B — formalnie nazywanego kibibajtem (KiB).</p>"
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden kilobajt to 1 024 bajty. Aby zamienić kilobajty na bajty, mnożysz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>bajty = kilobajty × 1 024</strong>. W drugą stronę: <strong>kilobajty = bajty ÷ 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: masz limit 50 KB i chcesz zapisać go w bajtach. Obliczenie: 50 × 1 024 = 51 200 B. Mnożnik 1 024 bierze się stąd, że komputery liczą dwójkowo, a dwa do potęgi dziesiątej to dokładnie 1 024.</p><p class=\"text-mid mb-4\">Skąd 1 024, a nie 1 000? W systemie dziesiętnym (SI) 1 KB to 1 000 B i tak podają pojemność producenci nośników. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 KB to 1 024 B — formalnie nazywanego kibibajtem (KiB).</p><p class=\"text-mid\">W Excelu wpisz w komórce wzór <strong>=A1*1024</strong>, gdzie A1 zawiera wartość w KB. W drugą stronę, bajty na kilobajty, użyj <strong>=A1/1024</strong>.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -109,6 +111,40 @@
         { "label": "1 024 KB", "values": ["1 048 576 B"], "emphasis": true }
       ],
       "caption": "Przykład: 1 KB × 1 024 = 1 024 B. Chcesz przeliczyć bajty na kilobajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Cała drabina jednostek danych: od najmniejszej do największej",
+      "description": "Wszystkie jednostki rozmiaru danych rosną o ten sam mnożnik: każda kolejna jest 1 024 razy większa od poprzedniej. Poniższa tabela pokazuje kolejność od bajta do petabajta wraz z typowym przykładem, co dana jednostka opisuje.",
+      "labelHeader": "Jednostka",
+      "cols": ["Zależność", "Typowy przykład"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["jednostka podstawowa", "jeden znak tekstu"],
+          "emphasis": true
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krótki e-mail lub ikona"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "zdjęcie lub utwór MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film lub kość pamięci RAM"]
+        },
+        { "label": "Terabajt (TB)", "values": ["1 024 GB", "dysk twardy"] },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "duże centrum danych"]
+        }
+      ],
+      "caption": "Kolejność od najmniejszej do największej: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Każdy krok to mnożenie przez 1 024."
     },
     { "type": "gap", "variant": "line" },
     {
@@ -171,6 +207,14 @@
         {
           "question": "Czym różni się KB od KiB?",
           "answer": "KiB (kibibajt, standard IEC) to zawsze dokładnie 1 024 B. KB w systemie SI to 1 000 B. W codziennym użyciu większość osób pisze KB, mając na myśli 1 024 B, czyli technicznie KiB. Ten konwerter liczy 1 024 B."
+        },
+        {
+          "question": "Jak przeliczyć KB na B w Excelu?",
+          "answer": "Wpisz w komórce wzór =A1*1024, gdzie A1 zawiera wartość w kilobajtach. W drugą stronę, bajty na kilobajty, użyj =A1/1024. Ten sam wzór działa w Arkuszach Google."
+        },
+        {
+          "question": "Jaka jest kolejność jednostek od najmniejszej do największej?",
+          "answer": "Od najmniejszej: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Każda jednostka jest 1 024 razy większa od poprzedniej. Bajt opisuje pojedynczy znak, a terabajt pojemność dysku."
         }
       ]
     },

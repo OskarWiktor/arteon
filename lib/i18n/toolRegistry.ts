@@ -1,4 +1,6 @@
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
+import { getUnitConverterI18n } from '@/lib/i18n/unitConverter';
+import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
 import type { Locale, LocaleConfig } from '@/types/locale';
 import type {
   ToolItemKey,
@@ -126,6 +128,25 @@ export function getAlternateToolHref(
 // ---------------------------------------------------------------------------
 
 /** Build navigation-compatible tool sections for a given locale */
+/**
+ * Short, directional nav label for data-size converters — "MB na KB" instead
+ * of "megabajty na kilobajty", which overflows the nav row. Built from the
+ * conversion's unit suffixes plus the locale connector, so it stays correct in
+ * every language without extra translations. Only data-size units have clean
+ * short symbols; every other unit converter keeps its registry title.
+ */
+function shortDataUnitNavTitle(
+  toolKey: ToolItemKey,
+  locale: Locale,
+): string | null {
+  const conv = UNIT_CONVERSIONS.find(
+    c => c.toolKey === toolKey && c.category === 'data',
+  );
+  if (!conv) return null;
+  const { connector } = getUnitConverterI18n(locale);
+  return `${conv.sourceField.suffix} ${connector} ${conv.targetField.suffix}`;
+}
+
 export function getToolsSections(locale: Locale): ToolsSection[] {
   return TOOL_SECTIONS.filter(section => section.locales[locale]).map(
     section => ({
@@ -138,7 +159,9 @@ export function getToolsSections(locale: Locale): ToolsSection[] {
         .map(tool => ({
           key: tool.key,
           href: getToolHref(tool.key, locale),
-          title: tool.locales[locale]!.title,
+          title:
+            shortDataUnitNavTitle(tool.key, locale) ??
+            tool.locales[locale]!.title,
           description: tool.locales[locale]!.description,
           icon: tool.icon,
           desktopOnly: tool.desktopOnly || undefined,
@@ -158,7 +181,8 @@ export function getToolsList(locale: Locale): ToolSectionItem[] {
   return TOOL_REGISTRY.filter(tool => tool.locales[locale]).map(tool => ({
     key: tool.key,
     href: getToolHref(tool.key, locale),
-    title: tool.locales[locale]!.title,
+    title:
+      shortDataUnitNavTitle(tool.key, locale) ?? tool.locales[locale]!.title,
     description: tool.locales[locale]!.description,
     icon: tool.icon,
     desktopOnly: tool.desktopOnly || undefined,
@@ -203,7 +227,9 @@ export function getMobileToolsSections(locale: Locale): ToolsSection[] {
           .map(tool => ({
             key: tool.key,
             href: getToolHref(tool.key, locale),
-            title: tool.locales[locale]!.title,
+            title:
+              shortDataUnitNavTitle(tool.key, locale) ??
+              tool.locales[locale]!.title,
             description: tool.locales[locale]!.description,
             icon: tool.icon,
             desktopOnly: tool.desktopOnly || undefined,
@@ -307,6 +333,14 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'kbToB',
   'kbToMb',
   'mbToKb',
+  'mbToGb',
+  'gbToMb',
+  'kbToGb',
+  'gbToKb',
+  'gbToTb',
+  'tbToGb',
+  'kbToTb',
+  'tbToKb',
   'unixTimestamp',
   'decToBin',
   'decToHex',
@@ -343,7 +377,9 @@ export function getDesktopToolsSections(locale: Locale): ToolsSection[] {
           .map(tool => ({
             key: tool.key,
             href: getToolHref(tool.key, locale),
-            title: tool.locales[locale]!.title,
+            title:
+              shortDataUnitNavTitle(tool.key, locale) ??
+              tool.locales[locale]!.title,
             description: tool.locales[locale]!.description,
             icon: tool.icon,
             desktopOnly: tool.desktopOnly || undefined,

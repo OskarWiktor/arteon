@@ -57,6 +57,13 @@ export interface UnitVariantField {
   appliesTo: 'source' | 'target';
   options: UnitVariantOption[];
   defaultValue: string;
+  /**
+   * Optional one-line explainer rendered right under the selector, so the user
+   * sees what the choice means (and where each option is used) without hunting
+   * through the article below. Used by the data-size toggle to explain the
+   * binary/decimal split at the point of decision.
+   */
+  helpKey?: string;
 }
 
 /** Exact millilitre definitions of the two fluid ounces still in everyday use. */
@@ -106,6 +113,53 @@ export interface UnitConversionConfig {
    * page has its own slug/SEO content with the units in the opposite order.
    */
   reverseToolKey?: ToolItemKey;
+}
+
+/**
+ * Data-size units carry two legitimate standards: the binary one (IEC, where
+ * 1 KiB = 1024 B) that Windows and RAM use, and the decimal one (SI, where
+ * 1 kB = 1000 B) that drive makers, macOS and Google's own converter use. The
+ * field label stays KB/MB/GB — what people actually search and recognise — and
+ * only the factor changes, so the same number can be read in whichever system
+ * the user really needs instead of us silently picking one and calling a binary
+ * value by an SI symbol.
+ */
+function dataStandardVariant(
+  op: 'divide' | 'multiply',
+  binaryFactor: number,
+  decimalFactor: number,
+  suffix: string,
+): UnitVariantField {
+  const factorPair = (factor: number) =>
+    op === 'divide'
+      ? {
+          convert: (v: number) => v / factor,
+          reverseConvert: (v: number) => v * factor,
+        }
+      : {
+          convert: (v: number) => v * factor,
+          reverseConvert: (v: number) => v / factor,
+        };
+  return {
+    labelKey: 'dataStandard',
+    appliesTo: 'target',
+    defaultValue: 'binary',
+    helpKey: 'dataStandardHelp',
+    options: [
+      {
+        value: 'binary',
+        labelKey: 'dataStandardBinary',
+        suffix,
+        ...factorPair(binaryFactor),
+      },
+      {
+        value: 'decimal',
+        labelKey: 'dataStandardDecimal',
+        suffix,
+        ...factorPair(decimalFactor),
+      },
+    ],
+  };
 }
 
 export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
@@ -529,6 +583,7 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     category: 'data',
     sourceField: { labelKey: 'bytes', suffix: 'B' },
     targetField: { labelKey: 'kilobytes', suffix: 'KB' },
+    variantField: dataStandardVariant('divide', 1024, 1000, 'KB'),
     convert: v => v / 1024,
     reverseConvert: v => v * 1024,
     precision: 4,
@@ -541,6 +596,7 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     category: 'data',
     sourceField: { labelKey: 'kilobytes', suffix: 'KB' },
     targetField: { labelKey: 'bytes', suffix: 'B' },
+    variantField: dataStandardVariant('multiply', 1024, 1000, 'B'),
     convert: v => v * 1024,
     reverseConvert: v => v / 1024,
     precision: 4,
@@ -553,6 +609,7 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     category: 'data',
     sourceField: { labelKey: 'kilobytes', suffix: 'KB' },
     targetField: { labelKey: 'megabytes', suffix: 'MB' },
+    variantField: dataStandardVariant('divide', 1024, 1000, 'MB'),
     convert: v => v / 1024,
     reverseConvert: v => v * 1024,
     precision: 4,
@@ -565,11 +622,116 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     category: 'data',
     sourceField: { labelKey: 'megabytes', suffix: 'MB' },
     targetField: { labelKey: 'kilobytes', suffix: 'KB' },
+    variantField: dataStandardVariant('multiply', 1024, 1000, 'KB'),
     convert: v => v * 1024,
     reverseConvert: v => v / 1024,
     precision: 4,
     swappable: true,
     reverseToolKey: 'kbToMb',
+  },
+
+  {
+    toolKey: 'mbToGb',
+    category: 'data',
+    sourceField: { labelKey: 'megabytes', suffix: 'MB' },
+    targetField: { labelKey: 'gigabytes', suffix: 'GB' },
+    variantField: dataStandardVariant('divide', 1024, 1000, 'GB'),
+    convert: v => v / 1024,
+    reverseConvert: v => v * 1024,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'gbToMb',
+  },
+
+  {
+    toolKey: 'gbToMb',
+    category: 'data',
+    sourceField: { labelKey: 'gigabytes', suffix: 'GB' },
+    targetField: { labelKey: 'megabytes', suffix: 'MB' },
+    variantField: dataStandardVariant('multiply', 1024, 1000, 'MB'),
+    convert: v => v * 1024,
+    reverseConvert: v => v / 1024,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'mbToGb',
+  },
+
+  {
+    toolKey: 'kbToGb',
+    category: 'data',
+    sourceField: { labelKey: 'kilobytes', suffix: 'KB' },
+    targetField: { labelKey: 'gigabytes', suffix: 'GB' },
+    variantField: dataStandardVariant('divide', 1048576, 1000000, 'GB'),
+    convert: v => v / 1048576,
+    reverseConvert: v => v * 1048576,
+    precision: 6,
+    swappable: true,
+    reverseToolKey: 'gbToKb',
+  },
+
+  {
+    toolKey: 'gbToKb',
+    category: 'data',
+    sourceField: { labelKey: 'gigabytes', suffix: 'GB' },
+    targetField: { labelKey: 'kilobytes', suffix: 'KB' },
+    variantField: dataStandardVariant('multiply', 1048576, 1000000, 'KB'),
+    convert: v => v * 1048576,
+    reverseConvert: v => v / 1048576,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'kbToGb',
+  },
+
+  {
+    toolKey: 'gbToTb',
+    category: 'data',
+    sourceField: { labelKey: 'gigabytes', suffix: 'GB' },
+    targetField: { labelKey: 'terabytes', suffix: 'TB' },
+    variantField: dataStandardVariant('divide', 1024, 1000, 'TB'),
+    convert: v => v / 1024,
+    reverseConvert: v => v * 1024,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'tbToGb',
+  },
+
+  {
+    toolKey: 'tbToGb',
+    category: 'data',
+    sourceField: { labelKey: 'terabytes', suffix: 'TB' },
+    targetField: { labelKey: 'gigabytes', suffix: 'GB' },
+    variantField: dataStandardVariant('multiply', 1024, 1000, 'GB'),
+    convert: v => v * 1024,
+    reverseConvert: v => v / 1024,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'gbToTb',
+  },
+
+  {
+    toolKey: 'kbToTb',
+    category: 'data',
+    sourceField: { labelKey: 'kilobytes', suffix: 'KB' },
+    targetField: { labelKey: 'terabytes', suffix: 'TB' },
+    variantField: dataStandardVariant('divide', 1073741824, 1000000000, 'TB'),
+    convert: v => v / 1073741824,
+    reverseConvert: v => v * 1073741824,
+    precision: 6,
+    swappable: true,
+    reverseToolKey: 'tbToKb',
+  },
+
+  {
+    toolKey: 'tbToKb',
+    category: 'data',
+    sourceField: { labelKey: 'terabytes', suffix: 'TB' },
+    targetField: { labelKey: 'kilobytes', suffix: 'KB' },
+    variantField: dataStandardVariant('multiply', 1073741824, 1000000000, 'KB'),
+    convert: v => v * 1073741824,
+    reverseConvert: v => v / 1073741824,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'kbToTb',
   },
 
   {

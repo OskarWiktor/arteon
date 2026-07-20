@@ -245,6 +245,11 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
           );
         })}
       </div>
+      {config.variantField.helpKey && (
+        <p className='mt-2 text-xs text-mid'>
+          {getUnitLabel(config.variantField.helpKey, locale)}
+        </p>
+      )}
     </fieldset>
   );
 

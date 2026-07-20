@@ -48,6 +48,8 @@
         "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
         "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
         "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Przełącznik standardu: policz binarnie (1 024, jak Windows i pamięć RAM) lub dziesiętnie (1 000, jak dyski, macOS i wyszukiwarki)",
+        "Podaje gotowy wzór do Excela i arkuszy kalkulacyjnych",
         "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
         "Dokładny wzór to: megabajty = kilobajty ÷ 1 024",
         "Działa na telefonie, tablecie i komputerze bez instalacji"
@@ -78,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Po co przeliczać kilobajty na megabajty?",
-      "html": "<p class=\"text-mid mb-4\">Kilobajt i megabajt to sąsiednie jednostki rozmiaru danych: 1 MB to 1 024 KB. Menedżer plików albo narzędzie do optymalizacji obrazów często podaje wagę w kilobajtach, a limit załącznika czy budżet strony liczysz w megabajtach — dlatego przeliczasz KB na MB.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 MB to 1 024 KB w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić kilobajty na megabajty, dzielisz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 MB to 1 000 KB, dlatego 1 000 KB bywa mylone z pełnym megabajtem. W rzeczywistości 1 000 KB to około 0,98 MB, a dokładnie 1 MB otrzymasz z 1 024 KB. Ten konwerter używa systemu binarnego (1 024).</p>",
+      "html": "<p class=\"text-mid mb-4\">Kilobajt i megabajt to sąsiednie jednostki rozmiaru danych: 1 MB to 1 024 KB. Menedżer plików albo narzędzie do optymalizacji obrazów często podaje wagę w kilobajtach, a limit załącznika czy budżet strony liczysz w megabajtach — dlatego przeliczasz KB na MB.</p><p class=\"text-mid mb-4\">Zależność jest stała: 1 MB to 1 024 KB w systemie binarnym, którego używają systemy operacyjne i ten konwerter. Aby zamienić kilobajty na megabajty, dzielisz ich liczbę przez 1 024. Konwerter robi to od razu po wpisaniu wartości.</p><p class=\"text-mid\">Uważaj na dwa systemy. W systemie dziesiętnym (SI) 1 MB to 1 000 KB, dlatego 1 000 KB bywa mylone z pełnym megabajtem. W rzeczywistości 1 000 KB to około 0,98 MB, a dokładnie 1 MB otrzymasz z 1 024 KB. Ten konwerter używa systemu binarnego (1 024).</p><p class=\"text-mid\">W tym narzędziu policzysz oba standardy: domyślnie binarny (1 024), a przyciskiem Standard jednostek przełączysz na dziesiętny (1 000). Binarnie liczą Windows i pamięć RAM, dziesiętnie producenci dysków, macOS i wyszukiwarki — dlatego ta sama pojemność bywa podawana na dwa sposoby.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Darmowy konwerter kilobajtów na megabajty – Arteon"
     },
@@ -86,7 +88,7 @@
     {
       "type": "sectionInfo",
       "title": "Jak działa konwersja kilobajtów na megabajty? Wzór i przykład",
-      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden megabajt to 1 024 kilobajty. Aby zamienić kilobajty na megabajty, dzielisz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>megabajty = kilobajty ÷ 1 024</strong>. W drugą stronę: <strong>kilobajty = megabajty × 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: plik ma 5 120 KB. Obliczenie: 5 120 ÷ 1 024 = 5 MB. Z kolei 10 240 KB to 10 MB, bo każde 1 024 KB składa się na jeden megabajt.</p><p class=\"text-mid\">Uwaga na okrągłe wartości. 1 000 KB to nie 1 MB, tylko około 0,98 MB, bo pełny megabajt ma 1 024 KB. Podobnie 100 KB to około 0,10 MB. Dokładnie równe megabajty wychodzą z wielokrotności 1 024: 1 024 KB, 2 048 KB, 5 120 KB i tak dalej.</p>"
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie opiera się na stałej relacji: jeden megabajt to 1 024 kilobajty. Aby zamienić kilobajty na megabajty, dzielisz ich liczbę przez 1 024.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>megabajty = kilobajty ÷ 1 024</strong>. W drugą stronę: <strong>kilobajty = megabajty × 1 024</strong>.</p><p class=\"text-mid mb-4\">Przykład: plik ma 5 120 KB. Obliczenie: 5 120 ÷ 1 024 = 5 MB. Z kolei 10 240 KB to 10 MB, bo każde 1 024 KB składa się na jeden megabajt.</p><p class=\"text-mid mb-4\">Uwaga na okrągłe wartości. 1 000 KB to nie 1 MB, tylko około 0,98 MB, bo pełny megabajt ma 1 024 KB. Podobnie 100 KB to około 0,10 MB. Dokładnie równe megabajty wychodzą z wielokrotności 1 024: 1 024 KB, 2 048 KB, 5 120 KB i tak dalej.</p><p class=\"text-mid\">W Excelu wpisz w komórce wzór <strong>=A1/1024</strong>, gdzie A1 zawiera wartość w KB. W drugą stronę, megabajty na kilobajty, użyj <strong>=A1*1024</strong>.</p>"
     },
     { "type": "gap", "variant": "line" },
     {
@@ -109,6 +111,40 @@
         { "label": "102 400 KB", "values": ["100 MB"], "emphasis": true }
       ],
       "caption": "Przykład: 1 024 KB ÷ 1 024 = 1 MB, a 1 000 KB to tylko 0,98 MB. Chcesz przeliczyć megabajty na kilobajty? Kliknij Zmień kolejność w konwerterze powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Cała drabina jednostek danych: od najmniejszej do największej",
+      "description": "Wszystkie jednostki rozmiaru danych rosną o ten sam mnożnik: każda kolejna jest 1 024 razy większa od poprzedniej. Poniższa tabela pokazuje kolejność od bajta do petabajta wraz z typowym przykładem, co dana jednostka opisuje.",
+      "labelHeader": "Jednostka",
+      "cols": ["Zależność", "Typowy przykład"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["jednostka podstawowa", "jeden znak tekstu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krótki e-mail lub ikona"],
+          "emphasis": true
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "zdjęcie lub utwór MP3"],
+          "emphasis": true
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film lub kość pamięci RAM"]
+        },
+        { "label": "Terabajt (TB)", "values": ["1 024 GB", "dysk twardy"] },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "duże centrum danych"]
+        }
+      ],
+      "caption": "Kolejność od najmniejszej do największej: bajt, kilobajt, megabajt, gigabajt, terabajt, petabajt. Każdy krok to mnożenie przez 1 024."
     },
     { "type": "gap", "variant": "line" },
     {
@@ -171,6 +207,14 @@
         {
           "question": "Czy 1 MB to 1000 czy 1024 KB?",
           "answer": "Zależy od systemu. Systemy operacyjne i ten konwerter używają systemu binarnego, w którym 1 MB to 1 024 KB. Producenci nośników używają systemu dziesiętnego, w którym 1 MB to 1 000 KB. Dlatego ta sama liczba kilobajtów może dać nieco inny wynik w megabajtach."
+        },
+        {
+          "question": "Jak przeliczyć KB na MB w Excelu?",
+          "answer": "Wpisz w komórce wzór =A1/1024, gdzie A1 zawiera wartość w kilobajtach. W drugą stronę, megabajty na kilobajty, użyj =A1*1024. Ten sam wzór działa w Arkuszach Google."
+        },
+        {
+          "question": "Jaka jest kolejność jednostek od najmniejszej do największej?",
+          "answer": "Od najmniejszej: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB), petabajt (PB). Każda jednostka jest 1 024 razy większa od poprzedniej. Bajt opisuje pojedynczy znak, a terabajt pojemność dysku."
         }
       ]
     },
