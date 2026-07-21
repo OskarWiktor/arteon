@@ -115,7 +115,7 @@ export default function OfferDesignBusinessCardPage() {
         <Divider line />
         <SectionBasic
           title='Co zyskujesz zamawiając projekt wizytówki?'
-          imageSrc='/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp'
+          imageSrc='/assets/projects/finish-masters/wizytowki/mockup-wizytowki-finish-masters.webp'
           imageAlt='Realizacja wizytówek dla producenta schodów StepArd - mockup Arteon'
         >
           <p>

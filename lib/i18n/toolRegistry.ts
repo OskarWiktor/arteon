@@ -349,6 +349,7 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'tbToGb',
   'kbToTb',
   'tbToKb',
+  'dataSizeConverter',
   'unixTimestamp',
   'decToBin',
   'decToHex',

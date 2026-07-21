@@ -122,6 +122,7 @@ export type ToolItemKey =
   | 'tbToGb'
   | 'kbToTb'
   | 'tbToKb'
+  | 'dataSizeConverter'
   | 'unixTimestamp'
   | 'decToBin'
   | 'decToHex'

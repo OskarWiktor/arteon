@@ -1,0 +1,319 @@
+{
+  "toolKey": "dataSizeConverter",
+  "locale": "pl",
+  "metadata": {
+    "title": "Przelicznik jednostek danych – B, KB, MB, GB, TB, PB",
+    "description": "Przelicz bajty, KB, MB, GB, TB i PB w standardzie binarnym (1024) lub dziesiętnym (1000). Bez rejestracji, z tabelami przeliczeń i wzorami do Excela.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/przelicznik-jednostek-danych"
+  },
+  "hero": {
+    "title": "Przelicz jednostki danych – B, KB, MB, GB, TB i PB",
+    "description": "W polu Konwertuj z wpisz wartość i wybierz jej jednostkę, a w polu Konwertuj na wybierz jednostkę wyniku. Przeliczenie pojawia się w trakcie wpisywania. Przełącznik Standard jednostek ustawia sposób liczenia: binarny (1024), którego używa Windows, albo dziesiętny (1000), którym producenci dysków opisują pojemność.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/przelicznik-jednostek-danych",
+      "label": "jednostki danych"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik jednostek danych – B, KB, MB, GB, TB, PB",
+      "alternateName": [
+        "Przelicznik jednostek danych",
+        "Konwerter jednostek pamięci",
+        "Przelicznik bajtów",
+        "Tabela jednostek danych",
+        "KB na MB na GB",
+        "KB na MB na GB na TB",
+        "Ile KB ma MB",
+        "Ile MB ma GB",
+        "Ile bajtów ma GB",
+        "Co jest większe KB czy MB",
+        "Jednostki danych od najmniejszej do największej",
+        "KB czy KiB",
+        "1024 czy 1000",
+        "data size converter",
+        "kb to mb to gb to tb chart"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik wszystkich jednostek rozmiaru danych działający w przeglądarce bez rejestracji. Przelicza każdą jednostkę na każdą inną, od bajta po petabajt, w standardzie binarnym (1024) lub dziesiętnym (1000).",
+      "featureList": [
+        "Przelicza każdą jednostkę danych na każdą inną: B, KB, MB, GB, TB i PB",
+        "Jednostkę źródłową i docelową wybierasz przyciskami widocznymi pod polami",
+        "Wartość możesz wpisać także w polu Konwertuj na, a narzędzie przeliczy ją w drugą stronę",
+        "Przełącznik Standard jednostek liczy binarnie (1024) albo dziesiętnie (1000) i obejmuje oba pola naraz",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez klikania jakiegokolwiek przycisku",
+        "Obsługuje kropkę i przecinek jako separator dziesiętny",
+        "Przyciskiem Kopiuj wynik przenosisz gotową wartość do schowka",
+        "Przyciskiem Wyczyść wszystko opróżniasz oba pola jednocześnie",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć jednostki danych?",
+      "description": "Krótka instrukcja użycia przelicznika jednostek danych.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość i wybierz jej jednostkę",
+          "text": "W polu Konwertuj z wpisz liczbę i wybierz pod polem jednostkę, w której ją podajesz. Kropka i przecinek działają tak samo."
+        },
+        {
+          "name": "Wybierz jednostkę wyniku",
+          "text": "Pod polem Konwertuj na wybierz jednostkę, w której chcesz otrzymać wynik. Przeliczenie pojawi się od razu, a przycisk Kopiuj wynik przeniesie je do schowka."
+        },
+        {
+          "name": "Ustaw standard liczenia",
+          "text": "W ramce pod polami ustaw Standard jednostek na Binarny (1024) albo Dziesiętny (1000), zależnie od tego, z czym porównujesz wynik."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Do czego służy przelicznik jednostek danych?",
+      "html": "<p class=\"text-mid mb-4\">Rozmiary danych rzadko trafiają do Ciebie w jednej jednostce. Aparat zapisuje zdjęcia w megabajtach, operator rozlicza pakiet w gigabajtach, skrypt na serwerze oczekuje limitu w bajtach, a producent dysku podaje pojemność w terabajtach. Zanim porównasz te wartości, musisz sprowadzić je do wspólnej jednostki.</p><p class=\"text-mid mb-4\">Ten przelicznik obsługuje wszystkie jednostki rozmiaru danych, od bajta do petabajta, i każdą ich kombinację. Jednostkę źródłową i docelową wybierasz przyciskami pod polami, a wynik pojawia się w trakcie wpisywania wartości.</p><p class=\"text-mid\">Windows i pamięć RAM liczą binarnie, czyli po 1024, a producenci dysków i macOS dziesiętnie, po 1000. Ta sama pojemność ma przez to dwie poprawne wartości i stąd biorą się nieporozumienia przy porównywaniu rozmiarów. Przełącznik Standard jednostek pod polami przelicza w obu standardach i obejmuje oba pola naraz.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy przelicznik jednostek danych – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak przeliczać jednostki danych? Wzór i przykłady",
+      "html": "<p class=\"text-mid mb-4\">Zasada jest jedna: w standardzie binarnym każda kolejna jednostka jest 1024 razy większa od poprzedniej, a w dziesiętnym 1000 razy. Przy przeliczaniu na mniejszą jednostkę mnożysz, a przy przeliczaniu na większą dzielisz.</p><p class=\"text-mid mb-4\">Mnożnik zależy od tego, ile jednostek pośrednich leży między jednostką źródłową a docelową. Jednostki sąsiednie, takie jak GB i MB, przeliczysz przez 1024. Między GB a KB leży jeszcze MB, więc mnożnik rośnie do 1024 × 1024, czyli 1 048 576. Między TB a KB leżą dwie jednostki pośrednie i mnożnik wynosi 1 073 741 824. W standardzie dziesiętnym analogiczne mnożniki to 1000, 1 000 000 i 1 000 000 000.</p><p class=\"text-mid mb-4\">Przykład: 5 GB przeliczone na kilobajty binarnie to 5 × 1 048 576, czyli 5 242 880 KB. Ta sama wartość policzona dziesiętnie to 5 000 000 KB. Różnica sięga prawie 5 procent i rośnie przy większych jednostkach, dlatego wybór standardu ma znaczenie.</p><p class=\"text-mid\">W Excelu i Arkuszach Google wpisujesz te same mnożniki wprost do formuły. Zamiana gigabajtów na megabajty to <strong>=A1*1024</strong>, megabajtów na gigabajty <strong>=A1/1024</strong>, a gigabajtów na kilobajty <strong>=A1*1048576</strong>, gdzie A1 zawiera wartość źródłową. Dla standardu dziesiętnego zamień mnożniki na 1000 i 1000000.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Ile megabajtów i kilobajtów mają popularne pojemności?",
+      "description": "Poniższa tabela przelicza pojemności od 1 GB do 2 TB na megabajty i kilobajty w standardzie binarnym.",
+      "labelHeader": "Pojemność",
+      "cols": ["W megabajtach", "W kilobajtach"],
+      "rows": [
+        {
+          "label": "1 GB",
+          "values": ["1 024 MB", "1 048 576 KB"],
+          "emphasis": true
+        },
+        { "label": "2 GB", "values": ["2 048 MB", "2 097 152 KB"] },
+        { "label": "4 GB", "values": ["4 096 MB", "4 194 304 KB"] },
+        {
+          "label": "8 GB",
+          "values": ["8 192 MB", "8 388 608 KB"],
+          "emphasis": true
+        },
+        { "label": "16 GB", "values": ["16 384 MB", "16 777 216 KB"] },
+        { "label": "64 GB", "values": ["65 536 MB", "67 108 864 KB"] },
+        { "label": "128 GB", "values": ["131 072 MB", "134 217 728 KB"] },
+        { "label": "512 GB", "values": ["524 288 MB", "536 870 912 KB"] },
+        {
+          "label": "1 TB",
+          "values": ["1 048 576 MB", "1 073 741 824 KB"],
+          "emphasis": true
+        },
+        { "label": "2 TB", "values": ["2 097 152 MB", "2 147 483 648 KB"] }
+      ],
+      "caption": "Przykład odczytu: 8 GB to 8 192 MB, czyli 8 388 608 KB. Wartości w standardzie dziesiętnym policzysz, przełączając standard w przeliczniku powyżej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Ile bajtów ma każda jednostka w obu standardach?",
+      "description": "Wartości binarne mają własne formalne nazwy wprowadzone przez organizację IEC: kibibajt (KiB), mebibajt (MiB), gibibajt (GiB), tebibajt (TiB) i pebibajt (PiB). Systemy operacyjne pokazują je jednak pod symbolami KB, MB i GB, dlatego poniżej zestawiamy oba sposoby liczenia dla każdej jednostki.",
+      "labelHeader": "Jednostka",
+      "cols": ["Binarnie (1024)", "Dziesiętnie (1000)"],
+      "rows": [
+        { "label": "1 KB", "values": ["1 024 B", "1 000 B"], "emphasis": true },
+        {
+          "label": "1 MB",
+          "values": ["1 048 576 B", "1 000 000 B"],
+          "emphasis": true
+        },
+        {
+          "label": "1 GB",
+          "values": ["1 073 741 824 B", "1 000 000 000 B"],
+          "emphasis": true
+        },
+        {
+          "label": "1 TB",
+          "values": ["1 099 511 627 776 B", "1 000 000 000 000 B"]
+        },
+        {
+          "label": "1 PB",
+          "values": ["1 125 899 906 842 624 B", "1 000 000 000 000 000 B"]
+        }
+      ],
+      "caption": "Różnica między standardami rośnie razem z jednostką: od 2,4 procent przy kilobajcie do 12,6 procent przy petabajcie. Właśnie dlatego dysk opisany jako 1 TB pokazuje w systemie Windows około 931 GB."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Jednostki danych od najmniejszej do największej",
+      "description": "Poniższa tabela porządkuje wszystkie jednostki rozmiaru danych i pokazuje, co każda z nich zwykle opisuje w praktyce.",
+      "labelHeader": "Jednostka",
+      "cols": ["Zależność", "Typowy przykład"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["jednostka podstawowa", "jeden znak tekstu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krótki e-mail lub ikona"]
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "zdjęcie lub utwór MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film lub kość pamięci RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabajt (TB)",
+          "values": ["1 024 GB", "dysk twardy"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "duże centrum danych"]
+        }
+      ],
+      "caption": "Kolejność od najmniejszej do największej: bajt, kilobajt, megabajt, gigabajt, terabajt i petabajt. Każda kolejna jednostka jest 1024 razy większa od poprzedniej."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Ile ważą typowe pliki i nośniki?",
+      "description": "Orientacyjne rozmiary pomagają umieścić wynik przeliczenia w codziennym kontekście. Rzeczywiste wartości zależą od jakości i formatu, dlatego podajemy przedziały, a nie pojedyncze liczby.",
+      "labelHeader": "Plik lub nośnik",
+      "cols": ["Typowy rozmiar"],
+      "rows": [
+        { "label": "E-mail bez załączników", "values": ["poniżej 100 KB"] },
+        { "label": "Zdjęcie ze smartfona", "values": ["2 do 5 MB"] },
+        {
+          "label": "Utwór muzyczny w MP3",
+          "values": ["3 do 10 MB"],
+          "emphasis": true
+        },
+        {
+          "label": "Godzina filmu w jakości HD",
+          "values": ["1 do 3 GB"],
+          "emphasis": true
+        },
+        {
+          "label": "Współczesna gra na PC lub konsolę",
+          "values": ["50 do 150 GB"]
+        },
+        { "label": "Dysk SSD w laptopie", "values": ["256 GB do 2 TB"] }
+      ],
+      "caption": "Jeśli chcesz sprawdzić, ile takich plików zmieści się na Twoim nośniku, przelicz jego pojemność na megabajty w przeliczniku powyżej i podziel przez rozmiar pliku."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy ten przelicznik przydaje się najbardziej?",
+      "description": "Przeliczanie jednostek danych wraca w kilku typowych sytuacjach.",
+      "items": [
+        {
+          "icon": "RiFileTextLine",
+          "title": "Rzadko spotykane pary jednostek",
+          "description": "Bajty na gigabajty albo megabajty na petabajty przeliczysz tutaj tak samo łatwo jak popularne pary. Wybierasz obie jednostki przyciskami i odczytujesz wynik."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Porównanie dwóch standardów",
+          "description": "Przełącznik Standard jednostek pokazuje tę samą wartość policzoną po 1024 i po 1000. Dzięki temu sprawdzisz, skąd bierze się różnica między pojemnością z etykiety dysku a tą widoczną w systemie."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limity w kodzie i konfiguracji",
+          "description": "Skrypty, API i pliki konfiguracyjne często oczekują wartości w bajtach lub kilobajtach. Limit zapisany w megabajtach przeliczysz tu na dokładną liczbę, którą wpisujesz w konfiguracji."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Porównywanie rozmiarów plików",
+          "description": "Gdy sprowadzisz zdjęcia, filmy i kopie zapasowe do jednej jednostki, łatwo porównasz je ze sobą i ocenisz, co zajmuje najwięcej miejsca."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o jednostki danych",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jaka jest kolejność jednostek od najmniejszej do największej?",
+          "answer": "Od najmniejszej do największej: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB) i petabajt (PB). W standardzie binarnym każda kolejna jednostka jest 1024 razy większa od poprzedniej, a w dziesiętnym 1000 razy."
+        },
+        {
+          "question": "Co jest większe: KB, MB czy GB?",
+          "answer": "Największy z tej trójki jest gigabajt. 1 GB to 1024 MB, a każdy megabajt to 1024 KB, więc w jednym gigabajcie mieści się ponad milion kilobajtów."
+        },
+        {
+          "question": "Ile kilobajtów ma 1 MB, a ile megabajtów ma 1 GB?",
+          "answer": "Binarnie 1 MB to 1024 KB, a 1 GB to 1024 MB. W standardzie dziesiętnym odpowiednio 1000 KB i 1000 MB. Ten sam mnożnik obowiązuje dla większych jednostek: 1 TB to 1024 GB albo 1000 GB, zależnie od standardu."
+        },
+        {
+          "question": "Ile bajtów ma 1 GB i 1 TB?",
+          "answer": "W standardzie binarnym 1 GB to 1 073 741 824 bajty, a 1 TB to 1 099 511 627 776 bajtów. Dziesiętnie jest to równo 1 000 000 000 oraz 1 000 000 000 000 bajtów."
+        },
+        {
+          "question": "Czy 1000 KB to 1 MB?",
+          "answer": "Tylko w standardzie dziesiętnym. Binarnie pełny megabajt ma 1024 KB, więc 1000 KB to około 0,98 MB. Oba warianty policzysz w tym przeliczniku po przełączeniu standardu."
+        },
+        {
+          "question": "Dlaczego kilobajt ma 1024 bajty, a nie 1000?",
+          "answer": "Komputery liczą w systemie dwójkowym, a 1024 to dwa do potęgi dziesiątej, czyli najbliższa tysiącowi okrągła liczba tego systemu. Przedrostek kilo w układzie SI oznacza jednak dokładnie 1000 i tego znaczenia trzymają się producenci nośników. Oba podejścia funkcjonują równolegle do dziś."
+        },
+        {
+          "question": "Czym różni się KB od KiB, a MB od MiB?",
+          "answer": "Kibibajt (KiB), mebibajt (MiB) i gibibajt (GiB) to formalne nazwy wartości binarnych, wprowadzone przez organizację IEC, aby odróżnić je od dziesiętnych KB, MB i GB. 1 KiB to zawsze 1024 bajty, a 1 kB w rozumieniu SI to 1000 bajtów. Na co dzień większość programów i osób pisze jednak KB, mając na myśli wartość binarną, dokładnie tak jak Windows."
+        },
+        {
+          "question": "Co jest po terabajcie?",
+          "answer": "Bezpośrednio po terabajcie jest petabajt (PB), a dalej eksabajt (EB), zettabajt (ZB) i jottabajt (YB). Na co dzień spotyka się głównie jednostki do terabajta. Petabajty pojawiają się przy centrach danych, a większe jednostki w statystykach ruchu całego internetu."
+        },
+        {
+          "question": "Jak przeliczyć jednostki danych w Excelu?",
+          "answer": "Dobierz mnożnik do pary jednostek: =A1*1024 zamienia gigabajty na megabajty, =A1/1024 megabajty na gigabajty, a =A1*1048576 gigabajty na kilobajty. W standardzie dziesiętnym użyj 1000 zamiast 1024. Te same formuły działają w Arkuszach Google."
+        },
+        {
+          "question": "Dlaczego dysk 1 TB pokazuje w systemie około 931 GB?",
+          "answer": "Producent opisuje dysk dziesiętnie, więc 1 TB oznacza 1 000 000 000 000 bajtów. Windows dzieli tę liczbę binarnie, przez 1 073 741 824, i pokazuje około 931 GB. Pojemność się zgadza, zmienia się tylko standard, w którym ją policzono."
+        },
+        {
+          "question": "Ile zdjęć albo muzyki mieści 1 GB?",
+          "answer": "Przy zdjęciach po około 3 MB w jednym gigabajcie zmieści się nieco ponad 300 plików, a przy utworach MP3 po 5 MB około 200 utworów. Godzina filmu w jakości HD potrafi zająć cały gigabajt."
+        },
+        {
+          "question": "Który standard wybrać w tym przeliczniku?",
+          "answer": "Jeśli porównujesz wynik z tym, co pokazuje Windows, albo z pojemnością pamięci RAM, wybierz Binarny (1024). Jeśli odnosisz się do etykiety dysku, oferty operatora albo wartości z macOS, przełącz na Dziesiętny (1000). Gdy masz wątpliwości, policz oba warianty i sprawdź, która wartość pasuje do Twojego źródła."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabeli lub masz pomysł na ulepszenie przelicznika, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "defaultSubject": "Przelicznik jednostek danych"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

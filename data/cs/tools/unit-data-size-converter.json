@@ -1,0 +1,318 @@
+{
+  "toolKey": "dataSizeConverter",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník datových jednotek – B, KB, MB, GB, TB, PB",
+    "description": "Převeďte bajty, KB, MB, GB, TB a PB v binárním (1024), nebo desítkovém (1000) standardu. Bez registrace, s převodními tabulkami a vzorci pro Excel.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-datovych-jednotek"
+  },
+  "hero": {
+    "title": "Převeďte datové jednotky – B, KB, MB, GB, TB a PB",
+    "description": "Do pole Převést z zadejte hodnotu a vyberte její jednotku; v poli Převést na vyberte jednotku výsledku. Převod se objevuje už během psaní. Přepínač Standard jednotek určuje způsob počítání: binární (1024), jak počítá Windows, nebo desítkový (1000), jak uvádějí kapacitu výrobci disků.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-datovych-jednotek",
+      "label": "datové jednotky"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník datových jednotek – B, KB, MB, GB, TB, PB",
+      "alternateName": [
+        "Převodník datových jednotek",
+        "Převodník jednotek úložiště",
+        "Převodník bajtů",
+        "Tabulka datových jednotek",
+        "KB na MB na GB",
+        "Tabulka KB MB GB TB",
+        "Kolik KB má MB",
+        "Kolik MB má GB",
+        "Kolik bajtů má GB",
+        "Co je větší KB nebo MB",
+        "Datové jednotky od nejmenší po největší",
+        "KB nebo KiB",
+        "1024 nebo 1000",
+        "data size converter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník všech datových jednotek, který běží v prohlížeči bez registrace. Převádí každou jednotku na každou jinou, od bajtu po petabajt, v binárním (1024), nebo desítkovém (1000) standardu.",
+      "featureList": [
+        "Převádí každou datovou jednotku na každou jinou: B, KB, MB, GB, TB a PB",
+        "Zdrojovou a cílovou jednotku vybíráte tlačítky viditelnými pod poli",
+        "Hodnotu můžete zadat i do pole Převést na a nástroj ji převede opačným směrem",
+        "Přepínač Standard jednotek počítá binárně (1024), nebo desítkově (1000) a platí pro obě pole zároveň",
+        "Výsledek se objeví hned při psaní, bez klikání na jakékoli tlačítko",
+        "Přijímá tečku i čárku jako desetinný oddělovač",
+        "Tlačítko Kopírovat výsledek vloží hotovou hodnotu do schránky",
+        "Tlačítko Vymazat vše vyprázdní obě pole najednou",
+        "Všechny výpočty probíhají lokálně v prohlížeči, vaše data neopustí zařízení",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést datové jednotky?",
+      "description": "Krátký návod k použití převodníku datových jednotek.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadejte hodnotu a vyberte její jednotku",
+          "text": "Do pole Převést z zadejte číslo a pod polem vyberte jednotku, ve které je uvedeno. Tečka i čárka fungují stejně."
+        },
+        {
+          "name": "Vyberte jednotku výsledku",
+          "text": "Pod polem Převést na vyberte jednotku, ve které chcete výsledek. Převod se objeví hned a tlačítko Kopírovat výsledek jej vloží do schránky."
+        },
+        {
+          "name": "Nastavte standard počítání",
+          "text": "V rámečku pod poli nastavte Standard jednotek na Binární (1024), nebo Desítkový (1000), podle toho, s čím výsledek porovnáváte."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "K čemu slouží převodník datových jednotek?",
+      "html": "<p class=\"text-mid mb-4\">Velikosti dat se k vám zřídka dostanou v jediné jednotce. Fotoaparát ukládá snímky v megabajtech, operátor účtuje balíček v gigabajtech, skript na serveru očekává limit v bajtech a výrobce disku uvádí kapacitu v terabajtech. Než tyto hodnoty porovnáte, musíte je převést na společnou jednotku.</p><p class=\"text-mid mb-4\">Tento převodník pokrývá všechny datové jednotky, od bajtu po petabajt, a každou jejich kombinaci. Zdrojovou a cílovou jednotku vybíráte tlačítky pod poli a výsledek se objevuje už během psaní hodnoty.</p><p class=\"text-mid\">Windows a paměť RAM počítají binárně, tedy po 1024, zatímco výrobci disků a macOS desítkově, po 1000. Stejná kapacita má proto dvě správné hodnoty a odtud pramení většina nedorozumění při porovnávání velikostí. Přepínač Standard jednotek pod poli převádí v obou standardech a platí pro obě pole zároveň.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Bezplatný převodník datových jednotek – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak převádět datové jednotky? Vzorec a příklady",
+      "html": "<p class=\"text-mid mb-4\">Pravidlo je jediné: v binárním standardu je každá další jednotka 1024krát větší než předchozí, v desítkovém 1000krát. Při převodu na menší jednotku násobíte, na větší dělíte.</p><p class=\"text-mid mb-4\">Násobek závisí na tom, kolik mezilehlých jednotek leží mezi zdrojovou a cílovou jednotkou. Sousední jednotky, jako GB a MB, převedete číslem 1024. Mezi GB a KB leží ještě MB, takže násobek roste na 1024 × 1024, tedy 1 048 576. Mezi TB a KB leží dvě mezilehlé jednotky a násobek činí 1 073 741 824. V desítkovém standardu jsou odpovídající násobky 1000, 1 000 000 a 1 000 000 000.</p><p class=\"text-mid mb-4\">Příklad: 5 GB převedených na kilobajty binárně je 5 × 1 048 576, tedy 5 242 880 KB. Stejná hodnota spočítaná desítkově je 5 000 000 KB. Rozdíl dosahuje téměř 5 procent a s většími jednotkami roste, proto na volbě standardu záleží.</p><p class=\"text-mid\">V Excelu a Google Sheets zapisujete stejné násobky přímo do vzorce. Gigabajty na megabajty je <strong>=A1*1024</strong>, megabajty na gigabajty <strong>=A1/1024</strong> a gigabajty na kilobajty <strong>=A1*1048576</strong>, kde A1 obsahuje zdrojovou hodnotu. Pro desítkový standard vyměňte násobky za 1000 a 1000000.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Kolik megabajtů a kilobajtů mají běžné kapacity?",
+      "description": "Tabulka níže převádí kapacity od 1 GB do 2 TB na megabajty a kilobajty v binárním standardu.",
+      "labelHeader": "Kapacita",
+      "cols": ["V megabajtech", "V kilobajtech"],
+      "rows": [
+        {
+          "label": "1 GB",
+          "values": ["1 024 MB", "1 048 576 KB"],
+          "emphasis": true
+        },
+        { "label": "2 GB", "values": ["2 048 MB", "2 097 152 KB"] },
+        { "label": "4 GB", "values": ["4 096 MB", "4 194 304 KB"] },
+        {
+          "label": "8 GB",
+          "values": ["8 192 MB", "8 388 608 KB"],
+          "emphasis": true
+        },
+        { "label": "16 GB", "values": ["16 384 MB", "16 777 216 KB"] },
+        { "label": "64 GB", "values": ["65 536 MB", "67 108 864 KB"] },
+        { "label": "128 GB", "values": ["131 072 MB", "134 217 728 KB"] },
+        { "label": "512 GB", "values": ["524 288 MB", "536 870 912 KB"] },
+        {
+          "label": "1 TB",
+          "values": ["1 048 576 MB", "1 073 741 824 KB"],
+          "emphasis": true
+        },
+        { "label": "2 TB", "values": ["2 097 152 MB", "2 147 483 648 KB"] }
+      ],
+      "caption": "Příklad čtení: 8 GB je 8 192 MB, tedy 8 388 608 KB. Hodnoty v desítkovém standardu získáte přepnutím standardu v převodníku výše."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Kolik bajtů má každá jednotka v obou standardech?",
+      "description": "Binární hodnoty mají vlastní formální názvy zavedené organizací IEC: kibibajt (KiB), mebibajt (MiB), gibibajt (GiB), tebibajt (TiB) a pebibajt (PiB). Operační systémy je však zobrazují pod symboly KB, MB a GB, proto tabulka níže uvádí oba způsoby počítání pro každou jednotku.",
+      "labelHeader": "Jednotka",
+      "cols": ["Binárně (1024)", "Desítkově (1000)"],
+      "rows": [
+        { "label": "1 KB", "values": ["1 024 B", "1 000 B"], "emphasis": true },
+        {
+          "label": "1 MB",
+          "values": ["1 048 576 B", "1 000 000 B"],
+          "emphasis": true
+        },
+        {
+          "label": "1 GB",
+          "values": ["1 073 741 824 B", "1 000 000 000 B"],
+          "emphasis": true
+        },
+        {
+          "label": "1 TB",
+          "values": ["1 099 511 627 776 B", "1 000 000 000 000 B"]
+        },
+        {
+          "label": "1 PB",
+          "values": ["1 125 899 906 842 624 B", "1 000 000 000 000 000 B"]
+        }
+      ],
+      "caption": "Rozdíl mezi standardy s jednotkou roste: od 2,4 procenta u kilobajtu po 12,6 procenta u petabajtu. Právě proto disk označený jako 1 TB ukazuje ve Windows asi 931 GB."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Datové jednotky od nejmenší po největší",
+      "description": "Tabulka níže řadí všechny datové jednotky a ukazuje, co každá z nich v praxi obvykle popisuje.",
+      "labelHeader": "Jednotka",
+      "cols": ["Vztah", "Typický příklad"],
+      "rows": [
+        {
+          "label": "Bajt (B)",
+          "values": ["základní jednotka", "jeden znak textu"]
+        },
+        {
+          "label": "Kilobajt (KB)",
+          "values": ["1 024 B", "krátký e-mail nebo ikona"]
+        },
+        {
+          "label": "Megabajt (MB)",
+          "values": ["1 024 KB", "fotka nebo skladba MP3"]
+        },
+        {
+          "label": "Gigabajt (GB)",
+          "values": ["1 024 MB", "film nebo modul RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabajt (TB)",
+          "values": ["1 024 GB", "pevný disk"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabajt (PB)",
+          "values": ["1 024 TB", "velké datové centrum"]
+        }
+      ],
+      "caption": "Pořadí od nejmenší po největší: bajt, kilobajt, megabajt, gigabajt, terabajt a petabajt. Každá další jednotka je 1024krát větší než předchozí."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Kolik váží typické soubory a nosiče?",
+      "description": "Orientační velikosti pomáhají zasadit výsledek převodu do každodenního kontextu. Skutečné hodnoty závisejí na kvalitě a formátu, proto uvádíme rozmezí, a ne jediná čísla.",
+      "labelHeader": "Soubor nebo nosič",
+      "cols": ["Typická velikost"],
+      "rows": [
+        { "label": "E-mail bez příloh", "values": ["pod 100 KB"] },
+        { "label": "Fotka ze smartphonu", "values": ["2 až 5 MB"] },
+        {
+          "label": "Skladba v MP3",
+          "values": ["3 až 10 MB"],
+          "emphasis": true
+        },
+        {
+          "label": "Hodina videa v HD",
+          "values": ["1 až 3 GB"],
+          "emphasis": true
+        },
+        {
+          "label": "Současná hra na PC nebo konzoli",
+          "values": ["50 až 150 GB"]
+        },
+        { "label": "SSD v notebooku", "values": ["256 GB až 2 TB"] }
+      ],
+      "caption": "Pokud chcete zjistit, kolik takových souborů se vejde na váš nosič, převeďte jeho kapacitu na megabajty v převodníku výše a vydělte ji velikostí souboru."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se tento převodník hodí nejvíc?",
+      "description": "Převádění datových jednotek se vrací v několika typických situacích.",
+      "items": [
+        {
+          "icon": "RiFileTextLine",
+          "title": "Málo obvyklé dvojice jednotek",
+          "description": "Bajty na gigabajty nebo megabajty na petabajty tu převedete stejně snadno jako oblíbené dvojice. Obě jednotky vyberete tlačítky a přečtete výsledek."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Porovnání obou standardů",
+          "description": "Přepínač Standard jednotek ukáže stejnou hodnotu spočítanou po 1024 i po 1000. Ověříte tak, odkud se bere rozdíl mezi štítkem disku a kapacitou, kterou ukazuje systém."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limity v kódu a konfiguraci",
+          "description": "Skripty, API a konfigurační soubory často očekávají hodnoty v bajtech nebo kilobajtech. Limit zapsaný v megabajtech tu převedete na přesné číslo, které zapíšete do konfigurace."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Porovnávání velikostí souborů",
+          "description": "Když převedete fotky, videa a zálohy na jedinou jednotku, snadno je porovnáte a poznáte, co zabírá nejvíc místa."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Časté dotazy k datovým jednotkám",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jaké je pořadí jednotek od nejmenší po největší?",
+          "answer": "Od nejmenší po největší: bajt (B), kilobajt (KB), megabajt (MB), gigabajt (GB), terabajt (TB) a petabajt (PB). V binárním standardu je každá další jednotka 1024krát větší než předchozí, v desítkovém 1000krát."
+        },
+        {
+          "question": "Co je větší: KB, MB, nebo GB?",
+          "answer": "Největší z trojice je gigabajt. 1 GB je 1024 MB a každý megabajt je 1024 KB, takže jeden gigabajt obsahuje přes milion kilobajtů."
+        },
+        {
+          "question": "Kolik kilobajtů má 1 MB a kolik megabajtů má 1 GB?",
+          "answer": "Binárně je 1 MB 1024 KB a 1 GB 1024 MB. V desítkovém standardu je to 1000 KB a 1000 MB. Stejný násobek platí i pro větší jednotky: 1 TB je 1024 GB, nebo 1000 GB, podle standardu."
+        },
+        {
+          "question": "Kolik bajtů má 1 GB a 1 TB?",
+          "answer": "V binárním standardu má 1 GB 1 073 741 824 bajtů a 1 TB 1 099 511 627 776 bajtů. Desítkově je to přesně 1 000 000 000 a 1 000 000 000 000 bajtů."
+        },
+        {
+          "question": "Je 1000 KB totéž co 1 MB?",
+          "answer": "Jen v desítkovém standardu. Binárně má celý megabajt 1024 KB, takže 1000 KB je asi 0,98 MB. Obě varianty spočítáte v tomto převodníku po přepnutí standardu."
+        },
+        {
+          "question": "Proč má kilobajt 1024 bajtů, a ne 1000?",
+          "answer": "Počítače počítají ve dvojkové soustavě a 1024 je dvě na desátou, nejbližší kulaté číslo této soustavy k tisícovce. Předpona kilo v soustavě SI však znamená přesně 1000 a tohoto významu se drží výrobci úložišť. Oba přístupy fungují vedle sebe dodnes."
+        },
+        {
+          "question": "Čím se liší KB od KiB a MB od MiB?",
+          "answer": "Kibibajt (KiB), mebibajt (MiB) a gibibajt (GiB) jsou formální názvy binárních hodnot, zavedené organizací IEC, aby se odlišily od desítkových KB, MB a GB. 1 KiB je vždy 1024 bajtů, zatímco 1 kB ve smyslu SI je 1000 bajtů. V běžném užití však většina programů i lidí píše KB a myslí tím binární hodnotu, přesně jako Windows."
+        },
+        {
+          "question": "Co je po terabajtu?",
+          "answer": "Hned po terabajtu následuje petabajt (PB), dále exabajt (EB), zettabajt (ZB) a yottabajt (YB). V běžném životě potkáte hlavně jednotky do terabajtu. Petabajty se objevují u datových center a větší jednotky ve statistikách globálního internetového provozu."
+        },
+        {
+          "question": "Jak převést datové jednotky v Excelu?",
+          "answer": "Přizpůsobte násobek dvojici jednotek: =A1*1024 promění gigabajty na megabajty, =A1/1024 megabajty na gigabajty a =A1*1048576 gigabajty na kilobajty. V desítkovém standardu použijte 1000 místo 1024. Stejné vzorce fungují v Google Sheets."
+        },
+        {
+          "question": "Proč disk 1 TB ukazuje v systému asi 931 GB?",
+          "answer": "Výrobce popisuje disk desítkově, takže 1 TB znamená 1 000 000 000 000 bajtů. Windows toto číslo dělí binárně, číslem 1 073 741 824, a ukazuje asi 931 GB. Kapacita je netknutá; mění se jen standard, ve kterém byla spočítána."
+        },
+        {
+          "question": "Kolik fotek nebo skladeb se vejde do 1 GB?",
+          "answer": "U fotek po zhruba 3 MB se do jednoho gigabajtu vejde o něco víc než 300 souborů, u skladeb MP3 po 5 MB asi 200 skladeb. Hodina videa v HD dokáže zabrat celý gigabajt."
+        },
+        {
+          "question": "Který standard v tomto převodníku zvolit?",
+          "answer": "Pokud výsledek porovnáváte s tím, co ukazuje Windows, nebo s kapacitou paměti RAM, zvolte Binární (1024). Pokud vycházíte ze štítku disku, nabídky operátora nebo hodnoty z macOS, přepněte na Desítkový (1000). V pochybnostech spočítejte obě varianty a ověřte, která hodnota odpovídá vašemu zdroji."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Máte dotaz nebo návrh?",
+      "description": "Pokud jste v tabulce našli chybu nebo máte nápad na vylepšení převodníku, napište nám. Odpovídáme na každou zprávu.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "defaultSubject": "Převodník datových jednotek"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

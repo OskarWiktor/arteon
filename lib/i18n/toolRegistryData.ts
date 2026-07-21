@@ -6399,6 +6399,62 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'dataSizeConverter',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'przelicznik-jednostek-danych',
+        title: 'jednostki danych',
+        description:
+          'Przelicz bajty, KB, MB, GB, TB i PB w standardzie binarnym (1024) lub dziesiętnym (1000), z tabelami przeliczeń i wzorami do Excela.',
+      },
+      en: {
+        slug: 'data-unit-converter',
+        title: 'data units',
+        description:
+          'Convert bytes, KB, MB, GB, TB and PB in the binary (1024) or decimal (1000) standard, with conversion tables and Excel formulas.',
+      },
+      de: {
+        slug: 'dateneinheiten-umrechner',
+        title: 'Dateneinheiten',
+        description:
+          'Rechnen Sie Bytes, KB, MB, GB, TB und PB im binären (1024) oder dezimalen (1000) Standard um, mit Tabellen und Excel-Formeln.',
+      },
+      es: {
+        slug: 'convertidor-unidades-de-datos',
+        title: 'unidades de datos',
+        description:
+          'Convierte bytes, KB, MB, GB, TB y PB en el estándar binario (1024) o decimal (1000), con tablas de conversión y fórmulas para Excel.',
+      },
+      fr: {
+        slug: 'convertisseur-unites-de-donnees',
+        title: 'unités de données',
+        description:
+          'Convertissez octets, Ko, Mo, Go, To et Po en standard binaire (1024) ou décimal (1000), avec tableaux de conversion et formules Excel.',
+      },
+      pt: {
+        slug: 'conversor-unidades-de-dados',
+        title: 'unidades de dados',
+        description:
+          'Converta bytes, KB, MB, GB, TB e PB no padrão binário (1024) ou decimal (1000), com tabelas de conversão e fórmulas para o Excel.',
+      },
+      it: {
+        slug: 'convertitore-unita-di-dati',
+        title: 'unità di dati',
+        description:
+          'Converti byte, KB, MB, GB, TB e PB nello standard binario (1024) o decimale (1000), con tabelle di conversione e formule per Excel.',
+      },
+      cs: {
+        slug: 'prevodnik-datovych-jednotek',
+        title: 'datové jednotky',
+        description:
+          'Převeďte bajty, KB, MB, GB, TB a PB v binárním (1024), nebo desítkovém (1000) standardu, s převodními tabulkami a vzorci pro Excel.',
+      },
+    },
+  },
+  {
     key: 'unixTimestamp',
     section: 'jednostki',
     icon: RiRulerLine,

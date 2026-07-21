@@ -1,0 +1,321 @@
+{
+  "toolKey": "dataSizeConverter",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur d'unités de données – octets, Ko, Mo, Go, To",
+    "description": "Convertissez octets, Ko, Mo, Go, To et Po en standard binaire (1024) ou décimal (1000). Sans inscription, avec tableaux de conversion et formules Excel.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-unites-de-donnees"
+  },
+  "hero": {
+    "title": "Convertissez les unités de données – octets, Ko, Mo, Go, To et Po",
+    "description": "Dans le champ Convertir de, saisissez une valeur et choisissez son unité; dans le champ Convertir vers, choisissez l'unité du résultat. La conversion apparaît pendant la saisie. Le sélecteur Standard d'unités fixe le mode de calcul : binaire (1024), comme Windows, ou décimal (1000), comme les fabricants de disques indiquent la capacité. Dans l'outil, les unités sont notées B, KB, MB, GB, TB et PB.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-unites-de-donnees",
+      "label": "unités de données"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur d'unités de données – octets, Ko, Mo, Go, To, Po",
+      "alternateName": [
+        "Convertisseur d'unités de données",
+        "Convertisseur d'unités de stockage",
+        "Convertisseur d'octets",
+        "Tableau des unités de données",
+        "Ko en Mo en Go",
+        "Tableau Ko Mo Go To",
+        "Combien de Ko dans un Mo",
+        "Combien de Mo dans un Go",
+        "Combien d'octets dans un Go",
+        "Quel est le plus grand Ko ou Mo",
+        "Unités de données de la plus petite à la plus grande",
+        "Ko ou Kio",
+        "1024 ou 1000",
+        "data size converter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur de toutes les unités de données qui fonctionne dans le navigateur, sans inscription. Il convertit chaque unité en chaque autre, de l'octet au péta-octet, en standard binaire (1024) ou décimal (1000).",
+      "featureList": [
+        "Convertit chaque unité de données en chaque autre : B, KB, MB, GB, TB et PB",
+        "L'unité source et l'unité cible se choisissent avec des boutons visibles sous les champs",
+        "Vous pouvez aussi saisir une valeur dans le champ Convertir vers et l'outil la convertit dans l'autre sens",
+        "Le sélecteur Standard d'unités calcule en binaire (1024) ou en décimal (1000) et s'applique aux deux champs à la fois",
+        "Le résultat apparaît aussitôt pendant la saisie, sans avoir à cliquer sur un bouton",
+        "Accepte le point comme la virgule comme séparateur décimal",
+        "Avec le bouton Copier le résultat, vous placez la valeur prête dans le presse-papiers",
+        "Avec le bouton Tout effacer, vous videz les deux champs en même temps",
+        "Tous les calculs se font localement dans le navigateur, vos données ne quittent pas l'appareil",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir les unités de données ?",
+      "description": "Un guide court pour utiliser le convertisseur d'unités de données.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisissez une valeur et choisissez son unité",
+          "text": "Dans le champ Convertir de, saisissez un nombre et choisissez sous le champ l'unité dans laquelle il est donné. Le point et la virgule fonctionnent de la même façon."
+        },
+        {
+          "name": "Choisissez l'unité du résultat",
+          "text": "Sous le champ Convertir vers, choisissez l'unité dans laquelle vous voulez le résultat. La conversion apparaît aussitôt et le bouton Copier le résultat la place dans le presse-papiers."
+        },
+        {
+          "name": "Réglez le standard de calcul",
+          "text": "Dans l'encadré sous les champs, réglez Standard d'unités sur Binaire (1024) ou Décimal (1000), selon ce avec quoi vous comparez le résultat."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "À quoi sert le convertisseur d'unités de données ?",
+      "html": "<p class=\"text-mid mb-4\">Les tailles de données vous parviennent rarement dans une seule unité. L'appareil photo enregistre les images en méga-octets, l'opérateur facture le forfait en giga-octets, un script serveur attend une limite en octets et le fabricant du disque indique la capacité en téra-octets. Avant de comparer ces valeurs, vous devez les ramener à une unité commune.</p><p class=\"text-mid mb-4\">Ce convertisseur couvre toutes les unités de données, de l'octet au péta-octet, et chaque combinaison entre elles. L'unité source et l'unité cible se choisissent avec des boutons sous les champs, et le résultat apparaît pendant que vous tapez la valeur. Dans l'outil, les unités sont notées B, KB, MB, GB, TB et PB.</p><p class=\"text-mid\">Windows et la mémoire vive comptent en binaire, c'est-à-dire par 1024, tandis que les fabricants de disques et macOS comptent en décimal, par 1000. La même capacité possède ainsi deux valeurs correctes, et c'est de là que viennent la plupart des confusions sur les tailles de données. Le sélecteur Standard d'unités sous les champs convertit dans les deux standards et s'applique aux deux champs à la fois.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur gratuit d'unités de données – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment convertir les unités de données ? Formule et exemples",
+      "html": "<p class=\"text-mid mb-4\">La règle est unique : dans le standard binaire, chaque unité suivante est 1024 fois plus grande que la précédente, et dans le décimal 1000 fois. Pour convertir vers une unité plus petite, vous multipliez; vers une plus grande, vous divisez.</p><p class=\"text-mid mb-4\">Le multiplicateur dépend du nombre d'unités intermédiaires entre l'unité source et l'unité cible. Les unités voisines, comme Go et Mo, se convertissent par 1024. Entre Go et Ko se trouve aussi Mo, donc le multiplicateur passe à 1024 × 1024, soit 1 048 576. Entre To et Ko se trouvent deux unités intermédiaires et le multiplicateur vaut 1 073 741 824. Dans le standard décimal, les multiplicateurs équivalents sont 1000, 1 000 000 et 1 000 000 000.</p><p class=\"text-mid mb-4\">Exemple : 5 Go convertis en kilo-octets en binaire font 5 × 1 048 576, soit 5 242 880 Ko. La même valeur calculée en décimal fait 5 000 000 Ko. L'écart atteint presque 5 pour cent et grandit avec les unités plus grandes, c'est pourquoi le choix du standard compte.</p><p class=\"text-mid\">Dans Excel et Google Sheets, vous placez les mêmes multiplicateurs directement dans la formule. Giga-octets en méga-octets s'écrit <strong>=A1*1024</strong>, méga-octets en giga-octets <strong>=A1/1024</strong> et giga-octets en kilo-octets <strong>=A1*1048576</strong>, où A1 contient la valeur source. Pour le standard décimal, remplacez les multiplicateurs par 1000 et 1000000.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Combien de méga-octets et de kilo-octets font les capacités courantes ?",
+      "description": "Le tableau ci-dessous convertit des capacités de 1 Go à 2 To en méga-octets et kilo-octets dans le standard binaire. Les unités sont notées GB, MB et KB, comme dans l'outil.",
+      "labelHeader": "Capacité",
+      "cols": ["En méga-octets", "En kilo-octets"],
+      "rows": [
+        {
+          "label": "1 GB",
+          "values": ["1 024 MB", "1 048 576 KB"],
+          "emphasis": true
+        },
+        { "label": "2 GB", "values": ["2 048 MB", "2 097 152 KB"] },
+        { "label": "4 GB", "values": ["4 096 MB", "4 194 304 KB"] },
+        {
+          "label": "8 GB",
+          "values": ["8 192 MB", "8 388 608 KB"],
+          "emphasis": true
+        },
+        { "label": "16 GB", "values": ["16 384 MB", "16 777 216 KB"] },
+        { "label": "64 GB", "values": ["65 536 MB", "67 108 864 KB"] },
+        { "label": "128 GB", "values": ["131 072 MB", "134 217 728 KB"] },
+        { "label": "512 GB", "values": ["524 288 MB", "536 870 912 KB"] },
+        {
+          "label": "1 TB",
+          "values": ["1 048 576 MB", "1 073 741 824 KB"],
+          "emphasis": true
+        },
+        { "label": "2 TB", "values": ["2 097 152 MB", "2 147 483 648 KB"] }
+      ],
+      "caption": "Exemple de lecture : 8 GB font 8 192 MB, soit 8 388 608 KB. Vous obtenez les valeurs du standard décimal en changeant le standard dans le convertisseur ci-dessus."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Combien d'octets fait chaque unité dans les deux standards ?",
+      "description": "Les valeurs binaires portent leurs propres noms formels introduits par la CEI : kibioctet (Kio), mébioctet (Mio), gibioctet (Gio), tébioctet (Tio) et pébioctet (Pio). Les systèmes d'exploitation les affichent pourtant sous les symboles Ko, Mo et Go, c'est pourquoi le tableau ci-dessous présente les deux façons de compter pour chaque unité.",
+      "labelHeader": "Unité",
+      "cols": ["Binaire (1024)", "Décimal (1000)"],
+      "rows": [
+        { "label": "1 Ko", "values": ["1 024 o", "1 000 o"], "emphasis": true },
+        {
+          "label": "1 Mo",
+          "values": ["1 048 576 o", "1 000 000 o"],
+          "emphasis": true
+        },
+        {
+          "label": "1 Go",
+          "values": ["1 073 741 824 o", "1 000 000 000 o"],
+          "emphasis": true
+        },
+        {
+          "label": "1 To",
+          "values": ["1 099 511 627 776 o", "1 000 000 000 000 o"]
+        },
+        {
+          "label": "1 Po",
+          "values": ["1 125 899 906 842 624 o", "1 000 000 000 000 000 o"]
+        }
+      ],
+      "caption": "L'écart entre les standards grandit avec l'unité : de 2,4 pour cent au kilo-octet à 12,6 pour cent au péta-octet. C'est exactement pour cela qu'un disque étiqueté 1 To affiche environ 931 Go dans Windows."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Les unités de données de la plus petite à la plus grande",
+      "description": "Le tableau ci-dessous ordonne toutes les unités de données et montre ce que chacune décrit habituellement en pratique.",
+      "labelHeader": "Unité",
+      "cols": ["Rapport", "Exemple typique"],
+      "rows": [
+        {
+          "label": "Octet (o)",
+          "values": ["unité de base", "un caractère de texte"]
+        },
+        {
+          "label": "Kilo-octet (Ko)",
+          "values": ["1 024 o", "un court e-mail ou une icône"]
+        },
+        {
+          "label": "Méga-octet (Mo)",
+          "values": ["1 024 Ko", "une photo ou une chanson MP3"]
+        },
+        {
+          "label": "Giga-octet (Go)",
+          "values": ["1 024 Mo", "un film ou une barrette de RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Téra-octet (To)",
+          "values": ["1 024 Go", "un disque dur"],
+          "emphasis": true
+        },
+        {
+          "label": "Péta-octet (Po)",
+          "values": ["1 024 To", "un grand centre de données"]
+        }
+      ],
+      "caption": "Ordre de la plus petite à la plus grande : octet, kilo-octet, méga-octet, giga-octet, téra-octet et péta-octet. Chaque unité suivante est 1024 fois plus grande que la précédente."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Combien pèsent les fichiers et supports typiques ?",
+      "description": "Des tailles indicatives aident à situer un résultat de conversion dans le quotidien. Les valeurs réelles dépendent de la qualité et du format, c'est pourquoi nous donnons des fourchettes plutôt que des chiffres uniques.",
+      "labelHeader": "Fichier ou support",
+      "cols": ["Taille typique"],
+      "rows": [
+        {
+          "label": "E-mail sans pièces jointes",
+          "values": ["moins de 100 Ko"]
+        },
+        { "label": "Photo de smartphone", "values": ["2 à 5 Mo"] },
+        {
+          "label": "Chanson en MP3",
+          "values": ["3 à 10 Mo"],
+          "emphasis": true
+        },
+        {
+          "label": "Une heure de vidéo en HD",
+          "values": ["1 à 3 Go"],
+          "emphasis": true
+        },
+        {
+          "label": "Un jeu récent sur PC ou console",
+          "values": ["50 à 150 Go"]
+        },
+        { "label": "SSD d'un ordinateur portable", "values": ["256 Go à 2 To"] }
+      ],
+      "caption": "Si vous voulez savoir combien de tels fichiers tiennent sur votre support, convertissez sa capacité en méga-octets dans le convertisseur ci-dessus et divisez-la par la taille du fichier."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il le plus utile ?",
+      "description": "La conversion des unités de données revient dans quelques situations typiques.",
+      "items": [
+        {
+          "icon": "RiFileTextLine",
+          "title": "Paires d'unités peu courantes",
+          "description": "Octets en giga-octets ou méga-octets en péta-octets se convertissent ici aussi facilement que les paires courantes. Vous choisissez les deux unités avec les boutons et lisez le résultat."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Comparer les deux standards",
+          "description": "Le sélecteur Standard d'unités montre la même valeur calculée par 1024 et par 1000. Vous vérifiez ainsi d'où vient l'écart entre l'étiquette d'un disque et la capacité affichée par le système."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Limites dans le code et la configuration",
+          "description": "Les scripts, les API et les fichiers de configuration attendent souvent des valeurs en octets ou en kilo-octets. Une limite notée en méga-octets se convertit ici en nombre exact à inscrire dans la configuration."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Comparer les tailles de fichiers",
+          "description": "Une fois photos, vidéos et sauvegardes ramenées à une seule unité, vous les comparez facilement et repérez ce qui occupe le plus de place."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur les unités de données",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quel est l'ordre des unités de la plus petite à la plus grande ?",
+          "answer": "De la plus petite à la plus grande : octet (o), kilo-octet (Ko), méga-octet (Mo), giga-octet (Go), téra-octet (To) et péta-octet (Po). Dans le standard binaire, chaque unité suivante est 1024 fois plus grande que la précédente, et dans le décimal 1000 fois."
+        },
+        {
+          "question": "Quel est le plus grand : Ko, Mo ou Go ?",
+          "answer": "Le giga-octet est le plus grand des trois. 1 Go fait 1024 Mo, et chaque méga-octet fait 1024 Ko, donc un giga-octet contient plus d'un million de kilo-octets."
+        },
+        {
+          "question": "Combien de kilo-octets dans 1 Mo, et combien de méga-octets dans 1 Go ?",
+          "answer": "En binaire, 1 Mo fait 1024 Ko et 1 Go fait 1024 Mo. Dans le standard décimal, c'est 1000 Ko et 1000 Mo. Le même multiplicateur vaut pour les unités plus grandes : 1 To fait 1024 Go ou 1000 Go, selon le standard."
+        },
+        {
+          "question": "Combien d'octets dans 1 Go et 1 To ?",
+          "answer": "Dans le standard binaire, 1 Go fait 1 073 741 824 octets et 1 To fait 1 099 511 627 776 octets. En décimal, c'est exactement 1 000 000 000 et 1 000 000 000 000 octets."
+        },
+        {
+          "question": "1000 Ko font-ils 1 Mo ?",
+          "answer": "Seulement dans le standard décimal. En binaire, un méga-octet complet fait 1024 Ko, donc 1000 Ko font environ 0,98 Mo. Vous calculez les deux variantes dans ce convertisseur après avoir changé le standard."
+        },
+        {
+          "question": "Pourquoi un kilo-octet fait-il 1024 octets et non 1000 ?",
+          "answer": "Les ordinateurs comptent en binaire, et 1024 vaut deux puissance dix, le nombre rond de ce système le plus proche du millier. Le préfixe kilo du SI signifie pourtant exactement 1000, et les fabricants de stockage s'en tiennent à ce sens. Les deux approches coexistent jusqu'à aujourd'hui."
+        },
+        {
+          "question": "Quelle différence entre Ko et Kio, ou Mo et Mio ?",
+          "answer": "Kibioctet (Kio), mébioctet (Mio) et gibioctet (Gio) sont les noms formels des valeurs binaires, introduits par la CEI pour les distinguer des Ko, Mo et Go décimaux. 1 Kio fait toujours 1024 octets, tandis que 1 ko au sens du SI fait 1000 octets. Au quotidien, la plupart des programmes et des gens écrivent Ko en pensant à la valeur binaire, exactement comme Windows."
+        },
+        {
+          "question": "Qu'y a-t-il après le téra-octet ?",
+          "answer": "Juste après le téra-octet vient le péta-octet (Po), puis l'exaoctet (Eo), le zettaoctet (Zo) et le yottaoctet (Yo). Au quotidien, on rencontre surtout les unités jusqu'au téra-octet. Les péta-octets apparaissent autour des centres de données, et les unités plus grandes dans les statistiques du trafic mondial d'internet."
+        },
+        {
+          "question": "Comment convertir les unités de données dans Excel ?",
+          "answer": "Adaptez le multiplicateur à la paire d'unités : =A1*1024 transforme des giga-octets en méga-octets, =A1/1024 des méga-octets en giga-octets et =A1*1048576 des giga-octets en kilo-octets. Dans le standard décimal, utilisez 1000 au lieu de 1024. Les mêmes formules fonctionnent dans Google Sheets."
+        },
+        {
+          "question": "Pourquoi un disque de 1 To affiche-t-il environ 931 Go dans le système ?",
+          "answer": "Le fabricant décrit le disque en décimal, donc 1 To signifie 1 000 000 000 000 octets. Windows divise ce nombre en binaire, par 1 073 741 824, et affiche environ 931 Go. La capacité est intacte; seul change le standard dans lequel elle a été comptée."
+        },
+        {
+          "question": "Combien de photos ou de chansons tiennent dans 1 Go ?",
+          "answer": "Avec des photos d'environ 3 Mo, un giga-octet contient un peu plus de 300 fichiers, et avec des chansons MP3 de 5 Mo, environ 200 titres. Une heure de vidéo en HD peut occuper le giga-octet entier."
+        },
+        {
+          "question": "Quel standard choisir dans ce convertisseur ?",
+          "answer": "Si vous comparez le résultat avec l'affichage de Windows ou avec la capacité de la mémoire vive, choisissez Binaire (1024). Si vous vous référez à l'étiquette d'un disque, à l'offre d'un opérateur ou à une valeur de macOS, passez sur Décimal (1000). En cas de doute, calculez les deux variantes et vérifiez quelle valeur correspond à votre source."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Une question ou une suggestion ?",
+      "description": "Si vous avez repéré une erreur dans un tableau ou avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Contact avec Arteon Agency",
+      "defaultSubject": "Convertisseur d'unités de données"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "toolKey": "dataSizeConverter",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de unidades de datos – B, KB, MB, GB, TB, PB",
+    "description": "Convierte bytes, KB, MB, GB, TB y PB en el estándar binario (1024) o decimal (1000). Sin registro, con tablas de conversión y fórmulas para Excel.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-unidades-de-datos"
+  },
+  "hero": {
+    "title": "Convierte unidades de datos – B, KB, MB, GB, TB y PB",
+    "description": "En el campo Convertir de escribe un valor y elige su unidad; en el campo Convertir a elige la unidad del resultado. La conversión aparece mientras escribes. El selector Estándar de unidades fija cómo se calcula: en binario (1024), como lo hace Windows, o en decimal (1000), como indican la capacidad los fabricantes de discos.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-unidades-de-datos",
+      "label": "unidades de datos"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de unidades de datos – B, KB, MB, GB, TB, PB",
+      "alternateName": [
+        "Convertidor de unidades de datos",
+        "Convertidor de unidades de almacenamiento",
+        "Convertidor de bytes",
+        "Tabla de unidades de datos",
+        "KB a MB a GB",
+        "Tabla KB a MB a GB a TB",
+        "Cuántos KB tiene un MB",
+        "Cuántos MB tiene un GB",
+        "Cuántos bytes tiene un GB",
+        "Qué es más grande KB o MB",
+        "Unidades de datos de menor a mayor",
+        "KB o KiB",
+        "1024 o 1000",
+        "data size converter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertidor de todas las unidades de datos que funciona en el navegador, sin registro. Convierte cualquier unidad en cualquier otra, del byte al petabyte, en el estándar binario (1024) o decimal (1000).",
+      "featureList": [
+        "Convierte cualquier unidad de datos en cualquier otra: B, KB, MB, GB, TB y PB",
+        "La unidad de origen y la de destino se eligen con botones visibles bajo los campos",
+        "También puedes escribir un valor en el campo Convertir a y la herramienta lo convierte en sentido contrario",
+        "El selector Estándar de unidades calcula en binario (1024) o decimal (1000) y afecta a los dos campos a la vez",
+        "El resultado aparece al instante mientras escribes, sin pulsar ningún botón",
+        "Admite tanto el punto como la coma como separador decimal",
+        "El botón Copiar resultado deja el valor listo en el portapapeles",
+        "El botón Limpiar todo vacía los dos campos a la vez",
+        "Todos los cálculos se hacen localmente en el navegador, tus datos no salen del dispositivo",
+        "Funciona en el móvil, la tableta y el ordenador sin instalar nada"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo convertir unidades de datos?",
+      "description": "Una guía breve para usar el convertidor de unidades de datos.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escribe un valor y elige su unidad",
+          "text": "En el campo Convertir de escribe un número y elige bajo el campo la unidad en la que está dado. El punto y la coma funcionan igual."
+        },
+        {
+          "name": "Elige la unidad del resultado",
+          "text": "Bajo el campo Convertir a elige la unidad en la que quieres el resultado. La conversión aparece de inmediato y el botón Copiar resultado la deja en el portapapeles."
+        },
+        {
+          "name": "Ajusta el estándar de cálculo",
+          "text": "En el recuadro bajo los campos, pon Estándar de unidades en Binario (1024) o Decimal (1000), según con qué compares el resultado."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué sirve el convertidor de unidades de datos?",
+      "html": "<p class=\"text-mid mb-4\">Los tamaños de datos rara vez te llegan en una sola unidad. La cámara guarda las fotos en megabytes, el operador factura el plan en gigabytes, un script del servidor espera un límite en bytes y el fabricante del disco indica la capacidad en terabytes. Antes de comparar esos valores, tienes que llevarlos a una unidad común.</p><p class=\"text-mid mb-4\">Este convertidor cubre todas las unidades de datos, del byte al petabyte, y cualquier combinación entre ellas. La unidad de origen y la de destino se eligen con botones bajo los campos, y el resultado aparece mientras escribes el valor.</p><p class=\"text-mid\">Windows y la memoria RAM calculan en binario, es decir, por 1024, mientras que los fabricantes de discos y macOS calculan en decimal, por 1000. La misma capacidad tiene por eso dos valores correctos, y de ahí vienen los malentendidos al comparar tamaños. El selector Estándar de unidades bajo los campos convierte en ambos estándares y afecta a los dos campos a la vez.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Convertidor gratuito de unidades de datos – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo se convierten las unidades de datos? Fórmula y ejemplos",
+      "html": "<p class=\"text-mid mb-4\">La regla es una sola: en el estándar binario cada unidad siguiente es 1024 veces mayor que la anterior, y en el decimal 1000 veces. Al convertir a una unidad menor multiplicas, y a una mayor divides.</p><p class=\"text-mid mb-4\">El multiplicador depende de cuántas unidades intermedias hay entre la de origen y la de destino. Las unidades vecinas, como GB y MB, se convierten por 1024. Entre GB y KB está además MB, así que el multiplicador crece a 1024 × 1024, es decir, 1.048.576. Entre TB y KB hay dos unidades intermedias y el multiplicador es 1.073.741.824. En el estándar decimal los multiplicadores equivalentes son 1000, 1.000.000 y 1.000.000.000.</p><p class=\"text-mid mb-4\">Ejemplo: 5 GB convertidos a kilobytes en binario son 5 × 1.048.576, es decir, 5.242.880 KB. El mismo valor calculado en decimal son 5.000.000 KB. La diferencia llega casi al 5 por ciento y crece con unidades mayores, por eso la elección del estándar importa.</p><p class=\"text-mid\">En Excel y Google Sheets escribes los mismos multiplicadores directamente en la fórmula. Gigabytes a megabytes es <strong>=A1*1024</strong>, megabytes a gigabytes <strong>=A1/1024</strong> y gigabytes a kilobytes <strong>=A1*1048576</strong>, donde A1 contiene el valor de origen. Para el estándar decimal cambia los multiplicadores por 1000 y 1000000.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "¿Cuántos megabytes y kilobytes tienen las capacidades populares?",
+      "description": "La tabla siguiente convierte capacidades de 1 GB a 2 TB en megabytes y kilobytes en el estándar binario.",
+      "labelHeader": "Capacidad",
+      "cols": ["En megabytes", "En kilobytes"],
+      "rows": [
+        {
+          "label": "1 GB",
+          "values": ["1.024 MB", "1.048.576 KB"],
+          "emphasis": true
+        },
+        { "label": "2 GB", "values": ["2.048 MB", "2.097.152 KB"] },
+        { "label": "4 GB", "values": ["4.096 MB", "4.194.304 KB"] },
+        {
+          "label": "8 GB",
+          "values": ["8.192 MB", "8.388.608 KB"],
+          "emphasis": true
+        },
+        { "label": "16 GB", "values": ["16.384 MB", "16.777.216 KB"] },
+        { "label": "64 GB", "values": ["65.536 MB", "67.108.864 KB"] },
+        { "label": "128 GB", "values": ["131.072 MB", "134.217.728 KB"] },
+        { "label": "512 GB", "values": ["524.288 MB", "536.870.912 KB"] },
+        {
+          "label": "1 TB",
+          "values": ["1.048.576 MB", "1.073.741.824 KB"],
+          "emphasis": true
+        },
+        { "label": "2 TB", "values": ["2.097.152 MB", "2.147.483.648 KB"] }
+      ],
+      "caption": "Ejemplo de lectura: 8 GB son 8.192 MB, es decir, 8.388.608 KB. Los valores del estándar decimal los obtienes cambiando el estándar en el convertidor de arriba."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "¿Cuántos bytes tiene cada unidad en los dos estándares?",
+      "description": "Los valores binarios tienen nombres formales propios introducidos por la IEC: kibibyte (KiB), mebibyte (MiB), gibibyte (GiB), tebibyte (TiB) y pebibyte (PiB). Los sistemas operativos, sin embargo, los muestran con los símbolos KB, MB y GB, por eso la tabla siguiente recoge las dos formas de contar para cada unidad.",
+      "labelHeader": "Unidad",
+      "cols": ["Binario (1024)", "Decimal (1000)"],
+      "rows": [
+        { "label": "1 KB", "values": ["1.024 B", "1.000 B"], "emphasis": true },
+        {
+          "label": "1 MB",
+          "values": ["1.048.576 B", "1.000.000 B"],
+          "emphasis": true
+        },
+        {
+          "label": "1 GB",
+          "values": ["1.073.741.824 B", "1.000.000.000 B"],
+          "emphasis": true
+        },
+        {
+          "label": "1 TB",
+          "values": ["1.099.511.627.776 B", "1.000.000.000.000 B"]
+        },
+        {
+          "label": "1 PB",
+          "values": ["1.125.899.906.842.624 B", "1.000.000.000.000.000 B"]
+        }
+      ],
+      "caption": "La diferencia entre estándares crece con la unidad: del 2,4 por ciento en el kilobyte al 12,6 por ciento en el petabyte. Justo por eso un disco etiquetado como 1 TB muestra en Windows unos 931 GB."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Unidades de datos de menor a mayor",
+      "description": "La tabla siguiente ordena todas las unidades de datos y muestra qué suele describir cada una en la práctica.",
+      "labelHeader": "Unidad",
+      "cols": ["Relación", "Ejemplo típico"],
+      "rows": [
+        {
+          "label": "Byte (B)",
+          "values": ["unidad base", "un carácter de texto"]
+        },
+        {
+          "label": "Kilobyte (KB)",
+          "values": ["1.024 B", "un correo corto o un icono"]
+        },
+        {
+          "label": "Megabyte (MB)",
+          "values": ["1.024 KB", "una foto o una canción MP3"]
+        },
+        {
+          "label": "Gigabyte (GB)",
+          "values": ["1.024 MB", "una película o un módulo de RAM"],
+          "emphasis": true
+        },
+        {
+          "label": "Terabyte (TB)",
+          "values": ["1.024 GB", "un disco duro"],
+          "emphasis": true
+        },
+        {
+          "label": "Petabyte (PB)",
+          "values": ["1.024 TB", "un gran centro de datos"]
+        }
+      ],
+      "caption": "Orden de menor a mayor: byte, kilobyte, megabyte, gigabyte, terabyte y petabyte. Cada unidad siguiente es 1024 veces mayor que la anterior."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "¿Cuánto pesan los archivos y soportes típicos?",
+      "description": "Los tamaños orientativos ayudan a situar el resultado de una conversión en el contexto diario. Los valores reales dependen de la calidad y el formato, por eso damos rangos y no cifras únicas.",
+      "labelHeader": "Archivo o soporte",
+      "cols": ["Tamaño típico"],
+      "rows": [
+        { "label": "Correo sin adjuntos", "values": ["menos de 100 KB"] },
+        { "label": "Foto de un smartphone", "values": ["2 a 5 MB"] },
+        {
+          "label": "Canción en MP3",
+          "values": ["3 a 10 MB"],
+          "emphasis": true
+        },
+        {
+          "label": "Una hora de vídeo en HD",
+          "values": ["1 a 3 GB"],
+          "emphasis": true
+        },
+        {
+          "label": "Un juego actual de PC o consola",
+          "values": ["50 a 150 GB"]
+        },
+        { "label": "SSD de un portátil", "values": ["256 GB a 2 TB"] }
+      ],
+      "caption": "Si quieres saber cuántos archivos de este tipo caben en tu soporte, convierte su capacidad a megabytes en el convertidor de arriba y divídela entre el tamaño del archivo."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo resulta más útil este convertidor?",
+      "description": "La conversión de unidades de datos vuelve en unas cuantas situaciones típicas.",
+      "items": [
+        {
+          "icon": "RiFileTextLine",
+          "title": "Pares de unidades poco frecuentes",
+          "description": "Bytes a gigabytes o megabytes a petabytes se convierten aquí con la misma facilidad que los pares populares. Eliges las dos unidades con los botones y lees el resultado."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Comparar los dos estándares",
+          "description": "El selector Estándar de unidades muestra el mismo valor calculado por 1024 y por 1000. Así compruebas de dónde sale la diferencia entre la etiqueta del disco y la capacidad que muestra el sistema."
+        },
+        {
+          "icon": "RiFileCodeLine",
+          "title": "Límites en código y configuración",
+          "description": "Los scripts, las API y los archivos de configuración suelen esperar valores en bytes o kilobytes. Un límite apuntado en megabytes se convierte aquí en la cifra exacta que escribes en la configuración."
+        },
+        {
+          "icon": "RiFileImageLine",
+          "title": "Comparar tamaños de archivos",
+          "description": "Cuando llevas fotos, vídeos y copias de seguridad a una sola unidad, los comparas con facilidad y ves qué ocupa más espacio."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre las unidades de datos",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuál es el orden de las unidades de menor a mayor?",
+          "answer": "De menor a mayor: byte (B), kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB) y petabyte (PB). En el estándar binario cada unidad siguiente es 1024 veces mayor que la anterior, y en el decimal 1000 veces."
+        },
+        {
+          "question": "¿Qué es más grande: KB, MB o GB?",
+          "answer": "El gigabyte es el mayor de los tres. 1 GB son 1024 MB, y cada megabyte son 1024 KB, así que un gigabyte contiene más de un millón de kilobytes."
+        },
+        {
+          "question": "¿Cuántos kilobytes tiene 1 MB y cuántos megabytes tiene 1 GB?",
+          "answer": "En binario 1 MB son 1024 KB y 1 GB son 1024 MB. En el estándar decimal son 1000 KB y 1000 MB. El mismo multiplicador rige para unidades mayores: 1 TB son 1024 GB o 1000 GB, según el estándar."
+        },
+        {
+          "question": "¿Cuántos bytes tienen 1 GB y 1 TB?",
+          "answer": "En el estándar binario 1 GB son 1.073.741.824 bytes y 1 TB son 1.099.511.627.776 bytes. En decimal son exactamente 1.000.000.000 y 1.000.000.000.000 bytes."
+        },
+        {
+          "question": "¿1000 KB son 1 MB?",
+          "answer": "Solo en el estándar decimal. En binario un megabyte completo tiene 1024 KB, así que 1000 KB son unos 0,98 MB. Puedes calcular las dos variantes en este convertidor tras cambiar el estándar."
+        },
+        {
+          "question": "¿Por qué un kilobyte tiene 1024 bytes y no 1000?",
+          "answer": "Los ordenadores cuentan en el sistema binario, y 1024 es dos elevado a diez, la cifra redonda de ese sistema más cercana al millar. El prefijo kilo del SI significa, sin embargo, exactamente 1000, y a ese significado se atienen los fabricantes de almacenamiento. Ambos enfoques conviven hasta hoy."
+        },
+        {
+          "question": "¿En qué se diferencian KB de KiB y MB de MiB?",
+          "answer": "Kibibyte (KiB), mebibyte (MiB) y gibibyte (GiB) son los nombres formales de los valores binarios, introducidos por la IEC para distinguirlos de los decimales KB, MB y GB. 1 KiB son siempre 1024 bytes, mientras que 1 kB en el sentido del SI son 1000 bytes. En el día a día, la mayoría de programas y personas escriben KB refiriéndose al valor binario, exactamente igual que Windows."
+        },
+        {
+          "question": "¿Qué viene después del terabyte?",
+          "answer": "Justo después del terabyte viene el petabyte (PB), y más allá el exabyte (EB), el zettabyte (ZB) y el yottabyte (YB). En el uso diario se manejan sobre todo unidades hasta el terabyte. Los petabytes aparecen en los centros de datos, y las unidades mayores en estadísticas del tráfico global de internet."
+        },
+        {
+          "question": "¿Cómo convertir unidades de datos en Excel?",
+          "answer": "Ajusta el multiplicador al par de unidades: =A1*1024 convierte gigabytes en megabytes, =A1/1024 megabytes en gigabytes y =A1*1048576 gigabytes en kilobytes. En el estándar decimal usa 1000 en lugar de 1024. Las mismas fórmulas funcionan en Google Sheets."
+        },
+        {
+          "question": "¿Por qué un disco de 1 TB muestra en el sistema unos 931 GB?",
+          "answer": "El fabricante describe el disco en decimal, así que 1 TB significa 1.000.000.000.000 bytes. Windows divide esa cifra en binario, entre 1.073.741.824, y muestra unos 931 GB. La capacidad está intacta; solo cambia el estándar con el que se contó."
+        },
+        {
+          "question": "¿Cuántas fotos o canciones caben en 1 GB?",
+          "answer": "Con fotos de unos 3 MB, en un gigabyte caben algo más de 300 archivos, y con canciones MP3 de 5 MB, unas 200. Una hora de vídeo en HD puede ocupar el gigabyte entero."
+        },
+        {
+          "question": "¿Qué estándar elegir en este convertidor?",
+          "answer": "Si comparas el resultado con lo que muestra Windows o con la capacidad de la RAM, elige Binario (1024). Si te refieres a la etiqueta de un disco, la oferta de un operador o un valor de macOS, cambia a Decimal (1000). Ante la duda, calcula las dos variantes y comprueba qué valor encaja con tu fuente."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "¿Tienes una duda o sugerencia?",
+      "description": "Si has detectado un error en una tabla o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Contacto con Arteon Agency",
+      "defaultSubject": "Convertidor de unidades de datos"
+    },
+    { "type": "gap", "size": "sm" }
+  ]
+}

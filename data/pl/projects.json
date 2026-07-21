@@ -383,43 +383,6 @@
     },
 
     {
-      "slug": "wizytowki-dla-stepard",
-      "title": "Wizytówki dla producenta schodów metalowych - StepArd",
-      "short": "Projekt wizytówki dla marki StepArd, spójne z logo oraz stroną internetową, z kodem QR.",
-      "description": "<p>Wizytówki to finalny element kompleksowego projektu obejmującego również <a href=\"/realizacje/logo-dla-stepard\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-stepard\">stronę</a> StepArd.</p><br /><p>Projekt został stworzony tak aby był spójny z całą identyfikacją - ta sama paleta kolorów oraz typografia. Na rewersie umieściliśmy <strong>kod QR prowadzący do strony stepard.pl</strong>. Na koniec przygotowaliśmy projekt wizytówek do druku.</p>",
-      "image": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
-      "category": ["projekty graficzne", "wizytówki"],
-      "task": "Zaprojektować wizytówki spójne z logo i stroną StepArd.",
-      "process_steps": [
-        "Projekt graficzny w nawiązaniu do logo i strony.",
-        "Konsultacja i poprawki.",
-        "Przygotowanie plików do druku."
-      ],
-      "contentBlocks": [
-        {
-          "type": "image",
-          "src": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
-          "alt": "Wizytówki StepArd - mockup realizacji Arteon",
-          "ratio": "16/9",
-          "breakAfter": true
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz projekty wizytówki dla swojej firmy?",
-        "description": "Zajmujemy się kompleksowym wsparciem firm online oraz offline. Realizujemy zarówno projekty graficzne jak i strony www.",
-        "btnTwo": "Sprawdź ofertę projektowania wizytówek",
-        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
-        "backgroundImage": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
-        "overlay": "black"
-      },
-      "seo": {
-        "title": "Wizytówki dla producenta schodów - StepArd",
-        "description": "Projekt wizytówki dla producenta schodów w Trójmieście. Sprawdź naszą realizację i zamów projekt wizytówki dla swojej firmy.",
-        "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-stepard"
-      }
-    },
-
-    {
       "slug": "optymalizacja-strony-internetowej-dla-eliza-wronska",
       "title": "Optymalizacja strony internetowej - Eliza Wrońska",
       "short": "Optymalizacja strony Elizy Wrońskiej. Zobacz wynik w Google PageSpeed Insights przed i po.",
@@ -1611,6 +1574,43 @@
         "title": "Szablony postów do mediów społecznościowych dla psychologa - MSC Psychotherapy",
         "description": "Szablony postów do mediów społecznościowych dla gabinetu psychologicznego w Anglii. Sprawdź naszą realizację postów do mediów społecznościowych i zamów posty dla swojej firmy.",
         "canonical": "https://www.arteonagency.pl/realizacje/szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc"
+      }
+    },
+
+    {
+      "slug": "wizytowki-dla-stepard",
+      "title": "Wizytówki dla producenta schodów metalowych - StepArd",
+      "short": "Projekt wizytówki dla marki StepArd, spójne z logo oraz stroną internetową, z kodem QR.",
+      "description": "<p>Wizytówki to finalny element kompleksowego projektu obejmującego również <a href=\"/realizacje/logo-dla-stepard\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-stepard\">stronę</a> StepArd.</p><br /><p>Projekt został stworzony tak aby był spójny z całą identyfikacją - ta sama paleta kolorów oraz typografia. Na rewersie umieściliśmy <strong>kod QR prowadzący do strony stepard.pl</strong>. Na koniec przygotowaliśmy projekt wizytówek do druku.</p>",
+      "image": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
+      "category": ["projekty graficzne", "wizytówki"],
+      "task": "Zaprojektować wizytówki spójne z logo i stroną StepArd.",
+      "process_steps": [
+        "Projekt graficzny w nawiązaniu do logo i strony.",
+        "Konsultacja i poprawki.",
+        "Przygotowanie plików do druku."
+      ],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
+          "alt": "Wizytówki StepArd - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz projekty wizytówki dla swojej firmy?",
+        "description": "Zajmujemy się kompleksowym wsparciem firm online oraz offline. Realizujemy zarówno projekty graficzne jak i strony www.",
+        "btnTwo": "Sprawdź ofertę projektowania wizytówek",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "backgroundImage": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Wizytówki dla producenta schodów - StepArd",
+        "description": "Projekt wizytówki dla producenta schodów w Trójmieście. Sprawdź naszą realizację i zamów projekt wizytówki dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-stepard"
       }
     },
 

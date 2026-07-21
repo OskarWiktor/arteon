@@ -31,6 +31,7 @@ import SectionSteps from '../organisms/sections/SectionSteps';
 import SectionTable from '../organisms/sections/SectionTable';
 import SectionTabs from '../organisms/sections/SectionTabs';
 import SectionTimeline from '../organisms/sections/SectionTimeline';
+import DataGroupConverterLinks from '../organisms/tools/DataGroupConverterLinks';
 import RelatedConverters from '../organisms/tools/RelatedConverters';
 import RelatedUnitConverters from '../organisms/tools/RelatedUnitConverters';
 
@@ -319,6 +320,10 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
           ) : (
             (tool ?? <DynamicToolRenderer toolKey={data.toolKey} />)
           )}
+          <DataGroupConverterLinks
+            toolKey={data.toolKey}
+            locale={data.locale as Locale}
+          />
         </div>
         <div className='not-prose m-auto mt-12 flex justify-center py-4'>
           <AdSense variant='responsive' locale={data.locale} />
