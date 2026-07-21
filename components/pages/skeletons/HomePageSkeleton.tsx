@@ -65,7 +65,7 @@ export default function HomePageSkeleton() {
     <>
       <HeroBannerSkeleton />
       <BenefitBeltSkeleton />
-      <div className='m-auto w-[94%] max-w-355 2xl:max-w-none'>
+      <div className='m-auto w-[94%] max-w-405'>
         <DividerSkeleton variant='space' />
         <CarouselSkeleton variant='project' />
         <DividerSkeleton variant='line' />

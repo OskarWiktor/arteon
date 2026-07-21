@@ -1,20 +1,21 @@
-# Graph Report - . (2026-07-07)
+# Graph Report - . (2026-07-21)
 
 ## Corpus Check
 
-- 1285 files · ~0 words
+- 1084 files · ~3,853,081 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 
-- 1148 nodes · 2102 edges · 110 communities (86 shown, 24 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 35 edges (avg confidence: 0.8)
+- 1224 nodes · 1781 edges · 191 communities (152 shown, 39 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 45 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
 
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
 - [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
@@ -26,7 +27,6 @@
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
-- [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
 - [[_COMMUNITY_Community 17|Community 17]]
@@ -34,10 +34,10 @@
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
 - [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Community 25|Community 25]]
-- [[_COMMUNITY_Community 26|Community 26]]
 - [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Community 28|Community 28]]
 - [[_COMMUNITY_Community 29|Community 29]]
@@ -104,279 +104,307 @@
 - [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 91|Community 91]]
 - [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
+- [[_COMMUNITY_Community 94|Community 94]]
+- [[_COMMUNITY_Community 95|Community 95]]
 - [[_COMMUNITY_Community 96|Community 96]]
+- [[_COMMUNITY_Community 97|Community 97]]
 - [[_COMMUNITY_Community 98|Community 98]]
 - [[_COMMUNITY_Community 99|Community 99]]
 - [[_COMMUNITY_Community 100|Community 100]]
 - [[_COMMUNITY_Community 101|Community 101]]
 - [[_COMMUNITY_Community 102|Community 102]]
 - [[_COMMUNITY_Community 103|Community 103]]
-- [[_COMMUNITY_Community 104|Community 104]]
 - [[_COMMUNITY_Community 105|Community 105]]
 - [[_COMMUNITY_Community 106|Community 106]]
 - [[_COMMUNITY_Community 107|Community 107]]
+- [[_COMMUNITY_Community 108|Community 108]]
+- [[_COMMUNITY_Community 109|Community 109]]
+- [[_COMMUNITY_Community 110|Community 110]]
+- [[_COMMUNITY_Community 111|Community 111]]
+- [[_COMMUNITY_Community 112|Community 112]]
+- [[_COMMUNITY_Community 113|Community 113]]
+- [[_COMMUNITY_Community 114|Community 114]]
+- [[_COMMUNITY_Community 115|Community 115]]
+- [[_COMMUNITY_Community 169|Community 169]]
+- [[_COMMUNITY_Community 173|Community 173]]
+- [[_COMMUNITY_Community 174|Community 174]]
+- [[_COMMUNITY_Community 175|Community 175]]
+- [[_COMMUNITY_Community 176|Community 176]]
+- [[_COMMUNITY_Community 177|Community 177]]
+- [[_COMMUNITY_Community 178|Community 178]]
+- [[_COMMUNITY_Community 179|Community 179]]
+- [[_COMMUNITY_Community 180|Community 180]]
+- [[_COMMUNITY_Community 181|Community 181]]
+- [[_COMMUNITY_Community 182|Community 182]]
+- [[_COMMUNITY_Community 183|Community 183]]
+- [[_COMMUNITY_Community 184|Community 184]]
+- [[_COMMUNITY_Community 185|Community 185]]
+- [[_COMMUNITY_Community 186|Community 186]]
+- [[_COMMUNITY_Community 187|Community 187]]
+- [[_COMMUNITY_Community 188|Community 188]]
 
 ## God Nodes (most connected - your core abstractions)
 
-1. `cn()` - 138 edges
-2. `toAbsoluteUrl()` - 39 edges
-3. `getToolDataBySlug()` - 29 edges
-4. `Wrapper()` - 24 edges
-5. `getAllToolSlugs()` - 20 edges
-6. `Card()` - 19 edges
-7. `Shimmer()` - 17 edges
-8. `GapSkeleton()` - 14 edges
-9. `HeroBannerSkeleton()` - 13 edges
-10. `useEscapeKey()` - 12 edges
+1. `toAbsoluteUrl()` - 77 edges
+2. `getToolDataBySlug()` - 47 edges
+3. `cn()` - 36 edges
+4. `Wrapper()` - 34 edges
+5. `getAllToolSlugs()` - 32 edges
+6. `NotFoundPage()` - 17 edges
+7. `ToolsIndexSkeleton()` - 16 edges
+8. `baseMetadata` - 16 edges
+9. `siteUrl` - 11 edges
+10. `convertImage()` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 
-- `Aspect()` --calls--> `cn()` [INFERRED]
-  app/(pl)/edukacja/[category]/[slug]/page.tsx → lib/clsx.ts
-- `generateMetadata()` --calls--> `toAbsoluteUrl()` [INFERRED]
-  app/(pl)/edukacja/[category]/[slug]/page.tsx → utils/absoluteUrl.ts
 - `generateStaticParams()` --calls--> `getAllToolSlugs()` [INFERRED]
   app/(pl)/narzedzia/(tools)/[slug]/page.tsx → lib/tools/dataLoader.ts
 - `generateMetadata()` --calls--> `getToolDataBySlug()` [INFERRED]
   app/(pl)/narzedzia/(tools)/[slug]/page.tsx → lib/tools/dataLoader.ts
 - `Page()` --calls--> `getToolDataBySlug()` [INFERRED]
   app/(pl)/narzedzia/(tools)/[slug]/page.tsx → lib/tools/dataLoader.ts
+- `generateStaticParams()` --calls--> `getAllToolSlugs()` [INFERRED]
+  app/cs/nastroje/[slug]/page.tsx → lib/tools/dataLoader.ts
+- `generateMetadata()` --calls--> `getToolDataBySlug()` [INFERRED]
+  app/cs/nastroje/[slug]/page.tsx → lib/tools/dataLoader.ts
 
 ## Import Cycles
 
 - None detected.
 
-## Communities (110 total, 24 thin omitted)
+## Communities (191 total, 39 thin omitted)
 
 ### Community 0 - "Community 0"
 
 Cohesion: 0.06
-Nodes (48): generateMetadata(), generateStaticParams(), Page(), generateMetadata(), generateStaticParams(), Page(), generateMetadata(), generateStaticParams() (+40 more)
+Nodes (53): generateMetadata(), generateStaticParams(), Page(), generateMetadata(), generateStaticParams(), Page(), generateMetadata(), generateStaticParams() (+45 more)
 
 ### Community 1 - "Community 1"
 
-Cohesion: 0.07
-Nodes (32): Backdrop(), BackdropProps, ButtonToTop, PASSIVE_SCROLL, loadGA(), sendGAPageView(), ConsentUpdate, updateGtagConsent() (+24 more)
+Cohesion: 0.08
+Nodes (26): faqItems, metadata, schema, faqItems, metadata, schema, getHomepageAlternates(), getToolAlternates() (+18 more)
+
+### Community 2 - "Community 2"
+
+Cohesion: 0.09
+Nodes (27): calculateHexContrast(), channelToLinear(), compositeOver(), getContrastRatio(), isHexContrastSufficient(), parseColor(), relativeLuminance(), Bucket (+19 more)
 
 ### Community 3 - "Community 3"
 
-Cohesion: 0.07
-Nodes (33): ToolAlert(), ToolAlertProps, ToolAlertVariant, variantClasses, variantRole, ToolInfo(), ToolInfoProps, Bucket (+25 more)
-
-### Community 4 - "Community 4"
-
-Cohesion: 0.06
-Nodes (27): InlineLink(), InlineLinkProps, variants, JsonLd(), JsonLdProps, ThemeToggle(), ButtonIcon(), ButtonIconProps (+19 more)
+Cohesion: 0.10
+Nodes (3): baseMetadata, metadataBase, LocaleLayoutProps
 
 ### Community 5 - "Community 5"
 
-Cohesion: 0.10
-Nodes (28): ALL_CONVERSION_DEFS, ConversionDef, getAllRoutes, getAvailableSources(), getAvailableTargets(), getConversionByToolKey(), getConvertersFromSameSource(), getConvertersToSameTarget() (+20 more)
-
-### Community 6 - "Community 6"
-
-Cohesion: 0.09
-Nodes (6): CTABannerSkeleton(), GapSkeleton(), GapSkeletonProps, HeroBannerSkeleton(), ListPageSkeleton(), ListPageSkeletonProps
+Cohesion: 0.07
+Nodes (18): Wrapper(), WrapperProps, alternates, LOCALE, metadata, alternates, LOCALE, metadata (+10 more)
 
 ### Community 7 - "Community 7"
 
-Cohesion: 0.08
-Nodes (24): ButtonTool(), ButtonToolProps, InputCheckbox(), InputCheckboxProps, Select(), CropPreview(), CropRect, Props (+16 more)
+Cohesion: 0.10
+Nodes (25): ALL_CONVERSION_DEFS, ConversionDef, getAllRoutes, getAvailableSources(), getAvailableTargets(), getConvertersFromSameSource(), getConvertersToSameTarget(), ResolvedRoute (+17 more)
 
 ### Community 8 - "Community 8"
 
-Cohesion: 0.11
-Nodes (24): Aspect(), defaultCTA, generateMetadata(), generateStaticParams(), jsonLd(), RenderBlocks(), ColorPalette(), ColorPaletteProps (+16 more)
+Cohesion: 0.13
+Nodes (19): CropStateLike, DragMode, DragState, UseCropDragOptions, getDownscaledImageDataFromUrl(), getCropRect(), exportCroppedImage(), ExportCroppedImageOptions (+11 more)
 
 ### Community 9 - "Community 9"
 
-Cohesion: 0.13
-Nodes (4): SkipToContent(), baseMetadata, metadataBase, LocaleLayoutProps
+Cohesion: 0.09
+Nodes (12): alternates, LOCALE, metadata, alternates, LOCALE, metadata, alternates, LOCALE (+4 more)
 
 ### Community 10 - "Community 10"
 
-Cohesion: 0.09
-Nodes (10): Card(), CardPadding, CardVariant, paddingClasses, PolymorphicProps, variantClasses, cardMap, CarouselSkeleton() (+2 more)
+Cohesion: 0.16
+Nodes (18): buildSignatureHtml(), BuildSignatureLabels, CTA_RADIUS_MAP, FONT_SIZE_MAP, PADDING_MAP, SIGNATURE_COLOR_DARK, SIGNATURE_COLOR_DIVIDER, SIGNATURE_COLOR_WHITE (+10 more)
 
 ### Community 11 - "Community 11"
 
 Cohesion: 0.16
-Nodes (8): ArticlePageSkeleton(), BreadcrumbsSkeleton(), BreadcrumbsSkeletonProps, CardGridSkeletonProps, FaqSkeletonProps, HeroBannerSkeletonProps, Shimmer(), ShimmerProps
+Nodes (12): Backdrop(), BackdropProps, ToolInfo(), ToolInfoProps, cn(), BenefitBeltSkeleton(), ToolEditorLayout(), ToolEditorLayoutProps (+4 more)
 
 ### Community 12 - "Community 12"
 
-Cohesion: 0.15
-Nodes (15): ButtonPill(), ButtonPillProps, InputWithLabel(), InputWithLabelProps, InputWithLabelType, Props, Props, pairs() (+7 more)
+Cohesion: 0.16
+Nodes (10): exportSignatureAsHtml(), UseWebpQueueOptions, createWebpQueueItems(), WebpQueueItem, WebpQueueItemStatus, downloadBlob(), DownloadBlobOptions, downloadFromUrl() (+2 more)
 
 ### Community 13 - "Community 13"
 
-Cohesion: 0.11
-Nodes (19): Props, SpacingRow(), SpacingRowConfig, ActivePanel, AvatarShape, AvatarSize, CopyStatus, DividerStyle (+11 more)
+Cohesion: 0.12
+Nodes (15): articlePreviews, blogArticleItems, blogCategories, buildJsonLd(), GRAPHIC_SERVICES, GRAPHIC_SERVICES_SOURCE, infoPages, metadata (+7 more)
 
-### Community 14 - "Community 14"
-
-Cohesion: 0.13
-Nodes (10): Wrapper(), WrapperProps, BenefitBeltProps, BenefitItem, SectionBeforeAfterProps, SectionFeatureListProps, Metric, SectionMetricsProps (+2 more)
-
-### Community 18 - "Community 18"
-
-Cohesion: 0.18
-Nodes (12): ButtonCircle(), ButtonCircleProps, CarouselDots(), CarouselDotsProps, CarouselNavButtons(), CarouselNavButtonsProps, ProjectsCarouselClient(), Props (+4 more)
-
-### Community 19 - "Community 19"
-
-Cohesion: 0.20
-Nodes (14): getDownscaledImageDataFromUrl(), convertImageFileToWebp(), convertImageFileToWebpSmart(), ActiveTool, ConvertImageFileToWebpErrorMessages, ConvertImageFileToWebpSmartOptions, ConvertImageFileToWebpSmartResult, GetImageDataOptions (+6 more)
-
-### Community 20 - "Community 20"
+### Community 15 - "Community 15"
 
 Cohesion: 0.16
-Nodes (14): getCropRect(), exportCroppedImage(), ExportCroppedImageOptions, getMime(), createIcoFromPng(), createPngFromImage(), generateFaviconOutputs(), suggestFaviconFileName() (+6 more)
+Nodes (10): ProjectsData, Article, ArticlePreview, ContentBlock, FaqItem, Project, ProjectCategory, ProjectCTA (+2 more)
 
-### Community 21 - "Community 21"
-
-Cohesion: 0.18
-Nodes (9): AlignClasses, ButtonGroup(), ButtonGroupProps, CTABannerProps, HeroBannerProps, OUR_TOOLS_ICONS, WHY_FREE_ICONS, SectionInfo() (+1 more)
-
-### Community 23 - "Community 23"
-
-Cohesion: 0.17
-Nodes (8): UseWebpQueueOptions, UseWebpReportCopyLabels, UseWebpReportCopyOptions, createWebpQueueItems(), WebpQueueItem, WebpQueueItemStatus, revokeObjectUrl(), revokeObjectUrls()
-
-### Community 24 - "Community 24"
-
-Cohesion: 0.12
-Nodes (5): ButtonShimmer(), ImageEditorPanel(), SectionBox(), ToolPanelSkeleton(), ToolPanelSkeletonProps
-
-### Community 26 - "Community 26"
+### Community 16 - "Community 16"
 
 Cohesion: 0.18
-Nodes (9): ButtonCopy(), ButtonCopyProps, ButtonCopyVariant, variantClasses, ToolColorSwatchProps, CodeBlock(), CodeBlockProps, ShareBlock() (+1 more)
+Nodes (11): UseWebpConversionLabels, UseWebpConversionOptions, WebpAutoDownloadMode, convertImageFileToWebp(), convertImageFileToWebpSmart(), getWebpFileName(), ConvertImageFileToWebpErrorMessages, ConvertImageFileToWebpSmartOptions (+3 more)
 
-### Community 27 - "Community 27"
+### Community 17 - "Community 17"
+
+Cohesion: 0.13
+Nodes (14): ActivePanel, AvatarShape, AvatarSize, CopyStatus, DividerStyle, DividerWidth, SocialIconColorMode, SocialIconSettings (+6 more)
+
+### Community 19 - "Community 19"
 
 Cohesion: 0.22
 Nodes (9): ConversionQueueOptions, FORMAT_EXTENSION, FORMAT_LABELS, FORMAT_MIME, ConversionFile, ConversionFileStatus, ImageFormat, ImageFormatConverterProps (+1 more)
 
+### Community 20 - "Community 20"
+
+Cohesion: 0.26
+Nodes (12): checkAvifSupport(), convertImage(), ConvertImageOptions, decodeHeic(), decodeTiff(), encodeFromCanvas(), encodeGif(), encodeTiffFromCanvas() (+4 more)
+
+### Community 21 - "Community 21"
+
+Cohesion: 0.23
+Nodes (11): categoryCache, findArticleBySlug(), getAllArticlePreviews(), getCategoriesWithCount(), getPrimaryCategorySlug(), loadCategory(), previews, buildBlogCategoriesFromArticles() (+3 more)
+
+### Community 22 - "Community 22"
+
+Cohesion: 0.14
+Nodes (13): ContactFormBlock, FaqBlock, GapBlock, SectionBasicBlock, SectionDemoBlock, SectionInfoBlock, SectionStepsBlock, SectionTableBlock (+5 more)
+
+### Community 23 - "Community 23"
+
+Cohesion: 0.21
+Nodes (8): InputWithLabel(), InputWithLabelProps, InputWithLabelType, Props, Props, CtaRadiusOption, SignatureConfig, StyleConfig
+
+### Community 24 - "Community 24"
+
+Cohesion: 0.28
+Nodes (10): CopyOptions, CopyStatus, useCopyToClipboard(), TimeoutId, useTimeout(), canWriteTextToClipboard(), copyHtmlWithExecCommand(), copyTextToClipboard() (+2 more)
+
+### Community 25 - "Community 25"
+
+Cohesion: 0.21
+Nodes (9): UseWebpReportCopyLabels, UseWebpReportCopyOptions, buildWebpConversionReportCsv(), buildWebpConversionReportText(), escapeCsvValue(), WebpConversionCsvReportItem, WebpConversionReportItem, WebpConversionReportLabels (+1 more)
+
+### Community 27 - "Community 27"
+
+Cohesion: 0.20
+Nodes (7): JsonLd(), JsonLdProps, NavItem, SitemapPageClientProps, Breadcrumbs(), BreadcrumbsProps, Crumb
+
 ### Community 28 - "Community 28"
-
-Cohesion: 0.23
-Nodes (8): TextStyleRow(), TextStyleRowProps, Input(), InputColor(), InputColorProps, InputColorWithLabel(), InputColorWithLabelProps, TextElementKey
-
-### Community 29 - "Community 29"
-
-Cohesion: 0.18
-Nodes (8): InputCheckboxWithLabel(), InputCheckboxWithLabelProps, SelectWithLabelProps, AppearancePanel(), Props, ThemePreset, BorderSides, FontSizeOption
-
-### Community 30 - "Community 30"
-
-Cohesion: 0.23
-Nodes (6): buildVCardString(), escapeVCard(), EmailData, QrDataType, QrOptions, VCardData
-
-### Community 31 - "Community 31"
-
-Cohesion: 0.24
-Nodes (8): Badge(), BadgeProps, sizeClasses, variantClasses, useFileDropzone(), UseFileDropzoneOptions, FileDropzone(), FileDropzoneProps
-
-### Community 32 - "Community 32"
 
 Cohesion: 0.27
 Nodes (7): UseWebpDownloadsOptions, concatChunks(), crc32(), CRC32_TABLE, createZipBlob(), normalizePath(), ZipFileInput
 
-### Community 33 - "Community 33"
+### Community 29 - "Community 29"
 
-Cohesion: 0.20
-Nodes (6): DividerProps, DividerSize, HEIGHT_BY_SIZE, faqItems, metadata, schema
+Cohesion: 0.24
+Nodes (8): ToolFieldRow(), ToolFieldRowProps, FORMATS, LENGTHS, LoremIpsumGenerator(), MODES, STYLES, stripHtmlTags()
 
-### Community 34 - "Community 34"
+### Community 30 - "Community 30"
 
-Cohesion: 0.31
-Nodes (7): buildWebpConversionReportCsv(), buildWebpConversionReportText(), escapeCsvValue(), WebpConversionCsvReportItem, WebpConversionReportItem, WebpConversionReportLabels, formatBytes()
+Cohesion: 0.22
+Nodes (5): alternates, LOCALE, metadata, ServiceSchema, toAbsoluteImageUrl()
 
-### Community 35 - "Community 35"
+### Community 31 - "Community 31"
 
-Cohesion: 0.32
-Nodes (4): ProjectsCarousel(), Props, getAllProjectPreviews(), ProjectsData
+Cohesion: 0.28
+Nodes (7): InputCheckboxWithLabel(), InputCheckboxWithLabelProps, pairs(), Props, SOCIAL_FIELDS, SocialPanel(), SocialKey
 
-### Community 36 - "Community 36"
+### Community 32 - "Community 32"
 
 Cohesion: 0.29
 Nodes (7): getSocialIcon(), getSocialIconDataUrl(), ICON_SIZES, PLATFORM_COLORS, SOCIAL_ICONS, IconSize, SocialPlatform
 
-### Community 37 - "Community 37"
+### Community 33 - "Community 33"
 
 Cohesion: 0.32
-Nodes (4): Textarea(), TextareaWithLabelProps, LegalPanel(), Props
+Nodes (6): Callback, useDebouncedEffect(), UseDebouncedEffectOptions, useSearch(), UseSearchOptions, UseSearchReturn
 
-### Community 38 - "Community 38"
+### Community 34 - "Community 34"
 
 Cohesion: 0.29
 Nodes (6): FORMAT_EXT, FORMAT_LABELS, FORMAT_MIME, OutputImageFormat, PdfPageFile, PdfToImageConverterProps
 
-### Community 40 - "Community 40"
+### Community 35 - "Community 35"
 
-Cohesion: 0.36
-Nodes (4): ContentSkeleton(), SectionInfoSkeleton(), ToolPageSkeletonProps, ToolPanelVariant
+Cohesion: 0.32
+Nodes (6): getArticlePreviewsByCategory(), buildServiceSchema(), FAQ_ITEMS, metadata, ServiceSchema(), TworzenieStronWordPressPage()
 
-### Community 41 - "Community 41"
+### Community 37 - "Community 37"
+
+Cohesion: 0.29
+Nodes (3): ContentSkeleton(), FaqSkeletonProps, ToolPageSkeletonProps
+
+### Community 38 - "Community 38"
 
 Cohesion: 0.29
 Nodes (6): alignClasses, gapClasses, IconText(), IconTextAlign, IconTextGap, IconTextProps
 
-### Community 42 - "Community 42"
+### Community 39 - "Community 39"
 
 Cohesion: 0.33
 Nodes (5): ACCEPT_MIME, FORMAT_LABELS, ImageFormat, ImageToPdfConverterProps, PdfQueueFile
 
-### Community 43 - "Community 43"
-
-Cohesion: 0.33
-Nodes (6): resolveGridVariant(), SectionStepItem, SectionSteps(), SectionStepsGridClasses, SectionStepsGridVariants, SectionStepsProps
-
-### Community 44 - "Community 44"
-
-Cohesion: 0.29
-Nodes (4): alternates, LOCALE, metadata, toAbsoluteImageUrl()
-
-### Community 45 - "Community 45"
+### Community 40 - "Community 40"
 
 Cohesion: 0.48
 Nodes (5): analyzeField(), analyzeMetaDescription(), analyzeMetaTitle(), countWords(), measureTextWidth()
 
-### Community 46 - "Community 46"
+### Community 41 - "Community 41"
 
-Cohesion: 0.38
-Nodes (5): RelatedUnitConverters(), RelatedUnitConvertersProps, UnitFieldRef, unitId(), unitLabel()
+Cohesion: 0.40
+Nodes (3): InputColor(), InputColorProps, InputColorWithLabelProps
 
-### Community 47 - "Community 47"
-
-Cohesion: 0.47
-Nodes (4): exportSignatureAsHtml(), downloadBlob(), DownloadBlobOptions, downloadFromUrl()
-
-### Community 48 - "Community 48"
+### Community 42 - "Community 42"
 
 Cohesion: 0.40
 Nodes (4): InputRange(), InputRangeProps, InputRangeWithLabel(), InputRangeWithLabelProps
 
+### Community 43 - "Community 43"
+
+Cohesion: 0.60
+Nodes (3): useDialogFocus(), useFocusTrap(), useRestoreFocus()
+
+### Community 44 - "Community 44"
+
+Cohesion: 0.47
+Nodes (4): Handler, useEscapeKey(), AnyEventListener, useEventListener()
+
+### Community 45 - "Community 45"
+
+Cohesion: 0.53
+Nodes (5): createIcoFromPng(), createPngFromImage(), generateFaviconOutputs(), suggestFaviconFileName(), FaviconOutputFile
+
+### Community 47 - "Community 47"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 48 - "Community 48"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
 ### Community 49 - "Community 49"
 
-Cohesion: 0.33
-Nodes (4): UseWebpConversionLabels, UseWebpConversionOptions, WebpAutoDownloadMode, getWebpFileName()
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 50 - "Community 50"
 
-Cohesion: 0.33
-Nodes (5): Entry, SizeClass, TableOfContents(), TableOfContentsProps, widthClass
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 51 - "Community 51"
 
-Cohesion: 0.33
-Nodes (4): BentoItem, BentoItemSize, BentoItemSizeClasses, SectionBentoProps
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 52 - "Community 52"
 
-Cohesion: 0.33
-Nodes (4): siteUrl, faqItems, metadata, schema
+Cohesion: 0.40
+Nodes (3): metadata, alternates, LOCALE
 
 ### Community 53 - "Community 53"
 
@@ -396,7 +424,7 @@ Nodes (3): alternates, LOCALE, metadata
 ### Community 56 - "Community 56"
 
 Cohesion: 0.40
-Nodes (3): metadata, alternates, LOCALE
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 57 - "Community 57"
 
@@ -446,32 +474,37 @@ Nodes (3): alternates, LOCALE, metadata
 ### Community 66 - "Community 66"
 
 Cohesion: 0.40
-Nodes (3): faqItems, metadata, schema
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 67 - "Community 67"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 68 - "Community 68"
 
 Cohesion: 0.40
-Nodes (3): faqItems, metadata, schema
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 69 - "Community 69"
 
-Cohesion: 0.40
-Nodes (3): alternates, LOCALE, metadata
+Cohesion: 0.60
+Nodes (3): Params, useCarouselScroller(), useMediaQuery()
 
 ### Community 70 - "Community 70"
 
 Cohesion: 0.40
-Nodes (4): FeatureGrid(), FeatureGridProps, FeatureItem, GRID_CLASSES
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 71 - "Community 71"
 
 Cohesion: 0.40
-Nodes (3): alternates, LOCALE, metadata
+Nodes (3): faqItems, metadata, schema
 
 ### Community 72 - "Community 72"
 
 Cohesion: 0.40
-Nodes (3): faqItems, metadata, schema
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 73 - "Community 73"
 
@@ -481,7 +514,7 @@ Nodes (3): alternates, LOCALE, metadata
 ### Community 74 - "Community 74"
 
 Cohesion: 0.40
-Nodes (3): SectionStarRatingProps, SectionStarRatingSize, SectionStarRatingSizeClasses
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 75 - "Community 75"
 
@@ -496,7 +529,7 @@ Nodes (3): alternates, LOCALE, metadata
 ### Community 77 - "Community 77"
 
 Cohesion: 0.40
-Nodes (3): faqItems, metadata, schema
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 78 - "Community 78"
 
@@ -521,44 +554,104 @@ Nodes (3): alternates, LOCALE, metadata
 ### Community 82 - "Community 82"
 
 Cohesion: 0.40
-Nodes (4): ConsentValue, GIFEncoderInstance, TurndownPlugin, Window
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 83 - "Community 83"
 
 Cohesion: 0.40
 Nodes (3): alternates, LOCALE, metadata
 
+### Community 84 - "Community 84"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 85 - "Community 85"
+
+Cohesion: 0.40
+Nodes (3): SectionStarRatingProps, SectionStarRatingSize, SectionStarRatingSizeClasses
+
 ### Community 86 - "Community 86"
 
-Cohesion: 0.50
-Nodes (3): SectionDemo(), SectionDemoProps, Variant
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 87 - "Community 87"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
 
 ### Community 88 - "Community 88"
 
-Cohesion: 0.67
-Nodes (3): buildServiceSchema(), ServiceSchema, toAbsoluteUrl()
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 89 - "Community 89"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 90 - "Community 90"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 91 - "Community 91"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 92 - "Community 92"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 93 - "Community 93"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 94 - "Community 94"
+
+Cohesion: 0.40
+Nodes (4): ConsentValue, GIFEncoderInstance, TurndownPlugin, Window
+
+### Community 95 - "Community 95"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 96 - "Community 96"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
+
+### Community 97 - "Community 97"
+
+Cohesion: 0.40
+Nodes (3): alternates, LOCALE, metadata
 
 ## Knowledge Gaps
 
-- **350 isolated node(s):** `defaultCTA`, `FlowBlock`, `NavItem`, `SitemapPageClientProps`, `LOCALE` (+345 more)
+- **386 isolated node(s):** `SitemapPageClientProps`, `metadata`, `Project`, `GRAPHIC_SERVICES_SOURCE`, `GRAPHIC_SERVICES` (+381 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 7` to `Community 1`, `Community 3`, `Community 4`, `Community 5`, `Community 8`, `Community 9`, `Community 10`, `Community 11`, `Community 12`, `Community 13`, `Community 14`, `Community 15`, `Community 17`, `Community 18`, `Community 21`, `Community 24`, `Community 26`, `Community 28`, `Community 29`, `Community 37`, `Community 41`, `Community 43`, `Community 46`, `Community 48`, `Community 50`, `Community 51`, `Community 70`, `Community 74`, `Community 86`, `Community 87`, `Community 89`?**
-  _High betweenness centrality (0.298) - this node is a cross-community bridge._
-- **Why does `toAbsoluteUrl()` connect `Community 88` to `Community 8`, `Community 9`, `Community 33`, `Community 44`, `Community 52`, `Community 53`, `Community 54`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 68`, `Community 69`, `Community 71`, `Community 72`, `Community 73`, `Community 75`, `Community 76`, `Community 77`, `Community 78`, `Community 79`, `Community 80`, `Community 81`, `Community 83`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
-- **Why does `Card()` connect `Community 10` to `Community 2`, `Community 3`, `Community 6`, `Community 7`, `Community 43`, `Community 11`, `Community 14`, `Community 50`, `Community 22`, `Community 24`, `Community 26`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `cn()` (e.g. with `Aspect()` and `PaletteExtractor()`) actually correct?**
-  _`cn()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 18 inferred relationships involving `getToolDataBySlug()` (e.g. with `generateMetadata()` and `Page()`) actually correct?**
-  _`getToolDataBySlug()` has 18 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 9 inferred relationships involving `getAllToolSlugs()` (e.g. with `generateStaticParams()` and `generateStaticParams()`) actually correct?**
-  _`getAllToolSlugs()` has 9 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `defaultCTA`, `FlowBlock`, `NavItem` to the rest of the system?**
-  _350 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `cn()` connect `Community 11` to `Community 35`, `Community 5`, `Community 38`, `Community 102`, `Community 6`, `Community 41`, `Community 42`, `Community 37`, `Community 85`, `Community 27`, `Community 29`, `Community 30`?**
+  _High betweenness centrality (0.074) - this node is a cross-community bridge._
+- **Why does `toAbsoluteUrl()` connect `Community 1` to `Community 3`, `Community 5`, `Community 9`, `Community 30`, `Community 35`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 52`, `Community 53`, `Community 54`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 74`, `Community 75`, `Community 76`, `Community 77`, `Community 78`, `Community 79`, `Community 80`, `Community 81`, `Community 82`, `Community 83`, `Community 84`, `Community 86`, `Community 87`, `Community 88`, `Community 89`, `Community 90`, `Community 91`, `Community 92`, `Community 93`, `Community 95`, `Community 96`, `Community 97`?**
+  _High betweenness centrality (0.051) - this node is a cross-community bridge._
+- **Why does `Wrapper()` connect `Community 5` to `Community 1`, `Community 9`, `Community 11`, `Community 13`, `Community 145`, `Community 27`, `Community 30`, `Community 35`, `Community 49`, `Community 65`, `Community 70`, `Community 71`, `Community 77`, `Community 79`, `Community 80`, `Community 81`, `Community 82`, `Community 83`, `Community 97`, `Community 102`?**
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+- **Are the 30 inferred relationships involving `getToolDataBySlug()` (e.g. with `generateMetadata()` and `Page()`) actually correct?**
+  _`getToolDataBySlug()` has 30 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 15 inferred relationships involving `getAllToolSlugs()` (e.g. with `generateStaticParams()` and `generateStaticParams()`) actually correct?**
+  _`getAllToolSlugs()` has 15 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `SitemapPageClientProps`, `metadata`, `Project` to the rest of the system?**
+  _386 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.06169772256728778 - nodes in this community are weakly interconnected._

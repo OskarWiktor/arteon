@@ -1,4 +1,3 @@
-import { cn } from '@/lib/clsx';
 import { flexCenterClasses } from '@/lib/uiClasses';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 
@@ -12,8 +11,8 @@ export default function BreadcrumbsSkeleton({
   const isCompact = size === 'compact';
 
   return (
-    <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
-      <div className={isCompact ? cn('py-3', flexCenterClasses) : 'py-6'}>
+    <div className='m-auto w-[94%] max-w-405'>
+      <div className={isCompact ? flexCenterClasses : 'py-2 md:py-6'}>
         <div className='flex items-center gap-2 text-sm'>
           <Shimmer className='h-4 w-8' />
           <span className='text-neutral-300'>/</span>

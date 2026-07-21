@@ -1,15 +1,19 @@
+import Divider from '@/components/atoms/Divider';
+
 interface GapSkeletonProps {
   variant?: 'line' | 'space';
 }
 
+/**
+ * Section spacer for skeletons. Delegates to the real {@link Divider} so the
+ * vertical rhythm between skeleton sections matches the loaded page exactly:
+ * `line` renders the medium divider with its hairline, `space` renders the
+ * smaller blank spacer used at the top/bottom of content areas.
+ */
 export default function GapSkeleton({ variant = 'line' }: GapSkeletonProps) {
   if (variant === 'line') {
-    return (
-      <div className='relative my-20 h-px w-full md:my-28'>
-        <div className='h-px w-full bg-neutral-200' />
-      </div>
-    );
+    return <Divider size='md' line />;
   }
 
-  return <div className='my-16 md:my-24' />;
+  return <Divider size='sm' />;
 }
