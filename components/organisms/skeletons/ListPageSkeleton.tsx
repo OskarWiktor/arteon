@@ -1,10 +1,23 @@
+import Divider from '@/components/atoms/Divider';
+import BenefitBeltSkeleton from './BenefitBeltSkeleton';
 import CardGridSkeleton from './CardGridSkeleton';
 import CTABannerSkeleton from './CTABannerSkeleton';
-import DividerSkeleton from './GapSkeleton';
 import HeroBannerSkeleton from './HeroBannerSkeleton';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 
 interface ListPageSkeletonProps {
   variant?: 'article' | 'project';
+}
+
+/** Placeholder for the filter toolbar shown above the listing grid. */
+function FiltersSkeleton() {
+  return (
+    <div className='mb-6 flex flex-wrap gap-3'>
+      {['w-20', 'w-24', 'w-16', 'w-24', 'w-16'].map((width, i) => (
+        <Shimmer key={i} className={`h-9 ${width}`} />
+      ))}
+    </div>
+  );
 }
 
 export default function ListPageSkeleton({
@@ -13,10 +26,12 @@ export default function ListPageSkeleton({
   return (
     <>
       <HeroBannerSkeleton />
-      <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
-        <DividerSkeleton variant='space' />
-        <CardGridSkeleton count={6} cols={3} variant={variant} />
-        <DividerSkeleton variant='space' />
+      <BenefitBeltSkeleton />
+      <div className='m-auto w-[94%] max-w-405'>
+        <Divider size='xs' />
+        <FiltersSkeleton />
+        <CardGridSkeleton count={6} variant={variant} />
+        <Divider size='sm' />
       </div>
       <CTABannerSkeleton />
     </>

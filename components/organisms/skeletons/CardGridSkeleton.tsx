@@ -1,40 +1,30 @@
 import { cn } from '@/lib/clsx';
-import Shimmer from '../../atoms/skeletons/Shimmer';
-import Card from '../Card';
+import { columnGapClasses } from '@/lib/uiClasses';
+import CarouselCardSkeleton from './CarouselCardSkeleton';
 
 interface CardGridSkeletonProps {
   count?: number;
-  cols?: 2 | 3;
   variant?: 'article' | 'project';
 }
 
+/**
+ * Skeleton for the article/project listing grids (`/edukacja`, `/realizacje`).
+ * Uses the same dark card placeholder and column gap as the loaded grids, and
+ * the matching responsive column counts: projects go 1→3, articles 1→2→3.
+ */
 export default function CardGridSkeleton({
   count = 6,
-  cols = 3,
   variant = 'article',
 }: CardGridSkeletonProps) {
-  const gridClass =
-    cols === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3';
-  const isProject = variant === 'project';
-  const imageAspect = isProject ? 'aspect-[5/3]' : 'aspect-[16/10]';
+  const gridColumns =
+    variant === 'project'
+      ? 'grid-cols-1 md:grid-cols-3'
+      : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
 
   return (
-    <div className={cn('grid gap-6', gridClass)}>
+    <div className={cn('grid auto-rows-max', gridColumns, columnGapClasses)}>
       {Array.from({ length: count }).map((_, i) => (
-        <Card key={i} interactive={false} variant='outlined'>
-          <Shimmer className={cn(imageAspect, 'w-full bg-neutral-300!')} />
-          <div className='space-y-3 px-6 py-4 md:px-7 md:py-5'>
-            <Shimmer className='h-5 w-3/4' />
-            <Shimmer className='h-3.5 w-full' />
-            <Shimmer className='h-3.5 w-5/6' />
-            {isProject && (
-              <>
-                <div className='h-px w-full bg-neutral-200' />
-                <Shimmer className='h-8 w-36' />
-              </>
-            )}
-          </div>
-        </Card>
+        <CarouselCardSkeleton key={i} variant={variant} />
       ))}
     </div>
   );

@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_proje_documents_github_arteon_vercel_json",
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "arteon_vercel_github",
+      "label": "github",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "arteon_vercel_github_silent",
+      "label": "silent",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "arteon_vercel_redirects",
+      "label": "redirects",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "arteon_vercel_headers",
+      "label": "headers",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L172"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_proje_documents_github_arteon_vercel_json",
+      "target": "arteon_vercel_github",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "arteon_vercel_github",
+      "target": "arteon_vercel_github_silent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_vercel_json",
+      "target": "arteon_vercel_redirects",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_proje_documents_github_arteon_vercel_json",
+      "target": "arteon_vercel_headers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L172",
+      "weight": 1.0
+    }
+  ]
+}
