@@ -55,6 +55,9 @@ const LazyBase64 = dynamic(() => import('./Base64Converter'), {
 const LazyUnit = dynamic(() => import('./UnitConverter'), {
   loading: L,
 });
+const LazyDataSize = dynamic(() => import('./DataSizeConverter'), {
+  loading: L,
+});
 
 interface ImgCfg {
   s: ImageFormat;
@@ -262,6 +265,8 @@ export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
 
   const b64Mode = B64[key];
   if (b64Mode) return <LazyBase64 mode={b64Mode} />;
+
+  if (key === 'dataSizeConverter') return <LazyDataSize />;
 
   if (UNIT_KEYS.has(key)) return <LazyUnit toolKey={key as ToolItemKey} />;
 

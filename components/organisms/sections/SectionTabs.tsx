@@ -62,25 +62,25 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
           ))}
         </div>
 
-        <div
-          id={`tabpanel-${autoId}-${activeTab}`}
-          role='tabpanel'
-          aria-labelledby={`tab-${autoId}-${activeTab}`}
-          className='border border-neutral-200 bg-white p-6'
-        >
-          {/* Keyed by activeTab so the entrance animation replays on each
-              switch, giving a soft cross-fade between tab contents. */}
+        {/* Każdy panel jest w DOM-ie, nieaktywne mają atrybut `hidden`. Renderowanie
+            tylko aktywnej zakładki zostawiało treść pozostałych wyłącznie w payloadzie
+            RSC, więc roboty jej nie widziały. To też wzorzec zalecany przez WAI-ARIA. */}
+        {tabs.map((tab, index) => (
           <div
-            key={activeTab}
-            className='animate-[fade-in_0.25s_ease-out_both]'
+            key={index}
+            id={`tabpanel-${autoId}-${index}`}
+            role='tabpanel'
+            aria-labelledby={`tab-${autoId}-${index}`}
+            hidden={activeTab !== index}
+            className='animate-[fade-in_0.25s_ease-out_both] border border-neutral-200 bg-white p-6'
           >
             <h3 className='h5 mb-3 flex items-center gap-2'>
-              {tabs[activeTab].icon}
-              {tabs[activeTab].title}
+              {tab.icon}
+              {tab.title}
             </h3>
-            <div className='text-light'>{tabs[activeTab].content}</div>
+            <div className='text-light'>{tab.content}</div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
