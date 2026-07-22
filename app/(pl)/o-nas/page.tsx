@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
@@ -107,8 +108,7 @@ export default function AboutPage() {
               description: (
                 <p>
                   Od pomysłu, przez logo i stronę WWW, aż po pozycjonowanie w
-                  Google czy własne narzędzia. Z nami zrealizujesz wszystko w
-                  jednym miejscu
+                  Google. Z nami zrealizujesz wszystko w jednym miejscu
                 </p>
               ),
             },
@@ -143,6 +143,76 @@ export default function AboutPage() {
             },
           ]}
         />
+
+        <Divider line />
+
+        <SectionBasic
+          title='Czym jeszcze się zajmujemy?'
+          variant='left'
+          imageSrc='/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp'
+          imageAlt='Darmowy generator stopki mailowej Arteon - podgląd narzędzia'
+        >
+          <p>
+            Oprócz wszelkich usług związanych z programowaniem, pozycjonowaniem,
+            marketingiem czy projektami graficznymi tworzymy w międzyczasie
+            międzynarodową{' '}
+            <Link href='/narzedzia' className='inline-link'>
+              platformę z narzędziami
+            </Link>
+            . Narzędzia te, są dla nas dodatkowym źródłem pozyskiwania klientów
+            oraz pokazem naszych możliwości w tworzeniu dedykowanych rozwiązań i
+            funkcjonalności, które są istotne dla każdego biznesu. Dzięki nim
+            możemy zaprezentować również nasze umiejętności w pozycjonowaniu -
+            nie tylko lokalnym czy krajowym ale tym najtrudniejszym, czyli
+            międzynarodowym.
+          </p>
+          <p className='mt-4'>
+            Jakie są to narzędzia? Tworzymy zarówno proste konwertery jednostek
+            jak i bardziej zaawansowane narzędzia, które wspierają właścicieli
+            firm w budowaniu profesjonalnego wizerunku np. przez budowę{' '}
+            <Link
+              href='/narzedzia/darmowy-generator-stopki-mailowej'
+              className='inline-link'
+            >
+              firmowych stopek mailowych
+            </Link>{' '}
+            a także takie które wspierają w pracy nas oraz innych, pracujących
+            nad designem czy stronami bazując na własnych doświadczeniach. Z
+            naszego{' '}
+            <Link
+              href='/narzedzia/generator-palet-kolorow'
+              className='inline-link'
+            >
+              generatora palet kolorystycznych
+            </Link>{' '}
+            czy z{' '}
+            <Link
+              href='/narzedzia/konwerter-jpg-na-webp'
+              className='inline-link'
+            >
+              konwerterów obrazu do webp
+            </Link>{' '}
+            korzystamy dosłownie codziennie.
+          </p>
+          <p className='mt-4'>
+            A skąd w ogóle taki pomysł? Widzimy, że znacząca część narzędzi
+            internetowych jest okropnie przestarzała - ładują się one bardzo
+            wolno, wymagają kliknięcia kilku przycisków aby dokonać prostego
+            przeliczenia, mają agresywne reklamy w postaci wyskakujących okien
+            czy po prostu wyglądają bardzo nieestetycznie, jak sprzed dekady, bo
+            de facto sprzed dekady są. W dobie rozwoju AI uważamy to za co
+            najmniej nieporozumienie - tu mamy sztuczną inteligencję a ty
+            kalkulator kilometrów na metry, który ładuje się 10 minut i wymaga
+            dwóch kliknięć.
+          </p>
+          <p className='mt-4'>
+            Kolejna kwestia jest taka, że większość narzędzi jest rozsiana po
+            dziesiątkach domen i ciężko je wszystkie zapamiętać, dlatego też
+            chcemy aby nasza platforma miała wszystko w jednym miejscu. I też,
+            nie ma co ukrywać, dają nam one dodatkowy pasywny dochód z AdSense,
+            który pozwala na większą stabilność całego biznesu.
+          </p>
+        </SectionBasic>
 
         <Divider line />
 
