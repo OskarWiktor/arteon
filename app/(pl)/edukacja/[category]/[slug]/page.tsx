@@ -360,7 +360,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
             <>
               <div
                 key={`grp-ad-${i}`}
-                className='not-prose my-8 flex justify-center'
+                className='not-prose my-2 flex justify-center md:my-6'
               >
                 <AdSense variant='responsive' />
               </div>
