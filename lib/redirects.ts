@@ -100,6 +100,13 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
     '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
   '/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej':
     '/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej',
+  // Artykuł o wyszukiwarkach: tytuł zmieniony z "30 najpopularniejszych" na
+  // "12 najpopularniejszych + 18 alternatyw", bo twarde dane o zasięgu istnieją
+  // tylko dla pierwszej dwunastki. Oba wcześniejsze slugi były live.
+  '/edukacja/seo/30-najpopularniejszych-wyszukiwarek-internetowych-w-2026-roku':
+    '/edukacja/seo/najpopularniejsze-wyszukiwarki-internetowe-i-alternatywy',
+  '/edukacja/seo/najpopularniejsze-wyszukiwarki-internetowe':
+    '/edukacja/seo/najpopularniejsze-wyszukiwarki-internetowe-i-alternatywy',
 };
 
 /**
