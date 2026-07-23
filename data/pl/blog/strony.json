@@ -30,7 +30,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Skąd biorą się błędy 404?</h2><p>Błąd 404 pojawia się w kilku sytuacjach. Żeby zrozumieć, czy wymaga reakcji, trzeba najpierw wiedzieć, skąd się wziął.</p><br/><h3 class='h5 mb-3 mt-4'>Strona została usunięta lub przeniesiona</h3><p>Gdy usuwasz stronę ze swojej witryny lub zmieniasz jej adres, wszystkie linki prowadzące do starego adresu przestają działać. Dotyczy to <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linków wewnętrznych</a>, linków z zewnętrznych serwisów, zakładek użytkowników i wyników wyszukiwania Google.</p><br/><p>Rozwiązanie: przekierowanie 301. To ustawienie, które mówi przeglądarce i Google: ta strona jest teraz pod innym adresem. Przeglądarka automatycznie przenosi użytkownika w nowe miejsce.</p><br/><h3 class='h5 mb-3 mt-4'>Literówka w adresie</h3><p>Użytkownik może błędnie wpisać adres w pasku przeglądarki. Może też kliknąć link, który ktoś źle skopiował. W obu przypadkach żądanie trafia pod adres, który nigdy nie istniał.</p><br/><h3 class='h5 mb-3 mt-4'>Zmiana struktury witryny</h3><p>Przy redesignie, zmianie systemu (np. z WordPress na inny CMS) lub reorganizacji treści często zmieniają się adresy URL. Jeśli nowa struktura nie uwzględnia przekierowań ze starych adresów, wszystkie historyczne linki przestają działać. </p><br/><h3 class='h5 mb-3 mt-4'>Wycofany produkt w sklepie</h3><p>W sklepach internetowych usunięcie produktu z katalogu powoduje błąd 404 na jego stronie. Jeśli produkt był linkowany z innych stron, kampanii reklamowych lub wyników wyszukiwania, użytkownicy trafią na błąd. </p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Skąd biorą się błędy 404?</h2><p>Błąd 404 pojawia się w kilku sytuacjach. Żeby zrozumieć, czy wymaga reakcji, trzeba najpierw wiedzieć, skąd się wziął.</p><br/><h3 class='h5 mb-3 mt-4'>Strona została usunięta lub przeniesiona</h3><p>Gdy usuwasz stronę ze swojej witryny lub zmieniasz jej adres, wszystkie linki prowadzące do starego adresu przestają działać. Dotyczy to linków wewnętrznych, linków z zewnętrznych serwisów, zakładek użytkowników i wyników wyszukiwania Google.</p><br/><p>Rozwiązanie: przekierowanie 301. To ustawienie, które mówi przeglądarce i Google: ta strona jest teraz pod innym adresem. Przeglądarka automatycznie przenosi użytkownika w nowe miejsce.</p><br/><h3 class='h5 mb-3 mt-4'>Literówka w adresie</h3><p>Użytkownik może błędnie wpisać adres w pasku przeglądarki. Może też kliknąć link, który ktoś źle skopiował. W obu przypadkach żądanie trafia pod adres, który nigdy nie istniał.</p><br/><h3 class='h5 mb-3 mt-4'>Zmiana struktury witryny</h3><p>Przy redesignie, zmianie systemu (np. z WordPress na inny CMS) lub reorganizacji treści często zmieniają się adresy URL. Jeśli nowa struktura nie uwzględnia przekierowań ze starych adresów, wszystkie historyczne linki przestają działać. </p><br/><h3 class='h5 mb-3 mt-4'>Wycofany produkt w sklepie</h3><p>W sklepach internetowych usunięcie produktu z katalogu powoduje błąd 404 na jego stronie. Jeśli produkt był linkowany z innych stron, kampanii reklamowych lub wyników wyszukiwania, użytkownicy trafią na błąd. </p>",
           "breakAfter": true
         },
         {
@@ -117,108 +117,6 @@
       ]
     },
     {
-      "slug": "dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa",
-      "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?",
-      "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Dlaczego aktualizacje są tak ważne? Co się dzieje, gdy strona pozostaje nieaktualna? I na co zwrócić uwagę przy utrzymaniu witryny?",
-      "primaryCategory": "Strony",
-      "seo": {
-        "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa? - Arteon",
-        "description": "Regularne aktualizacje WordPressa, wtyczek i motywów chronią stronę przed atakami. Mechanizmy zagrożeń i dobre praktyki utrzymania.",
-        "canonical": "https://www.arteonagency.pl/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa"
-      },
-      "cover": "/assets/blog/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa.webp",
-      "author": {
-        "name": "Arteon"
-      },
-      "datePublished": "2026-01-01",
-      "dateModified": "2026-02-27",
-      "readingTime": 11,
-      "contentBlocks": [
-        {
-          "type": "richtext",
-          "html": "<p>WordPress to najpopularniejszy system do tworzenia stron na świecie. Wg danych <a class='underline' href='https://w3techs.com/technologies/details/cm-wordpress' target='_blank' rel='noopener noreferrer'>W3Techs</a> napędza ponad 43% wszystkich witryn. Tak duża skala sprawia, że WordPress jest częstym celem ataków.</p><br/><p>Większość włamań nie wynika z błędów w samym systemie. Powodem są nieaktualne wtyczki, motywy i wersje rdzenia. Wg raportu <a class='underline' href='https://sucuri.net/reports/2023-hacked-website-report/' target='_blank' rel='noopener noreferrer'>Sucuri</a> z 2023 roku prawie 40% zhakowanych stron WordPress miało nieaktualne oprogramowanie w chwili ataku.</p><br/><p>W tym artykule opisujemy, dlaczego warto aktualizować WordPress na bieżąco. Pokazujemy, co grozi stronie bez aktualizacji i jak bezpiecznie wdrażać nowe wersje.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak działają aktualizacje WordPressa?</h2><p>WordPress składa się z trzech części: rdzenia (core), motywów i wtyczek. Każda z nich jest aktualizowana osobno. Każda może też zawierać luki w ochronie.</p><br/><h3 class='h5 mb-3 mt-4'>Rdzeń WordPressa</h3><p>Rdzeń to główny kod systemu. Obsługuje logowanie, treści, media i inne ważne funkcje. Zespół WordPress wydaje dwa typy aktualizacji:</p><br/><ul class='list-disc ml-5'><li><strong>Aktualizacje główne</strong> (np. 6.4, 6.5) - dodają nowe funkcje i zmiany w interfejsie. Wychodzą kilka razy w roku.</li><li><strong>Aktualizacje ochrony</strong> (np. 6.4.1, 6.4.2) - naprawiają wykryte luki i błędy. Wychodzą w miarę potrzeb, czasem kilka w miesiącu.</li></ul><br/><p>Od wersji 3.7 WordPress sam instaluje poprawki ochrony dla rdzenia. Aktualizacje główne wymagają ręcznej decyzji.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego wiele stron WordPress pozostaje nieaktualnych?</h2><p>Strony pozostają nieaktualne z kilku powodów.</p><br/><h3 class='h5 mb-3 mt-4'>Brak świadomości</h3><p>Wielu właścicieli stron nie wie, że WordPress wymaga stałych aktualizacji. Strona działa i wygląda dobrze. Wydaje się, że wszystko jest w porządku. Luki w ochronie nie są widoczne na co dzień.</p><br/><h3 class='h5 mb-3 mt-4'>Obawa przed awarią</h3><p>Aktualizacje mogą wywoływać konflikty. Dzieje się tak zwłaszcza wtedy, gdy strona korzysta z wielu wtyczek lub ma własne zmiany w kodzie. Właściciele boją się, że po aktualizacji coś przestanie działać. Dlatego warto się przygotować: zrobić kopię zapasową i przetestować zmiany na środowisku testowym.</p><br/><h3 class='h5 mb-3 mt-4'>Brak czasu lub zasobów</h3><p>Dbanie o stronę wymaga stałej uwagi. Mała firma bez zespołu IT często odkłada aktualizacje na później. Regularne przeglądy pomagają uniknąć poważnych problemów w przyszłości.</p><br/><h3 class='h5 mb-3 mt-4'>Porzucone wtyczki</h3><p>Niektóre wtyczki nie są już rozwijane. Strona może działać poprawnie, ale wtyczka nie dostaje poprawek ochrony. Wtedy jedynym wyjściem jest zamiana na inną wtyczkę lub jej usunięcie.</p><br/><p>Jeśli opieka nad stroną WordPress zajmuje zbyt dużo czasu, warto rozważyć <a class='inline-link' href='/uslugi/optymalizacja-strony-wordpress'>profesjonalne utrzymanie witryny</a>. Pozwala to skupić się na prowadzeniu firmy.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Na co zwrócić uwagę przy aktualizacjach?</h2><p>Aktualizacja to nie tylko kliknięcie przycisku. Żeby zmniejszyć ryzyko problemów, warto trzymać się kilku zasad.</p><br/><h3 class='h5 mb-3 mt-4'>Backup przed każdą aktualizacją</h3><p><span data-tooltip='Backup (kopia zapasowa) to zapis wszystkich plików i bazy danych strony, pozwalający przywrócić ją do poprzedniego stanu.'>Backup</span> to podstawa. Przed każdą większą aktualizacją zrób pełną kopię zapasową strony (pliki + baza danych). Dotyczy to zwłaszcza aktualizacji rdzenia i ważnych wtyczek. Jeśli coś pójdzie nie tak, szybko wrócisz do działającej wersji.</p><br/><p>Wiele hostingów robi backupy za Ciebie. Sprawdź jednak, jak często je tworzy i jak długo je trzyma. Dobra praktyka to backup z ostatnich 24 godzin oraz dodatkowa kopia sprzed ostatniej dużej zmiany.</p><br/><h3 class='h5 mb-3 mt-4'>Środowisko stagingowe</h3><p>Dla ważnych stron firmowych warto mieć <span data-tooltip='Staging to kopia strony na osobnym serwerze, służąca do testowania zmian przed wdrożeniem na wersję produkcyjną.'>środowisko stagingowe</span>. To kopia strony, na której testujesz aktualizacje przed wdrożeniem na wersję główną. Dzięki temu wykryjesz problemy, zanim dotkną użytkowników.</p><br/><h3 class='h5 mb-3 mt-4'>Kolejność aktualizacji</h3><p>Gdy aktualizujesz wiele elementów naraz, zachowaj kolejność: najpierw wtyczki, potem motyw, na końcu rdzeń. Dzięki temu łatwiej znajdziesz źródło problemu. Niektórzy wolą odwrotną kolejność. Ważne, żeby aktualizować elementy po jednym i obserwować efekty.</p><br/><h3 class='h5 mb-3 mt-4'>Sprawdzenie po aktualizacji</h3><p>Po każdej aktualizacji przejrzyj najważniejsze elementy strony: czy strona główna się ładuje, czy formularze działają, czy koszyk (jeśli to sklep) pozwala na zakupy. Szybkie sprawdzenie może uchronić przed sytuacją, w której problem zostaje wykryty dopiero przez klienta. Więcej o weryfikacji strony przed i po zmianach znajdziesz w artykule o <a class='inline-link' href='/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony'>tym, co sprawdzić przed uruchomieniem strony</a>.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Automatyczne aktualizacje: za i przeciw</h2><p>WordPress pozwala włączyć automatyczne aktualizacje dla rdzenia, wtyczek i motywów. To wygodne, ale ma swoje wady i zalety.</p><br/><h3 class='h5 mb-3 mt-4'>Zalety automatycznych aktualizacji</h3><ul class='list-disc ml-5'><li><strong>Szybka reakcja na luki</strong> - poprawki ochrony są instalowane zaraz po wydaniu</li><li><strong>Mniej pracy</strong> - nie trzeba pamiętać o ręcznym sprawdzaniu</li><li><strong>Spójność</strong> - strona jest zawsze aktualna, bez zaległości</li></ul><br/><h3 class='h5 mb-3 mt-4'>Wady automatycznych aktualizacji</h3><ul class='list-disc ml-5'><li><strong>Ryzyko konfliktów</strong> - aktualizacja może zepsuć stronę bez wiedzy właściciela</li><li><strong>Brak kontroli</strong> - zmiany zachodzą bez wcześniejszego testu</li><li><strong>Problemy ze zgodnością</strong> - nowa wersja wtyczki może nie działać z motywem lub innymi wtyczkami</li></ul><br/><h3 class='h5 mb-3 mt-4'>Rekomendacja</h3><p>Dla prostych stron-wizytówek automatyczne aktualizacje to dobre wyjście. Korzyści z szybkiego łatania luk przeważają nad ryzykiem konfliktów. Dla sklepów lub stron z rozbudowanymi funkcjami lepsze jest inne podejście. Automatyczne poprawki ochrony rdzenia - tak. Ale wtyczki i motywy warto kontrolować ręcznie.</p><br/><p>Niezależnie od sposobu - regularne backupy są konieczne. Gdy automatyczna aktualizacja zepsuje stronę w nocy, szybko przywrócisz kopię zapasową.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dodatkowe warstwy ochrony</h2><p>Aktualizacje to fundament ochrony strony. Ale nie jedyny element. Warto wdrożyć dodatkowe środki, które chronią witrynę nawet gdy coś pójdzie nie tak.</p><br/><h3 class='h5 mb-3 mt-4'>Certyfikat SSL</h3><p>Certyfikat SSL szyfruje połączenie między przeglądarką a serwerem. Chroni dane z formularzy, logowania i płatności. Dziś SSL to standard. Przeglądarki oznaczają strony bez HTTPS jako niebezpieczne. Google uwzględnia SSL w rankingu. Więcej o tym znajdziesz w artykule o <a class='inline-link' href='/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje'>certyfikatach SSL</a>.</p><br/><h3 class='h5 mb-3 mt-4'>Silne hasła i dwuetapowa weryfikacja</h3><p>Wiele ataków na WordPress to próby odgadnięcia hasła przez boty. Silne, unikalne hasło i <span data-tooltip='Dwuetapowa weryfikacja (2FA) to dodatkowa warstwa ochrony - po wpisaniu hasła trzeba potwierdzić logowanie kodem z telefonu lub aplikacji.'>dwuetapowa weryfikacja</span> znacząco utrudniają dostęp osobom z zewnątrz.</p><br/><h3 class='h5 mb-3 mt-4'>Wtyczka ochrony</h3><p>Wtyczki takie jak Wordfence, Sucuri Security czy iThemes Security oferują dodatkowe funkcje. Wśród nich: <span data-tooltip='Firewall (zapora sieciowa) to system blokujący nieautoryzowany ruch sieciowy.'>firewall</span>, skanowanie złośliwego kodu, blokowanie podejrzanych IP i alerty o próbach włamania. Nie zastępują aktualizacji, ale tworzą kolejną warstwę ochrony.</p><br/><h3 class='h5 mb-3 mt-4'>Dobry hosting</h3><p>Hosting ma wpływ na ochronę strony. Dobry dostawca oferuje: izolację kont, automatyczne backupy, firewall na poziomie serwera i szybką reakcję na incydenty. Hosting współdzielony jest tańszy, ale daje mniej zabezpieczeń niż rozwiązania dedykowane.</p><br/><h3 class='h5 mb-3 mt-4'>Mniej wtyczek</h3><p>Każda wtyczka to możliwe źródło luk. Warto co jakiś czas przeglądać listę wtyczek i usuwać te, które nie są używane. Mniej wtyczek to mniejsza szansa na atak i łatwiejsze dbanie o stronę.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak sprawdzić, czy strona jest aktualna i bezpieczna?</h2><p>Nie masz pewności, w jakim stanie jest Twoja strona WordPress? Oto kilka kroków, które pomogą to ocenić.</p><br/><h3 class='h5 mb-3 mt-4'>Panel WordPress</h3><p>Zaloguj się do panelu (zwykle adres to twoja-domena.pl/wp-admin) i sprawdź:</p><ul class='list-disc ml-5'><li><strong>Kokpit</strong> - czy są alerty o nowych aktualizacjach</li><li><strong>Aktualizacje</strong> - ile wtyczek, motywów i wersji rdzenia czeka na wdrożenie</li><li><strong>Wtyczki</strong> - czy są nieaktywne wtyczki do usunięcia</li></ul><br/><h3 class='h5 mb-3 mt-4'>Narzędzia zewnętrzne</h3><p>Istnieją darmowe narzędzia, które skanują stronę pod kątem znanych problemów:</p><ul class='list-disc ml-5'><li><a class='underline' href='https://sitecheck.sucuri.net/' target='_blank' rel='noopener noreferrer'>Sucuri SiteCheck</a> - szuka złośliwego kodu i sprawdza status na czarnych listach</li><li><a class='underline' href='https://transparencyreport.google.com/safe-browsing/search' target='_blank' rel='noopener noreferrer'>Google Safe Browsing</a> - pokazuje, czy Google uznaje stronę za bezpieczną</li><li><strong>Google Search Console</strong> - sekcja Ochrona i ręczne działania pokazuje wykryte problemy</li></ul><br/><h3 class='h5 mb-3 mt-4'>Co zrobić, jeśli strona jest zaniedbana?</h3><p>Strona nie była aktualizowana od roku lub dłużej? Taka aktualizacja bywa ryzykowna. Duże skoki wersji (np. z WordPress 5.x do 6.x) mogą wywoływać konflikty. W takiej sytuacji warto:</p><ul class='list-disc ml-5'><li>Zrobić pełny backup przed zmianami</li><li>Przetestować aktualizację na środowisku stagingowym</li><li>Aktualizować stopniowo, element po elemencie</li><li>Rozważyć pomoc specjalisty, jeśli strona jest ważna dla firmy</li></ul><br/><p>Opieka nad WordPress wydaje się zbyt złożona lub czasochłonna? <a class='inline-link' href='/kontakt'>Skontaktuj się</a>. Zajmujemy się <a class='inline-link' href='/uslugi/optymalizacja-strony-wordpress'>utrzymaniem stron WordPress</a> - aktualizacjami, ochroną i szybką reakcją na problemy.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Regularne aktualizacje WordPressa, wtyczek i motywów to podstawa ochrony strony. Większość ataków celuje w znane luki w starym kodzie. Te luki zostały już naprawione w nowszych wersjach.</p><br/><p><strong>Kluczowe punkty:</strong></p><ul class='list-disc ml-5 mb-4'><li>Wg raportu <a class='underline' href='https://patchstack.com/whitepaper/state-of-wordpress-security-in-2025/' target='_blank' rel='noopener noreferrer'>Patchstack</a> z 2024 roku prawie 97% luk WordPress dotyczy wtyczek. Rdzeń i motywy stanowią niewielki procent. Wszystkie elementy wymagają aktualizacji.</li><li>Backup przed każdą aktualizacją to obowiązek. Pozwala szybko wrócić do działającej wersji.</li><li>Poprawki ochrony rdzenia instalują się automatycznie. Ale wtyczki i motywy warto kontrolować ręcznie.</li><li>Dodatkowe środki (SSL, silne hasła, wtyczka ochrony, dobry hosting) wzmacniają ochronę.</li><li>Mniej wtyczek to mniejsza szansa na atak.</li></ul><br/><p>Dbanie o stronę WordPress wymaga stałej uwagi. Wiele firm powierza to zadanie specjalistom. W Arteon <a class='inline-link' href='/uslugi/strony-internetowe-dla-firm'>tworzymy strony</a> i <a class='inline-link' href='/uslugi/optymalizacja-strony-wordpress'>zajmujemy się ich utrzymaniem</a>. Aktualizujemy, monitorujemy ochronę i szybko reagujemy na problemy. <a class='inline-link' href='/kontakt'>Skontaktuj się</a>, jeśli chcesz mieć pewność, że strona jest bezpieczna.</p>",
-          "breakAfter": true
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz pomocy z utrzymaniem WordPressa?",
-        "description": "Zajmujemy się optymalizacją i utrzymaniem stron WordPress - w tym regularnym aktualizowaniem, monitorowaniem bezpieczeństwa i reagowaniem na incydenty.",
-        "btnOne": "Optymalizacja WordPress",
-        "btnOneHref": "/uslugi/optymalizacja-strony-wordpress",
-        "btnTwo": "Skontaktuj się",
-        "btnTwoHref": "/kontakt",
-        "backgroundImage": "/assets/blog/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa.webp",
-        "overlay": "black"
-      },
-      "faq": [
-        {
-          "question": "Jak często powinno się aktualizować WordPressa?",
-          "answer": "Poprawki ochrony warto instalować jak najszybciej po wydaniu - najlepiej w ciągu kilku dni. Aktualizacje główne (nowe funkcje) można wdrażać wolniej, po sprawdzeniu zgodności z wtyczkami i motywem. Dobra praktyka to przegląd dostępnych aktualizacji co najmniej raz w tygodniu."
-        },
-        {
-          "question": "Czy aktualizacja może zepsuć stronę?",
-          "answer": "Tak. Aktualizacja może wywoływać konflikty, zwłaszcza gdy strona ma wiele wtyczek lub własne zmiany w kodzie. Dlatego przed każdą większą aktualizacją warto zrobić backup i przetestować zmiany na środowisku stagingowym. Ryzyko problemów jest jednak mniejsze niż ryzyko włamania na nieaktualną stronę."
-        },
-        {
-          "question": "Co zrobić, jeśli strona nie była aktualizowana przez rok lub dłużej?",
-          "answer": "Przy dużych zaległościach aktualizacja wymaga ostrożności. Najpierw zrób pełny backup (pliki + baza danych). Następnie stwórz kopię strony na środowisku testowym i tam przeprowadź aktualizacje. Aktualizuj stopniowo: najpierw wtyczki po jednej, potem motyw, na końcu rdzeń. Jeśli strona jest kluczowa dla firmy, rozważ pomoc specjalisty."
-        },
-        {
-          "question": "Czy automatyczne aktualizacje są bezpieczne?",
-          "answer": "Automatyczne poprawki ochrony rdzenia są domyślnie włączone. Są bezpieczne, bo naprawiają luki bez zmiany funkcji. Automatyczne aktualizacje wtyczek i motywów niosą większe ryzyko konfliktów. Dla prostych stron można je włączyć. Dla rozbudowanych stron lepsze jest ręczne wdrażanie z testem na stagingu."
-        },
-        {
-          "question": "Jak sprawdzić, czy moja strona WordPress jest bezpieczna?",
-          "answer": "Zaloguj się do panelu WordPress i sprawdź, czy są dostępne aktualizacje. Użyj darmowych narzędzi jak Sucuri SiteCheck lub Google Safe Browsing. Sprawdzą, czy strona nie jest zainfekowana lub na czarnej liście. W Google Search Console otwórz sekcję Ochrona i ręczne działania. Jeśli masz wątpliwości, warto zlecić audyt ochrony."
-        }
-      ]
-    },
-    {
       "slug": "kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie",
       "title": "Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?",
       "excerpt": "Kontrast kolorów decyduje o czytelności tekstu na stronie. Czym jest kontrast? Co oznaczają poziomy WCAG AA i AAA? Kto korzysta z dobrego kontrastu i jak sprawdzić kolory na swojej stronie?",
@@ -248,7 +146,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest kontrast kolorów i dlaczego ma znaczenie dla użytkowników?</h2><p>Kontrast kolorów to miara różnicy jasności między dwoma kolorami. Wyrażany jest jako stosunek - na przykład 4.5:1 lub 21:1. Skala idzie od 1:1 (brak kontrastu, np. biały tekst na białym tle - niewidoczny) do 21:1 (maksymalny kontrast, np. czarny tekst na czystej bieli). Im wyższa pierwsza liczba, tym większa różnica jasności i tym łatwiej odróżnić jeden kolor od drugiego.</p><br/><h3 class='h5 mb-3 mt-4'>Jak obliczany jest kontrast?</h3><p>Wytyczne WCAG używają pojęcia <abbr title='Relative luminance - względna jasność koloru w skali od 0 (czerń) do 1 (biel), uwzględniająca sposób, w jaki ludzkie oko postrzega różne długości fal światła' class='underline decoration-dotted cursor-help'>relative luminance</abbr> (względnej jasności). To wartość od 0 (czerń) do 1 (biel), która określa, jak jasny jest kolor z perspektywy ludzkiego oka. Wzór uwzględnia fakt, że oko różnie reaguje na czerwień, zieleń i niebieskość - zieleń postrzegamy jako jaśniejszą niż niebieskość przy tej samej intensywności.</p><br/><p>Współczynnik kontrastu oblicza się według wzoru: (L1 + 0.05) / (L2 + 0.05), gdzie L1 to jasność jaśniejszego koloru, a L2 ciemniejszego. Wartość 0.05 to korekta zapobiegająca dzieleniu przez zero i uwzględniająca rozproszenie światła na ekranach.</p><br/><p>Nie musisz znać tego wzoru, żeby sprawdzić kontrast - wystarczy użyć narzędzia takiego jak nasz <a class='inline-link' href='/narzedzia/kontrast-i-czytelnosc-kolorow'>tester kontrastu kolorów WCAG</a>, który oblicza wszystko automatycznie.</p><br/><h3 class='h5 mb-3 mt-4'>Dlaczego kontrast ma znaczenie?</h3><p>Strona restauracji z menu zapisanym jasnoszarym tekstem na białym tle może być czytelna dla osoby z dobrym wzrokiem, siedzącej w zacienionym pokoju przed wysokiej jakości monitorem. Ale dla kogoś, kto przegląda tę samą stronę na telefonie w pełnym słońcu, tekst może być praktycznie niewidoczny. A dla osoby z osłabionym wzrokiem - nieczytelny nawet w idealnych warunkach.</p><br/><p>Kontrast wpływa na:</p><br/><ul class='list-disc ml-5'><li><strong>Czytelność</strong> - użytkownik musi być w stanie przeczytać tekst bez wysiłku i bez mrużenia oczu</li><li><strong>Szybkość skanowania strony</strong> - dobry kontrast pozwala szybko znaleźć najważniejsze informacje, nagłówki i przyciski</li><li><strong>Dostępność</strong> - osoby z wadami wzroku, daltonizmem czy osłabionym wzrokiem mogą korzystać ze strony na równi z innymi</li><li><strong>Komfort długotrwałego użytkowania</strong> - słaby kontrast wymusza mrużenie oczu i powoduje szybsze zmęczenie wzroku</li><li><strong>Konwersję</strong> - jeśli użytkownik nie widzi przycisku lub nie może przeczytać ceny, nie dokona zakupu</li></ul><br/><p>O tym, jak kolory wpływają na decyzje użytkowników i ich emocje, piszemy szczegółowo w artykule <a class='inline-link' href='/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow'>jak kolorystyka wpływa na decyzje zakupowe klientów</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest kontrast kolorów i dlaczego ma znaczenie dla użytkowników?</h2><p>Kontrast kolorów to miara różnicy jasności między dwoma kolorami. Wyrażany jest jako stosunek - na przykład 4.5:1 lub 21:1. Skala idzie od 1:1 (brak kontrastu, np. biały tekst na białym tle - niewidoczny) do 21:1 (maksymalny kontrast, np. czarny tekst na czystej bieli). Im wyższa pierwsza liczba, tym większa różnica jasności i tym łatwiej odróżnić jeden kolor od drugiego.</p><br/><h3 class='h5 mb-3 mt-4'>Jak obliczany jest kontrast?</h3><p>Wytyczne WCAG używają pojęcia <abbr title='Relative luminance - względna jasność koloru w skali od 0 (czerń) do 1 (biel), uwzględniająca sposób, w jaki ludzkie oko postrzega różne długości fal światła' class='underline decoration-dotted cursor-help'>relative luminance</abbr> (względnej jasności). To wartość od 0 (czerń) do 1 (biel), która określa, jak jasny jest kolor z perspektywy ludzkiego oka. Wzór uwzględnia fakt, że oko różnie reaguje na czerwień, zieleń i niebieskość - zieleń postrzegamy jako jaśniejszą niż niebieskość przy tej samej intensywności.</p><br/><p>Współczynnik kontrastu oblicza się według wzoru: (L1 + 0.05) / (L2 + 0.05), gdzie L1 to jasność jaśniejszego koloru, a L2 ciemniejszego. Wartość 0.05 to korekta zapobiegająca dzieleniu przez zero i uwzględniająca rozproszenie światła na ekranach.</p><br/><p>Nie musisz znać tego wzoru, żeby sprawdzić kontrast - wystarczy użyć narzędzia takiego jak nasz <a class='inline-link' href='/narzedzia/kontrast-i-czytelnosc-kolorow'>tester kontrastu kolorów WCAG</a>, który oblicza wszystko automatycznie.</p><br/><h3 class='h5 mb-3 mt-4'>Dlaczego kontrast ma znaczenie?</h3><p>Strona restauracji z menu zapisanym jasnoszarym tekstem na białym tle może być czytelna dla osoby z dobrym wzrokiem, siedzącej w zacienionym pokoju przed wysokiej jakości monitorem. Ale dla kogoś, kto przegląda tę samą stronę na telefonie w pełnym słońcu, tekst może być praktycznie niewidoczny. A dla osoby z osłabionym wzrokiem - nieczytelny nawet w idealnych warunkach.</p><br/><p>Kontrast wpływa na:</p><br/><ul class='list-disc ml-5'><li><strong>Czytelność</strong> - użytkownik musi być w stanie przeczytać tekst bez wysiłku i bez mrużenia oczu</li><li><strong>Szybkość skanowania strony</strong> - dobry kontrast pozwala szybko znaleźć najważniejsze informacje, nagłówki i przyciski</li><li><strong>Dostępność</strong> - osoby z wadami wzroku, daltonizmem czy osłabionym wzrokiem mogą korzystać ze strony na równi z innymi</li><li><strong>Komfort długotrwałego użytkowania</strong> - słaby kontrast wymusza mrużenie oczu i powoduje szybsze zmęczenie wzroku</li><li><strong>Konwersję</strong> - jeśli użytkownik nie widzi przycisku lub nie może przeczytać ceny, nie dokona zakupu</li></ul><br/><p>O tym, jak kolory wpływają na decyzje użytkowników i ich emocje, piszemy szczegółowo w artykule jak kolorystyka wpływa na decyzje zakupowe klientów.</p>",
           "breakAfter": true
         },
         {
@@ -341,240 +239,6 @@
       ]
     },
     {
-      "slug": "co-sprawdzic-przed-uruchomieniem-strony",
-      "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej?",
-      "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. Dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych przed uruchomieniem nowej witryny internetowej w sieci.",
-      "primaryCategory": "Strony",
-      "seo": {
-        "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej? - Arteon",
-        "description": "Przed publikacją strony warto sprawdzić treści, funkcjonalność, wydajność, SEO i kwestie prawne. Lista kontrolna.",
-        "canonical": "https://www.arteonagency.pl/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony"
-      },
-      "cover": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
-      "author": {
-        "name": "Arteon"
-      },
-      "datePublished": "2025-12-23",
-      "dateModified": "2026-02-09",
-      "readingTime": 10,
-      "contentBlocks": [
-        {
-          "type": "richtext",
-          "html": "<p>Strona internetowa jest gotowa do publikacji. Projekt zatwierdzony, treści napisane, wszystko wygląda dobrze. Zanim jednak strona trafi do użytkowników, warto poświęcić chwilę na sprawdzenie, czy wszystko działa tak, jak powinno.</p><br/><p>W tym artykule przedstawiamy najważniejsze obszary do weryfikacji przed uruchomieniem strony: treści i meta dane, funkcjonalność, wydajność, SEO techniczne oraz kwestie prawne. Każdy z tych elementów wpływa na to, jak strona będzie odbierana przez użytkowników i wyszukiwarki.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego warto sprawdzić stronę przed publikacją?</h2><p>Publikacja strony z błędami może kosztować więcej niż kilka godzin poświęconych na weryfikację. Niedziałający formularz kontaktowy oznacza utracone zapytania od potencjalnych klientów. Brakujące meta dane sprawiają, że strona gorzej prezentuje się w wynikach wyszukiwania. Wolno ładujące się zdjęcia zniechęcają użytkowników, zanim zdążą zobaczyć ofertę.</p><br/><p>Strona internetowa to często pierwszy kontakt potencjalnego klienta z firmą. Jeśli formularz nie działa, użytkownik nie wyśle zapytania. Jeśli strona ładuje się 10 sekund, większość osób zamknie kartę. Jeśli brakuje polityki prywatności, firma naraża się na kary.</p><br/><p>Sprawdzenie strony przed publikacją to inwestycja kilku godzin, która zapobiega problemom trwającym tygodnie lub miesiące.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Treści i meta dane</h2><p>Treści to fundament strony - to one przekazują informacje i przekonują do działania. Meta dane (title i description) decydują o tym, jak strona prezentuje się w wynikach wyszukiwania Google. Więcej o pisaniu treści pod SEO znajdziesz w artykule <a class='inline-link' href='/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google'>jak pisać treści, aby być wyżej w Google</a>.</p><br/><p><strong>Tytuły stron (meta title)</strong></p><br/><p>Każda podstrona powinna mieć unikalny tytuł, który opisuje jej zawartość. Tytuł pojawia się w karcie przeglądarki i w wynikach wyszukiwania. Optymalna długość to 50-60 znaków - dłuższe tytuły mogą zostać ucięte. Do sprawdzenia długości tytułów i opisów możesz użyć naszego <a class='inline-link' href='/narzedzia/licznik-dlugosci-meta-title-i-description'>licznika meta title i description</a>.</p><br/><p>Przykład: zamiast generycznego tytułu typu Strona główna, lepszy będzie Kancelaria Prawna Nowak - Prawo Cywilne i Rodzinne | Kraków.</p><br/><p><strong>Opisy stron (meta description)</strong></p><br/><p>Opis pojawia się pod tytułem w wynikach wyszukiwania. Powinien zachęcać do kliknięcia i zawierać najważniejsze informacje o stronie. Optymalna długość to 150-160 znaków.</p><br/><p>Opis nie wpływa bezpośrednio na pozycję w Google, ale wpływa na to, czy użytkownik kliknie w wynik. Dobrze napisany opis zwiększa liczbę wejść na stronę.</p><br/><p><strong>Treści na stronach</strong></p><br/><p>Przeczytaj wszystkie teksty jeszcze raz. Sprawdź, czy nie ma literówek, błędów interpunkcyjnych i niezrozumiałych sformułowań. Upewnij się, że dane kontaktowe (adres, telefon, e-mail) są aktualne i poprawne. Błędny numer telefonu na stronie kontaktowej to stracone połączenia od klientów.</p><br/><p><strong>Nagłówki</strong></p><br/><p>Struktura nagłówków (H1, H2, H3) powinna być logiczna. Każda strona powinna mieć dokładnie jeden nagłówek H1, który opisuje główny temat. Nagłówki niższego poziomu (H2, H3) organizują treść w sekcje.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Funkcjonalność</h2><p>Strona może wyglądać doskonale, ale jeśli nie działa poprawnie, użytkownicy szybko ją opuszczą.</p><br/><p><strong>Formularze kontaktowe</strong></p><br/><p>Wyślij testową wiadomość przez każdy formularz na stronie. Sprawdź, czy wiadomość dociera na właściwy adres e-mail. Upewnij się, że użytkownik widzi potwierdzenie wysłania - brak informacji zwrotnej powoduje niepewność, czy wiadomość dotarła.</p><br/><p>Jeśli formularz zbiera dane osobowe (imię, e-mail, telefon), musi zawierać zgodę na przetwarzanie danych i link do polityki prywatności.</p><br/><p><strong>Linki wewnętrzne i zewnętrzne</strong></p><br/><p>Kliknij w każdy link na stronie. Linki wewnętrzne (do innych podstron) powinny prowadzić do istniejących stron. Linki zewnętrzne (do innych serwisów) powinny otwierać się w nowej karcie i prowadzić do działających stron.</p><br/><p>Uszkodzone linki (tzw. broken links) to sygnał dla wyszukiwarek, że strona nie jest dobrze utrzymana. Dla użytkowników to frustracja - kliknięcie, które prowadzi donikąd.</p><br/><p><strong>Nawigacja</strong></p><br/><p>Menu główne powinno działać na wszystkich urządzeniach. Sprawdź, czy rozwijane menu (dropdown) działa poprawnie, czy wszystkie pozycje są widoczne i klikalne. Na urządzeniach mobilnych menu często przyjmuje formę ikony hamburgera - upewnij się, że po kliknięciu menu się rozwija i wszystkie elementy są dostępne.</p><br/><p><strong>Responsywność</strong></p><br/><p>Strona powinna wyglądać i działać poprawnie na różnych urządzeniach: komputerach, tabletach i telefonach. Przetestuj stronę na kilku rozdzielczościach ekranu. Zwróć uwagę na czytelność tekstu, rozmiar przycisków i układ elementów.</p><br/><p>Narzędzia deweloperskie w przeglądarce (F12 w Chrome lub Firefox) pozwalają symulować różne rozmiary ekranów bez fizycznego dostępu do wielu urządzeń.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Wydajność i zdjęcia</h2><p>Szybkość ładowania strony wpływa na doświadczenie użytkownika i pozycję w wyszukiwarce. Według danych Google, gdy czas ładowania strony wzrasta z 1 do 3 sekund, prawdopodobieństwo opuszczenia strony przez użytkownika wzrasta o 32% (<a class='inline-link' href='https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/' target='_blank' rel='noopener noreferrer'>źródło: Think with Google</a>).</p><br/><p><strong>Optymalizacja zdjęć</strong></p><br/><p>Zdjęcia to często najcięższe elementy strony. Plik graficzny o wadze 5 MB ładuje się kilka sekund, podczas gdy zoptymalizowane zdjęcie o wadze 200 KB wygląda równie dobrze i ładuje się błyskawicznie.</p><br/><p>Przed publikacją sprawdź, czy wszystkie zdjęcia są zoptymalizowane. Format WebP oferuje lepszą kompresję niż tradycyjne JPG czy PNG, zachowując wysoką jakość obrazu. Więcej o optymalizacji zdjęć znajdziesz w artykule <a class='inline-link' href='/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp'>jak zoptymalizować zdjęcia na stronę WWW</a>.</p><br/><p>Jeśli potrzebujesz szybko przekonwertować zdjęcia do formatu WebP, możesz skorzystać z naszego <a class='inline-link' href='/narzedzia/konwerter-jpg-na-webp'>darmowego konwertera</a>.</p><br/><p><strong>Test szybkości</strong></p><br/><p>Narzędzie <a class='inline-link' href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> od Google pokazuje, jak szybko ładuje się strona i co można poprawić. Wynik powyżej 90 punktów na urządzeniach mobilnych to dobry rezultat. Niższy wynik wskazuje na elementy wymagające optymalizacji.</p><br/><p><strong>Rozmiary plików</strong></p><br/><p>Poza zdjęciami sprawdź też inne zasoby: pliki CSS, JavaScript, fonty. Nowoczesne strony często korzystają z wielu bibliotek i skryptów, które wydłużają czas ładowania. Usunięcie nieużywanych zasobów przyspiesza stronę.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>SEO techniczne</h2><p>SEO techniczne to elementy strony, które pomagają wyszukiwarkom zrozumieć jej zawartość i prawidłowo ją indeksować. Błędy w tej warstwie mogą sprawić, że strona <a class='inline-link' href='/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic'>nie wyświetla się w Google</a> mimo dobrej treści.</p><br/><p><strong>Plik robots.txt</strong></p><br/><p>Plik robots.txt informuje wyszukiwarki, które części strony mogą indeksować. Błędna konfiguracja może zablokować całą stronę przed indeksacją. Przed publikacją sprawdź, czy plik nie zawiera zbyt restrykcyjnych reguł.</p><br/><p>Plik powinien znajdować się pod adresem twojastrona.pl/robots.txt. Jeśli nie masz pewności, czy jest poprawnie skonfigurowany, warto skonsultować to z osobą odpowiedzialną za stronę.</p><br/><p><strong>Mapa strony (sitemap)</strong></p><br/><p>Sitemap to plik XML zawierający listę wszystkich podstron. Ułatwia wyszukiwarkom odkrycie i zaindeksowanie całej zawartości strony. Sitemap powinien być automatycznie generowany przy każdej zmianie struktury strony.</p><br/><p>Typowa lokalizacja to twojastrona.pl/sitemap.xml. Po publikacji strony warto zgłosić sitemapę w <a class='inline-link' href='https://search.google.com/search-console/' target='_blank' rel='noopener noreferrer'>Google Search Console</a>.</p><br/><p><strong>Certyfikat SSL</strong></p><br/><p>Strona powinna działać przez protokół HTTPS (widoczny jako kłódka w pasku adresu przeglądarki). Brak SSL oznacza ostrzeżenie w przeglądarce o niezabezpieczonej stronie - to zniechęca użytkowników i obniża pozycję w wynikach wyszukiwania.</p><br/><p><strong>Adresy URL</strong></p><br/><p>Adresy podstron powinny być czytelne i opisowe. Zamiast twojastrona.pl/page?id=123 lepszy jest adres twojastrona.pl/uslugi/projektowanie-stron. Czytelne adresy URL pomagają zarówno użytkownikom, jak i wyszukiwarkom zrozumieć zawartość strony.</p><br/><p><strong>Przekierowania</strong></p><br/><p>Jeśli nowa strona zastępuje poprzednią, upewnij się, że stare adresy URL przekierowują na odpowiednie nowe strony (przekierowanie 301). Brak przekierowań oznacza utratę pozycji w wyszukiwarce i błędy 404 dla użytkowników, którzy mają zapisane stare linki.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Kwestie prawne</h2><p>Strona internetowa musi spełniać określone wymogi prawne. Brak wymaganych dokumentów może skutkować karami lub problemami z zaufaniem użytkowników.</p><br/><p><strong>Polityka prywatności</strong></p><br/><p>Jeśli strona zbiera jakiekolwiek dane osobowe (przez formularze, analitykę, cookies), musi mieć politykę prywatności. Dokument powinien informować, jakie dane są zbierane, w jakim celu i jak długo przechowywane.</p><br/><p>Polityka prywatności powinna być łatwo dostępna - najczęściej link znajduje się w stopce strony.</p><br/><p><strong>Regulamin</strong></p><br/><p>Regulamin jest wymagany dla sklepów internetowych i serwisów świadczących usługi. Określa zasady korzystania ze strony, warunki sprzedaży, procedury reklamacji i zwrotów.</p><br/><p><strong>Informacja o cookies</strong></p><br/><p>Jeśli strona używa plików cookies (a większość stron je używa - do analityki, zapamiętywania preferencji czy reklam), użytkownik musi wyrazić na to zgodę. Banner z informacją o cookies powinien pojawić się przy pierwszej wizycie i umożliwiać zaakceptowanie lub odrzucenie poszczególnych kategorii cookies.</p><br/><p>Wymagania dotyczące cookies reguluje RODO (Rozporządzenie o Ochronie Danych Osobowych) oraz Prawo telekomunikacyjne. Zgoda musi być dobrowolna, konkretna i świadoma.</p><br/><p><strong>Dane firmy</strong></p><br/><p>Strona firmowa powinna zawierać podstawowe dane identyfikacyjne: nazwę firmy, adres siedziby, NIP, numer w rejestrze (KRS dla spółek). Dla sklepów internetowych te informacje są obowiązkowe.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dostępność i doświadczenie użytkownika</h2><p>Dostępność (accessibility) to zapewnienie, że strona jest użyteczna dla jak najszerszego grona odbiorców - w tym osób z niepełnosprawnościami wzroku, słuchu czy ruchu.</p><br/><p><strong>Kontrast kolorów</strong></p><br/><p>Tekst powinien być czytelny na tle, na którym się znajduje. Standard WCAG zaleca współczynnik kontrastu minimum 4,5:1 dla zwykłego tekstu i 3:1 dla dużego tekstu. Jasny tekst na jasnym tle lub ciemny na ciemnym to częsty problem, który łatwo przeoczyć. Do sprawdzenia kontrastu możesz użyć naszego <a class='inline-link' href='/narzedzia/kontrast-i-czytelnosc-kolorow'>testera kontrastu kolorów WCAG</a>. Więcej o znaczeniu kontrastu wyjaśniamy w artykule <a class='inline-link' href='/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie'>dlaczego kontrast kolorów na stronie ma znaczenie</a>.</p><br/><p><strong>Teksty alternatywne dla zdjęć (atrybut alt)</strong></p><br/><p>Każde zdjęcie na stronie powinno mieć opis alternatywny (atrybut alt). Ten tekst jest odczytywany przez czytniki ekranowe używane przez osoby niewidome i wyświetlany, gdy zdjęcie nie może się załadować. Opis powinien opisywać zawartość zdjęcia, a nie powtarzać nazwy pliku.</p><br/><p><strong>Nawigacja klawiaturą</strong></p><br/><p>Sprawdź, czy można poruszać się po stronie używając klawiatury (klawisz Tab). Wszystkie interaktywne elementy - linki, przyciski, pola formularzy - powinny być dostępne i widoczne przy nawigacji klawiaturą. To ważne dla osób, które nie mogą używać myszy.</p><br/><p><strong>Czytelność treści</strong></p><br/><p>Rozmiar czcionki powinien wynosić minimum 16 pikseli dla tekstu podstawowego. Akapity nie powinny być zbyt szerokie - optymalna długość linii to 50-75 znaków. Odstępy między wierszami (line-height) powinny wynosić przynajmniej 1,5 wartości rozmiaru czcionki. Więcej o wpływie <a class='inline-link' href='/edukacja/ux/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc'>pustej przestrzeni na czytelność strony</a> wyjaśniamy w osobnym artykule.</p><br/><p><strong>Favicon</strong></p><br/><p>Favicon to mała ikonka wyświetlana na karcie przeglądarki obok tytułu strony. Jej brak sprawia, że strona wygląda niedokończenie. Favicon powinien być czytelny w małym rozmiarze (16x16 i 32x32 pikseli). Jeśli potrzebujesz stworzyć favicon, skorzystaj z naszego <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>generatora favicon</a>. Więcej o faviconie i jego roli wyjaśniamy w artykule <a class='inline-link' href='/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie'>czym jest favicon i jak go przygotować</a>.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Po publikacji: co zrobić w pierwszych dniach?</h2><p>Publikacja strony to nie koniec pracy. Pierwsze dni po uruchomieniu są ważne dla widoczności w wyszukiwarkach i wykrycia problemów, które mogły umknąć przy testach.</p><br/><p><strong>Zgłoś stronę w Google Search Console</strong></p><br/><p>Zarejestruj stronę w <a href='https://search.google.com/search-console/' target='_blank' rel='noopener noreferrer'>Google Search Console</a> i zgłoś mapę strony (sitemap). To przyspiesza indeksację - bez tego Google może potrzebować dni lub tygodni, żeby odkryć nową stronę. Narzędzie pokaże też ewentualne błędy indeksacji.</p><br/><p><strong>Sprawdź indeksację po kilku dniach</strong></p><br/><p>Po 2-3 dniach od zgłoszenia wpisz w Google site:twojastrona.pl i sprawdź, czy podstrony zaczynają się pojawiać. Jeśli po tygodniu nic nie jest zaindeksowane, wróć do Google Search Console i sprawdź raport błędów. Problem może leżeć w pliku robots.txt lub meta tagu noindex. Więcej o przyczynach niewidoczności w Google wyjaśniamy w artykule <a class='inline-link' href='/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic'>dlaczego strona nie wyświetla się w Google</a>.</p><br/><p><strong>Monitoruj formularze i kontakt</strong></p><br/><p>Przez pierwszy tydzień po publikacji wyślij sobie testowe wiadomości przez formularze co kilka dni. Upewnij się, że e-maile nadal dochodzą, a formularze działają poprawnie. Czasem problemy z dostarczalnością e-maili pojawiają się dopiero po kilku dniach.</p><br/><p><strong>Załóż analitykę</strong></p><br/><p>Jeśli jeszcze tego nie zrobiłeś, skonfiguruj <a href='https://analytics.google.com/' target='_blank' rel='noopener noreferrer'>Google Analytics</a> lub inne narzędzie analityczne. Dane o ruchu na stronie, źródłach odwiedzin i zachowaniu użytkowników są niezbędne do oceny, czy strona spełnia swoje cele. Jak mierzyć skuteczność strony, wyjaśniamy w artykule <a class='inline-link' href='/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej'>jak mierzyć skuteczność strony internetowej</a>.</p><br/><p><strong>Przekieruj starą stronę (jeśli dotyczy)</strong></p><br/><p>Jeśli nowa strona zastępuje starą pod tym samym adresem, upewnij się, że stare adresy URL są przekierowane na nowe (przekierowanie 301). Bez tego stracisz ruch z linków prowadzących do starej strony i pozycje w wyszukiwarce.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Sprawdzenie strony przed publikacją to inwestycja czasu, która zapobiega wielu problemom. Kilka godzin poświęconych na weryfikację może zaoszczędzić tygodnie naprawiania błędów i utraconych zapytań od klientów.</p><br/><p><strong>Najważniejsze obszary do sprawdzenia:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Treści i meta dane</strong> - unikalne tytuły i opisy dla każdej podstrony, brak literówek, aktualne dane kontaktowe</li><li><strong>Funkcjonalność</strong> - działające formularze, poprawne linki, responsywne menu</li><li><strong>Wydajność</strong> - zoptymalizowane zdjęcia, szybkie ładowanie na urządzeniach mobilnych</li><li><strong>SEO techniczne</strong> - poprawny robots.txt, sitemap, certyfikat SSL, czytelne adresy URL</li><li><strong>Kwestie prawne</strong> - polityka prywatności, informacja o cookies, dane firmy</li></ul><br/><p>W Arteon <a class='inline-link' href='/uslugi/strony-internetowe-dla-firm'>tworzymy strony internetowe</a> i <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepy internetowe</a> od podstaw, z pełną weryfikacją przed publikacją. Jeśli masz już stronę i potrzebujesz pomocy z jej optymalizacją lub poprawkami, również możemy pomóc. <a class='inline-link' href='/kontakt'>Skontaktuj się</a>.</p>",
-          "breakAfter": true
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz profesjonalnej strony internetowej?",
-        "description": "Tworzymy strony, które działają sprawnie od pierwszego dnia. Pełna weryfikacja przed publikacją w cenie usługi.",
-        "btnOne": "Strony internetowe",
-        "btnOneHref": "/uslugi/strony-internetowe-dla-firm",
-        "btnTwo": "Skontaktuj się",
-        "btnTwoHref": "/kontakt",
-        "backgroundImage": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
-        "overlay": "black"
-      },
-      "faq": [
-        {
-          "question": "Jak długo trwa weryfikacja strony przed publikacją?",
-          "answer": "Czas zależy od wielkości strony. Prosta strona firmowa (5-10 podstron) wymaga kilku godzin na dokładne sprawdzenie. Większe serwisy lub sklepy internetowe mogą wymagać 1-2 dni pracy. Warto zaplanować ten czas w harmonogramie projektu."
-        },
-        {
-          "question": "Czy mogę sprawdzić stronę samodzielnie?",
-          "answer": "Podstawową weryfikację (działanie linków, formularzy, czytelność tekstów) można przeprowadzić samodzielnie. Elementy techniczne (SEO, wydajność, konfiguracja serwera) wymagają wiedzy specjalistycznej. Warto zlecić pełną weryfikację osobie z doświadczeniem."
-        },
-        {
-          "question": "Co zrobić, jeśli po publikacji znajdę błędy?",
-          "answer": "Większość błędów można naprawić po publikacji. Priorytetem są problemy wpływające na funkcjonalność (niedziałające formularze, uszkodzone linki) i kwestie prawne (brak polityki prywatności). Mniejsze błędy (literówki, drobne poprawki wizualne) można poprawić sukcesywnie."
-        },
-        {
-          "question": "Czy muszę mieć politykę prywatności, jeśli nie mam sklepu?",
-          "answer": "Tak, jeśli strona zbiera jakiekolwiek dane osobowe. Formularz kontaktowy z imieniem i e-mailem, Google Analytics, pliki cookies - to wszystko wymaga polityki prywatności. Nawet prosta strona wizytówkowa zwykle zbiera takie dane."
-        },
-        {
-          "question": "Jak sprawdzić, czy strona jest widoczna w Google?",
-          "answer": "Wpisz w wyszukiwarkę site:twojastrona.pl (podstaw swoją domenę). Google pokaże wszystkie zaindeksowane podstrony. Jeśli lista jest pusta lub niekompletna, strona może mieć problemy z indeksacją. Narzędzie Google Search Console pokazuje szczegółowe informacje o widoczności strony."
-        }
-      ]
-    },
-    {
-      "slug": "jak-wybrac-domene-i-hosting-dla-strony-firmowej",
-      "title": "Jak wybrać domenę i hosting dla strony firmowej?",
-      "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. Dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę przy zakupie i jakich błędów unikać przy ich wyborze dla swojej firmy.",
-      "primaryCategory": "Strony",
-      "seo": {
-        "title": "Jak wybrać domenę i hosting dla strony firmowej? - Arteon",
-        "description": "Domena i hosting to podstawa każdej strony firmowej. Jak je wybrać i na co zwrócić uwagę przed zakupem? Praktyczny poradnik.",
-        "canonical": "https://www.arteonagency.pl/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej"
-      },
-      "cover": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",
-      "author": {
-        "name": "Arteon"
-      },
-      "datePublished": "2025-12-22",
-      "dateModified": "2026-02-09",
-      "readingTime": 10,
-      "contentBlocks": [
-        {
-          "type": "richtext",
-          "html": "<p>Zanim strona internetowa zacznie działać, potrzebuje dwóch rzeczy: adresu, pod którym będzie dostępna, oraz miejsca, gdzie będą przechowywane jej pliki. Adres to domena (np. mojafirma.pl), a miejsce przechowywania to hosting.</p><br/><p>Dla wielu przedsiębiorców wybór domeny i hostingu może wydawać się techniczny i skomplikowany. W rzeczywistości to decyzje, które wpływają na to, jak łatwo klienci znajdą stronę i jak szybko będzie się ona ładować.</p><br/><p>W tym artykule wyjaśniamy, czym są domena i hosting, jak je wybrać i jakich błędów unikać.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czym jest domena i hosting?</h2><p><strong>Domena</strong> to adres strony internetowej - ciąg znaków, który wpisujesz w przeglądarkę, żeby wejść na stronę. Przykłady: google.pl, allegro.pl, mojafirma.com. Domena składa się z nazwy (np. mojafirma) i rozszerzenia (np. .pl, .com, .eu).</p><br/><p>Domenę kupujesz (a właściwie wynajmujesz) na określony czas - zwykle na rok lub dłużej. Po tym czasie musisz ją odnowić, inaczej ktoś inny może ją zarejestrować.</p><br/><p><strong>Hosting</strong> to usługa, która zapewnia miejsce na serwerze, gdzie przechowywane są pliki strony - teksty, zdjęcia, kod. Kiedy ktoś wpisuje adres strony w przeglądarkę, serwer hostingowy wysyła mu te pliki, a przeglądarka wyświetla stronę.</p><br/><p>Można to porównać do adresu i budynku. Domena to adres (ul. Główna 10), a hosting to budynek, w którym mieści się firma. Klient zna adres i wie, dokąd przyjść - ale potrzebuje też miejsca, gdzie faktycznie coś znajdzie.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak wybrać dobrą domenę dla firmy?</h2><p>Domena to pierwszy kontakt klienta z firmą w internecie. Powinna być łatwa do zapamiętania, prosta do wpisania i powiązana z nazwą firmy lub branżą.</p><br/><p><strong>Krótka i prosta</strong></p><br/><p>Im krótsza domena, tym łatwiej ją zapamiętać i wpisać bez błędów. Unikaj długich nazw z wieloma wyrazami, myślnikami czy cyframi. Zamiast najlepsza-pizzeria-w-krakowie-2024.pl lepiej pizzeria-krakow.pl lub nawet samo pizzeriakrakow.pl.</p><br/><p><strong>Zgodna z nazwą firmy</strong></p><br/><p>Jeśli firma ma rozpoznawalną nazwę, domena powinna ją odzwierciedlać. Klienci szukający Kancelaria Nowak będą wpisywać kancelarianowak.pl, a nie prawnik-z-krakowa.pl. Spójność między nazwą firmy a domeną buduje zaufanie.</p><br/><p><strong>Odpowiednie rozszerzenie</strong></p><br/><p>Dla polskich firm naturalnym wyborem jest .pl - klienci kojarzą je z lokalnymi usługami. Rozszerzenie .com sprawdza się, gdy firma działa międzynarodowo lub gdy .pl jest już zajęte. Istnieją też rozszerzenia branżowe (.shop, .law, .restaurant), ale są mniej rozpoznawalne i mogą kosztować więcej.</p><br/><p><strong>Bez polskich znaków</strong></p><br/><p>Technicznie możliwe jest zarejestrowanie domeny z polskimi znakami (np. żółć.pl), ale w praktyce lepiej ich unikać. Polskie znaki w domenie są konwertowane na tzw. punycode - specjalny format zrozumiały dla serwerów DNS. W praktyce wygląda to tak:</p><br/><ul class='list-disc ml-5'><li>Domena <strong>żółć.pl</strong> zamienia się w <strong>xn--kda4b0koi.pl</strong></li><li>Domena <strong>łódź.pl</strong> zamienia się w <strong>xn--d1a0d.pl</strong></li><li>Domena <strong>kraków.pl</strong> zamienia się w <strong>xn--krakw-3ta.pl</strong></li></ul><br/><p>Taki adres może pojawić się w linkach, e-mailach czy systemach analitycznych. Wygląda nieczytelnie i może budzić nieufność - niektórzy użytkownicy mogą pomyśleć, że to spam lub podejrzana strona. Dodatkowo nie każdy system poprawnie obsługuje polskie znaki, co może powodować problemy z przekierowaniami, certyfikatami SSL czy integracjami z innymi usługami.</p><br/><p><strong>Sprawdź dostępność</strong></p><br/><p>Zanim zdecydujesz się na nazwę, sprawdź, czy domena jest wolna. Możesz to zrobić na stronie dowolnego rejestratora domen (np. home.pl, OVH, nazwa.pl). Jeśli wybrana nazwa jest zajęta, zastanów się nad innym rozszerzeniem lub lekką modyfikacją nazwy.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Na co zwrócić uwagę przy wyborze hostingu?</h2><p>Hosting wpływa na szybkość działania strony, jej dostępność i bezpieczeństwo. Tani hosting może okazać się kosztowny, jeśli strona będzie wolna lub często niedostępna.</p><br/><p><strong>Rodzaj hostingu</strong></p><br/><p>Istnieje kilka rodzajów hostingu, różniących się ceną i możliwościami:</p><br/><ul class='list-disc ml-5'><li><strong>Hosting współdzielony</strong> - najtańszy, ale zasoby serwera są dzielone z innymi stronami. Sprawdza się dla małych stron firmowych z niewielkim ruchem.</li><li><strong>VPS (Virtual Private Server)</strong> - wirtualny serwer z wydzielonymi zasobami. Daje większą kontrolę i stabilność, ale wymaga wiedzy technicznej.</li><li><strong>Serwer dedykowany</strong> - cały serwer dla jednej strony. Najdroższy, ale daje pełną kontrolę. Potrzebny głównie dla dużych serwisów z wysokim ruchem.</li><li><strong>Hosting w chmurze</strong> - elastyczny, skaluje się automatycznie wraz z ruchem. Płacisz za faktyczne zużycie zasobów.</li></ul><br/><p>Dla większości małych i średnich firm hosting współdzielony lub prosty VPS będzie wystarczający.</p><br/><p><strong>Szybkość i lokalizacja serwerów</strong></p><br/><p>Im bliżej serwera są użytkownicy, tym szybciej ładuje się strona. Dla polskich firm najlepiej wybrać hosting z serwerami w Polsce lub Europie. Strona hostowana na serwerze w USA będzie ładować się wolniej dla polskich użytkowników.</p><br/><p><strong>Uptime - dostępność serwera</strong></p><br/><p>Uptime to procent czasu, przez który serwer działa bez awarii. Dobry hosting gwarantuje uptime na poziomie 99,9% lub wyższym. To oznacza, że strona może być niedostępna maksymalnie kilka godzin rocznie. Niższy uptime (np. 99%) oznacza nawet kilkadziesiąt godzin niedostępności.</p><br/><p><strong>Wsparcie techniczne</strong></p><br/><p>Problemy z serwerem mogą pojawić się o każdej porze. Sprawdź, czy dostawca oferuje wsparcie 24/7 i w jakim języku. Dla polskich firm warto wybrać hosting z polskojęzyczną obsługą.</p><br/><p><strong>Certyfikat SSL</strong></p><br/><p><a class='inline-link' href='/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje'>SSL to protokół, który szyfruje połączenie</a> między przeglądarką a serwerem. Strony z SSL mają adres zaczynający się od https:// i ikonę kłódki w pasku adresu. Bez SSL przeglądarka oznacza stronę jako niezabezpieczoną, co odstrasza użytkowników i może obniżyć pozycję w wynikach wyszukiwania. Większość hostingów oferuje darmowy certyfikat SSL (np. Let's Encrypt) - wystarczy go aktywować w panelu administracyjnym.</p><br/><p><strong>Kopie zapasowe</strong></p><br/><p>Regularne kopie zapasowe chronią przed utratą danych w razie awarii lub włamania. Sprawdź, czy hosting automatycznie tworzy kopie i jak łatwo można je przywrócić.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czy warto kupować domenę i hosting w jednym miejscu?</h2><p>Wielu dostawców oferuje pakiety łączące domenę i hosting. Ma to swoje zalety i wady.</p><br/><p><strong>Zalety kupowania w jednym miejscu</strong></p><br/><ul class='list-disc ml-5'><li><strong>Prostota</strong> - jeden panel, jedna faktura, jedno miejsce do zarządzania.</li><li><strong>Automatyczna konfiguracja</strong> - domena jest od razu podpięta do hostingu, bez ręcznej konfiguracji DNS.</li><li><strong>Promocje</strong> - dostawcy często oferują darmową domenę przy zakupie hostingu na rok lub dłużej.</li></ul><br/><p><strong>Wady kupowania w jednym miejscu</strong></p><br/><ul class='list-disc ml-5'><li><strong>Uzależnienie od jednego dostawcy</strong> - jeśli zdecydujesz się zmienić hosting, przeniesienie domeny może być utrudnione.</li><li><strong>Różna jakość usług</strong> - firma, która dobrze prowadzi hosting, niekoniecznie ma najlepsze ceny domen (i odwrotnie).</li></ul><br/><p><strong>Kiedy rozdzielić?</strong></p><br/><p>Jeśli zależy Ci na elastyczności i możesz poświęcić chwilę na konfigurację, warto kupić domenę u rejestratora (np. nazwa.pl, OVH), a hosting osobno u wyspecjalizowanego dostawcy. Dzięki temu łatwiej zmienisz hosting w przyszłości, zachowując domenę.</p><br/><p>Dla małych firm, które cenią prostotę, pakiet domena + hosting w jednym miejscu jest wygodnym rozwiązaniem.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Na co zwrócić uwagę przy wyborze domeny i hostingu?</h2><p><strong>Zbyt długa lub skomplikowana domena</strong></p><br/><p>Klienci nie zapamiętają adresu typu najlepsza-firma-budowlana-jan-kowalski-krakow.pl. Im krócej i prościej, tym lepiej.</p><br/><p><strong>Najtańszy hosting bez sprawdzenia parametrów</strong></p><br/><p>Hosting za kilka złotych miesięcznie może mieć wolne serwery, niski uptime i słabe wsparcie. Strona, która ładuje się 10 sekund lub często jest niedostępna, odstrasza klientów. Warto porównać parametry, nie tylko cenę.</p><br/><p><strong>Brak odnowienia domeny</strong></p><br/><p>Domena wymaga corocznego odnowienia. Jeśli zapomnisz opłacić, ktoś inny może ją zarejestrować. Ustaw automatyczne odnowienie lub przypomnienia w kalendarzu.</p><br/><p><strong>Brak własności domeny</strong></p><br/><p>Upewnij się, że domena jest zarejestrowana na Ciebie (dane firmy w WHOIS), a nie na osobę lub agencję, która tworzyła stronę. Domena to Twoja własność i powinieneś mieć do niej pełny dostęp.</p><br/><p><strong>Ignorowanie SSL</strong></p><br/><p>Strona bez <a class='inline-link' href='/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje'>certyfikatu SSL</a> jest oznaczana przez przeglądarki jako niezabezpieczona. To odstrasza użytkowników i może obniżyć pozycję w Google. Większość hostingów oferuje darmowy SSL - wystarczy go aktywować w panelu administracyjnym.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Konfiguracja DNS: jak połączyć domenę z hostingiem?</h2><p>Po zakupie domeny i hostingu trzeba je ze sobą połączyć. Odbywa się to przez konfigurację DNS (Domain Name System) - systemu, który tłumaczy nazwę domeny na adres IP serwera.</p><br/><p><strong>Czym są rekordy DNS?</strong></p><br/><p>Rekordy DNS to instrukcje, które mówią przeglądarkom, gdzie szukać strony. Najważniejsze typy rekordów to:</p><br/><ul class='list-disc ml-5'><li><strong>Rekord A</strong> - wskazuje adres IP serwera, na którym znajduje się strona. To podstawowy rekord łączący domenę z hostingiem.</li><li><strong>Rekord CNAME</strong> - tworzy alias dla domeny. Używany np. do przekierowania subdomeny (www.mojafirma.pl) na główną domenę (mojafirma.pl).</li><li><strong>Rekord MX</strong> - wskazuje serwer obsługujący pocztę e-mail dla domeny. Potrzebny, jeśli chcesz mieć firmowy adres e-mail (np. kontakt@mojafirma.pl).</li><li><strong>Rekord TXT</strong> - służy do weryfikacji domeny (np. przez Google Search Console) i konfiguracji zabezpieczeń poczty (SPF, DKIM, DMARC).</li></ul><br/><p><strong>Jak zmienić serwery DNS?</strong></p><br/><p>Jeśli kupujesz domenę i hosting u różnych dostawców, musisz zmienić serwery nazw (nameservers) w panelu rejestratora domeny. Dostawca hostingu podaje adresy swoich serwerów DNS (np. ns1.hosting.pl, ns2.hosting.pl). Po wpisaniu ich w panelu rejestratora domeny, propagacja zmian trwa zwykle od kilku godzin do 48 godzin.</p><br/><p><strong>Firmowy adres e-mail</strong></p><br/><p>Posiadanie domeny pozwala na stworzenie profesjonalnego adresu e-mail (np. biuro@mojafirma.pl zamiast mojafirma@gmail.com). Profesjonalny adres e-mail buduje wiarygodność firmy. Konfiguracja poczty wymaga ustawienia rekordów MX w DNS oraz aktywacji usługi e-mail u dostawcy hostingu lub zewnętrznego dostawcy (np. Google Workspace, Microsoft 365). Jeśli korzystasz z firmowego adresu e-mail, warto zadbać też o <a class='inline-link' href='/edukacja/marketing/jak-przygotowac-profesjonalna-stopke-mailowa'>profesjonalną stopkę mailową</a>, która wzmacnia wizerunek firmy przy każdej wysłanej wiadomości.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak przenieść stronę na inny hosting?</h2><p>Zmiana hostingu to sytuacja, z którą prędzej czy później mierzy się wielu właścicieli stron. Powody mogą być różne: wolne działanie, częste awarie, wyższa cena lub potrzeba lepszych parametrów.</p><br/><p><strong>Kiedy warto zmienić hosting?</strong></p><br/><p>Sygnały, że obecny hosting nie spełnia oczekiwań:</p><br/><ul class='list-disc ml-5'><li>Strona ładuje się dłużej niż 3 sekundy - użytkownicy opuszczają wolne strony, a Google obniża ich pozycję w wynikach wyszukiwania</li><li>Częste przerwy w dostępności - nawet krótkie, ale regularne awarie szkodzą wizerunkowi firmy</li><li>Brak wsparcia technicznego - problemy trzeba rozwiązywać samodzielnie, a odpowiedzi na zgłoszenia przychodzą po dniach</li><li>Ograniczone zasoby - strona się rozrosła i potrzebuje więcej przestrzeni dyskowej, pamięci RAM lub mocy obliczeniowej</li></ul><br/><p><strong>Jak przebiega migracja?</strong></p><br/><p>Przeniesienie strony na nowy hosting obejmuje kilka kroków:</p><br/><ol class='list-decimal ml-5'><li>Wykonaj kopię zapasową wszystkich plików strony i bazy danych</li><li>Załóż konto u nowego dostawcy hostingu i przenieś pliki na nowy serwer</li><li>Skonfiguruj bazę danych i połączenie z nią na nowym hostingu</li><li>Przetestuj stronę na nowym serwerze (możesz to zrobić przez tymczasowy adres, bez zmiany DNS)</li><li>Zmień rekordy DNS, żeby domena wskazywała na nowy serwer</li><li>Sprawdź działanie strony po propagacji DNS (do 48 godzin)</li></ol><br/><p><strong>Na co uważać przy migracji?</strong></p><br/><p>Podczas przenoszenia strony ważne jest, żeby nie stracić danych i zminimalizować czas niedostępności. Nie usuwaj plików ze starego hostingu, dopóki nie potwierdzisz, że strona działa poprawnie na nowym. Upewnij się też, że <strong>przekierowania 301</strong> są prawidłowo skonfigurowane, jeśli zmieniają się adresy URL. Warto również sprawdzić, czy <a class='inline-link' href='/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje'>certyfikat SSL</a> jest aktywny na nowym hostingu przed przełączeniem DNS.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Domena i hosting to fundament każdej strony internetowej. Domena to adres, pod którym klienci znajdą firmę w internecie. Hosting to miejsce, gdzie strona jest przechowywana i z którego jest serwowana użytkownikom.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Domena powinna być krótka i prosta</strong> - łatwa do zapamiętania i wpisania</li><li><strong>Dla polskich firm .pl jest naturalnym wyborem</strong> - kojarzy się z lokalnymi usługami</li><li><strong>Hosting wpływa na szybkość strony</strong> - wolna strona odstrasza klientów</li><li><strong>Sprawdź uptime i wsparcie</strong> - dostępność 99,9% i pomoc 24/7 to standard</li><li><strong>Nie zapomnij o SSL</strong> - szyfrowanie jest dziś wymagane</li><li><strong>Odnawiaj domenę na czas</strong> - inaczej możesz ją stracić</li></ul><br/><p>Jeśli planujesz <a class='inline-link' href='/uslugi/strony-internetowe-dla-firm'>stworzenie strony internetowej</a> lub <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepu internetowego</a>, możemy pomóc Ci również z wyborem i konfiguracją domeny oraz hostingu. <a class='inline-link' href='/kontakt'>Skontaktuj się</a>, żeby omówić szczegóły.</p>",
-          "breakAfter": true
-        }
-      ],
-      "cta": {
-        "title": "Planujesz stronę internetową?",
-        "description": "Pomożemy Ci od podstaw - od wyboru domeny i hostingu, przez projekt, po wdrożenie. Wszystko w jednym miejscu.",
-        "btnOne": "Strony internetowe",
-        "btnOneHref": "/uslugi/strony-internetowe-dla-firm",
-        "btnTwo": "Skontaktuj się",
-        "btnTwoHref": "/kontakt",
-        "backgroundImage": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",
-        "overlay": "black"
-      },
-      "faq": [
-        {
-          "question": "Ile kosztuje domena i hosting?",
-          "answer": "Domena .pl kosztuje zwykle 50-150 zł rocznie, zależnie od rejestratora. Hosting współdzielony to koszt od kilkunastu do kilkudziesięciu złotych miesięcznie. Niektórzy dostawcy oferują darmową domenę przy zakupie hostingu na rok lub dłużej."
-        },
-        {
-          "question": "Czy mogę przenieść domenę do innego dostawcy?",
-          "answer": "Tak, domenę można przenieść do innego rejestratora. Proces wymaga uzyskania kodu autoryzacyjnego (AuthCode) od obecnego dostawcy i zlecenia transferu u nowego. Transfer trwa zwykle kilka dni."
-        },
-        {
-          "question": "Co się stanie, jeśli nie odnowię domeny?",
-          "answer": "Po wygaśnięciu domeny przestaje działać - strona nie jest dostępna pod tym adresem. Przez krótki czas (zwykle 30 dni) można ją jeszcze odnowić z dodatkową opłatą. Po tym okresie domena trafia do puli i może ją zarejestrować ktoś inny."
-        },
-        {
-          "question": "Czy potrzebuję hostingu, jeśli mam stronę na platformie typu Wix lub Squarespace?",
-          "answer": "Platformy typu Wix, Squarespace czy Shopify zapewniają hosting w ramach abonamentu - nie musisz kupować go osobno. Potrzebujesz tylko domeny, którą możesz podpiąć do takiej platformy."
-        },
-        {
-          "question": "Jak sprawdzić, czy domena jest wolna?",
-          "answer": "Wpisz wybraną nazwę na stronie dowolnego rejestratora domen (np. nazwa.pl, OVH, home.pl). System od razu pokaże, czy domena jest dostępna i w jakiej cenie. Możesz też sprawdzić różne rozszerzenia (.pl, .com, .eu)."
-        }
-      ]
-    },
-    {
       "slug": "czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje",
       "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?",
       "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. Dowiesz się, czym jest SSL, jak działa szyfrowanie, jak wpływa na zaufanie użytkowników i SEO oraz jakie są rodzaje certyfikatów dostępnych na rynku w Polsce.",
@@ -649,7 +313,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>SSL a ochrona danych osobowych (RODO)</h2><p>Certyfikat SSL ma znaczenie nie tylko dla SEO i zaufania użytkowników, ale również z perspektywy prawnej - konkretnie w kontekście RODO (Rozporządzenie o Ochronie Danych Osobowych).</p><br/><p><strong>Obowiązek zabezpieczenia danych</strong></p><br/><p>RODO (art. 32) wymaga, żeby administratorzy danych stosowali odpowiednie środki techniczne do ochrony danych osobowych. Szyfrowanie transmisji danych (czyli właśnie SSL/TLS) jest jednym z takich środków. Jeśli Twoja strona zbiera dane osobowe przez formularze (imię, e-mail, telefon, adres), szyfrowanie SSL jest praktycznie wymagane.</p><br/><p><strong>Formularze kontaktowe i zapisy na newsletter</strong></p><br/><p>Każdy formularz kontaktowy na stronie firmowej przesyła dane osobowe. Formularz zapisu na <a class='inline-link' href='/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic'>newsletter</a> zbiera adresy e-mail. Formularz rezerwacji w restauracji - imiona i numery telefonów. Wszystkie te dane powinny być przesyłane przez szyfrowane połączenie.</p><br/><p><strong>Konsekwencje braku zabezpieczeń</strong></p><br/><p>Brak SSL na stronie zbierającej dane osobowe może być uznany za naruszenie zasady bezpieczeństwa przetwarzania danych. W przypadku wycieku danych, UODO (Urząd Ochrony Danych Osobowych) może nałożyć karę finansową. Niezależnie od kar, wyciek danych klientów to poważny cios wizerunkowy dla firmy.</p><br/><p><strong>SSL to minimum, nie maksimum</strong></p><br/><p>Warto pamiętać, że SSL chroni dane w trakcie przesyłania (in transit), ale nie chroni danych przechowywanych na serwerze (at rest). Kompleksowe bezpieczeństwo strony obejmuje również: regularne aktualizacje oprogramowania, silne hasła dostępowe, kopie zapasowe i odpowiednią konfigurację serwera. Jeśli planujesz <a class='inline-link' href='/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony'>uruchomienie nowej strony</a>, warto od razu zadbać o wszystkie aspekty bezpieczeństwa.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>SSL a ochrona danych osobowych (RODO)</h2><p>Certyfikat SSL ma znaczenie nie tylko dla SEO i zaufania użytkowników, ale również z perspektywy prawnej - konkretnie w kontekście RODO (Rozporządzenie o Ochronie Danych Osobowych).</p><br/><p><strong>Obowiązek zabezpieczenia danych</strong></p><br/><p>RODO (art. 32) wymaga, żeby administratorzy danych stosowali odpowiednie środki techniczne do ochrony danych osobowych. Szyfrowanie transmisji danych (czyli właśnie SSL/TLS) jest jednym z takich środków. Jeśli Twoja strona zbiera dane osobowe przez formularze (imię, e-mail, telefon, adres), szyfrowanie SSL jest praktycznie wymagane.</p><br/><p><strong>Formularze kontaktowe i zapisy na newsletter</strong></p><br/><p>Każdy formularz kontaktowy na stronie firmowej przesyła dane osobowe. Formularz zapisu na <a class='inline-link' href='/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic'>newsletter</a> zbiera adresy e-mail. Formularz rezerwacji w restauracji - imiona i numery telefonów. Wszystkie te dane powinny być przesyłane przez szyfrowane połączenie.</p><br/><p><strong>Konsekwencje braku zabezpieczeń</strong></p><br/><p>Brak SSL na stronie zbierającej dane osobowe może być uznany za naruszenie zasady bezpieczeństwa przetwarzania danych. W przypadku wycieku danych, UODO (Urząd Ochrony Danych Osobowych) może nałożyć karę finansową. Niezależnie od kar, wyciek danych klientów to poważny cios wizerunkowy dla firmy.</p><br/><p><strong>SSL to minimum, nie maksimum</strong></p><br/><p>Warto pamiętać, że SSL chroni dane w trakcie przesyłania (in transit), ale nie chroni danych przechowywanych na serwerze (at rest). Kompleksowe bezpieczeństwo strony obejmuje również: regularne aktualizacje oprogramowania, silne hasła dostępowe, kopie zapasowe i odpowiednią konfigurację serwera. Jeśli planujesz uruchomienie nowej strony, warto od razu zadbać o wszystkie aspekty bezpieczeństwa.</p>",
           "breakAfter": true
         },
         {

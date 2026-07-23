@@ -84,20 +84,6 @@
     }
   },
   {
-    "slug": "dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa",
-    "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?",
-    "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Dlaczego aktualizacje są tak ważne? Co się dzieje, gdy strona pozostaje nieaktualna? I na co zwrócić uwagę przy utrzymaniu witryny?",
-    "cover": "/assets/blog/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa.webp",
-    "primaryCategory": "Strony",
-    "readingTime": 11,
-    "datePublished": "2026-01-01",
-    "seo": {
-      "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa? - Arteon",
-      "description": "Regularne aktualizacje WordPressa, wtyczek i motywów chronią stronę przed atakami. Mechanizmy zagrożeń i dobre praktyki utrzymania.",
-      "canonical": "https://www.arteonagency.pl/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa"
-    }
-  },
-  {
     "slug": "breadcrumbs-sciezka-nawigacji-na-stronie",
     "title": "Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?",
     "excerpt": "Ścieżka nawigacji pokazuje użytkownikowi, gdzie się znajduje w strukturze witryny. Jak działa? Dlaczego ułatwia poruszanie się po stronie? Jak wpływa na widoczność w Google i kiedy warto ją dodać do witryny?",
@@ -210,20 +196,6 @@
     }
   },
   {
-    "slug": "czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony",
-    "title": "Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?",
-    "excerpt": "Linki wewnętrzne łączą podstrony Twojej witryny i pomagają Google zrozumieć, co jest najważniejsze. Jak budować klastry tematyczne? Jak pisać anchor texty? I jakich błędów unikać, żeby linkowanie naprawdę wspierało SEO?",
-    "cover": "/assets/blog/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony.webp",
-    "primaryCategory": "SEO",
-    "readingTime": 11,
-    "datePublished": "2025-12-25",
-    "seo": {
-      "title": "Linkowanie wewnętrzne: jak wpływa na SEO strony?",
-      "description": "Linkowanie wewnętrzne wpływa na pozycjonowanie i pomaga budować klastry tematyczne. Jak je stosować, żeby wzmocnić SEO?",
-      "canonical": "https://www.arteonagency.pl/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony"
-    }
-  },
-  {
     "slug": "kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie",
     "title": "Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?",
     "excerpt": "Kontrast kolorów decyduje o czytelności tekstu na stronie. Czym jest kontrast? Co oznaczają poziomy WCAG AA i AAA? Kto korzysta z dobrego kontrastu i jak sprawdzić kolory na swojej stronie?",
@@ -266,62 +238,6 @@
     }
   },
   {
-    "slug": "e-mail-marketing-dla-malych-firm",
-    "title": "E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?",
-    "excerpt": "E-mail marketing to opłacalny kanał komunikacji z klientami. Dlaczego warto go stosować? Jakie rodzaje e-maili przynoszą najlepsze efekty? Na co zwrócić uwagę przy planowaniu kampanii mailingowej dla małej firmy?",
-    "cover": "/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp",
-    "primaryCategory": "Marketing",
-    "readingTime": 10,
-    "datePublished": "2025-12-23",
-    "seo": {
-      "title": "E-mail marketing dla małych firm: poradnik - Arteon",
-      "description": "E-mail marketing jest skuteczny dla małych firm dzięki niskim kosztom i bezpośredniemu dostępowi do klientów. Jak zacząć?",
-      "canonical": "https://www.arteonagency.pl/edukacja/marketing/e-mail-marketing-dla-malych-firm"
-    }
-  },
-  {
-    "slug": "co-sprawdzic-przed-uruchomieniem-strony",
-    "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej?",
-    "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. Dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych przed uruchomieniem nowej witryny internetowej w sieci.",
-    "cover": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
-    "primaryCategory": "Strony",
-    "readingTime": 10,
-    "datePublished": "2025-12-23",
-    "seo": {
-      "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej? - Arteon",
-      "description": "Przed publikacją strony warto sprawdzić treści, funkcjonalność, wydajność, SEO i kwestie prawne. Lista kontrolna.",
-      "canonical": "https://www.arteonagency.pl/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony"
-    }
-  },
-  {
-    "slug": "jak-wybrac-domene-i-hosting-dla-strony-firmowej",
-    "title": "Jak wybrać domenę i hosting dla strony firmowej?",
-    "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. Dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę przy zakupie i jakich błędów unikać przy ich wyborze dla swojej firmy.",
-    "cover": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",
-    "primaryCategory": "Strony",
-    "readingTime": 10,
-    "datePublished": "2025-12-22",
-    "seo": {
-      "title": "Jak wybrać domenę i hosting dla strony firmowej? - Arteon",
-      "description": "Domena i hosting to podstawa każdej strony firmowej. Jak je wybrać i na co zwrócić uwagę przed zakupem? Praktyczny poradnik.",
-      "canonical": "https://www.arteonagency.pl/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej"
-    }
-  },
-  {
-    "slug": "materialy-drukowane-dla-firmy-ktore-zamowic",
-    "title": "Materiały drukowane dla firmy: które zamówić na start?",
-    "excerpt": "Wizytówki, ulotki, katalogi, teczki - które materiały drukowane przydadzą się firmie? Znajdziesz tu wskazówki, od czego zacząć, jak zaplanować spójny zestaw i jak jakość papieru wpływa na wizerunek Twojej marki w praktyce.",
-    "cover": "/assets/blog/materialy-drukowane-dla-firmy-ktore-zamowic/materialy-drukowane-dla-firmy-ktore-zamowic.webp",
-    "primaryCategory": "Grafika",
-    "readingTime": 9,
-    "datePublished": "2025-12-21",
-    "seo": {
-      "title": "Materiały drukowane dla firmy: które zamówić na start? - Arteon",
-      "description": "Wizytówki, ulotki, katalogi, teczki — które materiały drukowane są potrzebne na start firmy i jak je zaplanować?",
-      "canonical": "https://www.arteonagency.pl/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic"
-    }
-  },
-  {
     "slug": "kody-qr-w-materialach-reklamowych",
     "title": "Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?",
     "excerpt": "Kody QR łączą materiały drukowane z treściami online. Znajdziesz tu konkretne wskazówki: gdzie kod QR działa najlepiej, czego unikać przy projektowaniu, jak wygenerować kod i jak testować go przed drukiem reklamowych materiałów.",
@@ -333,48 +249,6 @@
       "title": "Kody QR w materiałach reklamowych: poradnik - Arteon",
       "description": "Kod QR na ulotce lub wizytówce może ułatwić kontakt. Kiedy ma sens, jakich błędów unikać i jak go stworzyć?",
       "canonical": "https://www.arteonagency.pl/edukacja/grafika/kody-qr-w-materialach-reklamowych"
-    }
-  },
-  {
-    "slug": "jak-dobrac-kolory-do-strony-internetowej",
-    "title": "Jak dobrać kolory do strony internetowej lub sklepu?",
-    "excerpt": "Praktyczny przewodnik po doborze kolorów na stronę lub sklep internetowy. Znajdziesz tu konkretne kroki, dane z badań i narzędzia online, które pomogą wybrać odpowiednią paletę kolorów wspierającą cele biznesowe Twojej firmy.",
-    "cover": "/assets/blog/jak-dobrac-kolory-do-strony-internetowej/jak-dobrac-kolory-do-strony-internetowej.webp",
-    "primaryCategory": "Grafika",
-    "readingTime": 8,
-    "datePublished": "2025-12-21",
-    "seo": {
-      "title": "Jak dobrać kolory do strony internetowej lub sklepu? - Arteon",
-      "description": "Praktyczny przewodnik po doborze kolorów na stronę. Konkretne kroki, dane z badań i narzędzia do wyboru palety kolorów.",
-      "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej"
-    }
-  },
-  {
-    "slug": "jak-mierzyc-skutecznosc-strony-internetowej",
-    "title": "Jak mierzyć skuteczność strony internetowej? Podstawy analityki",
-    "excerpt": "Strona działa, ale czy przynosi efekty? Google Analytics i Search Console pokażą Ci, ile osób odwiedza witrynę, skąd przychodzą i co robią. Pokazujemy, na które wskaźniki patrzeć i jak je interpretować.",
-    "cover": "/assets/blog/jak-mierzyc-skutecznosc-strony-internetowej/jak-mierzyc-skutecznosc-strony-internetowej.webp",
-    "primaryCategory": "SEO",
-    "readingTime": 10,
-    "datePublished": "2025-12-21",
-    "seo": {
-      "title": "Jak mierzyć skuteczność strony? Podstawy analityki - Arteon",
-      "description": "Jak mierzyć skuteczność strony? Poznaj najważniejsze wskaźniki w Google Analytics i Search Console. Sprawdź, co śledzić.",
-      "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej"
-    }
-  },
-  {
-    "slug": "jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma",
-    "title": "Jak założyć i zoptymalizować profil Google Moja Firma?",
-    "excerpt": "Google Moja Firma pozwala lokalnym firmom wyświetlać się w Mapach Google i wynikach wyszukiwania. Jak założyć profil, jakie informacje uzupełnić i jak zdobywać opinie, które przyciągają nowych klientów?",
-    "cover": "/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp",
-    "primaryCategory": "SEO",
-    "readingTime": 10,
-    "datePublished": "2025-12-21",
-    "seo": {
-      "title": "Jak założyć i zoptymalizować profil Google Moja Firma? - Arteon",
-      "description": "Profil Google Moja Firma pomaga wyróżnić się w Mapach Google. Jak go założyć, uzupełnić i zdobywać opinie klientów?",
-      "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma"
     }
   },
   {
@@ -420,20 +294,6 @@
     }
   },
   {
-    "slug": "jak-przygotowac-sklep-internetowy-do-pozycjonowania",
-    "title": "Jak przygotować sklep internetowy do pozycjonowania?",
-    "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Jak przygotować strukturę kategorii, opisy produktów i techniczne podstawy, żeby działania SEO przełożyły się na widoczność w Google?",
-    "cover": "/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp",
-    "primaryCategory": "SEO",
-    "readingTime": 11,
-    "datePublished": "2025-12-20",
-    "seo": {
-      "title": "Jak przygotować sklep internetowy do pozycjonowania? - Arteon",
-      "description": "Przygotowanie sklepu do SEO: struktura kategorii, opisy produktów, filtry i dane strukturalne. Sprawdź, od czego zacząć.",
-      "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania"
-    }
-  },
-  {
     "slug": "jak-przygotowac-profesjonalna-stopke-mailowa",
     "title": "Jak przygotować profesjonalną stopkę mailową?",
     "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Co powinna zawierać? Jakich błędów unikać? I jak stworzyć podpis za pomocą generatora?",
@@ -476,20 +336,6 @@
     }
   },
   {
-    "slug": "jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow",
-    "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów?",
-    "excerpt": "Kolor wpływa na to, czy klient zaufa marce i zdecyduje się na zakup. Mechanizmy psychologiczne percepcji kolorów, wyniki testów A/B i przykłady z różnych branż.",
-    "cover": "/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp",
-    "primaryCategory": "Grafika",
-    "readingTime": 9,
-    "datePublished": "2025-12-09",
-    "seo": {
-      "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów? - Arteon",
-      "description": "Kolory wpływają na decyzje zakupowe klientów. Mechanizmy psychologiczne i przykłady z różnych branż.",
-      "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow"
-    }
-  },
-  {
     "slug": "ile-czasu-trwa-pozycjonowanie-strony",
     "title": "Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?",
     "excerpt": "SEO nie działa natychmiast — ale dlaczego? Jak Google indeksuje strony, dlaczego nowe domeny potrzebują więcej czasu i co wpływa na tempo wyników w różnych branżach w Polsce?",
@@ -501,20 +347,6 @@
       "title": "Ile czasu trwa pozycjonowanie strony firmowej?",
       "description": "Dlaczego SEO wymaga czasu? Mechanizmy indeksowania Google, budowanie autorytetu domeny i realne terminy dla różnych branż.",
       "canonical": "https://www.arteonagency.pl/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony"
-    }
-  },
-  {
-    "slug": "czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google",
-    "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
-    "excerpt": "Blog na stronie lokalnej firmy wpływa na to, jak Google ocenia wiarygodność firmy. Dlaczego treści edukacyjne wzmacniają widoczność? Jak blog wpływa na pozycję w Google Maps i kiedy taka inwestycja się opłaca?",
-    "cover": "/assets/blog/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google.webp",
-    "primaryCategory": "SEO",
-    "readingTime": 10,
-    "datePublished": "2025-12-09",
-    "seo": {
-      "title": "Blog na stronie lokalnej firmy: jak wpływa na widoczność w Google? - Arteon",
-      "description": "Jak blog wpływa na widoczność lokalnej firmy w Google i Google Maps? Kiedy inwestycja w treści ma sens? Dane i przykłady.",
-      "canonical": "https://www.arteonagency.pl/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google"
     }
   },
   {

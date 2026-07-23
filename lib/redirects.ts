@@ -24,11 +24,11 @@ export const PROJECT_REDIRECTS: Record<string, string> = {
 export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/design': '/edukacja/grafika',
   '/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow':
-    '/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+    '/edukacja',
   '/edukacja/widocznosc/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty':
     '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony',
   '/edukacja/widocznosc/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google':
-    '/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google',
+    '/edukacja',
   '/edukacja/seo/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp':
     '/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
   '/edukacja/tresci/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google':
@@ -67,13 +67,12 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/bezpieczenstwo': '/edukacja/strony',
   // Redirects for moved articles (2026-02-23)
   '/edukacja/bezpieczeństwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa':
-    '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa',
+    '/edukacja',
   '/edukacja/dostępność/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie':
     '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
   '/edukacja/bezpieczeństwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje':
     '/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
-  '/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic':
-    '/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic',
+  '/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic': '/edukacja',
   '/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa':
     '/edukacja/marketing/jak-przygotowac-profesjonalna-stopke-mailowa',
   '/edukacja/zdjęcia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie':
@@ -82,7 +81,7 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
     '/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
   // ASCII variants of moved article paths
   '/edukacja/bezpieczenstwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa':
-    '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa',
+    '/edukacja',
   '/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie':
     '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
   '/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje':
@@ -98,8 +97,7 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
     '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
   '/edukacja/ux/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie':
     '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  '/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej':
-    '/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej',
+  '/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej': '/edukacja',
   // Artykuł o wyszukiwarkach: tytuł zmieniony z "30 najpopularniejszych" na
   // "12 najpopularniejszych + 18 alternatyw", bo twarde dane o zasięgu istnieją
   // tylko dla pierwszej dwunastki. Oba wcześniejsze slugi były live.
@@ -107,6 +105,27 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
     '/edukacja/seo/najpopularniejsze-wyszukiwarki-internetowe-i-alternatywy',
   '/edukacja/seo/najpopularniejsze-wyszukiwarki-internetowe':
     '/edukacja/seo/najpopularniejsze-wyszukiwarki-internetowe-i-alternatywy',
+  // Artykuły wycofane (2026-07-22) - nie zbierały zapytań, a nowe treści idą
+  // w krótsze odpowiedzi na realne pytania. Kierujemy na listę artykułów.
+  '/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow':
+    '/edukacja',
+  '/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google':
+    '/edukacja',
+  '/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony': '/edukacja',
+  '/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic': '/edukacja',
+  '/edukacja/marketing/e-mail-marketing-dla-malych-firm': '/edukacja',
+  '/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania':
+    '/edukacja',
+  '/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej': '/edukacja',
+  '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa':
+    '/edukacja',
+  '/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej': '/edukacja',
+  '/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma':
+    '/edukacja',
+  '/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej':
+    '/edukacja',
+  '/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony':
+    '/edukacja',
 };
 
 /**
