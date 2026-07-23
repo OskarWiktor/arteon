@@ -1,6 +1,100 @@
 {
   "articles": [
     {
+      "slug": "jak-sprawdzic-ilosc-wejsc-na-strone-internetowa",
+      "title": "Jak sprawdzić ilość wejść na własną stronę internetową?",
+      "excerpt": "Sprawdź, dzięki czemu możesz zobaczyć, ile osób wchodzi na Twoją stronę i skąd przychodzą. Pokazujemy, jak sprawdzić ilość wejść darmowym narzędziem Google Analytics oraz jak odczytać, czy ruch idzie z wyszukiwarek, mediów społecznościowych, wejść bezpośrednich czy od asystentów AI.",
+      "primaryCategory": "Strony",
+      "seo": {
+        "title": "Jak sprawdzić ilość wejść na stronę internetową?",
+        "description": "Sprawdź, dzięki czemu możesz zobaczyć, ile osób wchodzi na Twoją stronę i skąd przychodzą. Pokazujemy, jak sprawdzić ilość wejść darmowym narzędziem Google Analytics oraz jak odczytać, czy ruch idzie z wyszukiwarek, mediów społecznościowych, wejść bezpośrednich czy od asystentów AI.",
+        "canonical": "https://www.arteonagency.pl/edukacja/strony/jak-sprawdzic-ilosc-wejsc-na-strone-internetowa"
+      },
+      "cover": "/assets/blog/jak-sprawdzic-ilosc-wejsc-na-strone-internetowa-google-analytics.webp",
+      "author": {
+        "name": "Arteon"
+      },
+      "datePublished": "2026-07-23",
+      "dateModified": "2026-07-23",
+      "readingTime": 7,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Ruch na Twojej stronie internetowej może przychodzić z wielu miejsc. Użytkownicy mogą do Ciebie trafiać z wyszukiwarki, z mediów społecznościowych, wpisując bezpośrednio adres Twojej domeny, klikając link w mailu czy poprzez polecenia Twojej strony przez asystentów AI takich jak ChatGPT. Do zobaczenia całego ruchu i jego dokładnego źródła w jednym miejscu, wystarczy darmowe narzędzie Google Analytics 4 - w skrócie GA4.</p><br/><p>GA4 pokazuje, ile osób weszło na Twoją stronę, skąd przyszły, a nawet co na niej robiły. Jest w pełni darmowe i można je podpiąć do każdej witryny, niezależnie od tego, jak została ona stworzona ( w jakiej technologii ).</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak podpiąć Google Analytics 4 do swojej strony?</h2><p>Wystarczy założyć bezpłatne konto w Google Analytics. Po założeniu konta narzędzie pokaże Ci kilka opcji konfiguracji, które są zależne od tego, w czym masz zbudowaną stronę.</p><br/><p>Jeśli masz stronę na WordPressie, podpięcie sprowadzi się do zainstalowania wtyczki. Najprościej użyć oficjalnej wtyczki Google o nazwie Site Kit, która łączy stronę www bezpośrednio z GA4. Przy sklepach jest jeszcze łatwiej, np. Shopify ma gotowe pole na Google Analytics w ustawieniach i wystarczy wkleić tam identyfikator, który dostarczy Ci narzędzie.</p><br/><p>Jeśli jesteś osobą nietechniczną, <a class='inline-link' href='/kontakt'>napisz do nas</a>. Podepniemy analitykę do Twojej strony i ustawimy ją tak, żebyś od razu widział dane.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "image",
+          "src": "/assets/blog/jak-sprawdzic-ilosc-wejsc-na-strone-internetowa-google-analytics.webp",
+          "alt": "Raport Pozyskiwanie użytkowników w Google Analytics z podziałem wejść na źródła ruchu strony arteonagency.pl",
+          "ratio": "auto",
+          "width": 1200,
+          "height": 550,
+          "size": "half",
+          "caption": "Raport Pozyskiwanie użytkowników w Google Analytics pokazuje wejścia z podziałem na źródła ruchu."
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Gdzie zobaczysz swój ruch po podpięciu Google Analytics?</h2><p>Po skonfigurowaniu narzędzia, musisz trochę odczekać aby zobaczyć ruch - to narzędzie nie mierzy ruchu do tyłu - zaczyna mierzyć ruch dopiero po poprawnej konfiguracji. Jeśli odczekałeś już np. godzinę, kliknij po lewej stronie zakładkę <strong>Raporty</strong>, zaraz pod <strong>Stroną główną</strong>. Następnie w sekcji <strong>Cykl życia</strong> wybierz <strong>Pozyskiwanie użytkowników</strong>. To właśnie tutaj zobaczysz, ile osób weszło na Twoją stronę i skąd przyszły.</p><br/><p>Najeżdżając na konkretny dzień zobaczysz łączną liczbę użytkowników na samej górze, a pod spodem podział na inne źródła ruchu. <strong>Organic Search</strong> to wejścia z wyszukiwarek, <strong>Direct</strong> to osoby, które weszły na stronę, wpisując jej adres bezpośrednio w przeglądarce, <strong>Organic Social</strong> to media społecznościowe, a <strong>AI Assistant</strong> to ruch od asystentów AI.</p>"
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego dane w Google Analytics 4 nie pojawią się od razu?</h2><p>Google Analytics liczy ruch dopiero od momentu podpięcia, nie ma wglądu w to, ile osób odwiedziło Twoją witrynę godzinę czy kilka dni temu, więc im szybciej je zainstalujesz, tym więcej danych zbierzesz na przyszłość.</p><br/><p>Aby zweryfikować czy na 100% narzędzie działa poprawnie, wejdź na swoją stronę np. z telefonu. W raporcie <strong>Czas rzeczywisty</strong> powinieneś zobaczyć siebie jako aktywnego użytkownika. Jako że wyników nie zobaczysz do tyłu, na standardowe raporty musisz poczekać kilka dni, a aby wyciągnąć sensowne wnioski warto poczekać minimum tydzień, bo dopiero wtedy uzbiera się porządna próbka danych.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak sprawdzić ruch od asystentów AI?</h2><p>To świeża sprawa. W maju 2026 roku Google dodało w GA4 osobny kanał o nazwie <strong>AI Assistant</strong> (<a class='underline' href='https://www.searchenginejournal.com/google-analytics-adds-ai-assistant-as-default-channel-group/574974/' target='_blank' rel='noopener noreferrer'>informacja o zmianie</a>). Od tego momentu GA4 rozpoznaje kliknięcia linków do Twojej strony bezpośrednio z poleceń od ChatGPT, Gemini czy Claude, grupując przy tym takie wejścia właśnie pod tą nazwą.</p><br/><p>To zdecydowanie pokazuje rosnący trend nowego kanału ruchu dla stron www.</p>"
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jakie są alternatywy, które również pokazują ruch na stronie?</h2><p>Google Analytics wystarcza w zupełności, ale istnieją też inne narzędzia, które pokazują ruch z innymi dodatkowymi parametrami. Głównym minusem GA4 jest to, że nie pokaże Ci, dlaczego w ogóle ktoś wszedł na Twoją stronę, np. co wpisał w Google, jaką frazę, a to najważniejsza informacja, jeśli pozycjonujesz lub planujesz pozycjonować swoją witrynę.</p><br/><p> Aby zobaczyć dokładne frazy, które doprowadziły użytkownika do Twojej strony poprzez wyszukiwarkę Google, użyj narzędzia <strong>Google Search Console</strong>. Pokazuje ono ruch z wyszukiwarki wraz z bardzo cenną informacją: po jakich frazach ludzie do Ciebie trafili i na której pozycji się wyświetlałeś. To właśnie to widzenie fraz i pozycji pomoże Ci określić, która podstrona może wymagać dodatkowej pracy SEO a która radzi sobie doskonale. </p><br/><p>Kolejnym narzędziem jest <strong>Bing Webmaster Tools</strong>. Robi to samo, ale tylko dla wyszukiwarki Bing. Ta wyszukiwarka nie jest aż tak popularna jak Google ale jeśli celem jest budowa widoczności, zdecydowanie warto je również podpiąć. To narzędzie jest również darmowe. Co ciekawe, indeks stron Binga zasila też inne <a class='inline-link' href='/edukacja/seo/najpopularniejsze-wyszukiwarki-internetowe-i-alternatywy'>wyszukiwarki</a>.</p><br/><p>Kolejnym narzędziem pokazującym, skąd jest ruch, jest <strong>Vercel Analytics</strong>. Jest to opcja dla stron www, sklepów oraz aplikacji webowych zbudowanych w technologii Next.js i wdrożonych na Vercelu. Jeśli Twoja strona tam stoi, statystyki wejść będziesz miał od razu w panelu.</p><br/><p><strong>Lżejsze alternatywy dla Google</strong> to Plausible, Matomo i Fathom. Pokazują najważniejsze dane o ruchu, są prostsze w obsłudze i zaprojektowane z myślą o prywatności, dzięki czemu w wielu przypadkach nie wymagają nawet banera zgody na pliki cookie.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Chcesz zwiększyć ruch na swojej stronie www?",
+        "description": "Naszą specjalizacją jest pozycjonowanie stron. Napisz do nas a przygotujemy dla Ciebie bezpłatny Audyt SEO Twojej witryny wraz z analizą konkurencji.",
+        "btnOne": "Skontaktuj się",
+        "btnOneHref": "/kontakt",
+        "backgroundImage": "/assets/blog/jak-sprawdzic-ilosc-wejsc-na-strone-internetowa-google-analytics.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy Google Analytics 4 jest darmowe?",
+          "answer": "Tak. GA4 w standardowej wersji jest w pełni darmowym narzędziem, pokazującym ruch z wielu źródeł."
+        },
+        {
+          "question": "Czy Google Search Console pokazuje wszystkie wejścia?",
+          "answer": "Nie. Search Console pokazuje tylko ruch z wyszukiwarki Google. Wejścia z mediów społecznościowych, bezpośrednie czy od asystentów AI zobaczysz dopiero w Google Analytics."
+        },
+        {
+          "question": "Czy w Google Analitics 4 zobaczę ruch z ChatGPT i innych asystentów AI?",
+          "answer": "Tak, od maja 2026 roku Google Analytics pokazuje takie wejścia w osobnym kanale o nazwie: AI Assistant."
+        },
+        {
+          "question": "Czy potrzebuję zgody na pliki cookie aby mieć narzędzia do analizy ruchu na stronie?",
+          "answer": "Jeśli używasz Google Analytics w Unii Europejskiej, tak, musisz mieć baner zgody na pliki cookie. Lżejsze, nastawione na prywatność narzędzia, takie jak Plausible czy Matomo czasem pozwalają tego uniknąć."
+        }
+      ]
+    },
+    {
       "slug": "czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac",
       "title": "Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?",
       "excerpt": "Błąd 404 pojawia się, gdy strona nie istnieje. Skąd biorą się takie błędy? Jak je znaleźć w Google Search Console? Kiedy wymagają reakcji i co umieścić na stronie błędu, by użytkownicy mogli wrócić do treści?",

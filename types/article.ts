@@ -51,6 +51,8 @@ export type Article = {
         height?: number;
         quality?: number;
         priority?: boolean;
+        /** 'half' constrains the figure to half the text column on desktop (full width on mobile). */
+        size?: 'half';
         breakBefore?: boolean;
         breakAfter?: boolean;
       }

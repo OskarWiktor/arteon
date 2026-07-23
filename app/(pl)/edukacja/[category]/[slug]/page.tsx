@@ -268,7 +268,10 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
           return (
             <div key={`grp-img-${i}`}>
               <figure
-                className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}
+                className={cn(
+                  !hasCaption && 'mb-6 md:mb-12 lg:mb-16',
+                  b.size === 'half' && 'md:max-w-[50%]',
+                )}
               >
                 {isAuto ? (
                   <div className='overflow-hidden border border-neutral-200'>

@@ -97,7 +97,8 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
     '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
   '/edukacja/ux/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie':
     '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  '/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej': '/edukacja',
+  '/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej':
+    '/edukacja/strony/jak-sprawdzic-ilosc-wejsc-na-strone-internetowa',
   // Artykuł o wyszukiwarkach: tytuł zmieniony z "30 najpopularniejszych" na
   // "12 najpopularniejszych + 18 alternatyw", bo twarde dane o zasięgu istnieją
   // tylko dla pierwszej dwunastki. Oba wcześniejsze slugi były live.
@@ -116,7 +117,8 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/marketing/e-mail-marketing-dla-malych-firm': '/edukacja',
   '/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania':
     '/edukacja',
-  '/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej': '/edukacja',
+  '/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej':
+    '/edukacja/strony/jak-sprawdzic-ilosc-wejsc-na-strone-internetowa',
   '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa':
     '/edukacja',
   '/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej': '/edukacja',
