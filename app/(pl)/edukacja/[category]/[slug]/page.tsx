@@ -479,11 +479,12 @@ export default async function ArticlePage({
         itemScope
         itemType='https://schema.org/BlogPosting'
         className={cn(
-          'flex flex-col-reverse lg:grid lg:grid-cols-[1fr_300px]',
+          'flex flex-col lg:grid lg:grid-cols-[1fr_300px] lg:grid-rows-[auto_1fr]',
           columnGapClasses,
+          'lg:gap-y-0',
         )}
       >
-        <div>
+        <div className='order-2 lg:order-0 lg:col-start-1 lg:row-span-2 lg:row-start-1'>
           <header>
             <h1 className='h2 mb-1' itemProp='headline'>
               {article.title}
@@ -534,8 +535,13 @@ export default async function ArticlePage({
             id={`schema-article-${article.slug}`}
           />
         </div>
-        <div>
-          <ShareBlock url={url} title={shareTitle} />{' '}
+        {/* Udostępnianie: na desktopie nad spisem treści, na mobile dopiero
+            pod artykułem, żeby nie zasłaniało wejścia w treść. */}
+        <div className='order-3 lg:order-0 lg:col-start-2 lg:row-start-1'>
+          <ShareBlock url={url} title={shareTitle} />
+        </div>
+
+        <div className='order-1 lg:order-0 lg:col-start-2 lg:row-start-2'>
           <TableOfContents rootSelector='#article-root' size='large' />
         </div>
       </Wrapper>

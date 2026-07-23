@@ -133,7 +133,7 @@ export default function TableOfContents({
 
   return (
     <>
-      <aside className={cn('block lg:hidden', widthClass[size])}>
+      <aside className={cn('my-4 block lg:hidden', widthClass[size])}>
         <Card variant='outlined' className='relative' padding='md'>
           <div className={cn('p-2', flexCenterBetweenClasses)}>
             <p className='text-xs font-medium tracking-wider text-light uppercase'>
@@ -154,7 +154,9 @@ export default function TableOfContents({
               <div
                 className={cn(
                   'overflow-y-auto',
-                  expanded ? 'max-h-[70vh]' : 'max-h-40',
+                  // Zwinięty spis pokazuje dwie pozycje - każdy wpis to jedna
+                  // linia (line-clamp-1), więc wysokość jest przewidywalna.
+                  expanded ? 'max-h-[70vh]' : 'max-h-14',
                   'pr-1 pb-6',
                 )}
               >
